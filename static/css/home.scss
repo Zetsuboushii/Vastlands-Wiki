@@ -1,0 +1,148 @@
+.home-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+.home-left {
+  flex: 0 0 60%;
+
+  .home-left-text {
+    margin: 25px;
+
+    p {
+      text-align: justify;
+    }
+
+    .home-left-text-heading {
+      top: 10px;
+      position: relative;
+      z-index: 1;
+      background-image: url('/static/ui/text-heading-backdrop.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 60px;
+      width: 336px;
+      color: white;
+
+      h2 {
+        text-align: center;
+        left: -8px;
+        top: 14px;
+        margin: 0;
+        position: relative;
+      }
+    }
+
+    .home-left-text-subsection {
+      margin-top: 10px;
+      margin-left: 30px;
+
+      p {
+        margin-top: 0;
+        text-align: justify;
+      }
+
+      .home-left-text-subheading {
+        position: relative;
+        z-index: 1;
+        background-image: url('/static/ui/field-name-background.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 36px;
+        width: 260px;
+        color: white;
+        text-align: center;
+
+        h3 {
+          top: 2px;
+          margin: 0;
+          position: relative;
+        }
+      }
+    }
+
+    .home-left-featured {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+
+      .home-left-featured-left {
+        flex: 0 0 30%;
+      }
+
+      .home-left-featured-right {
+      }
+    }
+  }
+}
+
+.home-right {
+  flex: 0 0 40%;
+  text-align: center;
+
+  .home-right-text {
+    margin: 25px;
+
+    .home-right-text-box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 20px;
+
+      p {
+        text-align: center;
+      }
+
+      .home-right-text-heading {
+        top: -4px;
+        position: relative;
+        z-index: 1;
+        background-image: url('/static/ui/section-background.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 72px;
+        width: 460px;
+        color: black;
+
+        h2 {
+          text-align: center;
+          top: 14px;
+          margin: 0;
+          position: relative;
+        }
+      }
+
+      .home-birthdays-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 10px;
+
+        img {
+          position: relative;
+          max-width: 150px;
+        }
+
+        .home-birthdays-heading {
+          top: -10px;
+          position: relative;
+          z-index: 1;
+          background-image: url('/static/ui/name-backdrop.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          height: 40px;
+          width: 330px;
+          color: white;
+
+          h3 {
+            text-align: center;
+            top: 5px;
+            margin: 0;
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+}

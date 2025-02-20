@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>{{ g.site_title }}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/characters.css') }}">
 </head>
 <body>
 
@@ -13,7 +15,75 @@
     {% include "header.html" %}
 
     <div class="page">
+        <div class="home-container">
+            <div class="home-left">
+                <div class="home-left-text">
+                    <p>
+                        Herzlich willkommen im <b style="font-family: 'Grenze Gotisch'">Tome of the Vastlands</b>! Auf
+                        dieser Website findest Du etliche Informationen und Neuigkeiten rund um die Welt der Vastlands.
+                    </p>
 
+                    <hr>
+
+                    <div class="home-left-text-heading"><h2>Aktuelles</h2></div>
+                    <div class="home-left-text-subsection">
+                        {% for n in news %}
+                            <div class="home-left-text-subheading"><h3>Session #{{ n.session }}</h3></div>
+                            <p>{{ n.text }}</p>
+                        {% endfor %}
+                    </div>
+
+                    <hr>
+
+                    <div class="home-left-text-heading"><h2>Vorgestellter Charakter</h2></div>
+                    <div class="home-left-featured">
+                        <div class="home-left-featured-left characters-container"
+                             style="justify-content: left; border-right: 1px black">
+                            <div class="characters-element">
+                                <a href="{{ url_for('character', character_name=rand_char.name) }}">
+                                    {% set url = g.img_host_resized + "characters/" + rand_char.name | lower %}
+                                    <img src="
+                                        {{ url }}{% if "artwork" in rand_char.name.alt_images %} artwork{% endif %}.png"
+                                         alt=""></a>
+                                <button class="characters-element-name">{{ rand_char.name }}</button>
+                            </div>
+                        </div>
+                        <div class="home-left-featured-right">
+                            <p>{{ rand_char.content.excerpt }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home-right">
+                <div class="home-right-text">
+                    <div class="home-right-text-box">
+                        <div class="home-right-text-heading"><h2>Kalender</h2></div>
+                        <p>WIP</p>
+                    </div>
+
+                    {% if birthday_characters %}
+                        <div class="home-right-text-box">
+                            <div class="home-right-text-heading"><h2>Herzlichen Glückwunsch!</h2></div>
+                            <div class="home-birthdays-box">
+                                {% for char in birthday_characters %}
+                                    <a href="{{ url_for('character', character_name=char.name) }}">
+                                        <img src="
+{{ g.img_host_resized }}characters/{{ char.name | lower }}{% if 'artwork' in char.alt_images %} artwork{% endif %}.png"
+                                             alt="">
+                                    </a>
+                                    <div class="home-birthdays-heading">
+                                        <h3>
+                                            <a href="{{ url_for('character', character_name=char.name) }}">{{ char.name }}</a>
+                                            hat heute Geburtstag!</h3>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 

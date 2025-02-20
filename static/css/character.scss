@@ -1,22 +1,23 @@
 .character-container {
   display: flex;
   flex-wrap: nowrap;
-  gap: 20px;
+  gap: 25px;
   align-items: flex-start;
 }
 
 .character-data {
   flex: 0 0 30%;
+  border-right: 1px solid #2e2622;
 
   .character-data-box {
     width: 500px;
-    margin: 25px 0 25px 25px;
+    margin: -50px 0 25px 25px;
     padding-right: 25px;
     text-align: center;
-    border-right: 1px solid #2e2622;
 
     img {
       max-width: 380px;
+      max-height: 600px;
       position: relative;
       bottom: -80px;
     }
@@ -109,9 +110,12 @@
 }
 
 .character-text {
-
   .character-text-box {
-    margin: 25px;
+    margin: 25px 25px 25px 0;
+
+    p {
+      text-align: justify;
+    }
 
     .character-text-heading {
       top: 10px;

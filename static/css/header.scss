@@ -3,6 +3,7 @@
   flex-direction: column;
   height: 150px;
   justify-content: flex-end;
+  position: relative;
 }
 
 header {
@@ -33,6 +34,7 @@ header {
     background-repeat: no-repeat;
 
     a {
+      color: white;
       font-family: "Grenze Gotisch";
       font-size: 40px;
     }
@@ -47,6 +49,37 @@ header {
       height: 30px;
       margin: 5px 20px 0 12px;
       filter: brightness(100) saturate(100%);
+    }
+  }
+}
+
+.nav-dropdown-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 4;
+  flex-direction: column;
+
+  &.show {
+    display: flex;
+  }
+
+  .nav-button {
+    width: 246px;
+    height: 65px;
+    font-family: "Grenze Gotisch";
+    font-size: 18px;
+    color: white;
+    background-color: transparent;
+    background-image: url("/static/ui/button-text.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 0.3s;
+    border: none;
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

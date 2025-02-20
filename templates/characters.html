@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Charaktere | {{ g.site_title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/characters.css') }}">
+</head>
+<body>
+
+{% include "banner.html" %}
+
+<div class="page-containter">
+    {% include "header.html" %}
+
+    <div class="page">
+        <div class="characters-container">
+            {% for character in characters %}
+                <div class="characters-element">
+                    {% set character_name = character.name %}
+                    <a href="{{ url_for('character', character_name=character_name) }}">
+                        <img src="
+{{ g.img_host_resized }}characters/{{ character.name | lower }}{% if "artwork" in character.alt_images %} artwork{% endif %}.png" alt=""></a>
+                    <button class="characters-element-name">{{ character.name }}</button>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+</body>
+</html>

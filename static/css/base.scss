@@ -27,6 +27,15 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
+a {
+  color: bisque;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 body {
   background-image: url("/static/ui/background.png");;
   background-size: cover;
@@ -56,7 +65,7 @@ body {
   border-image: url("/static/ui/page-border.png") 100 stretch;
   border-top: 25px solid;
   background-image: url("/static/ui/page.png");
-  background-size: cover;
+  background-size: contain;
   background-repeat: repeat;
 }
 
