@@ -218,115 +218,15 @@
 
             <div class="character-text">
                 <div class="character-text-box">
-                    egsejopg
-                    <br>
-                    gejopsgospe
-                    <br>
-                    ggsegseg
-                    <br>
-                    gsegjseogisgoeijsgo
-                    <br>
-                    gejopsgospe
-                    <br>
-                    ggsegseg
-                    <br>
-                    gsegjseogisgoeijsgo
-                    <br>
-                    gejopsgospe
-                    <br>
-                    ggsegseg
-                    <br>
-                    gsegjseogisgoeijsgo
-                    <br>
-                    gejopsgospe
-                    <br>
-                    ggsegseg
-                    <br>
-                    gsegjseogisgoeijsgo
-                    <br>
-                    gejopsgospe
-                    <br>
-                    ggsegseg
-                    <br>
-                    gsegjseogisgoeijsgo
-                    <br>
-                    gejopsgospe
-                    <br>
-                    ggsegseg
-                    <br>
-                    gsegjseogisgoeijsgo
-                    <br>
-                    gejopsgospe
-                    <br>
-                    ggsegseg
-                    <br>
-                    gsegjseogisgoeijsgo
-                    <br>
-                    gejopsgospe
-                    <br>
-                    ggsegseg
-                    <br>
-                    gsegjseogisgoeijsgo
-                    <br>
-                    gejopsgospe
-                    <br>
-                    ggsegseg
-                    <br>
-                    gsegjseogisgoeijsgo
-                    <br>
-                    gejopsgospe
-                    <br>
-                    ggsegseg
-                    <br>
-                    gsegjseogisgoeijsgo
-                    <br>
-                    gejopsgospe
-                    <br>
-                    ggsegseg
-                    <br>
-                    gsegjseogisgoeijsgo
-                    <br>
-                    gejopsgospe
-                    <br>
-                    ggsegseg
-                    <br>
-                    gsegjseogisgoeijsgo
-                    <br>
-                    gejopsgospe
-                    <br>
-                    ggsegseg
-                    <br>
-                    gsegjseogisgoeijsgo
-                    <br>
-                    gejopsgospe
-                    <br>
-                    ggsegseg
-                    <br>
-                    gsegjseogisgoeijsgo
-                    <br>
-                    gejopsgospe
-                    <br>
-                    ggsegseg
-                    <br>
-                    gsegjseogisgoeijsgo
-                    <br>
-                    gejopsgospe
-                    <br>
-                    ggsegseg
-                    <br>
-                    gsegjseogisgoeijsgo
-                    <br>
-                    gejopsgospe
-                    <br>
-                    ggsegseg
-                    <br>
-                    gsegjseogisgoeijsgo
-                    <br>
-                    gejopsgospe
-                    <br>
-                    ggsegseg
-                    <br>
-                    gsegjseogisgoeijsgo
+                    <p>{{ character.content.excerpt }}</p>
+
+                    <hr>
+
+                    {% for section in character.content.sections %}
+                        <div class="character-text-heading"><h2>{{ section.title }}</h2></div>
+                        <p>{{ section.text }}</p>
+                        <hr>
+                    {% endfor %}
                 </div>
             </div>
         </div>

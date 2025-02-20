@@ -1,6 +1,6 @@
 .character-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 20px;
   align-items: flex-start;
 }
@@ -109,7 +109,6 @@
 }
 
 .character-text {
-  flex: 1 1 auto;
 
   .character-text-box {
     margin: 25px;
@@ -122,11 +121,13 @@
       background-size: contain;
       background-repeat: no-repeat;
       height: 60px;
+      width: 336px;
       color: white;
-      background-position: center;
 
-      h3 {
-        top: 18px;
+      h2 {
+        text-align: center;
+        left: -8px;
+        top: 14px;
         margin: 0;
         position: relative;
       }

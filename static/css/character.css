@@ -1,6 +1,6 @@
 .character-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 20px;
   align-items: flex-start; }
 
@@ -78,23 +78,23 @@
         padding: 0;
         list-style: none; }
 
-.character-text {
-  flex: 1 1 auto; }
-  .character-text .character-text-box {
-    margin: 25px; }
-    .character-text .character-text-box .character-text-heading {
-      top: 10px;
-      position: relative;
-      z-index: 1;
-      background-image: url("/static/ui/text-heading-backdrop.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      height: 60px;
-      color: white;
-      background-position: center; }
-      .character-text .character-text-box .character-text-heading h3 {
-        top: 18px;
-        margin: 0;
-        position: relative; }
+.character-text .character-text-box {
+  margin: 25px; }
+  .character-text .character-text-box .character-text-heading {
+    top: 10px;
+    position: relative;
+    z-index: 1;
+    background-image: url("/static/ui/text-heading-backdrop.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 336px;
+    color: white; }
+    .character-text .character-text-box .character-text-heading h2 {
+      text-align: center;
+      left: -8px;
+      top: 14px;
+      margin: 0;
+      position: relative; }
 
 /*# sourceMappingURL=character.css.map */
