@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>{{ character.name }} | {{ g.site_title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/character.css') }}">
+</head>
+<body>
+
+{% include "banner.html" %}
+
+<div class="page-containter">
+    {% include "header.html" %}
+
+    <div class="page">
+        <div class="character-container">
+            <div class="character-data">
+                <div class="character-data-box">
+                    <img src="{{ g.img_host }}{{ character.name | lower }}.png" alt="">
+
+                    <div class="character-data-name"><h1>{{ character.name }} {{ character.surname }}</h1></div>
+                    <div class="character-data-title"><h3>{{ character.title }}</h3></div>
+
+                    <div class="character-data-field-title"><h4>Informationen zur Person</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Rasse</td>
+                            <td>{{ character.race }}</td>
+                        </tr>
+                        <tr>
+                            <td>Geschlecht</td>
+                            <td>
+                                {% if character.sex == "m" %}männlich{% elif character.sex == "w" %}weiblich{% endif %}
+                            </td>
+                        </tr>
+                        {% if character.birthday %}
+                            <tr>
+                                <td>Alter</td>
+                                <td>{{ character.age }} Jahre</td>
+                            </tr>
+                            <tr>
+                                <td>Geburtstag</td>
+                                <td>{{ character.birth_day }}. Tag, {{ character.birth_month }} im
+                                    Jahre {{ character.birth_year | replace("-", "") }}
+                                    {% if "-" in character.birth_year %}v.V.{% else %}n.V.{% endif %}</td>
+                            </tr>
+                        {% endif %}
+                        {% if character.aliases %}
+                            <tr>
+                                <td>Aliase</td>
+                                <td>
+                                    <ul>
+                                        {% for alias_name, alias_desc in character.aliases | sort %}
+                                            <li>{{ alias_name }} <small>({{ alias_desc }})</small></li>
+                                        {% endfor %}
+                                    </ul>
+                                </td>
+                            </tr>
+                        {% endif %}
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Maße</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Körpergröße</td>
+                            <td>{{ character.height | replace(".", ",") }} m</td>
+                        </tr>
+                        <tr>
+                            <td>Gewicht</td>
+                            <td>{{ character.weight }} kg</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Profession</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Funktion</td>
+                            <td>
+                                <ul>
+                                    {% for function in character.functions | sort %}
+                                        <li>{{ function }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Basisklasse</td>
+                            <td>{{ character.class }}</td>
+                        </tr>
+                        {% if character.subclasses %}
+                            <tr>
+                                <td>Subklasse{% if character.subclasses | length > 1 %}n{% endif %}</td>
+                                <td>
+                                    <ul>
+                                        {% for subclass in character.subclasses | sort %}
+                                            <li>{{ subclass }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </td>
+                            </tr>
+                        {% endif %}
+                        {% if character.masterclass %}
+                            <tr>
+                                <td>Meisterklasse</td>
+                                <td>{{ character.masterclass }}</td>
+                            </tr>
+                            </tbody>
+                        {% endif %}
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Weitere Informationen</h4></div>
+                    <table>
+                        <tbody>
+                        {% if character.homes %}
+                            <tr>
+                                <td>Geburtsort</td>
+                                <td>{{ character.homes[0] }}</td>
+                            </tr>
+                            {% if character.home | length > 1 %}
+                                <tr>
+                                    <td>Wohnorte</td>
+                                    <td>
+                                        <ul>
+                                            {% for home in character.homes[1:] %}
+                                                <li>{{ home }}</li>
+                                            {% endfor %}
+                                        </ul>
+                                    </td>
+                                </tr>
+                            {% endif %}
+                        {% endif %}
+                        {% if character.alignment %}
+                            <tr>
+                                <td>Gesinnung</td>
+                                <td>{{ character.alignment }}</td>
+                            </tr>
+                        {% endif %}
+                        {% if character.affiliations %}
+                            <tr>
+                                <td>Zugehörigkeit{% if character.affiliations | length > 1 %}en{% endif %}</td>
+                                <td>
+                                    <ul>
+                                        {% for affiliation in character.affiliations | sort %}
+                                            <li>{{ affiliation }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </td>
+                            </tr>
+                        {% endif %}
+                        {% if character.likes %}
+                            <tr>
+                                <td>Mag</td>
+                                <td>
+                                    <ul>
+                                        {% for like in character.likes | sort %}
+                                            <li>{{ like }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </td>
+                            </tr>
+                        {% endif %}
+                        {% if character.dislikes %}
+                            <tr>
+                                <td>Mag nicht</td>
+                                <td>
+                                    <ul>
+                                        {% for dislike in character.dislikes | sort %}
+                                            <li>{{ dislike }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </td>
+                            </tr>
+                        {% endif %}
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Persönlicher Status</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Verbleib</td>
+                            <td>{{ character.status }}</td>
+                        </tr>
+                        {% if character.alignment %}
+                            <tr>
+                                <td>Gesinnung</td>
+                                <td>{{ character.alignment }}</td>
+                            </tr>
+                        {% endif %}
+                        {% if character.relationships %}
+                            <tr>
+                                <td>Beziehungen</td>
+                                <td>
+                                    <ul>
+                                        {% for relation_name, relation_desc in character.relationships | sort %}
+                                            <li>{{ relation_name }} <small>({{ relation_desc }})</small></li>
+                                        {% endfor %}
+                                    </ul>
+                                </td>
+                            </tr>
+                        {% endif %}
+                        {% if character.lover %}
+                            <tr>
+                                <td>Liebe</td>
+                                <td>{{ character.lover }}</td>
+                            </tr>
+                        {% endif %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="character-text">
+                <div class="character-text-box">
+                    egsejopg
+                    <br>
+                    gejopsgospe
+                    <br>
+                    ggsegseg
+                    <br>
+                    gsegjseogisgoeijsgo
+                    <br>
+                    gejopsgospe
+                    <br>
+                    ggsegseg
+                    <br>
+                    gsegjseogisgoeijsgo
+                    <br>
+                    gejopsgospe
+                    <br>
+                    ggsegseg
+                    <br>
+                    gsegjseogisgoeijsgo
+                    <br>
+                    gejopsgospe
+                    <br>
+                    ggsegseg
+                    <br>
+                    gsegjseogisgoeijsgo
+                    <br>
+                    gejopsgospe
+                    <br>
+                    ggsegseg
+                    <br>
+                    gsegjseogisgoeijsgo
+                    <br>
+                    gejopsgospe
+                    <br>
+                    ggsegseg
+                    <br>
+                    gsegjseogisgoeijsgo
+                    <br>
+                    gejopsgospe
+                    <br>
+                    ggsegseg
+                    <br>
+                    gsegjseogisgoeijsgo
+                    <br>
+                    gejopsgospe
+                    <br>
+                    ggsegseg
+                    <br>
+                    gsegjseogisgoeijsgo
+                    <br>
+                    gejopsgospe
+                    <br>
+                    ggsegseg
+                    <br>
+                    gsegjseogisgoeijsgo
+                    <br>
+                    gejopsgospe
+                    <br>
+                    ggsegseg
+                    <br>
+                    gsegjseogisgoeijsgo
+                    <br>
+                    gejopsgospe
+                    <br>
+                    ggsegseg
+                    <br>
+                    gsegjseogisgoeijsgo
+                    <br>
+                    gejopsgospe
+                    <br>
+                    ggsegseg
+                    <br>
+                    gsegjseogisgoeijsgo
+                    <br>
+                    gejopsgospe
+                    <br>
+                    ggsegseg
+                    <br>
+                    gsegjseogisgoeijsgo
+                    <br>
+                    gejopsgospe
+                    <br>
+                    ggsegseg
+                    <br>
+                    gsegjseogisgoeijsgo
+                    <br>
+                    gejopsgospe
+                    <br>
+                    ggsegseg
+                    <br>
+                    gsegjseogisgoeijsgo
+                    <br>
+                    gejopsgospe
+                    <br>
+                    ggsegseg
+                    <br>
+                    gsegjseogisgoeijsgo
+                    <br>
+                    gejopsgospe
+                    <br>
+                    ggsegseg
+                    <br>
+                    gsegjseogisgoeijsgo
+                    <br>
+                    gejopsgospe
+                    <br>
+                    ggsegseg
+                    <br>
+                    gsegjseogisgoeijsgo
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

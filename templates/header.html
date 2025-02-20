@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" onclick=""></button>
+            <img src="{{ g.static }}imgs/logo.png" alt="" class="logo" style="left: -40px; position: relative">
+            <a style="left: -40px; position: relative">{{ g.site_title }}</a>
+            <sub style="left: -40px; position: relative">{{ g.version_number }}</sub>
+        </div>
+    </header>
+</div>

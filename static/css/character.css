@@ -1,0 +1,100 @@
+.character-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start; }
+
+.character-data {
+  flex: 0 0 30%; }
+  .character-data .character-data-box {
+    width: 500px;
+    margin: 25px 0 25px 25px;
+    padding-right: 25px;
+    text-align: center;
+    border-right: 1px solid #2e2622; }
+    .character-data .character-data-box img {
+      max-width: 380px;
+      position: relative;
+      bottom: -80px; }
+    .character-data .character-data-box .character-data-name {
+      position: relative;
+      z-index: 2;
+      background-image: url("/static/ui/name-backdrop-2.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 136px;
+      color: white;
+      background-position: center; }
+      .character-data .character-data-box .character-data-name h1 {
+        top: 54px;
+        margin: 0;
+        position: relative; }
+    .character-data .character-data-box .character-data-title {
+      top: -16px;
+      position: relative;
+      z-index: 1;
+      background-image: url("/static/ui/title-banner.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 50px;
+      color: black;
+      background-position: center; }
+      .character-data .character-data-box .character-data-title h3 {
+        top: 8px;
+        margin: 0;
+        position: relative; }
+    .character-data .character-data-box .character-data-field-title {
+      position: relative;
+      z-index: 1;
+      background-image: url("/static/ui/field-name-background.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 36px;
+      color: white;
+      background-position: center; }
+      .character-data .character-data-box .character-data-field-title h4 {
+        top: 4px;
+        margin: 0;
+        position: relative; }
+    .character-data .character-data-box h3 {
+      margin-bottom: 0; }
+    .character-data .character-data-box table {
+      font-family: "Grenze Gotisch";
+      width: 100%;
+      text-align: center;
+      border: 1px solid #2e2622;
+      border-collapse: collapse; }
+      .character-data .character-data-box table tr {
+        border-bottom: 1px solid #2e2622; }
+      .character-data .character-data-box table th:first-child, .character-data .character-data-box table td:first-child {
+        width: 40%;
+        background-image: url("/static/ui/table-background-purple.png");
+        color: white; }
+      .character-data .character-data-box table th:nth-child(2), .character-data .character-data-box table td:nth-child(2) {
+        width: 60%;
+        background-image: url("/static/ui/table-background-white.png"); }
+      .character-data .character-data-box table ul {
+        margin: 0;
+        padding: 0;
+        list-style: none; }
+
+.character-text {
+  flex: 1 1 auto; }
+  .character-text .character-text-box {
+    margin: 25px; }
+    .character-text .character-text-box .character-text-heading {
+      top: 10px;
+      position: relative;
+      z-index: 1;
+      background-image: url("/static/ui/text-heading-backdrop.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 60px;
+      color: white;
+      background-position: center; }
+      .character-text .character-text-box .character-text-heading h3 {
+        top: 18px;
+        margin: 0;
+        position: relative; }
+
+/*# sourceMappingURL=character.css.map */

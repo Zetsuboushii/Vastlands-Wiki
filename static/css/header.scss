@@ -1,0 +1,52 @@
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: flex-end;
+}
+
+header {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  .menu-button {
+    border: none;
+    background-color: transparent;
+    background-image: url("/static/ui/button-square-turn.png");
+    left: -40px;
+    height: 79px;
+    width: 79px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .site-title {
+    z-index: 1;
+    width: 576px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-image: url("/static/ui/title-backdrop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    a {
+      font-family: "Grenze Gotisch";
+      font-size: 40px;
+    }
+
+    @media (max-width: 768px) {
+      a {
+        font-size: 30px;
+      }
+    }
+
+    .logo {
+      height: 30px;
+      margin: 5px 20px 0 12px;
+      filter: brightness(100) saturate(100%);
+    }
+  }
+}

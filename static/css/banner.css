@@ -1,0 +1,9 @@
+.banner {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  image-rendering: crisp-edges;
+  border-bottom: 1px solid; }
+
+/*# sourceMappingURL=banner.css.map */
