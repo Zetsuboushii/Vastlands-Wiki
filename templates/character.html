@@ -69,10 +69,12 @@
                             <td>Körpergröße</td>
                             <td>{{ character.height | replace(".", ",") }} m</td>
                         </tr>
+                        {% if character.weight != "0" %}
                         <tr>
                             <td>Gewicht</td>
                             <td>{{ character.weight }} kg</td>
                         </tr>
+                        {% endif %}
                         </tbody>
                     </table>
 
@@ -157,11 +159,9 @@
                             <tr>
                                 <td>Mag</td>
                                 <td>
-                                    <ul>
-                                        {% for like in character.likes | sort %}
-                                            <li>{{ like }}</li>
-                                        {% endfor %}
-                                    </ul>
+                                    {% for like in character.likes | sort %}
+                                        {{ like }}{{ ", " if not loop.last else "" }}
+                                    {% endfor %}
                                 </td>
                             </tr>
                         {% endif %}
@@ -169,11 +169,9 @@
                             <tr>
                                 <td>Mag nicht</td>
                                 <td>
-                                    <ul>
-                                        {% for dislike in character.dislikes | sort %}
-                                            <li>{{ dislike }}</li>
-                                        {% endfor %}
-                                    </ul>
+                                    {% for dislike in character.dislikes | sort %}
+                                        {{ dislike }}{{ ", " if not loop.last else "" }}
+                                    {% endfor %}
                                 </td>
                             </tr>
                         {% endif %}
