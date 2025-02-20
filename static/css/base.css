@@ -40,7 +40,7 @@ body {
 @media only screen and (max-width: 1300px) {
   .page-containter {
     max-width: none;
-    width: 85%; } }
+    width: 95%; } }
 .page {
   position: relative;
   top: -30px;
