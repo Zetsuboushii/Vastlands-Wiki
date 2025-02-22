@@ -18,8 +18,9 @@
             <div class="character-data">
                 <div class="character-data-box">
                     {% set artwork_flag = "artwork" in character.alt_images %}
-                    <img src="{{ g.img_host }}characters/{{ character.name | lower }}{% if artwork_flag %} artwork{% endif %}.png"
-                         alt="">
+                    {% set character_name = character.name | lower | replace(" ", "-") %}
+                    {% set url = g.img_host + "characters/" + character_name %}
+                    <img src="{{ url }}{% if artwork_flag %} artwork{% endif %}.png" alt="">
 
                     <div class="character-data-name"><h1>{{ character.name }} {{ character.surname }}</h1></div>
                     <div class="character-data-title"><h3>{{ character.title }}</h3></div>
@@ -84,16 +85,16 @@
                     <table>
                         <tbody>
                         {% if character.function %}
-                        <tr>
-                            <td>Funktion</td>
-                            <td>
-                                <ul>
-                                    {% for function in character.functions | sort %}
-                                        <li>{{ function }}</li>
-                                    {% endfor %}
-                                </ul>
-                            </td>
-                        </tr>
+                            <tr>
+                                <td>Funktion</td>
+                                <td>
+                                    <ul>
+                                        {% for function in character.functions | sort %}
+                                            <li>{{ function }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </td>
+                            </tr>
                         {% endif %}
                         <tr>
                             <td>Basisklasse</td>
@@ -189,12 +190,6 @@
                             <td>Verbleib</td>
                             <td>{{ character.status }}</td>
                         </tr>
-                        {% if character.alignment %}
-                            <tr>
-                                <td>Gesinnung</td>
-                                <td>{{ character.alignment }}</td>
-                            </tr>
-                        {% endif %}
                         {% if character.relationships %}
                             <tr>
                                 <td>Beziehungen</td>

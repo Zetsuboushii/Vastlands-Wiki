@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Abgrundkirche der Glimmenden Sünde",
+    "central_figure": "Thanatos",
+    "type": "Kult",
+    "content": {
+      "excerpt": "",
+      "sections": [
+      ]
+    }
+  },
+  {
+    "name": "Kinder des Waldes",
+    "central_figure": "Farone",
+    "type": "Anerkannte Glaubensgemeinschaft",
+    "content": {
+      "excerpt": "",
+      "sections": [
+      ]
+    }
+  },
+  {
+    "name": "Kirche der Himmlischen Gerechtigkeit",
+    "central_figure": "Justicia",
+    "type": "Anerkannte Glaubensgemeinschaft",
+    "content": {
+      "excerpt": "",
+      "sections": [
+      ]
+    }
+  },
+  {
+    "name": "Klauen des Hasses",
+    "central_figure": "Malusdur",
+    "type": "Kult",
+    "content": {
+      "excerpt": "",
+      "sections": [
+      ]
+    }
+  },
+  {
+    "name": "Orden der Heilenden Hand",
+    "central_figure": "Hama",
+    "type": "Anerkannte Glaubensgemeinschaft",
+    "content": {
+      "excerpt": "ghsoeg osghsoieh s osgehoih gseoighsoeigs sioehgsoihg soiehg osegosiheoghs  ghso gsoghsoei gse sgh osgh.",
+      "sections": [
+        {
+          "title": "ghesoi gsheoighsoi",
+          "text": "ghsoig seighs ogihsoighsoighsoigs eoigshoighsoegi\nhegoishg seioghsoieghs sis ohgsgshoisehos gs sohgos soghsoi gsoegh gos hgi\nshgosi gpawj pofapv dvhiosi vaüwvj ioifboiscn acai wiao voshoiaishbro vh oashvn coi"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Schicksalsjünger Fortunas",
+    "central_figure": "Fortuna",
+    "type": "Anerkannte Glaubensgemeinschaft",
+    "content": {
+      "excerpt": "",
+      "sections": [
+      ]
+    }
+  }
+]

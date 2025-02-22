@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>{{ entry.name }} | {{ g.site_title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/theologarium.css') }}">
+</head>
+<body>
+
+{% include "banner.html" %}
+
+<div class="page-containter">
+    {% include "header.html" %}
+
+    <div class="page">
+        <div class="theologarium-container">
+            <div class="theologarium-row">
+                {% set example = entry.example | lower | replace(" ", "-") %}
+                {% set url = g.img_host + "characters/" + example + ".png" %}
+                <img src="{{ url }}" alt="">
+                <div class="theologarium-name">
+                    <h1>{{ entry.name }}</h1>
+                </div>
+            </div>
+            <div class="theologarium-row">
+                <div class="theologarium-text-box">
+                    <p>{{ entry.content.excerpt }}</p>
+
+                    <hr>
+
+                    {% for section in entry.content.sections %}
+                        <div class="theologarium-text-heading"><h2>{{ section.title }}</h2></div>
+                        <p>{{ section.text }}</p>
+                        <hr>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

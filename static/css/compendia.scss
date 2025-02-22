@@ -1,0 +1,33 @@
+.compendium-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .compendium-element {
+    margin: 10px;
+    width: 300px;
+    height: auto;
+    text-align: justify;
+
+    button {
+      position: relative;
+      z-index: 1;
+      background-image: url('/static/ui/name-backdrop-3.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: transparent;
+      background-position-y: 2px;
+      border: none;
+      height: 70px;
+      width: 300px;
+      color: white;
+      font-family: "Grenze Gotisch";
+      font-size: 24px;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

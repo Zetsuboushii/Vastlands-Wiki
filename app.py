@@ -20,13 +20,13 @@ def before_request():
 
     g.categories = {
         "Charaktere": "characters",
-        "Kompendien": "compendium"
+        "Kompendien": "compendia",
     }
 
     apex_domain = "zetsuboushii.site/"
     image_subdomain = "https://images."
-    g.img_host = image_subdomain + apex_domain + "/dnd/"
-    g.img_host_resized = image_subdomain + apex_domain + "/resized/dnd/"
+    g.img_host = image_subdomain + apex_domain + "dnd/"
+    g.img_host_resized = image_subdomain + apex_domain + "resized/dnd/"
 
     g.random_banner = random.randint(1, 9)
 
@@ -38,6 +38,8 @@ def load_from_json(filename):
 
 characters_list = load_from_json("characters")
 news_list = load_from_json("news")
+compendium_list = load_from_json("compendia")
+
 
 @app.route('/')
 def index():
@@ -49,7 +51,6 @@ def index():
             birthday_day, birthday_month, _ = map(int, data['birthday'].split('.'))
 
             current_day = date.today()
-            print(current_day.day, current_day.month)
             if f"{birthday_day:02}" == f"{current_day.day:02}" and f"{birthday_month:02}" == f"{current_day.month:02}":
                 birthday_characters.append(data)
 
@@ -99,9 +100,50 @@ def character(character_name):
 
     return render_template('character.html', character=character_data)
 
+
 @app.route('/compendium/')
-def compendium():
-    return render_template('compendia.html')
+def compendia():
+    return render_template('compendia.html', compendium_list=compendium_list)
+
+
+@app.route('/compendium/<compendium_name>')
+def compendium(compendium_name):
+    compendium_data = None
+
+    for compendium in compendium_list:
+        if compendium['name'].lower() == compendium_name.lower():
+            compendium_data = load_from_json(compendium['name'].lower())
+            break
+
+    if compendium_name == "gentarium":
+        for race in compendium_data:
+            for character in characters_list:
+                if character["race"] == race["name"]:
+                    race["example"] = character["name"]
+
+    return render_template('compendium.html', compendium_name=compendium_name, compendium=compendium_data)
+
+
+@app.route('/compendium/<compendium_name>/<entry_name>')
+def compendium_entry(compendium_name, entry_name):
+    entry = None
+
+    for entry_json in load_from_json(compendium_name):
+        temp_name = entry_json['name'].lower()
+        temp_name = temp_name.replace(" ", "-")
+        if temp_name == entry_name:
+            entry = entry_json
+
+    match compendium_name:
+        case "theologarium":
+            return render_template('theologarium.html', entry=entry)
+        case "gentarium":
+            for character in characters_list:
+                if character["race"] == entry_name.capitalize():
+                    entry["example"] = character["name"]
+            return render_template('gentarium.html', entry=entry)
+        case "linguarium":
+            return render_template('linguarium.html', entry=entry)
 
 
 if __name__ == '__main__':
