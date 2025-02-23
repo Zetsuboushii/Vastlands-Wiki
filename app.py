@@ -39,6 +39,7 @@ def load_from_json(filename):
 characters_list = load_from_json("characters")
 news_list = load_from_json("news")
 compendium_list = load_from_json("compendia")
+calendar_list = load_from_json("calendar")
 
 
 @app.route('/')
@@ -56,7 +57,8 @@ def index():
 
     rand_char = random.choice(characters_list)
 
-    return render_template('index.html', birthday_characters=birthday_characters, news=news_list, rand_char=rand_char)
+    return render_template('index.html', birthday_characters=birthday_characters, news=news_list, rand_char=rand_char,
+                           holidays=calendar_list, characters=characters_list)
 
 
 @app.route('/characters/')
@@ -144,6 +146,17 @@ def compendium_entry(compendium_name, entry_name):
             return render_template('gentarium.html', entry=entry)
         case "linguarium":
             return render_template('linguarium.html', entry=entry)
+
+
+@app.route('/holidays/<holiday_name>')
+def holidays(holiday_name):
+    entry = None
+
+    for entry_json in calendar_list:
+        if entry_json['name'].lower().replace(" ", "-") == holiday_name.lower().replace(" ", "-"):
+            entry = entry_json
+
+    return render_template('holidays.html', entry=entry)
 
 
 if __name__ == '__main__':

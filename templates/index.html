@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/characters.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/calendar.css') }}">
 </head>
 <body>
 
@@ -59,7 +60,10 @@
                 <div class="home-right-text">
                     <div class="home-right-text-box">
                         <div class="home-right-text-heading"><h2>Kalender</h2></div>
-                        <p>gsejogsi seoig jsoegseoig sheighshgsegi shis h shi hh sih ih osghs oi osigh soigh soighos</p>
+
+                        {% include "calendar.html" %}
+
+
                     </div>
 
                     {% if birthday_characters %}

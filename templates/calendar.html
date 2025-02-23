@@ -1,0 +1,209 @@
+<div id="calendar-widget">
+    <div id="calendar-header">
+        <button id="prev-month">&laquo;</button>
+        <span id="month-year"></span>
+        <button id="next-month">&raquo;</button>
+    </div>
+    <table id="calendar-table">
+        <thead>
+        <tr>
+            {% for day in g.lore_days %}
+                <th>{{ day[:3] }}</th>
+            {% endfor %}
+        </tr>
+        </thead>
+        <tbody id="calendar-body">
+        </tbody>
+    </table>
+    <div id="tooltip"></div>
+</div>
+
+<script>
+    const loreDays = {{ g.lore_days|tojson }};
+    const loreMonths = {{ g.lore_months|tojson }};
+    const holidays = {{ holidays|tojson }};
+    const characters = {{ characters|tojson }};
+
+    const monthLengths = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+    const ingameDateParts = "{{ g.ingame_date }}".split(".");
+    const currentDay = parseInt(ingameDateParts[0]);
+    const currentMonth = parseInt(ingameDateParts[1]);
+    const currentYear = parseInt(ingameDateParts[2]);
+
+    let displayMonth = currentMonth;
+    let displayYear = currentYear;
+
+    function getDayOfWeek(year, month, day) {
+        let days = 0;
+        for (let y = 1; y < year; y++) {
+            days += 365;
+        }
+        for (let m = 1; m < month; m++) {
+            days += monthLengths[m - 1];
+        }
+        days += (day - 1);
+        return days % 7;
+    }
+
+    let hideTimeout = null;
+
+    function showTooltipForCell(cell, items) {
+        if (hideTimeout) {
+            clearTimeout(hideTimeout);
+            hideTimeout = null;
+        }
+
+        const tooltip = document.getElementById('tooltip');
+        tooltip.innerHTML = items.join("<br>");
+        tooltip.style.display = "block";
+
+        const container = document.getElementById('calendar-widget');
+        const containerRect = container.getBoundingClientRect();
+        const cellRect = cell.getBoundingClientRect();
+
+        const tooltipRect = tooltip.getBoundingClientRect();
+
+        let left = (cellRect.left - containerRect.left)
+            + (cellRect.width / 2)
+            - (tooltipRect.width / 2);
+
+        let top = (cellRect.bottom - containerRect.top);
+
+        top += 2;
+
+        if (left < 0) {
+            left = 0;
+        }
+        if (left + tooltipRect.width > containerRect.width) {
+            left = containerRect.width - tooltipRect.width;
+        }
+
+        tooltip.style.position = "absolute";
+        tooltip.style.left = left + "px";
+        tooltip.style.top = top - 2 + "px";
+    }
+
+    function hideTooltip() {
+        hideTimeout = setTimeout(() => {
+            document.getElementById('tooltip').style.display = "none";
+        }, 700);
+    }
+
+    const tooltipElement = document.getElementById('tooltip');
+    tooltipElement.addEventListener('mouseenter', () => {
+        if (hideTimeout) {
+            clearTimeout(hideTimeout);
+            hideTimeout = null;
+        }
+    });
+    tooltipElement.addEventListener('mouseleave', hideTooltip);
+
+    function renderCalendar(year, month) {
+        const calendarBody = document.getElementById('calendar-body');
+        calendarBody.innerHTML = "";
+
+        document.getElementById('month-year').textContent = loreMonths[month - 1] + " " + year;
+        const firstWeekday = getDayOfWeek(year, month, 1);
+        const daysInMonth = monthLengths[month - 1];
+
+        let row = document.createElement('tr');
+        for (let i = 0; i < firstWeekday; i++) {
+            let cell = document.createElement('td');
+            row.appendChild(cell);
+        }
+
+        for (let day = 1; day <= daysInMonth; day++) {
+            if ((firstWeekday + day - 1) % 7 === 0 && day !== 1) {
+                calendarBody.appendChild(row);
+                row = document.createElement('tr');
+            }
+            let cell = document.createElement('td');
+
+            let dayDiv = document.createElement('div');
+            dayDiv.className = "day-number";
+            dayDiv.textContent = day;
+            cell.appendChild(dayDiv);
+
+            let iconContainer = document.createElement('div');
+            iconContainer.className = "icons";
+
+            let tooltipItems = [];
+
+            let matchingHolidays = holidays.filter(holiday => {
+                const parts = holiday.date.split(".");
+                return parseInt(parts[0]) === day && parseInt(parts[1]) === month;
+            });
+            if (matchingHolidays.length > 0) {
+                let holidayIcon = document.createElement('a');
+                holidayIcon.href = "#";
+                holidayIcon.className = "holiday-icon";
+                holidayIcon.textContent = "🎊";
+                iconContainer.appendChild(holidayIcon);
+                cell.classList.add("holiday");
+
+                matchingHolidays.forEach(h => {
+                    tooltipItems.push(`<a href="/holidays/${h.name.toLowerCase().replace(" ", "-")}" class="tooltip-item" data-type="holiday">` + h.name + '</a>');
+                });
+            }
+
+            let matchingBirthdays = characters.filter(ch => {
+                if (!ch.birthday) return false;
+                const parts = ch.birthday.split(".");
+                return parseInt(parts[0]) === day && parseInt(parts[1]) === month;
+            });
+            if (matchingBirthdays.length > 0) {
+                let birthdayIcon = document.createElement('a');
+                birthdayIcon.href = "#";
+                birthdayIcon.className = "birthday-icon";
+                birthdayIcon.textContent = "🎂";
+                iconContainer.appendChild(birthdayIcon);
+                cell.classList.add("birthday");
+
+                matchingBirthdays.forEach(ch => {
+                    tooltipItems.push(`<a href="/characters/${ch.name.toLowerCase().replace(" ", "-")}" class="tooltip-item" data-type="birthday">` + ch.name + '</a>');
+                });
+            }
+
+            if (iconContainer.children.length > 0) {
+                cell.appendChild(iconContainer);
+                cell.addEventListener('mouseenter', () => {
+                    showTooltipForCell(cell, tooltipItems);
+                });
+                cell.addEventListener('click', () => {
+                    showTooltipForCell(cell, tooltipItems);
+                });
+                cell.addEventListener('mouseleave', hideTooltip);
+            }
+
+            if (year === currentYear && month === currentMonth && day === currentDay) {
+                cell.classList.add("today");
+            }
+            row.appendChild(cell);
+        }
+        while (row.children.length < 7) {
+            let cell = document.createElement('td');
+            row.appendChild(cell);
+        }
+        calendarBody.appendChild(row);
+    }
+
+    document.getElementById('prev-month').addEventListener('click', () => {
+        displayMonth--;
+        if (displayMonth < 1) {
+            displayMonth = 12;
+            displayYear--;
+        }
+        renderCalendar(displayYear, displayMonth);
+    });
+    document.getElementById('next-month').addEventListener('click', () => {
+        displayMonth++;
+        if (displayMonth > 12) {
+            displayMonth = 1;
+            displayYear++;
+        }
+        renderCalendar(displayYear, displayMonth);
+    });
+
+    renderCalendar(displayYear, displayMonth);
+</script>
