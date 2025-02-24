@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Avila | Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../../static/css/base.css">
+    <link rel="stylesheet" href="../../static/css/character.css">
+</head>
+<body>
+
+<link rel="stylesheet" href="../../static/css/banner.css">
+<link rel="shortcut icon" href="../../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../../static/ui/banner-2.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../../static/imgs/logo.png" alt="" class="logo" style="left: -40px; position: relative">
+            <a href="../../index.html" style="left: -40px; position: relative">Tome of the Vastlands</a>
+            <sub style="left: -40px; position: relative">v3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('../index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('../../places/index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('../../compendium/index.html')">Kompendien</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        <div class="character-container">
+            <div class="character-data">
+                <div class="character-data-box">
+                    
+                    
+                    
+                    <img src="https://images.zetsuboushii.site/dnd/characters/avila.png" alt="">
+
+                    <div class="character-data-name"><h1>Avila </h1></div>
+                    <div class="character-data-title"><h3>Immerfrohe Verkupplerin</h3></div>
+
+                    <div class="character-data-field-title"><h4>Informationen zur Person</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Rasse</td>
+                            <td>Halbelfen</td>
+                        </tr>
+                        <tr>
+                            <td>Geschlecht</td>
+                            <td>
+                                weiblich
+                            </td>
+                        </tr>
+                        
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Maße</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Körpergröße</td>
+                            <td>1,68 m</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Gewicht</td>
+                                <td>58 kg</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Profession</h4></div>
+                    <table>
+                        <tbody>
+                        
+                        <tr>
+                            <td>Basisklasse</td>
+                            <td>Hohefürst</td>
+                        </tr>
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Weitere Informationen</h4></div>
+                    <table>
+                        <tbody>
+                        
+                            <tr>
+                                <td>Geburtsort</td>
+                                <td>Tempel der Liebe</td>
+                            </tr>
+                            
+                        
+                        
+                            <tr>
+                                <td>Gesinnung</td>
+                                <td>CG</td>
+                            </tr>
+                        
+                        
+                            <tr>
+                                <td>Zugehörigkeit</td>
+                                <td>
+                                    <ul>
+                                        
+                                            <li>3. Generation der Hohefürsten</li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        
+                            <tr>
+                                <td>Mag</td>
+                                <td>
+                                    
+                                        Flauschige Tiere, 
+                                    
+                                        Freunden eine Freude machen, 
+                                    
+                                        Harmonie, 
+                                    
+                                        Kamillentee, 
+                                    
+                                        Pärchen beobachten, 
+                                    
+                                        Rosen
+                                    
+                                </td>
+                            </tr>
+                        
+                        
+                            <tr>
+                                <td>Mag nicht</td>
+                                <td>
+                                    
+                                        Pöbelnde Personen, 
+                                    
+                                        Streit
+                                    
+                                </td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Persönlicher Status</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Verbleib</td>
+                            <td>am Leben</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Beziehungen</td>
+                                <td>
+                                    <ul>
+                                        
+                                            <li>Farone <small>(Gute Freundin)</small></li>
+                                        
+                                            <li>Fortuna <small>(Gute Freundin)</small></li>
+                                        
+                                            <li>Il-Vernia <small>(gute Freundin)</small></li>
+                                        
+                                            <li>Mudo <small>(Freund)</small></li>
+                                        
+                                            <li>Rai <small>(Bester Freund)</small></li>
+                                        
+                                            <li>Scarlet <small>(gute Freundin)</small></li>
+                                        
+                                            <li>Thanatos <small>(guter Freund)</small></li>
+                                        
+                                            <li>U-Ranos <small>(Freund)</small></li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="character-text">
+                <div class="character-text-box">
+                    <p>Diese liebreizende Hohefürstin nimmt ihre Aufgabe als Verkupplerin etwas zu ernst. Eigentlich sollte sie auf Anliegen reagieren, die ihr in ihrem Tempel beigetragen werden, jedoch ist Avila die meiste Zeit über auf Reisen in ganz Faergria, um potenziellen Pärchen den “Schubser in die richtige Richtung” zu geben. Spricht man sie auf diese Obzession an, wird sie schnell beleidigt.</p>
+
+                    <hr>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

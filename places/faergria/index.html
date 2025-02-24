@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Faergria | Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../../static/css/base.css">
+    <link rel="stylesheet" href="../../static/css/character.css">
+</head>
+<body>
+
+<link rel="stylesheet" href="../../static/css/banner.css">
+<link rel="shortcut icon" href="../../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../../static/ui/banner-3.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../../static/imgs/logo.png" alt="" class="logo" style="left: -40px; position: relative">
+            <a href="../../index.html" style="left: -40px; position: relative">Tome of the Vastlands</a>
+            <sub style="left: -40px; position: relative">v3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('../../characters/index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('../index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('../../compendium/index.html')">Kompendien</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        <div class="character-container">
+            <div class="character-data">
+                <div class="character-data-box">
+                    
+                    
+                    <img src="https://images.zetsuboushii.site/dnd/crests/faergria-crest.png" alt="">
+
+                    <div class="character-data-name"><h1>Faergria</h1></div>
+                    
+                        <div class="character-data-title"><h3>Vereinigtes Königreich von</h3></div>
+                    
+
+                    <div class="character-data-field-title"><h4>Allgemeine Informationen</h4></div>
+                    <table>
+                        <tbody>
+                        
+                        
+                            <tr>
+                                <td>In Landessprache</td>
+                                <td>Fairgrius <i>Farbige Erde</i></td>
+                            </tr>
+                        
+                        <tr>
+                            <td>Art des Ortes</td>
+                            <td>Königreich</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Hauptstadt</td>
+                                <td>Aegir</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Standort</h4></div>
+                    <table>
+                        <tbody>
+                        
+                            <tr>
+                                <td>Liegt in</td>
+                                <td>
+                                    
+                                    <a href="../terralithia/index.html">
+                                        Terralithia
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                        
+                            <tr>
+                                <td>Enthält</td>
+                                <td>
+                                    
+                                        
+                                        <a href="../adrestia/index.html">
+                                            Adrestia, 
+                                        </a>
+                                    
+                                        
+                                        <a href="../escrigria/index.html">
+                                            Escrigria, 
+                                        </a>
+                                    
+                                        
+                                        <a href="../farodris/index.html">
+                                            Farodris, 
+                                        </a>
+                                    
+                                        
+                                        <a href="../hal/index.html">
+                                            Hal, 
+                                        </a>
+                                    
+                                        
+                                        <a href="../hydracion/index.html">
+                                            Hydracion, 
+                                        </a>
+                                    
+                                        
+                                        <a href="../inidal/index.html">
+                                            Inidal, 
+                                        </a>
+                                    
+                                        
+                                        <a href="../kluirm/index.html">
+                                            Kluirm, 
+                                        </a>
+                                    
+                                        
+                                        <a href="../thaugrien/index.html">
+                                            Thaugrien, 
+                                        </a>
+                                    
+                                        
+                                        <a href="../tinorland/index.html">
+                                            Tinorland
+                                        </a>
+                                    
+                                </td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+
+                    
+                        <div class="character-data-field-title"><h4>Politik</h4></div>
+                        <table>
+                            <tbody>
+                            
+                                <tr>
+                                    <td>Regierungsform</td>
+                                    <td>Konstitutionelle Monarchie</td>
+                                </tr>
+                            
+                            
+                                <tr>
+                                    <td>Regierende Person</td>
+                                    <td>Narcian, <small>(Prinz)</small></td>
+                                </tr>
+                            
+                            </tbody>
+                        </table>
+                    
+                </div>
+            </div>
+
+            <div class="character-text">
+                <div class="character-text-box">
+                    
+                        <p>Das Vereinigte Königreich von Faergria befindet sich auf dem gleichnamigen Kontinent. Faergria teilt sich auf in neun,                               in                               ihren                               Kulturen,                               Sprachen,                               Flora,                               Fauna,                               und                               Geografie                               verschiedenen,                               Herrschaftsgebiete,                               ehemalige                               alleinstehende                               Ländereien,                               nun                               vereinigt                               unter                               dem                               Königshaus                               in                               Aegir,                               der                               königlichen                               Hauptstadt                               des                               Reiches.                               </p>
+
+                        <hr>
+
+                        
+                            <div class="character-text-heading"><h2>Geschichte</h2></div>
+                            <p>Im Jahr 394 nach der Vereinigung unter König Gunthard dem Gütigen erstrahlte das Vereinigte Königreich Faergria in einer                                           komplexen                                           Mischung                                           aus                                           Tradition                                           und                                           Fortschritt.                                           König                                           Gunthard,                                           in                                           Weisheit                                           und                                           Güte                                           regierend,                                           hatte                                           es                                           geschafft,                                           die                                           verschiedenen                                           Gebiete                                           zu                                           einem                                           harmonischen                                           Ganzen                                           zu                                           vereinen.                                           Jedes                                           Gebiet,                                           so                                           verschieden                                           wie                                           die                                           Sterne                                           am                                           Nachthimmel,                                           trägt                                           seinen                                           Teil                                           zur                                           reichen                                           Kultur                                           und                                           Geschichte                                           dieses                                           Landes                                           bei.                                           </p>
+                            <hr>
+                        
+                            <div class="character-text-heading"><h2>Länder Faergrias</h2></div>
+                            <p>Im Westen des Kontinents liegt das Kurfürstentum Thaugrien, ein Land, das von der strengen und gerechten Hand der Kirche                                           Justicias                                           regiert                                           wird.                                           Die                                           konservativen                                           Traditionen                                           und                                           die                                           tiefe                                           Frömmigkeit                                           der                                           Bewohner                                           prägen                                           das                                           Land.                                           Im                                           Norden,                                           im                                           Großherzogtum                                           Escrigria,                                           erstrecken                                           sich                                           endlose                                           Schneelande,                                           die                                           nur                                           von                                           den                                           härtesten                                           und                                           mutigsten                                           Seelen                                           bewohnt                                           werden.                                           Weiter                                           östlich                                           erheben                                           sich                                           die                                           majestätischen                                           Berge                                           des                                           Herzogtums                                           Kluirm,                                           die                                           Heimat                                           der                                           Zwerge,                                           die                                           für                                           ihre                                           meisterhafte                                           Handwerkskunst                                           und                                           ihre                                           robusten                                           Festungen                                           bekannt                                           sind,                                           tief                                           im                                           Herzen                                           der                                           Berge                                           verborgen.                                           Im                                           östlichen                                           Teil                                           Faergrias                                           befinden                                           sich                                           die                                           zentralen                                           Königslande                                           Adrestia,                                           das                                           fortschrittlichste                                           und                                           modernste                                           Land                                           Faergrias.                                           Südlich                                           davon                                           liegt                                           das                                           diverse                                           Großherzogtum                                           Tinorland,                                           ein                                           Land                                           mit                                           einer                                           reichen                                           und                                           vielschichtigen                                           Geschichte,                                           das                                           viele                                           verschiedene                                           Kulturen                                           und                                           Völker                                           beherbergt.                                           Weiter                                           westlich                                           davon                                           liegt                                           der                                           große                                           Wald                                           des                                           Fürstentums                                           Farodris,                                           Heimat                                           der                                           Elfen,                                           ein                                           Ort                                           von                                           unberührter                                           natürlicher                                           Schönheit                                           und                                           uralter                                           Weisheit.                                           Am                                           westlichsten                                           Punkt                                           Ost-Faergrias                                           befindet                                           sich                                           das                                           Kurfürstentum                                           Hal.                                           Diese                                           Halbinsel                                           ist                                           ein                                           Zentrum                                           der                                           Wissenschaft                                           und                                           Magie,                                           wo                                           Gelehrte                                           und                                           Magier                                           sich                                           unermüdlich                                           in                                           der                                           Erforschung                                           der                                           Geheimnisse                                           des                                           Universums                                           vertiefen.                                           Schließlich                                           erhebt                                           sich                                           im                                           äußersten                                           Norden                                           das                                           Herzogtum                                           Hydracion,                                           ein                                           Land                                           der                                           Gletscher                                           und                                           Heimat                                           der                                           Drakonier,                                           die                                           mit                                           ihrer                                           uralten                                           Weisheit                                           und                                           Macht                                           tiefen                                           Respekt                                           in                                           ganz                                           Faergria                                           genießen.                                           </p>
+                            <hr>
+                        
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

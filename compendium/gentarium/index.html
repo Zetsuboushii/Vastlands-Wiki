@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Gentarium | Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../../static/css/base.css">
+    <link rel="stylesheet" href="../../static/css/compendium.css">
+
+</head>
+<body>
+
+<link rel="stylesheet" href="../../static/css/banner.css">
+<link rel="shortcut icon" href="../../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../../static/ui/banner-6.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../../static/imgs/logo.png" alt="" class="logo" style="left: -40px; position: relative">
+            <a href="../../index.html" style="left: -40px; position: relative">Tome of the Vastlands</a>
+            <sub style="left: -40px; position: relative">v3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('../../characters/index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('../../places/index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('../index.html')">Kompendien</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        <div class="themed-container">
+            
+                <div class="themed-element">
+                    
+                        
+                        
+                            
+                            
+                        
+                        <a href="drakonier/index.html">
+                            <img src="https://images.zetsuboushii.site/resized/dnd/characters/thithrazk.png" alt="">
+                        </a>
+                        <form action="drakonier/index.html">
+                            <button type="submit">Drakonier</button>
+                        </form>
+                    
+                </div>
+            
+                <div class="themed-element">
+                    
+                        
+                        
+                            
+                            
+                        
+                        <a href="d%C3%A4monen/index.html">
+                            <img src="https://images.zetsuboushii.site/resized/dnd/characters/scarlet.png" alt="">
+                        </a>
+                        <form action="d%C3%A4monen/index.html">
+                            <button type="submit">Dämonen</button>
+                        </form>
+                    
+                </div>
+            
+                <div class="themed-element">
+                    
+                        
+                        
+                            
+                            
+                        
+                        <a href="elfen/index.html">
+                            <img src="https://images.zetsuboushii.site/resized/dnd/characters/volo.png" alt="">
+                        </a>
+                        <form action="elfen/index.html">
+                            <button type="submit">Elfen</button>
+                        </form>
+                    
+                </div>
+            
+                <div class="themed-element">
+                    
+                        
+                        
+                            
+                            
+                        
+                        <a href="engel/index.html">
+                            <img src="https://images.zetsuboushii.site/resized/dnd/characters/u-ranos.png" alt="">
+                        </a>
+                        <form action="engel/index.html">
+                            <button type="submit">Engel</button>
+                        </form>
+                    
+                </div>
+            
+                <div class="themed-element">
+                    
+                        
+                        
+                            
+                            
+                        
+                        <a href="g%C3%B6tter/index.html">
+                            <img src="https://images.zetsuboushii.site/resized/dnd/characters/thanatos.png" alt="">
+                        </a>
+                        <form action="g%C3%B6tter/index.html">
+                            <button type="submit">Götter</button>
+                        </form>
+                    
+                </div>
+            
+                <div class="themed-element">
+                    
+                        
+                        
+                            
+                            
+                        
+                        <a href="halbelfen/index.html">
+                            <img src="https://images.zetsuboushii.site/resized/dnd/characters/zetta.png" alt="">
+                        </a>
+                        <form action="halbelfen/index.html">
+                            <button type="submit">Halbelfen</button>
+                        </form>
+                    
+                </div>
+            
+                <div class="themed-element">
+                    
+                        
+                        
+                            
+                            
+                        
+                        <a href="menschen/index.html">
+                            <img src="https://images.zetsuboushii.site/resized/dnd/characters/viktor.png" alt="">
+                        </a>
+                        <form action="menschen/index.html">
+                            <button type="submit">Menschen</button>
+                        </form>
+                    
+                </div>
+            
+                <div class="themed-element">
+                    
+                        
+                        
+                            
+                            
+                        
+                        <a href="pikori/index.html">
+                            <img src="https://images.zetsuboushii.site/resized/dnd/characters/ouin.png" alt="">
+                        </a>
+                        <form action="pikori/index.html">
+                            <button type="submit">Pikori</button>
+                        </form>
+                    
+                </div>
+            
+                <div class="themed-element">
+                    
+                        
+                        
+                            
+                            
+                        
+                        <a href="schutzgeister/index.html">
+                            <img src="https://images.zetsuboushii.site/resized/dnd/characters/kaen.png" alt="">
+                        </a>
+                        <form action="schutzgeister/index.html">
+                            <button type="submit">Schutzgeister</button>
+                        </form>
+                    
+                </div>
+            
+                <div class="themed-element">
+                    
+                        
+                        
+                            
+                            
+                        
+                        <a href="tieflinge/index.html">
+                            <img src="https://images.zetsuboushii.site/resized/dnd/characters/wirkung.png" alt="">
+                        </a>
+                        <form action="tieflinge/index.html">
+                            <button type="submit">Tieflinge</button>
+                        </form>
+                    
+                </div>
+            
+                <div class="themed-element">
+                    
+                        
+                        
+                            
+                            
+                        
+                        <a href="zwerge/index.html">
+                            <img src="https://images.zetsuboushii.site/resized/dnd/characters/olaf.png" alt="">
+                        </a>
+                        <form action="zwerge/index.html">
+                            <button type="submit">Zwerge</button>
+                        </form>
+                    
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

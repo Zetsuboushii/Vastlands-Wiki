@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Klamm des Tellius | Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../../static/css/base.css">
+    <link rel="stylesheet" href="../../static/css/character.css">
+</head>
+<body>
+
+<link rel="stylesheet" href="../../static/css/banner.css">
+<link rel="shortcut icon" href="../../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../../static/ui/banner-3.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../../static/imgs/logo.png" alt="" class="logo" style="left: -40px; position: relative">
+            <a href="../../index.html" style="left: -40px; position: relative">Tome of the Vastlands</a>
+            <sub style="left: -40px; position: relative">v3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('../../characters/index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('../index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('../../compendium/index.html')">Kompendien</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        <div class="character-container">
+            <div class="character-data">
+                <div class="character-data-box">
+                    
+                    
+                    <img src="https://images.zetsuboushii.site/dnd/crests/klamm-des-tellius-crest.png" alt="">
+
+                    <div class="character-data-name"><h1>Klamm des Tellius</h1></div>
+                    
+
+                    <div class="character-data-field-title"><h4>Allgemeine Informationen</h4></div>
+                    <table>
+                        <tbody>
+                        
+                        
+                            <tr>
+                                <td>In Landessprache</td>
+                                <td>Teliaskluf <i>Tellius-Schlucht</i></td>
+                            </tr>
+                        
+                        <tr>
+                            <td>Art des Ortes</td>
+                            <td>Region</td>
+                        </tr>
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Standort</h4></div>
+                    <table>
+                        <tbody>
+                        
+                            <tr>
+                                <td>Liegt in</td>
+                                <td>
+                                    
+                                    <a href="../thaugrien/index.html">
+                                        Thaugrien
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                        
+                            <tr>
+                                <td>Enthält</td>
+                                <td>
+                                    
+                                        
+                                        <a href="../alte-zollburg/index.html">
+                                            Alte Zollburg, 
+                                        </a>
+                                    
+                                        
+                                        <a href="../anwesen-von-lysander/index.html">
+                                            Anwesen von Lysander, 
+                                        </a>
+                                    
+                                        
+                                        <a href="../gro%C3%9Fe-zwergenbr%C3%BCcke/index.html">
+                                            Große Zwergenbrücke, 
+                                        </a>
+                                    
+                                        
+                                        <a href="../meerestempel/index.html">
+                                            Meerestempel, 
+                                        </a>
+                                    
+                                        
+                                        <a href="../tellius/index.html">
+                                            Tellius, 
+                                        </a>
+                                    
+                                        
+                                        <a href="../tunnel-des-aufstiegs/index.html">
+                                            Tunnel des Aufstiegs, 
+                                        </a>
+                                    
+                                        
+                                        <a href="../tunnel-zum-meeresreich/index.html">
+                                            Tunnel zum Meeresreich, 
+                                        </a>
+                                    
+                                        
+                                        <a href="../versunkene-burg/index.html">
+                                            Versunkene Burg, 
+                                        </a>
+                                    
+                                        
+                                        <a href="../wassertempel/index.html">
+                                            Wassertempel
+                                        </a>
+                                    
+                                </td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+
+                    
+                </div>
+            </div>
+
+            <div class="character-text">
+                <div class="character-text-box">
+                    
+                        <p>Der Tellius versorgt Thaugrien mit Wasser und füllt den Tarporsee im Landesinneren mit reinem Quellwasser. Das                                                       Bestreiten                                                       der                                                       Klamm                                                       kann                                                       sich                                                       als                                                       Kraftakt                                                       herausstellen,                                                       gerade                                                       wenn                                                       es                                                       regnet.                                                       </p>
+
+                        <hr>
+
+                        
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

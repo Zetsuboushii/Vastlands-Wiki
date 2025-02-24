@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>O-Gall | Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../../static/css/base.css">
+    <link rel="stylesheet" href="../../static/css/character.css">
+</head>
+<body>
+
+<link rel="stylesheet" href="../../static/css/banner.css">
+<link rel="shortcut icon" href="../../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../../static/ui/banner-1.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../../static/imgs/logo.png" alt="" class="logo" style="left: -40px; position: relative">
+            <a href="../../index.html" style="left: -40px; position: relative">Tome of the Vastlands</a>
+            <sub style="left: -40px; position: relative">v3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('../index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('../../places/index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('../../compendium/index.html')">Kompendien</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        <div class="character-container">
+            <div class="character-data">
+                <div class="character-data-box">
+                    
+                    
+                    
+                    <img src="https://images.zetsuboushii.site/dnd/characters/o-gall.png" alt="">
+
+                    <div class="character-data-name"><h1>O-Gall </h1></div>
+                    <div class="character-data-title"><h3>Himmlische Bestrafung</h3></div>
+
+                    <div class="character-data-field-title"><h4>Informationen zur Person</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Rasse</td>
+                            <td>Engel</td>
+                        </tr>
+                        <tr>
+                            <td>Geschlecht</td>
+                            <td>
+                                männlich
+                            </td>
+                        </tr>
+                        
+                        
+                            <tr>
+                                <td>Aliase</td>
+                                <td>
+                                    <ul>
+                                        
+                                            <li>Galli <small>(U-Ranos)</small></li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Maße</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Körpergröße</td>
+                            <td>1,89 m</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Gewicht</td>
+                                <td>90 kg</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Profession</h4></div>
+                    <table>
+                        <tbody>
+                        
+                        <tr>
+                            <td>Basisklasse</td>
+                            <td>Recke</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Subklassen</td>
+                                <td>
+                                    <ul>
+                                        
+                                            <li>Heroe</li>
+                                        
+                                            <li>Paladin</li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Weitere Informationen</h4></div>
+                    <table>
+                        <tbody>
+                        
+                            <tr>
+                                <td>Geburtsort</td>
+                                <td>Hof der Gerechtigkeit</td>
+                            </tr>
+                            
+                        
+                        
+                            <tr>
+                                <td>Gesinnung</td>
+                                <td>LG</td>
+                            </tr>
+                        
+                        
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Persönlicher Status</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Verbleib</td>
+                            <td>verstorben</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Beziehungen</td>
+                                <td>
+                                    <ul>
+                                        
+                                            <li>Alcuin <small>(Onkel)</small></li>
+                                        
+                                            <li>Ar-Merer <small>(Bruder)</small></li>
+                                        
+                                            <li>En-Troad <small>(Bruder)</small></li>
+                                        
+                                            <li>Fortuna <small>(Tante)</small></li>
+                                        
+                                            <li>Il-Vernia <small>(Schwester)</small></li>
+                                        
+                                            <li>Inoro <small>(Vorgänger)</small></li>
+                                        
+                                            <li>Justicia <small>(Mutter)</small></li>
+                                        
+                                            <li>Meilira <small>(Cousine)</small></li>
+                                        
+                                            <li>U-Ranos <small>(Bruder)</small></li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="character-text">
+                <div class="character-text-box">
+                    <p>O-Gall ist ein Engel und ein Recke der Justicia, bekannt als die “Himmlische Bestrafung”. Seine Rolle am Hof der Gerechtigkeit und in der Welt von Terralithia ist es, Ungerechtigkeiten zu bekämpfen und für das Gute zu streiten. Als offensiver Schwertkämpfer, der selten Emotionen zeigt, trägt er die Verantwortung, die Ungerechtigkeiten, die er sieht, direkt und ohne Zögern zu bekämpfen. O-Gall ist nicht nur für seine Kampfkunst bekannt, sondern auch für seine Entschlossenheit, das Richtige zu tun, selbst wenn es bedeutet, hart und unnachgiebig zu handeln. Er wird zu einem Symbol der Macht und der Konsequenz in Justicias Streben nach Gleichgewicht.</p>
+
+                    <hr>
+
+                    
+                        <div class="character-text-heading"><h2>Herkunft und Waffe der Gerechtigkeit</h2></div>
+                        <p>O-Gall ist einer der fünf Kinder von Justicia, die aus den Splittern der Seele ihres verstorbenen Sohnes Inoro geformt wurden. Er und seine Geschwister, darunter En-Troad, Il-Vernia, Ar-Merer und U-Ranos, tragen jeweils Teile der Seele Inoros in sich und stellen eine Fortsetzung seines Erbes dar. O-Gall wuchs am Hof der Gerechtigkeit auf und wurde früh in die Prinzipien der Gerechtigkeit eingeführt. Seine Aufgabe war klar: ungerechte Handlungen zu stoppen und das Licht der Gerechtigkeit in die dunklen Ecken von Terralithia zu tragen. Von Justicia selbst erhielt er eine besondere Klinge, die die konzentrierte Ungerechtigkeit der Welt enthielt und bannte. Diese Waffe war nicht nur ein Werkzeug des Kampfes, sondern auch ein Symbol seiner Pflicht. Die Klinge ermöglichte es ihm, das Unrecht zu erkennen und zu eliminieren, und sie wurde ein Teil seiner Identität als Recke der Gerechtigkeit. Obwohl O-Gall die Klinge mit Stolz trug, bedeutete dies auch, dass er eine große Verantwortung trug, da die Macht, die ihm verliehen wurde, auch eine ständige Last war.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Kämpfer und Recke der Justicia</h2></div>
+                        <p>O-Gall war als offensiver Kämpfer bekannt, der in die Schlacht zog, um das Unrecht zu bekämpfen. Seine Fähigkeit, sich im Kampf durchzusetzen, war unbestreitbar. Trotz seiner Kampfkraft griff er jedoch nicht gern zu seiner Waffe. Er sah die Gewalt immer als letztes Mittel, das eingesetzt werden musste, wenn alle anderen Wege gescheitert waren. Dennoch hatte er sich im Laufe der Jahre daran gewöhnt, seine Klinge zu ziehen, da die Ungerechtigkeit, die sich auf der Elementarebene ausbreitete, oft keine Alternative ließ. Sein Ziel war es, mit der Macht der Gerechtigkeit schnell und effizient zu handeln, und dabei zeigte er eine beeindruckende Zielstrebigkeit. O-Gall zog oft ohne direkte Anweisung von Justicia in den Kampf. Er wollte seine Mutter nicht mit seinen Aufgaben belasten und sah es als seine Pflicht an, Ungerechtigkeit zu bekämpfen, ohne dass sie ihm dazu die Erlaubnis erteilen musste. Diese Eigeninitiative war sowohl eine Stärke als auch eine Schwäche von O-Gall. Während seine Entschlossenheit und sein unerschütterlicher Wille ihm den Respekt vieler einbrachten, sorgte sein Vorgehen auch für Spannungen innerhalb der Familie. Besonders seine Geschwister En-Troad und Il-Vernia fanden, dass O-Gall in seinem Vorgehen manchmal zu grob war. Sie sahen in ihm jemanden, der die Balance zwischen Strenge und Nachsicht oft zugunsten der Gewalt verschob, während sie selbst versuchten, die Dinge anders zu lösen.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Persönliche Eigenschaften und Konflikte</h2></div>
+                        <p>O-Gall zeigt selten Emotionen, aber das bedeutet nicht, dass er keine starken Gefühle hat. Stattdessen ist er ein eher stiller Charakter, der seine Gedanken und Gefühle für sich behält. Er fühlt eine immense Verantwortung gegenüber seiner Mutter Justicia und ist bereit, alles zu tun, um ihr Vermächtnis zu schützen. Seine Entscheidungen sind oft harsch, da er glaubt, dass die Gerechtigkeit in manchen Situationen eine harte Hand verlangt. O-Gall ist jedoch nicht unbeweglich; es gab Zeiten, in denen er in die Verteidigung statt in den Angriff überging, besonders wenn das Leben von Unschuldigen auf dem Spiel stand. Dieser Wechsel zwischen Angreifer und Beschützer ist eine der Facetten, die ihn auszeichnen. Er tut häufig seine Meinungen und Ansichten kund, auch wenn er dies in einer knappen und direkten Art tut. Seine Aufrichtigkeit hat ihm sowohl Respekt als auch Konflikte eingebracht, da seine Worte oft unbequeme Wahrheiten enthielten. Unter seinen Geschwistern wurde O-Gall für seine Standhaftigkeit respektiert, doch manchmal war er der Grund für Uneinigkeit, da seine Methode, Dinge anzupacken, nicht immer auf Verständnis stieß. Besonders mit En-Troad, der mehr auf Harmonie bedacht war, kam es immer wieder zu Differenzen, wenn es darum ging, wie man Ungerechtigkeit am besten bekämpft. Trotz seiner oftmals rauen Herangehensweise zeigte O-Gall tiefen Respekt vor den Prinzipien der Gerechtigkeit, wie sie seine Mutter Justicia lehrte. Für ihn verkörpert die Gerechtigkeit eine unbändige Kraft, die sich ihren Weg bahnt, egal welche Hindernisse sich ihr in den Weg stellen. Sein Titel, “Himmlische Bestrafung”, spiegelt diesen Glauben wider, dass das Unrecht mit aller Konsequenz bekämpft werden muss, um Platz für das Gute zu schaffen.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>O-Galls Ende und sein Vermächtnis</h2></div>
+                        <p>O-Gall starb, wie auch seine Geschwister En-Troad und Il-Vernia, bei der Verteidigung des Hofes der Gerechtigkeit gegen die finstere Hohefürstin Invidianoir. Gemeinsam mit seinen Geschwistern stellte er sich der Bedrohung und kämpfte bis zum bitteren Ende, um Justicia und das, was sie aufgebaut hatte, zu schützen. Sein Tod war heroisch und voller Entschlossenheit, und er nahm die Herausforderung an, ohne zu zögern oder Angst zu zeigen. Sein Opfer war Ausdruck seiner tiefen Überzeugung, dass das Unrecht um jeden Preis bekämpft werden muss. Sein Vermächtnis lebt in den Geschichten weiter, die über ihn erzählt werden. O-Gall steht als Symbol für die Stärke und die Konsequenz der Gerechtigkeit. Die Menschen und Götter, die über sein Leben und seine Taten sprechen, erinnern sich an seine unbeugsame Natur und daran, dass er niemals zurückwich, wenn er Ungerechtigkeit sah. Für viele ist O-Gall der Inbegriff des gerechten Zorns – ein Krieger, der seine Stärke einsetzte, um anderen zu dienen und das Böse zu besiegen, das die Welt bedrohte. Trotz seiner Härte bleibt er ein Vorbild für Entschlossenheit und den Willen, für das Richtige zu kämpfen, auch wenn der Preis dafür hoch ist.</p>
+                        <hr>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

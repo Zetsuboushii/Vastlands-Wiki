@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Schutzgeister | Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../../../static/css/base.css">
+    <link rel="stylesheet" href="../../../static/css/theologarium.css">
+</head>
+<body>
+
+<link rel="stylesheet" href="../../../static/css/banner.css">
+<link rel="shortcut icon" href="../../../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../../../static/ui/banner-9.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../../../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../../../static/imgs/logo.png" alt="" class="logo" style="left: -40px; position: relative">
+            <a href="../../../index.html" style="left: -40px; position: relative">Tome of the Vastlands</a>
+            <sub style="left: -40px; position: relative">v3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('../../../characters/index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('../../../places/index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('../../index.html')">Kompendien</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        <div class="theologarium-container">
+            <div class="theologarium-row">
+                
+                
+                <img src="https://images.zetsuboushii.site/dnd/characters/kaen.png" alt="">
+                <div class="theologarium-name">
+                    <h1>Schutzgeister</h1>
+                </div>
+            </div>
+            <div class="theologarium-row">
+                <div class="theologarium-text-box">
+                    <p>Schutzgeister sind mystische Wesen, die im Verborgenen leben und über ihre Schützlinge wachen. Diese geisterhaften Beschützer können tierische Gestalten annehmen, wobei sie oft als Füchse, Wölfe, Eulen oder andere Tiere erscheinen, die mit Weisheit und Stärke assoziiert werden.
+ Schutzgeister sind in der Lage, sich unsichtbar zu machen und nur in den Momenten sichtbar zu werden, in denen ihre Hilfe am dringendsten benötigt wird. Sie verkörpern die Essenz der Natur und der spirituellen Welt und sind tief verbunden mit den Kräften des Gleichgewichts und der Harmonie. Die Anwesenheit eines Schutzgeistes bringt oft Glück und Schutz, indem er Gefahren abwehrt und die Intuition und Fähigkeiten seines Schützlings stärkt. Diese Wesen handeln stets im Einklang mit den natürlichen Gesetzen und sind bekannt für ihre Loyalität und Weisheit, die sie denen schenken, die sie beschützen. Die Verbindung zwischen einem Schutzgeist und seinem Schützling ist stark und kann ein Leben lang halten, wobei sie oft als stille Wächter agieren, die unermüdlich über das Wohl ihres Schützlings wachen. Schutzgeister sind unsterblich.</p>
+
+                    <hr>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

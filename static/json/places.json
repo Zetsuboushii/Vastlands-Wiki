@@ -1,0 +1,2205 @@
+[
+  {
+    "name": "Animus",
+    "placetype": "Elementarebene",
+    "content": {
+      "excerpt": "Animus ist die Elementarebene der Götter der Welt. Sie ist unterteilt in den Hof der Gerechtigkeit, das Reich Justicias,                   der                   See                   des                   Schicksals,                   das                   Reich                   Fortunas,                   das                   Gebirge                   der                   Sünde,                   das                   Reich                   Thanatos                   ’,                   der                   Garten                   der                   Magie,                   das                   Reich                   Farones,                   und                   der                   Ofen                   der                   Seelen.                   ",
+      "sections": [
+      ]
+    },
+    "contains": [
+      {
+        "name": "Garten der Magie",
+        "placetype": "Götterreich",
+        "content": {
+          "excerpt": "In diesen Gefilden herrscht die Göttin Farone. Auf ihren heiligen Garten ist sie sehr stolz.",
+          "sections": [
+          ]
+        }
+      },
+      {
+        "name": "Gebirge der Sünde",
+        "placetype": "Götterreich",
+        "content": {
+          "excerpt": "In diesen Gefilden herrscht der Gott Thanatos. In dieser herbstlichen Gebirgsregion wird Wert Ruhe und Entspannung                               gelegt.                               ",
+          "sections": [
+          ]
+        }
+      },
+      {
+        "name": "Hof der Gerechtigkeit",
+        "placetype": "Götterreich",
+        "content": {
+          "excerpt": "In diesen Gefilden herrscht die Göttin Justicia. Inmitten der hohen Mauern werden über Seelen nach dem Tod entschieden.",
+          "sections": [
+          ]
+        }
+      },
+      {
+        "name": "Ofen der Seelen",
+        "placetype": "Götterreich",
+        "content": {
+          "excerpt": "Diese aschenen Lande galten Geburtsort vielzahliger Seelen.",
+          "sections": [
+          ]
+        }
+      },
+      {
+        "name": "See des Schicksals",
+        "placetype": "Götterreich",
+        "content": {
+          "excerpt": "In diesen Gefilden herrscht die Göttin Fortuna. Auf der stillen Wasserebene lässt sich fokussiert arbeiten.",
+          "sections": [
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Tenebris",
+    "placetype": "Elementarebene",
+    "content": {
+      "excerpt": "Tenebris wird im Allgemeinen als die “Unterwelt” bezeichnet. In dieser Elementarebene herrscht eine erdrückende                   Dunkelheit.                   Zu                   Faergria                   gehört                   hier                   das                   Herzogtum                   Martkath.                   ",
+      "sections": [
+      ]
+    },
+    "contains": [
+      {
+        "name": "Markath",
+        "subtitle": "Herzogtum",
+        "natlang": [
+          "Markáthos",
+          "Edler Markt"
+        ],
+        "placetype": "Territorialstaat",
+        "system": "",
+        "leader": [
+          "Horizont",
+          "Herzog"
+        ],
+        "capital": "Llurthargothr",
+        "content": {
+          "excerpt": "",
+          "sections": [
+          ]
+        },
+        "contains": [
+          {
+            "name": "Llurthargothr",
+            "natlang": [
+              "Lyrthargóthros",
+              "Glänzender Gesang der Morgendämmerung"
+            ],
+            "demography": 22584,
+            "placetype": "Hauptstadt",
+            "system": "",
+            "leader": [
+              "Grenze",
+              "Gouvernante"
+            ],
+            "content": {
+              "excerpt": "",
+              "sections": [
+              ]
+            }
+          },
+          {
+            "name": "Undraridor",
+            "natlang": [
+              "Ondrarídōn",
+              "Land der Wunder"
+            ],
+            "demography": 6230,
+            "placetype": "Stadt",
+            "content": {
+              "excerpt": "",
+              "sections": [
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Terralithia",
+    "placetype": "Elementarebene",
+    "content": {
+      "excerpt": "Terralithia ist die irdische Elementarebene, im Gemeinen auch “Erde” genannt. Auf ihr befindet sich unter anderem das                   Vereinigte                   Königreich                   Faergria.                   ",
+      "sections": [
+      ]
+    },
+    "contains": [
+      {
+        "name": "Faergria",
+        "subtitle": "Vereinigtes Königreich von",
+        "natlang": [
+          "Fairgrius",
+          "Farbige Erde"
+        ],
+        "placetype": "Königreich",
+        "system": "Konstitutionelle Monarchie",
+        "leader": [
+          "Narcian",
+          "Prinz"
+        ],
+        "capital": "Aegir",
+        "content": {
+          "excerpt": "Das Vereinigte Königreich von Faergria befindet sich auf dem gleichnamigen Kontinent. Faergria teilt sich auf in neun,                               in                               ihren                               Kulturen,                               Sprachen,                               Flora,                               Fauna,                               und                               Geografie                               verschiedenen,                               Herrschaftsgebiete,                               ehemalige                               alleinstehende                               Ländereien,                               nun                               vereinigt                               unter                               dem                               Königshaus                               in                               Aegir,                               der                               königlichen                               Hauptstadt                               des                               Reiches.                               ",
+          "sections": [
+            {
+              "title": "Geschichte",
+              "text": "Im Jahr 394 nach der Vereinigung unter König Gunthard dem Gütigen erstrahlte das Vereinigte Königreich Faergria in einer                                           komplexen                                           Mischung                                           aus                                           Tradition                                           und                                           Fortschritt.                                           König                                           Gunthard,                                           in                                           Weisheit                                           und                                           Güte                                           regierend,                                           hatte                                           es                                           geschafft,                                           die                                           verschiedenen                                           Gebiete                                           zu                                           einem                                           harmonischen                                           Ganzen                                           zu                                           vereinen.                                           Jedes                                           Gebiet,                                           so                                           verschieden                                           wie                                           die                                           Sterne                                           am                                           Nachthimmel,                                           trägt                                           seinen                                           Teil                                           zur                                           reichen                                           Kultur                                           und                                           Geschichte                                           dieses                                           Landes                                           bei.                                           "
+            },
+            {
+              "title": "Länder Faergrias",
+              "text": "Im Westen des Kontinents liegt das Kurfürstentum Thaugrien, ein Land, das von der strengen und gerechten Hand der Kirche                                           Justicias                                           regiert                                           wird.                                           Die                                           konservativen                                           Traditionen                                           und                                           die                                           tiefe                                           Frömmigkeit                                           der                                           Bewohner                                           prägen                                           das                                           Land.                                           Im                                           Norden,                                           im                                           Großherzogtum                                           Escrigria,                                           erstrecken                                           sich                                           endlose                                           Schneelande,                                           die                                           nur                                           von                                           den                                           härtesten                                           und                                           mutigsten                                           Seelen                                           bewohnt                                           werden.                                           Weiter                                           östlich                                           erheben                                           sich                                           die                                           majestätischen                                           Berge                                           des                                           Herzogtums                                           Kluirm,                                           die                                           Heimat                                           der                                           Zwerge,                                           die                                           für                                           ihre                                           meisterhafte                                           Handwerkskunst                                           und                                           ihre                                           robusten                                           Festungen                                           bekannt                                           sind,                                           tief                                           im                                           Herzen                                           der                                           Berge                                           verborgen.                                           Im                                           östlichen                                           Teil                                           Faergrias                                           befinden                                           sich                                           die                                           zentralen                                           Königslande                                           Adrestia,                                           das                                           fortschrittlichste                                           und                                           modernste                                           Land                                           Faergrias.                                           Südlich                                           davon                                           liegt                                           das                                           diverse                                           Großherzogtum                                           Tinorland,                                           ein                                           Land                                           mit                                           einer                                           reichen                                           und                                           vielschichtigen                                           Geschichte,                                           das                                           viele                                           verschiedene                                           Kulturen                                           und                                           Völker                                           beherbergt.                                           Weiter                                           westlich                                           davon                                           liegt                                           der                                           große                                           Wald                                           des                                           Fürstentums                                           Farodris,                                           Heimat                                           der                                           Elfen,                                           ein                                           Ort                                           von                                           unberührter                                           natürlicher                                           Schönheit                                           und                                           uralter                                           Weisheit.                                           Am                                           westlichsten                                           Punkt                                           Ost-Faergrias                                           befindet                                           sich                                           das                                           Kurfürstentum                                           Hal.                                           Diese                                           Halbinsel                                           ist                                           ein                                           Zentrum                                           der                                           Wissenschaft                                           und                                           Magie,                                           wo                                           Gelehrte                                           und                                           Magier                                           sich                                           unermüdlich                                           in                                           der                                           Erforschung                                           der                                           Geheimnisse                                           des                                           Universums                                           vertiefen.                                           Schließlich                                           erhebt                                           sich                                           im                                           äußersten                                           Norden                                           das                                           Herzogtum                                           Hydracion,                                           ein                                           Land                                           der                                           Gletscher                                           und                                           Heimat                                           der                                           Drakonier,                                           die                                           mit                                           ihrer                                           uralten                                           Weisheit                                           und                                           Macht                                           tiefen                                           Respekt                                           in                                           ganz                                           Faergria                                           genießen.                                           "
+            }
+          ]
+        },
+        "contains": [
+          {
+            "name": "Adrestia",
+            "subtitle": "Königslande",
+            "natlang": [
+              "Aþrastis",
+              "Der Unausweichliche"
+            ],
+            "placetype": "Territorialstaat",
+            "system": "Königliche Provinz",
+            "leader": [
+              "Narcian",
+              "Prinz"
+            ],
+            "capital": "Aegir",
+            "content": {
+              "excerpt": "Adrestia ist das fortschrittliche Land des Königs von Faergria. Die Hauptstadt ist Aegir. Der Aegir fließt durch viele                                           Regionen                                           Adrestias.                                           Viele                                           Legenden                                           und                                           Mythen                                           ranken                                           sich                                           um                                           die                                           Ländereien                                           in                                           Adrestia.                                           ",
+              "sections": [
+              ]
+            },
+            "contains": [
+              {
+                "name": "Adrestia-Ebene",
+                "natlang": [
+                  "Aþrastis-Waddjus",
+                  "Ebene der Unausweichlichen"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "Das Zentrum Adrestias bildet die Adrestia-Ebene. Diese weitläufige Region grenzt an viele weitere Adrestias, sowie an                                                       das                                                       benachbarte                                                       Tinorland.                                                       ",
+                  "sections": [
+                  ]
+                }
+              },
+              {
+                "name": "Halbinsel der Verbannten",
+                "natlang": [
+                  "Anaskadi-Gairnaba",
+                  "Halbinsel der Verbannten"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "Diese Halbinsel wurde früher als Gefängnisinsel Adrestias genutzt.",
+                  "sections": [
+                  ]
+                },
+                "contains": [
+                  {
+                    "name": "Drakensumpf",
+                    "placetype": "Sumpf",
+                    "content": {
+                      "excerpt": "In diesem uralten Sumpfland sollen sich riesige Schätze befinden. Dennoch kehren nur die allerwenigsten zurück, die                                                                   danach                                                                   suchen.                                                                   Wer                                                                   sich                                                                   in                                                                   diesen                                                                   dunklen                                                                   Sumpf                                                                   wagt,                                                                   könnte                                                                   dennoch                                                                   mit                                                                   sagenumwobenen                                                                   Relikten                                                                   sich                                                                   Ruhm                                                                   und                                                                   Ehre                                                                   erkaufen.                                                                   ",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Niddarvellir",
+                    "supplement": "Stadt der Verbannten",
+                    "natlang": [
+                      "Nirdwaddjus",
+                      "Tiefe Felder"
+                    ],
+                    "demography": 296,
+                    "placetype": "Stadt",
+                    "system": "",
+                    "leader": [
+                      "Iddra",
+                      "Oberhaupt"
+                    ],
+                    "content": {
+                      "excerpt": "Niddarvellir gilt als kriminellste Stadt Faergrias. Nicht weiter verwunderlich, da diese alte verlassene Stadt von den                                                                   aus                                                                   Faergria                                                                   Verbannten                                                                   in                                                                   Eigenregie                                                                   geführt                                                                   wird.                                                                   Das                                                                   Oberhaupt                                                                   der                                                                   Stadt                                                                   ist                                                                   außerhalb                                                                   Niddarvellirs                                                                   nicht                                                                   bekannt.                                                                   Dennoch                                                                   munkelt                                                                   man,                                                                   dass                                                                   es                                                                   sich                                                                   um                                                                   eine                                                                   mysteriöse                                                                   Frau                                                                   mit                                                                   großem                                                                   Reichtum                                                                   handeln                                                                   soll,                                                                   die                                                                   innerhalb                                                                   der                                                                   Stadt                                                                   mit                                                                   viel                                                                   Respekt                                                                   geachtet                                                                   wird.                                                                   ",
+                      "sections": [
+                        {
+                          "title": "Schattenmarkt",
+                          "text": "Ein kleines Markthaus in der Mitte der Stadt, in dem allerlei dubiose Ware angeboten wird. Im Keller befindet sich ein                                                                               eher                                                                               ungewöhnliches                                                                               Heiligtum.                                                                               "
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Schattenschwarzmarkt",
+                    "placetype": "Tempel",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "Königsklippen",
+                "natlang": [
+                  "þiudans-Klippus",
+                  "Klippen des Königs"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "Die Königsklippen gelten seit jeher als die Geburtsstätte neuer Zeitalter. Innerhalb der Königsfamilie gibt es ein                                                       Ritus,                                                       dass                                                       der                                                       künftige                                                       Herrscher                                                       Faergrias                                                       den                                                       Aegir                                                       hinabreist,                                                       um                                                       sich                                                       mit                                                       der                                                       Natur                                                       seines                                                       Landes                                                       auseinander                                                       zu                                                       setzen.                                                       ",
+                  "sections": [
+                  ]
+                },
+                "contains": [
+                  {
+                    "name": "Aegir",
+                    "supplement": "Stadt der Krone",
+                    "natlang": [
+                      "Ahwafaurds",
+                      "Wasserfürst"
+                    ],
+                    "demography": 38726,
+                    "placetype": "Hauptstadt",
+                    "system": "",
+                    "leader": [
+                      "Narcian",
+                      "Prinz"
+                    ],
+                    "content": {
+                      "excerpt": "Diese historische Stadt hält sich nicht zurück, sich selbst neu zu erfinden. Technologische und gesellschaftliche                                                                   Neuheiten                                                                   treten                                                                   mit                                                                   ziemlicher                                                                   Sicherheit                                                                   hier                                                                   zuerst                                                                   auf.                                                                   Erst                                                                   kürzlich                                                                   wurde                                                                   eine                                                                   Teststrecke                                                                   mitsamt                                                                   zwei                                                                   Stationen                                                                   für                                                                   eine                                                                   neuartige                                                                   Fortbewegungsmethode                                                                   errichtet,                                                                   die                                                                   bei                                                                   den                                                                   Bewohnern                                                                   auf                                                                   gute                                                                   Kritiken                                                                   stößt.                                                                   ",
+                      "sections": [
+                        {
+                          "title": "Schloss Aegir",
+                          "text": "Im großen, hellen Schloss Aegirs residiert die Köngisfamilie, deren Berater und Garde. Hin und wieder lädt die Königin                                                                               Gäste                                                                               aus                                                                               ganz                                                                               Faergria                                                                               zu                                                                               riesigen                                                                               Banketten                                                                               und                                                                               Bällen,                                                                               obwohl                                                                               ihr                                                                               Gatte,                                                                               der                                                                               König,                                                                               recht                                                                               wenig                                                                               damit                                                                               anfangen                                                                               kann.                                                                               "
+                        },
+                        {
+                          "title": "Adrestianische Eisenbahn",
+                          "text": ""
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "Mondblickinsel",
+                "natlang": [
+                  "Menôskiuggwē",
+                  "Mondspiegelinsel"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "Seltsame antike Ruinen deuten auf einen Kult hin, der dem Mond gehuldigt hat…",
+                  "sections": [
+                  ]
+                }
+              },
+              {
+                "name": "Nördliche Irrwälder",
+                "natlang": [
+                  "Norðwaírwandjan-Wiggōs",
+                  "Nördliche Wälder des Umherirrens"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "Die Bewohner Adrestias meiden diese Wälder trotz seiner reichhaltigen Flora und Fauna, die bei Alchemisten und Jägern                                                       sehr                                                       beliebt                                                       ist.                                                       ",
+                  "sections": [
+                  ]
+                }
+              },
+              {
+                "name": "Plateau der Legenden",
+                "natlang": [
+                  "Baurgsluihaplaþau",
+                  "Hochebene des Ruhms"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "In den versteckten Winkeln dieses Plateaus finden sich die Ruinen eines kleinen Volkes, das seit der Gründung des                                                       Königshauses                                                       Adrestias                                                       im                                                       Dienste                                                       der                                                       Königsfamilie                                                       steht                                                       und                                                       laut                                                       Legenden                                                       einst                                                       eine                                                       mächtige                                                       Klinge                                                       gehütet                                                       haben                                                       soll.                                                       Bevor                                                       die                                                       Drachen                                                       in                                                       Faergria                                                       vernichtet                                                       wurden,                                                       sollen                                                       es                                                       einst                                                       hier                                                       Drachenritter                                                       gegeben                                                       haben,                                                       die                                                       diese                                                       Giganten                                                       gezähmt                                                       haben.                                                       ",
+                  "sections": [
+                  ]
+                },
+                "contains": [
+                  {
+                    "name": "Orrin",
+                    "natlang": [
+                      "Hrotins",
+                      "Der Ruhmreiche"
+                    ],
+                    "demography": 0,
+                    "placetype": "Dorf",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Schwerthain",
+                    "placetype": "Hain",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "Regenfalltal",
+                "natlang": [
+                  "Rignidala",
+                  "Tal des Regens"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "An den Gebirgswänden dieser Senke bleiben Wolken häufig hängen, weshalb es hier sehr viel regnet. Auch ohne Anbindung an                                                       den                                                       Aegir,                                                       ist                                                       das                                                       Wasser                                                       in                                                       dieser                                                       Region                                                       nicht                                                       knapp.                                                       Die                                                       hohe                                                       Feuchtigkeit                                                       ermöglicht                                                       es                                                       vielen                                                       Pflanzen                                                       und                                                       Tieren                                                       prächtig                                                       zu                                                       gedeihen.                                                       ",
+                  "sections": [
+                  ]
+                },
+                "contains": [
+                  {
+                    "name": "Renais",
+                    "supplement": "Literarische Gärberstadt",
+                    "natlang": [
+                      "Rains",
+                      "Grenzland"
+                    ],
+                    "demography": 2863,
+                    "placetype": "Stadt",
+                    "content": {
+                      "excerpt": "Diese Gärberstadt fertigt die besten Felle, Pelze und Leder aus ganz Faergria an. Das Königshaus legt großen Wert auf                                                                   Regionalität                                                                   ihrer                                                                   Gewänder.                                                                   ",
+                      "sections": [
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "See der Jugend",
+                "natlang": [
+                  "Jugga-Mara",
+                  "See der Jugend"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "Inmitten dieses Sees am Ende eines Zweiges des Aegir soll angeblich der sagenumwobene Jungbrunnen verborgen sein. Viele                                                       glauben,                                                       dass                                                       dies                                                       bloß                                                       ein                                                       Gerücht                                                       ist,                                                       dennoch                                                       wird                                                       immer                                                       mal                                                       wieder                                                       schon                                                       seit                                                       Äonen                                                       ein                                                       wunderschöner                                                       junger                                                       Mann                                                       gesichtet,                                                       wodurch                                                       sich                                                       dieses                                                       Gerücht                                                       hartnäckig                                                       hält.                                                       ",
+                  "sections": [
+                  ]
+                }
+              },
+              {
+                "name": "Sonnenscheininsel",
+                "natlang": [
+                  "Saugwēinsai",
+                  "Insel des Sonnenlichts"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "Seltsame antike Ruinen deuten auf einen Kult hin, der der Sonne gehuldigt hat…",
+                  "sections": [
+                  ]
+                }
+              },
+              {
+                "name": "Sternstaubinsel",
+                "natlang": [
+                  "Stairnustauhsai",
+                  "Insel des Sternenstaubs"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "Seltsame antike Ruinen deuten auf einen Kult hin, der den Sternen gehuldigt hat…",
+                  "sections": [
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "name": "Escrigria",
+            "subtitle": "Großherzogtum",
+            "supplement": "Verschneiter Norden",
+            "natlang": [
+              "Æscregrīeg",
+              "Escheninsel"
+            ],
+            "placetype": "Territorialstaat",
+            "system": "Großherzogtum",
+            "leader": [
+              "Stephan",
+              "Großherzog"
+            ],
+            "capital": "Nordholm",
+            "content": {
+              "excerpt": "In diesen verwinkelten Hinterlanden im Norden Faergrias treibt man sich ungern draußen herum. Die Authorität, die die                                           Hauptstadt                                           Nordholm                                           ausstrahlt,                                           ist                                           in                                           ganz                                           Faergria                                           bekannt.                                           ",
+              "sections": [
+              ]
+            },
+            "contains": [
+              {
+                "name": "Einsame Schneefelder",
+                "natlang": [
+                  "Anspyrende Snāwfelda",
+                  "Einsame Schneefelder"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "Ein weitläufiges Gebiet im Zentrum Escrigrias. Die Sichtweite ist meist auf einige wenige Meter beschränkt, da das                                                       gesamte                                                       Jahr                                                       über                                                       ein                                                       starker                                                       Schneesturm                                                       wütet.                                                       Nordholm                                                       dient                                                       hierbei                                                       mit                                                       dem                                                       dunklen                                                       Gemäuer                                                       des                                                       Schneebergfrieds                                                       als                                                       eine                                                       Bastion                                                       vor                                                       den                                                       harten                                                       Wintern.                                                       ",
+                  "sections": [
+                  ]
+                },
+                "contains": [
+                  {
+                    "name": "Nordholm",
+                    "supplement": "Bastion des Winters",
+                    "natlang": [
+                      "Norðham",
+                      "Nördliche Siedlung"
+                    ],
+                    "demography": 21052,
+                    "placetype": "Hauptstadt",
+                    "system": "",
+                    "leader": [
+                      "Stephan",
+                      "Großherzog"
+                    ],
+                    "content": {
+                      "excerpt": "Eine trostlose Stadt, in der der eiskalte Wind des Winters durch die Straßen fegt.",
+                      "sections": [
+                        {
+                          "title": "Schneebergfried",
+                          "text": "Ein massives Bauwerk, die als sicherste Festung Faergrias gilt."
+                        },
+                        {
+                          "title": "Adrians Schatzkiste",
+                          "text": "Eine behagliche Taverne, die für ihren gastfreundlichen Besitzer bekannt ist."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Westlicher Wachposten von Nordholm",
+                    "placetype": "Festung",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Östlicher Wachposten von Nordholm",
+                    "placetype": "Festung",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "Eisige Hinterlande",
+                "natlang": [
+                  "Īsig Hinderland",
+                  "Eisige Hinterlande"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "Der “Hals Escrigrias”. Über die Ebene zwischen den Gebirgen im Westen und Osten pfeift ein eisiger Wind aus Norden.",
+                  "sections": [
+                  ]
+                },
+                "contains": [
+                  {
+                    "name": "Stephans Hütte",
+                    "placetype": "Hütte",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "Erithyl-Berge",
+                "natlang": [
+                  "Eorðþȳfel-Muntas",
+                  "Erdhügel-Berge"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "",
+                  "sections": [
+                  ]
+                }
+              },
+              {
+                "name": "Fröstelnde Moräne",
+                "natlang": [
+                  "Hrīmende Mōran",
+                  "Frostige Moräne"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "",
+                  "sections": [
+                  ]
+                },
+                "contains": [
+                  {
+                    "name": "Krofenheim",
+                    "natlang": [
+                      "Crofenhām",
+                      "Heim der Krüge"
+                    ],
+                    "demography": 2704,
+                    "placetype": "Stadt",
+                    "content": {
+                      "excerpt": "Eine versteckte kleine Hafenstadt am Rande Escrigrias. Durch seine Lage sind die Grafschaft Hydracion und das Herzogtum                                                                   Kluirm                                                                   feste                                                                   Handelspartner.                                                                   Die                                                                   Abenteurergilde                                                                   lockt                                                                   seit                                                                   vielen                                                                   Jahren                                                                   mutige                                                                   Abenteurer                                                                   ihre                                                                   Gemäuer.                                                                   ",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Krofenheim-Brücke",
+                    "placetype": "Brücke",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "Kronen-Schneeberge",
+                "natlang": [
+                  "Crōn-Snāwmuntas",
+                  "Kronen-Schneeberge"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "Dieses steile Gebirge ist beliebt bei Bergsteigern und Sammlern. Es gibt einen recht gut befestigten Pfad zur obersten                                                       Spitze                                                       des                                                       “                                                       Gekrönten                                                       Berges                                                       ”                                                       .                                                       Von                                                       dort                                                       hat                                                       man                                                       eine                                                       phänomenale                                                       Aussicht                                                       über                                                       einen                                                       Großteil                                                       Faergrias.                                                       Auf                                                       dem                                                       Weg                                                       kann                                                       man                                                       Halt                                                       machen                                                       an                                                       einer                                                       mysteriösen                                                       Ruine,                                                       von                                                       der                                                       nicht                                                       bekannt                                                       ist,                                                       wer                                                       sie                                                       erbaut                                                       hat.                                                       Trotz                                                       der                                                       Höhe                                                       treiben                                                       sich                                                       viele                                                       Schneefüchse                                                       umher,                                                       die                                                       friedlich                                                       sind,                                                       solange                                                       man                                                       ihnen                                                       etwas                                                       zu                                                       fressen                                                       gibt.                                                       ",
+                  "sections": [
+                  ]
+                },
+                "contains": [
+                  {
+                    "name": "Gerards Hütte",
+                    "placetype": "Hütte",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Kronenpass",
+                    "placetype": "Bergpass",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Schneespitze",
+                    "placetype": "Schrein",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "Mondscheintal",
+                "natlang": [
+                  "Mōnscīene-Dael",
+                  "Mondscheintal"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "Alle Schaltjahre lässt sich von einem bestimmten aus eine wunderschöne Sicht auf den Mond genießen. Dort wurde vor                                                       langer                                                       Zeit                                                       ein                                                       Kloster                                                       erbaut.                                                       ",
+                  "sections": [
+                  ]
+                },
+                "contains": [
+                  {
+                    "name": "Kloster der Himmlischen Recken",
+                    "placetype": "Ruine",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "Nördliche Eisklippen",
+                "natlang": [
+                  "Norðlīce Īsclyffas",
+                  "Nördliche Eisklippen"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "",
+                  "sections": [
+                  ]
+                }
+              },
+              {
+                "name": "Schneebucht-Archipel",
+                "natlang": [
+                  "Snāwbūhta-Ēaland",
+                  "Schneebucht-Archipel"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "",
+                  "sections": [
+                  ]
+                }
+              },
+              {
+                "name": "Tal der Drei Winde",
+                "natlang": [
+                  "Dæl þāra þrīe Winda",
+                  "Tal der Drei Winde"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "Im Norden des Gebirges des Windes kreuzen sich Winde aus West, Nord und Ost. Daher kann es recht starke                                                       Temperaturschwankungen                                                       geben.                                                       In                                                       den                                                       dichten                                                       Wäldern                                                       ist                                                       es                                                       zudem                                                       oft                                                       neblig.                                                       ",
+                  "sections": [
+                  ]
+                },
+                "contains": [
+                  {
+                    "name": "Diebeslager Escrigria",
+                    "placetype": "Lager",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Schachendorf",
+                    "natlang": [
+                      "Sceacandorþ",
+                      "Dorf des Kampfes"
+                    ],
+                    "demography": 986,
+                    "placetype": "Stadt",
+                    "content": {
+                      "excerpt": "Eine versteckte kleine Hafenstadt am Rande Escrigrias. Durch seine Lage sind die Grafschaft Hydracion und das Herzogtum                                                                   Kluirm                                                                   feste                                                                   Handelspartner.                                                                   Die                                                                   Abenteurergilde                                                                   lockt                                                                   seit                                                                   vielen                                                                   Jahren                                                                   mutige                                                                   Abenteurer                                                                   ihre                                                                   Gemäuer.                                                                   ",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Schicksalspass",
+                    "placetype": "Bergpass",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Tempel am Schicksalspass",
+                    "placetype": "Tempel",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Windige Kirchenruine",
+                    "placetype": "Ruine",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Farodris",
+            "subtitle": "Fürstentum",
+            "supplement": "Wald des Ursprungs",
+            "natlang": [
+              "Pharus Auris",
+              "Leuchtturm des Ohrs"
+            ],
+            "placetype": "Territorialstaat",
+            "system": "Fürstentum",
+            "leader": [
+              "Finnea",
+              "Fürstin"
+            ],
+            "capital": "Yerenas",
+            "content": {
+              "excerpt": "In den diversen dichten Wäldern dieses Landes leben seit Anbeginn der Besiedelung Faergrias die Elfen. Das Zentrum aller                                           Magie                                           Faergrias                                           liegt                                           in                                           der                                           Hauptstadt                                           Yerenas.                                           Farodris                                           steht                                           unter                                           dem                                           Schutze                                           der                                           Göttin                                           Farone.                                           ",
+              "sections": [
+              ]
+            },
+            "contains": [
+              {
+                "name": "Dickicht der Wahrheit",
+                "natlang": [
+                  "Densus Veritatis",
+                  "Dickicht der Wahrheit"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "",
+                  "sections": [
+                  ]
+                },
+                "contains": [
+                  {
+                    "name": "Giftdornsee",
+                    "placetype": "See",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Inidal-Grenzposten",
+                    "placetype": "Festung",
+                    "content": {
+                      "excerpt": "Mutige Grenzpostler beschützer ihre Brüder und Schwestern der Wälder vor Monster aus Inidal.",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Nois Hexenhütte",
+                    "placetype": "Hütte",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Quell der Wünsche",
+                    "placetype": "Tempel",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Yerenas",
+                    "supplement": "Geburtsstadt der Magie",
+                    "natlang": [
+                      "Irenum",
+                      "Ort des Friedens"
+                    ],
+                    "demography": 29104,
+                    "placetype": "Hauptstadt",
+                    "system": "",
+                    "leader": [
+                      "Finnea",
+                      "Fürstin"
+                    ],
+                    "content": {
+                      "excerpt": "Die Hauptstadt der Elfen in Farodris ist für die zahlreichen Schneidereien bekannt. In puncto Mode ist Yerenas der                                                                   Vorreiter                                                                   in                                                                   Faergria.                                                                   Die                                                                   Rüschenkleider                                                                   der                                                                   Damen                                                                   sind                                                                   regionales                                                                   Kulturgut                                                                   geworden.                                                                   ",
+                      "sections": [
+                        {
+                          "title": "Tempel der Manaflamme",
+                          "text": "In diesen Hallen wird seit Anbeginn der Zeit die Manaflamme gehütet."
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "Dämmerwald",
+                "natlang": [
+                  "Silvam Crepusculi",
+                  "Wald der Dämmerung"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "",
+                  "sections": [
+                  ]
+                },
+                "contains": [
+                  {
+                    "name": "Tannivhs Hütte",
+                    "placetype": "Hütte",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Teryvnat",
+                    "natlang": [
+                      "Tervinatum",
+                      "Drei Hügel"
+                    ],
+                    "demography": 232,
+                    "placetype": "Dorf",
+                    "content": {
+                      "excerpt": "Dieses kleine Dorf am Rande der Wälder ist der Eintrittspunkt für viele Reisende in Farodris. An den lokalen                                                                   Marktständen                                                                   lassen                                                                   Besucher                                                                   gerne                                                                   ein                                                                   paar                                                                   Florin                                                                   da.                                                                   ",
+                      "sections": [
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "Katzenaugenbucht",
+                "natlang": [
+                  "Sinus Oculorum Felium",
+                  "Bucht der Katzenaugen"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "",
+                  "sections": [
+                  ]
+                }
+              },
+              {
+                "name": "Nebelhain",
+                "natlang": [
+                  "Lucus Nebularum",
+                  "Hain des Nebels"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "Dieser extrem neblige Abschnitt der Wälder an der Grenze zum Fürstentum Hal sorgt bei Reisenden für große Verwirrung.                                                       Sollte                                                       man                                                       keine                                                       Laterne                                                       oder                                                       Fackel                                                       dabei                                                       haben,                                                       ist                                                       es                                                       besser                                                       direkt                                                       wieder                                                       umzukehren.                                                       ",
+                  "sections": [
+                  ]
+                }
+              },
+              {
+                "name": "Vergessene Wälder",
+                "natlang": [
+                  "Silvae Oblitae",
+                  "Vergessene Wälder"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "Kaum einer traut sich in diese verworrenen Wälder. Es heißt, dass jeder, der sich hier verläuft, seine Existenz                                                       fortwährend                                                       als                                                       untoter                                                       Skelettkrieger                                                       verbringen                                                       muss.                                                       ",
+                  "sections": [
+                  ]
+                },
+                "contains": [
+                  {
+                    "name": "Tempel der Zeit",
+                    "placetype": "Tempel",
+                    "content": {
+                      "excerpt": "An diesem Ort jenseits der Zeit, haust Amlin, die Hohefürstin der Zeit.",
+                      "sections": [
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "Zwillingsbucht",
+                "natlang": [
+                  "Sinus Geminorum",
+                  "Bucht der Zwillinge"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "Zwei nahezu identisch aussehende Inseln, auf denen beide Turmruinen stehen…",
+                  "sections": [
+                  ]
+                },
+                "contains": [
+                  {
+                    "name": "Östliche Turmruine",
+                    "placetype": "Ruine",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Hal",
+            "subtitle": "Fürstentum",
+            "natlang": [
+              "Hault",
+              "Hoch"
+            ],
+            "placetype": "Territorialstaat",
+            "system": "Fürstentum",
+            "leader": [
+              "Solenne",
+              "Fürstin"
+            ],
+            "capital": "Frelia",
+            "content": {
+              "excerpt": "Diese Halbinsel ist das Zentrum des Kommerzes und des Wissens in Faergria. Die Große Bibliothek von Hal in der                                           Hauptstadt                                           Frelia                                           zieht                                           regelmäßig                                           zahlreiche                                           Besucher                                           und                                           Gelehrte                                           an.                                           ",
+              "sections": [
+              ]
+            },
+            "contains": [
+              {
+                "name": "Blühender Fjord",
+                "natlang": [
+                  "Fiort Florissant",
+                  "Blühender Fjord"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "Die farbenfrohe Region im Westen Hals…",
+                  "sections": [
+                  ]
+                },
+                "contains": [
+                  {
+                    "name": "Blütenschloss Frelia",
+                    "placetype": "Schloss",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Frelia",
+                    "supplement": "Bunte Metropole des Handels",
+                    "natlang": [
+                      "Freleie",
+                      "Freies Land"
+                    ],
+                    "demography": 23286,
+                    "placetype": "Hauptstadt",
+                    "system": "",
+                    "leader": [
+                      "Solenne",
+                      "Fürstin"
+                    ],
+                    "content": {
+                      "excerpt": "Eine bunte Metropole, in der nach Wissen und Ästhetik gestrebt wird. Die vielen botanischen Gärten und die Blumenzucht                                                                   wurde                                                                   von                                                                   dem                                                                   Vater                                                                   von                                                                   Kurfürstin                                                                   Solenne                                                                   in                                                                   Auftrag                                                                   gegeben,                                                                   um                                                                   seine                                                                   Gattin                                                                   glücklich                                                                   zu                                                                   machen.                                                                   Dadurch                                                                   hat                                                                   sich                                                                   Frelia                                                                   und                                                                   auch                                                                   Hal                                                                   neben                                                                   der                                                                   Großen                                                                   Bibliothek                                                                   einen                                                                   Namen                                                                   in                                                                   Faergria                                                                   gemacht.                                                                   ",
+                      "sections": [
+                        {
+                          "title": "Blütenschloss Frelia",
+                          "text": "Der Grundriss der Schlossanlage ist angelehnt an eine Blüte. Die vielen Grünflächen und Gärten stehen unter strengster                                                                               Obhut                                                                               von                                                                               Kurfürstin                                                                               Solenne.                                                                               "
+                        },
+                        {
+                          "title": "Große Bibliothek von Hal",
+                          "text": "Die hohen Regale der Bibliothek enthalten äonenaltes Wissen aus der gesamten Welt. Eine sonderbare Frau hütet die alten                                                                               Wälzer                                                                               wie                                                                               ihre                                                                               eigenen                                                                               Kinder                                                                               ;                                                                               und                                                                               das                                                                               seit                                                                               die                                                                               Bibliothek                                                                               erbaut                                                                               wurde.                                                                               Die                                                                               Bibliothek                                                                               steht                                                                               in                                                                               direkter                                                                               Verbindung                                                                               zur                                                                               Magieakademie                                                                               von                                                                               Hal,                                                                               daher                                                                               treiben                                                                               sich                                                                               gerade                                                                               zur                                                                               Klausurenphase                                                                               viele                                                                               Akademiestudenten                                                                               in                                                                               den                                                                               weitläufigen                                                                               Gängen                                                                               herum.                                                                               "
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Taverne an der Südstraße",
+                    "placetype": "Taverne",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "Drachenzahnkap",
+                "natlang": [
+                  "Cap Dent de Dragon",
+                  "Kap Drachenzahn"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "Von den Alpen von Nifl aus erkennbar, zeichnet sich die Form eines Zahns eines Drachen ab. Ob dies im Zusammenhang mit                                                       dem                                                       Drachenkopfsee                                                       aus                                                       dem                                                       Großherzogtum                                                       Tinorland                                                       steht                                                       ?                                                       ",
+                  "sections": [
+                  ]
+                },
+                "contains": [
+                  {
+                    "name": "Lycia",
+                    "natlang": [
+                      "Lucie",
+                      "Lichtes Land"
+                    ],
+                    "demography": 4662,
+                    "placetype": "Stadt",
+                    "content": {
+                      "excerpt": "Durch die optimale Lage am Binnenmeer Faergrias, ist Lycia ein wichtiger Spieler im nationalen Handel geworden. Die                                                                   Hafenstadt                                                                   ist                                                                   stets                                                                   sehr                                                                   beschäftig                                                                   und                                                                   es                                                                   wird                                                                   gesagt,                                                                   die                                                                   Stadt                                                                   “                                                                   schlafe                                                                   nie                                                                   ”                                                                   .                                                                   ",
+                      "sections": [
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "Molida",
+                "natlang": [
+                  "Moillide",
+                  "Sumpfig"
+                ],
+                "placetype": "Insel",
+                "content": {
+                  "excerpt": "Diese große Insel war einst Teil des Festlandes von Hal. Dies ist allerdings bereits sehr lange her. Die Insel ist ein                                                       beliebtes                                                       Ausflugsziel,                                                       da                                                       die                                                       unberührte                                                       Natur                                                       und                                                       spannende                                                       Ruinen                                                       viele                                                       Forschergeister,                                                       aber                                                       auch                                                       Naturliebhaber                                                       anlocken.                                                       Dennoch                                                       hält                                                       sich                                                       die                                                       These,                                                       dass                                                       es                                                       immer                                                       noch                                                       eine                                                       Zivilisation                                                       hier                                                       gibt,                                                       die                                                       sich                                                       nahe                                                       der                                                       Berge                                                       versteckt                                                       hält.                                                       ",
+                  "sections": [
+                  ]
+                }
+              },
+              {
+                "name": "Nördliche Labyrinthinsel",
+                "natlang": [
+                  "Île Labirinte Nordale",
+                  "Nördliche Labyrinthinsel"
+                ],
+                "placetype": "Insel",
+                "content": {
+                  "excerpt": "Eine kleine Insel, auf der ein eigenartiges Labyrinth mit hohen Mauern errichtet steht. Zu welchem Zweck es einst                                                       diente,                                                       ist                                                       unklar.                                                       Es                                                       hegt                                                       einen                                                       mystischen                                                       Schleier                                                       der                                                       Ungewissheit.                                                       Es                                                       hat                                                       eine                                                       unbestreitbare                                                       Ähnlichkeit                                                       zu                                                       dem                                                       Labyrinth                                                       auf                                                       der                                                       Südlichen                                                       Labyrinthinsel.                                                       ",
+                  "sections": [
+                  ]
+                }
+              },
+              {
+                "name": "Obsidian-Grenzlande",
+                "natlang": [
+                  "Marches d’Obsidienne",
+                  "Grenzlande des Obsidians"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "Im Schatten des Zentralgebirges von Hal und der Abgeschnittenheit zu Frelia, ist diese verschlafene Region in den Augen                                                       vieler                                                       recht                                                       unbedeutsam.                                                       Dennoch                                                       wird                                                       jeder                                                       überrascht,                                                       der                                                       einen                                                       Blick                                                       in                                                       die                                                       Ecken                                                       dieser                                                       Region                                                       wirft                                                       …                                                       ",
+                  "sections": [
+                  ]
+                },
+                "contains": [
+                  {
+                    "name": "Banditen-Straßensperre",
+                    "placetype": "Lager",
+                    "content": {
+                      "excerpt": "in Haufen abtrünniger Bewohner Hals haben sich zusammengerauft und eine Straßensperre errichtet. Jeder der hier                                                                   passieren                                                                   will,                                                                   muss                                                                   seine                                                                   Zeche                                                                   zahlen.                                                                   Den                                                                   Bewohnern                                                                   Elips                                                                   und                                                                   vor                                                                   allem                                                                   des                                                                   Klosters                                                                   passt                                                                   dies                                                                   gehörig                                                                   nicht.                                                                   Die                                                                   hier                                                                   ansässigen                                                                   Banditen                                                                   werden                                                                   zudem                                                                   merklich                                                                   skrupelloser.                                                                   ",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Elpis",
+                    "natlang": [
+                      "Espérance",
+                      "Hoffnung"
+                    ],
+                    "demography": 193,
+                    "placetype": "Dorf",
+                    "content": {
+                      "excerpt": "Ein kleines Dorf am Fuße des Zentralgebirges von Hal. Hauptsächlich bekannt dafür ein Wegpunkt für Reisende zwischen Hal                                                                   und                                                                   Thaugrien                                                                   zu                                                                   sein.                                                                   ",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Grabmal der Alten Fürsten",
+                    "placetype": "Grabmal",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Kloster Schicksalsweg",
+                    "placetype": "Kloster",
+                    "content": {
+                      "excerpt": "Nahe der Küste, abseits jeglicher Zivilisation erbaute einst ein frommer Gläubiger der gütigen Göttin des Schicksals,                                                                   Fortuna,                                                                   dieses                                                                   bescheidene                                                                   Kloster.                                                                   Über                                                                   Generationen                                                                   hinweg                                                                   wurde                                                                   es                                                                   gut                                                                   geführt,                                                                   wenn                                                                   die                                                                   Mitgliederanzahl                                                                   jedoch                                                                   auch                                                                   etwas                                                                   mager                                                                   ist.                                                                   Durch                                                                   seine                                                                   neuen                                                                   Schüler                                                                   Carmesine                                                                   und                                                                   Felix,                                                                   ist                                                                   Vater                                                                   Perrotus                                                                   auf                                                                   die                                                                   Idee                                                                   gekommen,                                                                   den                                                                   alten                                                                   Wachturm                                                                   als                                                                   Observatorium                                                                   umzufunktionieren.                                                                   ",
+                      "sections": [
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "Südliche Labyrinthinsel",
+                "natlang": [
+                  "Île Labirinte Sudale",
+                  "Südliche Labyrinthinsel"
+                ],
+                "placetype": "Insel",
+                "content": {
+                  "excerpt": "Eine kleine Insel, auf der ein eigenartiges Labyrinth mit hohen Mauern errichtet steht. Zu welchem Zweck es einst                                                       diente,                                                       ist                                                       unklar.                                                       Es                                                       hegt                                                       einen                                                       mystischen                                                       Schleier                                                       der                                                       Ungewissheit.                                                       Es                                                       hat                                                       eine                                                       unbestreitbare                                                       Ähnlichkeit                                                       zu                                                       dem                                                       Labyrinth                                                       auf                                                       der                                                       Nördlichen                                                       Labyrinthinsel.                                                       ",
+                  "sections": [
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "name": "Hydracion",
+            "subtitle": "Grafschaft",
+            "supplement": "Wiege der Drachen",
+            "placetype": "Territorialstaat",
+            "capital": "Darnax",
+            "content": {
+              "excerpt": "Dieses unliebsame, eisige Land ist die Heimat der Drakonier. Die einzige Stadt ist Darnax.",
+              "sections": [
+              ]
+            },
+            "contains": [
+              {
+                "name": "Drakonische-Eiswüste",
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "Eis, wohin das Auge reicht. Trotz der unliebsamen Temperaturen kann es tagsüber im Sommer durch die reflektierende Sonne                                                       auf                                                       dem                                                       Eis                                                       merklich                                                       warm                                                       werden.                                                       Wer                                                       nach                                                       Darnax                                                       will,                                                       sollte                                                       eher                                                       per                                                       Boot                                                       dort                                                       anlegen                                                       und                                                       den                                                       Fußweg                                                       vermeiden.                                                       ",
+                  "sections": [
+                  ]
+                }
+              },
+              {
+                "name": "Eisschollenarchipel",
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "Eine gigantische zerbrochene Eismasse, die vor der nördlichen Küste Hydracions umhertreibt.",
+                  "sections": [
+                  ]
+                }
+              },
+              {
+                "name": "Gletscher des Ewigen Eises",
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "Seit Anbeginn der Zeit ist das Eis dieser Gletscher nicht geschmolzen. Dies ist ebenfalls ein Sinnbild für die Kultur                                                       der                                                       sturen,                                                       abgeschotteten,                                                       sehr                                                       auf                                                       ihre                                                       Ahnen                                                       bedachten                                                       Drakonier.                                                       ",
+                  "sections": [
+                  ]
+                },
+                "contains": [
+                  {
+                    "name": "Darnax",
+                    "supplement": "Festung im Eis",
+                    "demography": 5612,
+                    "placetype": "Hauptstadt",
+                    "content": {
+                      "excerpt": "Eine uneinnehmbare Festung inmitten der eisigen Wände der Gletscher. Jeder, der dieser Stadt einen Besuch abstattet, hat                                                                   mit                                                                   interessierten                                                                   Blicken                                                                   zu                                                                   leben.                                                                   ",
+                      "sections": [
+                        {
+                          "title": "Drakonische Magieakademie",
+                          "text": "Eine von der Magiergilde aufgrund der “praktischen Lehrweise” nicht offiziell anerkannte Magieakademie."
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Inidal",
+            "supplement": "Goldene Lande",
+            "placetype": "Territorialstaat",
+            "capital": "Alt-Aegir",
+            "content": {
+              "excerpt": "",
+              "sections": [
+              ]
+            },
+            "contains": [
+              {
+                "name": "Güldenes Grabland",
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "",
+                  "sections": [
+                  ]
+                }
+              },
+              {
+                "name": "Insel des Windes",
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "Eine unscheinbare Insel abseits Faergrias. Des Öfteren kann hier ein schrecklicher Wirbelsturm toben gesehen werden. An                                                       besonders                                                       sonnigen                                                       Tagen                                                       ist                                                       von                                                       hier                                                       aus                                                       ein                                                       seltsamer                                                       großer                                                       Schatten                                                       auf                                                       das                                                       Festland                                                       geworfen                                                       sehen                                                       werden.                                                       ",
+                  "sections": [
+                  ]
+                }
+              },
+              {
+                "name": "Jammernde Wälder",
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "",
+                  "sections": [
+                  ]
+                }
+              },
+              {
+                "name": "Ruineninsel",
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "",
+                  "sections": [
+                  ]
+                }
+              },
+              {
+                "name": "Skelettbucht",
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "",
+                  "sections": [
+                  ]
+                }
+              },
+              {
+                "name": "Südliche Pestlande",
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "",
+                  "sections": [
+                  ]
+                }
+              },
+              {
+                "name": "Tal der Schatten",
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "",
+                  "sections": [
+                  ]
+                },
+                "contains": [
+                  {
+                    "name": "Alt-Aegir",
+                    "supplement": "Ehemalige Königsstadt",
+                    "demography": 7195,
+                    "placetype": "Hauptstadt",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "Zwielichtsteppe",
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "",
+                  "sections": [
+                  ]
+                },
+                "contains": [
+                  {
+                    "name": "Larudia",
+                    "demography": 3103,
+                    "placetype": "Stadt",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "Ödland der Verdammnis",
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "",
+                  "sections": [
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "name": "Kluirm",
+            "subtitle": "Herzogtum",
+            "supplement": "Donnerndes Erzgebirge",
+            "natlang": [
+              "Cluarmha",
+              "Wächter der Ehre"
+            ],
+            "placetype": "Territorialstaat",
+            "system": "Herzogtum",
+            "leader": [
+              "Igor",
+              "Herzog, 'Chef'"
+            ],
+            "capital": "Garadzar",
+            "content": {
+              "excerpt": "Ein gebirgiges Land hinter Thaugrien und Heimat der stolzen Zwerge. Das beste Erz kann laut Aussagen der Zwerge hier                                           abgebaut                                           werden.                                           ",
+              "sections": [
+              ]
+            },
+            "contains": [
+              {
+                "name": "Milpaenkahrn",
+                "natlang": [
+                  "Milpeanncarn",
+                  "Tausend Bergspitzen"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "Eine nahezu unpassierbare Region, bestehend aus hunderten Meter hohen Felsspitzen. Viele wagemutige Wanderer und                                                       Abenteurer                                                       mussten                                                       hier                                                       bereits                                                       ihr                                                       Leben                                                       lassen.                                                       ",
+                  "sections": [
+                  ]
+                }
+              },
+              {
+                "name": "Uxbeligard",
+                "natlang": [
+                  "Uxbellicrat",
+                  "Wiege des Glücks"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "“Wiege des Glücks”. So ist der Name, der die Zwerge dieser Region gegeben haben. Das kommt nicht von ungefähr, da der                                                       Abbau                                                       von                                                       Erz                                                       in                                                       den                                                       tief                                                       reichenden                                                       Bergwerksstollen                                                       und                                                       das                                                       Verarbeiten                                                       von                                                       Metallen                                                       und                                                       Edelsteinen                                                       ein                                                       lukratives                                                       Geschäft                                                       und                                                       Lebenssinn                                                       der                                                       hier                                                       ansässigen                                                       Zwerge                                                       geworden                                                       ist.                                                       ",
+                  "sections": [
+                  ]
+                },
+                "contains": [
+                  {
+                    "name": "Bernsteintempel",
+                    "placetype": "Tempel",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Garadzar",
+                    "supplement": "Zwergisches Bollwerk der Brüderlichkeit",
+                    "natlang": [
+                      "Carantodunos",
+                      "Festung der Freunde"
+                    ],
+                    "demography": 23000,
+                    "placetype": "Hauptstadt",
+                    "system": "",
+                    "leader": [
+                      "Igor",
+                      "Chef"
+                    ],
+                    "content": {
+                      "excerpt": "Die bergige Festung der Zwerge und Hauptstadt des Erzes. Gäste werden gerne gesehen und müssen sich zunächst beim                                                                   Trinken,                                                                   Schmieden                                                                   und                                                                   Armdrücken                                                                   gegen                                                                   den                                                                   Herzogen                                                                   Igor                                                                   (weitestgehend                                                                   nur                                                                   “                                                                   Chef                                                                   ”                                                                   genannt)                                                                   behaupten.                                                                   Jeder,                                                                   der                                                                   ihm                                                                   standhält,                                                                   erhält                                                                   den                                                                   Titel                                                                   “                                                                   Bruder                                                                   ”                                                                   .                                                                   ",
+                      "sections": [
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Thaugrien",
+            "subtitle": "Kurfürstentum",
+            "supplement": "Land der Traditionen",
+            "natlang": [
+              "Daugaringa",
+              "Land der Nebel"
+            ],
+            "placetype": "Territorialstaat",
+            "system": "Kurfürstentum",
+            "leader": [
+              "Jervar",
+              "Kurfürst"
+            ],
+            "capital": "Grenbrock",
+            "content": {
+              "excerpt": "Ein sehr auf seine Traditionen und den Glauben an die Göttin Justicia bedachtes Land. Burgen, Schlösser und Kirchen sind                                           in                                           jeglichen                                           Ecken                                           des                                           Landes                                           zu                                           finden.                                           Viele                                           Reisende                                           empfinden                                           die                                           Starrheit                                           als                                           erdrückend,                                           wohingegen                                           viele                                           die                                           lokalen                                           Kostbarkeiten,                                           egal                                           ob                                           Essen                                           oder                                           Spirituosen,                                           genießen.                                           In                                           der                                           Hauptstadt                                           Grenbrock                                           befindet                                           sie                                           die                                           größte                                           Pilgerstätte                                           für                                           Gläubiger                                           der                                           Kirche                                           des                                           Himmlischen                                           Glaubens.                                           ",
+              "sections": [
+              ]
+            },
+            "contains": [
+              {
+                "name": "Dünsberg-Plateau",
+                "natlang": [
+                  "Dūnesberg-Flach",
+                  "Flaches Hochland des Hügelbergs"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "Eine recht zurückgezogene und bewaldete Gegend im Zentrum Thaugriens.",
+                  "sections": [
+                  ]
+                },
+                "contains": [
+                  {
+                    "name": "Alt-Dünsberg",
+                    "supplement": "Abbild einer Katastrophe",
+                    "natlang": [
+                      "Dunsbairgs",
+                      "Hügelberg"
+                    ],
+                    "placetype": "Ruinen",
+                    "content": {
+                      "excerpt": "Östlich von Dünsberg liegen die Ruinen von Alt-Dünsberg. Das heutige Dünsberg dort entstand, wo es heute steht, siedelte                                                                   sich                                                                   einst                                                                   eine                                                                   Gruppe                                                                   Bauern                                                                   in                                                                   den                                                                   Wäldern                                                                   von                                                                   Dünsberg                                                                   an,                                                                   bis                                                                   eines                                                                   Tages                                                                   ein                                                                   gigantischer                                                                   Erdspalt                                                                   sich                                                                   mitten                                                                   durch                                                                   das                                                                   Dorf                                                                   zog,                                                                   und                                                                   alles                                                                   zunichtemachte,                                                                   was                                                                   die                                                                   Bauersleute                                                                   aufgebaut                                                                   hatten.                                                                   ",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Dünsberg",
+                    "supplement": "Abgelegenes Dorf mit Geschichte",
+                    "natlang": [
+                      "Niuwe Dūnesberg",
+                      "Neuer Hügelberg"
+                    ],
+                    "demography": 47,
+                    "placetype": "Dorf",
+                    "system": "",
+                    "leader": [
+                      "Jofina",
+                      "Bürgermeisterin"
+                    ],
+                    "content": {
+                      "excerpt": "Dieses unscheinbare Dörfchen abgelegen der Großstädte Thaugriens beherbergt die wohl herzlichsten Bewohner aus ganz                                                                   Faergria.                                                                   Die                                                                   offenen                                                                   Einwohner                                                                   treffen                                                                   sich                                                                   regelmäßig                                                                   gesellschaftlich                                                                   in                                                                   der                                                                   lokalen                                                                   Taverne.                                                                   Tradition                                                                   ist                                                                   die                                                                   Apfelernte                                                                   und                                                                   das                                                                   Apfelweinkeltern                                                                   im                                                                   Spätsommer.                                                                   ",
+                      "sections": [
+                        {
+                          "title": "Jagdschloss Dünsberg",
+                          "text": "Ein einsames Jagdschloss außerhalb von Dünsberg. Der einstige Besitzer ist auf mysteriöse Art verschwunden. Neuerdings                                                                               kommt                                                                               der                                                                               Butler                                                                               dieses                                                                               Schlosses                                                                               öfters                                                                               nach                                                                               Dünsberg                                                                               für                                                                               Besorgungen                                                                               und                                                                               heuert                                                                               gelegentlich                                                                               Handwerker                                                                               an.                                                                               "
+                        },
+                        {
+                          "title": "Taverne Mosthaus",
+                          "text": ""
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Graekurith",
+                    "placetype": "Ruine",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Igmusurs Hütte",
+                    "placetype": "Hütte",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Jagdschloss Dünsberg",
+                    "placetype": "Schloss",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Knorrwurzelschrein",
+                    "placetype": "Schrein",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "Klamm des Tellius",
+                "natlang": [
+                  "Teliaskluf",
+                  "Tellius-Schlucht"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "Der Tellius versorgt Thaugrien mit Wasser und füllt den Tarporsee im Landesinneren mit reinem Quellwasser. Das                                                       Bestreiten                                                       der                                                       Klamm                                                       kann                                                       sich                                                       als                                                       Kraftakt                                                       herausstellen,                                                       gerade                                                       wenn                                                       es                                                       regnet.                                                       ",
+                  "sections": [
+                  ]
+                },
+                "contains": [
+                  {
+                    "name": "Alte Zollburg",
+                    "placetype": "Festung",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Anwesen von Lysander",
+                    "placetype": "Anwesen",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Große Zwergenbrücke",
+                    "placetype": "Brücke",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Meerestempel",
+                    "placetype": "Tempel",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Tellius",
+                    "supplement": "Stadt des Wassers",
+                    "natlang": [
+                      "Telias",
+                      "Tellius"
+                    ],
+                    "demography": 7291,
+                    "placetype": "Stadt",
+                    "system": "",
+                    "leader": [
+                      "Nerissa",
+                      "Orakel"
+                    ],
+                    "content": {
+                      "excerpt": "Die “Stadt des Wassers”. Die ansässigen Bewohner sind vernarrt von ihrem klaren Wasser und hegen eine tiefe Verbindung                                                                   zum                                                                   Meer.                                                                   Irgendwo                                                                   in                                                                   den                                                                   Bergen                                                                   bei                                                                   der                                                                   Quelle                                                                   soll                                                                   es                                                                   einen                                                                   alten                                                                   Gang                                                                   geben.                                                                   ",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Tunnel des Aufstiegs",
+                    "placetype": "Tunnel",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Tunnel zum Meeresreich",
+                    "placetype": "Tunnel",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Versunkene Burg",
+                    "placetype": "Ruine",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Wassertempel",
+                    "placetype": "Tempel",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "Tarporsee",
+                "natlang": [
+                  "Tarpurbachsee",
+                  "See des Dorfes am Bach"
+                ],
+                "placetype": "See",
+                "content": {
+                  "excerpt": "",
+                  "sections": [
+                  ]
+                }
+              },
+              {
+                "name": "Thaugrien-Hochpfalz",
+                "natlang": [
+                  "Daugaringa-Hohpfalz",
+                  "Hohe Pfalz von Thaugrien"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "",
+                  "sections": [
+                  ]
+                },
+                "contains": [
+                  {
+                    "name": "Alter Kerker der Stadtwache",
+                    "placetype": "Verlies",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Goblinlager an der Hauptstraße",
+                    "placetype": "Lager",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Grenbrock",
+                    "supplement": "Stadt des Rechts",
+                    "natlang": [
+                      "Grenbrōc",
+                      "Grenze des Sumpfes"
+                    ],
+                    "demography": 23000,
+                    "placetype": "Hauptstadt",
+                    "system": "",
+                    "leader": [
+                      "Hadubrand",
+                      "Diakon"
+                    ],
+                    "content": {
+                      "excerpt": "Die “Hauptstadt der Gerechtigkeit”. Die Kirche hat hier einen hohen politischen Einfluss und vollstreckt die Lehren                                                                   Justicias.                                                                   Paradoxerweise                                                                   hat                                                                   sich                                                                   hier                                                                   ebenfalls                                                                   die                                                                   berüchtigte                                                                   Diebesgilde                                                                   eingenistet,                                                                   wodurch                                                                   es                                                                   oft                                                                   zu                                                                   Reiberreien                                                                   zwischen                                                                   der                                                                   Stadtwache                                                                   und                                                                   der                                                                   Gilde                                                                   kommt.                                                                   ",
+                      "sections": [
+                        {
+                          "title": "Schloss Grenbrock",
+                          "text": "Der pompöse Sitz des Kurfürsten. In den großen Sälen hängen die Jagdtrophäen vergangener und aktiver Familienmitglieder.                                                                               Der                                                                               konservative                                                                               Ton                                                                               Thaugriens                                                                               hat                                                                               hier                                                                               seinen                                                                               Ursprung.                                                                               "
+                        },
+                        {
+                          "title": "Hauptsitz der Diebesgilde",
+                          "text": "Eine sagenumwobene Gilde, in der sich die talentiertesten Auftragsmörder und Diebe herumtreiben. Ihr Anführer ist                                                                               unbekannt.                                                                               Die                                                                               Stadtwache                                                                               hat                                                                               einen                                                                               hohen                                                                               Betrag                                                                               auf                                                                               Hinweise                                                                               auf                                                                               seine                                                                               Identität                                                                               gegeben.                                                                               Nur                                                                               hochrangige                                                                               Mitglieder                                                                               kennen                                                                               sein                                                                               Gesicht.                                                                               Wer                                                                               es                                                                               wagt                                                                               Verrat                                                                               zu                                                                               üben,                                                                               überlebt                                                                               dies                                                                               nicht.                                                                               In                                                                               letzter                                                                               Zeit                                                                               treten                                                                               vermehrt                                                                               Mitglieder                                                                               aus.                                                                               "
+                        },
+                        {
+                          "title": "Justicias Kathedrale der Gerechtigkeit",
+                          "text": "Die von Justicia berufenen Vollstrecker der Gerechtigkeit praktizieren hier ihre Gottesdienste. In Thaugrien ist es                                                                               Brauch                                                                               jeden                                                                               Sunnesdag                                                                               in                                                                               die                                                                               Kirche                                                                               zu                                                                               gehen.                                                                               "
+                        },
+                        {
+                          "title": "Gerichtshaus des Himmels",
+                          "text": ""
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "Thaugrine Weinberge",
+                "natlang": [
+                  "Daugaringa Wīnbērag",
+                  "Weinberge von Thaugrien"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "",
+                  "sections": [
+                  ]
+                },
+                "contains": [
+                  {
+                    "name": "Tarporbach",
+                    "natlang": [
+                      "Tarpurbach",
+                      "Dorf am Bach"
+                    ],
+                    "demography": 11408,
+                    "placetype": "Stadt",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Taverne an der Ost-Brücke",
+                    "placetype": "Taverne",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Tempel der Liebe",
+                    "placetype": "Tempel",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "Thaugrines Küstenland",
+                "natlang": [
+                  "Daugaringa Sculdaland",
+                  "Küstenland von Thaugrien"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "",
+                  "sections": [
+                  ]
+                },
+                "contains": [
+                  {
+                    "name": "Grotte des Lebens",
+                    "placetype": "Grotte",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Korshaven",
+                    "natlang": [
+                      "Chorshabun",
+                      "Zufluchtshafen"
+                    ],
+                    "demography": 9196,
+                    "placetype": "Stadt",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Tinorland",
+            "subtitle": "Großherzogtum",
+            "natlang": [
+              "Tínorland",
+              "Land von Tínnor"
+            ],
+            "placetype": "Territorialstaat",
+            "system": "Großherzogtum",
+            "leader": [
+              "Konrad",
+              "Stellv. Großherzog"
+            ],
+            "capital": "Tinorke",
+            "content": {
+              "excerpt": "",
+              "sections": [
+              ]
+            },
+            "contains": [
+              {
+                "name": "Alljordbucht",
+                "natlang": [
+                  "Alljardavík",
+                  "Bucht der ganzen Erde"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "",
+                  "sections": [
+                  ]
+                },
+                "contains": [
+                  {
+                    "name": "Brodia",
+                    "natlang": [
+                      "Bróðjaland",
+                      "Land der Brüder"
+                    ],
+                    "demography": 411,
+                    "placetype": "Dorf",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Hindriks Sägemühle",
+                    "placetype": "Sägemühle",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "Immergrünes Küstenland",
+                "natlang": [
+                  "Aevigraent Strandsland",
+                  "Ewig grünes Küstenland"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "",
+                  "sections": [
+                  ]
+                },
+                "contains": [
+                  {
+                    "name": "Tinorke",
+                    "natlang": [
+                      "Tínnorka",
+                      "Starker Tínnor"
+                    ],
+                    "demography": 17335,
+                    "placetype": "Hauptstadt",
+                    "system": "",
+                    "leader": [
+                      "Konrad",
+                      "Stellv. Großherzog"
+                    ],
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                        {
+                          "title": "Schloss Tinorke",
+                          "text": ""
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "Nokoto-Sumpfland",
+                "natlang": [
+                  "Nokoto-Mýrlendi",
+                  "Das Sumpfland von Nokoto"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "",
+                  "sections": [
+                  ]
+                },
+                "contains": [
+                  {
+                    "name": "Ruinen des Baumwächters",
+                    "placetype": "Ruine",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Sümpfe des Vergessens",
+                    "placetype": "Sumpf",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "Schlangenschweif-Archipel",
+                "natlang": [
+                  "Ormshali-Skerjagardur",
+                  "Schlangen-Schwanz-Archipel"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "",
+                  "sections": [
+                  ]
+                }
+              },
+              {
+                "name": "Schwelende Alpen",
+                "natlang": [
+                  "Glódandi Alpar",
+                  "Glühende Alpen"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "",
+                  "sections": [
+                  ]
+                },
+                "contains": [
+                  {
+                    "name": "Altar der Funken",
+                    "placetype": "Schrein",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Feuersanktuarium",
+                    "placetype": "Tempel",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Glühender Bergpass",
+                    "placetype": "Bergpass",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Hufeisen-Taverne",
+                    "placetype": "Taverne",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Nifl",
+                    "supplement": "Kurort in den Alpen",
+                    "natlang": [
+                      "Niflheimur",
+                      "Nebelland"
+                    ],
+                    "demography": 5716,
+                    "placetype": "Stadt",
+                    "content": {
+                      "excerpt": "Badehaus Nifl",
+                      "sections": [
+                        {
+                          "title": "Badehaus Nifl",
+                          "text": ""
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "Zugewachsene Grotte",
+                    "placetype": "Grotte",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "Sturmschild-Taiga",
+                "natlang": [
+                  "Stormskjöldur-Taiga",
+                  "Sturmschild-Taiga"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "",
+                  "sections": [
+                  ]
+                },
+                "contains": [
+                  {
+                    "name": "Daein",
+                    "natlang": [
+                      "Dáinnborg",
+                      "Totenburg"
+                    ],
+                    "demography": 184,
+                    "placetype": "Dorf",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "Tinorische Amaranthfelder",
+                "natlang": [
+                  "Tínnorískar Amaranthsléttur",
+                  "Tinorische Amaranth-Ebenen"
+                ],
+                "placetype": "Region",
+                "content": {
+                  "excerpt": "",
+                  "sections": [
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Kouyoukuni",
+        "subtitle": "Kaiserreich",
+        "natlang": [
+          "紅葉国",
+          "Land der bunten Herbstblätter"
+        ],
+        "placetype": "Kaiserreich",
+        "system": "Absolute Monarchie",
+        "leader": [
+          "",
+          ""
+        ],
+        "capital": "Kawagashi",
+        "content": {
+          "excerpt": "TODO",
+          "sections": [
+            {
+              "title": "Geschichte",
+              "text": "TODO"
+            },
+            {
+              "title": "Länder Kouyoukunis",
+              "text": "TODO"
+            }
+          ]
+        },
+        "contains": [
+          {
+            "name": "Akeyama",
+            "natlang": [
+              "明山",
+              "Berg des Morgens"
+            ],
+            "placetype": "Stadt",
+            "content": {
+              "excerpt": "",
+              "sections": [
+              ]
+            }
+          },
+          {
+            "name": "Kawagashi",
+            "natlang": [
+              "川樫",
+              "Eichenfluss"
+            ],
+            "placetype": "Hauptstadt",
+            "content": {
+              "excerpt": "",
+              "sections": [
+              ]
+            }
+          },
+          {
+            "name": "Tozawa",
+            "natlang": [
+              "遠沢",
+              "Fernes Tal"
+            ],
+            "placetype": "Dorf",
+            "content": {
+              "excerpt": "",
+              "sections": [
+              ]
+            }
+          },
+          {
+            "name": "Yukimori",
+            "natlang": [
+              "雪森",
+              "Schneewald"
+            ],
+            "placetype": "Dorf",
+            "content": {
+              "excerpt": "",
+              "sections": [
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Kradian",
+        "subtitle": "Königreich",
+        "placetype": "Königreich",
+        "system": "Absolute Monarchie",
+        "leader": [
+          "",
+          ""
+        ],
+        "capital": "Mesmudor",
+        "content": {
+          "excerpt": "",
+          "sections": [
+          ]
+        },
+        "contains": [
+          {
+            "name": "Mesmudor",
+            "placetype": "Hauptstadt",
+            "content": {
+              "excerpt": "",
+              "sections": [
+              ]
+            }
+          },
+          {
+            "name": "Riesstedt",
+            "placetype": "Dorf",
+            "content": {
+              "excerpt": "",
+              "sections": [
+              ]
+            }
+          },
+          {
+            "name": "Zarashan",
+            "placetype": "Hauptstadt",
+            "content": {
+              "excerpt": "",
+              "sections": [
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

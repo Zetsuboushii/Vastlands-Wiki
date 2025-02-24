@@ -1,0 +1,1475 @@
+[
+  {
+    "name": "Abwassernager",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Ungeziefer",
+    "hp": 30,
+    "ac": 15,
+    "movement": [
+      [
+        "laufend",
+        "40"
+      ],
+      [
+        "schwimmend",
+        "30"
+      ]
+    ],
+    "str": 0,
+    "dex": 3,
+    "con": 2,
+    "int": -3,
+    "wis": -2,
+    "cha": -1,
+    "weaknesses": [
+      "Feuer"
+    ],
+    "resistances": [
+      "Säure"
+    ],
+    "immunities": [
+      "Gift",
+      "Krankheit"
+    ],
+    "actions": [
+      "Rattenbiss",
+      "Pestwolke"
+    ]
+  },
+  {
+    "name": "Abyssor",
+    "boss": true,
+    "bosstitle": "Peiniger des Meerestempels",
+    "type": "Monstrosität",
+    "hp": 400,
+    "ac": 20,
+    "movement": [
+      [
+        "schwimmend",
+        "100"
+      ]
+    ],
+    "str": 7,
+    "dex": 2,
+    "con": 6,
+    "int": 2,
+    "wis": 3,
+    "cha": 4,
+    "weaknesses": [
+      "Blitz"
+    ],
+    "resistances": [
+      "Nicht-magischer Schaden",
+      "Kälte"
+    ],
+    "immunities": [
+      "Gift",
+      "Betäubt",
+      "Erschöpft",
+      "Bezaubert",
+      "Gepackt",
+      "Festgesetzt"
+    ],
+    "actions": [
+      "Reißzahnbiss",
+      "Schädelbrumme",
+      "Abyssaler Nebelhauch",
+      "Flutwelle",
+      "Blitz aus der Tiefe",
+      "Tiefer Sturm",
+      "Wassersog",
+      "Regeneration",
+      "Fischklauen"
+    ]
+  },
+  {
+    "name": "Aerocacti",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Pflanze",
+    "hp": 40,
+    "ac": 16,
+    "movement": [
+      [
+        "fliegend",
+        "25"
+      ]
+    ],
+    "str": 1,
+    "dex": 2,
+    "con": 1,
+    "int": 2,
+    "wis": 2,
+    "cha": 5,
+    "weaknesses": [
+      "Feuer",
+      "Schnitt",
+      "Necrotisch"
+    ],
+    "resistances": [
+      "Stich"
+    ],
+    "immunities": [
+      "Gift",
+      "Säure"
+    ],
+    "actions": [
+      "Stachelschuss",
+      "Stachelwalze"
+    ]
+  },
+  {
+    "name": "Arachnia",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Bestie",
+    "hp": 40,
+    "ac": 18,
+    "movement": [
+      [
+        "laufend",
+        "50"
+      ]
+    ],
+    "str": 3,
+    "dex": 6,
+    "con": 4,
+    "int": 1,
+    "wis": 2,
+    "cha": -4,
+    "weaknesses": [
+      "Feuer",
+      "Blitz"
+    ],
+    "resistances": [
+      "Stich"
+    ],
+    "immunities": [
+      "Gift",
+      "Säure"
+    ],
+    "actions": [
+      "Würgegriff",
+      "Netzschuss",
+      "Säurespeier"
+    ]
+  },
+  {
+    "name": "Babasu",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Abscheulichkeit",
+    "hp": 55,
+    "ac": 16,
+    "movement": [
+      [
+        "schwebend",
+        "30"
+      ]
+    ],
+    "str": 1,
+    "dex": 3,
+    "con": 2,
+    "int": 5,
+    "wis": 4,
+    "cha": 6,
+    "weaknesses": [
+      "Heilige Magie"
+    ],
+    "resistances": [
+    ],
+    "immunities": [
+      "Nicht-magischer Schaden"
+    ],
+    "actions": [
+      "Spektraler Biss",
+      "Fluch"
+    ]
+  },
+  {
+    "name": "Bandagenwandler",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Untot",
+    "hp": 70,
+    "ac": 18,
+    "movement": [
+      [
+        "laufend",
+        "10"
+      ]
+    ],
+    "str": 6,
+    "dex": -3,
+    "con": 6,
+    "int": -1,
+    "wis": 2,
+    "cha": -3,
+    "weaknesses": [
+      "Heilige Magie",
+      "Feuer"
+    ],
+    "resistances": [
+      "Schnitt"
+    ],
+    "immunities": [
+      "Gift",
+      "Säure"
+    ],
+    "actions": [
+      "Würgegriff",
+      "Klingenhieb"
+    ]
+  },
+  {
+    "name": "Bandit",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Humanoid",
+    "hp": 80,
+    "ac": 17,
+    "movement": [
+      [
+        "laufend",
+        "40"
+      ]
+    ],
+    "str": 2,
+    "dex": 3,
+    "con": 1,
+    "int": 0,
+    "wis": 1,
+    "cha": 0,
+    "weaknesses": [
+    ],
+    "resistances": [
+    ],
+    "immunities": [
+    ],
+    "actions": [
+      "Schurkischer Angriff",
+      "Schneller Hieb",
+      "Blendgranate",
+      "Fluchtplan",
+      "Hinterhalt"
+    ]
+  },
+  {
+    "name": "Bestienkrieger",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Monstrosität",
+    "hp": 100,
+    "ac": 18,
+    "movement": [
+      [
+        "laufend",
+        "30"
+      ]
+    ],
+    "str": 6,
+    "dex": 1,
+    "con": 5,
+    "int": -2,
+    "wis": 2,
+    "cha": -1,
+    "weaknesses": [
+      "Feuer"
+    ],
+    "resistances": [
+      "Nicht-magischer Schaden"
+    ],
+    "immunities": [
+      "Verängstigt"
+    ],
+    "actions": [
+      "Klingenhieb",
+      "Brutale Hiebe",
+      "Zerquetschen",
+      "Berserkersturm"
+    ]
+  },
+  {
+    "name": "Blitzschneck",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Bestie",
+    "hp": 80,
+    "ac": 16,
+    "movement": [
+      [
+        "kriechend",
+        "10"
+      ],
+      [
+        "kletternd",
+        "10"
+      ]
+    ],
+    "str": 2,
+    "dex": -4,
+    "con": 4,
+    "int": 2,
+    "wis": 3,
+    "cha": 1,
+    "weaknesses": [
+      "Kälte"
+    ],
+    "resistances": [
+      "Nicht-magischer Schaden"
+    ],
+    "immunities": [
+      "Blitz",
+      "Gift"
+    ],
+    "actions": [
+      "Elektrisierender Stoß",
+      "Blitzstrahl",
+      "Überladung",
+      "Schleimfalle"
+    ]
+  },
+  {
+    "name": "Blutstahlritter",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Untot",
+    "hp": 200,
+    "ac": 20,
+    "movement": [
+      [
+        "laufend",
+        "20"
+      ]
+    ],
+    "str": 6,
+    "dex": 1,
+    "con": 5,
+    "int": 1,
+    "wis": 2,
+    "cha": 3,
+    "weaknesses": [
+      "Heilige Magie"
+    ],
+    "resistances": [
+      "Nicht-magischer Schaden"
+    ],
+    "immunities": [
+      "Gift",
+      "Nekrotisch",
+      "Verängstigt"
+    ],
+    "actions": [
+      "Blutiger Schlag",
+      "Blutige Rache",
+      "Blutwoge"
+    ]
+  },
+  {
+    "name": "Bohrschnabel",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Bestie",
+    "hp": 30,
+    "ac": 13,
+    "movement": [
+      [
+        "fliegend",
+        "50"
+      ],
+      [
+        "laufend",
+        "10"
+      ]
+    ],
+    "str": 1,
+    "dex": 4,
+    "con": 1,
+    "int": 2,
+    "wis": 3,
+    "cha": 0,
+    "weaknesses": [
+      "Blitz"
+    ],
+    "resistances": [
+    ],
+    "immunities": [
+    ],
+    "actions": [
+      "Bohrschnabel",
+      "Kreischen",
+      "Sturzflug"
+    ]
+  },
+  {
+    "name": "Boreanos",
+    "boss": true,
+    "bosstitle": "Peiniger der Schneelande",
+    "type": "Untot",
+    "hp": 225,
+    "ac": 19,
+    "movement": [
+      [
+        "schwebend",
+        "80"
+      ]
+    ],
+    "str": 5,
+    "dex": 2,
+    "con": 4,
+    "int": 1,
+    "wis": 3,
+    "cha": 4,
+    "weaknesses": [
+      "Feuer"
+    ],
+    "resistances": [
+    ],
+    "immunities": [
+      "Kälte",
+      "Gift",
+      "Psychisch",
+      "Betäubt",
+      "Erschöpft",
+      "Bezaubert"
+    ],
+    "actions": [
+      "Geistergeweih",
+      "Kältestrahl",
+      "Frostige Hufe",
+      "Eisschild",
+      "Eisiger Sturm"
+    ]
+  },
+  {
+    "name": "Detonaroc",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Elementar",
+    "hp": 20,
+    "ac": 13,
+    "movement": [
+      [
+        "rollend",
+        "25"
+      ]
+    ],
+    "str": 4,
+    "dex": 4,
+    "con": 1,
+    "int": -5,
+    "wis": -5,
+    "cha": -5,
+    "weaknesses": [
+      "Psychisch"
+    ],
+    "resistances": [
+      "Feuer"
+    ],
+    "immunities": [
+    ],
+    "actions": [
+      "Schädelbrumme"
+    ]
+  },
+  {
+    "name": "Drachenmäulchen",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Pflanze",
+    "hp": 65,
+    "ac": 17,
+    "movement": [
+      [
+        "hüpfend",
+        "35"
+      ]
+    ],
+    "str": 4,
+    "dex": 3,
+    "con": 1,
+    "int": 2,
+    "wis": 1,
+    "cha": 4,
+    "weaknesses": [
+      "Feuer",
+      "Gift",
+      "Säure",
+      "Kälte"
+    ],
+    "resistances": [
+      "Blitz"
+    ],
+    "immunities": [
+      "Taub",
+      "Blind"
+    ],
+    "actions": [
+      "Schädelbrumme",
+      "Schnapper",
+      "Regeneration",
+      "Giftzahn",
+      "Drachenstrahl"
+    ]
+  },
+  {
+    "name": "Drösling",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Monstrosität",
+    "hp": 65,
+    "ac": 17,
+    "movement": [
+      [
+        "fliegend",
+        "40"
+      ]
+    ],
+    "str": -2,
+    "dex": 2,
+    "con": 1,
+    "int": 0,
+    "wis": 2,
+    "cha": 0,
+    "weaknesses": [
+      "Kälte"
+    ],
+    "resistances": [
+    ],
+    "immunities": [
+    ],
+    "actions": [
+      "Schädelbrumme",
+      "Quälgeist"
+    ]
+  },
+  {
+    "name": "Dämonenabkömmling",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Dämon",
+    "hp": 160,
+    "ac": 18,
+    "movement": [
+      [
+        "laufend",
+        "30"
+      ]
+    ],
+    "str": 5,
+    "dex": 3,
+    "con": 4,
+    "int": 1,
+    "wis": 2,
+    "cha": 3,
+    "weaknesses": [
+      "Heilige Magie"
+    ],
+    "resistances": [
+      "Feuer",
+      "Kälte",
+      "Nicht-magischer Schaden"
+    ],
+    "immunities": [
+      "Verängstigt",
+      "Erschöpft"
+    ],
+    "actions": [
+      "Dämonischer Hieb",
+      "Schwarze Welle",
+      "Schattenbarriere"
+    ]
+  },
+  {
+    "name": "Eiseskälte",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Elementar",
+    "hp": 90,
+    "ac": 15,
+    "movement": [
+      [
+        "rutschend",
+        "10"
+      ]
+    ],
+    "str": 4,
+    "dex": -1,
+    "con": 5,
+    "int": -3,
+    "wis": 1,
+    "cha": -2,
+    "weaknesses": [
+      "Feuer",
+      "Stumpf"
+    ],
+    "resistances": [
+      "Hieb",
+      "Stich"
+    ],
+    "immunities": [
+      "Kälte",
+      "Erschöpft",
+      "Gift"
+    ],
+    "actions": [
+      "Frostiger Nebelschleier"
+    ]
+  },
+  {
+    "name": "Eisflügler",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Bestie",
+    "hp": 20,
+    "ac": 13,
+    "movement": [
+      [
+        "fliegend",
+        "60"
+      ]
+    ],
+    "str": -2,
+    "dex": 4,
+    "con": 1,
+    "int": -3,
+    "wis": 1,
+    "cha": -2,
+    "weaknesses": [
+      "Feuer"
+    ],
+    "resistances": [
+    ],
+    "immunities": [
+      "Kälte"
+    ],
+    "actions": [
+      "Frostiger Vampirbiss",
+      "Frostiger Flügelschlag",
+      "Frostiges Kreischen"
+    ]
+  },
+  {
+    "name": "Eisgeist",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Untot",
+    "hp": 130,
+    "ac": 17,
+    "movement": [
+      [
+        "schwebend",
+        "40"
+      ]
+    ],
+    "str": 3,
+    "dex": 3,
+    "con": 4,
+    "int": 2,
+    "wis": 3,
+    "cha": 5,
+    "weaknesses": [
+      "Feuer",
+      "Heilige Magie"
+    ],
+    "resistances": [
+      "Kälte",
+      "Nicht-magischer Schaden"
+    ],
+    "immunities": [
+      "Verängstigt",
+      "Gift",
+      "Erschöpft",
+      "Betäubt"
+    ],
+    "actions": [
+      "Spektrale Klinge",
+      "Eisiger Sturm",
+      "Eisige Ketten"
+    ]
+  },
+  {
+    "name": "Elektrabrax",
+    "boss": true,
+    "bosstitle": "Peiniger des Blitzaltars",
+    "type": "Monstrosität",
+    "hp": 500,
+    "ac": 20,
+    "movement": [
+      [
+        "laufend",
+        "50"
+      ],
+      [
+        "grabend",
+        "70"
+      ]
+    ],
+    "str": 6,
+    "dex": 1,
+    "con": 5,
+    "int": 2,
+    "wis": 3,
+    "cha": 0,
+    "weaknesses": [
+      "Stumpf",
+      "Blitz"
+    ],
+    "resistances": [
+      "Feuer",
+      "Kälte"
+    ],
+    "immunities": [
+      "Gift",
+      "Betäubt",
+      "Erschöpft"
+    ],
+    "actions": [
+      "Greifzangen",
+      "Steinsalve",
+      "Donnernde Explosion",
+      "Magnetischer Stoß",
+      "Blitzschlag",
+      "Donnersprung",
+      "Elektrischer Stoß",
+      "Drachenstrahl",
+      "Blitzstrahl",
+      "Stachelwalze",
+      "Überladung"
+    ]
+  },
+  {
+    "name": "Erzknecht",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Untot",
+    "hp": 30,
+    "ac": 13,
+    "movement": [
+      [
+        "laufend",
+        "20"
+      ]
+    ],
+    "str": 2,
+    "dex": 1,
+    "con": 1,
+    "int": 0,
+    "wis": 0,
+    "cha": 0,
+    "weaknesses": [
+      "Heilige Magie",
+      "Blitz"
+    ],
+    "resistances": [
+      "Stich"
+    ],
+    "immunities": [
+      "Gift"
+    ],
+    "actions": [
+      "Klingenhieb",
+      "Fluch",
+      "Schneller Hieb"
+    ]
+  },
+  {
+    "name": "Fingerkrabller",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Monstrosität",
+    "hp": 95,
+    "ac": 17,
+    "movement": [
+      [
+        "krabbelnd",
+        "30"
+      ]
+    ],
+    "str": 4,
+    "dex": 3,
+    "con": 3,
+    "int": 4,
+    "wis": 3,
+    "cha": 4,
+    "weaknesses": [
+    ],
+    "resistances": [
+      "Nicht-magischer Schaden",
+      "Psychisch"
+    ],
+    "immunities": [
+      "Verängstigt",
+      "Betäubt",
+      "Erschöpft",
+      "Gift"
+    ],
+    "actions": [
+      "Schmetternde Faust",
+      "Gedankenpein",
+      "Telekinetischer Griff",
+      "Psychischer Schrei"
+    ]
+  },
+  {
+    "name": "Flammengrün",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Pflanze",
+    "hp": 70,
+    "ac": 14,
+    "movement": [
+    ],
+    "str": 4,
+    "dex": -2,
+    "con": 5,
+    "int": -3,
+    "wis": 1,
+    "cha": -2,
+    "weaknesses": [
+      "Kälte"
+    ],
+    "resistances": [
+      "Feuer",
+      "Stumpf",
+      "Stich"
+    ],
+    "immunities": [
+      "Gift",
+      "Erschöpft",
+      "Betäubt"
+    ],
+    "actions": [
+      "Feuerballwurf",
+      "Wurzelgriff",
+      "Verschlingen",
+      "Flammenexplosion"
+    ]
+  },
+  {
+    "name": "Gezeitenblick",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Monstrosität",
+    "hp": 120,
+    "ac": 17,
+    "movement": [
+      [
+        "laufend",
+        "40"
+      ],
+      [
+        "schwimmend",
+        "50"
+      ]
+    ],
+    "str": 4,
+    "dex": 1,
+    "con": 4,
+    "int": 3,
+    "wis": 2,
+    "cha": 5,
+    "weaknesses": [
+      "Blitz"
+    ],
+    "resistances": [
+      "Kälte",
+      "Feuer",
+      "Psychisch"
+    ],
+    "immunities": [
+      "Gift",
+      "Erschöpft",
+      "Betäubt"
+    ],
+    "actions": [
+      "Wasserpeitsche",
+      "Gedankenpein",
+      "Flutwelle",
+      "Geisterflut"
+    ]
+  },
+  {
+    "name": "Goblin",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Humanoid",
+    "hp": 20,
+    "ac": 13,
+    "movement": [
+      [
+        "laufend",
+        "30"
+      ]
+    ],
+    "str": 1,
+    "dex": 2,
+    "con": 1,
+    "int": -1,
+    "wis": 0,
+    "cha": -1,
+    "weaknesses": [
+    ],
+    "resistances": [
+    ],
+    "immunities": [
+    ],
+    "actions": [
+      "Knüppelschlag",
+      "Rabiater Angriff"
+    ]
+  },
+  {
+    "name": "Klinguschel",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Monstrosität",
+    "hp": 80,
+    "ac": 20,
+    "movement": [
+      [
+        "springend",
+        "10"
+      ]
+    ],
+    "str": 5,
+    "dex": 1,
+    "con": 5,
+    "int": -3,
+    "wis": -2,
+    "cha": -2,
+    "weaknesses": [
+      "Blitz",
+      "Hieb"
+    ],
+    "resistances": [
+    ],
+    "immunities": [
+      "Stich",
+      "Stumpf",
+      "Gift",
+      "Betäubt",
+      "Erschöpft"
+    ],
+    "actions": [
+      "Klingenklatscher",
+      "Dornenstoß",
+      "Schalenramme",
+      "Einschnappen"
+    ]
+  },
+  {
+    "name": "Krokuin",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Bestie",
+    "hp": 60,
+    "ac": 16,
+    "movement": [
+      [
+        "rutschend",
+        "50"
+      ],
+      [
+        "schwimmend",
+        "60"
+      ]
+    ],
+    "str": 3,
+    "dex": 3,
+    "con": 2,
+    "int": 1,
+    "wis": 1,
+    "cha": 1,
+    "weaknesses": [
+      "Kälte",
+      "Blitz"
+    ],
+    "resistances": [
+      "Gift"
+    ],
+    "immunities": [
+    ],
+    "actions": [
+      "Bohrschnabel",
+      "Reptilienbiss"
+    ]
+  },
+  {
+    "name": "Meeresschlächter",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Monstrosität",
+    "hp": 90,
+    "ac": 18,
+    "movement": [
+      [
+        "laufend",
+        "30"
+      ],
+      [
+        "schwimmend",
+        "40"
+      ]
+    ],
+    "str": 4,
+    "dex": 2,
+    "con": 3,
+    "int": -1,
+    "wis": 2,
+    "cha": 1,
+    "weaknesses": [
+      "Kälte"
+    ],
+    "resistances": [
+      "Feuer"
+    ],
+    "immunities": [
+      "Gift"
+    ],
+    "actions": [
+      "Klingenhieb",
+      "Schwanzschlag",
+      "Wasserstrahl",
+      "Strömungsstoß"
+    ]
+  },
+  {
+    "name": "Mimic",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Monstrosität",
+    "hp": 140,
+    "ac": 17,
+    "movement": [
+      [
+        "rennend",
+        "65"
+      ]
+    ],
+    "str": 4,
+    "dex": 5,
+    "con": 3,
+    "int": 2,
+    "wis": 2,
+    "cha": 6,
+    "weaknesses": [
+      "Heilige Magie"
+    ],
+    "resistances": [
+      "Bludgeoning",
+      "Stich"
+    ],
+    "immunities": [
+    ],
+    "actions": [
+      "Greiferarme",
+      "Verschlingen",
+      "Kräftiger Tritt"
+    ]
+  },
+  {
+    "name": "Octark",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Monstrosität",
+    "hp": 80,
+    "ac": 17,
+    "movement": [
+      [
+        "krabbelnd",
+        "5"
+      ],
+      [
+        "schwimmend",
+        "50"
+      ]
+    ],
+    "str": 4,
+    "dex": 2,
+    "con": 3,
+    "int": -1,
+    "wis": 3,
+    "cha": -2,
+    "weaknesses": [
+      "Kälte",
+      "Blitz"
+    ],
+    "resistances": [
+      "Feuer"
+    ],
+    "immunities": [
+      "Gift",
+      "Betäubt"
+    ],
+    "actions": [
+      "Tentakelpeitsche",
+      "Würgegriff",
+      "Tintenwolke",
+      "Wasserstrahl"
+    ]
+  },
+  {
+    "name": "Prellkäfer",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Bestie",
+    "hp": 60,
+    "ac": 19,
+    "movement": [
+      [
+        "krabbelnd",
+        "40"
+      ]
+    ],
+    "str": 3,
+    "dex": 3,
+    "con": 1,
+    "int": -2,
+    "wis": 0,
+    "cha": -2,
+    "weaknesses": [
+      "Psychisch"
+    ],
+    "resistances": [
+      "Kälte",
+      "Feuer"
+    ],
+    "immunities": [
+    ],
+    "actions": [
+      "Schalenramme",
+      "Rabiater Angriff"
+    ]
+  },
+  {
+    "name": "Riesenflügler",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Bestie",
+    "hp": 140,
+    "ac": 16,
+    "movement": [
+      [
+        "fliegend",
+        "80"
+      ]
+    ],
+    "str": 5,
+    "dex": 4,
+    "con": 4,
+    "int": 1,
+    "wis": 3,
+    "cha": 2,
+    "weaknesses": [
+      "Blitz"
+    ],
+    "resistances": [
+    ],
+    "immunities": [
+      "Erschöpft",
+      "Betäubt"
+    ],
+    "actions": [
+      "Sturzflug",
+      "Kreischen",
+      "Giftzahn",
+      "Kratzer",
+      "Stürmischer Schlag",
+      "Windschnitt"
+    ]
+  },
+  {
+    "name": "Ritter",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Humanoid",
+    "hp": 180,
+    "ac": 18,
+    "movement": [
+      [
+        "laufend",
+        "30"
+      ]
+    ],
+    "str": 5,
+    "dex": 2,
+    "con": 4,
+    "int": 1,
+    "wis": 3,
+    "cha": 5,
+    "weaknesses": [
+    ],
+    "resistances": [
+      "Nicht-magischer Schaden"
+    ],
+    "immunities": [
+      "Verängstigt"
+    ],
+    "actions": [
+      "Kurzschwertschlag",
+      "Großschwerthieb",
+      "Lanzenstoß",
+      "Ring des Lichts"
+    ]
+  },
+  {
+    "name": "Schluckschleim",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Schleim",
+    "hp": 200,
+    "ac": 10,
+    "movement": [
+      [
+        "kriechend",
+        "10"
+      ]
+    ],
+    "str": 0,
+    "dex": -1,
+    "con": 4,
+    "int": -1,
+    "wis": 2,
+    "cha": 2,
+    "weaknesses": [
+      "Feuer",
+      "Kälte",
+      "Stich"
+    ],
+    "resistances": [
+      "Stumpf",
+      "Schnitt"
+    ],
+    "immunities": [
+    ],
+    "actions": [
+      "Verschlingen"
+    ]
+  },
+  {
+    "name": "Stahlschuppe",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Humanoid",
+    "hp": 90,
+    "ac": 17,
+    "movement": [
+      [
+        "laufend",
+        "30"
+      ]
+    ],
+    "str": 3,
+    "dex": 4,
+    "con": 2,
+    "int": 1,
+    "wis": 1,
+    "cha": 2,
+    "weaknesses": [
+      "Blitz"
+    ],
+    "resistances": [
+      "Gift"
+    ],
+    "immunities": [
+      "Erschöpft"
+    ],
+    "actions": [
+      "Brutale Hiebe",
+      "Beilhieb",
+      "Schwanzschlag",
+      "Schneller Hieb",
+      "Säurespeier",
+      "Würgegriff",
+      "Kreischen",
+      "Rabiater Angriff",
+      "Reptilienbiss"
+    ]
+  },
+  {
+    "name": "Sumpfwurm",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Bestie",
+    "hp": 80,
+    "ac": 15,
+    "movement": [
+      [
+        "springend",
+        "35"
+      ],
+      [
+        "schwimmend",
+        "50"
+      ]
+    ],
+    "str": 3,
+    "dex": 4,
+    "con": 1,
+    "int": 0,
+    "wis": 2,
+    "cha": -2,
+    "weaknesses": [
+      "Kälte",
+      "Blitz",
+      "Gift"
+    ],
+    "resistances": [
+      "Feuer"
+    ],
+    "immunities": [
+      "Schnitt"
+    ],
+    "actions": [
+      "Reißzahnbiss",
+      "Sumpfiger Hinterhalt",
+      "Feuerballwurf"
+    ]
+  },
+  {
+    "name": "Tetravora",
+    "boss": true,
+    "bosstitle": "",
+    "type": "Pflanze",
+    "hp": 400,
+    "ac": 18,
+    "movement": [
+    ],
+    "str": 4,
+    "dex": 4,
+    "con": 4,
+    "int": 4,
+    "wis": 4,
+    "cha": 4,
+    "weaknesses": [
+      "Feuer"
+    ],
+    "resistances": [
+    ],
+    "immunities": [
+      "Gift",
+      "Betäubt",
+      "Erschöpft",
+      "Bezaubert",
+      "Gepackt",
+      "Festgesetzt"
+    ],
+    "actions": [
+      "Reißzahnbiss",
+      "Schädelbrumme",
+      "Quadro-Giftspore",
+      "Regeneration",
+      "Drachenstrahl"
+    ]
+  },
+  {
+    "name": "Voltfaden",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Elementar",
+    "hp": 140,
+    "ac": 16,
+    "movement": [
+      [
+        "schwebend",
+        "40"
+      ]
+    ],
+    "str": 3,
+    "dex": 2,
+    "con": 4,
+    "int": 1,
+    "wis": 3,
+    "cha": 1,
+    "weaknesses": [
+      "Kälte"
+    ],
+    "resistances": [
+      "Piercing"
+    ],
+    "immunities": [
+      "Blitz",
+      "Gift"
+    ],
+    "actions": [
+      "Blitzstrahl",
+      "Elektrisierender Stoß",
+      "Tentakelpeitsche",
+      "Würgegriff",
+      "Volttentakel"
+    ]
+  },
+  {
+    "name": "Zunderflügler",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Bestie",
+    "hp": 20,
+    "ac": 13,
+    "movement": [
+      [
+        "fliegend",
+        "60"
+      ]
+    ],
+    "str": -2,
+    "dex": 4,
+    "con": 1,
+    "int": -3,
+    "wis": 1,
+    "cha": -2,
+    "weaknesses": [
+      "Kälte"
+    ],
+    "resistances": [
+    ],
+    "immunities": [
+      "Feuer"
+    ],
+    "actions": [
+      "Feuriger Vampirbiss",
+      "Flammender Flügelschlag",
+      "Loderndes Kreischen"
+    ]
+  },
+  {
+    "name": "Ätzschneck",
+    "boss": false,
+    "bosstitle": "",
+    "type": "Bestie",
+    "hp": 80,
+    "ac": 16,
+    "movement": [
+      [
+        "kriechend",
+        "10"
+      ],
+      [
+        "kletternd",
+        "10"
+      ]
+    ],
+    "str": 2,
+    "dex": -4,
+    "con": 4,
+    "int": 2,
+    "wis": 3,
+    "cha": 1,
+    "weaknesses": [
+      "Kälte"
+    ],
+    "resistances": [
+    ],
+    "immunities": [
+      "Gift",
+      "Säure"
+    ],
+    "actions": [
+      "Säurebiss",
+      "Säurespucke",
+      "Säureexplosion"
+    ]
+  }
+]

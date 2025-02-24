@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Tinorland | Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../../static/css/base.css">
+    <link rel="stylesheet" href="../../static/css/character.css">
+</head>
+<body>
+
+<link rel="stylesheet" href="../../static/css/banner.css">
+<link rel="shortcut icon" href="../../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../../static/ui/banner-1.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../../static/imgs/logo.png" alt="" class="logo" style="left: -40px; position: relative">
+            <a href="../../index.html" style="left: -40px; position: relative">Tome of the Vastlands</a>
+            <sub style="left: -40px; position: relative">v3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('../../characters/index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('../index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('../../compendium/index.html')">Kompendien</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        <div class="character-container">
+            <div class="character-data">
+                <div class="character-data-box">
+                    
+                    
+                    <img src="https://images.zetsuboushii.site/dnd/crests/tinorland-crest.png" alt="">
+
+                    <div class="character-data-name"><h1>Tinorland</h1></div>
+                    
+                        <div class="character-data-title"><h3>Großherzogtum</h3></div>
+                    
+
+                    <div class="character-data-field-title"><h4>Allgemeine Informationen</h4></div>
+                    <table>
+                        <tbody>
+                        
+                        
+                            <tr>
+                                <td>In Landessprache</td>
+                                <td>Tínorland <i>Land von Tínnor</i></td>
+                            </tr>
+                        
+                        <tr>
+                            <td>Art des Ortes</td>
+                            <td>Territorialstaat</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Hauptstadt</td>
+                                <td>Tinorke</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Standort</h4></div>
+                    <table>
+                        <tbody>
+                        
+                            <tr>
+                                <td>Liegt in</td>
+                                <td>
+                                    
+                                    <a href="../faergria/index.html">
+                                        Faergria
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                        
+                            <tr>
+                                <td>Enthält</td>
+                                <td>
+                                    
+                                        
+                                        <a href="../alljordbucht/index.html">
+                                            Alljordbucht, 
+                                        </a>
+                                    
+                                        
+                                        <a href="../immergr%C3%BCnes-k%C3%BCstenland/index.html">
+                                            Immergrünes Küstenland, 
+                                        </a>
+                                    
+                                        
+                                        <a href="../nokoto-sumpfland/index.html">
+                                            Nokoto-Sumpfland, 
+                                        </a>
+                                    
+                                        
+                                        <a href="../schlangenschweif-archipel/index.html">
+                                            Schlangenschweif-Archipel, 
+                                        </a>
+                                    
+                                        
+                                        <a href="../schwelende-alpen/index.html">
+                                            Schwelende Alpen, 
+                                        </a>
+                                    
+                                        
+                                        <a href="../sturmschild-taiga/index.html">
+                                            Sturmschild-Taiga, 
+                                        </a>
+                                    
+                                        
+                                        <a href="../tinorische-amaranthfelder/index.html">
+                                            Tinorische Amaranthfelder
+                                        </a>
+                                    
+                                </td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+
+                    
+                        <div class="character-data-field-title"><h4>Politik</h4></div>
+                        <table>
+                            <tbody>
+                            
+                                <tr>
+                                    <td>Regierungsform</td>
+                                    <td>Großherzogtum</td>
+                                </tr>
+                            
+                            
+                                <tr>
+                                    <td>Regierende Person</td>
+                                    <td>Konrad, <small>(Stellv. Großherzog)</small></td>
+                                </tr>
+                            
+                            </tbody>
+                        </table>
+                    
+                </div>
+            </div>
+
+            <div class="character-text">
+                <div class="character-text-box">
+                    
+                        <p></p>
+
+                        <hr>
+
+                        
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

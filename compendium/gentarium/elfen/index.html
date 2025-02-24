@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Elfen | Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../../../static/css/base.css">
+    <link rel="stylesheet" href="../../../static/css/theologarium.css">
+</head>
+<body>
+
+<link rel="stylesheet" href="../../../static/css/banner.css">
+<link rel="shortcut icon" href="../../../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../../../static/ui/banner-1.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../../../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../../../static/imgs/logo.png" alt="" class="logo" style="left: -40px; position: relative">
+            <a href="../../../index.html" style="left: -40px; position: relative">Tome of the Vastlands</a>
+            <sub style="left: -40px; position: relative">v3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('../../../characters/index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('../../../places/index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('../../index.html')">Kompendien</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        <div class="theologarium-container">
+            <div class="theologarium-row">
+                
+                
+                <img src="https://images.zetsuboushii.site/dnd/characters/volo.png" alt="">
+                <div class="theologarium-name">
+                    <h1>Elfen</h1>
+                </div>
+            </div>
+            <div class="theologarium-row">
+                <div class="theologarium-text-box">
+                    <p>Die Elfen sind ein edles und anmutiges Volk, tief verwurzelt in den alten Traditionen und der Magie ihrer Welt. Sie stehen in inniger Verbindung zur Göttin Farone, der Beschützerin der Natur und der Sternenlichter.
+ Elfen sind bekannt für ihre Langlebigkeit und ihre zeitlose Schönheit, die von einer Aura mystischer Weisheit begleitet wird. Ihre Gemeinschaften sind oft in tiefen Wäldern oder auf hohen Bergen verborgen, wo sie im Einklang mit der Natur leben und die Geheimnisse der Welt bewahren. Elfen besitzen eine natürliche Affinität zur Magie und Kunst, was sich in ihrer Kultur und ihren Bräuchen widerspiegelt. Die Göttin Farone wird von ihnen verehrt, und ihre Priester und Priesterinnen sind angesehene Führer, die den Segen der Göttin über ihr Volk bringen. Durch ihre Hingabe an Farone streben die Elfen danach, das Gleichgewicht der Natur zu bewahren und die Schönheit der Welt zu schützen, was sie zu Hütern alter Weisheiten und magischer Geheimnisse macht. Elfen haben eine Lebenserwartung von 1000 Jahren.</p>
+
+                    <hr>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

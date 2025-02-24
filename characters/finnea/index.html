@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Finnea | Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../../static/css/base.css">
+    <link rel="stylesheet" href="../../static/css/character.css">
+</head>
+<body>
+
+<link rel="stylesheet" href="../../static/css/banner.css">
+<link rel="shortcut icon" href="../../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../../static/ui/banner-1.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../../static/imgs/logo.png" alt="" class="logo" style="left: -40px; position: relative">
+            <a href="../../index.html" style="left: -40px; position: relative">Tome of the Vastlands</a>
+            <sub style="left: -40px; position: relative">v3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('../index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('../../places/index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('../../compendium/index.html')">Kompendien</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        <div class="character-container">
+            <div class="character-data">
+                <div class="character-data-box">
+                    
+                    
+                    
+                    <img src="https://images.zetsuboushii.site/dnd/characters/finnea.png" alt="">
+
+                    <div class="character-data-name"><h1>Finnea </h1></div>
+                    <div class="character-data-title"><h3>Stille Flammenfürstin</h3></div>
+
+                    <div class="character-data-field-title"><h4>Informationen zur Person</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Rasse</td>
+                            <td>Elfen</td>
+                        </tr>
+                        <tr>
+                            <td>Geschlecht</td>
+                            <td>
+                                weiblich
+                            </td>
+                        </tr>
+                        
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Maße</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Körpergröße</td>
+                            <td>1,72 m</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Gewicht</td>
+                                <td>60 kg</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Profession</h4></div>
+                    <table>
+                        <tbody>
+                        
+                        <tr>
+                            <td>Basisklasse</td>
+                            <td>Recke</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Subklasse</td>
+                                <td>
+                                    <ul>
+                                        
+                                            <li>Psimagier</li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Weitere Informationen</h4></div>
+                    <table>
+                        <tbody>
+                        
+                            <tr>
+                                <td>Geburtsort</td>
+                                <td>Yerenas</td>
+                            </tr>
+                            
+                        
+                        
+                            <tr>
+                                <td>Gesinnung</td>
+                                <td>NG</td>
+                            </tr>
+                        
+                        
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Persönlicher Status</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Verbleib</td>
+                            <td>am Leben</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Beziehungen</td>
+                                <td>
+                                    <ul>
+                                        
+                                            <li>Adamar <small>(Kleiner Bruder)</small></li>
+                                        
+                                            <li>Farone <small>(Mutter)</small></li>
+                                        
+                                            <li>Nayru <small>(Kleine Schwester)</small></li>
+                                        
+                                            <li>Phaerille <small>(Kleine Schwester)</small></li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="character-text">
+                <div class="character-text-box">
+                    <p>Finnea ist die erste der drei Hüter der Manaflamme, oberste Reckin der Farone und Fürstin von Farodris.</p>
+
+                    <hr>
+
+                    
+                        <div class="character-text-heading"><h2>Gezeichnet von Schmerz</h2></div>
+                        <p>Finnea wurde als erstes Kind der einstigen königlichen Familie von Farodris geboren. Durch den Segen der Göttin Farone, den ihre Mutter erhielt, gilt Finnea als eine direkte Nachfahrin von Farone. Finneas Kindheit war von strenger Erziehung und hohen Erwartungen geprägt. Sie wurde darauf vorbereitet, eines Tages die Zügel der Macht im Königreich zu übernehmen und ihre Volk zu führen. Schon früh wurde ihr die Verantwortung für die Manaflamme, den Quell der magischen Energie in Faergria, übertragen. Dies kam zur Folge, nach einem traumatischen Ereignis in ihrer Kindheit, als sie bei einem Unfall mit Magie ihre Eltern verloren hatte. Sie machte sich selbst für die Tode verantwortlich und zog sich emotional zurück. Seitdem ist sie von einer tiefen Trauer getrieben und trägt die Last der Schuld auf ihren Schultern. Ihre jüngeren Geschwister Adamar und Phaerille waren seitan der Grund, ihrer Bestimmung als Hüterin der Manaflamme und spätere Fürstin zu folgen. Dieser Schmerz hat sie zu einer gewissen Härte erzogen und sie dazu veranlasst, sich emotional abzuschotten.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Die Last der Führung</h2></div>
+                        <p>Als Fürstin von Farodris trägt Finnea eine schwere Bürde. Sie fühlt sich verantwortlich für das Wohl ihrer Untertanen und für den Schutz der Manaflamme. Der Druck, diesen Erwartungen gerecht zu werden, ist immens. Oftmals fühlt sie sich einsam und isoliert, denn nur wenige verstehen die Last, die sie trägt. In einsamen Nächten unterhält sie sich stundenlang im Mondschein mit ihrer Schwester Phaerille. Gerade als Fürstin des elfischen Volkes in Faergria hat Finnea es nicht leicht. Oftmals muss sie sich und ihr Volk auf großen Veranstaltungen für diverse Anschuldigungen rechtfertigen und blanken Elfenhass ertragen.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Verborgene Sehnsüchte</h2></div>
+                        <p>Trotz ihrer kühlen Außenseite hegt Finnea auch Sehnsüchte. Sie träumt von einer Welt, in der Frieden herrscht und alle Bewohner Faergrias in Harmonie miteinander leben. Sie sehnt sich nach tieferen Verbindungen zu anderen und nach der Möglichkeit, ihre verletzliche Seite zu zeigen. Doch ihre Angst vor erneuter Enttäuschung hält sie davon ab, sich vollständig zu öffnen.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Eine gläserne Fassade</h2></div>
+                        <p>Hinter der kühlen Fassade verbirgt sich eine vielschichtige Persönlichkeit. Finnea ist eine Frau von großer Intelligenz und einem scharfen Verstand. Sie ist eine Meisterin der Strategie und denkt stets mehrere Schritte voraus. Ihre Loyalität gegenüber ihrem Volk und ihrer Pflicht ist unerschütterlich. Unter den Recken des Animus zählt sie zu den mächtigsten. Doch ihre äußere Stärke ist oft nur eine Fassade, die sie vor ihrer inneren Verletzlichkeit schützt. Nichtsdestotrotz überwiegen Finneas vielen Talente und charakterlichen Vorzüge. Ihre Loyalität gilt nicht nur ihrem Volk, sondern auch ihren liebsten Personen. Gerade für ihre Geschwister würde Finnea alle Schmerzen ertragen. Zudem kommt ihr strategisches Denken in jeder Schachpartie zum Vorschein, indenen sie ihre Gegner binnen weniger Züge außer Gefecht setzt. Oftmals allein, aber auch teils mit ihren Geschwistern gemeinsam musiziert Finnea und ist virtuos an der Harfe, dem wohl traditionellsten Instrument der Elfen. In sonstigen freien Stunden verausgabt sie sich an Gedichten, die sie über ihren tiefen Kummer schreibt.</p>
+                        <hr>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

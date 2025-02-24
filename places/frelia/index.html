@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Frelia | Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../../static/css/base.css">
+    <link rel="stylesheet" href="../../static/css/character.css">
+</head>
+<body>
+
+<link rel="stylesheet" href="../../static/css/banner.css">
+<link rel="shortcut icon" href="../../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../../static/ui/banner-1.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../../static/imgs/logo.png" alt="" class="logo" style="left: -40px; position: relative">
+            <a href="../../index.html" style="left: -40px; position: relative">Tome of the Vastlands</a>
+            <sub style="left: -40px; position: relative">v3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('../../characters/index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('../index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('../../compendium/index.html')">Kompendien</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        <div class="character-container">
+            <div class="character-data">
+                <div class="character-data-box">
+                    
+                    
+                    <img src="https://images.zetsuboushii.site/dnd/crests/frelia-crest.png" alt="">
+
+                    <div class="character-data-name"><h1>Frelia</h1></div>
+                    
+
+                    <div class="character-data-field-title"><h4>Allgemeine Informationen</h4></div>
+                    <table>
+                        <tbody>
+                        
+                        
+                            <tr>
+                                <td>In Landessprache</td>
+                                <td>Freleie <i>Freies Land</i></td>
+                            </tr>
+                        
+                        <tr>
+                            <td>Art des Ortes</td>
+                            <td>Hauptstadt</td>
+                        </tr>
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Standort</h4></div>
+                    <table>
+                        <tbody>
+                        
+                            <tr>
+                                <td>Liegt in</td>
+                                <td>
+                                    
+                                    <a href="../bl%C3%BChender-fjord/index.html">
+                                        Blühender Fjord
+                                    </a>
+                                </td>
+                            </tr>
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    
+                        <div class="character-data-field-title"><h4>Politik</h4></div>
+                        <table>
+                            <tbody>
+                            
+                            
+                                <tr>
+                                    <td>Regierende Person</td>
+                                    <td>Solenne, <small>(Fürstin)</small></td>
+                                </tr>
+                            
+                            </tbody>
+                        </table>
+                    
+                </div>
+            </div>
+
+            <div class="character-text">
+                <div class="character-text-box">
+                    
+                        <p>Eine bunte Metropole, in der nach Wissen und Ästhetik gestrebt wird. Die vielen botanischen Gärten und die Blumenzucht                                                                   wurde                                                                   von                                                                   dem                                                                   Vater                                                                   von                                                                   Kurfürstin                                                                   Solenne                                                                   in                                                                   Auftrag                                                                   gegeben,                                                                   um                                                                   seine                                                                   Gattin                                                                   glücklich                                                                   zu                                                                   machen.                                                                   Dadurch                                                                   hat                                                                   sich                                                                   Frelia                                                                   und                                                                   auch                                                                   Hal                                                                   neben                                                                   der                                                                   Großen                                                                   Bibliothek                                                                   einen                                                                   Namen                                                                   in                                                                   Faergria                                                                   gemacht.                                                                   </p>
+
+                        <hr>
+
+                        
+                            <div class="character-text-heading"><h2>Blütenschloss Frelia</h2></div>
+                            <p>Der Grundriss der Schlossanlage ist angelehnt an eine Blüte. Die vielen Grünflächen und Gärten stehen unter strengster                                                                               Obhut                                                                               von                                                                               Kurfürstin                                                                               Solenne.                                                                               </p>
+                            <hr>
+                        
+                            <div class="character-text-heading"><h2>Große Bibliothek von Hal</h2></div>
+                            <p>Die hohen Regale der Bibliothek enthalten äonenaltes Wissen aus der gesamten Welt. Eine sonderbare Frau hütet die alten                                                                               Wälzer                                                                               wie                                                                               ihre                                                                               eigenen                                                                               Kinder                                                                               ;                                                                               und                                                                               das                                                                               seit                                                                               die                                                                               Bibliothek                                                                               erbaut                                                                               wurde.                                                                               Die                                                                               Bibliothek                                                                               steht                                                                               in                                                                               direkter                                                                               Verbindung                                                                               zur                                                                               Magieakademie                                                                               von                                                                               Hal,                                                                               daher                                                                               treiben                                                                               sich                                                                               gerade                                                                               zur                                                                               Klausurenphase                                                                               viele                                                                               Akademiestudenten                                                                               in                                                                               den                                                                               weitläufigen                                                                               Gängen                                                                               herum.                                                                               </p>
+                            <hr>
+                        
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

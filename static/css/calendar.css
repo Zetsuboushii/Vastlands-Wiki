@@ -1,0 +1,91 @@
+@charset "UTF-8";
+#calendar-widget {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  position: relative;
+  font-family: "Grenze Gotisch"; }
+
+#calendar-header {
+  text-align: center;
+  margin-bottom: 10px; }
+
+#calendar-header button {
+  padding: 5px 10px;
+  margin: 0 10px;
+  cursor: pointer;
+  background-image: url("../ui/button-square.png");
+  background-size: contain;
+  border: none;
+  background-color: transparent;
+  color: white;
+  width: 50px;
+  height: 50px;
+  font-size: 20px; }
+
+#calendar-header #month-year {
+  font-size: 20px; }
+
+#calendar-table {
+  width: 100%;
+  border-collapse: collapse; }
+
+#calendar-table th,
+#calendar-table td {
+  border: 2px solid #2e2622;
+  width: 14.28%;
+  height: 80px;
+  text-align: center;
+  vertical-align: top;
+  position: relative;
+  padding: 0; }
+
+#calendar-table th, thead {
+  color: white;
+  background-image: url("../ui/table-background-purple.png");
+  background-size: cover; }
+
+/* Markierungen */
+.today {
+  background-image: url("../ui/table-background-purple.png");
+  background-size: cover;
+  color: white; }
+
+/* Für die Tageszahl im Feld */
+.day-number {
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  font-size: 0.9em;
+  font-weight: bold; }
+
+/* Container für die Icons neben der Tageszahl */
+.icons {
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  display: flex;
+  gap: 2px; }
+
+.icons a {
+  text-decoration: none;
+  font-size: 1em;
+  cursor: pointer; }
+
+/* Tooltip-Stil */
+#tooltip {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: none;
+  white-space: nowrap;
+  /* transform: translateY(0);  --> Kann optional sein */ }
+  #tooltip .tooltip-item {
+    color: black; }
+
+/*# sourceMappingURL=calendar.css.map */

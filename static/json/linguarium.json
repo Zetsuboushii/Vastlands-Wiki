@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Faergrianisch",
+    "type": "Sprache",
+    "center": "Faergria",
+    "content": {
+      "excerpt": "",
+      "sections": [
+      ]
+    }
+  },
+  {
+    "name": "Escrigrisch",
+    "type": "Regionaldialekt",
+    "center": "Nordholm",
+    "content": {
+      "excerpt": "",
+      "sections": [
+      ]
+    }
+  },
+  {
+    "name": "Färön",
+    "type": "Regionaldialekt",
+    "center": "Yerenas",
+    "content": {
+      "excerpt": "",
+      "sections": [
+      ]
+    }
+  },
+  {
+    "name": "Halienisch",
+    "type": "Regionaldialekt",
+    "center": "Frelia",
+    "content": {
+      "excerpt": "",
+      "sections": [
+      ]
+    }
+  },
+  {
+    "name": "Kluirim",
+    "type": "Regionaldialekt",
+    "center": "Garadzar",
+    "content": {
+      "excerpt": "",
+      "sections": [
+      ]
+    }
+  },
+  {
+    "name": "Thaugrin",
+    "type": "Regionaldialekt",
+    "center": "Grenbrock",
+    "content": {
+      "excerpt": "",
+      "sections": [
+      ]
+    }
+  },
+  {
+    "name": "Tinorisch",
+    "type": "Regionaldialekt",
+    "center": "Tinorke",
+    "content": {
+      "excerpt": "",
+      "sections": [
+      ]
+    }
+  },
+  {
+    "name": "Markathion",
+    "type": "Sprache",
+    "center": "Markath",
+    "content": {
+      "excerpt": "",
+      "sections": [
+      ]
+    }
+  }
+]

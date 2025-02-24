@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Farone | Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../../static/css/base.css">
+    <link rel="stylesheet" href="../../static/css/character.css">
+</head>
+<body>
+
+<link rel="stylesheet" href="../../static/css/banner.css">
+<link rel="shortcut icon" href="../../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../../static/ui/banner-3.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../../static/imgs/logo.png" alt="" class="logo" style="left: -40px; position: relative">
+            <a href="../../index.html" style="left: -40px; position: relative">Tome of the Vastlands</a>
+            <sub style="left: -40px; position: relative">v3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('../index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('../../places/index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('../../compendium/index.html')">Kompendien</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        <div class="character-container">
+            <div class="character-data">
+                <div class="character-data-box">
+                    
+                    
+                    
+                    <img src="https://images.zetsuboushii.site/dnd/characters/farone.png" alt="">
+
+                    <div class="character-data-name"><h1>Farone </h1></div>
+                    <div class="character-data-title"><h3>Leicht-Reizbares Nachtschattengewächs</h3></div>
+
+                    <div class="character-data-field-title"><h4>Informationen zur Person</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Rasse</td>
+                            <td>Götter</td>
+                        </tr>
+                        <tr>
+                            <td>Geschlecht</td>
+                            <td>
+                                weiblich
+                            </td>
+                        </tr>
+                        
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Maße</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Körpergröße</td>
+                            <td>1,44 m</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Gewicht</td>
+                                <td>38 kg</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Profession</h4></div>
+                    <table>
+                        <tbody>
+                        
+                        <tr>
+                            <td>Basisklasse</td>
+                            <td>Gott</td>
+                        </tr>
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Weitere Informationen</h4></div>
+                    <table>
+                        <tbody>
+                        
+                            <tr>
+                                <td>Geburtsort</td>
+                                <td>Garten der Magie</td>
+                            </tr>
+                            
+                        
+                        
+                            <tr>
+                                <td>Gesinnung</td>
+                                <td>CN</td>
+                            </tr>
+                        
+                        
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Persönlicher Status</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Verbleib</td>
+                            <td>verstorben</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Beziehungen</td>
+                                <td>
+                                    <ul>
+                                        
+                                            <li>Adamar <small>(Sohn)</small></li>
+                                        
+                                            <li>Finnea <small>(Tochter)</small></li>
+                                        
+                                            <li>Nayru <small>(Reckin in Ausbildung)</small></li>
+                                        
+                                            <li>Phaerille <small>(Tochter)</small></li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="character-text">
+                <div class="character-text-box">
+                    <p>Farone ist die kindliche Göttin der Natur und der Magie. Sie verlieh Faergria den frischen, grünen Anstrich der Pflanzen, schenkte Tieren im Wasser, auf dem Land und in den Lüften das Leben, und erschuf die berüchtigte Manaflamme; der Quell der Magie in Faergria, strengstens bewacht in Yerenas im Tempel der Manaflamme wird sie alle 100 Jahre vor dem Erlischen bewahrt. Farone erschuf die Elfen, die seit Anbeginn in den Wäldern von Farodris leben und diesen verehren.</p>
+
+                    <hr>
+
+                    
+                        <div class="character-text-heading"><h2>Farones Garten</h2></div>
+                        <p>Farone residiert im Garten der Magie, den sie unter strengsten Anweisungen hat anlegen lassen. Diesen Garten hegt und pflegt sie und empfängt aus diesem Grund auch nur sehr selten Gäste bei sich, da sie Angst hat, dass ihr geliebter Garten ruiniert werden könne.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Persönlichkeit</h2></div>
+                        <p>Es hängt etwas vom Glück ab, ob Farone jemandem gegenüber friedlich oder feindlich gesinnt ist. Jedoch sollte man sich nicht täuschen lassen. Hinter ihrer eisigen Fassade verbirgt sich eine wohlgesinnte junge Dame, die jedoch aufgrund ihres schroffen Tons meist alleine ihren Nachmittagstee verköstigt. Wer sich mit Farone gut stellt, hat eine strahlende Zukunft als der nächste legendäre Magier Faergrias sicher.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Familie</h2></div>
+                        <p>Obwohl die anderen Götter ihre Recken als ihre Kinder ansehen, will es für Farone nicht so wirklich funktionieren. Trotz des Machtverhältnisses, referenzieren Farones Recken sie nur als “kleine Schwester”, was Farone ganz und gar nicht in den Kram passt.</p>
+                        <hr>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

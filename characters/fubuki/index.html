@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Fubuki | Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../../static/css/base.css">
+    <link rel="stylesheet" href="../../static/css/character.css">
+</head>
+<body>
+
+<link rel="stylesheet" href="../../static/css/banner.css">
+<link rel="shortcut icon" href="../../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../../static/ui/banner-6.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../../static/imgs/logo.png" alt="" class="logo" style="left: -40px; position: relative">
+            <a href="../../index.html" style="left: -40px; position: relative">Tome of the Vastlands</a>
+            <sub style="left: -40px; position: relative">v3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('../index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('../../places/index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('../../compendium/index.html')">Kompendien</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        <div class="character-container">
+            <div class="character-data">
+                <div class="character-data-box">
+                    
+                    
+                    
+                    <img src="https://images.zetsuboushii.site/dnd/characters/fubuki artwork.png" alt="">
+
+                    <div class="character-data-name"><h1>Fubuki </h1></div>
+                    <div class="character-data-title"><h3>Knuffiges Eis des Nordens</h3></div>
+
+                    <div class="character-data-field-title"><h4>Informationen zur Person</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Rasse</td>
+                            <td>Schutzgeister</td>
+                        </tr>
+                        <tr>
+                            <td>Geschlecht</td>
+                            <td>
+                                weiblich
+                            </td>
+                        </tr>
+                        
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Maße</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Körpergröße</td>
+                            <td>1,44 m</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Gewicht</td>
+                                <td>35 kg</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Profession</h4></div>
+                    <table>
+                        <tbody>
+                        
+                        <tr>
+                            <td>Basisklasse</td>
+                            <td>Hohefürst</td>
+                        </tr>
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Weitere Informationen</h4></div>
+                    <table>
+                        <tbody>
+                        
+                            <tr>
+                                <td>Geburtsort</td>
+                                <td>Kronen-Schneeberge</td>
+                            </tr>
+                            
+                        
+                        
+                            <tr>
+                                <td>Gesinnung</td>
+                                <td>LG</td>
+                            </tr>
+                        
+                        
+                            <tr>
+                                <td>Zugehörigkeit</td>
+                                <td>
+                                    <ul>
+                                        
+                                            <li>1. Generation der Hohefürsten</li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        
+                            <tr>
+                                <td>Mag</td>
+                                <td>
+                                    
+                                        Glühwein, 
+                                    
+                                        Große Klingenwaffen, 
+                                    
+                                        Kuscheln, 
+                                    
+                                        Süßigkeiten, 
+                                    
+                                        Süßspeisen, 
+                                    
+                                        Tiere, 
+                                    
+                                        Winter
+                                    
+                                </td>
+                            </tr>
+                        
+                        
+                            <tr>
+                                <td>Mag nicht</td>
+                                <td>
+                                    
+                                        Bitteres Essen, 
+                                    
+                                        Böse Personen, 
+                                    
+                                        Gespenster, 
+                                    
+                                        Hitze, 
+                                    
+                                        Viele Personen, 
+                                    
+                                        Wie ein Kind behandelt werden
+                                    
+                                </td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Persönlicher Status</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Verbleib</td>
+                            <td>am Leben</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Beziehungen</td>
+                                <td>
+                                    <ul>
+                                        
+                                            <li>Inoro <small>(Alter Freund)</small></li>
+                                        
+                                            <li>Kaen <small>(Freundin)</small></li>
+                                        
+                                            <li>Kaze <small>(Freund)</small></li>
+                                        
+                                            <li>Nayru <small>(Pflegemutter)</small></li>
+                                        
+                                            <li>Rai <small>(Freund)</small></li>
+                                        
+                                            <li>Scarlet <small>(Gute Freundin)</small></li>
+                                        
+                                            <li>U-Ranos <small>(Adoptivvater)</small></li>
+                                        
+                                            <li>Zora <small>(Freundin)</small></li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="character-text">
+                <div class="character-text-box">
+                    <p>Fubuki, die Hohefürstin des Eises, ist ein kleines, scheinbar unschuldiges Wesen, das die schneebedeckten Kronen-Schneeberge bewacht. In Gestalt eines zierlichen Schneefuchses, strahlt sie eine kindliche, fast verspielte Aura aus, die viele dazu verleitet, ihre wahre Macht zu unterschätzen. Doch trotz ihres sanften Äußeren und ihrer Vorliebe für Süßspeisen birgt sie die unbändige Kraft des Eises in sich, eine Macht, die in den tiefsten Wintern und kältesten Stürmen verborgen liegt.</p>
+
+                    <hr>
+
+                    
+                        <div class="character-text-heading"><h2>Erscheinung</h2></div>
+                        <p>Fubuki erscheint in der Gestalt eines jungen Fuchsmädchens, dessen schneeweißes Fell makellos die Reinheit der Kronen-Schneeberge widerspiegelt. Ihr Fell ist weich wie frisch gefallener Schnee, und ihre großen, eisblauen Augen wirken unschuldig und neugierig. Sie ist klein, zierlich, und viele würden sie kaum als Bedrohung betrachten, eher als unschuldigen Schutzgeist. Doch ihre Präsenz in den Schneebergen ist tief mit der eisigen Kälte und dem ewigen Winter verbunden. Wo Fubuki geht, weht ein sanfter, frostiger Wind, und in ihrer Nähe kann man den Hauch des Winters auf der Haut spüren. Ihre Ohren, leicht nach oben gestellt, geben ihr ein niedliches, verspieltes Aussehen, und sie hat eine Vorliebe dafür, am Kopf gestreichelt zu werden. Ein leises Schnurren begleitet oft diese Geste, und für einen Moment könnte man vergessen, dass sie mehr als nur ein gewöhnlicher Fuchs ist. Der Mantel, den sie trägt, wurde Fubuki einst von einem jungen Helden geschenkt. Auch wenn sie diesen nicht benötigt, um mit der Kälte klarzukommen, trägt sie den Mantel als Andenken an vergangene Tage.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Die stille Wächterin</h2></div>
+                        <p>Fubuki ist eine stille Beobachterin. Sie verbringt viel Zeit in den einsamen Höhen der Kronen-Schneeberge, wo die kalte Stille nur von dem leisen Knirschen des Schnees unter ihren Pfoten durchbrochen wird. Sie zeigt sich nur selten den Sterblichen, es sei denn, sie erkennt eine Notwendigkeit oder spürt eine besondere Verbindung. Diejenigen, die Fubuki begegnen, sehen oft nur den süßen, kleinen Schneefuchs, der eine Vorliebe für Streicheleinheiten und süße Leckereien hat. Doch es ist diese leise Zurückhaltung, die ihre wahre Stärke verbirgt. Fubuki ist das personifizierte Eis: still, klar und unerbittlich. Sie schätzt Frieden und Harmonie, und ihre Natur neigt zu Gelassenheit. Doch diese Stille täuscht – unter der Oberfläche ihrer Sanftheit liegt eine unermessliche Kraft, die nur diejenigen zu spüren bekommen, die töricht genug sind, sie herauszufordern.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Streicheleinheiten und Süßspeisen</h2></div>
+                        <p>Trotz ihrer Rolle als Hohefürstin des Eises hat Fubuki eine überraschend verspielte und zärtliche Seite. Sie liebt es, am Kopf gestreichelt zu werden, besonders hinter ihren spitzen Ohren. Wenn sie vertraut oder sich sicher fühlt, wird sie oft wie ein gewöhnliches Haustier sanft ihre Nase gegen die Hand desjenigen drücken, der ihr Zuneigung zeigt. Diese wenigen, die ihr Herz gewinnen, erleben eine Fubuki, die ihre eisige Natur für einen Moment vergisst und ihre Verspieltheit genießt. Auch hat Fubuki eine besondere Schwäche für Süßspeisen. Kekse, Honigbonbons oder Lebkuchen – sie kann solchen Köstlichkeiten nicht widerstehen. Es heißt, man könne ihre Gunst gewinnen, indem man ihr diese Leckereien anbietet. Doch auch hier muss man vorsichtig sein: Wer glaubt, sie könne mit Naschereien manipuliert werden, wird schnell erfahren, dass Fubuki in ihrem tiefsten Kern das Eis selbst ist – kalt, entschlossen und unverzeihlich.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Die verborgene Macht des Eises</h2></div>
+                        <p>Trotz ihres kindlichen Wesens ist Fubuki eine mächtige Kämpferin. Wer den Fehler macht, sie zu unterschätzen oder sie gar bedroht, wird schnell die wahre Natur der Hohefürstin des Eises kennenlernen. In der Schlacht wird Fubuki zu einer unaufhaltsamen Kraft der Natur. Ihre Wut ist still und doch unerbittlich, wie ein plötzlich hereinbrechender Schneesturm, der alles in seiner Bahn erfriert. In diesen Momenten zeigt sie ihr wahres Gesicht: Das Eis formt sich nach ihrem Willen, Gletscher und Schneestürme gehorchen ihr, und die Temperatur sinkt blitzartig auf eisige Kälte. Ihre zierliche Gestalt mag trügerisch wirken, doch sie kann selbst den mächtigsten Krieger mit einem einzigen eisigen Blick lähmen. Fubukis Macht liegt nicht in der Größe oder Stärke, sondern in der Unbarmherzigkeit und Präzision des Eises, das unter ihrer Kontrolle steht.</p>
+                        <hr>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

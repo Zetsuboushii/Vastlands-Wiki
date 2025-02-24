@@ -1,0 +1,1859 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Charaktere | Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/characters.css">
+</head>
+<body>
+
+<link rel="stylesheet" href="../static/css/banner.css">
+<link rel="shortcut icon" href="../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../static/ui/banner-6.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../static/imgs/logo.png" alt="" class="logo" style="left: -40px; position: relative">
+            <a href="../index.html" style="left: -40px; position: relative">Tome of the Vastlands</a>
+            <sub style="left: -40px; position: relative">v3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('../places/index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('../compendium/index.html')">Kompendien</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        <div class="filters">
+            <div id="letter-filter">
+                <div class="filter-title"><h3>Nach Anfangsbuchstabe filtern</h3></div>
+                <button data-letter="all">Alle</button>
+                
+                    <button data-letter="A">A</button>
+                
+                    <button data-letter="B">B</button>
+                
+                    <button data-letter="C">C</button>
+                
+                    <button data-letter="D">D</button>
+                
+                    <button data-letter="E">E</button>
+                
+                    <button data-letter="F">F</button>
+                
+                    <button data-letter="G">G</button>
+                
+                    <button data-letter="H">H</button>
+                
+                    <button data-letter="I">I</button>
+                
+                    <button data-letter="J">J</button>
+                
+                    <button data-letter="K">K</button>
+                
+                    <button data-letter="L">L</button>
+                
+                    <button data-letter="M">M</button>
+                
+                    <button data-letter="N">N</button>
+                
+                    <button data-letter="O">O</button>
+                
+                    <button data-letter="P">P</button>
+                
+                    <button data-letter="R">R</button>
+                
+                    <button data-letter="S">S</button>
+                
+                    <button data-letter="T">T</button>
+                
+                    <button data-letter="U">U</button>
+                
+                    <button data-letter="V">V</button>
+                
+                    <button data-letter="W">W</button>
+                
+                    <button data-letter="Z">Z</button>
+                
+            </div>
+            <div id="nationality-filter">
+                <div class="filter-title"><h3>Nach Staatsangehörigkeit filtern</h3></div>
+                <button data-nationality="all">Alle</button>
+                
+                    <button data-nationality="Faergria">Faergria</button>
+                
+            </div>
+        </div>
+
+        <div class="characters-container">
+            
+                <div class="characters-element" data-letter="A"
+                     data-nationality="Faergria">
+                    
+                    <a href="adamar/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/adamar.png" alt="">
+                    </a>
+                    <form action="adamar/index.html">
+                        <button class="characters-element-name" type="submit">Adamar</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="A"
+                     data-nationality="Faergria">
+                    
+                    <a href="adrian/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/adrian.png" alt="">
+                    </a>
+                    <form action="adrian/index.html">
+                        <button class="characters-element-name" type="submit">Adrian</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="A"
+                     data-nationality="Faergria">
+                    
+                    <a href="aelua/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/aelua.png" alt="">
+                    </a>
+                    <form action="aelua/index.html">
+                        <button class="characters-element-name" type="submit">Aelua</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="A"
+                     data-nationality="">
+                    
+                    <a href="alcuin/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/alcuin.png" alt="">
+                    </a>
+                    <form action="alcuin/index.html">
+                        <button class="characters-element-name" type="submit">Alcuin</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="A"
+                     data-nationality="">
+                    
+                    <a href="alden/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/alden.png" alt="">
+                    </a>
+                    <form action="alden/index.html">
+                        <button class="characters-element-name" type="submit">Alden</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="A"
+                     data-nationality="">
+                    
+                    <a href="alice/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/alice.png" alt="">
+                    </a>
+                    <form action="alice/index.html">
+                        <button class="characters-element-name" type="submit">Alice</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="A"
+                     data-nationality="">
+                    
+                    <a href="amlin/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/amlin.png" alt="">
+                    </a>
+                    <form action="amlin/index.html">
+                        <button class="characters-element-name" type="submit">Amlin</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="A"
+                     data-nationality="">
+                    
+                    <a href="ar-merer/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/ar-merer.png" alt="">
+                    </a>
+                    <form action="ar-merer/index.html">
+                        <button class="characters-element-name" type="submit">Ar-Merer</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="A"
+                     data-nationality="">
+                    
+                    <a href="artie/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/artie.png" alt="">
+                    </a>
+                    <form action="artie/index.html">
+                        <button class="characters-element-name" type="submit">Artie</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="A"
+                     data-nationality="">
+                    
+                    <a href="avarne/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/avarne artwork.png" alt="">
+                    </a>
+                    <form action="avarne/index.html">
+                        <button class="characters-element-name" type="submit">Avarne</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="A"
+                     data-nationality="">
+                    
+                    <a href="avila/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/avila.png" alt="">
+                    </a>
+                    <form action="avila/index.html">
+                        <button class="characters-element-name" type="submit">Avila</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="A"
+                     data-nationality="">
+                    
+                    <a href="aya/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/aya.png" alt="">
+                    </a>
+                    <form action="aya/index.html">
+                        <button class="characters-element-name" type="submit">Aya</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="B"
+                     data-nationality="">
+                    
+                    <a href="berthelot/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/berthelot.png" alt="">
+                    </a>
+                    <form action="berthelot/index.html">
+                        <button class="characters-element-name" type="submit">Berthelot</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="B"
+                     data-nationality="">
+                    
+                    <a href="burdig/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/burdig.png" alt="">
+                    </a>
+                    <form action="burdig/index.html">
+                        <button class="characters-element-name" type="submit">Burdig</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="C"
+                     data-nationality="">
+                    
+                    <a href="caeda/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/caeda.png" alt="">
+                    </a>
+                    <form action="caeda/index.html">
+                        <button class="characters-element-name" type="submit">Caeda</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="C"
+                     data-nationality="">
+                    
+                    <a href="carmesine/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/carmesine.png" alt="">
+                    </a>
+                    <form action="carmesine/index.html">
+                        <button class="characters-element-name" type="submit">Carmesine</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="C"
+                     data-nationality="">
+                    
+                    <a href="cedrik/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/cedrik artwork.png" alt="">
+                    </a>
+                    <form action="cedrik/index.html">
+                        <button class="characters-element-name" type="submit">Cedrik</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="C"
+                     data-nationality="">
+                    
+                    <a href="cicero/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/cicero.png" alt="">
+                    </a>
+                    <form action="cicero/index.html">
+                        <button class="characters-element-name" type="submit">Cicero</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="C"
+                     data-nationality="">
+                    
+                    <a href="cinnabar/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/cinnabar.png" alt="">
+                    </a>
+                    <form action="cinnabar/index.html">
+                        <button class="characters-element-name" type="submit">Cinnabar</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="C"
+                     data-nationality="">
+                    
+                    <a href="cordelia/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/cordelia.png" alt="">
+                    </a>
+                    <form action="cordelia/index.html">
+                        <button class="characters-element-name" type="submit">Cordelia</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="C"
+                     data-nationality="">
+                    
+                    <a href="cornelius/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/cornelius.png" alt="">
+                    </a>
+                    <form action="cornelius/index.html">
+                        <button class="characters-element-name" type="submit">Cornelius</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="D"
+                     data-nationality="">
+                    
+                    <a href="deh/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/deh.png" alt="">
+                    </a>
+                    <form action="deh/index.html">
+                        <button class="characters-element-name" type="submit">Deh</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="D"
+                     data-nationality="">
+                    
+                    <a href="derbatin/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/derbatin.png" alt="">
+                    </a>
+                    <form action="derbatin/index.html">
+                        <button class="characters-element-name" type="submit">Derbatin</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="D"
+                     data-nationality="">
+                    
+                    <a href="dorian/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/dorian.png" alt="">
+                    </a>
+                    <form action="dorian/index.html">
+                        <button class="characters-element-name" type="submit">Dorian</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="E"
+                     data-nationality="">
+                    
+                    <a href="eberd/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/eberd.png" alt="">
+                    </a>
+                    <form action="eberd/index.html">
+                        <button class="characters-element-name" type="submit">Eberd</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="E"
+                     data-nationality="">
+                    
+                    <a href="edgar/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/edgar.png" alt="">
+                    </a>
+                    <form action="edgar/index.html">
+                        <button class="characters-element-name" type="submit">Edgar</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="E"
+                     data-nationality="">
+                    
+                    <a href="eliyen/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/eliyen.png" alt="">
+                    </a>
+                    <form action="eliyen/index.html">
+                        <button class="characters-element-name" type="submit">Eliyen</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="E"
+                     data-nationality="">
+                    
+                    <a href="eliza/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/eliza.png" alt="">
+                    </a>
+                    <form action="eliza/index.html">
+                        <button class="characters-element-name" type="submit">Eliza</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="E"
+                     data-nationality="">
+                    
+                    <a href="elkhazel/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/elkhazel.png" alt="">
+                    </a>
+                    <form action="elkhazel/index.html">
+                        <button class="characters-element-name" type="submit">Elkhazel</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="E"
+                     data-nationality="">
+                    
+                    <a href="en-troad/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/en-troad.png" alt="">
+                    </a>
+                    <form action="en-troad/index.html">
+                        <button class="characters-element-name" type="submit">En-Troad</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="E"
+                     data-nationality="">
+                    
+                    <a href="erika/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/erika.png" alt="">
+                    </a>
+                    <form action="erika/index.html">
+                        <button class="characters-element-name" type="submit">Erika</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="E"
+                     data-nationality="">
+                    
+                    <a href="eris/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/eris.png" alt="">
+                    </a>
+                    <form action="eris/index.html">
+                        <button class="characters-element-name" type="submit">Eris</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="E"
+                     data-nationality="">
+                    
+                    <a href="escaar/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/escaar.png" alt="">
+                    </a>
+                    <form action="escaar/index.html">
+                        <button class="characters-element-name" type="submit">Escaar</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="E"
+                     data-nationality="">
+                    
+                    <a href="ezekiel/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/ezekiel.png" alt="">
+                    </a>
+                    <form action="ezekiel/index.html">
+                        <button class="characters-element-name" type="submit">Ezekiel</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="F"
+                     data-nationality="">
+                    
+                    <a href="falk/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/falk.png" alt="">
+                    </a>
+                    <form action="falk/index.html">
+                        <button class="characters-element-name" type="submit">Falk</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="F"
+                     data-nationality="">
+                    
+                    <a href="farone/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/farone.png" alt="">
+                    </a>
+                    <form action="farone/index.html">
+                        <button class="characters-element-name" type="submit">Farone</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="F"
+                     data-nationality="">
+                    
+                    <a href="felix/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/felix.png" alt="">
+                    </a>
+                    <form action="felix/index.html">
+                        <button class="characters-element-name" type="submit">Felix</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="F"
+                     data-nationality="">
+                    
+                    <a href="felldir/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/felldir.png" alt="">
+                    </a>
+                    <form action="felldir/index.html">
+                        <button class="characters-element-name" type="submit">Felldir</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="F"
+                     data-nationality="">
+                    
+                    <a href="finnea/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/finnea.png" alt="">
+                    </a>
+                    <form action="finnea/index.html">
+                        <button class="characters-element-name" type="submit">Finnea</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="F"
+                     data-nationality="">
+                    
+                    <a href="fl%C3%BCstern/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/flüstern.png" alt="">
+                    </a>
+                    <form action="fl%C3%BCstern/index.html">
+                        <button class="characters-element-name" type="submit">Flüstern</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="F"
+                     data-nationality="">
+                    
+                    <a href="fortuna/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/fortuna.png" alt="">
+                    </a>
+                    <form action="fortuna/index.html">
+                        <button class="characters-element-name" type="submit">Fortuna</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="F"
+                     data-nationality="">
+                    
+                    <a href="francis/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/francis.png" alt="">
+                    </a>
+                    <form action="francis/index.html">
+                        <button class="characters-element-name" type="submit">Francis</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="F"
+                     data-nationality="">
+                    
+                    <a href="frille/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/frille.png" alt="">
+                    </a>
+                    <form action="frille/index.html">
+                        <button class="characters-element-name" type="submit">Frille</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="F"
+                     data-nationality="">
+                    
+                    <a href="fubuki/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/fubuki artwork.png" alt="">
+                    </a>
+                    <form action="fubuki/index.html">
+                        <button class="characters-element-name" type="submit">Fubuki</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="G"
+                     data-nationality="">
+                    
+                    <a href="gerard/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/gerard.png" alt="">
+                    </a>
+                    <form action="gerard/index.html">
+                        <button class="characters-element-name" type="submit">Gerard</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="G"
+                     data-nationality="">
+                    
+                    <a href="grenze/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/grenze artwork.png" alt="">
+                    </a>
+                    <form action="grenze/index.html">
+                        <button class="characters-element-name" type="submit">Grenze</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="G"
+                     data-nationality="">
+                    
+                    <a href="gretchen/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/gretchen.png" alt="">
+                    </a>
+                    <form action="gretchen/index.html">
+                        <button class="characters-element-name" type="submit">Gretchen</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="G"
+                     data-nationality="">
+                    
+                    <a href="grete/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/grete.png" alt="">
+                    </a>
+                    <form action="grete/index.html">
+                        <button class="characters-element-name" type="submit">Grete</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="G"
+                     data-nationality="">
+                    
+                    <a href="grund/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/grund.png" alt="">
+                    </a>
+                    <form action="grund/index.html">
+                        <button class="characters-element-name" type="submit">Grund</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="H"
+                     data-nationality="">
+                    
+                    <a href="hadubrand/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/hadubrand.png" alt="">
+                    </a>
+                    <form action="hadubrand/index.html">
+                        <button class="characters-element-name" type="submit">Hadubrand</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="H"
+                     data-nationality="">
+                    
+                    <a href="hama/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/hama.png" alt="">
+                    </a>
+                    <form action="hama/index.html">
+                        <button class="characters-element-name" type="submit">Hama</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="H"
+                     data-nationality="">
+                    
+                    <a href="hartwin/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/hartwin.png" alt="">
+                    </a>
+                    <form action="hartwin/index.html">
+                        <button class="characters-element-name" type="submit">Hartwin</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="H"
+                     data-nationality="">
+                    
+                    <a href="heoruwulf/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/heoruwulf.png" alt="">
+                    </a>
+                    <form action="heoruwulf/index.html">
+                        <button class="characters-element-name" type="submit">Heoruwulf</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="H"
+                     data-nationality="">
+                    
+                    <a href="hindrik/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/hindrik.png" alt="">
+                    </a>
+                    <form action="hindrik/index.html">
+                        <button class="characters-element-name" type="submit">Hindrik</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="H"
+                     data-nationality="">
+                    
+                    <a href="horizont/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/horizont.png" alt="">
+                    </a>
+                    <form action="horizont/index.html">
+                        <button class="characters-element-name" type="submit">Horizont</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="H"
+                     data-nationality="">
+                    
+                    <a href="hosgrid/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/hosgrid.png" alt="">
+                    </a>
+                    <form action="hosgrid/index.html">
+                        <button class="characters-element-name" type="submit">Hosgrid</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="I"
+                     data-nationality="">
+                    
+                    <a href="iddra/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/iddra artwork.png" alt="">
+                    </a>
+                    <form action="iddra/index.html">
+                        <button class="characters-element-name" type="submit">Iddra</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="I"
+                     data-nationality="">
+                    
+                    <a href="igmusur/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/igmusur.png" alt="">
+                    </a>
+                    <form action="igmusur/index.html">
+                        <button class="characters-element-name" type="submit">Igmusur</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="I"
+                     data-nationality="">
+                    
+                    <a href="ignaz/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/ignaz.png" alt="">
+                    </a>
+                    <form action="ignaz/index.html">
+                        <button class="characters-element-name" type="submit">Ignaz</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="I"
+                     data-nationality="">
+                    
+                    <a href="igor/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/igor.png" alt="">
+                    </a>
+                    <form action="igor/index.html">
+                        <button class="characters-element-name" type="submit">Igor</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="I"
+                     data-nationality="">
+                    
+                    <a href="il-vernia/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/il-vernia.png" alt="">
+                    </a>
+                    <form action="il-vernia/index.html">
+                        <button class="characters-element-name" type="submit">Il-Vernia</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="I"
+                     data-nationality="">
+                    
+                    <a href="invidianoir/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/invidianoir.png" alt="">
+                    </a>
+                    <form action="invidianoir/index.html">
+                        <button class="characters-element-name" type="submit">Invidianoir</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="I"
+                     data-nationality="">
+                    
+                    <a href="isabella/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/isabella.png" alt="">
+                    </a>
+                    <form action="isabella/index.html">
+                        <button class="characters-element-name" type="submit">Isabella</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="J"
+                     data-nationality="">
+                    
+                    <a href="jervar/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/jervar.png" alt="">
+                    </a>
+                    <form action="jervar/index.html">
+                        <button class="characters-element-name" type="submit">Jervar</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="J"
+                     data-nationality="">
+                    
+                    <a href="jofina/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/jofina artwork.png" alt="">
+                    </a>
+                    <form action="jofina/index.html">
+                        <button class="characters-element-name" type="submit">Jofina</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="J"
+                     data-nationality="">
+                    
+                    <a href="johann/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/johann.png" alt="">
+                    </a>
+                    <form action="johann/index.html">
+                        <button class="characters-element-name" type="submit">Johann</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="J"
+                     data-nationality="">
+                    
+                    <a href="joist/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/joist.png" alt="">
+                    </a>
+                    <form action="joist/index.html">
+                        <button class="characters-element-name" type="submit">Joist</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="J"
+                     data-nationality="">
+                    
+                    <a href="julianne/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/julianne.png" alt="">
+                    </a>
+                    <form action="julianne/index.html">
+                        <button class="characters-element-name" type="submit">Julianne</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="J"
+                     data-nationality="">
+                    
+                    <a href="justicia/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/justicia.png" alt="">
+                    </a>
+                    <form action="justicia/index.html">
+                        <button class="characters-element-name" type="submit">Justicia</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="J"
+                     data-nationality="">
+                    
+                    <a href="justine/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/justine.png" alt="">
+                    </a>
+                    <form action="justine/index.html">
+                        <button class="characters-element-name" type="submit">Justine</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="K"
+                     data-nationality="">
+                    
+                    <a href="kaen/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/kaen artwork.png" alt="">
+                    </a>
+                    <form action="kaen/index.html">
+                        <button class="characters-element-name" type="submit">Kaen</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="K"
+                     data-nationality="">
+                    
+                    <a href="karl/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/karl.png" alt="">
+                    </a>
+                    <form action="karl/index.html">
+                        <button class="characters-element-name" type="submit">Karl</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="K"
+                     data-nationality="">
+                    
+                    <a href="keith/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/keith.png" alt="">
+                    </a>
+                    <form action="keith/index.html">
+                        <button class="characters-element-name" type="submit">Keith</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="K"
+                     data-nationality="">
+                    
+                    <a href="konrad/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/konrad.png" alt="">
+                    </a>
+                    <form action="konrad/index.html">
+                        <button class="characters-element-name" type="submit">Konrad</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="K"
+                     data-nationality="">
+                    
+                    <a href="kristian/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/kristian.png" alt="">
+                    </a>
+                    <form action="kristian/index.html">
+                        <button class="characters-element-name" type="submit">Kristian</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="K"
+                     data-nationality="">
+                    
+                    <a href="kristina/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/kristina.png" alt="">
+                    </a>
+                    <form action="kristina/index.html">
+                        <button class="characters-element-name" type="submit">Kristina</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="L"
+                     data-nationality="">
+                    
+                    <a href="lavande/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/lavande.png" alt="">
+                    </a>
+                    <form action="lavande/index.html">
+                        <button class="characters-element-name" type="submit">Lavande</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="L"
+                     data-nationality="">
+                    
+                    <a href="lilia/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/lilia.png" alt="">
+                    </a>
+                    <form action="lilia/index.html">
+                        <button class="characters-element-name" type="submit">Lilia</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="L"
+                     data-nationality="">
+                    
+                    <a href="linet/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/linet artwork.png" alt="">
+                    </a>
+                    <form action="linet/index.html">
+                        <button class="characters-element-name" type="submit">Linet</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="L"
+                     data-nationality="">
+                    
+                    <a href="linus/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/linus.png" alt="">
+                    </a>
+                    <form action="linus/index.html">
+                        <button class="characters-element-name" type="submit">Linus</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="L"
+                     data-nationality="">
+                    
+                    <a href="lysander/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/lysander.png" alt="">
+                    </a>
+                    <form action="lysander/index.html">
+                        <button class="characters-element-name" type="submit">Lysander</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="M"
+                     data-nationality="">
+                    
+                    <a href="malon/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/malon.png" alt="">
+                    </a>
+                    <form action="malon/index.html">
+                        <button class="characters-element-name" type="submit">Malon</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="M"
+                     data-nationality="">
+                    
+                    <a href="malusdur/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/malusdur.png" alt="">
+                    </a>
+                    <form action="malusdur/index.html">
+                        <button class="characters-element-name" type="submit">Malusdur</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="M"
+                     data-nationality="">
+                    
+                    <a href="marine/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/marine.png" alt="">
+                    </a>
+                    <form action="marine/index.html">
+                        <button class="characters-element-name" type="submit">Marine</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="M"
+                     data-nationality="">
+                    
+                    <a href="marisa/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/marisa.png" alt="">
+                    </a>
+                    <form action="marisa/index.html">
+                        <button class="characters-element-name" type="submit">Marisa</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="M"
+                     data-nationality="">
+                    
+                    <a href="marjorie/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/marjorie.png" alt="">
+                    </a>
+                    <form action="marjorie/index.html">
+                        <button class="characters-element-name" type="submit">Marjorie</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="M"
+                     data-nationality="">
+                    
+                    <a href="mei/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/mei.png" alt="">
+                    </a>
+                    <form action="mei/index.html">
+                        <button class="characters-element-name" type="submit">Mei</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="M"
+                     data-nationality="">
+                    
+                    <a href="meilira/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/meilira.png" alt="">
+                    </a>
+                    <form action="meilira/index.html">
+                        <button class="characters-element-name" type="submit">Meilira</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="M"
+                     data-nationality="">
+                    
+                    <a href="memoriae/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/memoriae.png" alt="">
+                    </a>
+                    <form action="memoriae/index.html">
+                        <button class="characters-element-name" type="submit">Memoriae</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="M"
+                     data-nationality="">
+                    
+                    <a href="modaharius/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/modaharius.png" alt="">
+                    </a>
+                    <form action="modaharius/index.html">
+                        <button class="characters-element-name" type="submit">Modaharius</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="M"
+                     data-nationality="">
+                    
+                    <a href="morgen/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/morgen.png" alt="">
+                    </a>
+                    <form action="morgen/index.html">
+                        <button class="characters-element-name" type="submit">Morgen</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="M"
+                     data-nationality="">
+                    
+                    <a href="mudo/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/mudo.png" alt="">
+                    </a>
+                    <form action="mudo/index.html">
+                        <button class="characters-element-name" type="submit">Mudo</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="N"
+                     data-nationality="">
+                    
+                    <a href="narcian/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/narcian.png" alt="">
+                    </a>
+                    <form action="narcian/index.html">
+                        <button class="characters-element-name" type="submit">Narcian</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="N"
+                     data-nationality="">
+                    
+                    <a href="nayru/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/nayru.png" alt="">
+                    </a>
+                    <form action="nayru/index.html">
+                        <button class="characters-element-name" type="submit">Nayru</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="N"
+                     data-nationality="">
+                    
+                    <a href="nerissa/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/nerissa.png" alt="">
+                    </a>
+                    <form action="nerissa/index.html">
+                        <button class="characters-element-name" type="submit">Nerissa</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="N"
+                     data-nationality="">
+                    
+                    <a href="niruin/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/niruin.png" alt="">
+                    </a>
+                    <form action="niruin/index.html">
+                        <button class="characters-element-name" type="submit">Niruin</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="N"
+                     data-nationality="">
+                    
+                    <a href="noi/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/noi.png" alt="">
+                    </a>
+                    <form action="noi/index.html">
+                        <button class="characters-element-name" type="submit">Noi</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="O"
+                     data-nationality="">
+                    
+                    <a href="o-gall/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/o-gall.png" alt="">
+                    </a>
+                    <form action="o-gall/index.html">
+                        <button class="characters-element-name" type="submit">O-Gall</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="O"
+                     data-nationality="">
+                    
+                    <a href="odiak/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/odiak.png" alt="">
+                    </a>
+                    <form action="odiak/index.html">
+                        <button class="characters-element-name" type="submit">Odiak</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="O"
+                     data-nationality="">
+                    
+                    <a href="olaf/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/olaf.png" alt="">
+                    </a>
+                    <form action="olaf/index.html">
+                        <button class="characters-element-name" type="submit">Olaf</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="O"
+                     data-nationality="">
+                    
+                    <a href="oscar/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/oscar.png" alt="">
+                    </a>
+                    <form action="oscar/index.html">
+                        <button class="characters-element-name" type="submit">Oscar</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="O"
+                     data-nationality="">
+                    
+                    <a href="osswald/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/osswald.png" alt="">
+                    </a>
+                    <form action="osswald/index.html">
+                        <button class="characters-element-name" type="submit">Osswald</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="O"
+                     data-nationality="">
+                    
+                    <a href="ouin/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/ouin.png" alt="">
+                    </a>
+                    <form action="ouin/index.html">
+                        <button class="characters-element-name" type="submit">Ouin</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="P"
+                     data-nationality="">
+                    
+                    <a href="perrotus/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/perrotus.png" alt="">
+                    </a>
+                    <form action="perrotus/index.html">
+                        <button class="characters-element-name" type="submit">Perrotus</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="P"
+                     data-nationality="">
+                    
+                    <a href="phaerille/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/phaerille.png" alt="">
+                    </a>
+                    <form action="phaerille/index.html">
+                        <button class="characters-element-name" type="submit">Phaerille</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="P"
+                     data-nationality="">
+                    
+                    <a href="philip/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/philip.png" alt="">
+                    </a>
+                    <form action="philip/index.html">
+                        <button class="characters-element-name" type="submit">Philip</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="R"
+                     data-nationality="">
+                    
+                    <a href="rai/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/rai.png" alt="">
+                    </a>
+                    <form action="rai/index.html">
+                        <button class="characters-element-name" type="submit">Rai</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="R"
+                     data-nationality="">
+                    
+                    <a href="reichart/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/reichart.png" alt="">
+                    </a>
+                    <form action="reichart/index.html">
+                        <button class="characters-element-name" type="submit">Reichart</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="R"
+                     data-nationality="">
+                    
+                    <a href="reimar/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/reimar.png" alt="">
+                    </a>
+                    <form action="reimar/index.html">
+                        <button class="characters-element-name" type="submit">Reimar</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="R"
+                     data-nationality="">
+                    
+                    <a href="reisen/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/reisen.png" alt="">
+                    </a>
+                    <form action="reisen/index.html">
+                        <button class="characters-element-name" type="submit">Reisen</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="R"
+                     data-nationality="">
+                    
+                    <a href="rosemarie/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/rosemarie.png" alt="">
+                    </a>
+                    <form action="rosemarie/index.html">
+                        <button class="characters-element-name" type="submit">Rosemarie</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="S"
+                     data-nationality="">
+                    
+                    <a href="scarlet/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/scarlet artwork.png" alt="">
+                    </a>
+                    <form action="scarlet/index.html">
+                        <button class="characters-element-name" type="submit">Scarlet</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="S"
+                     data-nationality="">
+                    
+                    <a href="selen/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/selen.png" alt="">
+                    </a>
+                    <form action="selen/index.html">
+                        <button class="characters-element-name" type="submit">Selen</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="S"
+                     data-nationality="">
+                    
+                    <a href="seloue/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/seloue.png" alt="">
+                    </a>
+                    <form action="seloue/index.html">
+                        <button class="characters-element-name" type="submit">Seloue</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="S"
+                     data-nationality="">
+                    
+                    <a href="selphie/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/selphie.png" alt="">
+                    </a>
+                    <form action="selphie/index.html">
+                        <button class="characters-element-name" type="submit">Selphie</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="S"
+                     data-nationality="">
+                    
+                    <a href="shuichi/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/shuichi.png" alt="">
+                    </a>
+                    <form action="shuichi/index.html">
+                        <button class="characters-element-name" type="submit">Shuichi</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="S"
+                     data-nationality="">
+                    
+                    <a href="siegmund/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/siegmund.png" alt="">
+                    </a>
+                    <form action="siegmund/index.html">
+                        <button class="characters-element-name" type="submit">Siegmund</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="S"
+                     data-nationality="">
+                    
+                    <a href="sivert/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/sivert.png" alt="">
+                    </a>
+                    <form action="sivert/index.html">
+                        <button class="characters-element-name" type="submit">Sivert</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="S"
+                     data-nationality="">
+                    
+                    <a href="solenne/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/solenne.png" alt="">
+                    </a>
+                    <form action="solenne/index.html">
+                        <button class="characters-element-name" type="submit">Solenne</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="S"
+                     data-nationality="">
+                    
+                    <a href="sonya/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/sonya.png" alt="">
+                    </a>
+                    <form action="sonya/index.html">
+                        <button class="characters-element-name" type="submit">Sonya</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="S"
+                     data-nationality="">
+                    
+                    <a href="spitze/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/spitze.png" alt="">
+                    </a>
+                    <form action="spitze/index.html">
+                        <button class="characters-element-name" type="submit">Spitze</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="S"
+                     data-nationality="">
+                    
+                    <a href="stephan/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/stephan.png" alt="">
+                    </a>
+                    <form action="stephan/index.html">
+                        <button class="characters-element-name" type="submit">Stephan</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="S"
+                     data-nationality="">
+                    
+                    <a href="suskinox/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/suskinox.png" alt="">
+                    </a>
+                    <form action="suskinox/index.html">
+                        <button class="characters-element-name" type="submit">Suskinox</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="T"
+                     data-nationality="">
+                    
+                    <a href="tannivh/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/tannivh.png" alt="">
+                    </a>
+                    <form action="tannivh/index.html">
+                        <button class="characters-element-name" type="submit">Tannivh</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="T"
+                     data-nationality="">
+                    
+                    <a href="thanatos/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/thanatos.png" alt="">
+                    </a>
+                    <form action="thanatos/index.html">
+                        <button class="characters-element-name" type="submit">Thanatos</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="T"
+                     data-nationality="">
+                    
+                    <a href="theodoric/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/theodoric.png" alt="">
+                    </a>
+                    <form action="theodoric/index.html">
+                        <button class="characters-element-name" type="submit">Theodoric</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="T"
+                     data-nationality="">
+                    
+                    <a href="thithrazk/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/thithrazk.png" alt="">
+                    </a>
+                    <form action="thithrazk/index.html">
+                        <button class="characters-element-name" type="submit">Thithrazk</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="T"
+                     data-nationality="">
+                    
+                    <a href="thorismund/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/thorismund.png" alt="">
+                    </a>
+                    <form action="thorismund/index.html">
+                        <button class="characters-element-name" type="submit">Thorismund</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="T"
+                     data-nationality="">
+                    
+                    <a href="till/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/till.png" alt="">
+                    </a>
+                    <form action="till/index.html">
+                        <button class="characters-element-name" type="submit">Till</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="T"
+                     data-nationality="">
+                    
+                    <a href="tristan/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/tristan.png" alt="">
+                    </a>
+                    <form action="tristan/index.html">
+                        <button class="characters-element-name" type="submit">Tristan</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="T"
+                     data-nationality="">
+                    
+                    <a href="trost/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/trost.png" alt="">
+                    </a>
+                    <form action="trost/index.html">
+                        <button class="characters-element-name" type="submit">Trost</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="T"
+                     data-nationality="">
+                    
+                    <a href="troy/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/troy.png" alt="">
+                    </a>
+                    <form action="troy/index.html">
+                        <button class="characters-element-name" type="submit">Troy</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="U"
+                     data-nationality="">
+                    
+                    <a href="u-ranos/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/u-ranos.png" alt="">
+                    </a>
+                    <form action="u-ranos/index.html">
+                        <button class="characters-element-name" type="submit">U-Ranos</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="V"
+                     data-nationality="">
+                    
+                    <a href="valerius/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/valerius.png" alt="">
+                    </a>
+                    <form action="valerius/index.html">
+                        <button class="characters-element-name" type="submit">Valerius</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="V"
+                     data-nationality="">
+                    
+                    <a href="vernia/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/vernia.png" alt="">
+                    </a>
+                    <form action="vernia/index.html">
+                        <button class="characters-element-name" type="submit">Vernia</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="V"
+                     data-nationality="">
+                    
+                    <a href="vernik/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/vernik.png" alt="">
+                    </a>
+                    <form action="vernik/index.html">
+                        <button class="characters-element-name" type="submit">Vernik</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="V"
+                     data-nationality="">
+                    
+                    <a href="viktor/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/viktor.png" alt="">
+                    </a>
+                    <form action="viktor/index.html">
+                        <button class="characters-element-name" type="submit">Viktor</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="V"
+                     data-nationality="">
+                    
+                    <a href="volo/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/volo.png" alt="">
+                    </a>
+                    <form action="volo/index.html">
+                        <button class="characters-element-name" type="submit">Volo</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="W"
+                     data-nationality="">
+                    
+                    <a href="wirkung/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/wirkung.png" alt="">
+                    </a>
+                    <form action="wirkung/index.html">
+                        <button class="characters-element-name" type="submit">Wirkung</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="Z"
+                     data-nationality="">
+                    
+                    <a href="zetta/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/zetta.png" alt="">
+                    </a>
+                    <form action="zetta/index.html">
+                        <button class="characters-element-name" type="submit">Zetta</button>
+                    </form>
+                </div>
+            
+                <div class="characters-element" data-letter="Z"
+                     data-nationality="">
+                    
+                    <a href="zora/index.html">
+                        
+                        <img src="https://images.zetsuboushii.site/resized/dnd/characters/zora.png" alt="">
+                    </a>
+                    <form action="zora/index.html">
+                        <button class="characters-element-name" type="submit">Zora</button>
+                    </form>
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        let activeLetterFilter = "all";
+        let activeNationalityFilter = "all";
+
+        function applyFilters() {
+            const characters = document.querySelectorAll('.characters-element');
+            characters.forEach(elem => {
+                const elemLetter = elem.getAttribute('data-letter');
+                const elemNation = elem.getAttribute('data-nationality');
+                let show = true;
+
+                if (activeLetterFilter !== "all" && elemLetter !== activeLetterFilter) {
+                    show = false;
+                }
+                if (activeNationalityFilter !== "all" && elemNation !== activeNationalityFilter) {
+                    show = false;
+                }
+                elem.style.display = show ? '' : 'none';
+            });
+        }
+
+        document.querySelectorAll('#letter-filter button').forEach(btn => {
+            btn.addEventListener('click', function () {
+                activeLetterFilter = this.getAttribute('data-letter');
+                applyFilters();
+            });
+        });
+
+        document.querySelectorAll('#nationality-filter button').forEach(btn => {
+            btn.addEventListener('click', function () {
+                activeNationalityFilter = this.getAttribute('data-nationality');
+                applyFilters();
+            });
+        });
+    });
+</script>
+</body>
+</html>

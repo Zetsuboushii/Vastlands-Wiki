@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Eisgeist | Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../../../static/css/base.css">
+    <link rel="stylesheet" href="../../../static/css/character.css">
+</head>
+<body>
+
+<link rel="stylesheet" href="../../../static/css/banner.css">
+<link rel="shortcut icon" href="../../../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../../../static/ui/banner-8.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../../../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../../../static/imgs/logo.png" alt="" class="logo" style="left: -40px; position: relative">
+            <a href="../../../index.html" style="left: -40px; position: relative">Tome of the Vastlands</a>
+            <sub style="left: -40px; position: relative">v3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('../../../characters/index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('../../../places/index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('../../index.html')">Kompendien</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        <div class="character-container">
+            <div class="character-data">
+                <div class="character-data-box">
+                    
+                    
+                    <img src="https://images.zetsuboushii.site/dnd/enemies/eisgeist.png" alt="">
+
+                    <div class="character-data-name"><h1>Eisgeist</h1></div>
+                    
+
+                    <div class="character-data-field-title"><h4>Allgemeine Werte</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Typ</td>
+                            <td>Untot</td>
+                        </tr>
+                        <tr>
+                            <td>HP</td>
+                            <td>130</td>
+                        </tr>
+                        <tr>
+                            <td>AC</td>
+                            <td>17</td>
+                        </tr>
+                        <tr>
+                            <td>Bewegung</td>
+                            <td>
+                                <ul>
+                                    
+                                        <li>schwebend (40 ft.)</li>
+                                    
+                                </ul>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Fertigkeitsmodifikatoren</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Stärke</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Geschicklichkeit</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Konstitution</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Intelligenz</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Weisheit</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Charisma</td>
+                            <td>5</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Status</h4></div>
+                    <table>
+                        <tbody>
+                        
+                            <tr>
+                                <td>Schwächen</td>
+                                <td>
+                                    
+                                        Feuer, 
+                                    
+                                        Heilige Magie
+                                    
+                                </td>
+                            </tr>
+                        
+                        
+                            <tr>
+                                <td>Resistenzen</td>
+                                <td>
+                                    
+                                        Kälte, 
+                                    
+                                        Nicht-magischer Schaden
+                                    
+                                </td>
+                            </tr>
+                        
+                        
+                            <tr>
+                                <td>Immunitäten</td>
+                                <td>
+                                    
+                                        Betäubt, 
+                                    
+                                        Erschöpft, 
+                                    
+                                        Gift, 
+                                    
+                                        Verängstigt
+                                    
+                                </td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="character-text">
+                <div class="character-text-box">
+                    
+                        <div class="character-text-heading"><h2>Spektrale Klinge</h2></div>
+
+                        <ul>
+                            <li>Reichtweite: 5 ft. single</li>
+                            
+                                <li>Trefferbonus: +7</li>
+                            
+                            
+                                <li>Schadenswurf: 2d8+3 slashing
+                                    , 2d6 cold
+                                    </li>
+                            
+                            
+                        </ul>
+
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Eisiger Sturm</h2></div>
+
+                        <ul>
+                            <li>Reichtweite: 30 ft. radius</li>
+                            
+                            
+                                <li>Gegnerischer Rettungswurf: ≥18 con</li>
+                            
+                            
+                                <li>Schadenswurf: 6d6 cold
+                                    </li>
+                            
+                            
+                                <li>Effekte: difficult_terrain (20r)
+                                    </li>
+                            
+                        </ul>
+
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Eisige Ketten</h2></div>
+
+                        <ul>
+                            <li>Reichtweite: 30 ft. radius</li>
+                            
+                            
+                                <li>Gegnerischer Rettungswurf: ≥17 str</li>
+                            
+                            
+                                <li>Schadenswurf: 2d6 cold
+                                    </li>
+                            
+                            
+                                <li>Effekte: restrained (2r)
+                                    </li>
+                            
+                        </ul>
+
+                        <hr>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

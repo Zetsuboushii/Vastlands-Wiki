@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Linguarium | Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../../static/css/base.css">
+    <link rel="stylesheet" href="../../static/css/compendium.css">
+
+</head>
+<body>
+
+<link rel="stylesheet" href="../../static/css/banner.css">
+<link rel="shortcut icon" href="../../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../../static/ui/banner-7.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../../static/imgs/logo.png" alt="" class="logo" style="left: -40px; position: relative">
+            <a href="../../index.html" style="left: -40px; position: relative">Tome of the Vastlands</a>
+            <sub style="left: -40px; position: relative">v3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('../../characters/index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('../../places/index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('../index.html')">Kompendien</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        <div class="themed-container">
+            
+                <div class="themed-element">
+                    
+                        
+                        
+                            
+                            
+                        
+                        <a href="faergrianisch/index.html">
+                            <img src="https://images.zetsuboushii.site/dnd/crests/faergria-crest.png" alt="">
+                        </a>
+                        <form action="faergrianisch/index.html">
+                            <button type="submit">Faergrianisch</button>
+                        </form>
+                    
+                </div>
+            
+                <div class="themed-element">
+                    
+                        
+                        
+                            
+                            
+                        
+                        <a href="escrigrisch/index.html">
+                            <img src="https://images.zetsuboushii.site/dnd/crests/nordholm-crest.png" alt="">
+                        </a>
+                        <form action="escrigrisch/index.html">
+                            <button type="submit">Escrigrisch</button>
+                        </form>
+                    
+                </div>
+            
+                <div class="themed-element">
+                    
+                        
+                        
+                            
+                            
+                        
+                        <a href="f%C3%A4r%C3%B6n/index.html">
+                            <img src="https://images.zetsuboushii.site/dnd/crests/yerenas-crest.png" alt="">
+                        </a>
+                        <form action="f%C3%A4r%C3%B6n/index.html">
+                            <button type="submit">Färön</button>
+                        </form>
+                    
+                </div>
+            
+                <div class="themed-element">
+                    
+                        
+                        
+                            
+                            
+                        
+                        <a href="halienisch/index.html">
+                            <img src="https://images.zetsuboushii.site/dnd/crests/frelia-crest.png" alt="">
+                        </a>
+                        <form action="halienisch/index.html">
+                            <button type="submit">Halienisch</button>
+                        </form>
+                    
+                </div>
+            
+                <div class="themed-element">
+                    
+                        
+                        
+                            
+                            
+                        
+                        <a href="kluirim/index.html">
+                            <img src="https://images.zetsuboushii.site/dnd/crests/garadzar-crest.png" alt="">
+                        </a>
+                        <form action="kluirim/index.html">
+                            <button type="submit">Kluirim</button>
+                        </form>
+                    
+                </div>
+            
+                <div class="themed-element">
+                    
+                        
+                        
+                            
+                            
+                        
+                        <a href="thaugrin/index.html">
+                            <img src="https://images.zetsuboushii.site/dnd/crests/grenbrock-crest.png" alt="">
+                        </a>
+                        <form action="thaugrin/index.html">
+                            <button type="submit">Thaugrin</button>
+                        </form>
+                    
+                </div>
+            
+                <div class="themed-element">
+                    
+                        
+                        
+                            
+                            
+                        
+                        <a href="tinorisch/index.html">
+                            <img src="https://images.zetsuboushii.site/dnd/crests/tinorke-crest.png" alt="">
+                        </a>
+                        <form action="tinorisch/index.html">
+                            <button type="submit">Tinorisch</button>
+                        </form>
+                    
+                </div>
+            
+                <div class="themed-element">
+                    
+                        
+                        
+                            
+                            
+                        
+                        <a href="markathion/index.html">
+                            <img src="https://images.zetsuboushii.site/dnd/crests/markath-crest.png" alt="">
+                        </a>
+                        <form action="markathion/index.html">
+                            <button type="submit">Markathion</button>
+                        </form>
+                    
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

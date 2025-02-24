@@ -1,0 +1,83 @@
+.theologarium-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .theologarium-container .theologarium-row {
+    width: 700px;
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap; }
+    .theologarium-container .theologarium-row img {
+      top: 60px;
+      height: 400px;
+      position: relative;
+      object-fit: contain; }
+    .theologarium-container .theologarium-row .theologarium-column {
+      margin: 10px;
+      width: 300px;
+      height: auto;
+      text-align: center;
+      background-image: url("../ui/image-background.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%; }
+      .theologarium-container .theologarium-row .theologarium-column img {
+        top: 40px;
+        height: 300px;
+        max-width: 262px;
+        position: relative;
+        object-fit: contain; }
+      .theologarium-container .theologarium-row .theologarium-column button {
+        position: relative;
+        z-index: 1;
+        background-image: url("../ui/name-backdrop-3.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-position-y: 2px;
+        border: none;
+        height: 70px;
+        width: 300px;
+        color: white;
+        font-family: "Grenze Gotisch";
+        font-size: 20px;
+        cursor: unset;
+        top: 30px; }
+    .theologarium-container .theologarium-row .theologarium-name {
+      position: relative;
+      z-index: 2;
+      background-image: url("../ui/name-backdrop-2.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 728px;
+      height: 196px;
+      color: white;
+      background-position: center; }
+      .theologarium-container .theologarium-row .theologarium-name h1 {
+        top: 90px;
+        margin: 0;
+        position: relative;
+        font-size: 32px; }
+    .theologarium-container .theologarium-row .theologarium-text-box {
+      width: 700px; }
+      .theologarium-container .theologarium-row .theologarium-text-box p {
+        text-align: justify; }
+      .theologarium-container .theologarium-row .theologarium-text-box .theologarium-text-heading {
+        top: 10px;
+        position: relative;
+        z-index: 1;
+        background-image: url("../ui/text-heading-backdrop.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 60px;
+        width: 336px;
+        color: white; }
+        .theologarium-container .theologarium-row .theologarium-text-box .theologarium-text-heading h2 {
+          text-align: center;
+          left: -8px;
+          top: 14px;
+          margin: 0;
+          position: relative; }
+
+/*# sourceMappingURL=theologarium.css.map */

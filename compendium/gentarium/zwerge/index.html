@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Zwerge | Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../../../static/css/base.css">
+    <link rel="stylesheet" href="../../../static/css/theologarium.css">
+</head>
+<body>
+
+<link rel="stylesheet" href="../../../static/css/banner.css">
+<link rel="shortcut icon" href="../../../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../../../static/ui/banner-1.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../../../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../../../static/imgs/logo.png" alt="" class="logo" style="left: -40px; position: relative">
+            <a href="../../../index.html" style="left: -40px; position: relative">Tome of the Vastlands</a>
+            <sub style="left: -40px; position: relative">v3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('../../../characters/index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('../../../places/index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('../../index.html')">Kompendien</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        <div class="theologarium-container">
+            <div class="theologarium-row">
+                
+                
+                <img src="https://images.zetsuboushii.site/dnd/characters/olaf.png" alt="">
+                <div class="theologarium-name">
+                    <h1>Zwerge</h1>
+                </div>
+            </div>
+            <div class="theologarium-row">
+                <div class="theologarium-text-box">
+                    <p>Zwerge sind ein stolzes und robustes Volk, bekannt für ihre unerschütterliche Entschlossenheit und ihre meisterhafte Handwerkskunst. In den hohen Bergen von Kluirm leben sie in ihren robusten Befestigungen.
+ Zwerge zeichnen sich durch ihre kurzen, kräftigen Staturen und ihrebeeindruckenden Bärte aus, die sie oft mit großer Sorgfalt pflegen. Ihre Kultur ist reich an Traditionen und Legenden, die von ihren Ahnen überliefert wurden. Zwerge sind hervorragende Schmiede und Bergleute, berühmt für ihre Kunstfertigkeit bei der Herstellung von Waffen, Rüstungen und Schmuck. Ihr starkes Gemeinschaftsgefühl und ihre Loyalität zu Familie und Clan sind zentral für ihr Leben. Trotz ihres oft grimmigen Äußeren sind Zwerge bekannt für ihren trockenen Humor und ihre Gastfreundschaft, besonders wenn es um das Teilen von gutem Essen und starkem Bier geht.
+ Zwerge haben eine Lebenserwartung von 350 Jahren.</p>
+
+                    <hr>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Aya | Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../../static/css/base.css">
+    <link rel="stylesheet" href="../../static/css/character.css">
+</head>
+<body>
+
+<link rel="stylesheet" href="../../static/css/banner.css">
+<link rel="shortcut icon" href="../../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../../static/ui/banner-2.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../../static/imgs/logo.png" alt="" class="logo" style="left: -40px; position: relative">
+            <a href="../../index.html" style="left: -40px; position: relative">Tome of the Vastlands</a>
+            <sub style="left: -40px; position: relative">v3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('../index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('../../places/index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('../../compendium/index.html')">Kompendien</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        <div class="character-container">
+            <div class="character-data">
+                <div class="character-data-box">
+                    
+                    
+                    
+                    <img src="https://images.zetsuboushii.site/dnd/characters/aya.png" alt="">
+
+                    <div class="character-data-name"><h1>Aya </h1></div>
+                    <div class="character-data-title"><h3>Neugieriger Schleim</h3></div>
+
+                    <div class="character-data-field-title"><h4>Informationen zur Person</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Rasse</td>
+                            <td>Schleime</td>
+                        </tr>
+                        <tr>
+                            <td>Geschlecht</td>
+                            <td>
+                                weiblich
+                            </td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Alter</td>
+                                <td>1 Jahre</td>
+                            </tr>
+                            <tr>
+                                <td>Geburtstag</td>
+                                <td>3. Tag, Frostmond im
+                                    Jahre 393
+                                    n.V.</td>
+                            </tr>
+                        
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Maße</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Körpergröße</td>
+                            <td>1,67 m</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Gewicht</td>
+                                <td>62 kg</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Profession</h4></div>
+                    <table>
+                        <tbody>
+                        
+                        <tr>
+                            <td>Basisklasse</td>
+                            <td>Monster</td>
+                        </tr>
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Weitere Informationen</h4></div>
+                    <table>
+                        <tbody>
+                        
+                            <tr>
+                                <td>Geburtsort</td>
+                                <td>Tellius</td>
+                            </tr>
+                            
+                        
+                        
+                            <tr>
+                                <td>Gesinnung</td>
+                                <td>CG</td>
+                            </tr>
+                        
+                        
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Persönlicher Status</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Verbleib</td>
+                            <td>am Leben</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Beziehungen</td>
+                                <td>
+                                    <ul>
+                                        
+                                            <li>Nayru <small>(Vertraute)</small></li>
+                                        
+                                            <li>Till <small>(Bekannter)</small></li>
+                                        
+                                            <li>U-Ranos <small>(Vertrauter)</small></li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="character-text">
+                <div class="character-text-box">
+                    <p>Aya ist ein Schleimmädchen, das eines Tages verwirrt und hungrig in der Welt erwachte. Anders als die anderen Schleime, die ihr begegneten, besitzt Aya die einzigartige Fähigkeit zu denken und zu lernen, was sie von den simplen Wesen ihrer Art unterscheidet. Diese plötzliche Bewusstheit hat Aya auf eine Suche nach ihrem Platz in der Welt geführt, die von Ablehnung, Hunger, aber auch von Hoffnung geprägt ist. Ihre Reise begann in einer dunklen Höhle nahe der Stadt Tellius, und seither hat sie den Kampf aufgenommen, trotz aller Widrigkeiten ein Leben zu führen, das ihr eine Form von Glück bietet.</p>
+
+                    <hr>
+
+                    
+                        <div class="character-text-heading"><h2>Herkunft und Erwachen</h2></div>
+                        <p>Aya fand sich eines Tages in einem Schleimnest in einer abgelegenen Höhle nahe der Stadt Tellius wieder. Im Gegensatz zu den anderen Schleimen dort, die lediglich einem instinktiven Dasein nachgingen, entwickelte Aya bald ein Bewusstsein für sich selbst und die Welt um sie herum. Diese Bewusstheit verwirrte sie zutiefst. Angetrieben von einem unbändigen Hunger und einem plötzlichen Drang, die Welt zu erkunden, verließ sie das Schleimnest und wagte sich hinaus. Angezogen von den verlockenden Gerüchen, die aus der Ferne kamen, machte sie sich auf den Weg in Richtung der großen Stadt Tellius, ohne zu wissen, was sie dort erwarten würde. Als Aya die Stadt erreichte, war sie von der Hektik und den zahlreichen neuen Eindrücken vollkommen überwältigt. Die Menschen, die Geräusche und die Lichter – all das war ihr fremd und wirkte auf sie bedrohlich und faszinierend zugleich. Sie kroch unsicher durch die Straßen, angezogen von den Essensdüften, die sie aus den verschiedenen Ständen und Häusern vernahm. Doch die Reaktion der Stadtbewohner fiel anders aus, als sie es sich erhofft hatte. Schnell wurde sie von den Einwohnern Tellius als Monster erkannt und beschimpft. Obwohl Aya in der Lage war, ihre rudimentäre Sprache zu verwenden, um sich mitzuteilen, sahen die Menschen sie nur als Bedrohung und jagten sie ohne Zögern fort.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Leben in der Kanalisation</h2></div>
+                        <p>Traurig und verängstigt kehrte Aya immer wieder nach Tellius zurück, getrieben von ihrem unstillbaren Hunger. Sie begann, die Stadt in der Nacht aufzusuchen, um aus den herausgestellten Mülltonnen Essensreste zu fischen. Diese mageren Mahlzeiten hielten sie gerade so am Leben. Doch auch diese Versuche blieben nicht lange unbemerkt. Eines Abends wurde sie von der Stadtwache aufgespürt und durch die Straßen gejagt. In ihrer Verzweiflung kroch Aya durch einen Kanaldeckel, durch den sie dank ihrer amorphen Gestalt hindurchschlüpfen konnte. So fand sie sich in den dunklen und feuchten Abwasserkanälen von Tellius wieder, tief unter der Stadt, die sie vertrieben hatte. In den Tiefen der Kanalisation fand Aya schließlich einen verlassenen Rückzugsort für Kanalarbeiter, der schon lange nicht mehr in Benutzung war. Dieser kleine, versteckte Raum wurde zu ihrer neuen Heimat. Sie verbrachte viel Zeit damit, die verlassenen Räume zu erkunden und zu versuchen, die Welt über den Dingen zu verstehen, die die Arbeiter zurückgelassen hatten – Notizen, Werkzeuge, und alte Bücher, die sie zwar nur teilweise verstand, die ihr jedoch halfen, sich ein Bild von der Welt der Menschen zu machen. Langsam begann sie, sich ein eigenes Refugium zu schaffen, in dem sie sich sicher fühlen konnte. Hier konnte sie in Ruhe überlegen und versuchen, sich weiterzuentwickeln.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Persönliche Eigenschaften und innere Konflikte</h2></div>
+                        <p>Aya ist ein neugieriges und freundliches Wesen, das trotz aller Ablehnung durch die Menschen an das Gute in der Welt glaubt. Sie besitzt ein tiefes Verlangen nach Gemeinschaft und Akzeptanz, was sie immer wieder dazu treibt, sich den Menschen zu nähern, auch wenn diese sie ablehnen. Aya verfügt über eine kindliche Unschuld, die sie trotz ihrer Fähigkeit zu denken und zu lernen noch immer in sich trägt. Diese Unschuld ist es, die sie immer wieder in gefährliche Situationen bringt, da sie die Bösartigkeit mancher Menschen nicht begreifen kann oder will. Dennoch entwickelt Aya nach und nach auch eine gewisse Vorsicht und misstraut Fremden zunehmend. Die wiederholte Ablehnung hat Spuren hinterlassen, und sie hat gelernt, sich vor Menschen zu verstecken, anstatt offen auf sie zuzugehen. Diese innere Zerrissenheit zwischen ihrem Wunsch nach Gemeinschaft und der Angst vor Ablehnung ist einer der zentralen Konflikte, die Aya ausmachen. Trotz ihrer Fähigkeit, sich an die Umstände anzupassen und neue Dinge zu lernen, bleibt sie tief im Inneren ein verletzliches Wesen, das sich nach Zugehörigkeit sehnt.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Beziehungen und Freunde</h2></div>
+                        <p>In den dunklen Kanälen von Tellius hat Aya jedoch auch Bekanntschaften gemacht. Die Kanalisation ist Heimat für viele vergessene und ausgegrenzte Wesen, und Aya hat eine gewisse Vertrautheit mit einigen von ihnen entwickelt. Besonders die Ratten der Kanalisation haben sich als zuverlässige Begleiter erwiesen. Sie sind ihre ständigen Gefährten geworden und helfen ihr, sich in den dunklen Gängen zurechtzufinden. Mit der Zeit hat Aya sogar gelernt, die feinen Nuancen ihrer Bewegungen und Laute zu verstehen, was ihr half, eine rudimentäre Art der Kommunikation mit ihnen aufzubauen. Trotzdem bleibt ihr das Prinzip der Freundschaft fremd, und sie sieht die Vertrautheit eher als eine Zweckgemeinschaft, die ihr beim Überleben hilft.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Stärken und Schwächen</h2></div>
+                        <p>Aya ist, wie alle Schleime, amorph und kann ihre Gestalt frei verändern, was ihr erlaubt, sich durch engste Ritzen zu zwängen und vor Gefahren zu fliehen, die andere Wesen gefangen halten würden. Ihre Fähigkeit, die Gemeinsprache zu verstehen und rudimentär zu sprechen, macht sie einzigartig unter den Schleimen. Diese Intelligenz ermöglicht es ihr, komplexe Probleme zu lösen und kreative Wege zu finden, um ihre Ziele zu erreichen. Jedoch hat Aya auch viele Schwächen. Ihre kindliche Naivität und ihr instinktives Vertrauen in andere bringen sie immer wieder in Gefahr. Sie versteht die sozialen Regeln der Menschen oft nicht und hat Schwierigkeiten, die Gefühle und Absichten anderer zu deuten. Dies führt dazu, dass sie immer wieder missverstanden wird und Schwierigkeiten hat, sich in die Gesellschaft einzufügen. Zudem ist Aya physisch verletzlicher, wenn sie sich in eine feste Form verwandelt, und Hunger ist ein ständiges Problem für sie, da sie Energie benötigt, um ihre Form zu stabilisieren und zu lernen. Trotz all ihrer Herausforderungen besitzt Aya eine bemerkenswerte Resilienz und eine unglaubliche Lernfähigkeit. Sie gibt nicht auf und versucht, ihren Platz in der Welt zu finden, auch wenn es bedeutet, Umwege und Rückschläge in Kauf zu nehmen. Ihre Geschichte ist die eines Wesens, das niemals aufhört zu hoffen, dass auch für sie ein kleines Stückchen Glück und Zugehörigkeit existiert.</p>
+                        <hr>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

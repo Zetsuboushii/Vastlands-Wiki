@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Kaen | Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../../static/css/base.css">
+    <link rel="stylesheet" href="../../static/css/character.css">
+</head>
+<body>
+
+<link rel="stylesheet" href="../../static/css/banner.css">
+<link rel="shortcut icon" href="../../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../../static/ui/banner-9.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../../static/imgs/logo.png" alt="" class="logo" style="left: -40px; position: relative">
+            <a href="../../index.html" style="left: -40px; position: relative">Tome of the Vastlands</a>
+            <sub style="left: -40px; position: relative">v3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('../index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('../../places/index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('../../compendium/index.html')">Kompendien</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        <div class="character-container">
+            <div class="character-data">
+                <div class="character-data-box">
+                    
+                    
+                    
+                    <img src="https://images.zetsuboushii.site/dnd/characters/kaen artwork.png" alt="">
+
+                    <div class="character-data-name"><h1>Kaen </h1></div>
+                    <div class="character-data-title"><h3>Hitzköpfige Zeitgenossin</h3></div>
+
+                    <div class="character-data-field-title"><h4>Informationen zur Person</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Rasse</td>
+                            <td>Schutzgeister</td>
+                        </tr>
+                        <tr>
+                            <td>Geschlecht</td>
+                            <td>
+                                weiblich
+                            </td>
+                        </tr>
+                        
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Maße</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Körpergröße</td>
+                            <td>1,58 m</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Gewicht</td>
+                                <td>54 kg</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Profession</h4></div>
+                    <table>
+                        <tbody>
+                        
+                        <tr>
+                            <td>Basisklasse</td>
+                            <td>Hohefürst</td>
+                        </tr>
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Weitere Informationen</h4></div>
+                    <table>
+                        <tbody>
+                        
+                            <tr>
+                                <td>Geburtsort</td>
+                                <td>Feuersanktuarium</td>
+                            </tr>
+                            
+                        
+                        
+                            <tr>
+                                <td>Gesinnung</td>
+                                <td>CN</td>
+                            </tr>
+                        
+                        
+                            <tr>
+                                <td>Zugehörigkeit</td>
+                                <td>
+                                    <ul>
+                                        
+                                            <li>1. Generation der Hohefürsten</li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        
+                            <tr>
+                                <td>Mag</td>
+                                <td>
+                                    
+                                        Diskussionen, 
+                                    
+                                        Grillfleisch, 
+                                    
+                                        Mode
+                                    
+                                </td>
+                            </tr>
+                        
+                        
+                            <tr>
+                                <td>Mag nicht</td>
+                                <td>
+                                    
+                                        Blumen, 
+                                    
+                                        Tiere, 
+                                    
+                                        U-Ranos, 
+                                    
+                                        Widerworte
+                                    
+                                </td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Persönlicher Status</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Verbleib</td>
+                            <td>am Leben</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Beziehungen</td>
+                                <td>
+                                    <ul>
+                                        
+                                            <li>Fubuki <small>(Freundin)</small></li>
+                                        
+                                            <li>Inoro <small>(Alter Freund)</small></li>
+                                        
+                                            <li>Invidianoir <small>(Schwester)</small></li>
+                                        
+                                            <li>Kaze <small>(Freund)</small></li>
+                                        
+                                            <li>Rai <small>(Freund)</small></li>
+                                        
+                                            <li>Scarlet <small>(Freundin)</small></li>
+                                        
+                                            <li>U-Ranos <small>(Freund)</small></li>
+                                        
+                                            <li>Zora <small>(Freundin)</small></li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="character-text">
+                <div class="character-text-box">
+                    <p>Kaen, die Hohefürstin des Feuers, ist eine lebendige Verkörperung der Macht und Wildheit der Flammen. Sie wacht über den Glutberg und das dort befindliche Feuersanktuarium. Kaen trägt sie nicht nur die Bürde, über das Feuer selbst zu wachen, sondern auch über die Flammen der Leidenschaft und Zerstörung, die das Leben ihrer Anhänger und der Welt beeinflussen. Ihr Status als Hohefürstin verleiht ihr nicht nur ungeahnte Kräfte, sondern auch eine Ausstrahlung, die wie ein brennendes Inferno wirkt: faszinierend, gefährlich und unergründlich.</p>
+
+                    <hr>
+
+                    
+                        <div class="character-text-heading"><h2>Persönlichkeit</h2></div>
+                        <p>Kaens Persönlichkeit ist von einer Schärfe geprägt, die viele in die Flucht schlägt. Zynisch und abweisend, trägt sie eine tiefe Verachtung für die Schwächen der Sterblichen in sich, insbesondere für ihre Neigung, das Feuer zu unterschätzen, das sie repräsentiert. Ihr Sarkasmus und ihre kalte Art lassen keinen Zweifel daran, dass sie sich weit über den gewöhnlichen Belangen der Sterblichen sieht. Sie begegnet denjenigen, die sich dem Feuersanktuarium nähern, mit einer kühlen Gleichgültigkeit, stets bereit, diejenigen einzuäschern, die ihre Stärke oder ihre Pflicht infrage stellen. Doch hinter dieser Fassade verbirgt sich eine weiche, verletzliche Seite, die nur wenige zu Gesicht bekommen. Ihre Zynik ist weniger ein Zeichen von Arroganz, sondern vielmehr ein Schutzschild gegen die Welt. Kaen hat gelernt, dass es gefährlich ist, Schwäche zu zeigen, besonders als Hohefürstin einer Macht, die so zerstörerisch sein kann wie das Feuer. Ihre schroffe Art schützt sie vor den emotionalen Flammen, die einst ihr Herz verbrannten.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Eine zarte Seite</h2></div>
+                        <p>Unter der Fassade der zynischen Hohefürstin existiert eine Seite von Kaen, die sanft und verletzlich ist – doch nur wenige kommen in die Nähe, um sie zu entdecken. Diese zarte Seite zeigt sich selten, vielleicht nur bei denjenigen, die sich als würdig erweisen oder die, durch Zufall oder Schicksal, ihr Vertrauen gewinnen. In diesen seltenen Momenten erkennt man, dass Kaen, obwohl sie Hohefürstin ist, tiefe Emotionen und ein Bedürfnis nach Verbindung hat, das sie oft hinter ihrer feurigen Autorität verbirgt. Es gibt eine tief vergrabene Sehnsucht in ihr, die Verbindung zu den Sterblichen zu spüren, die sie so oft zurückweist. Manchmal, wenn sie alleine ist, zieht sie sich zurück in die tiefsten Kammern des Glutbergs, wo sie sich an die Wärme und den Trost des Feuers schmiegt, als sei es das Einzige, was sie wirklich versteht und was sie jemals trösten kann. Es ist in diesen Momenten, dass sie ihre Zerbrechlichkeit spürt – das Wissen, dass selbst eine Hohefürstin des Feuers nicht unverwundbar ist.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Schicksal und Aufgabe</h2></div>
+                        <p>Kaen wurde nicht aus freiem Willen zur Hohefürstin des Feuers. Ihre göttliche Bestimmung und das Feuer, das in ihren Adern fließt, banden sie an diese Aufgabe. Doch trotz ihrer Verachtung für die Sterblichen und ihrer zynischen Art ist sie zutiefst mit ihrem Schicksal verbunden. Sie trägt die Verantwortung, das Gleichgewicht zwischen Schöpfung und Zerstörung zu bewahren. Das Feuer, das sie kontrolliert, ist beides: ein Element, das Leben gibt und ein Element, das es nehmen kann. In ihren tiefsten Gedanken hegt Kaen die Frage, ob sie mehr ist als das, was ihr auferlegt wurde. Doch sie weiß auch, dass die Macht des Feuers einen Preis hat, und dass es nur durch ihre Wachsamkeit gezähmt bleiben kann.</p>
+                        <hr>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

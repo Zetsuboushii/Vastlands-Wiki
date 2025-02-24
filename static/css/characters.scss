@@ -1,0 +1,138 @@
+.characters-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .characters-element {
+    margin: 10px;
+    width: 300px;
+    height: auto;
+    text-align: center;
+    background-image: url('../ui/image-background.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    img {
+      height: 400px;
+      max-width: 262px;
+      position: relative;
+      bottom: -24px;
+      object-fit: contain;
+    }
+
+    button {
+      position: relative;
+      top: 10px;
+      z-index: 1;
+      background-image: url('../ui/name-backdrop-3.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: transparent;
+      background-position-y: 2px;
+      border: none;
+      height: 70px;
+      width: 300px;
+      color: white;
+      font-family: "Grenze Gotisch";
+      font-size: 24px;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.filters {
+  text-align: center;
+
+  .filter-title {
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+    background-image: url('../ui/field-name-background.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 46px;
+    color: white;
+    background-position: center;
+
+    h3 {
+      top: 7px;
+      margin: 0;
+      position: relative;
+    }
+  }
+
+  button {
+    color: white;
+    font-family: "Grenze Gotisch";
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  #letter-filter {
+    button {
+      background-image: url("../ui/button-square.png");
+      background-size: contain;
+      width: 56px;
+      height: 56px;
+    }
+  }
+
+  #nationality-filter {
+    button {
+      background-image: url("../ui/button-text.png");
+      background-size: contain;
+      width: 250px;
+      height: 67px;
+    }
+  }
+}
+
+.collapsible-list {
+  ul {
+    display: block;
+    margin-left: 20px;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  .expanded > ul {
+    display: none;
+  }
+
+  button {
+    font-family: "Grenze Gotisch";
+    font-size: 18px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-left: 5px;
+
+      a {
+        color: black;
+      }
+    }
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-image: url('../ui/button-square.png');
+      background-size: cover;
+      margin-right: 5px;
+    }
+  }
+}

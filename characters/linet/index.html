@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Linet | Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../../static/css/base.css">
+    <link rel="stylesheet" href="../../static/css/character.css">
+</head>
+<body>
+
+<link rel="stylesheet" href="../../static/css/banner.css">
+<link rel="shortcut icon" href="../../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../../static/ui/banner-9.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../../static/imgs/logo.png" alt="" class="logo" style="left: -40px; position: relative">
+            <a href="../../index.html" style="left: -40px; position: relative">Tome of the Vastlands</a>
+            <sub style="left: -40px; position: relative">v3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('../index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('../../places/index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('../../compendium/index.html')">Kompendien</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        <div class="character-container">
+            <div class="character-data">
+                <div class="character-data-box">
+                    
+                    
+                    
+                    <img src="https://images.zetsuboushii.site/dnd/characters/linet artwork.png" alt="">
+
+                    <div class="character-data-name"><h1>Linet </h1></div>
+                    <div class="character-data-title"><h3>Fahrendes Raubopfer</h3></div>
+
+                    <div class="character-data-field-title"><h4>Informationen zur Person</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Rasse</td>
+                            <td>Menschen</td>
+                        </tr>
+                        <tr>
+                            <td>Geschlecht</td>
+                            <td>
+                                weiblich
+                            </td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Alter</td>
+                                <td>27 Jahre</td>
+                            </tr>
+                            <tr>
+                                <td>Geburtstag</td>
+                                <td>19. Tag, Erntemond im
+                                    Jahre 367
+                                    n.V.</td>
+                            </tr>
+                        
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Maße</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Körpergröße</td>
+                            <td>1,72 m</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Gewicht</td>
+                                <td>65 kg</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Profession</h4></div>
+                    <table>
+                        <tbody>
+                        
+                        <tr>
+                            <td>Basisklasse</td>
+                            <td>Bürger</td>
+                        </tr>
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Weitere Informationen</h4></div>
+                    <table>
+                        <tbody>
+                        
+                            <tr>
+                                <td>Geburtsort</td>
+                                <td>Elpis</td>
+                            </tr>
+                            
+                        
+                        
+                            <tr>
+                                <td>Gesinnung</td>
+                                <td>LG</td>
+                            </tr>
+                        
+                        
+                            <tr>
+                                <td>Zugehörigkeit</td>
+                                <td>
+                                    <ul>
+                                        
+                                            <li>Schicksalsjünger Fortunas</li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Persönlicher Status</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Verbleib</td>
+                            <td>am Leben</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Beziehungen</td>
+                                <td>
+                                    <ul>
+                                        
+                                            <li>Marjorie <small>(Freundin)</small></li>
+                                        
+                                            <li>Nayru <small>(Retter)</small></li>
+                                        
+                                            <li>Siegmund <small>(Retter)</small></li>
+                                        
+                                            <li>U-Ranos <small>(Retter)</small></li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="character-text">
+                <div class="character-text-box">
+                    <p>Linet ist eine reisende Händlerin, die für ihre herzliche und vertrauensvolle Art bekannt ist. Sie glaubt fest an das Gute in der Gesellschaft, was ihr sowohl Türen öffnet als auch Probleme bereitet. Obwohl sie oft bestohlen wird, lässt sie sich nicht von ihrem Traum abbringen, eine angesehene Händlerin in ganz Faergria zu werden. Ursprünglich aus Elpis stammend, hat sie das Handwerk des Handels von ihrem verstorbenen Vater gelernt, dessen Vermächtnis sie weiterträgt. Ihr Weg ist nicht einfach, denn sie weigert sich, der faergrianischen Händlergilde beizutreten, was sie anfällig für Überfälle macht. Dennoch bleibt sie unbeirrt und trägt nun einen Silberdolch bei sich, entschlossen, sich nicht länger als Opfer behandeln zu lassen.</p>
+
+                    <hr>
+
+                    
+                        <div class="character-text-heading"><h2>Ein leichtes Ziel mit wertvollen Waren</h2></div>
+                        <p>Linet ist eine hochgewachsene Frau mit einer schlanken, aber kräftigen Statur, geformt durch jahrelange Reisen mit schwerem Gepäck. Ihre freundlichen Augen und die Art, wie sie sich mit Menschen unterhält, machen sie zu einer geschätzten Persönlichkeit unter Händlern und Kunden gleichermaßen. Trotz ihrer guten Absichten wird sie oft zur Zielscheibe, da sie regelmäßig wertvolle Güter transportiert, darunter Lieferungen für die Kurfürstin von Hal und sogar den König von Faergria. Die Diebesgilde von Faergria hat sie längst als leichte Beute erkannt, doch Linet bleibt standhaft und versucht, sich nicht unterkriegen zu lassen.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Unterwegs zwischen Risiko und Unabhängigkeit</h2></div>
+                        <p>Ihre Art zu reisen ist so unkonventionell wie ihr Charakter. Meist ist sie nur mit einem gigantischen Rucksack unterwegs, in dem sie ihre Waren verstaut, manchmal zieht sie aber auch einen Karren voller Güter hinter sich her. Trotz der Gefahren lehnt sie es ab, sich einer Karawane anzuschließen oder Schutz zu suchen, da sie an ihre Unabhängigkeit glaubt. Der Gedanke, sich der Händlergilde anzuschließen, widerstrebt ihr – zwar würde sie dann Schutz und bessere Handelsbedingungen genießen, doch die verpflichtenden Abgaben und die Abhängigkeit von einem größeren System gehen gegen ihre Prinzipien.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Der Traum ihres Vaters – und ihr eigener</h2></div>
+                        <p>Ihr Leben wurde von einem einzigen Moment geprägt: dem Tod ihres Vaters, als sie zwölf Jahre alt war. Vor der schwierigen Entscheidung stehend, ob sie den kleinen Laden ihres Vaters in Elpis weiterführen oder seinen großen Traum erfüllen sollte, wählte sie den schwierigeren Weg. Sie wollte nicht an einem Ort verweilen, sondern das Land bereisen, um als Händlerin in ganz Faergria bekannt zu werden. Der Erfolg stellte sich jedoch nur langsam ein. Obwohl sie durch ihre freundliche und zuvorkommende Art viele wertvolle Kontakte knüpfte, blieb sie finanziell oft knapp bei Kasse. Große Aufträge erhielt sie nur selten, und ihr Geschäft wuchs nur in kleinen Schritten.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Mehr als nur eine Händlerin – eine Kämpferin wider Willen</h2></div>
+                        <p>Linet ist eine geborene Feilscherin, doch ihre gutmütige Art macht es ihr schwer, harte Entscheidungen zu treffen. Sie ist keine Kriegerin, aber sie hat gelernt, sich zu behaupten. Seit einiger Zeit trägt sie den Silberdolch ihres Vaters bei sich, ein Relikt, das nicht nur Erinnerungen an ihn wachruft, sondern ihr auch ein wenig Sicherheit gibt. Zwar ist sie kein Fan von Gewalt, doch sie hat ihn bereits einige Male zu ihrer Verteidigung genutzt.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Ein ungewisser, aber hoffnungsvoller Weg</h2></div>
+                        <p>Trotz all der Hindernisse gibt Linet nicht auf. Ihr Ziel bleibt es, ihren Namen als Händlerin in Faergria zu etablieren, auch wenn der Weg dorthin beschwerlich ist. Sie weigert sich, sich von Räubern, organisierten Verbrechern oder den Zwängen der Händlergilde in die Knie zwingen zu lassen. Vielleicht wird sie irgendwann einen neuen Weg finden, um sich besser zu schützen, oder sie wird doch erkennen müssen, dass sie ohne Verbündete nicht weit kommen wird. Noch aber bleibt sie auf ihrer Reise, voller Hoffnung, dass ihr Vertrauen in die Menschen sich eines Tages auszahlen wird.</p>
+                        <hr>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

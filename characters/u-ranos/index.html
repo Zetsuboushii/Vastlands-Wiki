@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>U-Ranos | Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../../static/css/base.css">
+    <link rel="stylesheet" href="../../static/css/character.css">
+</head>
+<body>
+
+<link rel="stylesheet" href="../../static/css/banner.css">
+<link rel="shortcut icon" href="../../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../../static/ui/banner-5.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../../static/imgs/logo.png" alt="" class="logo" style="left: -40px; position: relative">
+            <a href="../../index.html" style="left: -40px; position: relative">Tome of the Vastlands</a>
+            <sub style="left: -40px; position: relative">v3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('../index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('../../places/index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('../../compendium/index.html')">Kompendien</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        <div class="character-container">
+            <div class="character-data">
+                <div class="character-data-box">
+                    
+                    
+                    
+                    <img src="https://images.zetsuboushii.site/dnd/characters/u-ranos.png" alt="">
+
+                    <div class="character-data-name"><h1>U-Ranos </h1></div>
+                    <div class="character-data-title"><h3>Unbeugsame Gerechtigkeit</h3></div>
+
+                    <div class="character-data-field-title"><h4>Informationen zur Person</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Rasse</td>
+                            <td>Engel</td>
+                        </tr>
+                        <tr>
+                            <td>Geschlecht</td>
+                            <td>
+                                männlich
+                            </td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Alter</td>
+                                <td>349 Jahre</td>
+                            </tr>
+                            <tr>
+                                <td>Geburtstag</td>
+                                <td>13. Tag, Saatmond im
+                                    Jahre 45
+                                    n.V.</td>
+                            </tr>
+                        
+                        
+                            <tr>
+                                <td>Aliase</td>
+                                <td>
+                                    <ul>
+                                        
+                                            <li>Dummkopf <small>(Meilira, Amlin, Farone)</small></li>
+                                        
+                                            <li>Knecht <small>(Ar-Merer, Narcian)</small></li>
+                                        
+                                            <li>Opa <small>(Häufig in Rüstungsgestalt)</small></li>
+                                        
+                                            <li>U-Ranossi <small>(Nayru, Eliza, Iddra, Seloue, Fubuki)</small></li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Maße</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Körpergröße</td>
+                            <td>1,82 m</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Gewicht</td>
+                                <td>0 kg</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Profession</h4></div>
+                    <table>
+                        <tbody>
+                        
+                        <tr>
+                            <td>Basisklasse</td>
+                            <td>Recke</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Subklassen</td>
+                                <td>
+                                    <ul>
+                                        
+                                            <li>Fischer</li>
+                                        
+                                            <li>Kleriker</li>
+                                        
+                                            <li>Kleriker der Hama</li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Weitere Informationen</h4></div>
+                    <table>
+                        <tbody>
+                        
+                            <tr>
+                                <td>Geburtsort</td>
+                                <td>Hof der Gerechtigkeit</td>
+                            </tr>
+                            
+                        
+                        
+                            <tr>
+                                <td>Gesinnung</td>
+                                <td>NG</td>
+                            </tr>
+                        
+                        
+                            <tr>
+                                <td>Zugehörigkeiten</td>
+                                <td>
+                                    <ul>
+                                        
+                                            <li>Kirche der Himmlischen Gerechtigkeit</li>
+                                        
+                                            <li>Rentnerbrigade</li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        
+                            <tr>
+                                <td>Mag</td>
+                                <td>
+                                    
+                                        Angeln, 
+                                    
+                                        Feiern in Bekanntenkreisen, 
+                                    
+                                        Freiluftbäder, 
+                                    
+                                        Frühling, 
+                                    
+                                        Heldengeschichten, 
+                                    
+                                        Herzliches Lachen, 
+                                    
+                                        Mut, 
+                                    
+                                        Rüstungen, 
+                                    
+                                        Schlechte Witze, 
+                                    
+                                        Sterne, 
+                                    
+                                        Sticheln, 
+                                    
+                                        Wortwitze
+                                    
+                                </td>
+                            </tr>
+                        
+                        
+                            <tr>
+                                <td>Mag nicht</td>
+                                <td>
+                                    
+                                        Arroganz, 
+                                    
+                                        Blinder Gehorsam, 
+                                    
+                                        Durch Rang erzwungener Respekt, 
+                                    
+                                        Fliegen, 
+                                    
+                                        Gefühlsmaskerade, 
+                                    
+                                        Gerichtsprozesse, 
+                                    
+                                        Gleichgültigkeit, 
+                                    
+                                        Übertriebene Ernsthaftigkeit
+                                    
+                                </td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Persönlicher Status</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Verbleib</td>
+                            <td>am Leben</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Beziehungen</td>
+                                <td>
+                                    <ul>
+                                        
+                                            <li>Alcuin <small>(Onkel)</small></li>
+                                        
+                                            <li>Amlin <small>(Freundin)</small></li>
+                                        
+                                            <li>Ar-Merer <small>(missverst. Bruder)</small></li>
+                                        
+                                            <li>Avarne <small>(Freund)</small></li>
+                                        
+                                            <li>Avila <small>(Freundin)</small></li>
+                                        
+                                            <li>Burdig <small>(Guter Freund)</small></li>
+                                        
+                                            <li>En-Troad <small>(Bruder)</small></li>
+                                        
+                                            <li>Felix <small>(Schüler in Spe)</small></li>
+                                        
+                                            <li>Fortuna <small>(Tante)</small></li>
+                                        
+                                            <li>Fubuki <small>(Adoptivtochter)</small></li>
+                                        
+                                            <li>Hama <small>(inoff. gr. Schwester)</small></li>
+                                        
+                                            <li>Iddra <small>(Freundin)</small></li>
+                                        
+                                            <li>Igmusur <small>(sehr guter Freund)</small></li>
+                                        
+                                            <li>Il-Vernia <small>(Schwester)</small></li>
+                                        
+                                            <li>Inoro <small>(Großer Bruder)</small></li>
+                                        
+                                            <li>Justicia <small>(Mutter)</small></li>
+                                        
+                                            <li>Kaen <small>(Freundin)</small></li>
+                                        
+                                            <li>Meilira <small>(Cousine)</small></li>
+                                        
+                                            <li>Mudo <small>(Freund)</small></li>
+                                        
+                                            <li>Narcian <small>(Feind)</small></li>
+                                        
+                                            <li>Nayru <small>(Reisegefährtin, engste Vertraute)</small></li>
+                                        
+                                            <li>O-Gall <small>(Bruder)</small></li>
+                                        
+                                            <li>Ouin <small>(guter Freund)</small></li>
+                                        
+                                            <li>Rai <small>(Bester Freund)</small></li>
+                                        
+                                            <li>Seloue <small>(Ziehmutter)</small></li>
+                                        
+                                            <li>Siegmund <small>(Reisegefährte)</small></li>
+                                        
+                                            <li>Solenne <small>(Freundin)</small></li>
+                                        
+                                            <li>Valerius <small>(Freund)</small></li>
+                                        
+                                            <li>Zora <small>(Freundin)</small></li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        
+                            <tr>
+                                <td>Liebe</td>
+                                <td>Eliza</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="character-text">
+                <div class="character-text-box">
+                    <p>U-Ranos ist einer der fünf Recken der Justicia und zudem in seiner Erdengestalt der Ziehsohn von Seloue.</p>
+
+                    <hr>
+
+                    
+                        <div class="character-text-heading"><h2>Persönlichkeit</h2></div>
+                        <p>U-Ranos ist ein stets fröhlicher Himmelsbewohner, der immer für Späße zu haben ist – selbst dann, wenn diese auf seine eigenen Kosten gehen. Für ihn sind seine Freunde wie eine Familie, die er über alles schätzt. Ränge und Macht bedeuten ihm nichts; er sieht sie lediglich als Werkzeuge, um diejenigen zu schützen, die ihm am Herzen liegen. In seiner Wahrnehmung zählt nicht der Rang oder das Alter einer Person, sondern allein ihre Taten und der Umgang mit anderen. Wenn es nach U-Ranos ginge, wären alle Barrieren, die durch Rangunterschiede entstehen, überflüssig und hinderlich für ein harmonisches Miteinander. Ob Gott, Recke oder einfacher Soldat – der Respekt, den er anderen entgegenbringt, basiert einzig und allein auf ihren Handlungen.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Werte</h2></div>
+                        <p>Trotz seiner oft sorglosen und humorvollen Art hält U-Ranos fest an der Hoffnung auf eine gerechte Welt. Er ist zielstrebig und stets zugänglich, es sei denn, er wird Zeuge von Ungerechtigkeit. In jedem Leben sieht er das Potenzial, das Richtige zu tun, und wünscht sich eine Welt, in der alle Wesen sich frei entwickeln und ihr volles Potenzial entfalten können. U-Ranos versucht stets, an das Gute in jedem zu appellieren, auch wenn seine Idealvorstellungen von manchen als naiv und dickköpfig abgetan werden.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Reckenschaft und Aufgabe</h2></div>
+                        <p>Als einer der fünf momentanen Recken Justicias vertritt U-Ranos die unbeugsame Gerechtigkeit. Er wuchs in den himmlischen Gefilden auf und verbrachte dort einen Großteil seiner Zeit. Seine Tage füllte er damit, anderen Himmelsbewohnern zu helfen – oder sie mit seinen Streichen zu nerven. Vor etwa 69 Jahren jedoch verließ er den Himmel und begab sich auf die Erde. Um die Welt und ihre Bewohner besser zu verstehen, nahm er die Gestalt eines alten Mannes in Vollkörperrüstung an und verbarg so sein himmlisches Erscheinungsbild. Seither wandert U-Ranos als Kleriker über die Erde. Wo immer er hinkommt, hilft er den Menschen, die seinen Weg kreuzen, und strebt danach, die Welt zu einem besseren Ort zu machen. Dabei verbreitet er auch die Lehren Justicias, auch wenn dieser Teil seiner Mission manchmal zu kurz kommt – seine Hingabe an das Wohl anderer steht für ihn stets im Vordergrund.</p>
+                        <hr>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

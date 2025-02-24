@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Seloue | Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../../static/css/base.css">
+    <link rel="stylesheet" href="../../static/css/character.css">
+</head>
+<body>
+
+<link rel="stylesheet" href="../../static/css/banner.css">
+<link rel="shortcut icon" href="../../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../../static/ui/banner-7.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../../static/imgs/logo.png" alt="" class="logo" style="left: -40px; position: relative">
+            <a href="../../index.html" style="left: -40px; position: relative">Tome of the Vastlands</a>
+            <sub style="left: -40px; position: relative">v3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('../index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('../../places/index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('../../compendium/index.html')">Kompendien</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        <div class="character-container">
+            <div class="character-data">
+                <div class="character-data-box">
+                    
+                    
+                    
+                    <img src="https://images.zetsuboushii.site/dnd/characters/seloue.png" alt="">
+
+                    <div class="character-data-name"><h1>Seloue </h1></div>
+                    <div class="character-data-title"><h3>Wandelndes Lexikon</h3></div>
+
+                    <div class="character-data-field-title"><h4>Informationen zur Person</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Rasse</td>
+                            <td>Halbelfen</td>
+                        </tr>
+                        <tr>
+                            <td>Geschlecht</td>
+                            <td>
+                                weiblich
+                            </td>
+                        </tr>
+                        
+                        
+                            <tr>
+                                <td>Aliase</td>
+                                <td>
+                                    <ul>
+                                        
+                                            <li>Mutter <small>(U-Ranos)</small></li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Maße</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Körpergröße</td>
+                            <td>1,67 m</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Gewicht</td>
+                                <td>60 kg</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Profession</h4></div>
+                    <table>
+                        <tbody>
+                        
+                        <tr>
+                            <td>Basisklasse</td>
+                            <td>Hohefürst</td>
+                        </tr>
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Weitere Informationen</h4></div>
+                    <table>
+                        <tbody>
+                        
+                            <tr>
+                                <td>Geburtsort</td>
+                                <td>Frelia</td>
+                            </tr>
+                            
+                        
+                        
+                            <tr>
+                                <td>Gesinnung</td>
+                                <td>NG</td>
+                            </tr>
+                        
+                        
+                            <tr>
+                                <td>Zugehörigkeit</td>
+                                <td>
+                                    <ul>
+                                        
+                                            <li>2. Generation der Hohefürsten</li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Persönlicher Status</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Verbleib</td>
+                            <td>am Leben</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Beziehungen</td>
+                                <td>
+                                    <ul>
+                                        
+                                            <li>Amlin <small>(Freundin)</small></li>
+                                        
+                                            <li>Avila <small>(Freundin)</small></li>
+                                        
+                                            <li>Fortuna <small>(Freundin)</small></li>
+                                        
+                                            <li>Hama <small>(beste Freundin)</small></li>
+                                        
+                                            <li>Justicia <small>(beste Freundin)</small></li>
+                                        
+                                            <li>Lavande <small>(Lehrling)</small></li>
+                                        
+                                            <li>Mudo <small>(Freund)</small></li>
+                                        
+                                            <li>Ouin <small>(Freund)</small></li>
+                                        
+                                            <li>Solenne <small>(Freundin)</small></li>
+                                        
+                                            <li>Thanatos <small>(Freund)</small></li>
+                                        
+                                            <li>Theodoric <small>(Freund)</small></li>
+                                        
+                                            <li>U-Ranos <small>(Ziehsohn)</small></li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="character-text">
+                <div class="character-text-box">
+                    <p>Seloue ist eine beeindruckende Figur in Faergria, bekannt als die Hohefürstin des Wissens. Ihre Hingabe, alles Wissen der Welt zu sammeln und zu bewahren, hat sie zu einer unverzichtbaren Instanz gemacht. Sie ist die treibende Kraft hinter der Großen Bibliothek von Hal – einer der bedeutendsten Institutionen in Faergria.</p>
+
+                    <hr>
+
+                    
+                        <div class="character-text-heading"><h2>Ziele und Ambitionen</h2></div>
+                        <p>Seloue verfolgt das ehrgeizige Ziel, die gesamte Weisheit Faergrias zu archivieren. Ihr Leben ist dem Streben nach Wissen gewidmet, und sie sieht Bildung und Information als den Schlüssel zu einer besseren Zukunft. Mit akribischer Sorgfalt sorgt sie dafür, dass die Bücher und Manuskripte ihrer Bibliothek in perfektem Zustand bleiben. Dieses Ziel treibt sie auch an, ihren Schüler, Lavande, zu einem würdigen Nachfolger auszubilden.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Die Große Bibliothek von Hal</h2></div>
+                        <p>Die Bibliothek von Hal ist Seloues Lebenswerk. Sie hat sie zu einem Ort des Lernens, der Inspiration und des Austauschs gemacht. Die Regale sind mit unzähligen Werken gefüllt, die von historischen Chroniken und Fachlektüren bis hin zu esoterischen Manuskripten und Zauberbücher reichen. Seloue organisiert regelmäßig Veranstaltungen, um das Wissen der Bibliothek mit der Welt zu teilen, darunter Vorlesungen, Diskussionsrunden und Lehrprogramme für junge Gelehrte. Die Magieakademie, die ebenfalls in Frelia ihre Pforten geöffnet hat, aber auch Seloue selbst profitieren sehr von der gemeinsamen Kooperation, da Seloue dadurch ihr so wertgeschätztes dokumentiertes Wissen an ein breiteres Publikum bringen kann. Seloue trägt neben ihrer Funktion als oberste Bibliothekarin ihrer eigenen Bibliothek eine Professur an jener Akademie für jegliche Fachrichtungen.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Persönlichkeit</h2></div>
+                        <p>Seloue besitzt eine bemerkenswerte Eigenschaft, die ihre Persönlichkeit weiter bereichert: Ihre unerschütterliche Neugier und ihr Drang, Dinge selbst auszuprobieren. Obwohl sie von einem riesigen Schatz an Wissen umgeben ist, zögert sie nicht, ihre theoretischen Kenntnisse in die Praxis umzusetzen. Sei es das Experimentieren mit alchemistischen Rezepten oder das Testen alter Zaubersprüche – Seloue bleibt stets offen für neue Erfahrungen. Oft wird sie dabei von jungen Gelehrten bewundert, die ihre Begeisterung ansteckend finden und sich inspirieren lassen, ebenfalls kreativ und experimentierfreudig zu sein. Diese Eigenschaft verbindet sie auch mit ihrer Fähigkeit, innovative Methoden für das Lehren und Archivieren zu entwickeln. Seloue ist bekannt für ihre zugängliche und liebevolle Art. Sie hat eine warme Ausstrahlung, die viele als beinahe mütterlich empfinden. Besonders deutlich wird dies in ihrer Beziehung zu den jungen Gelehrten, die ihre Bibliothek besuchen. Eine oft erzählte Geschichte handelt von einem übermütigen Studenten, der versehentlich ein seltenes Manuskript beschädigte. Anstatt ihn zu bestrafen, setzte sich Seloue mit ihm zusammen, erklärte die Bedeutung des Werkes und half ihm, die Seiten vorsichtig zu restaurieren. Dieser Vorfall prägte den Studenten nachhaltig und motivierte ihn, ein Experte für Buchrestaurierung zu werden. Ihre Geduld und ihr Verständnis für andere machen sie zu einer beliebten Mentorin und Freundin. Doch hinter dieser Sanftheit verbirgt sich eine entschiedene Persönlichkeit, besonders wenn es um den Schutz ihrer geliebten Bibliothek geht. Jede Form von Unachtsamkeit oder Respektlosigkeit gegenüber ihren wertvollen Werken bringt schnell ihre strenge und grantige Seite zum Vorschein. Seloue ist abseitsdessen eine Genießerin, wenn es um die Weine Faergrias geht. Besonders schätzt sie die komplexen Aromen und die lange Tradition, die in jedem Tropfen steckt. Die Weine erinnern sie an die Geschichten und Kulturen der Regionen, aus denen sie stammen, und bieten ihr eine seltene Gelegenheit, sich zu entspannen. Seloue hat es sich zur Gewohnheit gemacht, nach einem erfolgreichen Tag in der Bibliothek ein Glas ihres Lieblingsjahrgangs zu genießen, oft begleitet von einem Buch über die Geschichte der Weinherstellung. Diese Momente betrachtet sie als wertvolle Zeiten der Reflexion und Inspiration, in denen sie neue Ideen für ihre Arbeit entwickelt. Natürlich immer außerhalb der Reichweite des ihr kostbaren Papiers der vielen Bücher, sondern nur gelegentlich in ihrem Privatgemach. Auch wenn schon viele junge Studenten der Magieakademie in Frelia versucht haben, Seloue an ihr Trunkenheitslimit zu bringen, sind sie alle gescheitert. Seit einigen Jahrgängen hält sich an der Akademie der Brauch, dass die Jahrgangsbesten von Seloue auf ein Glas Wein und ein Abendmahl eingeladen werden, insofern sie bei ihr Vorlesungen besucht haben. Etwas, das Seloue seit jeher begleitet, ist das Pech in der Liebe. Bereits in jungen Jahren musste sie feststellen, dass ihre Hingabe zum Wissen oft Missverständnisse oder Distanz in romantischen Beziehungen hervorrief. Immer wieder scheiterten vielversprechende Annäherungen daran, dass potenzielle Partner entweder ihre Leidenschaft für die Bibliothek nicht verstanden oder ihre hohen Ansprüche an Bildung und Gelehrsamkeit nicht erfüllen konnten. Besonders schmerzlich war eine Beziehung zu einem jungen Historiker, der zunächst ihre Begeisterung für das Archivieren von Wissen teilte, sich jedoch als wenig ambitioniert erwies und die Beziehung beendete, als er merkte, dass Seloues Streben ihn überforderte. Trotz dieser Erfahrungen bewahrt sie einen Hauch von Hoffnung, dass sie eines Tages jemanden finden wird, der ihre Liebe zu Wissen und Weisheit teilt und ihr Herz gewinnen kann. Schon bevor Seloue die Hohefürstin des Wissens war, war es ihr vergönnt, die Wärme aufrichtiger Gefühle zu erfahren. In den vielen Jahren ihres langen Lebens fand sie bisher noch keinen potenziellen Partner, der mit ihrem Lebensstil in der Bibliothek zurechtkommen würde, geschweige denn Seloues etwas hohen Ansprüchen an die Gelehrtheit gerecht geworden wäre.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Übernehmen der Mutterrolle für U-Ranos</h2></div>
+                        <p>Im Jahr 136 n.V. entschied sich Seloue nach einem langen und intensiven Gespräch mit ihrer beinahe schwesterlichen besten Freundin Justicia, einer besonderen Bitte nachzukommen. Aus Gründen, die nur Justicia, deren Schwester Fortuna und Seloue selbst nachvollziehen konnten, nahm sie Justicias Sohn U-Ranos bei sich auf. Zunächst war Seloue skeptisch, da sie sich zuvor nie in der Rolle einer Mutter wiedergefunden hatte. Doch bald fand sie sich gemeinsam mit ihrem neuen Ziehsohn inmitten ihrer geliebten Bibliothek wieder, bereit, auch diese neue Herausforderung mit Weisheit und Geduld zu meistern. Seloue zog U-Ranos nach ihren Vorstellungen auf und lehrte den weltfremden Sohn der Göttin Justicia über vielerlei Aspekte des alltäglichen Lebens. U-Ranos bereitete Seloue viele sorgenvolle Jahre, doch über die Zeit begann sich Seloue an ihr Leben als Ziehmutter zu mögen. Vermehrt nahm Seloue U-Ranos auf Spaziergänge durch die Stadt mit, die beiden verreisten sogar oftmals in verschiedene Gegenden Faergrias. Als Seloue U-Ranos einmal zu ihrer Freundin Hama mitnahm, kam ihr die Idee, U-Ranos, sollte er das passende Alter erreichen, als Kleriker im Glauben Hamas auszubilden. Seloue als auch Hama hielten dies für eine exzellente Idee, nicht zuletzt, da Seloue in U-Ranos einen etwas anderen Sinn für Gerechtigkeit verspürte, als Justicia ihn verkörpert. Schließlich hatte sie die damaligen Worte ihrer engen Freundin verstanden. Obwohl Seloue insgeheim hoffte, U-Ranos als Student in die Magieakademie von Frelia eine akademische Laufbahn durchlaufen zu lassen, gab sie diesen Wunsch auf und verabredete mit Hama das Vorhaben.</p>
+                        <hr>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Hindrik | Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../../static/css/base.css">
+    <link rel="stylesheet" href="../../static/css/character.css">
+</head>
+<body>
+
+<link rel="stylesheet" href="../../static/css/banner.css">
+<link rel="shortcut icon" href="../../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../../static/ui/banner-4.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../../static/imgs/logo.png" alt="" class="logo" style="left: -40px; position: relative">
+            <a href="../../index.html" style="left: -40px; position: relative">Tome of the Vastlands</a>
+            <sub style="left: -40px; position: relative">v3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('../index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('../../places/index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('../../compendium/index.html')">Kompendien</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        <div class="character-container">
+            <div class="character-data">
+                <div class="character-data-box">
+                    
+                    
+                    
+                    <img src="https://images.zetsuboushii.site/dnd/characters/hindrik.png" alt="">
+
+                    <div class="character-data-name"><h1>Hindrik </h1></div>
+                    <div class="character-data-title"><h3>Muskulöser Schreiner</h3></div>
+
+                    <div class="character-data-field-title"><h4>Informationen zur Person</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Rasse</td>
+                            <td>Menschen</td>
+                        </tr>
+                        <tr>
+                            <td>Geschlecht</td>
+                            <td>
+                                männlich
+                            </td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Alter</td>
+                                <td>37 Jahre</td>
+                            </tr>
+                            <tr>
+                                <td>Geburtstag</td>
+                                <td>17. Tag, Eismond im
+                                    Jahre 357
+                                    n.V.</td>
+                            </tr>
+                        
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Maße</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Körpergröße</td>
+                            <td>1,98 m</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Gewicht</td>
+                                <td>110 kg</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Profession</h4></div>
+                    <table>
+                        <tbody>
+                        
+                        <tr>
+                            <td>Basisklasse</td>
+                            <td>Waldläufer</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Subklasse</td>
+                                <td>
+                                    <ul>
+                                        
+                                            <li>Jäger</li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Weitere Informationen</h4></div>
+                    <table>
+                        <tbody>
+                        
+                            <tr>
+                                <td>Geburtsort</td>
+                                <td>Brodia</td>
+                            </tr>
+                            
+                        
+                        
+                            <tr>
+                                <td>Gesinnung</td>
+                                <td>NG</td>
+                            </tr>
+                        
+                        
+                            <tr>
+                                <td>Zugehörigkeit</td>
+                                <td>
+                                    <ul>
+                                        
+                                            <li>Kinder des Waldes</li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        
+                            <tr>
+                                <td>Mag</td>
+                                <td>
+                                    
+                                        Holz, 
+                                    
+                                        Kochen, 
+                                    
+                                        Minimalismus, 
+                                    
+                                        Natur, 
+                                    
+                                        Regen, 
+                                    
+                                        Selbstständigkeit, 
+                                    
+                                        Wald
+                                    
+                                </td>
+                            </tr>
+                        
+                        
+                            <tr>
+                                <td>Mag nicht</td>
+                                <td>
+                                    
+                                        Adlige, 
+                                    
+                                        Fisch, 
+                                    
+                                        Holzsplitter, 
+                                    
+                                        Menschenmengen, 
+                                    
+                                        Tiere schlachten
+                                    
+                                </td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Persönlicher Status</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Verbleib</td>
+                            <td>am Leben</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Beziehungen</td>
+                                <td>
+                                    <ul>
+                                        
+                                            <li>Linus <small>(guter Freund)</small></li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="character-text">
+                <div class="character-text-box">
+                    <p>Hindrik ist ein einfacher Mann, der die Sägemühle am Rande des Dorfes Brodia betreibt. Seine Tage sind von harter Arbeit geprägt, die er in einer Art stillen Einklang mit der Natur verrichtet. Hindrik lebt allein und genießt die Abgeschiedenheit seiner Mühle, die ihm eine Zuflucht bietet, weit weg von den Menschenmengen und dem Trubel des Dorflebens. Er ist es gewohnt, auf sich selbst gestellt zu sein, und hat sich ein autarkes Leben aufgebaut, das ihn in eine tiefe Verbundenheit mit der Natur und der Umgebung um Brodia geführt hat.</p>
+
+                    <hr>
+
+                    
+                        <div class="character-text-heading"><h2>Herkunft und Leben in der Sägemühle</h2></div>
+                        <p>Hindrik kennt den angrenzenden Wald wie seine Westentasche. Er hat bereits im Alter von sechs Jahren damit begonnen, Bäume zu fällen, zuerst an der Seite seines Vaters und später allein, nachdem er die Grundlagen der Forstarbeit erlernt hatte. Die jahrzehntelange Erfahrung hat ihm nicht nur die Fertigkeit im Umgang mit Axt und Säge verliehen, sondern auch ein tiefes Verständnis für den Wald selbst. Hindrik weiß, wann und wo man am besten Bäume fällt, ohne das ökologische Gleichgewicht zu stören, und respektiert die Natur als die Grundlage seines Handwerks und seiner Existenz. Hindriks Sägemühle ist nicht nur ein Ort der Arbeit, sondern auch sein Zuhause. Er hat sich über die Jahre einen weitgehend autarken Lebensstil erarbeitet. Neben der Mühle pflegt er ein verhältnismäßig großes Feld, auf dem er verschiedene Früchte anbaut. Die Mühle bietet ihm alles, was er zum Leben braucht: Nahrung, Wasser und einen Platz zum Schlafen. Seine Unabhängigkeit ist für Hindrik ein großes Gut, und er genießt die Freiheit, sein Leben so zu gestalten, wie er es möchte, ohne sich auf andere verlassen zu müssen.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Einsamkeit und Freundschaft</h2></div>
+                        <p>Obwohl Hindrik die Stille und Einsamkeit seiner Mühle schätzt, bedeutet das nicht, dass er vollkommen isoliert lebt. Es kommt selten vor, dass er Besuch bekommt, und auch er selbst verlässt seine Sägemühle nur selten. Wenn Hindrik jedoch den Drang verspürt, unter Menschen zu sein, geht er nach Brodia und besucht die Taverne von Linus. Die Taverne ist ein Ort der Geselligkeit, doch für Hindrik ist sie vor allem deswegen wichtig, weil Linus sein einziger wahrer Freund ist. Die Freundschaft zwischen Hindrik und Linus hat eine tiefe Bedeutung für ihn. Linus ist einer der wenigen Menschen, die Hindrik wirklich versteht und akzeptiert, wie er ist. Vor einigen Jahren hat Hindrik seinem Freund geholfen, die Taverne auf Vordermann zu bringen. Er nutzte seine Kenntnisse im Holzhandwerk, um morsche Balken zu ersetzen und die Einrichtung zu reparieren, und trug damit wesentlich zur Gemütlichkeit der Taverne bei. Dieser gemeinsame Einsatz hat die Freundschaft der beiden noch weiter gestärkt, und auch wenn Hindrik sich nur selten unter die Leute mischt, findet er bei Linus stets einen Ort, an dem er willkommen ist.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Persönliche Eigenschaften und Werte</h2></div>
+                        <p>Hindrik ist ein stiller, aber starker Charakter. Er lebt nach dem Prinzip, dass harte Arbeit und Ehrlichkeit die Grundlage eines guten Lebens sind. Seine Arbeit in der Sägemühle verlangt ihm viel ab, doch Hindrik hat nie darüber geklagt – im Gegenteil, die Arbeit gibt ihm einen Sinn und eine Struktur, die er schätzt. Er hat eine tiefe Achtung vor der Natur, die ihm alles gibt, was er zum Leben braucht. Dabei ist er sich der Verantwortung bewusst, die mit seinem Handwerk einhergeht, und er geht sorgsam mit den Ressourcen des Waldes um. Obwohl Hindrik wenig Kontakt zu anderen Menschen hat, besitzt er eine ruhige Freundlichkeit, die ihn sympathisch macht. Er redet nicht viel, doch wenn er etwas sagt, dann meint er es ernst. Seine stille Art und seine Ehrlichkeit machen ihn zu einem Mann, auf den man sich verlassen kann. Menschen wie Linus wissen diese Qualitäten an ihm zu schätzen, auch wenn Hindrik selbst nie ein großes Aufheben um seine Person macht. Hindrik ist kein Mensch, der von Abenteuer oder großen Träumen getrieben wird. Sein Ziel ist es, ein einfaches und ehrliches Leben zu führen. Die Einsamkeit der Sägemühle und die Rhythmen des Waldes sind für ihn eine Quelle der Zufriedenheit. In einer Welt, die oft von Hektik und Unruhe geprägt ist, hat Hindrik seinen Frieden in der Stille und im Einklang mit der Natur gefunden. Diese Bescheidenheit und der Wunsch nach Einfachheit sind es, die ihn auszeichnen und die ihn von anderen abheben.</p>
+                        <hr>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

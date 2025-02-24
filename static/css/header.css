@@ -1,0 +1,67 @@
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: flex-end;
+  position: relative; }
+
+header {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  width: 100%; }
+  header .menu-button {
+    border: none;
+    background-color: transparent;
+    background-image: url("../ui/button-square-turn.png");
+    left: -40px;
+    height: 79px;
+    width: 79px;
+    position: relative;
+    cursor: pointer; }
+  header .site-title {
+    z-index: 1;
+    width: 576px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-image: url("../ui/title-backdrop.png");
+    background-size: cover;
+    background-repeat: no-repeat; }
+    header .site-title a {
+      color: white;
+      font-family: "Grenze Gotisch";
+      font-size: 40px; }
+    @media (max-width: 768px) {
+      header .site-title a {
+        font-size: 30px; } }
+    header .site-title .logo {
+      height: 30px;
+      margin: 5px 20px 0 12px;
+      filter: brightness(100) saturate(100%); }
+
+.nav-dropdown-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 4;
+  flex-direction: column; }
+  .nav-dropdown-container.show {
+    display: flex; }
+  .nav-dropdown-container .nav-button {
+    width: 246px;
+    height: 65px;
+    font-family: "Grenze Gotisch";
+    font-size: 18px;
+    color: white;
+    background-color: transparent;
+    background-image: url("../ui/button-text.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 0.3s;
+    border: none; }
+    .nav-dropdown-container .nav-button:hover {
+      text-decoration: underline; }
+
+/*# sourceMappingURL=header.css.map */

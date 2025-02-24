@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Dämonen | Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../../../static/css/base.css">
+    <link rel="stylesheet" href="../../../static/css/theologarium.css">
+</head>
+<body>
+
+<link rel="stylesheet" href="../../../static/css/banner.css">
+<link rel="shortcut icon" href="../../../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../../../static/ui/banner-4.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../../../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../../../static/imgs/logo.png" alt="" class="logo" style="left: -40px; position: relative">
+            <a href="../../../index.html" style="left: -40px; position: relative">Tome of the Vastlands</a>
+            <sub style="left: -40px; position: relative">v3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('../../../characters/index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('../../../places/index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('../../index.html')">Kompendien</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        <div class="theologarium-container">
+            <div class="theologarium-row">
+                
+                
+                <img src="https://images.zetsuboushii.site/dnd/characters/scarlet.png" alt="">
+                <div class="theologarium-name">
+                    <h1>Dämonen</h1>
+                </div>
+            </div>
+            <div class="theologarium-row">
+                <div class="theologarium-text-box">
+                    <p>Dämonen sind eine faszinierende und furchterregende Rasse, die tief in den uralten Mythen verwurzelt ist. Sie können in menschlicher Form erscheinen, oft mit hervorstechenden Merkmalen wie Hörnern, die schon bei der Geburt vorhanden sind. Diese Hörner variieren in Form und Größe und sind ein markantes Zeichen ihrer dämonischen Herkunft.
+ Dämonen besitzen eine Mischung aus schauriger Schönheit und dunkler Macht, was sie sowohl anziehend als auch beängstigend macht. Ihre Fähigkeiten umfassen oft mächtige magische Fertigkeiten und übernatürliche Kräfte, die sie im Kampf und in der Täuschung einsetzen. Ihr kulturelles Erbe ist reich an Ritualen und Legenden, in denen sowohl Ehre als auch Schrecken eine zentrale Rolle spielen. Diese Wesen sind bekannt für ihre komplexen Gesellschaftsstrukturen, die stark von Hierarchie und Macht geprägt sind. Trotz ihrer bedrohlichen Natur gibt es unter ihnen auch jene, die nach einem anderen Weg suchen und versuchen, die Balance zwischen ihrer dunklen Herkunft und einem ehrenvollen Leben zu finden.
+ In der Geschichte von Faergria haben Dämonen und Menschen einst friedlich im Süden von Faergria, im heutigen Inidal koexistiert. Dieser Frieden sollte allerdings nur von kurzer Dauer sein, da schließlich ein verheerender Vernichtungskrieg der Menschen gegen die Dämonen geführt wurde. Infolgedessen wurden Dämonen lange Zeit versklavt, bis die Menschen sich in die nördlicheren Gefilde Faergrias wagten und dort Land erschlossen, nun den Dämonen das karge Land zurückgelassen.
+ Dämonen haben eine Lebenserwartung von 500 Jahren.</p>
+
+                    <hr>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

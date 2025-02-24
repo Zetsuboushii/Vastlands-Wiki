@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Meilira | Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../../static/css/base.css">
+    <link rel="stylesheet" href="../../static/css/character.css">
+</head>
+<body>
+
+<link rel="stylesheet" href="../../static/css/banner.css">
+<link rel="shortcut icon" href="../../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../../static/ui/banner-6.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../../static/imgs/logo.png" alt="" class="logo" style="left: -40px; position: relative">
+            <a href="../../index.html" style="left: -40px; position: relative">Tome of the Vastlands</a>
+            <sub style="left: -40px; position: relative">v3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('../index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('../../places/index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('../../compendium/index.html')">Kompendien</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        <div class="character-container">
+            <div class="character-data">
+                <div class="character-data-box">
+                    
+                    
+                    
+                    <img src="https://images.zetsuboushii.site/dnd/characters/meilira.png" alt="">
+
+                    <div class="character-data-name"><h1>Meilira </h1></div>
+                    <div class="character-data-title"><h3>Schicksalsklinge der Fortuna</h3></div>
+
+                    <div class="character-data-field-title"><h4>Informationen zur Person</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Rasse</td>
+                            <td>Menschen</td>
+                        </tr>
+                        <tr>
+                            <td>Geschlecht</td>
+                            <td>
+                                weiblich
+                            </td>
+                        </tr>
+                        
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Maße</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Körpergröße</td>
+                            <td>1,82 m</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Gewicht</td>
+                                <td>75 kg</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Profession</h4></div>
+                    <table>
+                        <tbody>
+                        
+                        <tr>
+                            <td>Basisklasse</td>
+                            <td>Recke</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Subklasse</td>
+                                <td>
+                                    <ul>
+                                        
+                                            <li>Reinherz</li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Weitere Informationen</h4></div>
+                    <table>
+                        <tbody>
+                        
+                            <tr>
+                                <td>Geburtsort</td>
+                                <td>See des Schicksals</td>
+                            </tr>
+                            
+                        
+                        
+                            <tr>
+                                <td>Gesinnung</td>
+                                <td>LN</td>
+                            </tr>
+                        
+                        
+                        
+                            <tr>
+                                <td>Mag</td>
+                                <td>
+                                    
+                                        Backwaren, 
+                                    
+                                        Duelle, 
+                                    
+                                        Gerstentee, 
+                                    
+                                        Ihre Mutter, 
+                                    
+                                        Neue Kulturen kennenlernen, 
+                                    
+                                        Schwerter
+                                    
+                                </td>
+                            </tr>
+                        
+                        
+                            <tr>
+                                <td>Mag nicht</td>
+                                <td>
+                                    
+                                        Aufdringliche Personen, 
+                                    
+                                        Komplizierte Dinge, 
+                                    
+                                        Respektlosigkeit ihrer Mutter gegenüber, 
+                                    
+                                        Saures Essen, 
+                                    
+                                        Sich blamieren
+                                    
+                                </td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Persönlicher Status</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Verbleib</td>
+                            <td>am Leben</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Beziehungen</td>
+                                <td>
+                                    <ul>
+                                        
+                                            <li>Alcuin <small>(Onkel)</small></li>
+                                        
+                                            <li>Ar-Merer <small>(Cousin)</small></li>
+                                        
+                                            <li>Eliza <small>(Freundin)</small></li>
+                                        
+                                            <li>En-Troad <small>(Cousin)</small></li>
+                                        
+                                            <li>Fortuna <small>(Mutter)</small></li>
+                                        
+                                            <li>Il-Vernia <small>(Cousine)</small></li>
+                                        
+                                            <li>Inoro <small>(Cousin)</small></li>
+                                        
+                                            <li>Justicia <small>(Tante)</small></li>
+                                        
+                                            <li>Nayru <small>(Freundin)</small></li>
+                                        
+                                            <li>O-Gall <small>(Cousin)</small></li>
+                                        
+                                            <li>U-Ranos <small>(Cousin)</small></li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="character-text">
+                <div class="character-text-box">
+                    <p>Meilira ist die einzige Tochter und Reckin der Göttin Fortuna.</p>
+
+                    <hr>
+
+                    
+                        <div class="character-text-heading"><h2>Hintergrund</h2></div>
+                        <p>Als einziges Kind der Schicksalssgöttin wurde sie von Geburt an behütet und beschützt. Ihre Mutter, die sehr beschützerisch war, hielt sie fern von der restlichen Götterwelt, um sie in einer abgeschirmten Umgebung großzuziehen. In dieser Isolation entwickelte Meilira ihre außergewöhnlichen Fähigkeiten im Kampf und perfektionierte sie durch ewiges Training. Sie ist eine talentierte Schwertkämpferin, doch ihr Leben im Schutze ihrer Mutter bedeutete, dass sie niemals den Kontakt zu anderen Personen hatte, abgesehen von ihrer Mutter und ihrer Tante Justicia, der Göttin der Gerechtigkeit. Dadurch blieb Meilira zwar körperlich stark, aber in zwischenmenschlichen Beziehungen unerfahren.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Arbeit und Pflichten</h2></div>
+                        <p>Meilira ist ihrer Verantwortung stets treu und vernachlässigt ihre Pflichten nie, egal welche Hindernisse sich ihr in den Weg stellen. Ihre Unnachgiebigkeit und ihr Pflichtbewusstsein machen sie zu einer verlässlichen und entschlossenen Kämpferin. Auch wenn sie der Welt der Sterblichen und Götter gleichermaßen fremd ist, besitzt sie eine natürliche Intelligenz, die sie befähigt, Dinge zu verstehen, die anderen verborgen bleiben. Ihre isolierte Erziehung hat sie dennoch weltfremd gemacht, und ihr Umgang mit anderen Wesen ist geprägt von Unsicherheit und sozialer Unbeholfenheit. Diese Unsicherheit versteckt Meilira hinter einer Maske von Feindseligkeit, was oft zu unangenehmen Missverständnissen und Konflikten führt.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Persönlichkeit</h2></div>
+                        <p>Ihre schroffe Art stößt andere ab, obwohl sie im Inneren von einer tiefen Neugierde getrieben wird. Sie ist wissbegierig und zeigt ein starkes Interesse an den kleinsten Dingen, die für andere alltäglich erscheinen mögen. Besonders fasziniert ist sie von anderen Personen. Ihre Unerfahrenheit im Umgang mit sozialen Wesen hat dazu geführt, dass sie Menschen als komplexe und schwer durchschaubare Kreaturen wahrnimmt. Einst hörte Eliza zufällig ein Selbstgespräch Meiliras, in dem sie zugab, dass die Komplexität und das gesellschaftliche Bedürfnis der Menschen sie besonders zum Nachdenken angeregt haben.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Familie</h2></div>
+                        <p>Trotz all ihrer Herausforderungen und inneren Kämpfe hat Meilira eine tiefe Bindung zu ihrer Mutter. Fortuna liegt ihr sehr am Herzen, und Meilira strebt danach, ihre Mutter stolz zu machen. Ihre Liebe und Treue zu Fortuna sind unerschütterlich, und sie würde alles tun, um sie zu beschützen und zu ehren. Ihre Beziehung zu Fortuna ist der zentrale Anker in ihrem Leben, der ihr Halt gibt und ihre Handlungen prägt.</p>
+                        <hr>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

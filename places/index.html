@@ -1,0 +1,1540 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Orte | Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/characters.css">
+</head>
+<body>
+
+<link rel="stylesheet" href="../static/css/banner.css">
+<link rel="shortcut icon" href="../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../static/ui/banner-8.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../static/imgs/logo.png" alt="" class="logo" style="left: -40px; position: relative">
+            <a href="../index.html" style="left: -40px; position: relative">Tome of the Vastlands</a>
+            <sub style="left: -40px; position: relative">v3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('../characters/index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('../compendium/index.html')">Kompendien</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        <div class="characters-container">
+            <iframe src="https://map.zetsuboushii.site/" style="margin-top: 20px; width: 90%; height: 1000px"></iframe>
+            <h2 style="width: 100%; text-align: center">Elementarebenen</h2>
+            
+                <ul class="collapsible-list">
+                    <li>
+                        
+                        <button>
+                            <span><a
+                                    href="animus/index.html">Animus</a></span>
+                        </button>
+                        
+                            <ul class="collapsible-list">
+                                
+                                    <li>
+                                        
+                                        <button>
+                                            <span><a
+                                                    href="garten-der-magie/index.html">Garten der Magie</a></span>
+                                        </button>
+                                        
+                                    </li>
+                                
+                                    <li>
+                                        
+                                        <button>
+                                            <span><a
+                                                    href="gebirge-der-s%C3%BCnde/index.html">Gebirge der Sünde</a></span>
+                                        </button>
+                                        
+                                    </li>
+                                
+                                    <li>
+                                        
+                                        <button>
+                                            <span><a
+                                                    href="hof-der-gerechtigkeit/index.html">Hof der Gerechtigkeit</a></span>
+                                        </button>
+                                        
+                                    </li>
+                                
+                                    <li>
+                                        
+                                        <button>
+                                            <span><a
+                                                    href="ofen-der-seelen/index.html">Ofen der Seelen</a></span>
+                                        </button>
+                                        
+                                    </li>
+                                
+                                    <li>
+                                        
+                                        <button>
+                                            <span><a
+                                                    href="see-des-schicksals/index.html">See des Schicksals</a></span>
+                                        </button>
+                                        
+                                    </li>
+                                
+                            </ul>
+                        
+                    </li>
+                </ul>
+            
+                <ul class="collapsible-list">
+                    <li>
+                        
+                        <button>
+                            <span><a
+                                    href="tenebris/index.html">Tenebris</a></span>
+                        </button>
+                        
+                            <ul class="collapsible-list">
+                                
+                                    <li>
+                                        
+                                        <button>
+                                            <span><a
+                                                    href="markath/index.html">Markath</a></span>
+                                        </button>
+                                        
+                                            <ul class="collapsible-list">
+                                                
+                                                    <li>
+                                                        
+                                                        <button>
+                                                            <span><a
+                                                                    href="llurthargothr/index.html">Llurthargothr</a></span>
+                                                        </button>
+                                                        
+                                                    </li>
+                                                
+                                                    <li>
+                                                        
+                                                        <button>
+                                                            <span><a
+                                                                    href="undraridor/index.html">Undraridor</a></span>
+                                                        </button>
+                                                        
+                                                    </li>
+                                                
+                                            </ul>
+                                        
+                                    </li>
+                                
+                            </ul>
+                        
+                    </li>
+                </ul>
+            
+                <ul class="collapsible-list">
+                    <li>
+                        
+                        <button>
+                            <span><a
+                                    href="terralithia/index.html">Terralithia</a></span>
+                        </button>
+                        
+                            <ul class="collapsible-list">
+                                
+                                    <li>
+                                        
+                                        <button>
+                                            <span><a
+                                                    href="faergria/index.html">Faergria</a></span>
+                                        </button>
+                                        
+                                            <ul class="collapsible-list">
+                                                
+                                                    <li>
+                                                        
+                                                        <button>
+                                                            <span><a
+                                                                    href="adrestia/index.html">Adrestia</a></span>
+                                                        </button>
+                                                        
+                                                            <ul class="collapsible-list">
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="adrestia-ebene/index.html">Adrestia-Ebene</a></span>
+                                                                        </button>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="halbinsel-der-verbannten/index.html">Halbinsel der Verbannten</a></span>
+                                                                        </button>
+                                                                        
+                                                                            <ul>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Drakensumpf</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Niddarvellir</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Schattenschwarzmarkt</a></span>
+                                                                                    </button>
+                                                                                
+                                                                            </ul>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="k%C3%B6nigsklippen/index.html">Königsklippen</a></span>
+                                                                        </button>
+                                                                        
+                                                                            <ul>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Aegir</a></span>
+                                                                                    </button>
+                                                                                
+                                                                            </ul>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="mondblickinsel/index.html">Mondblickinsel</a></span>
+                                                                        </button>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="n%C3%B6rdliche-irrw%C3%A4lder/index.html">Nördliche Irrwälder</a></span>
+                                                                        </button>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="plateau-der-legenden/index.html">Plateau der Legenden</a></span>
+                                                                        </button>
+                                                                        
+                                                                            <ul>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Orrin</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Schwerthain</a></span>
+                                                                                    </button>
+                                                                                
+                                                                            </ul>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="regenfalltal/index.html">Regenfalltal</a></span>
+                                                                        </button>
+                                                                        
+                                                                            <ul>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Renais</a></span>
+                                                                                    </button>
+                                                                                
+                                                                            </ul>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="see-der-jugend/index.html">See der Jugend</a></span>
+                                                                        </button>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="sonnenscheininsel/index.html">Sonnenscheininsel</a></span>
+                                                                        </button>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="sternstaubinsel/index.html">Sternstaubinsel</a></span>
+                                                                        </button>
+                                                                        
+                                                                    </li>
+                                                                
+                                                            </ul>
+                                                        
+                                                    </li>
+                                                
+                                                    <li>
+                                                        
+                                                        <button>
+                                                            <span><a
+                                                                    href="escrigria/index.html">Escrigria</a></span>
+                                                        </button>
+                                                        
+                                                            <ul class="collapsible-list">
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="einsame-schneefelder/index.html">Einsame Schneefelder</a></span>
+                                                                        </button>
+                                                                        
+                                                                            <ul>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Nordholm</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Westlicher Wachposten von Nordholm</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Östlicher Wachposten von Nordholm</a></span>
+                                                                                    </button>
+                                                                                
+                                                                            </ul>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="eisige-hinterlande/index.html">Eisige Hinterlande</a></span>
+                                                                        </button>
+                                                                        
+                                                                            <ul>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Stephans Hütte</a></span>
+                                                                                    </button>
+                                                                                
+                                                                            </ul>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="erithyl-berge/index.html">Erithyl-Berge</a></span>
+                                                                        </button>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="fr%C3%B6stelnde-mor%C3%A4ne/index.html">Fröstelnde Moräne</a></span>
+                                                                        </button>
+                                                                        
+                                                                            <ul>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Krofenheim</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Krofenheim-Brücke</a></span>
+                                                                                    </button>
+                                                                                
+                                                                            </ul>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="kronen-schneeberge/index.html">Kronen-Schneeberge</a></span>
+                                                                        </button>
+                                                                        
+                                                                            <ul>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Gerards Hütte</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Kronenpass</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Schneespitze</a></span>
+                                                                                    </button>
+                                                                                
+                                                                            </ul>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="mondscheintal/index.html">Mondscheintal</a></span>
+                                                                        </button>
+                                                                        
+                                                                            <ul>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Kloster der Himmlischen Recken</a></span>
+                                                                                    </button>
+                                                                                
+                                                                            </ul>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="n%C3%B6rdliche-eisklippen/index.html">Nördliche Eisklippen</a></span>
+                                                                        </button>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="schneebucht-archipel/index.html">Schneebucht-Archipel</a></span>
+                                                                        </button>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="tal-der-drei-winde/index.html">Tal der Drei Winde</a></span>
+                                                                        </button>
+                                                                        
+                                                                            <ul>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Diebeslager Escrigria</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Schachendorf</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Schicksalspass</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Tempel am Schicksalspass</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Windige Kirchenruine</a></span>
+                                                                                    </button>
+                                                                                
+                                                                            </ul>
+                                                                        
+                                                                    </li>
+                                                                
+                                                            </ul>
+                                                        
+                                                    </li>
+                                                
+                                                    <li>
+                                                        
+                                                        <button>
+                                                            <span><a
+                                                                    href="farodris/index.html">Farodris</a></span>
+                                                        </button>
+                                                        
+                                                            <ul class="collapsible-list">
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="dickicht-der-wahrheit/index.html">Dickicht der Wahrheit</a></span>
+                                                                        </button>
+                                                                        
+                                                                            <ul>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Giftdornsee</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Inidal-Grenzposten</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Nois Hexenhütte</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Quell der Wünsche</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Yerenas</a></span>
+                                                                                    </button>
+                                                                                
+                                                                            </ul>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="d%C3%A4mmerwald/index.html">Dämmerwald</a></span>
+                                                                        </button>
+                                                                        
+                                                                            <ul>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Tannivhs Hütte</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Teryvnat</a></span>
+                                                                                    </button>
+                                                                                
+                                                                            </ul>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="katzenaugenbucht/index.html">Katzenaugenbucht</a></span>
+                                                                        </button>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="nebelhain/index.html">Nebelhain</a></span>
+                                                                        </button>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="vergessene-w%C3%A4lder/index.html">Vergessene Wälder</a></span>
+                                                                        </button>
+                                                                        
+                                                                            <ul>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Tempel der Zeit</a></span>
+                                                                                    </button>
+                                                                                
+                                                                            </ul>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="zwillingsbucht/index.html">Zwillingsbucht</a></span>
+                                                                        </button>
+                                                                        
+                                                                            <ul>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Östliche Turmruine</a></span>
+                                                                                    </button>
+                                                                                
+                                                                            </ul>
+                                                                        
+                                                                    </li>
+                                                                
+                                                            </ul>
+                                                        
+                                                    </li>
+                                                
+                                                    <li>
+                                                        
+                                                        <button>
+                                                            <span><a
+                                                                    href="hal/index.html">Hal</a></span>
+                                                        </button>
+                                                        
+                                                            <ul class="collapsible-list">
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="bl%C3%BChender-fjord/index.html">Blühender Fjord</a></span>
+                                                                        </button>
+                                                                        
+                                                                            <ul>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Blütenschloss Frelia</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Frelia</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Taverne an der Südstraße</a></span>
+                                                                                    </button>
+                                                                                
+                                                                            </ul>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="drachenzahnkap/index.html">Drachenzahnkap</a></span>
+                                                                        </button>
+                                                                        
+                                                                            <ul>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Lycia</a></span>
+                                                                                    </button>
+                                                                                
+                                                                            </ul>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="molida/index.html">Molida</a></span>
+                                                                        </button>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="n%C3%B6rdliche-labyrinthinsel/index.html">Nördliche Labyrinthinsel</a></span>
+                                                                        </button>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="obsidian-grenzlande/index.html">Obsidian-Grenzlande</a></span>
+                                                                        </button>
+                                                                        
+                                                                            <ul>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Banditen-Straßensperre</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Elpis</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Grabmal der Alten Fürsten</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Kloster Schicksalsweg</a></span>
+                                                                                    </button>
+                                                                                
+                                                                            </ul>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="s%C3%BCdliche-labyrinthinsel/index.html">Südliche Labyrinthinsel</a></span>
+                                                                        </button>
+                                                                        
+                                                                    </li>
+                                                                
+                                                            </ul>
+                                                        
+                                                    </li>
+                                                
+                                                    <li>
+                                                        
+                                                        <button>
+                                                            <span><a
+                                                                    href="hydracion/index.html">Hydracion</a></span>
+                                                        </button>
+                                                        
+                                                            <ul class="collapsible-list">
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="drakonische-eisw%C3%BCste/index.html">Drakonische-Eiswüste</a></span>
+                                                                        </button>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="eisschollenarchipel/index.html">Eisschollenarchipel</a></span>
+                                                                        </button>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="gletscher-des-ewigen-eises/index.html">Gletscher des Ewigen Eises</a></span>
+                                                                        </button>
+                                                                        
+                                                                            <ul>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Darnax</a></span>
+                                                                                    </button>
+                                                                                
+                                                                            </ul>
+                                                                        
+                                                                    </li>
+                                                                
+                                                            </ul>
+                                                        
+                                                    </li>
+                                                
+                                                    <li>
+                                                        
+                                                        <button>
+                                                            <span><a
+                                                                    href="inidal/index.html">Inidal</a></span>
+                                                        </button>
+                                                        
+                                                            <ul class="collapsible-list">
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="g%C3%BCldenes-grabland/index.html">Güldenes Grabland</a></span>
+                                                                        </button>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="insel-des-windes/index.html">Insel des Windes</a></span>
+                                                                        </button>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="jammernde-w%C3%A4lder/index.html">Jammernde Wälder</a></span>
+                                                                        </button>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="ruineninsel/index.html">Ruineninsel</a></span>
+                                                                        </button>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="skelettbucht/index.html">Skelettbucht</a></span>
+                                                                        </button>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="s%C3%BCdliche-pestlande/index.html">Südliche Pestlande</a></span>
+                                                                        </button>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="tal-der-schatten/index.html">Tal der Schatten</a></span>
+                                                                        </button>
+                                                                        
+                                                                            <ul>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Alt-Aegir</a></span>
+                                                                                    </button>
+                                                                                
+                                                                            </ul>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="zwielichtsteppe/index.html">Zwielichtsteppe</a></span>
+                                                                        </button>
+                                                                        
+                                                                            <ul>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Larudia</a></span>
+                                                                                    </button>
+                                                                                
+                                                                            </ul>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="%C3%B6dland-der-verdammnis/index.html">Ödland der Verdammnis</a></span>
+                                                                        </button>
+                                                                        
+                                                                    </li>
+                                                                
+                                                            </ul>
+                                                        
+                                                    </li>
+                                                
+                                                    <li>
+                                                        
+                                                        <button>
+                                                            <span><a
+                                                                    href="kluirm/index.html">Kluirm</a></span>
+                                                        </button>
+                                                        
+                                                            <ul class="collapsible-list">
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="milpaenkahrn/index.html">Milpaenkahrn</a></span>
+                                                                        </button>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="uxbeligard/index.html">Uxbeligard</a></span>
+                                                                        </button>
+                                                                        
+                                                                            <ul>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Bernsteintempel</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Garadzar</a></span>
+                                                                                    </button>
+                                                                                
+                                                                            </ul>
+                                                                        
+                                                                    </li>
+                                                                
+                                                            </ul>
+                                                        
+                                                    </li>
+                                                
+                                                    <li>
+                                                        
+                                                        <button>
+                                                            <span><a
+                                                                    href="thaugrien/index.html">Thaugrien</a></span>
+                                                        </button>
+                                                        
+                                                            <ul class="collapsible-list">
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="d%C3%BCnsberg-plateau/index.html">Dünsberg-Plateau</a></span>
+                                                                        </button>
+                                                                        
+                                                                            <ul>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Alt-Dünsberg</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Dünsberg</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Graekurith</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Igmusurs Hütte</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Jagdschloss Dünsberg</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Knorrwurzelschrein</a></span>
+                                                                                    </button>
+                                                                                
+                                                                            </ul>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="klamm-des-tellius/index.html">Klamm des Tellius</a></span>
+                                                                        </button>
+                                                                        
+                                                                            <ul>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Alte Zollburg</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Anwesen von Lysander</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Große Zwergenbrücke</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Meerestempel</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Tellius</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Tunnel des Aufstiegs</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Tunnel zum Meeresreich</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Versunkene Burg</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Wassertempel</a></span>
+                                                                                    </button>
+                                                                                
+                                                                            </ul>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="tarporsee/index.html">Tarporsee</a></span>
+                                                                        </button>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="thaugrien-hochpfalz/index.html">Thaugrien-Hochpfalz</a></span>
+                                                                        </button>
+                                                                        
+                                                                            <ul>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Alter Kerker der Stadtwache</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Goblinlager an der Hauptstraße</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Grenbrock</a></span>
+                                                                                    </button>
+                                                                                
+                                                                            </ul>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="thaugrine-weinberge/index.html">Thaugrine Weinberge</a></span>
+                                                                        </button>
+                                                                        
+                                                                            <ul>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Tarporbach</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Taverne an der Ost-Brücke</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Tempel der Liebe</a></span>
+                                                                                    </button>
+                                                                                
+                                                                            </ul>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="thaugrines-k%C3%BCstenland/index.html">Thaugrines Küstenland</a></span>
+                                                                        </button>
+                                                                        
+                                                                            <ul>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Grotte des Lebens</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Korshaven</a></span>
+                                                                                    </button>
+                                                                                
+                                                                            </ul>
+                                                                        
+                                                                    </li>
+                                                                
+                                                            </ul>
+                                                        
+                                                    </li>
+                                                
+                                                    <li>
+                                                        
+                                                        <button>
+                                                            <span><a
+                                                                    href="tinorland/index.html">Tinorland</a></span>
+                                                        </button>
+                                                        
+                                                            <ul class="collapsible-list">
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="alljordbucht/index.html">Alljordbucht</a></span>
+                                                                        </button>
+                                                                        
+                                                                            <ul>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Brodia</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Hindriks Sägemühle</a></span>
+                                                                                    </button>
+                                                                                
+                                                                            </ul>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="immergr%C3%BCnes-k%C3%BCstenland/index.html">Immergrünes Küstenland</a></span>
+                                                                        </button>
+                                                                        
+                                                                            <ul>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Tinorke</a></span>
+                                                                                    </button>
+                                                                                
+                                                                            </ul>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="nokoto-sumpfland/index.html">Nokoto-Sumpfland</a></span>
+                                                                        </button>
+                                                                        
+                                                                            <ul>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Ruinen des Baumwächters</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Sümpfe des Vergessens</a></span>
+                                                                                    </button>
+                                                                                
+                                                                            </ul>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="schlangenschweif-archipel/index.html">Schlangenschweif-Archipel</a></span>
+                                                                        </button>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="schwelende-alpen/index.html">Schwelende Alpen</a></span>
+                                                                        </button>
+                                                                        
+                                                                            <ul>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Altar der Funken</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Feuersanktuarium</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Glühender Bergpass</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Hufeisen-Taverne</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Nifl</a></span>
+                                                                                    </button>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Zugewachsene Grotte</a></span>
+                                                                                    </button>
+                                                                                
+                                                                            </ul>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="sturmschild-taiga/index.html">Sturmschild-Taiga</a></span>
+                                                                        </button>
+                                                                        
+                                                                            <ul>
+                                                                                
+                                                                                    
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="faergria/index.html">Daein</a></span>
+                                                                                    </button>
+                                                                                
+                                                                            </ul>
+                                                                        
+                                                                    </li>
+                                                                
+                                                                    <li>
+                                                                        
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="tinorische-amaranthfelder/index.html">Tinorische Amaranthfelder</a></span>
+                                                                        </button>
+                                                                        
+                                                                    </li>
+                                                                
+                                                            </ul>
+                                                        
+                                                    </li>
+                                                
+                                            </ul>
+                                        
+                                    </li>
+                                
+                                    <li>
+                                        
+                                        <button>
+                                            <span><a
+                                                    href="kouyoukuni/index.html">Kouyoukuni</a></span>
+                                        </button>
+                                        
+                                            <ul class="collapsible-list">
+                                                
+                                                    <li>
+                                                        
+                                                        <button>
+                                                            <span><a
+                                                                    href="akeyama/index.html">Akeyama</a></span>
+                                                        </button>
+                                                        
+                                                    </li>
+                                                
+                                                    <li>
+                                                        
+                                                        <button>
+                                                            <span><a
+                                                                    href="kawagashi/index.html">Kawagashi</a></span>
+                                                        </button>
+                                                        
+                                                    </li>
+                                                
+                                                    <li>
+                                                        
+                                                        <button>
+                                                            <span><a
+                                                                    href="tozawa/index.html">Tozawa</a></span>
+                                                        </button>
+                                                        
+                                                    </li>
+                                                
+                                                    <li>
+                                                        
+                                                        <button>
+                                                            <span><a
+                                                                    href="yukimori/index.html">Yukimori</a></span>
+                                                        </button>
+                                                        
+                                                    </li>
+                                                
+                                            </ul>
+                                        
+                                    </li>
+                                
+                                    <li>
+                                        
+                                        <button>
+                                            <span><a
+                                                    href="kradian/index.html">Kradian</a></span>
+                                        </button>
+                                        
+                                            <ul class="collapsible-list">
+                                                
+                                                    <li>
+                                                        
+                                                        <button>
+                                                            <span><a
+                                                                    href="mesmudor/index.html">Mesmudor</a></span>
+                                                        </button>
+                                                        
+                                                    </li>
+                                                
+                                                    <li>
+                                                        
+                                                        <button>
+                                                            <span><a
+                                                                    href="riesstedt/index.html">Riesstedt</a></span>
+                                                        </button>
+                                                        
+                                                    </li>
+                                                
+                                                    <li>
+                                                        
+                                                        <button>
+                                                            <span><a
+                                                                    href="zarashan/index.html">Zarashan</a></span>
+                                                        </button>
+                                                        
+                                                    </li>
+                                                
+                                            </ul>
+                                        
+                                    </li>
+                                
+                            </ul>
+                        
+                    </li>
+                </ul>
+            
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.collapsible-list > li > button').forEach(button => {
+        button.addEventListener('click', () => {
+            const listItem = button.parentElement;
+            listItem.classList.toggle('expanded');
+        });
+    });
+</script>
+
+</body>
+</html>

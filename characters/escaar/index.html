@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Escaar | Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../../static/css/base.css">
+    <link rel="stylesheet" href="../../static/css/character.css">
+</head>
+<body>
+
+<link rel="stylesheet" href="../../static/css/banner.css">
+<link rel="shortcut icon" href="../../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../../static/ui/banner-6.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../../static/imgs/logo.png" alt="" class="logo" style="left: -40px; position: relative">
+            <a href="../../index.html" style="left: -40px; position: relative">Tome of the Vastlands</a>
+            <sub style="left: -40px; position: relative">v3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('../index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('../../places/index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('../../compendium/index.html')">Kompendien</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        <div class="character-container">
+            <div class="character-data">
+                <div class="character-data-box">
+                    
+                    
+                    
+                    <img src="https://images.zetsuboushii.site/dnd/characters/escaar.png" alt="">
+
+                    <div class="character-data-name"><h1>Escaar </h1></div>
+                    <div class="character-data-title"><h3>Alkoholische Landstreicherin</h3></div>
+
+                    <div class="character-data-field-title"><h4>Informationen zur Person</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Rasse</td>
+                            <td>Elfen</td>
+                        </tr>
+                        <tr>
+                            <td>Geschlecht</td>
+                            <td>
+                                weiblich
+                            </td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Alter</td>
+                                <td>394 Jahre</td>
+                            </tr>
+                            <tr>
+                                <td>Geburtstag</td>
+                                <td>16. Tag, Weinmond im
+                                    Jahre 0
+                                    n.V.</td>
+                            </tr>
+                        
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Maße</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Körpergröße</td>
+                            <td>1,8 m</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Gewicht</td>
+                                <td>87 kg</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Profession</h4></div>
+                    <table>
+                        <tbody>
+                        
+                        <tr>
+                            <td>Basisklasse</td>
+                            <td>Mönch</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Subklasse</td>
+                                <td>
+                                    <ul>
+                                        
+                                            <li>Rauschbändiger</li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Weitere Informationen</h4></div>
+                    <table>
+                        <tbody>
+                        
+                            <tr>
+                                <td>Geburtsort</td>
+                                <td>Teryvnat</td>
+                            </tr>
+                            
+                        
+                        
+                            <tr>
+                                <td>Gesinnung</td>
+                                <td>CN</td>
+                            </tr>
+                        
+                        
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Persönlicher Status</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Verbleib</td>
+                            <td>am Leben</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Beziehungen</td>
+                                <td>
+                                    <ul>
+                                        
+                                            <li>Aelua <small>(Ziehmutter)</small></li>
+                                        
+                                            <li>Burdig <small>(&#39;Chef&#39;)</small></li>
+                                        
+                                            <li>Tannivh <small>(Freund, Trainspartner)</small></li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="character-text">
+                <div class="character-text-box">
+                    <p></p>
+
+                    <hr>
+
+                    
+                        <div class="character-text-heading"><h2>Persönlichkeit</h2></div>
+                        <p>Auf dem ersten Blick wirkt Escaar sehr eigensinnig, unberechenbar und mürrisch, jedoch würde sie niemals Anderen grundlos schaden wollen. Sollte man es irgendwann doch geschafft haben, sich mit ihr zu befreunden, setzt sie alles dran, ihre Freunde in jeder Lage zu unterstützen – aber vor allem sich in einem freundschaftlichen Wettkampf mit ihnen zu messen. Obwohl sie die letzten Jahre nur allein unterwegs war, weiß sie eigentlich am besten, dass das Leben in der richtigen Gemeinschaft am meisten Freude bringt. Wenn sie lange Nächte in Tavernen verbringt, tendiert sie sogar dazu, ziemlich offen, philosophisch und weinerlich zu werden, ansonsten ist es außerhalb der Taverne ziemlich schwer zu erkennen, ob sie betrunken ist oder nicht.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Hintergrund</h2></div>
+                        <p>In Escaars jungen Jahren traf sie einen Mönch auf Reisen, der zufälligerweise in Teryvnat rastete. Fasziniert von seinen Fähigkeiten und seiner Art, die ihm komplett von dem anmutigen Charakter der Elfen unterschied, ließ sie von ihm nicht ab, bis er der jungen Elfin alle Grundlagen des Mönchdaseins lehrte. Seitdem ist es Escaars höchstes Ziel, das Maximum aus ihren Fähigkeiten zu holen, jedoch stieß sie damit auf Unmut in den Dorfbewohnern auf. Sie wandte sich zunehmend der Kultur und Grundsätze der Elfen ab, um ihre „gewaltvollen Techniken“ zu konzentrieren. Es kam immer häufiger zu Auseinandersetzungen, bis sie aus Wut über das Unverständnis ihrer Mit-Elfen den Fahnenmast des Dorfes entzwei Brach und ein Teil entwendete. An diesem Tag sah man Escaar zum letzten Mal in Teryvnat. Seither streift sie durch das ganze Königreich, um es mit immer stärkeren Gegnern aufzunehmen und ihre Kampftechniken zu perfektionieren – auch im betrunkenen Zustand, denn durch ihre Einsamkeit entwickelte sie eine enge Beziehung zu Alkohol.</p>
+                        <hr>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

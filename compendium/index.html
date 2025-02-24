@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Kompendien | Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/compendia.css">
+
+</head>
+<body>
+
+<link rel="stylesheet" href="../static/css/banner.css">
+<link rel="shortcut icon" href="../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../static/ui/banner-2.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../static/imgs/logo.png" alt="" class="logo" style="left: -40px; position: relative">
+            <a href="../index.html" style="left: -40px; position: relative">Tome of the Vastlands</a>
+            <sub style="left: -40px; position: relative">v3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('../characters/index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('../places/index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('index.html')">Kompendien</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        <div class="compendium-container">
+            
+                <div class="compendium-element">
+                    
+                    <form action="theologarium/index.html">
+                        <button>Theologarium</button>
+                        Das Theologarium ist ein umfassendes Kompendium der Religionen und Glaubensrichtungen der Vastlands. Es dient als zentrale Wissensquelle für Gelehrte, Kleriker und alle, die sich mit den vielfältigen spirituellen Traditionen der Welt auseinandersetzen möchten.
+                    </form>
+                </div>
+            
+                <div class="compendium-element">
+                    
+                    <form action="gentarium/index.html">
+                        <button>Gentarium</button>
+                        Das Gentarium ist ein umfassendes Kompendium der verschiedenen Völker, Rassen und Kreaturen, die die Vastlands bevölkern. Es dient als zentrale Wissensquelle für Gelehrte, Reisende und alle, die sich mit der Vielfalt des Lebens in der Welt auseinandersetzen möchten.
+                    </form>
+                </div>
+            
+                <div class="compendium-element">
+                    
+                    <form action="bestiarium/index.html">
+                        <button>Bestiarium</button>
+                        Das Bestiarium ist ein umfassendes Kompendium der gefährlichen Kreaturen, Monster und Feinde, die in den Vastlands lauern. Es dient als zentrale Wissensquelle für Abenteurer, Jäger, Soldaten und alle, die sich vor den Gefahren der Wildnis und der finsteren Orte der Welt schützen müssen.
+                    </form>
+                </div>
+            
+                <div class="compendium-element">
+                    
+                    <form action="classarium/index.html">
+                        <button>Classarium</button>
+                        Das Classarium ist ein umfassendes Kompendium der verschiedenen Berufungen, Klassen und Fertigkeiten, die in den Vastlands ausgeübt werden können. Es dient als zentrale Wissensquelle für Abenteurer, Handwerker, Gelehrte und alle, die sich mit den verschiedenen Wegen und Möglichkeiten des Lebens in der Welt auseinandersetzen möchten.
+                    </form>
+                </div>
+            
+                <div class="compendium-element">
+                    
+                    <form action="linguarium/index.html">
+                        <button>Linguarium</button>
+                        Das Linguarium ist ein umfassendes Kompendium der Sprachen, Dialekte und Schriftarten, die in den Vastlands gesprochen und geschrieben werden. Es dient als zentrale Wissensquelle für Gelehrte, Übersetzer, Diplomaten und alle, die sich mit der Vielfalt der Kommunikation in der Welt auseinandersetzen möchten.
+                    </form>
+                </div>
+            
+                <div class="compendium-element">
+                    
+                    <form action="herbarium/index.html">
+                        <button>Herbarium</button>
+                        Das Herbarium ist ein umfassendes Kompendium der Pflanzenwelt der Vastlands, das sich auf Kräuter, Blumen, Bäume und andere Gewächse konzentriert. Es dient als zentrale Wissensquelle für Alchemisten, Heiler, Köche, Naturforscher und alle, die sich mit der vielfältigen Flora der Welt auseinandersetzen möchten.
+                    </form>
+                </div>
+            
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

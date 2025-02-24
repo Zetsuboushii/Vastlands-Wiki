@@ -1,0 +1,82 @@
+html, body {
+  margin: 0;
+}
+
+@charset "utf-8";
+@font-face {
+  font-family: 'Grenze Gotisch';
+  src: url('../fonts/GrenzeGotisch.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Serif';
+  src: url('../fonts/NotoSerif.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  src: url('../fonts/InterVariable.ttf') format('truetype');
+}
+
+html {
+  font-family: "Inter Variable";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Grenze Gotisch";
+  font-weight: normal;
+}
+
+a {
+  color: bisque;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+body {
+  background-image: url("../ui/background.png");;
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: 0 200px;
+}
+
+.page-containter {
+  top: -120px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 0;
+  max-width: 1500px;
+  position: relative;
+  width: 85%;
+}
+
+@media only screen and (max-width: 1300px) {
+  .page-containter {
+    max-width: none;
+    width: 95%;
+  }
+}
+
+.page {
+  position: relative;
+  top: -30px;
+  border-image: url("../ui/page-border.png") 100 stretch;
+  border-top: 25px solid;
+  background-image: url("../ui/page.png");
+  background-size: contain;
+  background-repeat: repeat;
+}
+
+.page::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+  width: 100%;
+  border-bottom: 25px solid;
+  border-image: inherit;
+  transform: scaleY(-1);
+}
