@@ -78,6 +78,8 @@
         margin: 0;
         padding: 0;
         list-style: none; }
+    .character-data .character-data-box a {
+      color: black; }
 
 .character-text .character-text-box {
   margin: 25px 25px 25px 0; }

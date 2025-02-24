@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>{{ place.name }} | {{ g.site_title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/character.css') }}">
+</head>
+<body>
+
+{% include "banner.html" %}
+
+<div class="page-containter">
+    {% include "header.html" %}
+
+    <div class="page">
+        <div class="character-container">
+            <div class="character-data">
+                <div class="character-data-box">
+                    {% set place_name = place.name | lower | replace(" ", "-") %}
+                    {% set url = g.img_host + "crests/" + place_name %}
+                    <img src="{{ url }}-crest.png" alt="">
+
+                    <div class="character-data-name"><h1>{{ place.name }}</h1></div>
+                    {% if place.subtitle %}
+                        <div class="character-data-title"><h3>{{ place.subtitle }}</h3></div>
+                    {% endif %}
+
+                    <div class="character-data-field-title"><h4>Allgemeine Informationen</h4></div>
+                    <table>
+                        <tbody>
+                        {% if place.langs %}
+                            <tr>
+                                <td>Landessprache</td>
+                                <td>
+                                    {% for lang in place.langs | sort %}
+                                        {{ lang }}{{ ", " if not loop.last else "" }}
+                                    {% endfor %}
+                                </td>
+                            </tr>
+                        {% endif %}
+                        {% if place.natlang %}
+                            <tr>
+                                <td>In Landessprache</td>
+                                <td>{{ place.natlang[0] }} <i>{{ place.natlang[1] }}</i></td>
+                            </tr>
+                        {% endif %}
+                        <tr>
+                            <td>Art des Ortes</td>
+                            <td>{{ place.placetype }}</td>
+                        </tr>
+                        {% if place.capital %}
+                            <tr>
+                                <td>Hauptstadt</td>
+                                <td>{{ place.capital }}</td>
+                            </tr>
+                        {% endif %}
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Standort</h4></div>
+                    <table>
+                        <tbody>
+                        {% if parent %}
+                            <tr>
+                                <td>Liegt in</td>
+                                <td>
+                                    {% set p_name = parent | lower | replace(" ", "-") %}
+                                    <a href="{{ url_for('place', place_name=p_name) }}">
+                                        {{ parent }}
+                                    </a>
+                                </td>
+                            </tr>
+                        {% endif %}
+                        {% if place.contains %}
+                            <tr>
+                                <td>Enthält</td>
+                                <td>
+                                    {% for c in place.contains %}
+                                        {% set c_name = c.name | lower | replace(" ", "-") %}
+                                        <a href="{{ url_for('place', place_name=c_name) }}">
+                                            {{ c.name }}{{ ", " if not loop.last else "" }}
+                                        </a>
+                                    {% endfor %}
+                                </td>
+                            </tr>
+                        {% endif %}
+                        </tbody>
+                    </table>
+
+                    {% if place.system or place.leader %}
+                        <div class="character-data-field-title"><h4>Politik</h4></div>
+                        <table>
+                            <tbody>
+                            {% if place.system %}
+                                <tr>
+                                    <td>Regierungsform</td>
+                                    <td>{{ place.system }}</td>
+                                </tr>
+                            {% endif %}
+                            {% if place.leader %}
+                                <tr>
+                                    <td>Regierende Person</td>
+                                    <td>{{ place.leader[0] }}, <small>({{ place.leader[1] }})</small></td>
+                                </tr>
+                            {% endif %}
+                            </tbody>
+                        </table>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="character-text">
+                <div class="character-text-box">
+                    {% if place.content %}
+                        <p>{{ place.content.excerpt }}</p>
+
+                        <hr>
+
+                        {% for section in place.content.sections %}
+                            <div class="character-text-heading"><h2>{{ section.title }}</h2></div>
+                            <p>{{ section.text }}</p>
+                            <hr>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

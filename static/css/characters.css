@@ -35,4 +35,67 @@
       .characters-container .characters-element button:hover {
         text-decoration: underline; }
 
+.filters {
+  text-align: center; }
+  .filters .filter-title {
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+    background-image: url("/static/ui/field-name-background.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 46px;
+    color: white;
+    background-position: center; }
+    .filters .filter-title h3 {
+      top: 7px;
+      margin: 0;
+      position: relative; }
+  .filters button {
+    color: white;
+    font-family: "Grenze Gotisch";
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer; }
+  .filters #letter-filter button {
+    background-image: url("/static/ui/button-square.png");
+    background-size: contain;
+    width: 56px;
+    height: 56px; }
+  .filters #nationality-filter button {
+    background-image: url("/static/ui/button-text.png");
+    background-size: contain;
+    width: 250px;
+    height: 67px; }
+
+.collapsible-list ul {
+  display: block;
+  margin-left: 20px; }
+.collapsible-list li {
+  list-style-type: none; }
+.collapsible-list .expanded > ul {
+  display: none; }
+.collapsible-list button {
+  font-family: "Grenze Gotisch";
+  font-size: 18px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center; }
+  .collapsible-list button span {
+    margin-left: 5px; }
+    .collapsible-list button span a {
+      color: black; }
+  .collapsible-list button::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("/static/ui/button-square.png");
+    background-size: cover;
+    margin-right: 5px; }
+
 /*# sourceMappingURL=characters.css.map */

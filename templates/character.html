@@ -62,6 +62,12 @@
                                 </td>
                             </tr>
                         {% endif %}
+                        {% if character.nationality %}
+                            <tr>
+                                <td>Staatsangehörigkeit</td>
+                                <td>{{ character.nationality }}</td>
+                            </tr>
+                        {% endif %}
                         </tbody>
                     </table>
 

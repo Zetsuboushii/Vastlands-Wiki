@@ -38,7 +38,8 @@ a {
 
 body {
   background-image: url("/static/ui/background.png");;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: repeat-y;
   background-position: 0 200px;
 }
 
@@ -46,7 +47,7 @@ body {
   top: -120px;
   display: flex;
   flex-direction: column;
-  margin: 0 auto 50px;
+  margin: 0 auto 0;
   max-width: 1500px;
   position: relative;
   width: 85%;

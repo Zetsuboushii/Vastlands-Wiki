@@ -1,6 +1,6 @@
 import random
 from datetime import date
-from flask import Flask, render_template, abort, g
+from flask import Flask, render_template, request, g
 import json
 
 app = Flask(__name__)
@@ -20,6 +20,7 @@ def before_request():
 
     g.categories = {
         "Charaktere": "characters",
+        "Orte": "places",
         "Kompendien": "compendia",
     }
 
@@ -42,6 +43,7 @@ compendium_list = load_from_json("compendia")
 calendar_list = load_from_json("calendar")
 enemy_list = load_from_json("bestiarium")
 actions_list = load_from_json("actions")
+places_list = load_from_json("places")
 
 
 @app.route('/')
@@ -65,7 +67,11 @@ def index():
 
 @app.route('/characters/')
 def characters():
-    return render_template('characters.html', characters=characters_list)
+    letters = sorted({character['name'][0].upper() for character in characters_list})
+    nationalities = sorted({character['nationality'] for character in characters_list if "nationality" in character})
+    print(nationalities)
+
+    return render_template('characters.html', characters=characters_list, letters=letters, nationalities=nationalities)
 
 
 @app.route('/characters/<character_name>')
@@ -99,10 +105,31 @@ def character(character_name):
             character_data = data
             break
 
-    if character_data is None:
-        abort(404)
-
     return render_template('character.html', character=character_data)
+
+
+@app.route('/places/')
+def places():
+    return render_template('places.html', places=places_list)
+
+
+@app.route('/places/<place_name>')
+def place(place_name):
+    def find_place_recursively(place_list, place_slug, parent_name=None):
+        for place in place_list:
+            if place['name'].lower().replace(" ", "-") == place_slug:
+                return place, parent_name
+
+            if "contains" in place and isinstance(place["contains"], list):
+                found, parent = find_place_recursively(place["contains"], place_slug, place["name"])
+                if found is not None:
+                    return found, parent
+
+        return None, None
+
+    place_data, parent = find_place_recursively(places_list, place_name)
+
+    return render_template('place.html', place=place_data, parent=parent)
 
 
 @app.route('/compendium/')

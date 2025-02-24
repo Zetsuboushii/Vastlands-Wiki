@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Orte | {{ g.site_title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/characters.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/places.css') }}">
+</head>
+<body>
+
+{% include "banner.html" %}
+
+<div class="page-containter">
+    {% include "header.html" %}
+
+    <div class="page">
+        <div class="characters-container">
+            <iframe src="https://map.zetsuboushii.site/" style="margin-top: 20px; width: 90%; height: 1000px"></iframe>
+            <h2 style="width: 100%; text-align: center">Elementarebenen</h2>
+            {% for elemental_plane in places %}
+                <ul class="collapsible-list">
+                    <li>
+                        {% set plane_name = elemental_plane.name | lower | replace(" ", "-") %}
+                        <button>
+                            <span><a
+                                    href="{{ url_for('place', place_name=plane_name) }}">{{ elemental_plane.name }}</a></span>
+                        </button>
+                        {% if elemental_plane.contains %}
+                            <ul class="collapsible-list">
+                                {% for country in elemental_plane.contains %}
+                                    <li>
+                                        {% set country_name = country.name | lower | replace(" ", "-") %}
+                                        <button>
+                                            <span><a
+                                                    href="{{ url_for('place', place_name=country_name) }}">{{ country.name }}</a></span>
+                                        </button>
+                                        {% if country.contains %}
+                                            <ul class="collapsible-list">
+                                                {% for territory in country.contains %}
+                                                    <li>
+                                                        {% set territory_name = territory.name | lower | replace(" ", "-") %}
+                                                        <button>
+                                                            <span><a
+                                                                    href="{{ url_for('place', place_name=territory_name) }}">{{ territory.name }}</a></span>
+                                                        </button>
+                                                        {% if territory.contains %}
+                                                            <ul class="collapsible-list">
+                                                                {% for region in territory.contains %}
+                                                                    <li>
+                                                                        {% set region_name = region.name | lower | replace(" ", "-") %}
+                                                                        <button>
+                                                                            <span><a
+                                                                                    href="{{ url_for('place', place_name=region_name) }}">{{ region.name }}</a></span>
+                                                                        </button>
+                                                                        {% if region.contains %}
+                                                                            <ul>
+                                                                                {% for place in region.contains %}
+                                                                                    {% set place_name = country.name | lower | replace(" ", "-") %}
+                                                                                    <button>
+                                                                                        <span><a
+                                                                                                href="{{ url_for('place', place_name=place_name) }}">{{ place.name }}</a></span>
+                                                                                    </button>
+                                                                                {% endfor %}
+                                                                            </ul>
+                                                                        {% endif %}
+                                                                    </li>
+                                                                {% endfor %}
+                                                            </ul>
+                                                        {% endif %}
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                        {% endif %}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </li>
+                </ul>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.collapsible-list > li > button').forEach(button => {
+        button.addEventListener('click', () => {
+            const listItem = button.parentElement;
+            listItem.classList.toggle('expanded');
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -20,5 +20,5 @@ def repair_and_remove_newlines(filepath):
         print(f"Exception: {e}")
 
 if __name__ == "__main__":
-    filepath = "calendar.json"
+    filepath = "places.json"
     repair_and_remove_newlines(filepath)
