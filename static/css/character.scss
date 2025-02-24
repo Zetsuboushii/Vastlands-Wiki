@@ -25,7 +25,7 @@
     .character-data-name {
       position: relative;
       z-index: 2;
-      background-image: url('/static/ui/name-backdrop-2.png');
+      background-image: url('../ui/name-backdrop-2.png');
       background-size: contain;
       background-repeat: no-repeat;
       height: 136px;
@@ -43,7 +43,7 @@
       top: -16px;
       position: relative;
       z-index: 1;
-      background-image: url('/static/ui/title-banner.png');
+      background-image: url('../ui/title-banner.png');
       background-size: contain;
       background-repeat: no-repeat;
       height: 50px;
@@ -60,7 +60,7 @@
     .character-data-field-title {
       position: relative;
       z-index: 1;
-      background-image: url('/static/ui/field-name-background.png');
+      background-image: url('../ui/field-name-background.png');
       background-size: contain;
       background-repeat: no-repeat;
       height: 36px;
@@ -91,13 +91,13 @@
 
       th:first-child, td:first-child {
         width: 40%;
-        background-image: url("/static/ui/table-background-purple.png");
+        background-image: url("../ui/table-background-purple.png");
         color: white;
       }
 
       th:nth-child(2), td:nth-child(2) {
         width: 60%;
-        background-image: url("/static/ui/table-background-white.png");
+        background-image: url("../ui/table-background-white.png");
       }
 
       ul {
@@ -125,7 +125,7 @@
       top: 10px;
       position: relative;
       z-index: 1;
-      background-image: url('/static/ui/text-heading-backdrop.png');
+      background-image: url('../ui/text-heading-backdrop.png');
       background-size: contain;
       background-repeat: no-repeat;
       height: 60px;

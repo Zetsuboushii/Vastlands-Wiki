@@ -13,7 +13,7 @@ header {
   header .menu-button {
     border: none;
     background-color: transparent;
-    background-image: url("/static/ui/button-square-turn.png");
+    background-image: url("../ui/button-square-turn.png");
     left: -40px;
     height: 79px;
     width: 79px;
@@ -25,7 +25,7 @@ header {
     height: 60px;
     display: flex;
     align-items: center;
-    background-image: url("/static/ui/title-backdrop.png");
+    background-image: url("../ui/title-backdrop.png");
     background-size: cover;
     background-repeat: no-repeat; }
     header .site-title a {
@@ -56,7 +56,7 @@ header {
     font-size: 18px;
     color: white;
     background-color: transparent;
-    background-image: url("/static/ui/button-text.png");
+    background-image: url("../ui/button-text.png");
     background-repeat: no-repeat;
     background-size: contain;
     transition: 0.3s;

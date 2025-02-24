@@ -20,7 +20,7 @@
     .character-data .character-data-box .character-data-name {
       position: relative;
       z-index: 2;
-      background-image: url("/static/ui/name-backdrop-2.png");
+      background-image: url("../ui/name-backdrop-2.png");
       background-size: contain;
       background-repeat: no-repeat;
       height: 136px;
@@ -34,7 +34,7 @@
       top: -16px;
       position: relative;
       z-index: 1;
-      background-image: url("/static/ui/title-banner.png");
+      background-image: url("../ui/title-banner.png");
       background-size: contain;
       background-repeat: no-repeat;
       height: 50px;
@@ -47,7 +47,7 @@
     .character-data .character-data-box .character-data-field-title {
       position: relative;
       z-index: 1;
-      background-image: url("/static/ui/field-name-background.png");
+      background-image: url("../ui/field-name-background.png");
       background-size: contain;
       background-repeat: no-repeat;
       height: 36px;
@@ -69,11 +69,11 @@
         border-bottom: 1px solid #2e2622; }
       .character-data .character-data-box table th:first-child, .character-data .character-data-box table td:first-child {
         width: 40%;
-        background-image: url("/static/ui/table-background-purple.png");
+        background-image: url("../ui/table-background-purple.png");
         color: white; }
       .character-data .character-data-box table th:nth-child(2), .character-data .character-data-box table td:nth-child(2) {
         width: 60%;
-        background-image: url("/static/ui/table-background-white.png"); }
+        background-image: url("../ui/table-background-white.png"); }
       .character-data .character-data-box table ul {
         margin: 0;
         padding: 0;
@@ -89,7 +89,7 @@
     top: 10px;
     position: relative;
     z-index: 1;
-    background-image: url("/static/ui/text-heading-backdrop.png");
+    background-image: url("../ui/text-heading-backdrop.png");
     background-size: contain;
     background-repeat: no-repeat;
     height: 60px;

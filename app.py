@@ -3,7 +3,10 @@ from datetime import date
 from flask import Flask, render_template, request, g
 import json
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="static")
+
+app.config['FREEZER_RELATIVE_URLS'] = True
+app.config['FREEZER_DEFAULT_MIMETYPE'] = 'text/html'
 
 
 @app.before_request
@@ -29,7 +32,7 @@ def before_request():
     g.img_host = image_subdomain + apex_domain + "dnd/"
     g.img_host_resized = image_subdomain + apex_domain + "resized/dnd/"
 
-    g.random_banner = random.randint(1, 9)
+    g.random_banner = f'ui/banner-{random.randint(1, 9)}.png'
 
 
 def load_from_json(filename):
@@ -74,7 +77,7 @@ def characters():
     return render_template('characters.html', characters=characters_list, letters=letters, nationalities=nationalities)
 
 
-@app.route('/characters/<character_name>')
+@app.route('/characters/<character_name>/')
 def character(character_name):
     character_data = None
 
@@ -113,7 +116,7 @@ def places():
     return render_template('places.html', places=places_list)
 
 
-@app.route('/places/<place_name>')
+@app.route('/places/<place_name>/')
 def place(place_name):
     def find_place_recursively(place_list, place_slug, parent_name=None):
         for place in place_list:
@@ -137,7 +140,7 @@ def compendia():
     return render_template('compendia.html', compendium_list=compendium_list)
 
 
-@app.route('/compendium/<compendium_name>')
+@app.route('/compendium/<compendium_name>/')
 def compendium(compendium_name):
     compendium_data = None
 
@@ -155,7 +158,7 @@ def compendium(compendium_name):
     return render_template('compendium.html', compendium_name=compendium_name, compendium=compendium_data)
 
 
-@app.route('/compendium/<compendium_name>/<entry_name>')
+@app.route('/compendium/<compendium_name>/<entry_name>/')
 def compendium_entry(compendium_name, entry_name):
     entry = None
 
@@ -182,9 +185,13 @@ def compendium_entry(compendium_name, entry_name):
                     if action["name"] == enemy_action:
                         actions.append(action)
             return render_template('bestiarium.html', enemy=entry, actions=actions)
+        case "classarium":
+            return render_template('classarium.html')
+        case "herbarium":
+            return render_template('herbarium.html')
 
 
-@app.route('/holidays/<holiday_name>')
+@app.route('/holidays/<holiday_name>/')
 def holidays(holiday_name):
     entry = None
 

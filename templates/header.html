@@ -4,14 +4,14 @@
     <header>
         <div class="site-title">
             <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
-            <img src="{{ g.static }}imgs/logo.png" alt="" class="logo" style="left: -40px; position: relative">
+            <img src="{{ url_for('static', filename='imgs/logo.png')}}" alt="" class="logo" style="left: -40px; position: relative">
             <a href="{{ url_for('index') }}" style="left: -40px; position: relative">{{ g.site_title }}</a>
             <sub style="left: -40px; position: relative">{{ g.version_number }}</sub>
         </div>
     </header>
     <div class="nav-dropdown-container" id="navdropdown">
         {% for category_name, route_name in g.categories.items() %}
-            <button class="nav-button" onclick="loadPage({{ url_for(route_name) }})">{{ category_name }}</button>
+            <button class="nav-button" onclick="loadPage('{{ url_for(route_name) }}')">{{ category_name }}</button>
         {% endfor %}
     </div>
 </div>

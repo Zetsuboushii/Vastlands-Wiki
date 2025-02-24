@@ -15,7 +15,7 @@
   padding: 5px 10px;
   margin: 0 10px;
   cursor: pointer;
-  background-image: url("/static/ui/button-square.png");
+  background-image: url("../ui/button-square.png");
   background-size: contain;
   border: none;
   background-color: transparent;
@@ -43,12 +43,12 @@
 
 #calendar-table th, thead {
   color: white;
-  background-image: url("/static/ui/table-background-purple.png");
+  background-image: url("../ui/table-background-purple.png");
   background-size: cover; }
 
 /* Markierungen */
 .today {
-  background-image: url("/static/ui/table-background-purple.png");
+  background-image: url("../ui/table-background-purple.png");
   background-size: cover;
   color: white; }
 

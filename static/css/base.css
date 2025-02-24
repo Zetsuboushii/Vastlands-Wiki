@@ -3,13 +3,13 @@ html, body {
 
 @font-face {
   font-family: 'Grenze Gotisch';
-  src: url("/static/fonts/GrenzeGotisch.ttf") format("truetype"); }
+  src: url("../fonts/GrenzeGotisch.ttf") format("truetype"); }
 @font-face {
   font-family: 'Noto Serif';
-  src: url("/static/fonts/NotoSerif.ttf") format("truetype"); }
+  src: url("../fonts/NotoSerif.ttf") format("truetype"); }
 @font-face {
   font-family: 'Inter Variable';
-  src: url("/static/fonts/InterVariable.ttf") format("truetype"); }
+  src: url("../fonts/InterVariable.ttf") format("truetype"); }
 html {
   font-family: "Inter Variable"; }
 
@@ -24,9 +24,9 @@ a {
     text-decoration: underline; }
 
 body {
-  background-image: url("/static/ui/background.png");
+  background-image: url("../ui/background.png");
   background-size: contain;
-  background-repeat: repeat-y;
+  background-repeat: repeat;
   background-position: 0 200px; }
 
 .page-containter {
@@ -45,9 +45,9 @@ body {
 .page {
   position: relative;
   top: -30px;
-  border-image: url("/static/ui/page-border.png") 100 stretch;
+  border-image: url("../ui/page-border.png") 100 stretch;
   border-top: 25px solid;
-  background-image: url("/static/ui/page.png");
+  background-image: url("../ui/page.png");
   background-size: contain;
   background-repeat: repeat; }
 

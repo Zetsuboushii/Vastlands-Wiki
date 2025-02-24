@@ -23,7 +23,7 @@
       width: 300px;
       height: auto;
       text-align: center;
-      background-image: url('/static/ui/image-background.png');
+      background-image: url('../ui/image-background.png');
       background-repeat: no-repeat;
       background-size: 100% 100%;
 
@@ -38,7 +38,7 @@
       button {
         position: relative;
         z-index: 1;
-        background-image: url('/static/ui/name-backdrop-3.png');
+        background-image: url('../ui/name-backdrop-3.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-color: transparent;
@@ -57,7 +57,7 @@
     .theologarium-name {
       position: relative;
       z-index: 2;
-      background-image: url('/static/ui/name-backdrop-2.png');
+      background-image: url('../ui/name-backdrop-2.png');
       background-size: contain;
       background-repeat: no-repeat;
       width: 728px;
@@ -84,7 +84,7 @@
         top: 10px;
         position: relative;
         z-index: 1;
-        background-image: url('/static/ui/text-heading-backdrop.png');
+        background-image: url('../ui/text-heading-backdrop.png');
         background-size: contain;
         background-repeat: no-repeat;
         height: 60px;

@@ -10,7 +10,7 @@
     .compendium-container .compendium-element button {
       position: relative;
       z-index: 1;
-      background-image: url("/static/ui/name-backdrop-3.png");
+      background-image: url("../ui/name-backdrop-3.png");
       background-size: cover;
       background-repeat: no-repeat;
       background-color: transparent;
