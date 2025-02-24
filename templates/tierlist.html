@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>{{ g.site_title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/characters.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tierlist.css') }}">
+</head>
+<body>
+
+{% include "banner.html" %}
+
+<div class="page-containter">
+    {% include "header.html" %}
+
+    <div class="page">
+        <br>
+
+        <div id="tiers">
+            <div class="tier" id="tier-SS"><strong>SS</strong></div>
+            <div class="tier" id="tier-S"><strong>S</strong></div>
+            <div class="tier" id="tier-A"><strong>A</strong></div>
+            <div class="tier" id="tier-B"><strong>B</strong></div>
+            <div class="tier" id="tier-C"><strong>C</strong></div>
+            <div class="tier" id="tier-D"><strong>D</strong></div>
+        </div>
+
+        <div id="characterPool">
+            {% for char in characters %}
+                {% set char_name = char.name | lower | replace(" ", "-") %}
+                {% set url = g.img_host_resized + "characters/" + char_name %}
+
+                <div class="draggable" draggable="true" data-name="{{ char_name }}">
+                    <img src="{{ url }}{% if "artwork" in char.alt_images %} artwork{% endif %}.png" alt="">
+                </div>
+            {% endfor %}
+        </div>
+
+        <form id="tierlistForm" onsubmit="return false;">
+            <div class="tierlist-form">
+                <h2>Spielername</h2>
+                <label><input type="text" id="username" required></label>
+            </div>
+            <div class="tierlist-form">
+                <h2>Sessionnummer</h2>
+                <label><input type="number" id="sessionnumber" required></label>
+            </div>
+        </form>
+        <form id="tierlistForm" onsubmit="return false;">
+            <button type="button" onclick="downloadTierlist()">Download Tierlist</button>
+        </form>
+
+        <div>
+            <label>Tierlist hochladen:
+                <input type="file" id="uploadJson" accept="application/json">
+            </label>
+        </div>
+
+        <script>
+            const pool = document.getElementById('characterPool');
+            const tiers = document.querySelectorAll('.tier');
+            let dragged = null;
+
+            document.querySelectorAll('.draggable').forEach(item => {
+                item.addEventListener('dragstart', e => {
+                    dragged = e.currentTarget;
+                    e.dataTransfer.setData('text/plain', e.currentTarget.getAttribute('data-name'));
+                });
+            });
+
+            tiers.forEach(tier => {
+                tier.addEventListener('dragover', e => {
+                    e.preventDefault();
+                });
+                tier.addEventListener('drop', e => {
+                    e.preventDefault();
+                    if (dragged) {
+                        e.currentTarget.appendChild(dragged);
+                    }
+                });
+            });
+
+            pool.addEventListener('dragover', e => e.preventDefault());
+            pool.addEventListener('drop', e => {
+                e.preventDefault();
+                if (dragged) {
+                    pool.appendChild(dragged);
+                }
+            });
+
+            function downloadTierlist() {
+                const username = document.getElementById('username').value.trim();
+                const sessionnumber = document.getElementById('sessionnumber').value.trim();
+                if (!username || !sessionnumber) {
+                    alert("Bitte gib Username und Session Number ein.");
+                    return;
+                }
+
+                const tierNames = ['SS', 'S', 'A', 'B', 'C', 'D'];
+                const tierlist = {};
+                tierNames.forEach(tierName => {
+                    const tierDiv = document.getElementById('tier-' + tierName);
+                    const characters = [];
+                    tierDiv.querySelectorAll('.draggable').forEach(el => {
+                        characters.push(el.getAttribute('data-name'));
+                    });
+                    tierlist[tierName] = characters;
+                });
+
+                const jsonStr = JSON.stringify(tierlist, null, 2);
+                const blob = new Blob([jsonStr], {type: 'application/json'});
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'tierlist_' + username + '_' + sessionnumber + '.json';
+                a.click();
+                URL.revokeObjectURL(url);
+            }
+
+            document.getElementById('uploadJson').addEventListener('change', function (event) {
+                const file = event.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function (e) {
+                        const json = JSON.parse(e.target.result);
+                        ['SS', 'S', 'A', 'B', 'C', 'D'].forEach(tierName => {
+                            const tierDiv = document.getElementById('tier-' + tierName);
+                            tierDiv.innerHTML = '<strong>' + tierName + '</strong>';
+                        });
+                        const allDraggables = document.querySelectorAll('.draggable');
+                        allDraggables.forEach(el => pool.appendChild(el));
+
+                        Object.keys(json).forEach(tierName => {
+                            json[tierName].forEach(charName => {
+                                const draggable = document.querySelector('.draggable[data-name="' + charName + '"]');
+                                if (draggable) {
+                                    const tierDiv = document.getElementById('tier-' + tierName);
+                                    tierDiv.appendChild(draggable);
+                                }
+                            });
+                        });
+                    };
+                    reader.readAsText(file);
+                }
+            });
+        </script>
+    </div>
+</div>
+
+</body>
+</html>

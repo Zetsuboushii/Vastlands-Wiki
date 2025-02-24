@@ -24,7 +24,8 @@ def before_request():
     g.categories = {
         "Charaktere": "characters",
         "Orte": "places",
-        "Kompendien": "compendia",
+        "Tierlist": "tierlist",
+        "Kompendien": "compendia"
     }
 
     apex_domain = "zetsuboushii.site/"
@@ -204,3 +205,8 @@ def holidays(holiday_name):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
+@app.route('/tierlist/')
+def tierlist():
+    return render_template('tierlist.html', characters=characters_list)
