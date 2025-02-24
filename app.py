@@ -40,6 +40,7 @@ characters_list = load_from_json("characters")
 news_list = load_from_json("news")
 compendium_list = load_from_json("compendia")
 calendar_list = load_from_json("calendar")
+enemy_list = load_from_json("bestiarium")
 
 
 @app.route('/')
@@ -146,6 +147,8 @@ def compendium_entry(compendium_name, entry_name):
             return render_template('gentarium.html', entry=entry)
         case "linguarium":
             return render_template('linguarium.html', entry=entry)
+        case "bestiarium":
+            return render_template('bestiarium.html', enemy=entry)
 
 
 @app.route('/holidays/<holiday_name>')

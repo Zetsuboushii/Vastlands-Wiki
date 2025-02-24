@@ -14,7 +14,22 @@
     {% include "header.html" %}
 
     <div class="page">
-
+        <div class="theologarium-container">
+            <div class="theologarium-row">
+                <div class="theologarium-name">
+                    <h1>{{ entry.name }}</h1>
+                </div>
+            </div>
+            <div class="theologarium-row">
+                <div class="theologarium-text-box">
+                    {% for section in entry.content.sections %}
+                        <div class="theologarium-text-heading"><h2>{{ section.title }}</h2></div>
+                        <p>{{ section.text }}</p>
+                        <hr>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 </body>

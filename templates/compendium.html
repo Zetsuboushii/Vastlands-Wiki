@@ -18,16 +18,18 @@
         <div class="themed-container">
             {% for element in compendium %}
                 <div class="themed-element">
-                    {% if compendium_name == "theologarium" or compendium_name == "gentarium" or compendium_name == "linguarium" %}
+                    {% if compendium_name in ["theologarium", "gentarium", "linguarium", "bestiarium"] %}
                         {% set element_name = element.name | lower | replace(" ", "-") %}
                         {% if compendium_name == "theologarium" %}
                             {% set url = g.img_host + "crests/" + element_name + "-crest.png" %}
                         {% elif compendium_name == "gentarium" %}
                             {% set example = element.example | lower | replace(" ", "-") %}
                             {% set url = g.img_host_resized + "characters/" + example + ".png" %}
-                        {% else %}
+                        {% elif compendium_name == "linguarium" %}
                             {% set center = element.center | lower | replace(" ", "-") %}
                             {% set url = g.img_host + "crests/" + center + "-crest.png" %}
+                        {% elif compendium_name == "bestiarium" %}
+                            {% set url = g.img_host_resized + "enemies/" + element_name + ".png" %}
                         {% endif %}
                         <a href="{{ url_for('compendium_entry', compendium_name=compendium_name, entry_name=element_name) }}">
                             <img src="{{ url }}" alt="">
