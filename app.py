@@ -32,7 +32,7 @@ def before_request():
 
 
 def load_from_json(filename):
-    with open(f'static/json/{filename}.json') as file:
+    with open(f'static/json/{filename}.json', encoding="utf8") as file:
         return json.load(file)
 
 
