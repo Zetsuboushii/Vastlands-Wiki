@@ -22,189 +22,99 @@
                     <img src="{{ url }}.png" alt="">
 
                     <div class="character-data-name"><h1>{{ enemy.name }}</h1></div>
-                    <div class="character-data-title"><h3>{{ enemy.title }}</h3></div>
+                    {% if enemy.bosstitle %}
+                        <div class="character-data-title"><h3>{{ enemy.bosstitle }}</h3></div>
+                    {% endif %}
 
-                    <div class="character-data-field-title"><h4>Informationen zur Person</h4></div>
+                    <div class="character-data-field-title"><h4>Allgemeine Werte</h4></div>
                     <table>
                         <tbody>
                         <tr>
-                            <td>Rasse</td>
-                            <td>{{ character.race }}</td>
+                            <td>Typ</td>
+                            <td>{{ enemy.type }}</td>
                         </tr>
                         <tr>
-                            <td>Geschlecht</td>
+                            <td>HP</td>
+                            <td>{{ enemy.hp }}</td>
+                        </tr>
+                        <tr>
+                            <td>AC</td>
+                            <td>{{ enemy.ac }}</td>
+                        </tr>
+                        <tr>
+                            <td>Bewegung</td>
                             <td>
-                                {% if character.sex == "m" %}männlich{% elif character.sex == "w" %}weiblich{% endif %}
+                                <ul>
+                                    {% for move_type, move_range in enemy.movement | sort %}
+                                        <li>{{ move_type }} ({{ move_range }} ft.)</li>
+                                    {% endfor %}
+                                </ul>
                             </td>
                         </tr>
-                        {% if character.birthday %}
-                            <tr>
-                                <td>Alter</td>
-                                <td>{{ character.age }} Jahre</td>
-                            </tr>
-                            <tr>
-                                <td>Geburtstag</td>
-                                <td>{{ character.birth_day }}. Tag, {{ character.birth_month }} im
-                                    Jahre {{ character.birth_year | replace("-", "") }}
-                                    {% if "-" in character.birth_year %}v.V.{% else %}n.V.{% endif %}</td>
-                            </tr>
-                        {% endif %}
-                        {% if character.aliases %}
-                            <tr>
-                                <td>Aliase</td>
-                                <td>
-                                    <ul>
-                                        {% for alias_name, alias_desc in character.aliases | sort %}
-                                            <li>{{ alias_name }} <small>({{ alias_desc }})</small></li>
-                                        {% endfor %}
-                                    </ul>
-                                </td>
-                            </tr>
-                        {% endif %}
                         </tbody>
                     </table>
 
-                    <div class="character-data-field-title"><h4>Maße</h4></div>
+                    <div class="character-data-field-title"><h4>Fertigkeitsmodifikatoren</h4></div>
                     <table>
                         <tbody>
                         <tr>
-                            <td>Körpergröße</td>
-                            <td>{{ character.height | replace(".", ",") }} m</td>
+                            <td>Stärke</td>
+                            <td>{{ enemy.str }}</td>
                         </tr>
-                        {% if character.weight != "0" %}
-                            <tr>
-                                <td>Gewicht</td>
-                                <td>{{ character.weight }} kg</td>
-                            </tr>
-                        {% endif %}
+                        <tr>
+                            <td>Geschicklichkeit</td>
+                            <td>{{ enemy.dex }}</td>
+                        </tr>
+                        <tr>
+                            <td>Konstitution</td>
+                            <td>{{ enemy.con }}</td>
+                        </tr>
+                        <tr>
+                            <td>Intelligenz</td>
+                            <td>{{ enemy.int }}</td>
+                        </tr>
+                        <tr>
+                            <td>Weisheit</td>
+                            <td>{{ enemy.wis }}</td>
+                        </tr>
+                        <tr>
+                            <td>Charisma</td>
+                            <td>{{ enemy.cha }}</td>
+                        </tr>
                         </tbody>
                     </table>
 
-                    <div class="character-data-field-title"><h4>Profession</h4></div>
+                    <div class="character-data-field-title"><h4>Status</h4></div>
                     <table>
                         <tbody>
-                        {% if character.function %}
+                        {% if enemy.weaknesses %}
                             <tr>
-                                <td>Funktion</td>
+                                <td>Schwächen</td>
                                 <td>
-                                    <ul>
-                                        {% for function in character.functions | sort %}
-                                            <li>{{ function }}</li>
-                                        {% endfor %}
-                                    </ul>
-                                </td>
-                            </tr>
-                        {% endif %}
-                        <tr>
-                            <td>Basisklasse</td>
-                            <td>{{ character.class }}</td>
-                        </tr>
-                        {% if character.subclasses %}
-                            <tr>
-                                <td>Subklasse{% if character.subclasses | length > 1 %}n{% endif %}</td>
-                                <td>
-                                    <ul>
-                                        {% for subclass in character.subclasses | sort %}
-                                            <li>{{ subclass }}</li>
-                                        {% endfor %}
-                                    </ul>
-                                </td>
-                            </tr>
-                        {% endif %}
-                        {% if character.masterclass %}
-                            <tr>
-                                <td>Meisterklasse</td>
-                                <td>{{ character.masterclass }}</td>
-                            </tr>
-                            </tbody>
-                        {% endif %}
-                    </table>
-
-                    <div class="character-data-field-title"><h4>Weitere Informationen</h4></div>
-                    <table>
-                        <tbody>
-                        {% if character.homes %}
-                            <tr>
-                                <td>Geburtsort</td>
-                                <td>{{ character.homes[0] }}</td>
-                            </tr>
-                            {% if character.home | length > 1 %}
-                                <tr>
-                                    <td>Wohnorte</td>
-                                    <td>
-                                        <ul>
-                                            {% for home in character.homes[1:] %}
-                                                <li>{{ home }}</li>
-                                            {% endfor %}
-                                        </ul>
-                                    </td>
-                                </tr>
-                            {% endif %}
-                        {% endif %}
-                        {% if character.alignment %}
-                            <tr>
-                                <td>Gesinnung</td>
-                                <td>{{ character.alignment }}</td>
-                            </tr>
-                        {% endif %}
-                        {% if character.affiliations %}
-                            <tr>
-                                <td>Zugehörigkeit{% if character.affiliations | length > 1 %}en{% endif %}</td>
-                                <td>
-                                    <ul>
-                                        {% for affiliation in character.affiliations | sort %}
-                                            <li>{{ affiliation }}</li>
-                                        {% endfor %}
-                                    </ul>
-                                </td>
-                            </tr>
-                        {% endif %}
-                        {% if character.likes %}
-                            <tr>
-                                <td>Mag</td>
-                                <td>
-                                    {% for like in character.likes | sort %}
-                                        {{ like }}{{ ", " if not loop.last else "" }}
+                                    {% for weakness in enemy.weaknesses | sort %}
+                                        {{ weakness }}{{ ", " if not loop.last else "" }}
                                     {% endfor %}
                                 </td>
                             </tr>
                         {% endif %}
-                        {% if character.dislikes %}
+                        {% if enemy.resistances %}
                             <tr>
-                                <td>Mag nicht</td>
+                                <td>Resistenzen</td>
                                 <td>
-                                    {% for dislike in character.dislikes | sort %}
-                                        {{ dislike }}{{ ", " if not loop.last else "" }}
+                                    {% for resistance in enemy.resistances | sort %}
+                                        {{ resistance }}{{ ", " if not loop.last else "" }}
                                     {% endfor %}
                                 </td>
                             </tr>
                         {% endif %}
-                        </tbody>
-                    </table>
-
-                    <div class="character-data-field-title"><h4>Persönlicher Status</h4></div>
-                    <table>
-                        <tbody>
-                        <tr>
-                            <td>Verbleib</td>
-                            <td>{{ character.status }}</td>
-                        </tr>
-                        {% if character.relationships %}
+                        {% if enemy.immunities %}
                             <tr>
-                                <td>Beziehungen</td>
+                                <td>Immunitäten</td>
                                 <td>
-                                    <ul>
-                                        {% for relation_name, relation_desc in character.relationships | sort %}
-                                            <li>{{ relation_name }} <small>({{ relation_desc }})</small></li>
-                                        {% endfor %}
-                                    </ul>
+                                    {% for immunity in enemy.immunities | sort %}
+                                        {{ immunity }}{{ ", " if not loop.last else "" }}
+                                    {% endfor %}
                                 </td>
-                            </tr>
-                        {% endif %}
-                        {% if character.lover %}
-                            <tr>
-                                <td>Liebe</td>
-                                <td>{{ character.lover }}</td>
                             </tr>
                         {% endif %}
                         </tbody>
@@ -214,13 +124,26 @@
 
             <div class="character-text">
                 <div class="character-text-box">
-                    <p>{{ character.content.excerpt }}</p>
+                    {% for action in actions %}
+                        <div class="character-text-heading"><h2>{{ action.name }}</h2></div>
 
-                    <hr>
+                        <ul>
+                            <li>Reichtweite: {{ action.range }} ft. {{ action.aoe }}</li>
+                            {% if action.hitbonus %}
+                                <li>Trefferbonus: +{{ action.hitbonus }}</li>{% endif %}
+                            {% if action.savereq %}
+                                <li>Gegnerischer Rettungswurf: ≥{{ action.savereq[1] }} {{ action.savereq[0] }}</li>
+                            {% endif %}
+                            {% if action.damage %}
+                                <li>Schadenswurf: {% for d in action.damage %}{{ d[0] }} {{ d[1] }}
+                                    {{ ", " if not loop.last else "" }}{% endfor %}</li>
+                            {% endif %}
+                            {% if action.effects %}
+                                <li>Effekte: {% for e in action.effects %}{{ e[0] }} ({{ e[1] }})
+                                    {{ ", " if not loop.last else "" }}{% endfor %}</li>
+                            {% endif %}
+                        </ul>
 
-                    {% for section in character.content.sections %}
-                        <div class="character-text-heading"><h2>{{ section.title }}</h2></div>
-                        <p>{{ section.text }}</p>
                         <hr>
                     {% endfor %}
                 </div>

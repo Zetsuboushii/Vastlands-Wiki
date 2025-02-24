@@ -1,0 +1,2301 @@
+ [
+  {
+    "name": "Abyssaler Nebelhauch",
+    "legendary": false,
+    "cooldown": [
+      3,
+      "r"
+    ],
+    "range": "70",
+    "aoe": "radius",
+    "hitbonus": 0,
+    "savereq": [
+      "con",
+      19
+    ],
+    "damage": [
+      [
+        "12d6",
+        "acid"
+      ]
+    ],
+    "effects": [
+      [
+        "exhausted",
+        "lv4"
+      ]
+    ]
+  },
+  {
+    "name": "Berserkersturm",
+    "legendary": false,
+    "cooldown": [
+      1,
+      "d"
+    ],
+    "range": "40",
+    "aoe": "line",
+    "hitbonus": 9,
+    "savereq": [],
+    "damage": [
+      [
+        "3d8+6",
+        "slashing"
+      ]
+    ],
+    "effects": [
+      [
+        "prone",
+        "1r"
+      ]
+    ]
+  },
+  {
+    "name": "Blendgranate",
+    "legendary": false,
+    "cooldown": [
+      1,
+      "d"
+    ],
+    "range": "30",
+    "aoe": "radius",
+    "hitbonus": 0,
+    "savereq": [
+      "con",
+      16
+    ],
+    "damage": [
+    ],
+    "effects": [
+      [
+        "blinded",
+        "1r"
+      ]
+    ]
+  },
+  {
+    "name": "Blitz aus der Tiefe",
+    "legendary": false,
+    "cooldown": [
+      3,
+      "r"
+    ],
+    "range": "100",
+    "aoe": "single",
+    "hitbonus": 0,
+    "savereq": [
+      "dex",
+      18
+    ],
+    "damage": [
+      [
+        "2d10",
+        "lightning"
+      ]
+    ],
+    "effects": [
+      [
+        "paralysed",
+        "2r"
+      ]
+    ]
+  },
+  {
+    "name": "Blitzschlag",
+    "legendary": false,
+    "cooldown": [
+      6,
+      "r"
+    ],
+    "range": "60",
+    "aoe": "cone",
+    "hitbonus": 8,
+    "savereq": [],
+    "damage": [
+      [
+        "8d12",
+        "lightning"
+      ]
+    ],
+    "effects": [
+      [
+        "paralysed",
+        "1r"
+      ]
+    ]
+  },
+  {
+    "name": "Blitzstrahl",
+    "legendary": false,
+    "cooldown": [],
+    "range": "30",
+    "aoe": "line",
+    "hitbonus": 0,
+    "savereq": [
+      "dex",
+      18
+    ],
+    "damage": [
+      [
+        "3d8+4",
+        "lightning"
+      ]
+    ],
+    "effects": [
+    ]
+  },
+  {
+    "name": "Blutige Rache",
+    "legendary": false,
+    "cooldown": [],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 10,
+    "savereq": [],
+    "damage": [
+      [
+        "2d10+6",
+        "slashing"
+      ],
+      [
+        "2d8",
+        "necrotic"
+      ]
+    ],
+    "effects": [
+      [
+        "bleeding",
+        "lv1"
+      ]
+    ]
+  },
+  {
+    "name": "Blutiger Schlag",
+    "legendary": false,
+    "cooldown": [],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 10,
+    "savereq": [],
+    "damage": [
+      [
+        "2d10+6",
+        "slashing"
+      ],
+      [
+        "2d10+6",
+        "slashing"
+      ]
+    ],
+    "effects": [
+    ]
+  },
+  {
+    "name": "Blutwoge",
+    "legendary": false,
+    "cooldown": [
+      3,
+      "r"
+    ],
+    "range": "15",
+    "aoe": "cone",
+    "hitbonus": 0,
+    "savereq": [
+      "dex",
+      17
+    ],
+    "damage": [
+      [
+        "5d8",
+        "necrotic"
+      ],
+      [
+        "3d6",
+        "slashing"
+      ]
+    ],
+    "effects": [
+      [
+        "bleeding",
+        "lv2"
+      ]
+    ]
+  },
+  {
+    "name": "Bohrschnabel",
+    "legendary": false,
+    "cooldown": [],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 5,
+    "savereq": [],
+    "damage": [
+      [
+        "1d6+2",
+        "piercing"
+      ]
+    ],
+    "effects": [
+    ]
+  },
+  {
+    "name": "Brutale Hiebe",
+    "legendary": false,
+    "cooldown": [],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 10,
+    "savereq": [],
+    "damage": [
+      [
+        "2d12+6",
+        "slashing"
+      ],
+      [
+        "2d12+6",
+        "slashing"
+      ]
+    ],
+    "effects": [
+      [
+        "bleeding",
+        "lv2"
+      ]
+    ]
+  },
+  {
+    "name": "Donnernde Explosion",
+    "legendary": false,
+    "cooldown": [
+      3,
+      "r"
+    ],
+    "range": "20",
+    "aoe": "radius",
+    "hitbonus": 0,
+    "savereq": [
+      "con",
+      17
+    ],
+    "damage": [
+      [
+        "4d10",
+        "thunder"
+      ]
+    ],
+    "effects": [
+      [
+        "deaf",
+        "1r"
+      ]
+    ]
+  },
+  {
+    "name": "Donnersprung",
+    "legendary": false,
+    "cooldown": [],
+    "range": "10",
+    "aoe": "radius",
+    "hitbonus": 0,
+    "savereq": [],
+    "damage": [
+      [
+        "3d8+2",
+        "thunder"
+      ]
+    ],
+    "effects": [
+      [
+        "leap",
+        "30"
+      ]
+    ]
+  },
+  {
+    "name": "Dornenstoß",
+    "legendary": false,
+    "cooldown": [],
+    "range": "10",
+    "aoe": "cone",
+    "hitbonus": 0,
+    "savereq": [
+      "dex",
+      16
+    ],
+    "damage": [
+      [
+        "4d6+4",
+        "piercing"
+      ]
+    ],
+    "effects": [
+    ]
+  },
+  {
+    "name": "Drachenstrahl",
+    "legendary": false,
+    "cooldown": [
+      3,
+      "r"
+    ],
+    "range": "40",
+    "aoe": "line",
+    "hitbonus": 6,
+    "savereq": [],
+    "damage": [
+      [
+        "3d8",
+        "force"
+      ]
+    ],
+    "effects": [
+      [
+        "petrified",
+        "1r"
+      ]
+    ]
+  },
+  {
+    "name": "Dämonischer Hieb",
+    "legendary": false,
+    "cooldown": [],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 5,
+    "savereq": [],
+    "damage": [
+      [
+        "2d8+5",
+        "bludgeoning"
+      ],
+      [
+        "2d6",
+        "necrotic"
+      ]
+    ],
+    "effects": [
+    ]
+  },
+  {
+    "name": "Einschnappen",
+    "legendary": false,
+    "cooldown": [
+      5,
+      "r"
+    ],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 0,
+    "savereq": [
+      "str",
+      17
+    ],
+    "damage": [
+      [
+        "5d8",
+        "bludgeoning"
+      ]
+    ],
+    "effects": [
+      [
+        "grappled",
+        "1r"
+      ]
+    ]
+  },
+  {
+    "name": "Eisige Ketten",
+    "legendary": false,
+    "cooldown": [
+      1,
+      "d"
+    ],
+    "range": "30",
+    "aoe": "radius",
+    "hitbonus": 0,
+    "savereq": [
+      "str",
+      17
+    ],
+    "damage": [
+      [
+        "2d6",
+        "cold"
+      ]
+    ],
+    "effects": [
+      [
+        "restrained",
+        "2r"
+      ]
+    ]
+  },
+  {
+    "name": "Eisiger Sturm",
+    "legendary": false,
+    "cooldown": [
+      1,
+      "d"
+    ],
+    "range": "30",
+    "aoe": "radius",
+    "hitbonus": 0,
+    "savereq": [
+      "con",
+      18
+    ],
+    "damage": [
+      [
+        "6d6",
+        "cold"
+      ]
+    ],
+    "effects": [
+      [
+        "difficult_terrain",
+        "20r"
+      ]
+    ]
+  },
+  {
+    "name": "Eisschild",
+    "legendary": false,
+    "cooldown": [],
+    "range": "0",
+    "aoe": "self",
+    "hitbonus": 0,
+    "savereq": [],
+    "damage": [
+    ],
+    "effects": [
+      [
+        "resistance_(all)",
+        "1r"
+      ]
+    ]
+  },
+  {
+    "name": "Elektrisierender Stoß",
+    "legendary": false,
+    "cooldown": [],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 4,
+    "savereq": [],
+    "damage": [
+      [
+        "2d8+2",
+        "lightning"
+      ]
+    ],
+    "effects": [
+    ]
+  },
+  {
+    "name": "Feuerballwurf",
+    "legendary": false,
+    "cooldown": [],
+    "range": "30",
+    "aoe": "single",
+    "hitbonus": 4,
+    "savereq": [],
+    "damage": [
+      [
+        "2d6+4",
+        "fire"
+      ]
+    ],
+    "effects": [
+    ]
+  },
+  {
+    "name": "Feuriger Vampirbiss",
+    "legendary": false,
+    "cooldown": [],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 3,
+    "savereq": [],
+    "damage": [
+      [
+        "2d6",
+        "piercing"
+      ],
+      [
+        "2d6+2",
+        "fire"
+      ]
+    ],
+    "effects": [
+      [
+        "heal",
+        "2d6+2"
+      ]
+    ]
+  },
+  {
+    "name": "Fischklauen",
+    "legendary": false,
+    "cooldown": [],
+    "range": "10",
+    "aoe": "cone",
+    "hitbonus": 6,
+    "savereq": [],
+    "damage": [
+      [
+        "2d10",
+        "slashing"
+      ]
+    ],
+    "effects": [
+      [
+        "bleeding",
+        "lv1"
+      ]
+    ]
+  },
+  {
+    "name": "Flammender Flügelschlag",
+    "legendary": false,
+    "cooldown": [],
+    "range": "10",
+    "aoe": "radius",
+    "hitbonus": 0,
+    "savereq": [
+      "con",
+      16
+    ],
+    "damage": [
+      [
+        "3d6+4",
+        "fire"
+      ]
+    ],
+    "effects": [
+      [
+        "disadvantage_(hit)",
+        "1r"
+      ]
+    ]
+  },
+  {
+    "name": "Flammenexplosion",
+    "legendary": false,
+    "cooldown": [
+      1,
+      "d"
+    ],
+    "range": "15",
+    "aoe": "radius",
+    "hitbonus": 0,
+    "savereq": [
+      "con",
+      16
+    ],
+    "damage": [
+      [
+        "5d8",
+        "fire"
+      ]
+    ],
+    "effects": [
+    ]
+  },
+  {
+    "name": "Fluch",
+    "legendary": false,
+    "cooldown": [],
+    "range": "35",
+    "aoe": "radius",
+    "hitbonus": 0,
+    "savereq": [
+      "int",
+      17
+    ],
+    "damage": [
+      [
+        "2d12",
+        "necrotic"
+      ]
+    ],
+    "effects": [
+      [
+        "petrified",
+        "1r"
+      ]
+    ]
+  },
+  {
+    "name": "Fluchtplan",
+    "legendary": false,
+    "cooldown": [],
+    "range": "0",
+    "aoe": "self",
+    "hitbonus": 0,
+    "savereq": [],
+    "damage": [
+    ],
+    "effects": [
+      [
+        "escape",
+        "30ft"
+      ]
+    ]
+  },
+  {
+    "name": "Flutwelle",
+    "legendary": false,
+    "cooldown": [],
+    "range": "30",
+    "aoe": "cone",
+    "hitbonus": 0,
+    "savereq": [
+      "str",
+      17
+    ],
+    "damage": [
+      [
+        "6d6",
+        "bludgeoning"
+      ]
+    ],
+    "effects": [
+      [
+        "knockback",
+        "20ft"
+      ]
+    ]
+  },
+  {
+    "name": "Frostige Hufe",
+    "legendary": false,
+    "cooldown": [],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 8,
+    "savereq": [],
+    "damage": [
+      [
+        "2d10+5",
+        "bludgeoning"
+      ]
+    ],
+    "effects": [
+      [
+        "knockback",
+        "5ft"
+      ]
+    ]
+  },
+  {
+    "name": "Frostiger Flügelschlag",
+    "legendary": false,
+    "cooldown": [],
+    "range": "10",
+    "aoe": "radius",
+    "hitbonus": 0,
+    "savereq": [
+      "con",
+      16
+    ],
+    "damage": [
+      [
+        "3d6+4",
+        "cold"
+      ]
+    ],
+    "effects": [
+      [
+        "disadvantage_(hit)",
+        "1r"
+      ]
+    ]
+  },
+  {
+    "name": "Frostiger Nebelschleier",
+    "legendary": false,
+    "cooldown": [],
+    "range": "20",
+    "aoe": "cone",
+    "hitbonus": 0,
+    "savereq": [
+      "con",
+      18
+    ],
+    "damage": [
+      [
+        "7d6+3",
+        "cold"
+      ]
+    ],
+    "effects": [
+      [
+        "petrified",
+        "2r"
+      ]
+    ]
+  },
+  {
+    "name": "Frostiger Vampirbiss",
+    "legendary": false,
+    "cooldown": [],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 3,
+    "savereq": [],
+    "damage": [
+      [
+        "2d6",
+        "piercing"
+      ],
+      [
+        "2d6+2",
+        "cold"
+      ]
+    ],
+    "effects": [
+      [
+        "heal",
+        "2d6+2"
+      ]
+    ]
+  },
+  {
+    "name": "Frostiges Kreischen",
+    "legendary": false,
+    "cooldown": [],
+    "range": "15",
+    "aoe": "radius",
+    "hitbonus": 0,
+    "savereq": [
+      "wis",
+      16
+    ],
+    "damage": [
+      [
+        "2d6+2",
+        "psychic"
+      ],
+      [
+        "1d4",
+        "cold"
+      ]
+    ],
+    "effects": [
+      [
+        "stunned",
+        "1r"
+      ]
+    ]
+  },
+  {
+    "name": "Gedankenpein",
+    "legendary": false,
+    "cooldown": [],
+    "range": "60",
+    "aoe": "single",
+    "hitbonus": 0,
+    "savereq": [
+      "wis",
+      16
+    ],
+    "damage": [
+      [
+        "4d8",
+        "psychic"
+      ]
+    ],
+    "effects": [
+      [
+        "disadvantage_(hit)",
+        "1r"
+      ]
+    ]
+  },
+  {
+    "name": "Geisterflut",
+    "legendary": false,
+    "cooldown": [
+      1,
+      "d"
+    ],
+    "range": "30",
+    "aoe": "radius",
+    "hitbonus": 0,
+    "savereq": [
+      "int",
+      17
+    ],
+    "damage": [
+      [
+        "4d10",
+        "psychic"
+      ]
+    ],
+    "effects": [
+      [
+        "stunned",
+        "1r"
+      ]
+    ]
+  },
+  {
+    "name": "Geistergeweih",
+    "legendary": false,
+    "cooldown": [],
+    "range": "10",
+    "aoe": "single",
+    "hitbonus": 10,
+    "savereq": [],
+    "damage": [
+      [
+        "2d12+5",
+        "cold"
+      ]
+    ],
+    "effects": [
+    ]
+  },
+  {
+    "name": "Giftzahn",
+    "legendary": false,
+    "cooldown": [],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 5,
+    "savereq": [],
+    "damage": [
+      [
+        "1d6",
+        "piercing"
+      ],
+      [
+        "2d6",
+        "poison"
+      ]
+    ],
+    "effects": [
+      [
+        "poisoned",
+        "2r"
+      ]
+    ]
+  },
+  {
+    "name": "Greiferarme",
+    "legendary": false,
+    "cooldown": [],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 5,
+    "savereq": [],
+    "damage": [
+      [
+        "4d8+5",
+        "bludgeoning"
+      ]
+    ],
+    "effects": [
+    ]
+  },
+  {
+    "name": "Greifzangen",
+    "legendary": false,
+    "cooldown": [],
+    "range": "10",
+    "aoe": "single",
+    "hitbonus": 0,
+    "savereq": [
+      "dex",
+      18
+    ],
+    "damage": [
+      [
+        "3d10+4",
+        "piercing"
+      ],
+      [
+        "2d8+5",
+        "lightning"
+      ]
+    ],
+    "effects": [
+    ]
+  },
+  {
+    "name": "Großschwerthieb",
+    "legendary": false,
+    "cooldown": [],
+    "range": "10",
+    "aoe": "cone",
+    "hitbonus": 5,
+    "savereq": [],
+    "damage": [
+      [
+        "3d12+5",
+        "slashing"
+      ]
+    ],
+    "effects": [
+    ]
+  },
+  {
+    "name": "Hinterhalt",
+    "legendary": false,
+    "cooldown": [
+      1,
+      "d"
+    ],
+    "range": "",
+    "aoe": "0",
+    "hitbonus": 0,
+    "savereq": [],
+    "damage": [
+    ],
+    "effects": [
+      [
+        "invisible",
+        "10r"
+      ],
+      [
+        "double_damage",
+        "2r"
+      ]
+    ]
+  },
+  {
+    "name": "Klingenhieb",
+    "legendary": false,
+    "cooldown": [],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 5,
+    "savereq": [],
+    "damage": [
+      [
+        "2d8",
+        "slashing"
+      ]
+    ],
+    "effects": [
+    ]
+  },
+  {
+    "name": "Klingenklatscher",
+    "legendary": false,
+    "cooldown": [],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 8,
+    "savereq": [],
+    "damage": [
+      [
+        "3d8+5",
+        "slashing"
+      ]
+    ],
+    "effects": [
+    ]
+  },
+  {
+    "name": "Knüppelschlag",
+    "legendary": false,
+    "cooldown": [],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 3,
+    "savereq": [],
+    "damage": [
+      [
+        "1d6+1",
+        "bludgeoning"
+      ]
+    ],
+    "effects": [
+    ]
+  },
+  {
+    "name": "Kratzer",
+    "legendary": false,
+    "cooldown": [],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 6,
+    "savereq": [],
+    "damage": [
+      [
+        "2d8+3",
+        "slashing"
+      ]
+    ],
+    "effects": [
+    ]
+  },
+  {
+    "name": "Kreischen",
+    "legendary": false,
+    "cooldown": [],
+    "range": "10",
+    "aoe": "radius",
+    "hitbonus": 0,
+    "savereq": [
+      "wis",
+      15
+    ],
+    "damage": [
+    ],
+    "effects": [
+      [
+        "disadvantage_(hit)",
+        "2r"
+      ],
+      [
+        "disadvantage_(dmg)",
+        "2r"
+      ]
+    ]
+  },
+  {
+    "name": "Kräftiger Tritt",
+    "legendary": false,
+    "cooldown": [],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 7,
+    "savereq": [],
+    "damage": [
+      [
+        "4d8+1",
+        "bludgeoning"
+      ]
+    ],
+    "effects": [
+      [
+        "push",
+        "20"
+      ]
+    ]
+  },
+  {
+    "name": "Kurzschwertschlag",
+    "legendary": false,
+    "cooldown": [],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 7,
+    "savereq": [],
+    "damage": [
+      [
+        "3d6+5",
+        "slashing"
+      ]
+    ],
+    "effects": [
+    ]
+  },
+  {
+    "name": "Kältestrahl",
+    "legendary": false,
+    "cooldown": [],
+    "range": "60",
+    "aoe": "line",
+    "hitbonus": 9,
+    "savereq": [],
+    "damage": [
+      [
+        "4d8+4",
+        "cold"
+      ]
+    ],
+    "effects": [
+      [
+        "petrified",
+        "2r"
+      ]
+    ]
+  },
+  {
+    "name": "Lanzenstoß",
+    "legendary": false,
+    "cooldown": [],
+    "range": "10",
+    "aoe": "line",
+    "hitbonus": 7,
+    "savereq": [],
+    "damage": [
+      [
+        "3d10+4",
+        "piercing"
+      ]
+    ],
+    "effects": [
+    ]
+  },
+  {
+    "name": "Loderndes Kreischen",
+    "legendary": false,
+    "cooldown": [],
+    "range": "15",
+    "aoe": "radius",
+    "hitbonus": 0,
+    "savereq": [
+      "wis",
+      16
+    ],
+    "damage": [
+      [
+        "2d6+2",
+        "psychic"
+      ],
+      [
+        "1d4",
+        "fire"
+      ]
+    ],
+    "effects": [
+      [
+        "stunned",
+        "1r"
+      ]
+    ]
+  },
+  {
+    "name": "Magnetischer Stoß",
+    "legendary": false,
+    "cooldown": [],
+    "range": "30",
+    "aoe": "radius",
+    "hitbonus": 0,
+    "savereq": [
+      "str",
+      16
+    ],
+    "damage": [
+      [
+        "2d6+2",
+        "bludgeoning"
+      ]
+    ],
+    "effects": [
+      [
+        "pulled",
+        "30"
+      ],
+      [
+        "restrained",
+        "1r"
+      ]
+    ]
+  },
+  {
+    "name": "Netzschuss",
+    "legendary": false,
+    "cooldown": [
+      2,
+      "r"
+    ],
+    "range": "30",
+    "aoe": "single",
+    "hitbonus": 7,
+    "savereq": [],
+    "damage": [
+      [
+        "2d6",
+        "poison"
+      ]
+    ],
+    "effects": [
+      [
+        "grappled",
+        "1r"
+      ]
+    ]
+  },
+  {
+    "name": "Pestwolke",
+    "legendary": false,
+    "cooldown": [],
+    "range": "20",
+    "aoe": "radius",
+    "hitbonus": 0,
+    "savereq": [
+      "con",
+      17
+    ],
+    "damage": [
+      [
+        "3d8",
+        "poison"
+      ],
+      [
+        "1d4",
+        "acid"
+      ]
+    ],
+    "effects": [
+      [
+        "poisoned",
+        "4r"
+      ]
+    ]
+  },
+  {
+    "name": "Psychischer Schrei",
+    "legendary": false,
+    "cooldown": [
+      1,
+      "d"
+    ],
+    "range": "30",
+    "aoe": "radius",
+    "hitbonus": 0,
+    "savereq": [
+      "wis",
+      17
+    ],
+    "damage": [
+      [
+        "5d8",
+        "psychic"
+      ]
+    ],
+    "effects": [
+      [
+        "stunned",
+        "1r"
+      ]
+    ]
+  },
+  {
+    "name": "Quadro-Giftspore",
+    "legendary": false,
+    "cooldown": [],
+    "range": "40",
+    "aoe": "radius",
+    "hitbonus": 0,
+    "savereq": [
+      "con",
+      18
+    ],
+    "damage": [
+      [
+        "3d10",
+        "poison"
+      ]
+    ],
+    "effects": [
+      [
+        "poisoned",
+        "3r"
+      ],
+      [
+        "prone",
+        "2r"
+      ]
+    ]
+  },
+  {
+    "name": "Quälgeist",
+    "legendary": false,
+    "cooldown": [],
+    "range": "60",
+    "aoe": "single",
+    "hitbonus": 0,
+    "savereq": [
+      "cha",
+      17
+    ],
+    "damage": [
+      [
+        "2d12",
+        "psychic"
+      ]
+    ],
+    "effects": [
+      [
+        "exhausted",
+        "1r"
+      ]
+    ]
+  },
+  {
+    "name": "Rabiater Angriff",
+    "legendary": false,
+    "cooldown": [],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 3,
+    "savereq": [],
+    "damage": [
+      [
+        "2d6+1",
+        "bludgeoning"
+      ]
+    ],
+    "effects": [
+      [
+        "disadvantage_(hit)",
+        "1r"
+      ],
+      [
+        "double_damage",
+        "1r"
+      ]
+    ]
+  },
+  {
+    "name": "Rattenbiss",
+    "legendary": false,
+    "cooldown": [],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 4,
+    "savereq": [],
+    "damage": [
+      [
+        "2d6",
+        "piercing"
+      ],
+      [
+        "1d8",
+        "poison"
+      ]
+    ],
+    "effects": [
+      [
+        "poisoned",
+        "2r"
+      ]
+    ]
+  },
+  {
+    "name": "Regeneration",
+    "legendary": false,
+    "cooldown": [
+      3,
+      "r"
+    ],
+    "range": "0",
+    "aoe": "self",
+    "hitbonus": 0,
+    "savereq": [],
+    "damage": [
+    ],
+    "effects": [
+      [
+        "heal",
+        "3d12"
+      ]
+    ]
+  },
+  {
+    "name": "Reißzahnbiss",
+    "legendary": false,
+    "cooldown": [],
+    "range": "10",
+    "aoe": "cone",
+    "hitbonus": 6,
+    "savereq": [],
+    "damage": [
+      [
+        "3d8",
+        "piercing"
+      ]
+    ],
+    "effects": [
+      [
+        "bleeding",
+        "lv2"
+      ]
+    ]
+  },
+  {
+    "name": "Reptilienbiss",
+    "legendary": false,
+    "cooldown": [],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 6,
+    "savereq": [],
+    "damage": [
+      [
+        "3d6",
+        "piercing"
+      ]
+    ],
+    "effects": [
+    ]
+  },
+  {
+    "name": "Ring des Lichts",
+    "legendary": false,
+    "cooldown": [
+      2,
+      "r"
+    ],
+    "range": "20",
+    "aoe": "line",
+    "hitbonus": 5,
+    "savereq": [],
+    "damage": [
+      [
+        "3d10+1",
+        "radiant"
+      ]
+    ],
+    "effects": [
+    ]
+  },
+  {
+    "name": "Schalenramme",
+    "legendary": false,
+    "cooldown": [],
+    "range": "10",
+    "aoe": "line",
+    "hitbonus": 6,
+    "savereq": [],
+    "damage": [
+      [
+        "2d10+5",
+        "bludgeoning"
+      ],
+      [
+        "2d6",
+        "piercing"
+      ]
+    ],
+    "effects": [
+      [
+        "prone",
+        "2r"
+      ]
+    ]
+  },
+  {
+    "name": "Schattensprung",
+    "legendary": false,
+    "cooldown": [
+      1,
+      "d"
+    ],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 6,
+    "savereq": [],
+    "damage": [
+      [
+        "4d6+3",
+        "slashing"
+      ],
+      [
+        "1d8",
+        "necrotic"
+      ]
+    ],
+    "effects": [
+      [
+        "leap",
+        "20"
+      ]
+    ]
+  },
+  {
+    "name": "Schleimfalle",
+    "legendary": false,
+    "cooldown": [],
+    "range": "10",
+    "aoe": "radius",
+    "hitbonus": 0,
+    "savereq": [
+      "str",
+      16
+    ],
+    "damage": [
+      [
+        "1d6+2",
+        "acid"
+      ]
+    ],
+    "effects": [
+      [
+        "difficult_terrain",
+        "3"
+      ]
+    ]
+  },
+  {
+    "name": "Schmetternde Faust",
+    "legendary": false,
+    "cooldown": [],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 8,
+    "savereq": [],
+    "damage": [
+      [
+        "2d10+4",
+        "bludgeoning"
+      ]
+    ],
+    "effects": [
+    ]
+  },
+  {
+    "name": "Schnapper",
+    "legendary": false,
+    "cooldown": [],
+    "range": "15",
+    "aoe": "single",
+    "hitbonus": 0,
+    "savereq": [
+      "dex",
+      18
+    ],
+    "damage": [
+      [
+        "3d6",
+        "piercing"
+      ]
+    ],
+    "effects": [
+      [
+        "leap",
+        "15"
+      ]
+    ]
+  },
+  {
+    "name": "Schneller Hieb",
+    "legendary": false,
+    "cooldown": [
+      1,
+      "d"
+    ],
+    "range": "60",
+    "aoe": "single",
+    "hitbonus": 5,
+    "savereq": [],
+    "damage": [
+      [
+        "2d8+3",
+        "piercing"
+      ]
+    ],
+    "effects": [
+      [
+        "increased_movement",
+        "1r"
+      ]
+    ]
+  },
+  {
+    "name": "Schurkischer Angriff",
+    "legendary": false,
+    "cooldown": [],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 4,
+    "savereq": [],
+    "damage": [
+      [
+        "2d6",
+        "slashing"
+      ],
+      [
+        "2d6",
+        "piercing"
+      ]
+    ],
+    "effects": [
+    ]
+  },
+  {
+    "name": "Schwanzschlag",
+    "legendary": false,
+    "cooldown": [],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 5,
+    "savereq": [],
+    "damage": [
+      [
+        "1d8+3",
+        "bludgeoning"
+      ]
+    ],
+    "effects": [
+    ]
+  },
+  {
+    "name": "Schwarze Welle",
+    "legendary": false,
+    "cooldown": [
+      1,
+      "d"
+    ],
+    "range": "30",
+    "aoe": "radius",
+    "hitbonus": 0,
+    "savereq": [
+      "con",
+      17
+    ],
+    "damage": [
+      [
+        "6d6",
+        "necrotic"
+      ]
+    ],
+    "effects": [
+      [
+        "disadvantage_(hit)",
+        "1r"
+      ]
+    ]
+  },
+  {
+    "name": "Schädelbrumme",
+    "legendary": false,
+    "cooldown": [],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 8,
+    "savereq": [],
+    "damage": [
+      [
+        "5d6",
+        "bludgeoning"
+      ]
+    ],
+    "effects": [
+      [
+        "stunned",
+        "1r"
+      ]
+    ]
+  },
+  {
+    "name": "Spektrale Klinge",
+    "legendary": false,
+    "cooldown": [],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 7,
+    "savereq": [],
+    "damage": [
+      [
+        "2d8+3",
+        "slashing"
+      ],
+      [
+        "2d6",
+        "cold"
+      ]
+    ],
+    "effects": [
+    ]
+  },
+  {
+    "name": "Spektraler Biss",
+    "legendary": false,
+    "cooldown": [],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 5,
+    "savereq": [],
+    "damage": [
+      [
+        "1d10",
+        "cold"
+      ],
+      [
+        "1d8",
+        "cold"
+      ],
+      [
+        "1d8",
+        "necrotic"
+      ]
+    ],
+    "effects": [
+      [
+        "frightened",
+        "3r"
+      ]
+    ]
+  },
+  {
+    "name": "Stachelschuss",
+    "legendary": false,
+    "cooldown": [],
+    "range": "15",
+    "aoe": "single",
+    "hitbonus": 3,
+    "savereq": [],
+    "damage": [
+      [
+        "2d8",
+        "piercing"
+      ],
+      [
+        "1d8",
+        "poison"
+      ]
+    ],
+    "effects": [
+      [
+        "poisoned",
+        "2r"
+      ]
+    ]
+  },
+  {
+    "name": "Stachelwalze",
+    "legendary": false,
+    "cooldown": [],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 5,
+    "savereq": [],
+    "damage": [
+      [
+        "2d8",
+        "piercing"
+      ],
+      [
+        "1d8",
+        "bludgeoning"
+      ]
+    ],
+    "effects": [
+    ]
+  },
+  {
+    "name": "Steinsalve",
+    "legendary": false,
+    "cooldown": [],
+    "range": "60",
+    "aoe": "single",
+    "hitbonus": 8,
+    "savereq": [],
+    "damage": [
+      [
+        "3d8",
+        "bludgeoning"
+      ]
+    ],
+    "effects": [
+    ]
+  },
+  {
+    "name": "Strömungsstoß",
+    "legendary": false,
+    "cooldown": [
+      1,
+      "d"
+    ],
+    "range": "20",
+    "aoe": "radius",
+    "hitbonus": 0,
+    "savereq": [
+      "str",
+      14
+    ],
+    "damage": [
+      [
+        "2d8",
+        "bludgeoning"
+      ]
+    ],
+    "effects": [
+      [
+        "knockback",
+        "15ft"
+      ]
+    ]
+  },
+  {
+    "name": "Sturzflug",
+    "legendary": false,
+    "cooldown": [],
+    "range": "20",
+    "aoe": "single",
+    "hitbonus": 6,
+    "savereq": [],
+    "damage": [
+      [
+        "3d8+2",
+        "piercing"
+      ],
+      [
+        "1d6",
+        "bludgeoning"
+      ]
+    ],
+    "effects": [
+    ]
+  },
+  {
+    "name": "Stürmischer Schlag",
+    "legendary": false,
+    "cooldown": [],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 8,
+    "savereq": [],
+    "damage": [
+      [
+        "2d10",
+        "bludgeoning"
+      ]
+    ],
+    "effects": [
+    ]
+  },
+  {
+    "name": "Sumpfiger Hinterhalt",
+    "legendary": false,
+    "cooldown": [],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 9,
+    "savereq": [],
+    "damage": [
+      [
+        "3d8+5",
+        "piercing"
+      ]
+    ],
+    "effects": [
+      [
+        "push",
+        "30ft"
+      ]
+    ]
+  },
+  {
+    "name": "Säurebiss",
+    "legendary": false,
+    "cooldown": [],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 3,
+    "savereq": [],
+    "damage": [
+      [
+        "2d8+4",
+        "piercing"
+      ],
+      [
+        "3d6+2",
+        "acid"
+      ]
+    ],
+    "effects": [
+    ]
+  },
+  {
+    "name": "Säureexplosion",
+    "legendary": false,
+    "cooldown": [
+      5,
+      "r"
+    ],
+    "range": "30",
+    "aoe": "radius",
+    "hitbonus": 0,
+    "savereq": [
+      "con",
+      19
+    ],
+    "damage": [
+      [
+        "7d8+5",
+        "acid"
+      ]
+    ],
+    "effects": [
+      [
+        "ac-1",
+        "2r"
+      ]
+    ]
+  },
+  {
+    "name": "Säurespeier",
+    "legendary": false,
+    "cooldown": [],
+    "range": "15",
+    "aoe": "cone",
+    "hitbonus": 0,
+    "savereq": [
+      "dex",
+      18
+    ],
+    "damage": [
+      [
+        "3d8",
+        "acid"
+      ],
+      [
+        "2d6",
+        "necrotic"
+      ]
+    ],
+    "effects": [
+      [
+        "paralysed",
+        "3r"
+      ]
+    ]
+  },
+  {
+    "name": "Säurespucke",
+    "legendary": false,
+    "cooldown": [],
+    "range": "30",
+    "aoe": "single",
+    "hitbonus": 0,
+    "savereq": [
+      "dex",
+      17
+    ],
+    "damage": [
+      [
+        "8d6+3",
+        "acid"
+      ]
+    ],
+    "effects": [
+      [
+        "ac-1",
+        "2r"
+      ]
+    ]
+  },
+  {
+    "name": "Telekinetischer Griff",
+    "legendary": false,
+    "cooldown": [],
+    "range": "40",
+    "aoe": "single",
+    "hitbonus": 0,
+    "savereq": [
+      "str",
+      17
+    ],
+    "damage": [
+      [
+        "3d6+2",
+        "bludgeoning"
+      ],
+      [
+        "2d8",
+        "psychic"
+      ]
+    ],
+    "effects": [
+      [
+        "restrained",
+        "1r"
+      ]
+    ]
+  },
+  {
+    "name": "Tentakelpeitsche",
+    "legendary": false,
+    "cooldown": [],
+    "range": "15",
+    "aoe": "single",
+    "hitbonus": 7,
+    "savereq": [],
+    "damage": [
+      [
+        "2d8+4",
+        "bludgeoning"
+      ]
+    ],
+    "effects": [
+    ]
+  },
+  {
+    "name": "Tiefer Sturm",
+    "legendary": false,
+    "cooldown": [
+      2,
+      "r"
+    ],
+    "range": "40",
+    "aoe": "radius",
+    "hitbonus": 6,
+    "savereq": [],
+    "damage": [
+      [
+        "4d8",
+        "bludgeoning"
+      ]
+    ],
+    "effects": [
+      [
+        "knockback",
+        "20ft"
+      ]
+    ]
+  },
+  {
+    "name": "Tintenwolke",
+    "legendary": false,
+    "cooldown": [
+      1,
+      "d"
+    ],
+    "range": "20",
+    "aoe": "radius",
+    "hitbonus": 0,
+    "savereq": [
+      "con",
+      14
+    ],
+    "damage": [
+    ],
+    "effects": [
+      [
+        "blinded",
+        "1r"
+      ]
+    ]
+  },
+  {
+    "name": "Verschlingen",
+    "legendary": false,
+    "cooldown": [],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 0,
+    "savereq": [
+      "dex",
+      17
+    ],
+    "damage": [
+      [
+        "3d10",
+        "acid"
+      ]
+    ],
+    "effects": [
+      [
+        "restrained",
+        "2r"
+      ]
+    ]
+  },
+  {
+    "name": "Volttentakel",
+    "legendary": false,
+    "cooldown": [],
+    "range": "10",
+    "aoe": "line",
+    "hitbonus": 0,
+    "savereq": [
+      "dex",
+      18
+    ],
+    "damage": [
+      [
+        "2d8+6",
+        "lightning"
+      ]
+    ],
+    "effects": [
+      [
+        "paralysed",
+        "1"
+      ]
+    ]
+  },
+  {
+    "name": "Wasserpeitsche",
+    "legendary": false,
+    "cooldown": [],
+    "range": "15",
+    "aoe": "single",
+    "hitbonus": 8,
+    "savereq": [],
+    "damage": [
+      [
+        "2d10+4",
+        "bludgeoning"
+      ],
+      [
+        "2d8",
+        "cold"
+      ]
+    ],
+    "effects": [
+    ]
+  },
+  {
+    "name": "Wassersog",
+    "legendary": false,
+    "cooldown": [
+      2,
+      "r"
+    ],
+    "range": "60",
+    "aoe": "radius",
+    "hitbonus": 0,
+    "savereq": [
+      "dex",
+      18
+    ],
+    "damage": [
+      [
+        "2d6",
+        "bludgeoning"
+      ]
+    ],
+    "effects": [
+      [
+        "pull",
+        "60ft"
+      ]
+    ]
+  },
+  {
+    "name": "Wasserstrahl",
+    "legendary": false,
+    "cooldown": [],
+    "range": "30",
+    "aoe": "single",
+    "hitbonus": 5,
+    "savereq": [],
+    "damage": [
+      [
+        "3d8",
+        "bludgeoning"
+      ]
+    ],
+    "effects": [
+      [
+        "knockback",
+        "10ft"
+      ]
+    ]
+  },
+  {
+    "name": "Windschnitt",
+    "legendary": false,
+    "cooldown": [
+      1,
+      "d"
+    ],
+    "range": "30",
+    "aoe": "cone",
+    "hitbonus": 0,
+    "savereq": [
+      "dex",
+      19
+    ],
+    "damage": [
+      [
+        "5d8+2",
+        "slashing"
+      ]
+    ],
+    "effects": [
+    ]
+  },
+  {
+    "name": "Wurzelgriff",
+    "legendary": false,
+    "cooldown": [],
+    "range": "10",
+    "aoe": "cone",
+    "hitbonus": 6,
+    "savereq": [],
+    "damage": [
+      [
+        "1d8+4",
+        "bludgeoning"
+      ]
+    ],
+    "effects": [
+      [
+        "restrained",
+        "1"
+      ]
+    ]
+  },
+  {
+    "name": "Würgegriff",
+    "legendary": false,
+    "cooldown": [],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 0,
+    "savereq": [
+      "str",
+      17
+    ],
+    "damage": [
+      [
+        "2d8",
+        "bludgeoning"
+      ]
+    ],
+    "effects": [
+      [
+        "grappled",
+        "1r"
+      ]
+    ]
+  },
+  {
+    "name": "Zerquetschen",
+    "legendary": false,
+    "cooldown": [],
+    "range": "5",
+    "aoe": "single",
+    "hitbonus": 8,
+    "savereq": [],
+    "damage": [
+      [
+        "2d10+6",
+        "bludgeoning"
+      ]
+    ],
+    "effects": [
+      [
+        "restrained",
+        "1r"
+      ]
+    ]
+  },
+  {
+    "name": "Überladung",
+    "legendary": false,
+    "cooldown": [
+      1,
+      "d"
+    ],
+    "range": "20",
+    "aoe": "radius",
+    "hitbonus": 0,
+    "savereq": [
+      "con",
+      17
+    ],
+    "damage": [
+      [
+        "5d8",
+        "lightning"
+      ]
+    ],
+    "effects": [
+      [
+        "paralysed",
+        "2"
+      ]
+    ]
+  }
+]

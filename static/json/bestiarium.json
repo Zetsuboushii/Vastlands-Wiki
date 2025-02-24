@@ -7,8 +7,14 @@
     "hp": 30,
     "ac": 15,
     "movement": [
-      "laufend 40",
-      "schwimmend 30"
+      [
+        "laufend",
+        "40"
+      ],
+      [
+        "schwimmend",
+        "30"
+      ]
     ],
     "str": 0,
     "dex": 3,
@@ -39,7 +45,10 @@
     "hp": 400,
     "ac": 20,
     "movement": [
-      "schwimmend 100"
+      [
+        "schwimmend",
+        "100"
+      ]
     ],
     "str": 7,
     "dex": 2,
@@ -82,7 +91,10 @@
     "hp": 40,
     "ac": 16,
     "movement": [
-      "fliegend 25"
+      [
+        "fliegend",
+        "25"
+      ]
     ],
     "str": 1,
     "dex": 2,
@@ -115,7 +127,10 @@
     "hp": 40,
     "ac": 18,
     "movement": [
-      "laufend 50"
+      [
+        "laufend",
+        "50"
+      ]
     ],
     "str": 3,
     "dex": 6,
@@ -148,7 +163,10 @@
     "hp": 55,
     "ac": 16,
     "movement": [
-      "schwebend 30"
+      [
+        "schwebend",
+        "30"
+      ]
     ],
     "str": 1,
     "dex": 3,
@@ -177,7 +195,10 @@
     "hp": 70,
     "ac": 18,
     "movement": [
-      "laufend 10"
+      [
+        "laufend",
+        "10"
+      ]
     ],
     "str": 6,
     "dex": -3,
@@ -209,7 +230,10 @@
     "hp": 80,
     "ac": 17,
     "movement": [
-      "laufend 40"
+      [
+        "laufend",
+        "40"
+      ]
     ],
     "str": 2,
     "dex": 3,
@@ -239,7 +263,10 @@
     "hp": 100,
     "ac": 18,
     "movement": [
-      "laufend 30"
+      [
+        "laufend",
+        "30"
+      ]
     ],
     "str": 6,
     "dex": 1,
@@ -271,8 +298,14 @@
     "hp": 80,
     "ac": 16,
     "movement": [
-      "kriechend 10",
-      "kletternd 10"
+      [
+        "kriechend",
+        "10"
+      ],
+      [
+        "kletternd",
+        "10"
+      ]
     ],
     "str": 2,
     "dex": -4,
@@ -305,7 +338,10 @@
     "hp": 200,
     "ac": 20,
     "movement": [
-      "laufend 20"
+      [
+        "laufend",
+        "20"
+      ]
     ],
     "str": 6,
     "dex": 1,
@@ -338,8 +374,14 @@
     "hp": 30,
     "ac": 13,
     "movement": [
-      "fliegend 50",
-      "laufend 10"
+      [
+        "fliegend",
+        "50"
+      ],
+      [
+        "laufend",
+        "10"
+      ]
     ],
     "str": 1,
     "dex": 4,
@@ -368,7 +410,10 @@
     "hp": 225,
     "ac": 19,
     "movement": [
-      "schwebend 80"
+      [
+        "schwebend",
+        "80"
+      ]
     ],
     "str": 5,
     "dex": 2,
@@ -405,7 +450,10 @@
     "hp": 20,
     "ac": 13,
     "movement": [
-      "rollend 25"
+      [
+        "rollend",
+        "25"
+      ]
     ],
     "str": 4,
     "dex": 4,
@@ -433,7 +481,10 @@
     "hp": 65,
     "ac": 17,
     "movement": [
-      "hüpfend 35"
+      [
+        "hüpfend",
+        "35"
+      ]
     ],
     "str": 4,
     "dex": 3,
@@ -470,7 +521,10 @@
     "hp": 65,
     "ac": 17,
     "movement": [
-      "fliegend 40"
+      [
+        "fliegend",
+        "40"
+      ]
     ],
     "str": -2,
     "dex": 2,
@@ -498,7 +552,10 @@
     "hp": 160,
     "ac": 18,
     "movement": [
-      "laufend 30"
+      [
+        "laufend",
+        "30"
+      ]
     ],
     "str": 5,
     "dex": 3,
@@ -532,7 +589,10 @@
     "hp": 90,
     "ac": 15,
     "movement": [
-      "rutschend 10"
+      [
+        "rutschend",
+        "10"
+      ]
     ],
     "str": 4,
     "dex": -1,
@@ -565,7 +625,10 @@
     "hp": 20,
     "ac": 13,
     "movement": [
-      "fliegend 60"
+      [
+        "fliegend",
+        "60"
+      ]
     ],
     "str": -2,
     "dex": 4,
@@ -595,7 +658,10 @@
     "hp": 130,
     "ac": 17,
     "movement": [
-      "schwebend 40"
+      [
+        "schwebend",
+        "40"
+      ]
     ],
     "str": 3,
     "dex": 3,
@@ -631,8 +697,14 @@
     "hp": 500,
     "ac": 20,
     "movement": [
-      "laufend 50",
-      "grabend 70"
+      [
+        "laufend",
+        "50"
+      ],
+      [
+        "grabend",
+        "70"
+      ]
     ],
     "str": 6,
     "dex": 1,
@@ -675,7 +747,10 @@
     "hp": 30,
     "ac": 13,
     "movement": [
-      "laufend 20"
+      [
+        "laufend",
+        "20"
+      ]
     ],
     "str": 2,
     "dex": 1,
@@ -707,7 +782,10 @@
     "hp": 95,
     "ac": 17,
     "movement": [
-      "krabbelnd 30"
+      [
+        "krabbelnd",
+        "30"
+      ]
     ],
     "str": 4,
     "dex": 3,
@@ -777,8 +855,14 @@
     "hp": 120,
     "ac": 17,
     "movement": [
-      "laufend 40",
-      "schwimmend 50"
+      [
+        "laufend",
+        "40"
+      ],
+      [
+        "schwimmend",
+        "50"
+      ]
     ],
     "str": 4,
     "dex": 1,
@@ -814,7 +898,10 @@
     "hp": 20,
     "ac": 13,
     "movement": [
-      "laufend 30"
+      [
+        "laufend",
+        "30"
+      ]
     ],
     "str": 1,
     "dex": 2,
@@ -841,7 +928,10 @@
     "hp": 80,
     "ac": 20,
     "movement": [
-      "springend 10"
+      [
+        "springend",
+        "10"
+      ]
     ],
     "str": 5,
     "dex": 1,
@@ -877,8 +967,14 @@
     "hp": 60,
     "ac": 16,
     "movement": [
-      "rutschend 50",
-      "schwimmend 60"
+      [
+        "rutschend",
+        "50"
+      ],
+      [
+        "schwimmend",
+        "60"
+      ]
     ],
     "str": 3,
     "dex": 3,
@@ -908,8 +1004,14 @@
     "hp": 90,
     "ac": 18,
     "movement": [
-      "laufend 30",
-      "schwimmend 40"
+      [
+        "laufend",
+        "30"
+      ],
+      [
+        "schwimmend",
+        "40"
+      ]
     ],
     "str": 4,
     "dex": 2,
@@ -941,7 +1043,10 @@
     "hp": 140,
     "ac": 17,
     "movement": [
-      "rennend 65"
+      [
+        "rennend",
+        "65"
+      ]
     ],
     "str": 4,
     "dex": 5,
@@ -972,8 +1077,14 @@
     "hp": 80,
     "ac": 17,
     "movement": [
-      "krabbelnd 5",
-      "schwimmend 50"
+      [
+        "krabbelnd",
+        "5"
+      ],
+      [
+        "schwimmend",
+        "50"
+      ]
     ],
     "str": 4,
     "dex": 2,
@@ -1007,7 +1118,10 @@
     "hp": 60,
     "ac": 19,
     "movement": [
-      "krabbelnd 40"
+      [
+        "krabbelnd",
+        "40"
+      ]
     ],
     "str": 3,
     "dex": 3,
@@ -1037,7 +1151,10 @@
     "hp": 140,
     "ac": 16,
     "movement": [
-      "fliegend 80"
+      [
+        "fliegend",
+        "80"
+      ]
     ],
     "str": 5,
     "dex": 4,
@@ -1071,7 +1188,10 @@
     "hp": 180,
     "ac": 18,
     "movement": [
-      "laufend 30"
+      [
+        "laufend",
+        "30"
+      ]
     ],
     "str": 5,
     "dex": 2,
@@ -1102,7 +1222,10 @@
     "hp": 200,
     "ac": 10,
     "movement": [
-      "kriechend 10"
+      [
+        "kriechend",
+        "10"
+      ]
     ],
     "str": 0,
     "dex": -1,
@@ -1133,7 +1256,10 @@
     "hp": 90,
     "ac": 17,
     "movement": [
-      "laufend 30"
+      [
+        "laufend",
+        "30"
+      ]
     ],
     "str": 3,
     "dex": 4,
@@ -1170,8 +1296,14 @@
     "hp": 80,
     "ac": 15,
     "movement": [
-      "springend 35",
-      "schwimmend 50"
+      [
+        "springend",
+        "35"
+      ],
+      [
+        "schwimmend",
+        "50"
+      ]
     ],
     "str": 3,
     "dex": 4,
@@ -1240,7 +1372,10 @@
     "hp": 140,
     "ac": 16,
     "movement": [
-      "schwebend 40"
+      [
+        "schwebend",
+        "40"
+      ]
     ],
     "str": 3,
     "dex": 2,
@@ -1274,7 +1409,10 @@
     "hp": 20,
     "ac": 13,
     "movement": [
-      "fliegend 60"
+      [
+        "fliegend",
+        "60"
+      ]
     ],
     "str": -2,
     "dex": 4,
@@ -1304,8 +1442,14 @@
     "hp": 80,
     "ac": 16,
     "movement": [
-      "kriechend 10",
-      "kletternd 10"
+      [
+        "kriechend",
+        "10"
+      ],
+      [
+        "kletternd",
+        "10"
+      ]
     ],
     "str": 2,
     "dex": -4,

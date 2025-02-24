@@ -41,6 +41,7 @@ news_list = load_from_json("news")
 compendium_list = load_from_json("compendia")
 calendar_list = load_from_json("calendar")
 enemy_list = load_from_json("bestiarium")
+actions_list = load_from_json("actions")
 
 
 @app.route('/')
@@ -148,7 +149,12 @@ def compendium_entry(compendium_name, entry_name):
         case "linguarium":
             return render_template('linguarium.html', entry=entry)
         case "bestiarium":
-            return render_template('bestiarium.html', enemy=entry)
+            actions = []
+            for enemy_action in entry["actions"]:
+                for action in actions_list:
+                    if action["name"] == enemy_action:
+                        actions.append(action)
+            return render_template('bestiarium.html', enemy=entry, actions=actions)
 
 
 @app.route('/holidays/<holiday_name>')
