@@ -1,0 +1,1179 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/characters.css">
+    <link rel="stylesheet" href="../static/css/tierlist.css">
+</head>
+<body>
+
+<link rel="stylesheet" href="../static/css/banner.css">
+<link rel="shortcut icon" href="../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../static/ui/banner-6.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../static/imgs/logo.png" alt="" class="logo" style="left: -40px; position: relative">
+            <a href="../index.html" style="left: -40px; position: relative">Tome of the Vastlands</a>
+            <sub style="left: -40px; position: relative">v3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('../characters/index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('../places/index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('index.html')">Tierlist</button>
+        
+            <button class="nav-button" onclick="loadPage('../compendium/index.html')">Kompendien</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        <br>
+
+        <div id="tiers">
+            <div class="tier" id="tier-SS"><strong>SS</strong></div>
+            <div class="tier" id="tier-S"><strong>S</strong></div>
+            <div class="tier" id="tier-A"><strong>A</strong></div>
+            <div class="tier" id="tier-B"><strong>B</strong></div>
+            <div class="tier" id="tier-C"><strong>C</strong></div>
+            <div class="tier" id="tier-D"><strong>D</strong></div>
+        </div>
+
+        <div id="characterPool">
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="adamar">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/adamar.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="adrian">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/adrian.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="aelua">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/aelua.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="alcuin">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/alcuin.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="alden">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/alden.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="alice">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/alice.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="amlin">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/amlin.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="ar-merer">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/ar-merer.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="artie">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/artie.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="avarne">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/avarne artwork.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="avila">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/avila.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="aya">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/aya.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="berthelot">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/berthelot.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="burdig">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/burdig.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="caeda">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/caeda.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="carmesine">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/carmesine.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="cedrik">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/cedrik artwork.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="cicero">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/cicero.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="cinnabar">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/cinnabar.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="cordelia">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/cordelia.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="cornelius">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/cornelius.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="deh">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/deh.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="derbatin">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/derbatin.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="dorian">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/dorian.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="eberd">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/eberd.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="edgar">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/edgar.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="eliyen">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/eliyen.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="eliza">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/eliza.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="elkhazel">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/elkhazel.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="en-troad">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/en-troad.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="erika">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/erika.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="eris">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/eris.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="escaar">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/escaar.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="ezekiel">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/ezekiel.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="falk">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/falk.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="farone">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/farone.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="felix">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/felix.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="felldir">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/felldir.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="finnea">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/finnea.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="flüstern">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/flüstern.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="fortuna">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/fortuna.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="francis">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/francis.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="frille">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/frille.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="fubuki">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/fubuki artwork.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="gerard">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/gerard.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="grenze">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/grenze artwork.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="gretchen">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/gretchen.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="grete">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/grete.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="grund">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/grund.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="hadubrand">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/hadubrand.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="hama">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/hama.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="hartwin">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/hartwin.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="heoruwulf">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/heoruwulf.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="hindrik">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/hindrik.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="horizont">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/horizont.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="hosgrid">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/hosgrid.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="iddra">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/iddra artwork.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="igmusur">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/igmusur.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="ignaz">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/ignaz.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="igor">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/igor.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="il-vernia">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/il-vernia.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="invidianoir">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/invidianoir.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="isabella">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/isabella.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="jervar">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/jervar.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="jofina">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/jofina artwork.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="johann">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/johann.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="joist">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/joist.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="julianne">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/julianne.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="justicia">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/justicia.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="justine">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/justine.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="kaen">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/kaen artwork.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="karl">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/karl.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="keith">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/keith.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="konrad">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/konrad.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="kristian">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/kristian.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="kristina">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/kristina.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="lavande">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/lavande.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="lilia">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/lilia.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="linet">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/linet artwork.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="linus">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/linus.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="lysander">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/lysander.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="malon">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/malon.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="malusdur">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/malusdur.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="marine">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/marine.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="marisa">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/marisa.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="marjorie">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/marjorie.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="mei">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/mei.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="meilira">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/meilira.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="memoriae">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/memoriae.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="modaharius">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/modaharius.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="morgen">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/morgen.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="mudo">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/mudo.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="narcian">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/narcian.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="nayru">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/nayru.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="nerissa">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/nerissa.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="niruin">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/niruin.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="noi">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/noi.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="o-gall">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/o-gall.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="odiak">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/odiak.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="olaf">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/olaf.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="oscar">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/oscar.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="osswald">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/osswald.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="ouin">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/ouin.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="perrotus">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/perrotus.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="phaerille">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/phaerille.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="philip">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/philip.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="rai">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/rai.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="reichart">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/reichart.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="reimar">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/reimar.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="reisen">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/reisen.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="rosemarie">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/rosemarie.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="scarlet">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/scarlet artwork.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="selen">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/selen.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="seloue">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/seloue.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="selphie">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/selphie.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="shuichi">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/shuichi.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="siegmund">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/siegmund.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="sivert">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/sivert.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="solenne">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/solenne.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="sonya">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/sonya.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="spitze">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/spitze.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="stephan">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/stephan.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="suskinox">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/suskinox.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="tannivh">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/tannivh.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="thanatos">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/thanatos.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="theodoric">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/theodoric.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="thithrazk">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/thithrazk.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="thorismund">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/thorismund.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="till">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/till.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="tristan">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/tristan.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="trost">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/trost.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="troy">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/troy.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="u-ranos">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/u-ranos.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="valerius">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/valerius.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="vernia">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/vernia.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="vernik">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/vernik.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="viktor">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/viktor.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="volo">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/volo.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="wirkung">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/wirkung.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="zetta">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/zetta.png" alt="">
+                </div>
+            
+                
+                
+
+                <div class="draggable" draggable="true" data-name="zora">
+                    <img src="https://images.zetsuboushii.site/resized/dnd/characters/zora.png" alt="">
+                </div>
+            
+        </div>
+
+        <form id="tierlistForm" onsubmit="return false;">
+            <div class="tierlist-form">
+                <h2>Spielername</h2>
+                <label><input type="text" id="username" required></label>
+            </div>
+            <div class="tierlist-form">
+                <h2>Sessionnummer</h2>
+                <label><input type="number" id="sessionnumber" required></label>
+            </div>
+        </form>
+        <form id="tierlistForm" onsubmit="return false;">
+            <button type="button" onclick="downloadTierlist()">Download Tierlist</button>
+        </form>
+
+        <div>
+            <label>Tierlist hochladen:
+                <input type="file" id="uploadJson" accept="application/json">
+            </label>
+        </div>
+
+        <script>
+            const pool = document.getElementById('characterPool');
+            const tiers = document.querySelectorAll('.tier');
+            let dragged = null;
+
+            document.querySelectorAll('.draggable').forEach(item => {
+                item.addEventListener('dragstart', e => {
+                    dragged = e.currentTarget;
+                    e.dataTransfer.setData('text/plain', e.currentTarget.getAttribute('data-name'));
+                });
+            });
+
+            tiers.forEach(tier => {
+                tier.addEventListener('dragover', e => {
+                    e.preventDefault();
+                });
+                tier.addEventListener('drop', e => {
+                    e.preventDefault();
+                    if (dragged) {
+                        e.currentTarget.appendChild(dragged);
+                    }
+                });
+            });
+
+            pool.addEventListener('dragover', e => e.preventDefault());
+            pool.addEventListener('drop', e => {
+                e.preventDefault();
+                if (dragged) {
+                    pool.appendChild(dragged);
+                }
+            });
+
+            function downloadTierlist() {
+                const username = document.getElementById('username').value.trim();
+                const sessionnumber = document.getElementById('sessionnumber').value.trim();
+                if (!username || !sessionnumber) {
+                    alert("Bitte gib Username und Session Number ein.");
+                    return;
+                }
+
+                const tierNames = ['SS', 'S', 'A', 'B', 'C', 'D'];
+                const tierlist = {};
+                tierNames.forEach(tierName => {
+                    const tierDiv = document.getElementById('tier-' + tierName);
+                    const characters = [];
+                    tierDiv.querySelectorAll('.draggable').forEach(el => {
+                        characters.push(el.getAttribute('data-name'));
+                    });
+                    tierlist[tierName] = characters;
+                });
+
+                const jsonStr = JSON.stringify(tierlist, null, 2);
+                const blob = new Blob([jsonStr], {type: 'application/json'});
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'tierlist_' + username + '_' + sessionnumber + '.json';
+                a.click();
+                URL.revokeObjectURL(url);
+            }
+
+            document.getElementById('uploadJson').addEventListener('change', function (event) {
+                const file = event.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function (e) {
+                        const json = JSON.parse(e.target.result);
+                        ['SS', 'S', 'A', 'B', 'C', 'D'].forEach(tierName => {
+                            const tierDiv = document.getElementById('tier-' + tierName);
+                            tierDiv.innerHTML = '<strong>' + tierName + '</strong>';
+                        });
+                        const allDraggables = document.querySelectorAll('.draggable');
+                        allDraggables.forEach(el => pool.appendChild(el));
+
+                        Object.keys(json).forEach(tierName => {
+                            json[tierName].forEach(charName => {
+                                const draggable = document.querySelector('.draggable[data-name="' + charName + '"]');
+                                if (draggable) {
+                                    const tierDiv = document.getElementById('tier-' + tierName);
+                                    tierDiv.appendChild(draggable);
+                                }
+                            });
+                        });
+                    };
+                    reader.readAsText(file);
+                }
+            });
+        </script>
+    </div>
+</div>
+
+</body>
+</html>

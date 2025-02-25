@@ -1,0 +1,65 @@
+#characterPool, .tier {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  min-height: 60px;
+}
+
+.draggable {
+  display: inline-block;
+  margin: 5px;
+  background-size: cover;
+  cursor: move;
+
+  img {
+    max-height: 150px;
+  }
+}
+
+#tiers {
+  .tier {
+    text-align: left;
+    background: #f9f9f9;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tier strong {
+    font-family: "Grenze Gotisch";
+    font-size: 20px;
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+
+label {
+  font-family: "Grenze Gotisch";
+}
+
+#tierlistForm {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  button {
+    font-family: "Grenze Gotisch";
+    font-size: 30px;
+    color: white;
+    background-color: transparent;
+    background-image: url('../ui/name-backdrop-2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 126px;
+    width: 450px;
+    background-position: center -4px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+}
