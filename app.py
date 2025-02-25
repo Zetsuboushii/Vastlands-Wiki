@@ -14,7 +14,7 @@ def before_request():
     g.site_title = "Tome of the Vastlands"
     g.version_number = "v3.⛩"
 
-    g.ingame_date = "24.12.394"
+    g.ingame_date = "25.12.394"
     g.lore_days = ["Lunesdag", "Flamdag", "Quellsdag", "Waldsdag", "Goldag", "Terrasdag", "Sunnesdag"]
     g.lore_months = ["Eismond", "Frostmond", "Saatmond", "Blütenmond", "Wonnemond", "Heumond", "Sonnenmond",
                      "Erntemond", "Fruchtmond", "Weinmond", "Nebelmond", "Julmond"]
