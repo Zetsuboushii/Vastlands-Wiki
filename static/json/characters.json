@@ -382,13 +382,23 @@
       "Nebel",
       "Tee",
       "Nacht",
-      "Katzen"
+      "Katzen",
+      "Disziplin",
+      "Selbstständigkeit",
+      "Ruhe",
+      "Tagträumen",
+      "Analytisches Denken",
+      "Besonnenheit"
     ],
     "dislikes": [
-      "Faule Personen",
-      "Emotionale Personen",
+      "Faulheit",
+      "Emotionalität",
       "Festivitäten",
-      "Insekten"
+      "Insekten",
+      "Aufdringlichkeit",
+      "Spontanität",
+      "Zerstreutheit",
+      "Taktlosigkeit"
     ],
     "status": "am Leben",
     "relationships": [
@@ -8232,7 +8242,21 @@
       "Regen",
       "Festivitäten",
       "Herbst",
-      "Grüntee"
+      "Grüntee",
+      "Kuscheln",
+      "Schabernack",
+      "Zurückhaltende Personen",
+      "Selbstironie",
+      "Sarkasmus",
+      "Angenehme Gerüche",
+      "Empathie",
+      "Anzüglichkeit",
+      "Geselligkeit",
+      "Faulenzen",
+      "Imbissbudengerichte",
+      "Warmherzigkeit",
+      "Einfühlsamkeit",
+      "Spontanität"
     ],
     "dislikes": [
       "Insekten",
@@ -8240,7 +8264,11 @@
       "Arroganz",
       "Hitze",
       "Sonne",
-      "Höfisches Benehmen"
+      "Höfisches Benehmen",
+      "Respektlosigkeit",
+      "Kühle Personen",
+      "Unnahbarkeit",
+      "Überheblichkeit"
     ],
     "status": "am Leben",
     "relationships": [
