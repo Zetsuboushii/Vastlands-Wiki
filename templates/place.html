@@ -42,7 +42,7 @@
                         {% if place.natlang %}
                             <tr>
                                 <td>In Landessprache</td>
-                                <td>{{ place.natlang[0] }} <i>{{ place.natlang[1] }}</i></td>
+                                <td>{{ place.natlang[0] }}, <i>(lit. {{ place.natlang[1] }})</i></td>
                             </tr>
                         {% endif %}
                         <tr>
@@ -52,7 +52,12 @@
                         {% if place.capital %}
                             <tr>
                                 <td>Hauptstadt</td>
-                                <td>{{ place.capital }}</td>
+                                <td>
+                                    {% set p_name = place.capital | lower | replace(" ", "-") %}
+                                    <a href="{{ url_for('place', place_name=p_name) }}">
+                                        {{ place.capital }}
+                                    </a>
+                                </td>
                             </tr>
                         {% endif %}
                         </tbody>
@@ -101,7 +106,12 @@
                             {% if place.leader %}
                                 <tr>
                                     <td>Regierende Person</td>
-                                    <td>{{ place.leader[0] }}, <small>({{ place.leader[1] }})</small></td>
+                                    <td>
+                                        {% set c_name = place.leader[0] | lower | replace(" ", "-") %}
+                                        <a href="{{ url_for('character', character_name=c_name) }}">
+                                            {{ place.leader[0] }}
+                                        </a><small>({{ place.leader[1] }})</small>
+                                    </td>
                                 </tr>
                             {% endif %}
                             </tbody>

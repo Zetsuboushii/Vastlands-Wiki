@@ -23,9 +23,9 @@ def before_request():
 
     g.categories = {
         "Charaktere": "characters",
+        "Kompendien": "compendia",
         "Orte": "places",
-        "Tierlist": "tierlist",
-        "Kompendien": "compendia"
+        "Tierlist": "tierlist"
     }
 
     apex_domain = "zetsuboushii.site/"
@@ -39,6 +39,19 @@ def before_request():
 def load_from_json(filename):
     with open(f'static/json/{filename}.json', encoding="utf8") as file:
         return json.load(file)
+
+
+def find_place_recursively(place_list, place_slug, parent_name=None):
+    for place in place_list:
+        if place['name'].lower().replace(" ", "-") == place_slug:
+            return place, parent_name
+
+        if "contains" in place and isinstance(place["contains"], list):
+            found, parent = find_place_recursively(place["contains"], place_slug, place["name"])
+            if found is not None:
+                return found, parent
+
+    return None, None
 
 
 characters_list = load_from_json("characters")
@@ -119,21 +132,18 @@ def places():
 
 @app.route('/places/<place_name>/')
 def place(place_name):
-    def find_place_recursively(place_list, place_slug, parent_name=None):
-        for place in place_list:
-            if place['name'].lower().replace(" ", "-") == place_slug:
-                return place, parent_name
-
-            if "contains" in place and isinstance(place["contains"], list):
-                found, parent = find_place_recursively(place["contains"], place_slug, place["name"])
-                if found is not None:
-                    return found, parent
-
-        return None, None
-
     place_data, parent = find_place_recursively(places_list, place_name)
 
     return render_template('place.html', place=place_data, parent=parent)
+
+
+@app.route('/edit/places/<place_name>/', methods=['POST'])
+def edit_place(place_name):
+    if app.debug:
+        place_data, _ = find_place_recursively(places_list, place_name)
+
+        if request.method == "POST":
+            return
 
 
 @app.route('/compendium/')

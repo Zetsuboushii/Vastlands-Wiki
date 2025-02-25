@@ -55,7 +55,7 @@
                                                                         {% if region.contains %}
                                                                             <ul>
                                                                                 {% for place in region.contains %}
-                                                                                    {% set place_name = country.name | lower | replace(" ", "-") %}
+                                                                                    {% set place_name = place.name | lower | replace(" ", "-") %}
                                                                                     <button>
                                                                                         <span><a
                                                                                                 href="{{ url_for('place', place_name=place_name) }}">{{ place.name }}</a></span>
