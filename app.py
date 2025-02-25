@@ -86,7 +86,6 @@ def index():
 def characters():
     letters = sorted({character['name'][0].upper() for character in characters_list})
     nationalities = sorted({character['nationality'] for character in characters_list if "nationality" in character})
-    print(nationalities)
 
     return render_template('characters.html', characters=characters_list, letters=letters, nationalities=nationalities)
 
@@ -108,16 +107,6 @@ def character(character_name):
                 data['birth_year'] = str(birthday_year)
                 data['age'] = ingame_year - birthday_year - (
                         (ingame_month, ingame_day) < (birthday_month, birthday_day))
-
-            match data.get('status'):
-                case "true":
-                    data['status'] = "am Leben"
-                    pass
-                case "false":
-                    data['status'] = "verstorben"
-                    pass
-                case _:
-                    pass
 
             character_data = data
             break
