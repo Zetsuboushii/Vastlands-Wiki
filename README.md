@@ -1,4 +1,4 @@
-<p align="center"><img src="/static/imgs/totv_logo.png" height="500px"  alt=""/></p>
+<p align="center"><img src="/static/imgs/totv_logo.png" height="300px"  alt=""/></p>
 <h1 align="center">Tome of the Vastlands</h1>
 <p align="center"><strong><code>Vastlands-Wiki</code></strong></p>
 <p align="center">Ein umfassendes Wiki und Wissensdatenbank für meine D&D-Kampagnen</p>
