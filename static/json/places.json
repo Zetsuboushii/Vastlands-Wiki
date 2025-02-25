@@ -66,17 +66,18 @@
     "contains": [
       {
         "name": "Markath",
-        "subtitle": "Herzogtum",
-        "natlang": [
-          "Markáthos",
-          "Edler Markt"
-        ],
+        "supplement": "Herzogtum",
+        "language": {
+          "natlang": "Markathion",
+          "natname": "Markáthos",
+          "translation": "Edler Markt"
+        },
         "placetype": "Territorialstaat",
         "system": "",
-        "leader": [
-          "Horizont",
-          "Herzog"
-        ],
+        "leader": {
+          "name": "Horizont",
+          "type": "Herzog"
+        },
         "capital": "Llurthargothr",
         "content": {
           "excerpt": "",
@@ -86,17 +87,17 @@
         "contains": [
           {
             "name": "Llurthargothr",
-            "natlang": [
-              "Lyrthargóthros",
-              "Glänzender Gesang der Morgendämmerung"
-            ],
+            "language": {
+              "natname": "Lyrthargóthros",
+              "translation": "Glänzender Gesang der Morgendämmerung"
+            },
             "demography": 22584,
             "placetype": "Hauptstadt",
             "system": "",
-            "leader": [
-              "Grenze",
-              "Gouvernante"
-            ],
+            "leader": {
+              "name": "Grenze",
+              "type": "Gouvernante"
+            },
             "content": {
               "excerpt": "",
               "sections": [
@@ -105,10 +106,10 @@
           },
           {
             "name": "Undraridor",
-            "natlang": [
-              "Ondrarídōn",
-              "Land der Wunder"
-            ],
+            "language": {
+              "natname": "Ondrarídōn",
+              "translation": "Land der Wunder"
+            },
             "demography": 6230,
             "placetype": "Stadt",
             "content": {
@@ -132,17 +133,18 @@
     "contains": [
       {
         "name": "Faergria",
-        "subtitle": "Vereinigtes Königreich von",
-        "natlang": [
-          "Fairgrius",
-          "Farbige Erde"
-        ],
+        "supplement": "Vereinigtes Königreich von",
+        "language": {
+          "natlang": "Faergrianisch",
+          "natname": "Fairgrius",
+          "translation": "Farbige Erde"
+        },
         "placetype": "Königreich",
         "system": "Konstitutionelle Monarchie",
-        "leader": [
-          "Narcian",
-          "Prinz"
-        ],
+        "leader": {
+          "name": "Narcian",
+          "type": "Prinz"
+        },
         "capital": "Aegir",
         "content": {
           "excerpt": "Das Vereinigte Königreich von Faergria befindet sich auf dem gleichnamigen Kontinent. Faergria teilt sich auf in neun,                               in                               ihren                               Kulturen,                               Sprachen,                               Flora,                               Fauna,                               und                               Geografie                               verschiedenen,                               Herrschaftsgebiete,                               ehemalige                               alleinstehende                               Ländereien,                               nun                               vereinigt                               unter                               dem                               Königshaus                               in                               Aegir,                               der                               königlichen                               Hauptstadt                               des                               Reiches.                               ",
@@ -154,23 +156,28 @@
             {
               "title": "Länder Faergrias",
               "text": "Im Westen des Kontinents liegt das Kurfürstentum Thaugrien, ein Land, das von der strengen und gerechten Hand der Kirche                                           Justicias                                           regiert                                           wird.                                           Die                                           konservativen                                           Traditionen                                           und                                           die                                           tiefe                                           Frömmigkeit                                           der                                           Bewohner                                           prägen                                           das                                           Land.                                           Im                                           Norden,                                           im                                           Großherzogtum                                           Escrigria,                                           erstrecken                                           sich                                           endlose                                           Schneelande,                                           die                                           nur                                           von                                           den                                           härtesten                                           und                                           mutigsten                                           Seelen                                           bewohnt                                           werden.                                           Weiter                                           östlich                                           erheben                                           sich                                           die                                           majestätischen                                           Berge                                           des                                           Herzogtums                                           Kluirm,                                           die                                           Heimat                                           der                                           Zwerge,                                           die                                           für                                           ihre                                           meisterhafte                                           Handwerkskunst                                           und                                           ihre                                           robusten                                           Festungen                                           bekannt                                           sind,                                           tief                                           im                                           Herzen                                           der                                           Berge                                           verborgen.                                           Im                                           östlichen                                           Teil                                           Faergrias                                           befinden                                           sich                                           die                                           zentralen                                           Königslande                                           Adrestia,                                           das                                           fortschrittlichste                                           und                                           modernste                                           Land                                           Faergrias.                                           Südlich                                           davon                                           liegt                                           das                                           diverse                                           Großherzogtum                                           Tinorland,                                           ein                                           Land                                           mit                                           einer                                           reichen                                           und                                           vielschichtigen                                           Geschichte,                                           das                                           viele                                           verschiedene                                           Kulturen                                           und                                           Völker                                           beherbergt.                                           Weiter                                           westlich                                           davon                                           liegt                                           der                                           große                                           Wald                                           des                                           Fürstentums                                           Farodris,                                           Heimat                                           der                                           Elfen,                                           ein                                           Ort                                           von                                           unberührter                                           natürlicher                                           Schönheit                                           und                                           uralter                                           Weisheit.                                           Am                                           westlichsten                                           Punkt                                           Ost-Faergrias                                           befindet                                           sich                                           das                                           Kurfürstentum                                           Hal.                                           Diese                                           Halbinsel                                           ist                                           ein                                           Zentrum                                           der                                           Wissenschaft                                           und                                           Magie,                                           wo                                           Gelehrte                                           und                                           Magier                                           sich                                           unermüdlich                                           in                                           der                                           Erforschung                                           der                                           Geheimnisse                                           des                                           Universums                                           vertiefen.                                           Schließlich                                           erhebt                                           sich                                           im                                           äußersten                                           Norden                                           das                                           Herzogtum                                           Hydracion,                                           ein                                           Land                                           der                                           Gletscher                                           und                                           Heimat                                           der                                           Drakonier,                                           die                                           mit                                           ihrer                                           uralten                                           Weisheit                                           und                                           Macht                                           tiefen                                           Respekt                                           in                                           ganz                                           Faergria                                           genießen.                                           "
+            },
+            {
+              "title": "Landeshymne von Faergria",
+              "text": "Faergrianisch                                           Gemeinsprache                                           Faírn                                           Fairgrius,                                           aiwe                                           liuhteiþ                                           þu                                           fast,                                           bliks                                           þu                                           þairh                                           mel                                           lag,                                           in                                           aiwaggelīþ!                                           Güldenes                                           Faergria,                                           ewig                                           scheinst                                           du                                           dein                                           Licht,                                           strahlest                                           durch                                           Zeiten                                           fort,                                           für                                           immer                                           und                                           heut!                                           Aiwe                                           Fairgrius,                                           hraiwodei                                           wairþu                                           liugna,                                           gagrumiþ                                           uns                                           þairh                                           naht,                                           unþaūrdan                                           dags.                                           Ewiges                                           Faergria,                                           Helden                                           hervorgebracht,                                           führen                                           uns                                           durch                                           die                                           Nacht,                                           bis                                           Morgenrot                                           naht.                                           Gudōs                                           standand                                           þus                                           faur,                                           hauh                                           in                                           bairgim                                           us                                           snaiws                                           jah                                           stains.Jah                                           niþ                                           in                                           land,                                           þar                                           sum                                           hraiwodōs                                           slēpan,                                           wairþiþ                                           arbi                                           þeins                                           in                                           aiw!                                           Die                                           Götter                                           stehen                                           dir                                           zur                                           Seit                                           ’,                                           hoch                                           in                                           Bergen                                           aus                                           Eis                                           und                                           Stein.Und                                           tief                                           im                                           Land,                                           wo                                           Legenden                                           ruh                                           ’                                           n,                                           bleibt                                           dein                                           Erbe                                           ewig                                           jung!                                           Samana                                           Fairgrius,                                           þiudangardi                                           fulleinans,                                           diupi                                           in                                           uns                                           brinnan                                           wulþus                                           þeins,                                           hwana                                           filu                                           aiwaggelīþ!                                           Vereintes                                           Faergria,                                           Königsreich                                           voll                                           Einheit,                                           tief                                           in                                           uns                                           brennt                                           dein                                           Stolz,                                           noch                                           stärker                                           als                                           die                                           Zeit.                                           Wulþu                                           Fairgrius,                                           akrs                                           blōmeiþ                                           und                                           skild                                           þein,                                           aiwaggelīþ                                           þuk                                           liugan                                           swōr,                                           þaursiþa                                           jah                                           siuks!                                           Erhabenes                                           Faergria,                                           Felder                                           erblüh                                           ’                                           n                                           unter                                           deinem                                           Schild,                                           ewig                                           trägt                                           dich                                           unser                                           Schwur,                                           unbeugsam                                           und                                           mild.                                           Akrōs                                           guda                                           landa                                           unsara,                                           wēstus                                           hafjaþ                                           sik                                           hails                                           jah                                           faírguni.Þairh                                           storms                                           jah                                           skadus,                                           in                                           naht                                           uns                                           filu,                                           wīgandam                                           –                                           faur                                           wulþu                                           jah                                           maht!                                           Die                                           Acker                                           segnen                                           unser                                           Land,                                           der                                           Wald                                           erhebt                                           sich                                           stolz                                           und                                           grand.Durch                                           Sturm                                           und                                           Schatten,                                           in                                           dunkler                                           Nacht,                                           kämpfen                                           wir                                           –                                           für                                           Ruhm                                           und                                           Macht!                                           "
             }
           ]
         },
         "contains": [
           {
             "name": "Adrestia",
-            "subtitle": "Königslande",
-            "natlang": [
-              "Aþrastis",
-              "Der Unausweichliche"
-            ],
+            "supplement": "Königslande",
+            "language": {
+              "natlang": "Faergrianisch",
+              "natname": "Aþrastis",
+              "translation": "Der Unausweichliche"
+            },
             "placetype": "Territorialstaat",
             "system": "Königliche Provinz",
-            "leader": [
-              "Narcian",
-              "Prinz"
-            ],
+            "leader": {
+              "name": "Narcian",
+              "type": "Prinz"
+            },
             "capital": "Aegir",
             "content": {
               "excerpt": "Adrestia ist das fortschrittliche Land des Königs von Faergria. Die Hauptstadt ist Aegir. Der Aegir fließt durch viele                                           Regionen                                           Adrestias.                                           Viele                                           Legenden                                           und                                           Mythen                                           ranken                                           sich                                           um                                           die                                           Ländereien                                           in                                           Adrestia.                                           ",
@@ -180,10 +187,10 @@
             "contains": [
               {
                 "name": "Adrestia-Ebene",
-                "natlang": [
-                  "Aþrastis-Waddjus",
-                  "Ebene der Unausweichlichen"
-                ],
+                "language": {
+                  "natname": "Aþrastis-Waddjus",
+                  "translation": "Ebene der Unausweichlichen"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "Das Zentrum Adrestias bildet die Adrestia-Ebene. Diese weitläufige Region grenzt an viele weitere Adrestias, sowie an                                                       das                                                       benachbarte                                                       Tinorland.                                                       ",
@@ -193,10 +200,10 @@
               },
               {
                 "name": "Halbinsel der Verbannten",
-                "natlang": [
-                  "Anaskadi-Gairnaba",
-                  "Halbinsel der Verbannten"
-                ],
+                "language": {
+                  "natname": "Anaskadi-Gairnaba",
+                  "translation": "Halbinsel der Verbannten"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "Diese Halbinsel wurde früher als Gefängnisinsel Adrestias genutzt.",
@@ -215,18 +222,18 @@
                   },
                   {
                     "name": "Niddarvellir",
-                    "supplement": "Stadt der Verbannten",
-                    "natlang": [
-                      "Nirdwaddjus",
-                      "Tiefe Felder"
-                    ],
+                    "subtitle": "Stadt der Verbannten",
+                    "language": {
+                      "natname": "Nirdwaddjus",
+                      "translation": "Tiefe Felder"
+                    },
                     "demography": 296,
                     "placetype": "Stadt",
                     "system": "",
-                    "leader": [
-                      "Iddra",
-                      "Oberhaupt"
-                    ],
+                    "leader": {
+                      "name": "Iddra",
+                      "type": "Oberhaupt"
+                    },
                     "content": {
                       "excerpt": "Niddarvellir gilt als kriminellste Stadt Faergrias. Nicht weiter verwunderlich, da diese alte verlassene Stadt von den                                                                   aus                                                                   Faergria                                                                   Verbannten                                                                   in                                                                   Eigenregie                                                                   geführt                                                                   wird.                                                                   Das                                                                   Oberhaupt                                                                   der                                                                   Stadt                                                                   ist                                                                   außerhalb                                                                   Niddarvellirs                                                                   nicht                                                                   bekannt.                                                                   Dennoch                                                                   munkelt                                                                   man,                                                                   dass                                                                   es                                                                   sich                                                                   um                                                                   eine                                                                   mysteriöse                                                                   Frau                                                                   mit                                                                   großem                                                                   Reichtum                                                                   handeln                                                                   soll,                                                                   die                                                                   innerhalb                                                                   der                                                                   Stadt                                                                   mit                                                                   viel                                                                   Respekt                                                                   geachtet                                                                   wird.                                                                   ",
                       "sections": [
@@ -250,10 +257,10 @@
               },
               {
                 "name": "Königsklippen",
-                "natlang": [
-                  "þiudans-Klippus",
-                  "Klippen des Königs"
-                ],
+                "language": {
+                  "natname": "þiudans-Klippus",
+                  "translation": "Klippen des Königs"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "Die Königsklippen gelten seit jeher als die Geburtsstätte neuer Zeitalter. Innerhalb der Königsfamilie gibt es ein                                                       Ritus,                                                       dass                                                       der                                                       künftige                                                       Herrscher                                                       Faergrias                                                       den                                                       Aegir                                                       hinabreist,                                                       um                                                       sich                                                       mit                                                       der                                                       Natur                                                       seines                                                       Landes                                                       auseinander                                                       zu                                                       setzen.                                                       ",
@@ -263,18 +270,18 @@
                 "contains": [
                   {
                     "name": "Aegir",
-                    "supplement": "Stadt der Krone",
-                    "natlang": [
-                      "Ahwafaurds",
-                      "Wasserfürst"
-                    ],
+                    "subtitle": "Stadt der Krone",
+                    "language": {
+                      "natname": "Ahwafaurds",
+                      "translation": "Wasserfürst"
+                    },
                     "demography": 38726,
                     "placetype": "Hauptstadt",
                     "system": "",
-                    "leader": [
-                      "Narcian",
-                      "Prinz"
-                    ],
+                    "leader": {
+                      "name": "Narcian",
+                      "type": "Prinz"
+                    },
                     "content": {
                       "excerpt": "Diese historische Stadt hält sich nicht zurück, sich selbst neu zu erfinden. Technologische und gesellschaftliche                                                                   Neuheiten                                                                   treten                                                                   mit                                                                   ziemlicher                                                                   Sicherheit                                                                   hier                                                                   zuerst                                                                   auf.                                                                   Erst                                                                   kürzlich                                                                   wurde                                                                   eine                                                                   Teststrecke                                                                   mitsamt                                                                   zwei                                                                   Stationen                                                                   für                                                                   eine                                                                   neuartige                                                                   Fortbewegungsmethode                                                                   errichtet,                                                                   die                                                                   bei                                                                   den                                                                   Bewohnern                                                                   auf                                                                   gute                                                                   Kritiken                                                                   stößt.                                                                   ",
                       "sections": [
@@ -293,10 +300,10 @@
               },
               {
                 "name": "Mondblickinsel",
-                "natlang": [
-                  "Menôskiuggwē",
-                  "Mondspiegelinsel"
-                ],
+                "language": {
+                  "natname": "Menôskiuggwē",
+                  "translation": "Mondspiegelinsel"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "Seltsame antike Ruinen deuten auf einen Kult hin, der dem Mond gehuldigt hat…",
@@ -306,10 +313,10 @@
               },
               {
                 "name": "Nördliche Irrwälder",
-                "natlang": [
-                  "Norðwaírwandjan-Wiggōs",
-                  "Nördliche Wälder des Umherirrens"
-                ],
+                "language": {
+                  "natname": "Norðwaírwandjan-Wiggōs",
+                  "translation": "Nördliche Wälder des Umherirrens"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "Die Bewohner Adrestias meiden diese Wälder trotz seiner reichhaltigen Flora und Fauna, die bei Alchemisten und Jägern                                                       sehr                                                       beliebt                                                       ist.                                                       ",
@@ -319,10 +326,10 @@
               },
               {
                 "name": "Plateau der Legenden",
-                "natlang": [
-                  "Baurgsluihaplaþau",
-                  "Hochebene des Ruhms"
-                ],
+                "language": {
+                  "natname": "Baurgsluihaplaþau",
+                  "translation": "Hochebene des Ruhms"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "In den versteckten Winkeln dieses Plateaus finden sich die Ruinen eines kleinen Volkes, das seit der Gründung des                                                       Königshauses                                                       Adrestias                                                       im                                                       Dienste                                                       der                                                       Königsfamilie                                                       steht                                                       und                                                       laut                                                       Legenden                                                       einst                                                       eine                                                       mächtige                                                       Klinge                                                       gehütet                                                       haben                                                       soll.                                                       Bevor                                                       die                                                       Drachen                                                       in                                                       Faergria                                                       vernichtet                                                       wurden,                                                       sollen                                                       es                                                       einst                                                       hier                                                       Drachenritter                                                       gegeben                                                       haben,                                                       die                                                       diese                                                       Giganten                                                       gezähmt                                                       haben.                                                       ",
@@ -332,10 +339,10 @@
                 "contains": [
                   {
                     "name": "Orrin",
-                    "natlang": [
-                      "Hrotins",
-                      "Der Ruhmreiche"
-                    ],
+                    "language": {
+                      "natname": "Hrotins",
+                      "translation": "Der Ruhmreiche"
+                    },
                     "demography": 0,
                     "placetype": "Dorf",
                     "content": {
@@ -357,10 +364,10 @@
               },
               {
                 "name": "Regenfalltal",
-                "natlang": [
-                  "Rignidala",
-                  "Tal des Regens"
-                ],
+                "language": {
+                  "natname": "Rignidala",
+                  "translation": "Tal des Regens"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "An den Gebirgswänden dieser Senke bleiben Wolken häufig hängen, weshalb es hier sehr viel regnet. Auch ohne Anbindung an                                                       den                                                       Aegir,                                                       ist                                                       das                                                       Wasser                                                       in                                                       dieser                                                       Region                                                       nicht                                                       knapp.                                                       Die                                                       hohe                                                       Feuchtigkeit                                                       ermöglicht                                                       es                                                       vielen                                                       Pflanzen                                                       und                                                       Tieren                                                       prächtig                                                       zu                                                       gedeihen.                                                       ",
@@ -370,11 +377,11 @@
                 "contains": [
                   {
                     "name": "Renais",
-                    "supplement": "Literarische Gärberstadt",
-                    "natlang": [
-                      "Rains",
-                      "Grenzland"
-                    ],
+                    "subtitle": "Literarische Gärberstadt",
+                    "language": {
+                      "natname": "Rains",
+                      "translation": "Grenzland"
+                    },
                     "demography": 2863,
                     "placetype": "Stadt",
                     "content": {
@@ -387,10 +394,10 @@
               },
               {
                 "name": "See der Jugend",
-                "natlang": [
-                  "Jugga-Mara",
-                  "See der Jugend"
-                ],
+                "language": {
+                  "natname": "Jugga-Mara",
+                  "translation": "See der Jugend"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "Inmitten dieses Sees am Ende eines Zweiges des Aegir soll angeblich der sagenumwobene Jungbrunnen verborgen sein. Viele                                                       glauben,                                                       dass                                                       dies                                                       bloß                                                       ein                                                       Gerücht                                                       ist,                                                       dennoch                                                       wird                                                       immer                                                       mal                                                       wieder                                                       schon                                                       seit                                                       Äonen                                                       ein                                                       wunderschöner                                                       junger                                                       Mann                                                       gesichtet,                                                       wodurch                                                       sich                                                       dieses                                                       Gerücht                                                       hartnäckig                                                       hält.                                                       ",
@@ -400,10 +407,10 @@
               },
               {
                 "name": "Sonnenscheininsel",
-                "natlang": [
-                  "Saugwēinsai",
-                  "Insel des Sonnenlichts"
-                ],
+                "language": {
+                  "natname": "Saugwēinsai",
+                  "translation": "Insel des Sonnenlichts"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "Seltsame antike Ruinen deuten auf einen Kult hin, der der Sonne gehuldigt hat…",
@@ -413,10 +420,10 @@
               },
               {
                 "name": "Sternstaubinsel",
-                "natlang": [
-                  "Stairnustauhsai",
-                  "Insel des Sternenstaubs"
-                ],
+                "language": {
+                  "natname": "Stairnustauhsai",
+                  "translation": "Insel des Sternenstaubs"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "Seltsame antike Ruinen deuten auf einen Kult hin, der den Sternen gehuldigt hat…",
@@ -428,18 +435,19 @@
           },
           {
             "name": "Escrigria",
-            "subtitle": "Großherzogtum",
-            "supplement": "Verschneiter Norden",
-            "natlang": [
-              "Æscregrīeg",
-              "Escheninsel"
-            ],
+            "supplement": "Großherzogtum",
+            "subtitle": "Verschneiter Norden",
+            "language": {
+              "natlang": "Faergrianisch",
+              "natname": "Æscregrīeg",
+              "translation": "Escheninsel"
+            },
             "placetype": "Territorialstaat",
             "system": "Großherzogtum",
-            "leader": [
-              "Stephan",
-              "Großherzog"
-            ],
+            "leader": {
+              "name": "Stephan",
+              "type": "Großherzog"
+            },
             "capital": "Nordholm",
             "content": {
               "excerpt": "In diesen verwinkelten Hinterlanden im Norden Faergrias treibt man sich ungern draußen herum. Die Authorität, die die                                           Hauptstadt                                           Nordholm                                           ausstrahlt,                                           ist                                           in                                           ganz                                           Faergria                                           bekannt.                                           ",
@@ -449,10 +457,10 @@
             "contains": [
               {
                 "name": "Einsame Schneefelder",
-                "natlang": [
-                  "Anspyrende Snāwfelda",
-                  "Einsame Schneefelder"
-                ],
+                "language": {
+                  "natname": "Anspyrende Snāwfelda",
+                  "translation": "Einsame Schneefelder"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "Ein weitläufiges Gebiet im Zentrum Escrigrias. Die Sichtweite ist meist auf einige wenige Meter beschränkt, da das                                                       gesamte                                                       Jahr                                                       über                                                       ein                                                       starker                                                       Schneesturm                                                       wütet.                                                       Nordholm                                                       dient                                                       hierbei                                                       mit                                                       dem                                                       dunklen                                                       Gemäuer                                                       des                                                       Schneebergfrieds                                                       als                                                       eine                                                       Bastion                                                       vor                                                       den                                                       harten                                                       Wintern.                                                       ",
@@ -462,18 +470,18 @@
                 "contains": [
                   {
                     "name": "Nordholm",
-                    "supplement": "Bastion des Winters",
-                    "natlang": [
-                      "Norðham",
-                      "Nördliche Siedlung"
-                    ],
+                    "subtitle": "Bastion des Winters",
+                    "language": {
+                      "natname": "Norðham",
+                      "translation": "Nördliche Siedlung"
+                    },
                     "demography": 21052,
                     "placetype": "Hauptstadt",
                     "system": "",
-                    "leader": [
-                      "Stephan",
-                      "Großherzog"
-                    ],
+                    "leader": {
+                      "name": "Stephan",
+                      "type": "Großherzog"
+                    },
                     "content": {
                       "excerpt": "Eine trostlose Stadt, in der der eiskalte Wind des Winters durch die Straßen fegt.",
                       "sections": [
@@ -510,10 +518,10 @@
               },
               {
                 "name": "Eisige Hinterlande",
-                "natlang": [
-                  "Īsig Hinderland",
-                  "Eisige Hinterlande"
-                ],
+                "language": {
+                  "natname": "Īsig Hinderland",
+                  "translation": "Eisige Hinterlande"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "Der “Hals Escrigrias”. Über die Ebene zwischen den Gebirgen im Westen und Osten pfeift ein eisiger Wind aus Norden.",
@@ -534,10 +542,10 @@
               },
               {
                 "name": "Erithyl-Berge",
-                "natlang": [
-                  "Eorðþȳfel-Muntas",
-                  "Erdhügel-Berge"
-                ],
+                "language": {
+                  "natname": "Eorðþȳfel-Muntas",
+                  "translation": "Erdhügel-Berge"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "",
@@ -547,10 +555,10 @@
               },
               {
                 "name": "Fröstelnde Moräne",
-                "natlang": [
-                  "Hrīmende Mōran",
-                  "Frostige Moräne"
-                ],
+                "language": {
+                  "natname": "Hrīmende Mōran",
+                  "translation": "Frostige Moräne"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "",
@@ -560,10 +568,10 @@
                 "contains": [
                   {
                     "name": "Krofenheim",
-                    "natlang": [
-                      "Crofenhām",
-                      "Heim der Krüge"
-                    ],
+                    "language": {
+                      "natname": "Crofenhām",
+                      "translation": "Heim der Krüge"
+                    },
                     "demography": 2704,
                     "placetype": "Stadt",
                     "content": {
@@ -585,10 +593,10 @@
               },
               {
                 "name": "Kronen-Schneeberge",
-                "natlang": [
-                  "Crōn-Snāwmuntas",
-                  "Kronen-Schneeberge"
-                ],
+                "language": {
+                  "natname": "Crōn-Snāwmuntas",
+                  "translation": "Kronen-Schneeberge"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "Dieses steile Gebirge ist beliebt bei Bergsteigern und Sammlern. Es gibt einen recht gut befestigten Pfad zur obersten                                                       Spitze                                                       des                                                       “                                                       Gekrönten                                                       Berges                                                       ”                                                       .                                                       Von                                                       dort                                                       hat                                                       man                                                       eine                                                       phänomenale                                                       Aussicht                                                       über                                                       einen                                                       Großteil                                                       Faergrias.                                                       Auf                                                       dem                                                       Weg                                                       kann                                                       man                                                       Halt                                                       machen                                                       an                                                       einer                                                       mysteriösen                                                       Ruine,                                                       von                                                       der                                                       nicht                                                       bekannt                                                       ist,                                                       wer                                                       sie                                                       erbaut                                                       hat.                                                       Trotz                                                       der                                                       Höhe                                                       treiben                                                       sich                                                       viele                                                       Schneefüchse                                                       umher,                                                       die                                                       friedlich                                                       sind,                                                       solange                                                       man                                                       ihnen                                                       etwas                                                       zu                                                       fressen                                                       gibt.                                                       ",
@@ -627,10 +635,10 @@
               },
               {
                 "name": "Mondscheintal",
-                "natlang": [
-                  "Mōnscīene-Dael",
-                  "Mondscheintal"
-                ],
+                "language": {
+                  "natname": "Mōnscīene-Dael",
+                  "translation": "Mondscheintal"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "Alle Schaltjahre lässt sich von einem bestimmten aus eine wunderschöne Sicht auf den Mond genießen. Dort wurde vor                                                       langer                                                       Zeit                                                       ein                                                       Kloster                                                       erbaut.                                                       ",
@@ -651,10 +659,10 @@
               },
               {
                 "name": "Nördliche Eisklippen",
-                "natlang": [
-                  "Norðlīce Īsclyffas",
-                  "Nördliche Eisklippen"
-                ],
+                "language": {
+                  "natname": "Norðlīce Īsclyffas",
+                  "translation": "Nördliche Eisklippen"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "",
@@ -664,10 +672,10 @@
               },
               {
                 "name": "Schneebucht-Archipel",
-                "natlang": [
-                  "Snāwbūhta-Ēaland",
-                  "Schneebucht-Archipel"
-                ],
+                "language": {
+                  "natname": "Snāwbūhta-Ēaland",
+                  "translation": "Schneebucht-Archipel"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "",
@@ -677,10 +685,10 @@
               },
               {
                 "name": "Tal der Drei Winde",
-                "natlang": [
-                  "Dæl þāra þrīe Winda",
-                  "Tal der Drei Winde"
-                ],
+                "language": {
+                  "natname": "Dæl þāra þrīe Winda",
+                  "translation": "Tal der Drei Winde"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "Im Norden des Gebirges des Windes kreuzen sich Winde aus West, Nord und Ost. Daher kann es recht starke                                                       Temperaturschwankungen                                                       geben.                                                       In                                                       den                                                       dichten                                                       Wäldern                                                       ist                                                       es                                                       zudem                                                       oft                                                       neblig.                                                       ",
@@ -699,10 +707,10 @@
                   },
                   {
                     "name": "Schachendorf",
-                    "natlang": [
-                      "Sceacandorþ",
-                      "Dorf des Kampfes"
-                    ],
+                    "language": {
+                      "natname": "Sceacandorþ",
+                      "translation": "Dorf des Kampfes"
+                    },
                     "demography": 986,
                     "placetype": "Stadt",
                     "content": {
@@ -744,18 +752,19 @@
           },
           {
             "name": "Farodris",
-            "subtitle": "Fürstentum",
-            "supplement": "Wald des Ursprungs",
-            "natlang": [
-              "Pharus Auris",
-              "Leuchtturm des Ohrs"
-            ],
+            "supplement": "Fürstentum",
+            "subtitle": "Wald des Ursprungs",
+            "language": {
+              "natlang": "Faergrianisch",
+              "natname": "Pharus Auris",
+              "translation": "Leuchtturm des Ohrs"
+            },
             "placetype": "Territorialstaat",
             "system": "Fürstentum",
-            "leader": [
-              "Finnea",
-              "Fürstin"
-            ],
+            "leader": {
+              "name": "Finnea",
+              "type": "Fürstin"
+            },
             "capital": "Yerenas",
             "content": {
               "excerpt": "In den diversen dichten Wäldern dieses Landes leben seit Anbeginn der Besiedelung Faergrias die Elfen. Das Zentrum aller                                           Magie                                           Faergrias                                           liegt                                           in                                           der                                           Hauptstadt                                           Yerenas.                                           Farodris                                           steht                                           unter                                           dem                                           Schutze                                           der                                           Göttin                                           Farone.                                           ",
@@ -765,10 +774,10 @@
             "contains": [
               {
                 "name": "Dickicht der Wahrheit",
-                "natlang": [
-                  "Densus Veritatis",
-                  "Dickicht der Wahrheit"
-                ],
+                "language": {
+                  "natname": "Densus Veritatis",
+                  "translation": "Dickicht der Wahrheit"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "",
@@ -814,18 +823,18 @@
                   },
                   {
                     "name": "Yerenas",
-                    "supplement": "Geburtsstadt der Magie",
-                    "natlang": [
-                      "Irenum",
-                      "Ort des Friedens"
-                    ],
+                    "subtitle": "Geburtsstadt der Magie",
+                    "language": {
+                      "natname": "Irenum",
+                      "translation": "Ort des Friedens"
+                    },
                     "demography": 29104,
                     "placetype": "Hauptstadt",
                     "system": "",
-                    "leader": [
-                      "Finnea",
-                      "Fürstin"
-                    ],
+                    "leader": {
+                      "name": "Finnea",
+                      "type": "Fürstin"
+                    },
                     "content": {
                       "excerpt": "Die Hauptstadt der Elfen in Farodris ist für die zahlreichen Schneidereien bekannt. In puncto Mode ist Yerenas der                                                                   Vorreiter                                                                   in                                                                   Faergria.                                                                   Die                                                                   Rüschenkleider                                                                   der                                                                   Damen                                                                   sind                                                                   regionales                                                                   Kulturgut                                                                   geworden.                                                                   ",
                       "sections": [
@@ -840,10 +849,10 @@
               },
               {
                 "name": "Dämmerwald",
-                "natlang": [
-                  "Silvam Crepusculi",
-                  "Wald der Dämmerung"
-                ],
+                "language": {
+                  "natname": "Silvam Crepusculi",
+                  "translation": "Wald der Dämmerung"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "",
@@ -862,10 +871,10 @@
                   },
                   {
                     "name": "Teryvnat",
-                    "natlang": [
-                      "Tervinatum",
-                      "Drei Hügel"
-                    ],
+                    "language": {
+                      "natname": "Tervinatum",
+                      "translation": "Drei Hügel"
+                    },
                     "demography": 232,
                     "placetype": "Dorf",
                     "content": {
@@ -878,10 +887,10 @@
               },
               {
                 "name": "Katzenaugenbucht",
-                "natlang": [
-                  "Sinus Oculorum Felium",
-                  "Bucht der Katzenaugen"
-                ],
+                "language": {
+                  "natname": "Sinus Oculorum Felium",
+                  "translation": "Bucht der Katzenaugen"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "",
@@ -891,10 +900,10 @@
               },
               {
                 "name": "Nebelhain",
-                "natlang": [
-                  "Lucus Nebularum",
-                  "Hain des Nebels"
-                ],
+                "language": {
+                  "natname": "Lucus Nebularum",
+                  "translation": "Hain des Nebels"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "Dieser extrem neblige Abschnitt der Wälder an der Grenze zum Fürstentum Hal sorgt bei Reisenden für große Verwirrung.                                                       Sollte                                                       man                                                       keine                                                       Laterne                                                       oder                                                       Fackel                                                       dabei                                                       haben,                                                       ist                                                       es                                                       besser                                                       direkt                                                       wieder                                                       umzukehren.                                                       ",
@@ -904,10 +913,10 @@
               },
               {
                 "name": "Vergessene Wälder",
-                "natlang": [
-                  "Silvae Oblitae",
-                  "Vergessene Wälder"
-                ],
+                "language": {
+                  "natname": "Silvae Oblitae",
+                  "translation": "Vergessene Wälder"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "Kaum einer traut sich in diese verworrenen Wälder. Es heißt, dass jeder, der sich hier verläuft, seine Existenz                                                       fortwährend                                                       als                                                       untoter                                                       Skelettkrieger                                                       verbringen                                                       muss.                                                       ",
@@ -928,10 +937,10 @@
               },
               {
                 "name": "Zwillingsbucht",
-                "natlang": [
-                  "Sinus Geminorum",
-                  "Bucht der Zwillinge"
-                ],
+                "language": {
+                  "natname": "Sinus Geminorum",
+                  "translation": "Bucht der Zwillinge"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "Zwei nahezu identisch aussehende Inseln, auf denen beide Turmruinen stehen…",
@@ -954,17 +963,18 @@
           },
           {
             "name": "Hal",
-            "subtitle": "Fürstentum",
-            "natlang": [
-              "Hault",
-              "Hoch"
-            ],
+            "supplement": "Fürstentum",
+            "language": {
+              "natlang": "Faergrianisch",
+              "natname": "Hault",
+              "translation": "Hoch"
+            },
             "placetype": "Territorialstaat",
             "system": "Fürstentum",
-            "leader": [
-              "Solenne",
-              "Fürstin"
-            ],
+            "leader": {
+              "name": "Solenne",
+              "type": "Fürstin"
+            },
             "capital": "Frelia",
             "content": {
               "excerpt": "Diese Halbinsel ist das Zentrum des Kommerzes und des Wissens in Faergria. Die Große Bibliothek von Hal in der                                           Hauptstadt                                           Frelia                                           zieht                                           regelmäßig                                           zahlreiche                                           Besucher                                           und                                           Gelehrte                                           an.                                           ",
@@ -974,10 +984,10 @@
             "contains": [
               {
                 "name": "Blühender Fjord",
-                "natlang": [
-                  "Fiort Florissant",
-                  "Blühender Fjord"
-                ],
+                "language": {
+                  "natname": "Fiort Florissant",
+                  "translation": "Blühender Fjord"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "Die farbenfrohe Region im Westen Hals…",
@@ -996,18 +1006,18 @@
                   },
                   {
                     "name": "Frelia",
-                    "supplement": "Bunte Metropole des Handels",
-                    "natlang": [
-                      "Freleie",
-                      "Freies Land"
-                    ],
+                    "subtitle": "Bunte Metropole des Handels",
+                    "language": {
+                      "natname": "Freleie",
+                      "translation": "Freies Land"
+                    },
                     "demography": 23286,
                     "placetype": "Hauptstadt",
                     "system": "",
-                    "leader": [
-                      "Solenne",
-                      "Fürstin"
-                    ],
+                    "leader": {
+                      "name": "Solenne",
+                      "type": "Fürstin"
+                    },
                     "content": {
                       "excerpt": "Eine bunte Metropole, in der nach Wissen und Ästhetik gestrebt wird. Die vielen botanischen Gärten und die Blumenzucht                                                                   wurde                                                                   von                                                                   dem                                                                   Vater                                                                   von                                                                   Kurfürstin                                                                   Solenne                                                                   in                                                                   Auftrag                                                                   gegeben,                                                                   um                                                                   seine                                                                   Gattin                                                                   glücklich                                                                   zu                                                                   machen.                                                                   Dadurch                                                                   hat                                                                   sich                                                                   Frelia                                                                   und                                                                   auch                                                                   Hal                                                                   neben                                                                   der                                                                   Großen                                                                   Bibliothek                                                                   einen                                                                   Namen                                                                   in                                                                   Faergria                                                                   gemacht.                                                                   ",
                       "sections": [
@@ -1035,10 +1045,10 @@
               },
               {
                 "name": "Drachenzahnkap",
-                "natlang": [
-                  "Cap Dent de Dragon",
-                  "Kap Drachenzahn"
-                ],
+                "language": {
+                  "natname": "Cap Dent de Dragon",
+                  "translation": "Kap Drachenzahn"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "Von den Alpen von Nifl aus erkennbar, zeichnet sich die Form eines Zahns eines Drachen ab. Ob dies im Zusammenhang mit                                                       dem                                                       Drachenkopfsee                                                       aus                                                       dem                                                       Großherzogtum                                                       Tinorland                                                       steht                                                       ?                                                       ",
@@ -1048,10 +1058,10 @@
                 "contains": [
                   {
                     "name": "Lycia",
-                    "natlang": [
-                      "Lucie",
-                      "Lichtes Land"
-                    ],
+                    "language": {
+                      "natname": "Lucie",
+                      "translation": "Lichtes Land"
+                    },
                     "demography": 4662,
                     "placetype": "Stadt",
                     "content": {
@@ -1064,10 +1074,10 @@
               },
               {
                 "name": "Molida",
-                "natlang": [
-                  "Moillide",
-                  "Sumpfig"
-                ],
+                "language": {
+                  "natname": "Moillide",
+                  "translation": "Sumpfig"
+                },
                 "placetype": "Insel",
                 "content": {
                   "excerpt": "Diese große Insel war einst Teil des Festlandes von Hal. Dies ist allerdings bereits sehr lange her. Die Insel ist ein                                                       beliebtes                                                       Ausflugsziel,                                                       da                                                       die                                                       unberührte                                                       Natur                                                       und                                                       spannende                                                       Ruinen                                                       viele                                                       Forschergeister,                                                       aber                                                       auch                                                       Naturliebhaber                                                       anlocken.                                                       Dennoch                                                       hält                                                       sich                                                       die                                                       These,                                                       dass                                                       es                                                       immer                                                       noch                                                       eine                                                       Zivilisation                                                       hier                                                       gibt,                                                       die                                                       sich                                                       nahe                                                       der                                                       Berge                                                       versteckt                                                       hält.                                                       ",
@@ -1077,10 +1087,10 @@
               },
               {
                 "name": "Nördliche Labyrinthinsel",
-                "natlang": [
-                  "Île Labirinte Nordale",
-                  "Nördliche Labyrinthinsel"
-                ],
+                "language": {
+                  "natname": "Île Labirinte Nordale",
+                  "translation": "Nördliche Labyrinthinsel"
+                },
                 "placetype": "Insel",
                 "content": {
                   "excerpt": "Eine kleine Insel, auf der ein eigenartiges Labyrinth mit hohen Mauern errichtet steht. Zu welchem Zweck es einst                                                       diente,                                                       ist                                                       unklar.                                                       Es                                                       hegt                                                       einen                                                       mystischen                                                       Schleier                                                       der                                                       Ungewissheit.                                                       Es                                                       hat                                                       eine                                                       unbestreitbare                                                       Ähnlichkeit                                                       zu                                                       dem                                                       Labyrinth                                                       auf                                                       der                                                       Südlichen                                                       Labyrinthinsel.                                                       ",
@@ -1090,10 +1100,10 @@
               },
               {
                 "name": "Obsidian-Grenzlande",
-                "natlang": [
-                  "Marches d’Obsidienne",
-                  "Grenzlande des Obsidians"
-                ],
+                "language": {
+                  "natname": "Marches d’Obsidienne",
+                  "translation": "Grenzlande des Obsidians"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "Im Schatten des Zentralgebirges von Hal und der Abgeschnittenheit zu Frelia, ist diese verschlafene Region in den Augen                                                       vieler                                                       recht                                                       unbedeutsam.                                                       Dennoch                                                       wird                                                       jeder                                                       überrascht,                                                       der                                                       einen                                                       Blick                                                       in                                                       die                                                       Ecken                                                       dieser                                                       Region                                                       wirft                                                       …                                                       ",
@@ -1112,10 +1122,10 @@
                   },
                   {
                     "name": "Elpis",
-                    "natlang": [
-                      "Espérance",
-                      "Hoffnung"
-                    ],
+                    "language": {
+                      "natname": "Espérance",
+                      "translation": "Hoffnung"
+                    },
                     "demography": 193,
                     "placetype": "Dorf",
                     "content": {
@@ -1146,10 +1156,10 @@
               },
               {
                 "name": "Südliche Labyrinthinsel",
-                "natlang": [
-                  "Île Labirinte Sudale",
-                  "Südliche Labyrinthinsel"
-                ],
+                "language": {
+                  "natname": "Île Labirinte Sudale",
+                  "translation": "Südliche Labyrinthinsel"
+                },
                 "placetype": "Insel",
                 "content": {
                   "excerpt": "Eine kleine Insel, auf der ein eigenartiges Labyrinth mit hohen Mauern errichtet steht. Zu welchem Zweck es einst                                                       diente,                                                       ist                                                       unklar.                                                       Es                                                       hegt                                                       einen                                                       mystischen                                                       Schleier                                                       der                                                       Ungewissheit.                                                       Es                                                       hat                                                       eine                                                       unbestreitbare                                                       Ähnlichkeit                                                       zu                                                       dem                                                       Labyrinth                                                       auf                                                       der                                                       Nördlichen                                                       Labyrinthinsel.                                                       ",
@@ -1161,8 +1171,8 @@
           },
           {
             "name": "Hydracion",
-            "subtitle": "Grafschaft",
-            "supplement": "Wiege der Drachen",
+            "supplement": "Grafschaft",
+            "subtitle": "Wiege der Drachen",
             "placetype": "Territorialstaat",
             "capital": "Darnax",
             "content": {
@@ -1200,7 +1210,7 @@
                 "contains": [
                   {
                     "name": "Darnax",
-                    "supplement": "Festung im Eis",
+                    "subtitle": "Festung im Eis",
                     "demography": 5612,
                     "placetype": "Hauptstadt",
                     "content": {
@@ -1219,7 +1229,7 @@
           },
           {
             "name": "Inidal",
-            "supplement": "Goldene Lande",
+            "subtitle": "Goldene Lande",
             "placetype": "Territorialstaat",
             "capital": "Alt-Aegir",
             "content": {
@@ -1293,7 +1303,7 @@
                 "contains": [
                   {
                     "name": "Alt-Aegir",
-                    "supplement": "Ehemalige Königsstadt",
+                    "subtitle": "Ehemalige Königsstadt",
                     "demography": 7195,
                     "placetype": "Hauptstadt",
                     "content": {
@@ -1338,18 +1348,19 @@
           },
           {
             "name": "Kluirm",
-            "subtitle": "Herzogtum",
-            "supplement": "Donnerndes Erzgebirge",
-            "natlang": [
-              "Cluarmha",
-              "Wächter der Ehre"
-            ],
+            "supplement": "Herzogtum",
+            "subtitle": "Donnerndes Erzgebirge",
+            "language": {
+              "natlang": "Faergrianisch",
+              "natname": "Cluarmha",
+              "translation": "Wächter der Ehre"
+            },
             "placetype": "Territorialstaat",
             "system": "Herzogtum",
-            "leader": [
-              "Igor",
-              "Herzog, 'Chef'"
-            ],
+            "leader": {
+              "name": "Igor",
+              "type": "Herzog, 'Chef'"
+            },
             "capital": "Garadzar",
             "content": {
               "excerpt": "Ein gebirgiges Land hinter Thaugrien und Heimat der stolzen Zwerge. Das beste Erz kann laut Aussagen der Zwerge hier                                           abgebaut                                           werden.                                           ",
@@ -1359,10 +1370,10 @@
             "contains": [
               {
                 "name": "Milpaenkahrn",
-                "natlang": [
-                  "Milpeanncarn",
-                  "Tausend Bergspitzen"
-                ],
+                "language": {
+                  "natname": "Milpeanncarn",
+                  "translation": "Tausend Bergspitzen"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "Eine nahezu unpassierbare Region, bestehend aus hunderten Meter hohen Felsspitzen. Viele wagemutige Wanderer und                                                       Abenteurer                                                       mussten                                                       hier                                                       bereits                                                       ihr                                                       Leben                                                       lassen.                                                       ",
@@ -1372,10 +1383,10 @@
               },
               {
                 "name": "Uxbeligard",
-                "natlang": [
-                  "Uxbellicrat",
-                  "Wiege des Glücks"
-                ],
+                "language": {
+                  "natname": "Uxbellicrat",
+                  "translation": "Wiege des Glücks"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "“Wiege des Glücks”. So ist der Name, der die Zwerge dieser Region gegeben haben. Das kommt nicht von ungefähr, da der                                                       Abbau                                                       von                                                       Erz                                                       in                                                       den                                                       tief                                                       reichenden                                                       Bergwerksstollen                                                       und                                                       das                                                       Verarbeiten                                                       von                                                       Metallen                                                       und                                                       Edelsteinen                                                       ein                                                       lukratives                                                       Geschäft                                                       und                                                       Lebenssinn                                                       der                                                       hier                                                       ansässigen                                                       Zwerge                                                       geworden                                                       ist.                                                       ",
@@ -1394,18 +1405,18 @@
                   },
                   {
                     "name": "Garadzar",
-                    "supplement": "Zwergisches Bollwerk der Brüderlichkeit",
-                    "natlang": [
-                      "Carantodunos",
-                      "Festung der Freunde"
-                    ],
+                    "subtitle": "Zwergisches Bollwerk der Brüderlichkeit",
+                    "language": {
+                      "natname": "Carantodunos",
+                      "translation": "Festung der Freunde"
+                    },
                     "demography": 23000,
                     "placetype": "Hauptstadt",
                     "system": "",
-                    "leader": [
-                      "Igor",
-                      "Chef"
-                    ],
+                    "leader": {
+                      "name": "Igor",
+                      "type": "Chef"
+                    },
                     "content": {
                       "excerpt": "Die bergige Festung der Zwerge und Hauptstadt des Erzes. Gäste werden gerne gesehen und müssen sich zunächst beim                                                                   Trinken,                                                                   Schmieden                                                                   und                                                                   Armdrücken                                                                   gegen                                                                   den                                                                   Herzogen                                                                   Igor                                                                   (weitestgehend                                                                   nur                                                                   “                                                                   Chef                                                                   ”                                                                   genannt)                                                                   behaupten.                                                                   Jeder,                                                                   der                                                                   ihm                                                                   standhält,                                                                   erhält                                                                   den                                                                   Titel                                                                   “                                                                   Bruder                                                                   ”                                                                   .                                                                   ",
                       "sections": [
@@ -1418,18 +1429,19 @@
           },
           {
             "name": "Thaugrien",
-            "subtitle": "Kurfürstentum",
-            "supplement": "Land der Traditionen",
-            "natlang": [
-              "Daugaringa",
-              "Land der Nebel"
-            ],
+            "supplement": "Kurfürstentum",
+            "subtitle": "Land der Traditionen",
+            "language": {
+              "natlang": "Faergrianisch",
+              "natname": "Daugaringa",
+              "translation": "Land der Nebel"
+            },
             "placetype": "Territorialstaat",
             "system": "Kurfürstentum",
-            "leader": [
-              "Jervar",
-              "Kurfürst"
-            ],
+            "leader": {
+              "name": "Jervar",
+              "type": "Kurfürst"
+            },
             "capital": "Grenbrock",
             "content": {
               "excerpt": "Ein sehr auf seine Traditionen und den Glauben an die Göttin Justicia bedachtes Land. Burgen, Schlösser und Kirchen sind                                           in                                           jeglichen                                           Ecken                                           des                                           Landes                                           zu                                           finden.                                           Viele                                           Reisende                                           empfinden                                           die                                           Starrheit                                           als                                           erdrückend,                                           wohingegen                                           viele                                           die                                           lokalen                                           Kostbarkeiten,                                           egal                                           ob                                           Essen                                           oder                                           Spirituosen,                                           genießen.                                           In                                           der                                           Hauptstadt                                           Grenbrock                                           befindet                                           sie                                           die                                           größte                                           Pilgerstätte                                           für                                           Gläubiger                                           der                                           Kirche                                           des                                           Himmlischen                                           Glaubens.                                           ",
@@ -1439,10 +1451,10 @@
             "contains": [
               {
                 "name": "Dünsberg-Plateau",
-                "natlang": [
-                  "Dūnesberg-Flach",
-                  "Flaches Hochland des Hügelbergs"
-                ],
+                "language": {
+                  "natname": "Dūnesberg-Flach",
+                  "translation": "Flaches Hochland des Hügelbergs"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "Eine recht zurückgezogene und bewaldete Gegend im Zentrum Thaugriens.",
@@ -1452,11 +1464,11 @@
                 "contains": [
                   {
                     "name": "Alt-Dünsberg",
-                    "supplement": "Abbild einer Katastrophe",
-                    "natlang": [
-                      "Dunsbairgs",
-                      "Hügelberg"
-                    ],
+                    "subtitle": "Abbild einer Katastrophe",
+                    "language": {
+                      "natname": "Dunsbairgs",
+                      "translation": "Hügelberg"
+                    },
                     "placetype": "Ruinen",
                     "content": {
                       "excerpt": "Östlich von Dünsberg liegen die Ruinen von Alt-Dünsberg. Das heutige Dünsberg dort entstand, wo es heute steht, siedelte                                                                   sich                                                                   einst                                                                   eine                                                                   Gruppe                                                                   Bauern                                                                   in                                                                   den                                                                   Wäldern                                                                   von                                                                   Dünsberg                                                                   an,                                                                   bis                                                                   eines                                                                   Tages                                                                   ein                                                                   gigantischer                                                                   Erdspalt                                                                   sich                                                                   mitten                                                                   durch                                                                   das                                                                   Dorf                                                                   zog,                                                                   und                                                                   alles                                                                   zunichtemachte,                                                                   was                                                                   die                                                                   Bauersleute                                                                   aufgebaut                                                                   hatten.                                                                   ",
@@ -1466,18 +1478,18 @@
                   },
                   {
                     "name": "Dünsberg",
-                    "supplement": "Abgelegenes Dorf mit Geschichte",
-                    "natlang": [
-                      "Niuwe Dūnesberg",
-                      "Neuer Hügelberg"
-                    ],
+                    "subtitle": "Abgelegenes Dorf mit Geschichte",
+                    "language": {
+                      "natname": "Niuwe Dūnesberg",
+                      "translation": "Neuer Hügelberg"
+                    },
                     "demography": 47,
                     "placetype": "Dorf",
                     "system": "",
-                    "leader": [
-                      "Jofina",
-                      "Bürgermeisterin"
-                    ],
+                    "leader": {
+                      "name": "Jofina",
+                      "type": "Bürgermeisterin"
+                    },
                     "content": {
                       "excerpt": "Dieses unscheinbare Dörfchen abgelegen der Großstädte Thaugriens beherbergt die wohl herzlichsten Bewohner aus ganz                                                                   Faergria.                                                                   Die                                                                   offenen                                                                   Einwohner                                                                   treffen                                                                   sich                                                                   regelmäßig                                                                   gesellschaftlich                                                                   in                                                                   der                                                                   lokalen                                                                   Taverne.                                                                   Tradition                                                                   ist                                                                   die                                                                   Apfelernte                                                                   und                                                                   das                                                                   Apfelweinkeltern                                                                   im                                                                   Spätsommer.                                                                   ",
                       "sections": [
@@ -1532,10 +1544,10 @@
               },
               {
                 "name": "Klamm des Tellius",
-                "natlang": [
-                  "Teliaskluf",
-                  "Tellius-Schlucht"
-                ],
+                "language": {
+                  "natname": "Teliaskluf",
+                  "translation": "Tellius-Schlucht"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "Der Tellius versorgt Thaugrien mit Wasser und füllt den Tarporsee im Landesinneren mit reinem Quellwasser. Das                                                       Bestreiten                                                       der                                                       Klamm                                                       kann                                                       sich                                                       als                                                       Kraftakt                                                       herausstellen,                                                       gerade                                                       wenn                                                       es                                                       regnet.                                                       ",
@@ -1581,18 +1593,18 @@
                   },
                   {
                     "name": "Tellius",
-                    "supplement": "Stadt des Wassers",
-                    "natlang": [
-                      "Telias",
-                      "Tellius"
-                    ],
+                    "subtitle": "Stadt des Wassers",
+                    "language": {
+                      "natname": "Telias",
+                      "translation": "Tellius"
+                    },
                     "demography": 7291,
                     "placetype": "Stadt",
                     "system": "",
-                    "leader": [
-                      "Nerissa",
-                      "Orakel"
-                    ],
+                    "leader": {
+                      "name": "Nerissa",
+                      "type": "Orakel"
+                    },
                     "content": {
                       "excerpt": "Die “Stadt des Wassers”. Die ansässigen Bewohner sind vernarrt von ihrem klaren Wasser und hegen eine tiefe Verbindung                                                                   zum                                                                   Meer.                                                                   Irgendwo                                                                   in                                                                   den                                                                   Bergen                                                                   bei                                                                   der                                                                   Quelle                                                                   soll                                                                   es                                                                   einen                                                                   alten                                                                   Gang                                                                   geben.                                                                   ",
                       "sections": [
@@ -1639,10 +1651,10 @@
               },
               {
                 "name": "Tarporsee",
-                "natlang": [
-                  "Tarpurbachsee",
-                  "See des Dorfes am Bach"
-                ],
+                "language": {
+                  "natname": "Tarpurbachsee",
+                  "translation": "See des Dorfes am Bach"
+                },
                 "placetype": "See",
                 "content": {
                   "excerpt": "",
@@ -1652,10 +1664,10 @@
               },
               {
                 "name": "Thaugrien-Hochpfalz",
-                "natlang": [
-                  "Daugaringa-Hohpfalz",
-                  "Hohe Pfalz von Thaugrien"
-                ],
+                "language": {
+                  "natname": "Daugaringa-Hohpfalz",
+                  "translation": "Hohe Pfalz von Thaugrien"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "",
@@ -1683,18 +1695,18 @@
                   },
                   {
                     "name": "Grenbrock",
-                    "supplement": "Stadt des Rechts",
-                    "natlang": [
-                      "Grenbrōc",
-                      "Grenze des Sumpfes"
-                    ],
+                    "subtitle": "Stadt des Rechts",
+                    "language": {
+                      "natname": "Grenbrōc",
+                      "translation": "Grenze des Sumpfes"
+                    },
                     "demography": 23000,
                     "placetype": "Hauptstadt",
                     "system": "",
-                    "leader": [
-                      "Hadubrand",
-                      "Diakon"
-                    ],
+                    "leader": {
+                      "name": "Hadubrand",
+                      "type": "Diakon"
+                    },
                     "content": {
                       "excerpt": "Die “Hauptstadt der Gerechtigkeit”. Die Kirche hat hier einen hohen politischen Einfluss und vollstreckt die Lehren                                                                   Justicias.                                                                   Paradoxerweise                                                                   hat                                                                   sich                                                                   hier                                                                   ebenfalls                                                                   die                                                                   berüchtigte                                                                   Diebesgilde                                                                   eingenistet,                                                                   wodurch                                                                   es                                                                   oft                                                                   zu                                                                   Reiberreien                                                                   zwischen                                                                   der                                                                   Stadtwache                                                                   und                                                                   der                                                                   Gilde                                                                   kommt.                                                                   ",
                       "sections": [
@@ -1721,10 +1733,10 @@
               },
               {
                 "name": "Thaugrine Weinberge",
-                "natlang": [
-                  "Daugaringa Wīnbērag",
-                  "Weinberge von Thaugrien"
-                ],
+                "language": {
+                  "natname": "Daugaringa Wīnbērag",
+                  "translation": "Weinberge von Thaugrien"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "",
@@ -1734,10 +1746,10 @@
                 "contains": [
                   {
                     "name": "Tarporbach",
-                    "natlang": [
-                      "Tarpurbach",
-                      "Dorf am Bach"
-                    ],
+                    "language": {
+                      "natname": "Tarpurbach",
+                      "translation": "Dorf am Bach"
+                    },
                     "demography": 11408,
                     "placetype": "Stadt",
                     "content": {
@@ -1768,10 +1780,10 @@
               },
               {
                 "name": "Thaugrines Küstenland",
-                "natlang": [
-                  "Daugaringa Sculdaland",
-                  "Küstenland von Thaugrien"
-                ],
+                "language": {
+                  "natname": "Daugaringa Sculdaland",
+                  "translation": "Küstenland von Thaugrien"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "",
@@ -1790,10 +1802,10 @@
                   },
                   {
                     "name": "Korshaven",
-                    "natlang": [
-                      "Chorshabun",
-                      "Zufluchtshafen"
-                    ],
+                    "language": {
+                      "natname": "Chorshabun",
+                      "translation": "Zufluchtshafen"
+                    },
                     "demography": 9196,
                     "placetype": "Stadt",
                     "content": {
@@ -1808,17 +1820,18 @@
           },
           {
             "name": "Tinorland",
-            "subtitle": "Großherzogtum",
-            "natlang": [
-              "Tínorland",
-              "Land von Tínnor"
-            ],
+            "supplement": "Großherzogtum",
+            "language": {
+              "natlang": "Faergrianisch",
+              "natname": "Tínorland",
+              "translation": "Land von Tínnor"
+            },
             "placetype": "Territorialstaat",
             "system": "Großherzogtum",
-            "leader": [
-              "Konrad",
-              "Stellv. Großherzog"
-            ],
+            "leader": {
+              "name": "Konrad",
+              "type": "Stellv. Großherzog"
+            },
             "capital": "Tinorke",
             "content": {
               "excerpt": "",
@@ -1828,10 +1841,10 @@
             "contains": [
               {
                 "name": "Alljordbucht",
-                "natlang": [
-                  "Alljardavík",
-                  "Bucht der ganzen Erde"
-                ],
+                "language": {
+                  "natname": "Alljardavík",
+                  "translation": "Bucht der ganzen Erde"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "",
@@ -1841,10 +1854,10 @@
                 "contains": [
                   {
                     "name": "Brodia",
-                    "natlang": [
-                      "Bróðjaland",
-                      "Land der Brüder"
-                    ],
+                    "language": {
+                      "natname": "Bróðjaland",
+                      "translation": "Land der Brüder"
+                    },
                     "demography": 411,
                     "placetype": "Dorf",
                     "content": {
@@ -1866,10 +1879,10 @@
               },
               {
                 "name": "Immergrünes Küstenland",
-                "natlang": [
-                  "Aevigraent Strandsland",
-                  "Ewig grünes Küstenland"
-                ],
+                "language": {
+                  "natname": "Aevigraent Strandsland",
+                  "translation": "Ewig grünes Küstenland"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "",
@@ -1879,17 +1892,17 @@
                 "contains": [
                   {
                     "name": "Tinorke",
-                    "natlang": [
-                      "Tínnorka",
-                      "Starker Tínnor"
-                    ],
+                    "language": {
+                      "natname": "Tínnorka",
+                      "translation": "Starker Tínnor"
+                    },
                     "demography": 17335,
                     "placetype": "Hauptstadt",
                     "system": "",
-                    "leader": [
-                      "Konrad",
-                      "Stellv. Großherzog"
-                    ],
+                    "leader": {
+                      "name": "Konrad",
+                      "type": "Stellv. Großherzog"
+                    },
                     "content": {
                       "excerpt": "",
                       "sections": [
@@ -1904,10 +1917,10 @@
               },
               {
                 "name": "Nokoto-Sumpfland",
-                "natlang": [
-                  "Nokoto-Mýrlendi",
-                  "Das Sumpfland von Nokoto"
-                ],
+                "language": {
+                  "natname": "Nokoto-Mýrlendi",
+                  "translation": "Das Sumpfland von Nokoto"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "",
@@ -1937,10 +1950,10 @@
               },
               {
                 "name": "Schlangenschweif-Archipel",
-                "natlang": [
-                  "Ormshali-Skerjagardur",
-                  "Schlangen-Schwanz-Archipel"
-                ],
+                "language": {
+                  "natname": "Ormshali-Skerjagardur",
+                  "translation": "Schlangen-Schwanz-Archipel"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "",
@@ -1950,10 +1963,10 @@
               },
               {
                 "name": "Schwelende Alpen",
-                "natlang": [
-                  "Glódandi Alpar",
-                  "Glühende Alpen"
-                ],
+                "language": {
+                  "natname": "Glódandi Alpar",
+                  "translation": "Glühende Alpen"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "",
@@ -1999,11 +2012,11 @@
                   },
                   {
                     "name": "Nifl",
-                    "supplement": "Kurort in den Alpen",
-                    "natlang": [
-                      "Niflheimur",
-                      "Nebelland"
-                    ],
+                    "subtitle": "Kurort in den Alpen",
+                    "language": {
+                      "natname": "Niflheimur",
+                      "translation": "Nebelland"
+                    },
                     "demography": 5716,
                     "placetype": "Stadt",
                     "content": {
@@ -2029,10 +2042,10 @@
               },
               {
                 "name": "Sturmschild-Taiga",
-                "natlang": [
-                  "Stormskjöldur-Taiga",
-                  "Sturmschild-Taiga"
-                ],
+                "language": {
+                  "natname": "Stormskjöldur-Taiga",
+                  "translation": "Sturmschild-Taiga"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "",
@@ -2042,10 +2055,10 @@
                 "contains": [
                   {
                     "name": "Daein",
-                    "natlang": [
-                      "Dáinnborg",
-                      "Totenburg"
-                    ],
+                    "language": {
+                      "natname": "Dáinnborg",
+                      "translation": "Totenburg"
+                    },
                     "demography": 184,
                     "placetype": "Dorf",
                     "content": {
@@ -2058,10 +2071,10 @@
               },
               {
                 "name": "Tinorische Amaranthfelder",
-                "natlang": [
-                  "Tínnorískar Amaranthsléttur",
-                  "Tinorische Amaranth-Ebenen"
-                ],
+                "language": {
+                  "natname": "Tínnorískar Amaranthsléttur",
+                  "translation": "Tinorische Amaranth-Ebenen"
+                },
                 "placetype": "Region",
                 "content": {
                   "excerpt": "",
@@ -2075,17 +2088,18 @@
       },
       {
         "name": "Kouyoukuni",
-        "subtitle": "Kaiserreich",
-        "natlang": [
-          "紅葉国",
-          "Land der bunten Herbstblätter"
-        ],
+        "supplement": "Kaiserreich",
+        "language": {
+          "natlang": "Koyonisch",
+          "natname": "紅葉国",
+          "translation": "Land der bunten Herbstblätter"
+        },
         "placetype": "Kaiserreich",
         "system": "Absolute Monarchie",
-        "leader": [
-          "",
-          ""
-        ],
+        "leader": {
+          "name": "",
+          "type": ""
+        },
         "capital": "Kawagashi",
         "content": {
           "excerpt": "TODO",
@@ -2097,16 +2111,20 @@
             {
               "title": "Länder Kouyoukunis",
               "text": "TODO"
+            },
+            {
+              "title": "Landeshymne von Kouyoukuni",
+              "text": "紅葉語                                           Koyonisch                                           Gemeinsprache                                           紅葉の葉舞う空                                           、                                           風は山を越え                                           、                                           遥かな里にも                                           、                                           幽霊歌う夜よ                                           、                                           遥かな里にも                                           、                                           幽霊歌う夜よ                                           。                                           Momiji                                           no                                           ha                                           mau                                           sora,                                           Kaze                                           wa                                           yama                                           o                                           koe,                                           Haruka                                           na                                           sato                                           ni                                           mo,                                           Yūrei                                           utau                                           yoru                                           yo,                                           Haruka                                           na                                           sato                                           ni                                           mo,                                           Yūrei                                           utau                                           yoru                                           yo.                                           Herbstlaub                                           tanzt                                           im                                           Abendlicht,                                           Herbstwind                                           zieht                                           durch                                           Tal                                           und                                           Wald,                                           Flüsternd                                           weht                                           er                                           durch                                           das                                           Land,                                           Ahnen                                           singen                                           in                                           der                                           Nacht,                                           Flüsternd                                           weht                                           er                                           durch                                           das                                           Land,                                           Ahnen                                           singen                                           in                                           der                                           Nacht.                                           白神散る丘に                                           、                                           水は水晶の如し                                           、                                           桜は春を呼ぶ                                           、                                           里は幻なり                                           、                                           桜は春を呼ぶ                                           、                                           里は幻なり                                           。                                           Shirokami                                           chiru                                           oka                                           ni,                                           Mizu                                           wa                                           suishō                                           no                                           gotoshi,                                           Sakura                                           wa                                           haru                                           o                                           yobu,                                           Sato                                           wa                                           maboroshi                                           nari,                                           Sakura                                           wa                                           haru                                           o                                           yobu,                                           Sato                                           wa                                           maboroshi                                           nari.                                           Schneesturm                                           tobt                                           auf                                           kahlen                                           Höhn,                                           Klar                                           die                                           Flüsse,                                           tief                                           und                                           rein,                                           Kirschblüten                                           rufen                                           sanft                                           den                                           Frühling,                                           Dorf                                           im                                           Nebel                                           längst                                           verweht,                                           Kirschblüten                                           rufen                                           sanft                                           den                                           Frühling,                                           Dorf                                           im                                           Nebel                                           längst                                           verweht.                                           森の中ささやく                                           、                                           闇に踊る妖怪                                           、                                           刀は光を放つ                                           、                                           戦いは続くとも                                           、                                           刀は光を放つ                                           、                                           戦いは続くとも                                           。                                           Mori                                           no                                           naka                                           sasayaku,                                           Yami                                           ni                                           odoru                                           yōkai,                                           Katana                                           wa                                           hikari                                           o                                           hanatsu,                                           Tatakai                                           wa                                           tsuzuku                                           tomo,                                           Katana                                           wa                                           hikari                                           o                                           hanatsu,                                           Tatakai                                           wa                                           tsuzuku                                           tomo.                                           Flüsternd                                           raunen                                           dunkle                                           Wälder,                                           Schatten                                           tanzen                                           durch                                           die                                           Nacht,                                           Schwerter                                           blitzen                                           hell                                           im                                           Licht,                                           Krieger                                           kämpfen,                                           stolz                                           und                                           kühn,                                           Schwerter                                           blitzen                                           hell                                           im                                           Licht,                                           Krieger                                           kämpfen,                                           stolz                                           und                                           kühn.                                           紅葉の葉舞う空                                           、                                           風は山を越え                                           、                                           遥かな里にも                                           、                                           幽霊歌う夜よ                                           、                                           遥かな里にも                                           、                                           幽霊歌う夜よ                                           。                                           Momiji                                           no                                           ha                                           mau                                           sora,                                           Kaze                                           wa                                           yama                                           o                                           koe,                                           Haruka                                           na                                           sato                                           ni                                           mo,                                           Yūrei                                           utau                                           yoru                                           yo,                                           Haruka                                           na                                           sato                                           ni                                           mo,                                           Yūrei                                           utau                                           yoru                                           yo.                                           Herbstlaub                                           tanzt                                           im                                           Abendlicht,                                           Herbstwind                                           zieht                                           durch                                           Tal                                           und                                           Wald,                                           Flüsternd                                           weht                                           er                                           durch                                           das                                           Land,                                           Ahnen                                           singen                                           in                                           der                                           Nacht,                                           Flüsternd                                           weht                                           er                                           durch                                           das                                           Land,                                           Ahnen                                           singen                                           in                                           der                                           Nacht.                                           "
             }
           ]
         },
         "contains": [
           {
             "name": "Akeyama",
-            "natlang": [
-              "明山",
-              "Berg des Morgens"
-            ],
+            "language": {
+              "natname": "明山",
+              "translation": "Berg des Morgens"
+            },
             "placetype": "Stadt",
             "content": {
               "excerpt": "",
@@ -2116,10 +2134,10 @@
           },
           {
             "name": "Kawagashi",
-            "natlang": [
-              "川樫",
-              "Eichenfluss"
-            ],
+            "language": {
+              "natname": "川樫",
+              "translation": "Eichenfluss"
+            },
             "placetype": "Hauptstadt",
             "content": {
               "excerpt": "",
@@ -2129,10 +2147,10 @@
           },
           {
             "name": "Tozawa",
-            "natlang": [
-              "遠沢",
-              "Fernes Tal"
-            ],
+            "language": {
+              "natname": "遠沢",
+              "translation": "Fernes Tal"
+            },
             "placetype": "Dorf",
             "content": {
               "excerpt": "",
@@ -2142,10 +2160,10 @@
           },
           {
             "name": "Yukimori",
-            "natlang": [
-              "雪森",
-              "Schneewald"
-            ],
+            "language": {
+              "natname": "雪森",
+              "translation": "Schneewald"
+            },
             "placetype": "Dorf",
             "content": {
               "excerpt": "",
@@ -2157,13 +2175,13 @@
       },
       {
         "name": "Kradian",
-        "subtitle": "Königreich",
+        "supplement": "Königreich",
         "placetype": "Königreich",
         "system": "Absolute Monarchie",
-        "leader": [
-          "",
-          ""
-        ],
+        "leader": {
+          "name": "",
+          "type": ""
+        },
         "capital": "Mesmudor",
         "content": {
           "excerpt": "",

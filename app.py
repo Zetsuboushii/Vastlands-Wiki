@@ -12,7 +12,7 @@ app.config['FREEZER_DEFAULT_MIMETYPE'] = 'text/html'
 @app.before_request
 def before_request():
     g.site_title = "Tome of the Vastlands"
-    g.version_number = "v3.⛩"
+    g.version_number = "b3.⛩"
 
     g.ingame_date = "25.12.394"
     g.lore_days = ["Lunesdag", "Flamdag", "Quellsdag", "Waldsdag", "Goldag", "Terrasdag", "Sunnesdag"]

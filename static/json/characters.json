@@ -43,7 +43,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Farone",
@@ -104,7 +104,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
     ],
     "lover": "",
@@ -156,7 +156,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Tannivh",
@@ -262,7 +262,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
     ],
     "lover": "",
@@ -317,7 +317,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
     ],
     "lover": "Falk",
@@ -390,7 +390,7 @@
       "Festivitäten",
       "Insekten"
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
     ],
     "lover": "",
@@ -454,7 +454,7 @@
       "Familie",
       "Widerworte"
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Justicia",
@@ -563,7 +563,7 @@
     ],
     "dislikes": [
     ],
-    "status": "false",
+    "status": "verstorben",
     "relationships": [
       {
         "character": "Sivert",
@@ -620,7 +620,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Hosgrid",
@@ -697,7 +697,7 @@
       "Streit",
       "Pöbelnde Personen"
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Rai",
@@ -779,7 +779,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Nayru",
@@ -865,7 +865,7 @@
     ],
     "dislikes": [
     ],
-    "status": "false",
+    "status": "verstorben",
     "relationships": [
       {
         "character": "Banditenbande",
@@ -929,7 +929,7 @@
       "Schmarotzer",
       "Aufdringliche Personen"
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Hosgrid",
@@ -989,7 +989,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Elkhazel",
@@ -1060,7 +1060,7 @@
       "Insekten",
       "Spät aufstehen"
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Felix",
@@ -1181,7 +1181,7 @@
     ],
     "dislikes": [
     ],
-    "status": "false",
+    "status": "verstorben",
     "relationships": [
       {
         "character": "Serff",
@@ -1339,7 +1339,7 @@
       "Saufgelage",
       "Deserteure"
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Jervar",
@@ -1428,7 +1428,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Reichart",
@@ -1486,7 +1486,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Suskinox",
@@ -1537,7 +1537,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "",
@@ -1590,7 +1590,7 @@
     ],
     "dislikes": [
     ],
-    "status": "false",
+    "status": "verstorben",
     "relationships": [
       {
         "character": "Karl",
@@ -1655,7 +1655,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
     ],
     "lover": "",
@@ -1704,7 +1704,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Karl",
@@ -1854,7 +1854,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Thanatos",
@@ -1960,7 +1960,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Caeda",
@@ -2021,7 +2021,7 @@
     ],
     "dislikes": [
     ],
-    "status": "false",
+    "status": "verstorben",
     "relationships": [
       {
         "character": "Justicia",
@@ -2128,7 +2128,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Marisa",
@@ -2188,7 +2188,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Edgar",
@@ -2272,7 +2272,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Burdig",
@@ -2341,7 +2341,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
     ],
     "lover": "",
@@ -2390,7 +2390,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Gretchen",
@@ -2445,7 +2445,7 @@
     ],
     "dislikes": [
     ],
-    "status": "false",
+    "status": "verstorben",
     "relationships": [
       {
         "character": "Finnea",
@@ -2526,7 +2526,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Perrotus",
@@ -2591,7 +2591,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Jervar",
@@ -2673,7 +2673,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Farone",
@@ -2758,7 +2758,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Morgen",
@@ -2962,7 +2962,7 @@
     ],
     "dislikes": [
     ],
-    "status": "false",
+    "status": "verstorben",
     "relationships": [
       {
         "character": "Volo",
@@ -3017,7 +3017,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
     ],
     "lover": "",
@@ -3080,7 +3080,7 @@
       "Viele Personen",
       "Böse Personen"
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "U-Ranos",
@@ -3177,7 +3177,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Nayru",
@@ -3334,7 +3334,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Vernia",
@@ -3397,7 +3397,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Edgar",
@@ -3482,7 +3482,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Horizont",
@@ -3559,7 +3559,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Justicia",
@@ -3619,7 +3619,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Ouin",
@@ -3704,7 +3704,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Jervar",
@@ -3761,7 +3761,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
     ],
     "lover": "",
@@ -3827,7 +3827,7 @@
       "Adlige",
       "Fisch"
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Linus",
@@ -3896,7 +3896,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Flüstern",
@@ -3962,7 +3962,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Avarne",
@@ -4048,7 +4048,7 @@
       "Unsauberkeit",
       "Putzen"
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Siegmund",
@@ -4147,7 +4147,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Marisa",
@@ -4208,7 +4208,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Nayru",
@@ -4255,7 +4255,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "",
@@ -4317,7 +4317,7 @@
     ],
     "dislikes": [
     ],
-    "status": "false",
+    "status": "verstorben",
     "relationships": [
       {
         "character": "Justicia",
@@ -4429,7 +4429,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Iddra",
@@ -4510,7 +4510,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Lilia",
@@ -4599,7 +4599,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Cordelia",
@@ -4695,7 +4695,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Hosgrid",
@@ -4782,7 +4782,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Siegmund",
@@ -4852,7 +4852,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Eberd",
@@ -4908,7 +4908,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "U-Ranos",
@@ -5102,7 +5102,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Inoro",
@@ -5173,7 +5173,7 @@
       "Tiere",
       "Widerworte"
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Invidianoir",
@@ -5278,7 +5278,7 @@
       "Trockenes Brot",
       "Staub"
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Edgar",
@@ -5363,7 +5363,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Siegmund",
@@ -5417,7 +5417,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Kristian",
@@ -5487,7 +5487,7 @@
     ],
     "dislikes": [
     ],
-    "status": "false",
+    "status": "verstorben",
     "relationships": [
       {
         "character": "Konrad",
@@ -5583,7 +5583,7 @@
     ],
     "dislikes": [
     ],
-    "status": "false",
+    "status": "verstorben",
     "relationships": [
       {
         "character": "Konrad",
@@ -5677,7 +5677,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Seloue",
@@ -5740,7 +5740,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Erika",
@@ -5804,7 +5804,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Siegmund",
@@ -5895,7 +5895,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Viktor",
@@ -5968,7 +5968,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
     ],
     "lover": "",
@@ -6025,7 +6025,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Eliyen",
@@ -6082,7 +6082,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Gralnach",
@@ -6157,7 +6157,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Solenne",
@@ -6220,7 +6220,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Gralnach",
@@ -6332,7 +6332,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Artie",
@@ -6404,7 +6404,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Rai",
@@ -6473,7 +6473,7 @@
       "Respektlosigkeit ihrer Mutter gegenüber",
       "Saures Essen"
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Fortuna",
@@ -6584,7 +6584,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Malusdur",
@@ -6727,7 +6727,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Flüstern",
@@ -6797,7 +6797,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Hama",
@@ -6898,7 +6898,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Gralnach",
@@ -6999,7 +6999,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Balthus",
@@ -7123,7 +7123,7 @@
       "Monster",
       "Alkohol"
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Till",
@@ -7173,7 +7173,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Malusdur",
@@ -7231,7 +7231,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
     ],
     "lover": "",
@@ -7288,7 +7288,7 @@
     ],
     "dislikes": [
     ],
-    "status": "false",
+    "status": "verstorben",
     "relationships": [
       {
         "character": "Justicia",
@@ -7388,7 +7388,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Nayru",
@@ -7450,7 +7450,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Igor",
@@ -7500,7 +7500,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
     ],
     "lover": "",
@@ -7550,7 +7550,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Iddra",
@@ -7608,7 +7608,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Hama",
@@ -7674,7 +7674,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Felix",
@@ -7740,7 +7740,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Farone",
@@ -7810,7 +7810,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Karl",
@@ -7886,7 +7886,7 @@
       "Hunde",
       "Haushaltsarbeit"
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Mei",
@@ -7976,7 +7976,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Cornelius",
@@ -8029,7 +8029,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
     ],
     "lover": "",
@@ -8083,7 +8083,7 @@
     ],
     "dislikes": [
     ],
-    "status": "false",
+    "status": "verstorben",
     "relationships": [
       {
         "character": "Grund",
@@ -8139,7 +8139,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Vernik",
@@ -8221,7 +8221,7 @@
       "Sonne",
       "Höfisches Benehmen"
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Thanatos",
@@ -8361,7 +8361,7 @@
       "Alkoholiker",
       "Raucher"
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Trost",
@@ -8421,7 +8421,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Lavande",
@@ -8536,7 +8536,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Tannivh",
@@ -8588,7 +8588,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
     ],
     "lover": "",
@@ -8644,7 +8644,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Iddra",
@@ -8745,7 +8745,7 @@
     ],
     "dislikes": [
     ],
-    "status": "false",
+    "status": "verstorben",
     "relationships": [
       {
         "character": "Artie",
@@ -8805,7 +8805,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Sonya",
@@ -8880,7 +8880,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Solenne",
@@ -8959,7 +8959,7 @@
       "Höfisches Benehmen",
       "Narben"
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Horizont",
@@ -9033,7 +9033,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Tristan",
@@ -9119,7 +9119,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Deh",
@@ -9192,7 +9192,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Selphie",
@@ -9253,7 +9253,7 @@
     ],
     "dislikes": [
     ],
-    "status": "false",
+    "status": "verstorben",
     "relationships": [
       {
         "character": "Farone",
@@ -9357,7 +9357,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Seloue",
@@ -9425,7 +9425,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Suskinox",
@@ -9486,7 +9486,7 @@
     ],
     "dislikes": [
     ],
-    "status": "false",
+    "status": "verstorben",
     "relationships": [
       {
         "character": "Malusdur",
@@ -9552,7 +9552,7 @@
       "Unordnung",
       "Spontanität"
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Nerissa",
@@ -9609,7 +9609,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Stephan",
@@ -9702,7 +9702,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Horizont",
@@ -9756,7 +9756,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
     ],
     "lover": "",
@@ -9807,7 +9807,7 @@
         "Fischer"
       ]
     },
-    "nationality": "Faergria",
+    "nationality": "Animus",
     "homes": [
       {
         "place": "Hof der Gerechtigkeit",
@@ -9851,7 +9851,7 @@
       "Gerichtsprozesse",
       "Gefühlsmaskerade"
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Justicia",
@@ -10034,7 +10034,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Mudo",
@@ -10118,7 +10118,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Gretchen",
@@ -10172,7 +10172,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Rosemarie",
@@ -10229,7 +10229,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Nayru",
@@ -10286,7 +10286,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Malusdur",
@@ -10357,7 +10357,7 @@
     ],
     "dislikes": [
     ],
-    "status": "false",
+    "status": "verstorben",
     "relationships": [
       {
         "character": "Craindre",
@@ -10420,7 +10420,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
       {
         "character": "Arvel",
@@ -10524,7 +10524,7 @@
     ],
     "dislikes": [
     ],
-    "status": "true",
+    "status": "am Leben",
     "relationships": [
     ],
     "lover": "",

@@ -2,7 +2,7 @@
   {
     "name": "Abwassernager",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Ungeziefer",
     "hp": 30,
     "ac": 15,
@@ -40,7 +40,7 @@
   {
     "name": "Abyssor",
     "boss": true,
-    "bosstitle": "Peiniger des Meerestempels",
+    "boss_title": "Peiniger des Meerestempels",
     "type": "Monstrosität",
     "hp": 400,
     "ac": 20,
@@ -86,7 +86,7 @@
   {
     "name": "Aerocacti",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Pflanze",
     "hp": 40,
     "ac": 16,
@@ -122,7 +122,7 @@
   {
     "name": "Arachnia",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Bestie",
     "hp": 40,
     "ac": 18,
@@ -158,7 +158,7 @@
   {
     "name": "Babasu",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Abscheulichkeit",
     "hp": 55,
     "ac": 16,
@@ -190,7 +190,7 @@
   {
     "name": "Bandagenwandler",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Untot",
     "hp": 70,
     "ac": 18,
@@ -225,7 +225,7 @@
   {
     "name": "Bandit",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Humanoid",
     "hp": 80,
     "ac": 17,
@@ -258,7 +258,7 @@
   {
     "name": "Bestienkrieger",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Monstrosität",
     "hp": 100,
     "ac": 18,
@@ -293,7 +293,7 @@
   {
     "name": "Blitzschneck",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Bestie",
     "hp": 80,
     "ac": 16,
@@ -333,7 +333,7 @@
   {
     "name": "Blutstahlritter",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Untot",
     "hp": 200,
     "ac": 20,
@@ -369,7 +369,7 @@
   {
     "name": "Bohrschnabel",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Bestie",
     "hp": 30,
     "ac": 13,
@@ -405,7 +405,7 @@
   {
     "name": "Boreanos",
     "boss": true,
-    "bosstitle": "Peiniger der Schneelande",
+    "boss_title": "Peiniger der Schneelande",
     "type": "Untot",
     "hp": 225,
     "ac": 19,
@@ -445,7 +445,7 @@
   {
     "name": "Detonaroc",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Elementar",
     "hp": 20,
     "ac": 13,
@@ -476,7 +476,7 @@
   {
     "name": "Drachenmäulchen",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Pflanze",
     "hp": 65,
     "ac": 17,
@@ -516,7 +516,7 @@
   {
     "name": "Drösling",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Monstrosität",
     "hp": 65,
     "ac": 17,
@@ -547,7 +547,7 @@
   {
     "name": "Dämonenabkömmling",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Dämon",
     "hp": 160,
     "ac": 18,
@@ -584,7 +584,7 @@
   {
     "name": "Eiseskälte",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Elementar",
     "hp": 90,
     "ac": 15,
@@ -620,7 +620,7 @@
   {
     "name": "Eisflügler",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Bestie",
     "hp": 20,
     "ac": 13,
@@ -653,7 +653,7 @@
   {
     "name": "Eisgeist",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Untot",
     "hp": 130,
     "ac": 17,
@@ -692,7 +692,7 @@
   {
     "name": "Elektrabrax",
     "boss": true,
-    "bosstitle": "Peiniger des Blitzaltars",
+    "boss_title": "Peiniger des Blitzaltars",
     "type": "Monstrosität",
     "hp": 500,
     "ac": 20,
@@ -742,7 +742,7 @@
   {
     "name": "Erzknecht",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Untot",
     "hp": 30,
     "ac": 13,
@@ -777,7 +777,7 @@
   {
     "name": "Fingerkrabller",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Monstrosität",
     "hp": 95,
     "ac": 17,
@@ -815,7 +815,7 @@
   {
     "name": "Flammengrün",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Pflanze",
     "hp": 70,
     "ac": 14,
@@ -850,7 +850,7 @@
   {
     "name": "Gezeitenblick",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Monstrosität",
     "hp": 120,
     "ac": 17,
@@ -893,7 +893,7 @@
   {
     "name": "Goblin",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Humanoid",
     "hp": 20,
     "ac": 13,
@@ -923,7 +923,7 @@
   {
     "name": "Klinguschel",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Monstrosität",
     "hp": 80,
     "ac": 20,
@@ -962,7 +962,7 @@
   {
     "name": "Krokuin",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Bestie",
     "hp": 60,
     "ac": 16,
@@ -999,7 +999,7 @@
   {
     "name": "Meeresschlächter",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Monstrosität",
     "hp": 90,
     "ac": 18,
@@ -1038,7 +1038,7 @@
   {
     "name": "Mimic",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Monstrosität",
     "hp": 140,
     "ac": 17,
@@ -1072,7 +1072,7 @@
   {
     "name": "Octark",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Monstrosität",
     "hp": 80,
     "ac": 17,
@@ -1113,7 +1113,7 @@
   {
     "name": "Prellkäfer",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Bestie",
     "hp": 60,
     "ac": 19,
@@ -1146,7 +1146,7 @@
   {
     "name": "Riesenflügler",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Bestie",
     "hp": 140,
     "ac": 16,
@@ -1183,7 +1183,7 @@
   {
     "name": "Ritter",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Humanoid",
     "hp": 180,
     "ac": 18,
@@ -1217,7 +1217,7 @@
   {
     "name": "Schluckschleim",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Schleim",
     "hp": 200,
     "ac": 10,
@@ -1251,7 +1251,7 @@
   {
     "name": "Stahlschuppe",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Humanoid",
     "hp": 90,
     "ac": 17,
@@ -1291,7 +1291,7 @@
   {
     "name": "Sumpfwurm",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Bestie",
     "hp": 80,
     "ac": 15,
@@ -1331,7 +1331,7 @@
   {
     "name": "Tetravora",
     "boss": true,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Pflanze",
     "hp": 400,
     "ac": 18,
@@ -1367,7 +1367,7 @@
   {
     "name": "Voltfaden",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Elementar",
     "hp": 140,
     "ac": 16,
@@ -1404,7 +1404,7 @@
   {
     "name": "Zunderflügler",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Bestie",
     "hp": 20,
     "ac": 13,
@@ -1437,7 +1437,7 @@
   {
     "name": "Ätzschneck",
     "boss": false,
-    "bosstitle": "",
+    "boss_title": "",
     "type": "Bestie",
     "hp": 80,
     "ac": 16,
