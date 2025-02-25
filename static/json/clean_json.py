@@ -1,4 +1,6 @@
 import re
+import sys
+
 
 def repair_and_remove_newlines(filepath):
     try:
@@ -20,5 +22,5 @@ def repair_and_remove_newlines(filepath):
         print(f"Exception: {e}")
 
 if __name__ == "__main__":
-    filepath = "places.json"
-    repair_and_remove_newlines(filepath)
+    if len(sys.argv) > 1:
+        repair_and_remove_newlines(sys.argv[1])
