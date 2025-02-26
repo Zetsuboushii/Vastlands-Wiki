@@ -1,0 +1,828 @@
+[
+  {
+    "name": "Banditen-Wurfbeilpaar",
+    "type": "Äxte",
+    "prerequisites": [
+      {
+        "needed": 15,
+        "attribute": "str"
+      },
+      {
+        "needed": 13,
+        "attribute": "dex"
+      }
+    ],
+    "range": 5,
+    "range_far": 40,
+    "damage": [
+      {
+        "dice_term": "1d8+4",
+        "type": "slashing"
+      },
+      {
+        "dice_term": "1d8+6",
+        "type": "slashing"
+      }
+    ],
+    "abilities": [
+      "Duo-Waffe",
+      "Zweihändig"
+    ]
+  },
+  {
+    "name": "Blutdolch der Sehnsüchte",
+    "type": "Dolche",
+    "prerequisites": [
+      {
+        "needed": 15,
+        "attribute": "dex"
+      }
+    ],
+    "range": 5,
+    "range_far": 30,
+    "damage": [
+      {
+        "dice_term": "1d8",
+        "type": "piercing"
+      },
+      {
+        "dice_term": "2d8",
+        "type": "acid"
+      }
+    ],
+    "abilities": [
+      "Doppelter Angriff"
+    ]
+  },
+  {
+    "name": "Blutstahlritter-Großschwert",
+    "type": "Großschwerter",
+    "prerequisites": [
+      {
+        "needed": 16,
+        "attribute": "str"
+      },
+      {
+        "needed": 11,
+        "attribute": "dex"
+      }
+    ],
+    "range": 10,
+    "range_far": 0,
+    "damage": [
+      {
+        "dice_term": "3d12",
+        "type": "slashing"
+      },
+      {
+        "dice_term": "2d4",
+        "type": "thunder"
+      }
+    ],
+    "abilities": [
+      "Zweihändig"
+    ]
+  },
+  {
+    "name": "Bogen des Morgenrots",
+    "type": "Kurzbögen",
+    "prerequisites": [
+      {
+        "needed": 16,
+        "attribute": "dex"
+      }
+    ],
+    "range": 55,
+    "range_far": 80,
+    "damage": [
+      {
+        "dice_term": "3d8",
+        "type": "piercing"
+      },
+      {
+        "dice_term": "2d10",
+        "type": "fire"
+      }
+    ],
+    "abilities": [
+      "Strahl des Morgenrots",
+      "Kraft des Morgenrots"
+    ]
+  },
+  {
+    "name": "Dolch der Täuschung",
+    "type": "Dolche",
+    "prerequisites": [
+      {
+        "needed": 16,
+        "attribute": "dex"
+      }
+    ],
+    "range": 5,
+    "range_far": 30,
+    "damage": [
+      {
+        "dice_term": "3d6",
+        "type": "piercing"
+      },
+      {
+        "dice_term": "4d6",
+        "type": "psychic"
+      }
+    ],
+    "abilities": [
+    ]
+  },
+  {
+    "name": "Doppelschussbogen",
+    "type": "Kurzbögen",
+    "prerequisites": [
+      {
+        "needed": 15,
+        "attribute": "dex"
+      }
+    ],
+    "range": 60,
+    "range_far": 90,
+    "damage": [
+      {
+        "dice_term": "2d8+2",
+        "type": "piercing"
+      }
+    ],
+    "abilities": [
+      "Zweihändig",
+      "Doppelschuss"
+    ]
+  },
+  {
+    "name": "Dornenbogen",
+    "type": "Kurzbögen",
+    "prerequisites": [
+      {
+        "needed": 14,
+        "attribute": "dex"
+      }
+    ],
+    "range": 50,
+    "range_far": 80,
+    "damage": [
+      {
+        "dice_term": "2d12+4",
+        "type": "piercing"
+      },
+      {
+        "dice_term": "3d4",
+        "type": "piercing"
+      }
+    ],
+    "abilities": [
+      "Zweihändig",
+      "Dornenrankenexplosion"
+    ]
+  },
+  {
+    "name": "Drachenschlächtergroßaxt",
+    "type": "Großäxte",
+    "prerequisites": [
+      {
+        "needed": 16,
+        "attribute": "str"
+      }
+    ],
+    "range": 5,
+    "range_far": 0,
+    "damage": [
+      {
+        "dice_term": "2d12",
+        "type": "slashing"
+      },
+      {
+        "dice_term": "4d4",
+        "type": "lightning"
+      }
+    ],
+    "abilities": [
+      "Zweihändig",
+      "Drachenblitz"
+    ]
+  },
+  {
+    "name": "Einfacher Dolch",
+    "type": "Dolche",
+    "prerequisites": [
+      {
+        "needed": 10,
+        "attribute": "dex"
+      }
+    ],
+    "range": 5,
+    "range_far": 30,
+    "damage": [
+      {
+        "dice_term": "1d4",
+        "type": "piercing"
+      }
+    ],
+    "abilities": [
+      "Doppelter Angriff"
+    ]
+  },
+  {
+    "name": "Elfisches Silberjagdmesser",
+    "type": "Dolche",
+    "prerequisites": [
+      {
+        "needed": 13,
+        "attribute": "dex"
+      }
+    ],
+    "range": 5,
+    "range_far": 35,
+    "damage": [
+      {
+        "dice_term": "1d4",
+        "type": "piercing"
+      },
+      {
+        "dice_term": "1d8",
+        "type": "psychic"
+      }
+    ],
+    "abilities": [
+      "Lautloser Wanderer",
+      "Doppelter Angriff"
+    ]
+  },
+  {
+    "name": "Erzebrechender Zwergenzweihänder",
+    "type": "Großschwerter",
+    "prerequisites": [
+      {
+        "needed": 13,
+        "attribute": "str"
+      },
+      {
+        "needed": 12,
+        "attribute": "dex"
+      }
+    ],
+    "range": 10,
+    "range_far": 0,
+    "damage": [
+      {
+        "dice_term": "2d10",
+        "type": "slashing"
+      },
+      {
+        "dice_term": "2d6",
+        "type": "bludgeoning"
+      }
+    ],
+    "abilities": [
+      "Zweihändig"
+    ]
+  },
+  {
+    "name": "Gewöhnliche Armbrust",
+    "type": "Armbrüste",
+    "prerequisites": [
+      {
+        "needed": 11,
+        "attribute": "str"
+      },
+      {
+        "needed": 11,
+        "attribute": "dex"
+      }
+    ],
+    "range": 80,
+    "range_far": 320,
+    "damage": [
+      {
+        "dice_term": "2d6",
+        "type": "piercing"
+      }
+    ],
+    "abilities": [
+      "Zweihändig",
+      "Vorladen"
+    ]
+  },
+  {
+    "name": "Gewöhnlicher Kurzbogen",
+    "type": "Kurzbögen",
+    "prerequisites": [
+      {
+        "needed": 14,
+        "attribute": "dex"
+      }
+    ],
+    "range": 60,
+    "range_far": 90,
+    "damage": [
+      {
+        "dice_term": "3d6+3",
+        "type": "piercing"
+      }
+    ],
+    "abilities": [
+      "Zweihändig"
+    ]
+  },
+  {
+    "name": "Giftarmbrust",
+    "type": "Armbrüste",
+    "prerequisites": [
+      {
+        "needed": 10,
+        "attribute": "str"
+      },
+      {
+        "needed": 14,
+        "attribute": "dex"
+      }
+    ],
+    "range": 60,
+    "range_far": 300,
+    "damage": [
+      {
+        "dice_term": "2d8+5",
+        "type": "piercing"
+      },
+      {
+        "dice_term": "3d6",
+        "type": "poison"
+      }
+    ],
+    "abilities": [
+      "Zweihändig",
+      "Vorladen"
+    ]
+  },
+  {
+    "name": "Großaxt des Duellanten",
+    "type": "Großäxte",
+    "prerequisites": [
+      {
+        "needed": 14,
+        "attribute": "str"
+      }
+    ],
+    "range": 5,
+    "range_far": 0,
+    "damage": [
+      {
+        "dice_term": "2d12",
+        "type": "slashing"
+      }
+    ],
+    "abilities": [
+      "Zweihändig",
+      "Stoß"
+    ]
+  },
+  {
+    "name": "Großkriegshammer",
+    "type": "Großhämmer",
+    "prerequisites": [
+      {
+        "needed": 14,
+        "attribute": "str"
+      }
+    ],
+    "range": 5,
+    "range_far": 0,
+    "damage": [
+      {
+        "dice_term": "1d12",
+        "type": "bludgeoning"
+      }
+    ],
+    "abilities": [
+      "Zweihändig",
+      "Paralyse"
+    ]
+  },
+  {
+    "name": "Hammer des Aufsehers",
+    "type": "Großhämmer",
+    "prerequisites": [
+      {
+        "needed": 14,
+        "attribute": "str"
+      }
+    ],
+    "range": 5,
+    "range_far": 0,
+    "damage": [
+      {
+        "dice_term": "2d6",
+        "type": "bludgeoning"
+      }
+    ],
+    "abilities": [
+      "Zweihändig"
+    ]
+  },
+  {
+    "name": "Harpune",
+    "type": "Lanzen",
+    "prerequisites": [
+      {
+        "needed": 12,
+        "attribute": "dex"
+      }
+    ],
+    "range": 10,
+    "range_far": 30,
+    "damage": [
+      {
+        "dice_term": "1d4",
+        "type": "piercing"
+      }
+    ],
+    "abilities": [
+      "Widerhaken",
+      "Zweihändig"
+    ]
+  },
+  {
+    "name": "Harpunenkatapult",
+    "type": "Armbrüste",
+    "prerequisites": [
+      {
+        "needed": 15,
+        "attribute": "str"
+      },
+      {
+        "needed": 12,
+        "attribute": "dex"
+      }
+    ],
+    "range": 60,
+    "range_far": 120,
+    "damage": [
+      {
+        "dice_term": "3d8+2",
+        "type": "piercing"
+      }
+    ],
+    "abilities": [
+      "Zweihändig",
+      "Vorladen",
+      "Widerhaken"
+    ]
+  },
+  {
+    "name": "Kleiner Kriegshammer",
+    "type": "Hämmer",
+    "prerequisites": [
+      {
+        "needed": 12,
+        "attribute": "str"
+      }
+    ],
+    "range": 5,
+    "range_far": 0,
+    "damage": [
+      {
+        "dice_term": "1d8",
+        "type": "bludgeoning"
+      }
+    ],
+    "abilities": [
+    ]
+  },
+  {
+    "name": "Klinge der Herbstwinde",
+    "type": "Kurzschwerter",
+    "prerequisites": [
+      {
+        "needed": 13,
+        "attribute": "dex"
+      }
+    ],
+    "range": 5,
+    "range_far": 0,
+    "damage": [
+      {
+        "dice_term": "2d12",
+        "type": "slashing"
+      },
+      {
+        "dice_term": "5d6",
+        "type": "slashing"
+      }
+    ],
+    "abilities": [
+      "Herbstwinde"
+    ]
+  },
+  {
+    "name": "Knorriger Rapier",
+    "type": "Stichschwerter",
+    "prerequisites": [
+      {
+        "needed": 10,
+        "attribute": "dex"
+      }
+    ],
+    "range": 5,
+    "range_far": 0,
+    "damage": [
+      {
+        "dice_term": "1d10",
+        "type": "piercing"
+      }
+    ],
+    "abilities": [
+    ]
+  },
+  {
+    "name": "Leichter Speer",
+    "type": "Lanzen",
+    "prerequisites": [
+      {
+        "needed": 12,
+        "attribute": "dex"
+      }
+    ],
+    "range": 10,
+    "range_far": 25,
+    "damage": [
+      {
+        "dice_term": "1d6",
+        "type": "piercing"
+      }
+    ],
+    "abilities": [
+    ]
+  },
+  {
+    "name": "Orrin-Schwert",
+    "type": "Kurzschwerter",
+    "prerequisites": [
+      {
+        "needed": 18,
+        "attribute": "dex"
+      }
+    ],
+    "range": 5,
+    "range_far": 0,
+    "damage": [
+      {
+        "dice_term": "3d4",
+        "type": "slashing"
+      }
+    ],
+    "abilities": [
+    ]
+  },
+  {
+    "name": "Rapier des Prinzen",
+    "type": "Stichschwerter",
+    "prerequisites": [
+      {
+        "needed": 16,
+        "attribute": "dex"
+      }
+    ],
+    "range": 5,
+    "range_far": 0,
+    "damage": [
+      {
+        "dice_term": "1d10",
+        "type": "piercing"
+      },
+      {
+        "dice_term": "1d4",
+        "type": "radiant"
+      }
+    ],
+    "abilities": [
+    ]
+  },
+  {
+    "name": "Rapier",
+    "type": "Stichschwerter",
+    "prerequisites": [
+      {
+        "needed": 13,
+        "attribute": "dex"
+      }
+    ],
+    "range": 5,
+    "range_far": 0,
+    "damage": [
+      {
+        "dice_term": "1d8",
+        "type": "piercing"
+      }
+    ],
+    "abilities": [
+    ]
+  },
+  {
+    "name": "Ritterhellebarde des Feueraspektes",
+    "type": "Hellebarden",
+    "prerequisites": [
+      {
+        "needed": 11,
+        "attribute": "str"
+      },
+      {
+        "needed": 14,
+        "attribute": "dex"
+      }
+    ],
+    "range": 10,
+    "range_far": 0,
+    "damage": [
+      {
+        "dice_term": "2d10",
+        "type": "slashing"
+      },
+      {
+        "dice_term": "1d4",
+        "type": "fire"
+      }
+    ],
+    "abilities": [
+      "Zweihändig"
+    ]
+  },
+  {
+    "name": "Schleier der Rache",
+    "type": "Großschwerter",
+    "prerequisites": [
+      {
+        "needed": 18,
+        "attribute": "str"
+      },
+      {
+        "needed": 16,
+        "attribute": "wis"
+      }
+    ],
+    "range": 10,
+    "range_far": 0,
+    "damage": [
+      {
+        "dice_term": "4d6",
+        "type": "slashing"
+      },
+      {
+        "dice_term": "2d6",
+        "type": "necrotic"
+      }
+    ],
+    "abilities": [
+      "Zweihändig",
+      "Racheschleier"
+    ]
+  },
+  {
+    "name": "Schwere Armbrust",
+    "type": "Armbrüste",
+    "prerequisites": [
+      {
+        "needed": 12,
+        "attribute": "str"
+      },
+      {
+        "needed": 12,
+        "attribute": "dex"
+      }
+    ],
+    "range": 100,
+    "range_far": 400,
+    "damage": [
+      {
+        "dice_term": "1d10",
+        "type": "piercing"
+      }
+    ],
+    "abilities": [
+      "Zweihändig",
+      "Vorladen"
+    ]
+  },
+  {
+    "name": "Simpler Langbogen",
+    "type": "Langbögen",
+    "prerequisites": [
+      {
+        "needed": 12,
+        "attribute": "str"
+      },
+      {
+        "needed": 14,
+        "attribute": "dex"
+      }
+    ],
+    "range": 150,
+    "range_far": 600,
+    "damage": [
+      {
+        "dice_term": "1d8",
+        "type": "piercing"
+      }
+    ],
+    "abilities": [
+      "Zweihändig"
+    ]
+  },
+  {
+    "name": "Splittriger Kurzbogen",
+    "type": "Kurzbögen",
+    "prerequisites": [
+      {
+        "needed": 14,
+        "attribute": "dex"
+      }
+    ],
+    "range": 60,
+    "range_far": 90,
+    "damage": [
+      {
+        "dice_term": "2d8",
+        "type": "piercing"
+      }
+    ],
+    "abilities": [
+      "Zweihändig"
+    ]
+  },
+  {
+    "name": "Streitkolben",
+    "type": "Hämmer",
+    "prerequisites": [
+      {
+        "needed": 13,
+        "attribute": "str"
+      }
+    ],
+    "range": 5,
+    "range_far": 0,
+    "damage": [
+      {
+        "dice_term": "1d8",
+        "type": "bludgeoning"
+      }
+    ],
+    "abilities": [
+    ]
+  },
+  {
+    "name": "Tintenfass des Assassinen",
+    "type": "Langbögen",
+    "prerequisites": [
+      {
+        "needed": 12,
+        "attribute": "str"
+      },
+      {
+        "needed": 17,
+        "attribute": "dex"
+      }
+    ],
+    "range": 200,
+    "range_far": 250,
+    "damage": [
+      {
+        "dice_term": "2d8",
+        "type": "piercing"
+      }
+    ],
+    "abilities": [
+      "Zweihändig",
+      "Tintenfass"
+    ]
+  },
+  {
+    "name": "Zerbrochener Fahnenmast",
+    "type": "Kampfstäbe",
+    "prerequisites": [
+      {
+        "needed": 12,
+        "attribute": "str"
+      }
+    ],
+    "range": 10,
+    "range_far": 0,
+    "damage": [
+      {
+        "dice_term": "2d10",
+        "type": "bludeoning"
+      }
+    ],
+    "abilities": [
+      "Zweihändig",
+      "Schwungangriff",
+      "Schmettern und Stechen",
+      "Zerfledderte Fahne",
+      "Deckenbrecher"
+    ]
+  }
+]
