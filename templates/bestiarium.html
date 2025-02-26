@@ -45,7 +45,7 @@
                             <td>Bewegung</td>
                             <td>
                                 <ul>
-                                    {% for move in enemy.movement | sort %}
+                                    {% for move in enemy.movement | sort(attribute='type') %}
                                         <li>{{ move.type | capitalize }} ({{ move.range }} ft.)</li>
                                     {% endfor %}
                                 </ul>
