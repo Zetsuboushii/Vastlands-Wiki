@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Winterfest | Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../../static/css/base.css">
+    <link rel="stylesheet" href="../../static/css/theologarium.css">
+</head>
+<body>
+
+<link rel="stylesheet" href="../../static/css/banner.css">
+<link rel="shortcut icon" href="../../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../../static/ui/banner-1.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../../static/imgs/logo.png" alt="" class="logo" style="left: -40px; position: relative">
+            <a href="../../index.html" style="left: -40px; position: relative">Tome of the Vastlands</a>
+            <sub style="left: -40px; position: relative">b3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('../../characters/index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('../../compendium/index.html')">Kompendien</button>
+        
+            <button class="nav-button" onclick="loadPage('../../places/index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('../../tierlist/index.html')">Tierlist</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        <div class="theologarium-container">
+            <div class="theologarium-row">
+                <div class="theologarium-name">
+                    <h1>Winterfest</h1>
+                </div>
+            </div>
+            <div class="theologarium-row">
+                <div class="theologarium-text-box">
+                    
+                        <div class="theologarium-text-heading"><h2>Kalte Winter in Faergria</h2></div>
+                        <p>Die Ursprünge des Winterfests liegen in der Vergangenheit, als die harten Winter die Gemeinschaften von Faergria auf           eine           harte           Probe           stellten.           Die           Wintermonate           waren           oft           von           Hunger           und           Einsamkeit           geprägt,           weshalb           die           Menschen           begannen,           in           Glaube           und           Hoffnung           an           die           lichtbringende           Göttin           Justicia           und           die           Hohefürstin           der           Liebe,           Avila,           sich           gegenseitig           zu           unterstützen           und           durch           kleine           Geschenke           und           gemeinsame           Mahlzeiten           Trost           zu           spenden.           Avila,           die           Verkörperung           von           Mitgefühl,           Zuneigung           und           Liebe,           lehrte           die           Menschen,           dass           wahre           Stärke           in           der           gegenseitigen           Fürsorge           liegt.           So           wurde           das           Winterfest           geboren           –           eine           Tradition,           die           bis           heute           fortbesteht           und           das           Geben           und           Teilen           in           den           Vordergrund           stellt           ;           heute           auch           unabhängig           von           Glaube           und           Göttern.           </p>
+                        <hr>
+                    
+                        <div class="theologarium-text-heading"><h2>Das Geben</h2></div>
+                        <p>Im Zentrum des Winterfests steht das Geben. Jede Familie bereitet Geschenke für ihre Liebsten und Nachbarn vor. Diese           Gaben           müssen           nicht           groß           oder           teuer           sein,           sondern           kommen           oft           in           Form           von           selbstgemachten           Gegenständen           oder           kleinen,           symbolischen           Geschenken,           die           den           Zusammenhalt           stärken.           Kinder           bereiten           beispielsweise           kleine           Puppen           oder           Spielzeuge           aus           Holz           vor,           während           Erwachsene           nützliche           Gegenstände           wie           warme           Kleidung           oder           handgemachte           Werkzeuge           austauschen.           Der           Höhepunkt           des           Winterfests           ist           dessen           Abend,           an           dem           Familien           sich           in           ihren           Häusern           versammeln,           um           zu           einem           besinnlichen           Abendmahl           zusammenzukommen,           die           gemeinsame           Zeit           mit           angeregten           Gesprächen           zu           genießen           und           anschließend           die           Gaben           auszutauschen.           Dabei           geht           es           weniger           um           den           materiellen           Wert           der           Geschenke           als           um           den           Akt           des           Schenkens           selbst.           Es           ist           Tradition,           das           beste           Stück           des           Festmahls           für           jemanden           zurückzulegen,           der           besonders           viel           Unterstützung           braucht           –           ein           Ausdruck           der           Nächstenliebe           und           des           Mitgefühls,           im           Geiste           Avilas.           </p>
+                        <hr>
+                    
+                        <div class="theologarium-text-heading"><h2>Zusammenkunft mit Familie und Freunden</h2></div>
+                        <p>Das Winterfest ist eine Zeit, in der die Familie und enge Freunde im Mittelpunkt stehen. Viele Menschen reisen aus allen           Teilen           Faergrias           zusammen,           um           in           dieser           besonderen           Zeit           mit           ihren           Liebsten           vereint           zu           sein.           Es           ist           auch           eine           Zeit,           alte           Konflikte           beizulegen           und           sich           mit           jenen           zu           versöhnen,           mit           denen           man           Streit           hatte.           Man           glaubt,           dass           das           Winterfest           die           Herzen           erwärmt           und           Harmonie           schafft,           die           über           den           Winter           hinaus           andauert.           Neben           den           familiären           Feiern           gibt           es           auch           öffentliche           Feste,           bei           denen           das           ganze           Dorf           oder           die           Stadt           zusammenkommt,           um           gemeinsam           zu           essen,           zu           singen           und           Geschichten           zu           erzählen.           Diese           Zusammenkünfte           sollen           daran           erinnern,           dass           niemand           im           Winter           alleine           sein           muss           und           dass           die           Gemeinschaft           die           Kälte           des           Winters           lindern           kann.           </p>
+                        <hr>
+                    
+                        <div class="theologarium-text-heading"><h2>Das Festmahl</h2></div>
+                        <p>Ein weiteres zentrales Element des Winterfests ist das Festmahl. Traditionell bringen die Familien ihre besten Speisen           auf           den           Tisch,           darunter           Fleisch,           Brot,           Obst           und           Kuchen,           die           sie           teilen.           Es           ist           üblich,           dass           auch           ärmere           Mitglieder           der           Gemeinschaft           eingeladen           werden,           damit           niemand           an           diesem           besonderen           Tag           hungern           muss.           Am           Abend           des           Winterfests           singen           die           Menschen           oft           Lieder           über           Freundschaft,           Heimat           und           Zusammenhalt.           Es           ist           auch           Brauch,           Geschichten           von           vergangenen           Winterfesten           zu           erzählen,           um           die           Erinnerungen           an           vergangene           Generationen           und           deren           Gaben           zu           bewahren.           </p>
+                        <hr>
+                    
+                        <div class="theologarium-text-heading"><h2>Entzünden der Winterlichter</h2></div>
+                        <p>Eine besondere Tradition ist das Anzünden der Winterlichter. Diese Kerzen oder Laternen werden in den Fenstern und auf           den           Straßen           aufgestellt,           um           symbolisch           den           Weg           für           Freunde           und           Familien           zu           weisen,           die           unterwegs           sind,           aber           auch,           um           an           jene           zu           erinnern,           die           nicht           mehr           unter           uns           weilen.           Das           Licht           steht           für           das           wärmende           Band           der           Menschlichkeit,           das           die           Menschen           auch           in           der           Dunkelheit           des           Winters           verbindet,           ein           Symbol           der           Liebe,           das           im           Geiste           Avilas           strahlt.           Das           Winterfest           in           Faergria           ist           nicht           nur           ein           Fest           der           Freude,           sondern           auch           ein           Fest           der           Nächstenliebe.           Es           erinnert           daran,           wie           wichtig           es           ist,           füreinander           da           zu           sein,           besonders           in           Zeiten           der           Kälte           und           Dunkelheit.           Die           Tradition           des           Schenkens,           des           Zusammenkommens           und           der           Versöhnung           macht           das           Winterfest           zu           einem           Höhepunkt           des           Jahres,           der           die           Menschen           daran           erinnert,           dass           sie           gemeinsam           stärker           sind           als           die           Winterstürme.           In           der           dunkelsten           Zeit           des           Jahres           zeigt           das           Winterfest,           dass           die           Wärme           der           zwischenmenschlichen           Beziehungen,           inspiriert           durch           die           Liebe           der           Hohefürstin           Avila,           die           größte           Rolle           spielt.           </p>
+                        <hr>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
