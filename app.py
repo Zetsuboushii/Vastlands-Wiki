@@ -1,6 +1,6 @@
 import random
 from datetime import date
-from flask import Flask, render_template, request, g
+from flask import Flask, render_template, request, g, redirect
 import json
 
 app = Flask(__name__, static_folder="static")
@@ -116,10 +116,8 @@ def character(character_name):
             break
         else:
             for alias in char["aliases"]:
-                print(alias['alias'])
                 if character_name == alias['alias'].lower().replace(" ", "-"):
                     data = char.copy()
-                    print("bögges")
                     break
 
 
@@ -141,6 +139,8 @@ def character(character_name):
 
     character_data = data
 
+    if character_data is None:
+        return redirect('/')
     return render_template('character.html', character=character_data)
 
 
@@ -231,7 +231,6 @@ def compendium_entry(compendium_name, entry_name):
             return render_template('herbarium.html')
         case "gladiarium":
             abilities = []
-            print(entry)
             for weapon_ability in entry["abilities"]:
                 for ability in abilities_list:
                     if ability['name'] == weapon_ability:
