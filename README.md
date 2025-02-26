@@ -25,6 +25,14 @@ Die Seite ist unter https://tome.zetsuboushii.site/ erreichbar.
 
 Alle JSON-Files können unter dem Base-Path https://tome.zetsuboushii.site/static/json/ verfügbar.
 
+### `current_date.json`
+
+`current_date.json` ist ein Objekt mit folgenden Feldern:
+
+| Feldname              | Datentyp | Erklärung               |
+|-----------------------|----------|-------------------------|
+| `current_ingame_date` | `string` | Aktuelles In-game Datum |
+
 ### `characters.json`
 
 `characters.json` ist ein Array von Charakter-Objekten. Ein Charakter besteht aus folgenden Feldern:
