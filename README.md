@@ -11,7 +11,7 @@
 Dieses Wiki dient als ergänzendes Tool für Sessions, indem Lore und Gameplay-Mechaniken schnell und einfach nachgeschaut
 werden können.
 
-Die Seite ist unter https://v3.tome.zetsuboushii.site/ erreichbar.
+Die Seite ist unter https://tome.zetsuboushii.site/ erreichbar.
 
 <p align="center"><img src="/static/imgs/logo.png" height="100px" alt=""/></p>
 
@@ -23,7 +23,7 @@ Die Seite ist unter https://v3.tome.zetsuboushii.site/ erreichbar.
 
 ## 3. API-Referenz
 
-Alle JSON-Files können unter dem Base-Path https://v3.tome.zetsuboushii.site/static/json/ verfügbar.
+Alle JSON-Files können unter dem Base-Path https://tome.zetsuboushii.site/static/json/ verfügbar.
 
 ### `characters.json`
 
