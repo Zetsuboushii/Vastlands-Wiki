@@ -127,6 +127,7 @@
       .home-birthdays-box {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
         margin-bottom: 10px;
         width: 330px;
