@@ -1,12 +1,21 @@
 import random
 from datetime import date
-from flask import Flask, render_template, request, g, redirect
+
+from flask import Flask, render_template, request, g, redirect, url_for
 import json
 
+from flask_frozen import Freezer
+
 app = Flask(__name__, static_folder="static")
+freezer = Freezer(app)
 
 app.config['FREEZER_RELATIVE_URLS'] = True
 app.config['FREEZER_DEFAULT_MIMETYPE'] = 'text/html'
+
+
+def load_from_json(filename):
+    with open(f'static/json/{filename}.json', encoding="utf8") as file:
+        return json.load(file)
 
 
 @app.before_request
@@ -14,7 +23,7 @@ def before_request():
     g.site_title = "Tome of the Vastlands"
     g.version_number = "b3.⛩"
 
-    g.ingame_date = "25.12.394"
+    g.ingame_date = load_from_json("current_date")["current_ingame_date"]
     g.lore_days = ["Lunesdag", "Flamdag", "Quellsdag", "Waldsdag", "Goldag", "Terrasdag", "Sunnesdag"]
     g.lore_months = ["Eismond", "Frostmond", "Saatmond", "Blütenmond", "Wonnemond", "Heumond", "Sonnenmond",
                      "Erntemond", "Fruchtmond", "Weinmond", "Nebelmond", "Julmond"]
@@ -37,11 +46,6 @@ def before_request():
     g.random_banner = f'ui/banner-{random.randint(1, 9)}.png'
 
 
-def load_from_json(filename):
-    with open(f'static/json/{filename}.json', encoding="utf8") as file:
-        return json.load(file)
-
-
 def find_place_recursively(place_list, place_slug, parent_name=None):
     for place in place_list:
         if place['name'].lower().replace(" ", "-") == place_slug:
@@ -57,7 +61,6 @@ def find_place_recursively(place_list, place_slug, parent_name=None):
 
 news_list = load_from_json("news")
 compendium_list = load_from_json("compendia")
-calendar_list = load_from_json("calendar")
 enemy_list = load_from_json("bestiarium")
 actions_list = load_from_json("actions")
 places_list = load_from_json("places")
@@ -67,6 +70,7 @@ abilities_list = load_from_json("abilities")
 @app.route('/')
 def index():
     characters_list = load_from_json("characters")
+    calendar_list = load_from_json("calendar")
 
     birthday_characters = []
     for char in characters_list:
@@ -119,7 +123,6 @@ def character(character_name):
                 if character_name == alias['alias'].lower().replace(" ", "-"):
                     data = char.copy()
                     break
-
 
     if data is not None and data.get('birthday') != "":
         ingame_day, ingame_month, ingame_year = map(int, g.ingame_date.split('.'))
@@ -240,6 +243,8 @@ def compendium_entry(compendium_name, entry_name):
 
 @app.route('/holidays/<holiday_name>/')
 def holidays(holiday_name):
+    calendar_list = load_from_json("calendar")
+
     entry = None
 
     for entry_json in calendar_list:
@@ -247,6 +252,9 @@ def holidays(holiday_name):
             entry = entry_json
 
     return render_template('holidays.html', entry=entry)
+
+
+
 
 
 if __name__ == '__main__':

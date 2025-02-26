@@ -143,7 +143,7 @@
                 cell.classList.add("holiday");
 
                 matchingHolidays.forEach(h => {
-                    tooltipItems.push(`<a href="/holidays/${h.name.toLowerCase().replace(" ", "-")}" class="tooltip-item" data-type="holiday">` + h.name + '</a>');
+                    tooltipItems.push(`<a href="holidays/${h.name.toLowerCase().replace(" ", "-")}" class="tooltip-item" data-type="holiday">` + h.name + '</a>');
                 });
             }
 
@@ -161,7 +161,7 @@
                 cell.classList.add("birthday");
 
                 matchingBirthdays.forEach(ch => {
-                    tooltipItems.push(`<a href="/characters/${ch.name.toLowerCase().replace(" ", "-")}" class="tooltip-item" data-type="birthday">` + ch.name + '</a>');
+                    tooltipItems.push(`<a href="characters/${ch.name.toLowerCase().replace(" ", "-")}" class="tooltip-item" data-type="birthday">` + ch.name + '</a>');
                 });
             }
 

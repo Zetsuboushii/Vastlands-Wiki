@@ -32,7 +32,7 @@
         </div>
 
         <div class="characters-container">
-            {% for character in characters %}
+            {% for character in characters | sort(attribute='name') %}
                 <div class="characters-element" data-letter="{{ character.name[0]|upper }}"
                      data-nationality="{{ character.nationality }}">
                     {% set character_name = character.name | lower | replace(" ", "-") %}
