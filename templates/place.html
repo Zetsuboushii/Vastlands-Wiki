@@ -29,21 +29,19 @@
                     <div class="character-data-field-title"><h4>Allgemeine Informationen</h4></div>
                     <table>
                         <tbody>
-                        {% if place.langs %}
-                            <tr>
-                                <td>Landessprache</td>
-                                <td>
-                                    {% for lang in place.langs | sort %}
-                                        {{ lang }}{{ ", " if not loop.last else "" }}
-                                    {% endfor %}
-                                </td>
-                            </tr>
-                        {% endif %}
-                        {% if place.natlang %}
-                            <tr>
-                                <td>In Landessprache</td>
-                                <td>{{ place.natlang[0] }}, <i>(lit. {{ place.natlang[1] }})</i></td>
-                            </tr>
+                        {% if place.language %}
+                            {% if place.language.natlang %}
+                                <tr>
+                                    <td>Landessprache</td>
+                                    <td>{{ place.language.natlang }}</td>
+                                </tr>
+                            {% endif %}
+                            {% if place.language.natname %}
+                                <tr>
+                                    <td>In Landessprache</td>
+                                    <td>{{ place.language.natname }}, (wörtl. <i>{{ place.language.translation }}</i> )</td>
+                                </tr>
+                            {% endif %}
                         {% endif %}
                         <tr>
                             <td>Art des Ortes</td>
@@ -107,10 +105,10 @@
                                 <tr>
                                     <td>Regierende Person</td>
                                     <td>
-                                        {% set c_name = place.leader[0] | lower | replace(" ", "-") %}
+                                        {% set c_name = place.leader.name | lower | replace(" ", "-") %}
                                         <a href="{{ url_for('character', character_name=c_name) }}">
-                                            {{ place.leader[0] }}
-                                        </a><small>({{ place.leader[1] }})</small>
+                                            {{ place.leader.name }}
+                                        </a><small>({{ place.leader.type }})</small>
                                     </td>
                                 </tr>
                             {% endif %}

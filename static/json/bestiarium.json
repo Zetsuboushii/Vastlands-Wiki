@@ -1,27 +1,28 @@
 [
   {
     "name": "Abwassernager",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Ungeziefer",
     "hp": 30,
     "ac": 15,
     "movement": [
-      [
-        "laufend",
-        "40"
-      ],
-      [
-        "schwimmend",
-        "30"
-      ]
+      {
+        "type": "laufend",
+        "range": 40
+      },
+      {
+        "type": "schwimmend",
+        "range": 30
+      }
     ],
-    "str": 0,
-    "dex": 3,
-    "con": 2,
-    "int": -3,
-    "wis": -2,
-    "cha": -1,
+    "abilities": {
+      "str": 0,
+      "dex": 3,
+      "con": 2,
+      "int": -3,
+      "wis": -2,
+      "cha": -1
+    },
     "weaknesses": [
       "Feuer"
     ],
@@ -39,23 +40,24 @@
   },
   {
     "name": "Abyssor",
-    "boss": true,
-    "boss_title": "Peiniger des Meerestempels",
+    "bosstitle": "Peiniger des Meerestempels",
     "type": "Monstrosität",
     "hp": 400,
     "ac": 20,
     "movement": [
-      [
-        "schwimmend",
-        "100"
-      ]
+      {
+        "type": "schwimmend",
+        "range": 100
+      }
     ],
-    "str": 7,
-    "dex": 2,
-    "con": 6,
-    "int": 2,
-    "wis": 3,
-    "cha": 4,
+    "abilities": {
+      "str": 7,
+      "dex": 2,
+      "con": 6,
+      "int": 2,
+      "wis": 3,
+      "cha": 4
+    },
     "weaknesses": [
       "Blitz"
     ],
@@ -85,23 +87,24 @@
   },
   {
     "name": "Aerocacti",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Pflanze",
     "hp": 40,
     "ac": 16,
     "movement": [
-      [
-        "fliegend",
-        "25"
-      ]
+      {
+        "type": "fliegend",
+        "range": 25
+      }
     ],
-    "str": 1,
-    "dex": 2,
-    "con": 1,
-    "int": 2,
-    "wis": 2,
-    "cha": 5,
+    "abilities": {
+      "str": 1,
+      "dex": 2,
+      "con": 1,
+      "int": 2,
+      "wis": 2,
+      "cha": 5
+    },
     "weaknesses": [
       "Feuer",
       "Schnitt",
@@ -121,23 +124,24 @@
   },
   {
     "name": "Arachnia",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Bestie",
     "hp": 40,
     "ac": 18,
     "movement": [
-      [
-        "laufend",
-        "50"
-      ]
+      {
+        "type": "laufend",
+        "range": 50
+      }
     ],
-    "str": 3,
-    "dex": 6,
-    "con": 4,
-    "int": 1,
-    "wis": 2,
-    "cha": -4,
+    "abilities": {
+      "str": 3,
+      "dex": 6,
+      "con": 4,
+      "int": 1,
+      "wis": 2,
+      "cha": -4
+    },
     "weaknesses": [
       "Feuer",
       "Blitz"
@@ -157,23 +161,24 @@
   },
   {
     "name": "Babasu",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Abscheulichkeit",
     "hp": 55,
     "ac": 16,
     "movement": [
-      [
-        "schwebend",
-        "30"
-      ]
+      {
+        "type": "schwebend",
+        "range": 30
+      }
     ],
-    "str": 1,
-    "dex": 3,
-    "con": 2,
-    "int": 5,
-    "wis": 4,
-    "cha": 6,
+    "abilities": {
+      "str": 1,
+      "dex": 3,
+      "con": 2,
+      "int": 5,
+      "wis": 4,
+      "cha": 6
+    },
     "weaknesses": [
       "Heilige Magie"
     ],
@@ -189,23 +194,24 @@
   },
   {
     "name": "Bandagenwandler",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Untot",
     "hp": 70,
     "ac": 18,
     "movement": [
-      [
-        "laufend",
-        "10"
-      ]
+      {
+        "type": "laufend",
+        "range": 10
+      }
     ],
-    "str": 6,
-    "dex": -3,
-    "con": 6,
-    "int": -1,
-    "wis": 2,
-    "cha": -3,
+    "abilities": {
+      "str": 6,
+      "dex": -3,
+      "con": 6,
+      "int": -1,
+      "wis": 2,
+      "cha": -3
+    },
     "weaknesses": [
       "Heilige Magie",
       "Feuer"
@@ -224,23 +230,24 @@
   },
   {
     "name": "Bandit",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Humanoid",
     "hp": 80,
     "ac": 17,
     "movement": [
-      [
-        "laufend",
-        "40"
-      ]
+      {
+        "type": "laufend",
+        "range": 40
+      }
     ],
-    "str": 2,
-    "dex": 3,
-    "con": 1,
-    "int": 0,
-    "wis": 1,
-    "cha": 0,
+    "abilities": {
+      "str": 2,
+      "dex": 3,
+      "con": 1,
+      "int": 0,
+      "wis": 1,
+      "cha": 0
+    },
     "weaknesses": [
     ],
     "resistances": [
@@ -257,23 +264,24 @@
   },
   {
     "name": "Bestienkrieger",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Monstrosität",
     "hp": 100,
     "ac": 18,
     "movement": [
-      [
-        "laufend",
-        "30"
-      ]
+      {
+        "type": "laufend",
+        "range": 30
+      }
     ],
-    "str": 6,
-    "dex": 1,
-    "con": 5,
-    "int": -2,
-    "wis": 2,
-    "cha": -1,
+    "abilities": {
+      "str": 6,
+      "dex": 1,
+      "con": 5,
+      "int": -2,
+      "wis": 2,
+      "cha": -1
+    },
     "weaknesses": [
       "Feuer"
     ],
@@ -292,27 +300,28 @@
   },
   {
     "name": "Blitzschneck",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Bestie",
     "hp": 80,
     "ac": 16,
     "movement": [
-      [
-        "kriechend",
-        "10"
-      ],
-      [
-        "kletternd",
-        "10"
-      ]
+      {
+        "type": "kriechend",
+        "range": 10
+      },
+      {
+        "type": "kletternd",
+        "range": 10
+      }
     ],
-    "str": 2,
-    "dex": -4,
-    "con": 4,
-    "int": 2,
-    "wis": 3,
-    "cha": 1,
+    "abilities": {
+      "str": 2,
+      "dex": -4,
+      "con": 4,
+      "int": 2,
+      "wis": 3,
+      "cha": 1
+    },
     "weaknesses": [
       "Kälte"
     ],
@@ -332,23 +341,24 @@
   },
   {
     "name": "Blutstahlritter",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Untot",
     "hp": 200,
     "ac": 20,
     "movement": [
-      [
-        "laufend",
-        "20"
-      ]
+      {
+        "type": "laufend",
+        "range": 20
+      }
     ],
-    "str": 6,
-    "dex": 1,
-    "con": 5,
-    "int": 1,
-    "wis": 2,
-    "cha": 3,
+    "abilities": {
+      "str": 6,
+      "dex": 1,
+      "con": 5,
+      "int": 1,
+      "wis": 2,
+      "cha": 3
+    },
     "weaknesses": [
       "Heilige Magie"
     ],
@@ -368,27 +378,28 @@
   },
   {
     "name": "Bohrschnabel",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Bestie",
     "hp": 30,
     "ac": 13,
     "movement": [
-      [
-        "fliegend",
-        "50"
-      ],
-      [
-        "laufend",
-        "10"
-      ]
+      {
+        "type": "fliegend",
+        "range": 50
+      },
+      {
+        "type": "laufend",
+        "range": 10
+      }
     ],
-    "str": 1,
-    "dex": 4,
-    "con": 1,
-    "int": 2,
-    "wis": 3,
-    "cha": 0,
+    "abilities": {
+      "str": 1,
+      "dex": 4,
+      "con": 1,
+      "int": 2,
+      "wis": 3,
+      "cha": 0
+    },
     "weaknesses": [
       "Blitz"
     ],
@@ -404,23 +415,24 @@
   },
   {
     "name": "Boreanos",
-    "boss": true,
-    "boss_title": "Peiniger der Schneelande",
+    "bosstitle": "Peiniger der Schneelande",
     "type": "Untot",
     "hp": 225,
     "ac": 19,
     "movement": [
-      [
-        "schwebend",
-        "80"
-      ]
+      {
+        "type": "schwebend",
+        "range": 80
+      }
     ],
-    "str": 5,
-    "dex": 2,
-    "con": 4,
-    "int": 1,
-    "wis": 3,
-    "cha": 4,
+    "abilities": {
+      "str": 5,
+      "dex": 2,
+      "con": 4,
+      "int": 1,
+      "wis": 3,
+      "cha": 4
+    },
     "weaknesses": [
       "Feuer"
     ],
@@ -444,23 +456,24 @@
   },
   {
     "name": "Detonaroc",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Elementar",
     "hp": 20,
     "ac": 13,
     "movement": [
-      [
-        "rollend",
-        "25"
-      ]
+      {
+        "type": "rollend",
+        "range": 25
+      }
     ],
-    "str": 4,
-    "dex": 4,
-    "con": 1,
-    "int": -5,
-    "wis": -5,
-    "cha": -5,
+    "abilities": {
+      "str": 4,
+      "dex": 4,
+      "con": 1,
+      "int": -5,
+      "wis": -5,
+      "cha": -5
+    },
     "weaknesses": [
       "Psychisch"
     ],
@@ -475,23 +488,24 @@
   },
   {
     "name": "Drachenmäulchen",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Pflanze",
     "hp": 65,
     "ac": 17,
     "movement": [
-      [
-        "hüpfend",
-        "35"
-      ]
+      {
+        "type": "hüpfend",
+        "range": 35
+      }
     ],
-    "str": 4,
-    "dex": 3,
-    "con": 1,
-    "int": 2,
-    "wis": 1,
-    "cha": 4,
+    "abilities": {
+      "str": 4,
+      "dex": 3,
+      "con": 1,
+      "int": 2,
+      "wis": 1,
+      "cha": 4
+    },
     "weaknesses": [
       "Feuer",
       "Gift",
@@ -515,23 +529,24 @@
   },
   {
     "name": "Drösling",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Monstrosität",
     "hp": 65,
     "ac": 17,
     "movement": [
-      [
-        "fliegend",
-        "40"
-      ]
+      {
+        "type": "fliegend",
+        "range": 40
+      }
     ],
-    "str": -2,
-    "dex": 2,
-    "con": 1,
-    "int": 0,
-    "wis": 2,
-    "cha": 0,
+    "abilities": {
+      "str": -2,
+      "dex": 2,
+      "con": 1,
+      "int": 0,
+      "wis": 2,
+      "cha": 0
+    },
     "weaknesses": [
       "Kälte"
     ],
@@ -546,23 +561,24 @@
   },
   {
     "name": "Dämonenabkömmling",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Dämon",
     "hp": 160,
     "ac": 18,
     "movement": [
-      [
-        "laufend",
-        "30"
-      ]
+      {
+        "type": "laufend",
+        "range": 30
+      }
     ],
-    "str": 5,
-    "dex": 3,
-    "con": 4,
-    "int": 1,
-    "wis": 2,
-    "cha": 3,
+    "abilities": {
+      "str": 5,
+      "dex": 3,
+      "con": 4,
+      "int": 1,
+      "wis": 2,
+      "cha": 3
+    },
     "weaknesses": [
       "Heilige Magie"
     ],
@@ -583,23 +599,24 @@
   },
   {
     "name": "Eiseskälte",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Elementar",
     "hp": 90,
     "ac": 15,
     "movement": [
-      [
-        "rutschend",
-        "10"
-      ]
+      {
+        "type": "rutschend",
+        "range": 10
+      }
     ],
-    "str": 4,
-    "dex": -1,
-    "con": 5,
-    "int": -3,
-    "wis": 1,
-    "cha": -2,
+    "abilities": {
+      "str": 4,
+      "dex": -1,
+      "con": 5,
+      "int": -3,
+      "wis": 1,
+      "cha": -2
+    },
     "weaknesses": [
       "Feuer",
       "Stumpf"
@@ -619,23 +636,24 @@
   },
   {
     "name": "Eisflügler",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Bestie",
     "hp": 20,
     "ac": 13,
     "movement": [
-      [
-        "fliegend",
-        "60"
-      ]
+      {
+        "type": "fliegend",
+        "range": 60
+      }
     ],
-    "str": -2,
-    "dex": 4,
-    "con": 1,
-    "int": -3,
-    "wis": 1,
-    "cha": -2,
+    "abilities": {
+      "str": -2,
+      "dex": 4,
+      "con": 1,
+      "int": -3,
+      "wis": 1,
+      "cha": -2
+    },
     "weaknesses": [
       "Feuer"
     ],
@@ -652,23 +670,24 @@
   },
   {
     "name": "Eisgeist",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Untot",
     "hp": 130,
     "ac": 17,
     "movement": [
-      [
-        "schwebend",
-        "40"
-      ]
+      {
+        "type": "schwebend",
+        "range": 40
+      }
     ],
-    "str": 3,
-    "dex": 3,
-    "con": 4,
-    "int": 2,
-    "wis": 3,
-    "cha": 5,
+    "abilities": {
+      "str": 3,
+      "dex": 3,
+      "con": 4,
+      "int": 2,
+      "wis": 3,
+      "cha": 5
+    },
     "weaknesses": [
       "Feuer",
       "Heilige Magie"
@@ -691,27 +710,28 @@
   },
   {
     "name": "Elektrabrax",
-    "boss": true,
-    "boss_title": "Peiniger des Blitzaltars",
+    "bosstitle": "Peiniger des Blitzaltars",
     "type": "Monstrosität",
     "hp": 500,
     "ac": 20,
     "movement": [
-      [
-        "laufend",
-        "50"
-      ],
-      [
-        "grabend",
-        "70"
-      ]
+      {
+        "type": "laufend",
+        "range": 50
+      },
+      {
+        "type": "grabend",
+        "range": 70
+      }
     ],
-    "str": 6,
-    "dex": 1,
-    "con": 5,
-    "int": 2,
-    "wis": 3,
-    "cha": 0,
+    "abilities": {
+      "str": 6,
+      "dex": 1,
+      "con": 5,
+      "int": 2,
+      "wis": 3,
+      "cha": 0
+    },
     "weaknesses": [
       "Stumpf",
       "Blitz"
@@ -741,23 +761,24 @@
   },
   {
     "name": "Erzknecht",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Untot",
     "hp": 30,
     "ac": 13,
     "movement": [
-      [
-        "laufend",
-        "20"
-      ]
+      {
+        "type": "laufend",
+        "range": 20
+      }
     ],
-    "str": 2,
-    "dex": 1,
-    "con": 1,
-    "int": 0,
-    "wis": 0,
-    "cha": 0,
+    "abilities": {
+      "str": 2,
+      "dex": 1,
+      "con": 1,
+      "int": 0,
+      "wis": 0,
+      "cha": 0
+    },
     "weaknesses": [
       "Heilige Magie",
       "Blitz"
@@ -776,23 +797,24 @@
   },
   {
     "name": "Fingerkrabller",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Monstrosität",
     "hp": 95,
     "ac": 17,
     "movement": [
-      [
-        "krabbelnd",
-        "30"
-      ]
+      {
+        "type": "krabbelnd",
+        "range": 30
+      }
     ],
-    "str": 4,
-    "dex": 3,
-    "con": 3,
-    "int": 4,
-    "wis": 3,
-    "cha": 4,
+    "abilities": {
+      "str": 4,
+      "dex": 3,
+      "con": 3,
+      "int": 4,
+      "wis": 3,
+      "cha": 4
+    },
     "weaknesses": [
     ],
     "resistances": [
@@ -814,19 +836,20 @@
   },
   {
     "name": "Flammengrün",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Pflanze",
     "hp": 70,
     "ac": 14,
     "movement": [
     ],
-    "str": 4,
-    "dex": -2,
-    "con": 5,
-    "int": -3,
-    "wis": 1,
-    "cha": -2,
+    "abilities": {
+      "str": 4,
+      "dex": -2,
+      "con": 5,
+      "int": -3,
+      "wis": 1,
+      "cha": -2
+    },
     "weaknesses": [
       "Kälte"
     ],
@@ -849,27 +872,28 @@
   },
   {
     "name": "Gezeitenblick",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Monstrosität",
     "hp": 120,
     "ac": 17,
     "movement": [
-      [
-        "laufend",
-        "40"
-      ],
-      [
-        "schwimmend",
-        "50"
-      ]
+      {
+        "type": "laufend",
+        "range": 40
+      },
+      {
+        "type": "schwimmend",
+        "range": 50
+      }
     ],
-    "str": 4,
-    "dex": 1,
-    "con": 4,
-    "int": 3,
-    "wis": 2,
-    "cha": 5,
+    "abilities": {
+      "str": 4,
+      "dex": 1,
+      "con": 4,
+      "int": 3,
+      "wis": 2,
+      "cha": 5
+    },
     "weaknesses": [
       "Blitz"
     ],
@@ -892,23 +916,24 @@
   },
   {
     "name": "Goblin",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Humanoid",
     "hp": 20,
     "ac": 13,
     "movement": [
-      [
-        "laufend",
-        "30"
-      ]
+      {
+        "type": "laufend",
+        "range": 30
+      }
     ],
-    "str": 1,
-    "dex": 2,
-    "con": 1,
-    "int": -1,
-    "wis": 0,
-    "cha": -1,
+    "abilities": {
+      "str": 1,
+      "dex": 2,
+      "con": 1,
+      "int": -1,
+      "wis": 0,
+      "cha": -1
+    },
     "weaknesses": [
     ],
     "resistances": [
@@ -922,23 +947,24 @@
   },
   {
     "name": "Klinguschel",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Monstrosität",
     "hp": 80,
     "ac": 20,
     "movement": [
-      [
-        "springend",
-        "10"
-      ]
+      {
+        "type": "springend",
+        "range": 10
+      }
     ],
-    "str": 5,
-    "dex": 1,
-    "con": 5,
-    "int": -3,
-    "wis": -2,
-    "cha": -2,
+    "abilities": {
+      "str": 5,
+      "dex": 1,
+      "con": 5,
+      "int": -3,
+      "wis": -2,
+      "cha": -2
+    },
     "weaknesses": [
       "Blitz",
       "Hieb"
@@ -961,27 +987,28 @@
   },
   {
     "name": "Krokuin",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Bestie",
     "hp": 60,
     "ac": 16,
     "movement": [
-      [
-        "rutschend",
-        "50"
-      ],
-      [
-        "schwimmend",
-        "60"
-      ]
+      {
+        "type": "rutschend",
+        "range": 50
+      },
+      {
+        "type": "schwimmend",
+        "range": 60
+      }
     ],
-    "str": 3,
-    "dex": 3,
-    "con": 2,
-    "int": 1,
-    "wis": 1,
-    "cha": 1,
+    "abilities": {
+      "str": 3,
+      "dex": 3,
+      "con": 2,
+      "int": 1,
+      "wis": 1,
+      "cha": 1
+    },
     "weaknesses": [
       "Kälte",
       "Blitz"
@@ -998,27 +1025,28 @@
   },
   {
     "name": "Meeresschlächter",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Monstrosität",
     "hp": 90,
     "ac": 18,
     "movement": [
-      [
-        "laufend",
-        "30"
-      ],
-      [
-        "schwimmend",
-        "40"
-      ]
+      {
+        "type": "laufend",
+        "range": 30
+      },
+      {
+        "type": "schwimmend",
+        "range": 40
+      }
     ],
-    "str": 4,
-    "dex": 2,
-    "con": 3,
-    "int": -1,
-    "wis": 2,
-    "cha": 1,
+    "abilities": {
+      "str": 4,
+      "dex": 2,
+      "con": 3,
+      "int": -1,
+      "wis": 2,
+      "cha": 1
+    },
     "weaknesses": [
       "Kälte"
     ],
@@ -1037,23 +1065,24 @@
   },
   {
     "name": "Mimic",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Monstrosität",
     "hp": 140,
     "ac": 17,
     "movement": [
-      [
-        "rennend",
-        "65"
-      ]
+      {
+        "type": "rennend",
+        "range": 65
+      }
     ],
-    "str": 4,
-    "dex": 5,
-    "con": 3,
-    "int": 2,
-    "wis": 2,
-    "cha": 6,
+    "abilities": {
+      "str": 4,
+      "dex": 5,
+      "con": 3,
+      "int": 2,
+      "wis": 2,
+      "cha": 6
+    },
     "weaknesses": [
       "Heilige Magie"
     ],
@@ -1071,27 +1100,28 @@
   },
   {
     "name": "Octark",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Monstrosität",
     "hp": 80,
     "ac": 17,
     "movement": [
-      [
-        "krabbelnd",
-        "5"
-      ],
-      [
-        "schwimmend",
-        "50"
-      ]
+      {
+        "type": "krabbelnd",
+        "range": 5
+      },
+      {
+        "type": "schwimmend",
+        "range": 50
+      }
     ],
-    "str": 4,
-    "dex": 2,
-    "con": 3,
-    "int": -1,
-    "wis": 3,
-    "cha": -2,
+    "abilities": {
+      "str": 4,
+      "dex": 2,
+      "con": 3,
+      "int": -1,
+      "wis": 3,
+      "cha": -2
+    },
     "weaknesses": [
       "Kälte",
       "Blitz"
@@ -1112,23 +1142,24 @@
   },
   {
     "name": "Prellkäfer",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Bestie",
     "hp": 60,
     "ac": 19,
     "movement": [
-      [
-        "krabbelnd",
-        "40"
-      ]
+      {
+        "type": "krabbelnd",
+        "range": 40
+      }
     ],
-    "str": 3,
-    "dex": 3,
-    "con": 1,
-    "int": -2,
-    "wis": 0,
-    "cha": -2,
+    "abilities": {
+      "str": 3,
+      "dex": 3,
+      "con": 1,
+      "int": -2,
+      "wis": 0,
+      "cha": -2
+    },
     "weaknesses": [
       "Psychisch"
     ],
@@ -1145,23 +1176,24 @@
   },
   {
     "name": "Riesenflügler",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Bestie",
     "hp": 140,
     "ac": 16,
     "movement": [
-      [
-        "fliegend",
-        "80"
-      ]
+      {
+        "type": "fliegend",
+        "range": 80
+      }
     ],
-    "str": 5,
-    "dex": 4,
-    "con": 4,
-    "int": 1,
-    "wis": 3,
-    "cha": 2,
+    "abilities": {
+      "str": 5,
+      "dex": 4,
+      "con": 4,
+      "int": 1,
+      "wis": 3,
+      "cha": 2
+    },
     "weaknesses": [
       "Blitz"
     ],
@@ -1182,23 +1214,24 @@
   },
   {
     "name": "Ritter",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Humanoid",
     "hp": 180,
     "ac": 18,
     "movement": [
-      [
-        "laufend",
-        "30"
-      ]
+      {
+        "type": "laufend",
+        "range": 30
+      }
     ],
-    "str": 5,
-    "dex": 2,
-    "con": 4,
-    "int": 1,
-    "wis": 3,
-    "cha": 5,
+    "abilities": {
+      "str": 5,
+      "dex": 2,
+      "con": 4,
+      "int": 1,
+      "wis": 3,
+      "cha": 5
+    },
     "weaknesses": [
     ],
     "resistances": [
@@ -1216,23 +1249,24 @@
   },
   {
     "name": "Schluckschleim",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Schleim",
     "hp": 200,
     "ac": 10,
     "movement": [
-      [
-        "kriechend",
-        "10"
-      ]
+      {
+        "type": "kriechend",
+        "range": 10
+      }
     ],
-    "str": 0,
-    "dex": -1,
-    "con": 4,
-    "int": -1,
-    "wis": 2,
-    "cha": 2,
+    "abilities": {
+      "str": 0,
+      "dex": -1,
+      "con": 4,
+      "int": -1,
+      "wis": 2,
+      "cha": 2
+    },
     "weaknesses": [
       "Feuer",
       "Kälte",
@@ -1250,23 +1284,24 @@
   },
   {
     "name": "Stahlschuppe",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Humanoid",
     "hp": 90,
     "ac": 17,
     "movement": [
-      [
-        "laufend",
-        "30"
-      ]
+      {
+        "type": "laufend",
+        "range": 30
+      }
     ],
-    "str": 3,
-    "dex": 4,
-    "con": 2,
-    "int": 1,
-    "wis": 1,
-    "cha": 2,
+    "abilities": {
+      "str": 3,
+      "dex": 4,
+      "con": 2,
+      "int": 1,
+      "wis": 1,
+      "cha": 2
+    },
     "weaknesses": [
       "Blitz"
     ],
@@ -1290,27 +1325,28 @@
   },
   {
     "name": "Sumpfwurm",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Bestie",
     "hp": 80,
     "ac": 15,
     "movement": [
-      [
-        "springend",
-        "35"
-      ],
-      [
-        "schwimmend",
-        "50"
-      ]
+      {
+        "type": "springend",
+        "range": 35
+      },
+      {
+        "type": "schwimmend",
+        "range": 50
+      }
     ],
-    "str": 3,
-    "dex": 4,
-    "con": 1,
-    "int": 0,
-    "wis": 2,
-    "cha": -2,
+    "abilities": {
+      "str": 3,
+      "dex": 4,
+      "con": 1,
+      "int": 0,
+      "wis": 2,
+      "cha": -2
+    },
     "weaknesses": [
       "Kälte",
       "Blitz",
@@ -1330,19 +1366,20 @@
   },
   {
     "name": "Tetravora",
-    "boss": true,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Pflanze",
     "hp": 400,
     "ac": 18,
     "movement": [
     ],
-    "str": 4,
-    "dex": 4,
-    "con": 4,
-    "int": 4,
-    "wis": 4,
-    "cha": 4,
+    "abilities": {
+      "str": 4,
+      "dex": 4,
+      "con": 4,
+      "int": 4,
+      "wis": 4,
+      "cha": 4
+    },
     "weaknesses": [
       "Feuer"
     ],
@@ -1366,23 +1403,24 @@
   },
   {
     "name": "Voltfaden",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Elementar",
     "hp": 140,
     "ac": 16,
     "movement": [
-      [
-        "schwebend",
-        "40"
-      ]
+      {
+        "type": "schwebend",
+        "range": 40
+      }
     ],
-    "str": 3,
-    "dex": 2,
-    "con": 4,
-    "int": 1,
-    "wis": 3,
-    "cha": 1,
+    "abilities": {
+      "str": 3,
+      "dex": 2,
+      "con": 4,
+      "int": 1,
+      "wis": 3,
+      "cha": 1
+    },
     "weaknesses": [
       "Kälte"
     ],
@@ -1403,23 +1441,24 @@
   },
   {
     "name": "Zunderflügler",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Bestie",
     "hp": 20,
     "ac": 13,
     "movement": [
-      [
-        "fliegend",
-        "60"
-      ]
+      {
+        "type": "fliegend",
+        "range": 60
+      }
     ],
-    "str": -2,
-    "dex": 4,
-    "con": 1,
-    "int": -3,
-    "wis": 1,
-    "cha": -2,
+    "abilities": {
+      "str": -2,
+      "dex": 4,
+      "con": 1,
+      "int": -3,
+      "wis": 1,
+      "cha": -2
+    },
     "weaknesses": [
       "Kälte"
     ],
@@ -1436,27 +1475,28 @@
   },
   {
     "name": "Ätzschneck",
-    "boss": false,
-    "boss_title": "",
+    "bosstitle": "",
     "type": "Bestie",
     "hp": 80,
     "ac": 16,
     "movement": [
-      [
-        "kriechend",
-        "10"
-      ],
-      [
-        "kletternd",
-        "10"
-      ]
+      {
+        "type": "kriechend",
+        "range": 10
+      },
+      {
+        "type": "kletternd",
+        "range": 10
+      }
     ],
-    "str": 2,
-    "dex": -4,
-    "con": 4,
-    "int": 2,
-    "wis": 3,
-    "cha": 1,
+    "abilities": {
+      "str": 2,
+      "dex": -4,
+      "con": 4,
+      "int": 2,
+      "wis": 3,
+      "cha": 1
+    },
     "weaknesses": [
       "Kälte"
     ],

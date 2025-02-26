@@ -45,8 +45,8 @@
                             <td>Bewegung</td>
                             <td>
                                 <ul>
-                                    {% for move_type, move_range in enemy.movement | sort %}
-                                        <li>{{ move_type }} ({{ move_range }} ft.)</li>
+                                    {% for move in enemy.movement | sort %}
+                                        <li>{{ move.type | capitalize }} ({{ move.range }} ft.)</li>
                                     {% endfor %}
                                 </ul>
                             </td>
@@ -59,27 +59,27 @@
                         <tbody>
                         <tr>
                             <td>Stärke</td>
-                            <td>{{ enemy.str }}</td>
+                            <td>{{ enemy.abilities.str }}</td>
                         </tr>
                         <tr>
                             <td>Geschicklichkeit</td>
-                            <td>{{ enemy.dex }}</td>
+                            <td>{{ enemy.abilities.dex }}</td>
                         </tr>
                         <tr>
                             <td>Konstitution</td>
-                            <td>{{ enemy.con }}</td>
+                            <td>{{ enemy.abilities.con }}</td>
                         </tr>
                         <tr>
                             <td>Intelligenz</td>
-                            <td>{{ enemy.int }}</td>
+                            <td>{{ enemy.abilities.int }}</td>
                         </tr>
                         <tr>
                             <td>Weisheit</td>
-                            <td>{{ enemy.wis }}</td>
+                            <td>{{ enemy.abilities.wis }}</td>
                         </tr>
                         <tr>
                             <td>Charisma</td>
-                            <td>{{ enemy.cha }}</td>
+                            <td>{{ enemy.abilities.cha }}</td>
                         </tr>
                         </tbody>
                     </table>
@@ -128,18 +128,20 @@
                         <div class="character-text-heading"><h2>{{ action.name }}</h2></div>
 
                         <ul>
+                            {% if action.cooldown %}
+                                <li>Abklingzeit: {{ action.cooldown.duration }}{{ action.cooldown.duration_type }}</li>{% endif %}
                             <li>Reichtweite: {{ action.range }} ft. {{ action.aoe }}</li>
                             {% if action.hitbonus %}
                                 <li>Trefferbonus: +{{ action.hitbonus }}</li>{% endif %}
                             {% if action.savereq %}
-                                <li>Gegnerischer Rettungswurf: ≥{{ action.savereq[1] }} {{ action.savereq[0] }}</li>
+                                <li>Gegnerischer Rettungswurf: ≥{{ action.savereq.bound }} {{ action.savereq.ability | capitalize }}</li>
                             {% endif %}
                             {% if action.damage %}
-                                <li>Schadenswurf: {% for d in action.damage %}{{ d[0] }} {{ d[1] }}
+                                <li>Schadenswurf: {% for d in action.damage %}{{ d.dice_term }} {{ d.type }}
                                     {{ ", " if not loop.last else "" }}{% endfor %}</li>
                             {% endif %}
                             {% if action.effects %}
-                                <li>Effekte: {% for e in action.effects %}{{ e[0] }} ({{ e[1] }})
+                                <li>Effekte: {% for e in action.effects %}{{ e.type }} ({{ e.duration }}{{ e.duration_type }}{{ e.dice_term }}{{ e.severity }}{{ e.range }})
                                     {{ ", " if not loop.last else "" }}{% endfor %}</li>
                             {% endif %}
                         </ul>
