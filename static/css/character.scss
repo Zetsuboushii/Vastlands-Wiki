@@ -7,22 +7,24 @@
 
 .character-data {
   flex: 0 0 30%;
-  border-right: 1px solid #2e2622;
 
   .character-data-box {
+    position: relative;
     width: 500px;
-    margin: -50px 0 25px 25px;
+    top: 25px;
+    margin: 0 0 50px 25px;
     padding-right: 25px;
     text-align: center;
+    border-right: 1px solid #2e2622;
 
     img {
       max-width: 380px;
       max-height: 600px;
       position: relative;
-      bottom: -80px;
     }
 
     .character-data-name {
+      top: -80px;
       position: relative;
       z-index: 2;
       background-image: url('../ui/name-backdrop-2.png');
@@ -40,7 +42,7 @@
     }
 
     .character-data-title {
-      top: -16px;
+      top: -96px;
       position: relative;
       z-index: 1;
       background-image: url('../ui/title-banner.png');
@@ -58,6 +60,7 @@
     }
 
     .character-data-field-title {
+      top: -80px;
       position: relative;
       z-index: 1;
       background-image: url('../ui/field-name-background.png');
@@ -79,6 +82,8 @@
     }
 
     table {
+      top: -80px;
+      position: relative;
       font-family: "Grenze Gotisch";
       width: 100%;
       text-align: center;
@@ -138,6 +143,26 @@
         top: 14px;
         margin: 0;
         position: relative;
+      }
+    }
+
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .gallery-element {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        height: auto;
+        text-align: center;
+
+        img {
+          max-height: 300px;
+          position: relative;
+          object-fit: contain;
+        }
       }
     }
   }
