@@ -15,10 +15,10 @@
     {% include "header.html" %}
 
     <div class="page">
-        <div class="themed-container">
-            {% for element in compendium %}
-                <div class="themed-element">
-                    {% if compendium_name in ["theologarium", "gentarium", "linguarium", "bestiarium"] %}
+        {% if compendium_name in ["theologarium", "gentarium", "linguarium", "bestiarium"] %}
+            <div class="themed-container">
+                {% for element in compendium %}
+                    <div class="themed-element">
                         {% set element_name = element.name | lower | replace(" ", "-") %}
                         {% if compendium_name == "theologarium" %}
                             {% set url = g.img_host + "crests/" + element_name + "-crest.png" %}
@@ -37,10 +37,26 @@
                         <form action="{{ url_for('compendium_entry', compendium_name=compendium_name, entry_name=element_name) }}">
                             <button type="submit">{{ element.name }}</button>
                         </form>
-                    {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+        {% elif compendium_name in ['gladiarium'] %}
+            {% for type in types | sort %}
+                <h2>{{ type }}</h2>
+                <div class="themed-container">
+                    {% for element in compendium %}
+                        {% if element.type == type %}
+                            <div class="themed-element" style="background-image: none">
+                                {% set element_name = element.name | lower | replace(" ", "-") %}
+                                <form action="{{ url_for('compendium_entry', compendium_name=compendium_name, entry_name=element_name) }}">
+                                    <button type="submit">{{ element.name }}</button>
+                                </form>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
                 </div>
             {% endfor %}
-        </div>
+        {% endif %}
     </div>
 </div>
 

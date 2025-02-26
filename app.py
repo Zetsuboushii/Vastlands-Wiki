@@ -61,6 +61,7 @@ calendar_list = load_from_json("calendar")
 enemy_list = load_from_json("bestiarium")
 actions_list = load_from_json("actions")
 places_list = load_from_json("places")
+abilities_list = load_from_json("abilities")
 
 
 @app.route('/')
@@ -155,6 +156,13 @@ def compendium(compendium_name):
                 if character["race"] == race["name"]:
                     race["example"] = character["name"]
 
+    elif compendium_name == "gladiarium":
+        types = []
+        for weapon in compendium_data:
+            types.append(weapon['type'])
+        types = list(set(types))
+        return render_template('compendium.html', compendium_name=compendium_name, compendium=compendium_data, types=types)
+
     return render_template('compendium.html', compendium_name=compendium_name, compendium=compendium_data)
 
 
@@ -189,6 +197,14 @@ def compendium_entry(compendium_name, entry_name):
             return render_template('classarium.html')
         case "herbarium":
             return render_template('herbarium.html')
+        case "gladiarium":
+            abilities = []
+            print(entry)
+            for weapon_ability in entry["abilities"]:
+                for ability in abilities_list:
+                    if ability['name'] == weapon_ability:
+                        abilities.append(ability)
+            return render_template('gladiarium.html', weapon=entry, abilities=abilities)
 
 
 @app.route('/holidays/<holiday_name>/')

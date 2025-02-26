@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>{{ weapon.name }} | {{ g.site_title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/character.css') }}">
+</head>
+<body>
+
+{% include "banner.html" %}
+
+<div class="page-containter">
+    {% include "header.html" %}
+
+    <div class="page">
+        <div class="character-container">
+            <div class="character-data">
+                <div class="character-data-box" style="position: relative; top: 60px; margin-bottom: 60px">
+                    <div class="character-data-name"><h1>{{ weapon.name }}</h1></div>
+                    <div class="character-data-title"><h3>{{ weapon.type }}</h3></div>
+
+                    <div class="character-data-field-title"><h4>Allgemeine Werte</h4></div>
+                    <table>
+                        <tbody>
+                        {% if weapon.prerequisites %}
+                            <tr>
+                                <td>Benötigte Attribute</td>
+                                <td>
+                                    <ul>
+                                        {% for pre in weapon.prerequisites | sort(attribute='attribute') %}
+                                            <li>{{ pre.needed }} {{ pre.attribute | capitalize }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </td>
+                            </tr>
+                        {% endif %}
+                        {% if weapon.range %}
+                            <tr>
+                                <td>Reichweite</td>
+                                <td>{{ weapon.range }} ft.</td>
+                            </tr>
+                        {% endif %}
+                        {% if weapon.range_far %}
+                            <tr>
+                                <td>Reichweite (weit)</td>
+                                <td>{{ weapon.range_far }} ft.</td>
+                            </tr>
+                        {% endif %}
+                        {% if weapon.damage %}
+                            <tr>
+                                <td>Schaden</td>
+                                <td>
+                                    <ul>
+                                        {% for d in weapon.damage | sort(attribute='type') %}
+                                            <li>{{ d.dice_term }} {{ d.type | capitalize }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </td>
+                            </tr>
+                        {% endif %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="character-text">
+                <div class="character-text-box">
+                    {% for ability in abilities %}
+                        <div class="character-text-heading"><h2>{{ ability.name }}</h2></div>
+
+                        <p>{{ ability.description }}</p>
+
+                        <hr>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

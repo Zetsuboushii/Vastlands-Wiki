@@ -6,38 +6,6 @@
   <img src="https://img.shields.io/maintenance/yes/2025"  alt=""/>
 </p>
 
-<h2>Inhaltsvereichnis</h3>
-<!-- TOC -->
-- [1. Einleitung](#1-einleitung)
-- [2. Mitwirkende](#2-mitwirkende)
-- [3. API-Referenz](#3-api-referenz)
-  - [`characters.json`](#charactersjson)
-    - [`aliases`](#aliases)
-    - [`measurements`](#measurements)
-    - [`classes`](#classes)
-    - [`homes`](#homes)
-    - [`relationships`](#relationships)
-    - [`content`](#content)
-    - [`sections`](#sections)
-  - [`places.json`](#placesjson)
-    - [`language`](#language)
-    - [`leader`](#leader)
-  - [`calendar.json`](#calendarjson)
-  - [`news.json`](#newsjson)
-  - [`actions.json`](#actionsjson)
-    - [`cooldown`](#cooldown)
-    - [`savereq`](#savereq)
-    - [`damage`](#damage)
-    - [`effects`](#effects)
-  - [`compendia.json`](#compendiajson)
-  - [`bestiarium.json`](#bestiariumjson)
-    - [`movement`](#movement)
-    - [`abilities`](#abilities)
-  - [`theologarium.json`](#theologariumjson)
-  - [`linguarium.json`](#linguariumjson)
-  - [`gentarium.json`](#gentariumjson)
-<!-- TOC -->
-
 ## 1. Einleitung
 
 Dieses Wiki dient als ergänzendes Tool für Sessions, indem Lore und Gameplay-Mechaniken schnell und einfach nachgeschaut

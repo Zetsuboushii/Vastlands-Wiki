@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Deckenbrecher",
+    "description": "Gegen unbelebte Objekte wie Türen, Kisten oder Barrikaden verursacht der Fahnenmast zusätzlichen Schaden in Höhe des Stärke-Modifikators des Trägers. Bei Stärke-(Athletik)-Würfen, um Hindernisse zu zerschlagen, erhält der Träger Vorteil."
+  },
+  {
+    "name": "Doppelschuss",
+    "description": "Mit dieser Waffe können zwei Geschosse gleichzeitig in einem Zug verschossen werden. Diese werden mit den Würfen separat behandelt."
+  },
+  {
+    "name": "Doppelter Angriff",
+    "description": "Mit der betreffenden Waffe darf doppelt angegriffen werden. Dazu werden dementsprechend zwei Treffer- und Schadenswürfe getätigt."
+  },
+  {
+    "name": "Dornenrankenexplosion",
+    "description": ""
+  },
+  {
+    "name": "Drachenblitz",
+    "description": ""
+  },
+  {
+    "name": "Duo-Waffe",
+    "description": "Diese Waffe besteht aus zwei Teilen. Mit diesen beiden Teilen wird separat angegriffen, daher zwei Treffer- und Schädenswürfe."
+  },
+  {
+    "name": "Herbstwinde",
+    "description": "Ein rotierender Angriff pro Rast, der Ziele 5ft. zurückstößt und für kurze Zeit verlangsamt."
+  },
+  {
+    "name": "Kraft des Morgenrots",
+    "description": "Unter Einstrahlung von Tageslicht richtet der Bogen zusätzlichen Feuerschaden an."
+  },
+  {
+    "name": "Lautloser Wanderer",
+    "description": ""
+  },
+  {
+    "name": "Paralyse",
+    "description": "Bei einem Treffer mit der Waffe wird ein d100 geworfen. Bei einem Wert &amp;gt;70 wird das Ziel für 2 Runden paralysiert."
+  },
+  {
+    "name": "Racheschleier",
+    "description": ""
+  },
+  {
+    "name": "Schmettern und Stechen",
+    "description": "Die metallische Spitze ermöglicht gezielte Stichangriffe. Anstelle eines normalen Wuchtschadens kann der Anwender entscheiden, einen Stichschaden von 2W8 zu verursachen. Wenn ein Angriff mit der Spitze gelingt, wird das Ziel zusätzlich um 10ft. zurückgedrängt (Stärke Saving Throw DC 15, um nicht zurückgestoßen zu werden)."
+  },
+  {
+    "name": "Schwungangriff",
+    "description": "Ein verfehlter Angriff kann eine Bonusaktion nutzen, um ein zweites Ziel direkt hinter dem ursprünglichen Gegner anzugreifen. Der zweite Angriff erhält Nachteil."
+  },
+  {
+    "name": "Stoß",
+    "description": "Bei einem Treffer mit dieser Waffe wird das Ziel 5ft. zurückgestoßen."
+  },
+  {
+    "name": "Strahl des Morgenrots",
+    "description": "Einmal pro Sonnenaufgang; Ein mächtiger Pfeil aus Licht, der blendet und Feinde schwächt."
+  },
+  {
+    "name": "Tintenfass",
+    "description": ""
+  },
+  {
+    "name": "Trickster-Gestalt",
+    "description": "Anwender kann sein Aussehen, seine Stimme und sogar seine Position sofort verändern, um Feinde zu täuschen (Vorteil auf Täuschungswürfe)."
+  },
+  {
+    "name": "Vorladen",
+    "description": "Mit einer Bonusaktion kann diese Waffe vorgeladen werden. Im nächsten Zug kann eine weitere Bonusaktion dafür verwendet werden, um die Waffe zu entladen."
+  },
+  {
+    "name": "Widerhaken",
+    "description": "Bei einem Treffer bohrt sich die Klinge der Waffe in den Körper des Ziels. Dabei kann sich entschlossen werden, ob folgend die Klinge herausgezogen werden soll, wodurch schwere Verletzungen entstehen und ein Schadenswurf mit der Waffe gemacht wird. Sonst kann das Ziel bis auf 5ft. herangezogen werden."
+  },
+  {
+    "name": "Zerfledderte Fahne",
+    "description": "Kampf-Täuschung: Wenn der Anwender mit der Fahne eine Ablenkung versucht (z. B. die Fahne schwingen, um Sichtlinien zu verdecken oder Gegner zu irritieren), darf er einen Wurf auf Täuschung durchführen, um den Gegner abzulenken. Bei Erfolg erhält der nächste Angriff gegen diesen Gegner Vorteil."
+  },
+  {
+    "name": "Zweihändig",
+    "description": "Die Waffe muss zweihändig gehalten werden. Dadurch kann kein Schild oder andere Gegenstände gehalten werden."
+  }
+]
