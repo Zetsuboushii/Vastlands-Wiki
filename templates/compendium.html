@@ -17,7 +17,7 @@
     <div class="page">
         {% if compendium_name in ["theologarium", "gentarium", "linguarium", "bestiarium"] %}
             <div class="themed-container">
-                {% for element in compendium %}
+                {% for element in compendium | sort(attribute='name') %}
                     <div class="themed-element">
                         {% set element_name = element.name | lower | replace(" ", "-") %}
                         {% if compendium_name == "theologarium" %}
@@ -42,9 +42,9 @@
             </div>
         {% elif compendium_name in ['gladiarium'] %}
             {% for type in types | sort %}
-                <h2>{{ type }}</h2>
+                <h2 style="text-align: center">{{ type }}</h2>
                 <div class="themed-container">
-                    {% for element in compendium %}
+                    {% for element in compendium | sort(attribute='name') %}
                         {% if element.type == type %}
                             <div class="themed-element" style="background-image: none">
                                 {% set element_name = element.name | lower | replace(" ", "-") %}
@@ -56,6 +56,8 @@
                     {% endfor %}
                 </div>
             {% endfor %}
+        {% elif compendium_name in ['classarium', 'herbarium'] %}
+            <p>Diese Seite ist noch im Aufbau. Der liebe DM kümmert sich drum :)</p>
         {% endif %}
     </div>
 </div>

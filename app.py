@@ -20,6 +20,7 @@ def before_request():
                      "Erntemond", "Fruchtmond", "Weinmond", "Nebelmond", "Julmond"]
 
     g.static = "/static/"
+    g.debug = app.debug
 
     g.categories = {
         "Charaktere": "characters",
@@ -54,7 +55,6 @@ def find_place_recursively(place_list, place_slug, parent_name=None):
     return None, None
 
 
-characters_list = load_from_json("characters")
 news_list = load_from_json("news")
 compendium_list = load_from_json("compendia")
 calendar_list = load_from_json("calendar")
@@ -66,12 +66,19 @@ abilities_list = load_from_json("abilities")
 
 @app.route('/')
 def index():
+    characters_list = load_from_json("characters")
+
     birthday_characters = []
     for char in characters_list:
         data = char.copy()
 
         if data.get('birthday') != "":
-            birthday_day, birthday_month, _ = map(int, data['birthday'].split('.'))
+            birthday_day, birthday_month = 0, 0
+            if len(data["birthday"].split(".")) == 2:
+                birthday_day, birthday_month = map(int, data['birthday'].split('.'))
+
+            if len(data["birthday"].split(".")) == 3:
+                birthday_day, birthday_month, birthday_year = map(int, data['birthday'].split('.'))
 
             current_day = date.today()
             if f"{birthday_day:02}" == f"{current_day.day:02}" and f"{birthday_month:02}" == f"{current_day.month:02}":
@@ -85,6 +92,8 @@ def index():
 
 @app.route('/characters/')
 def characters():
+    characters_list = load_from_json("characters")
+
     letters = sorted({character['name'][0].upper() for character in characters_list})
     nationalities = sorted({character['nationality'] for character in characters_list if "nationality" in character})
 
@@ -93,24 +102,44 @@ def characters():
 
 @app.route('/characters/<character_name>/')
 def character(character_name):
+    characters_list = load_from_json("characters")
     character_data = None
+    data = None
+
+    character_name = character_name.lower().replace(" ", "-")
 
     for char in characters_list:
-        if char['name'].lower() == character_name.lower():
+        char_name = char['name'].lower().replace(" ", "-")
+        if char_name == character_name:
             data = char.copy()
 
-            if data.get('birthday') != "":
-                birthday_day, birthday_month, birthday_year = map(int, data['birthday'].split('.'))
-                ingame_day, ingame_month, ingame_year = map(int, g.ingame_date.split('.'))
-
-                data['birth_day'] = str(birthday_day)
-                data['birth_month'] = g.lore_months[birthday_month - 1]
-                data['birth_year'] = str(birthday_year)
-                data['age'] = ingame_year - birthday_year - (
-                        (ingame_month, ingame_day) < (birthday_month, birthday_day))
-
-            character_data = data
             break
+        else:
+            for alias in char["aliases"]:
+                print(alias['alias'])
+                if character_name == alias['alias'].lower().replace(" ", "-"):
+                    data = char.copy()
+                    print("bögges")
+                    break
+
+
+    if data is not None and data.get('birthday') != "":
+        ingame_day, ingame_month, ingame_year = map(int, g.ingame_date.split('.'))
+
+        if len(data["birthday"].split(".")) == 2:
+            birthday_day, birthday_month = map(int, data['birthday'].split('.'))
+            data['birth_day'] = str(birthday_day)
+            data['birth_month'] = g.lore_months[birthday_month - 1]
+
+        if len(data["birthday"].split(".")) == 3:
+            birthday_day, birthday_month, birthday_year = map(int, data['birthday'].split('.'))
+            data['birth_year'] = str(birthday_year)
+            data['age'] = ingame_year - birthday_year - (
+                    (ingame_month, ingame_day) < (birthday_month, birthday_day))
+            data['birth_day'] = str(birthday_day)
+            data['birth_month'] = g.lore_months[birthday_month - 1]
+
+    character_data = data
 
     return render_template('character.html', character=character_data)
 
@@ -151,6 +180,7 @@ def compendium(compendium_name):
             break
 
     if compendium_name == "gentarium":
+        characters_list = load_from_json("characters")
         for race in compendium_data:
             for character in characters_list:
                 if character["race"] == race["name"]:
@@ -161,7 +191,8 @@ def compendium(compendium_name):
         for weapon in compendium_data:
             types.append(weapon['type'])
         types = list(set(types))
-        return render_template('compendium.html', compendium_name=compendium_name, compendium=compendium_data, types=types)
+        return render_template('compendium.html', compendium_name=compendium_name, compendium=compendium_data,
+                               types=types)
 
     return render_template('compendium.html', compendium_name=compendium_name, compendium=compendium_data)
 
@@ -180,6 +211,7 @@ def compendium_entry(compendium_name, entry_name):
         case "theologarium":
             return render_template('theologarium.html', entry=entry)
         case "gentarium":
+            characters_list = load_from_json("characters")
             for character in characters_list:
                 if character["race"] == entry_name.capitalize():
                     entry["example"] = character["name"]
@@ -224,4 +256,6 @@ if __name__ == '__main__':
 
 @app.route('/tierlist/')
 def tierlist():
+    characters_list = load_from_json("characters")
+
     return render_template('tierlist.html', characters=characters_list)

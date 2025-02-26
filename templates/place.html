@@ -39,7 +39,8 @@
                             {% if place.language.natname %}
                                 <tr>
                                     <td>In Landessprache</td>
-                                    <td>{{ place.language.natname }}, (wörtl. <i>{{ place.language.translation }}</i> )</td>
+                                    <td>{{ place.language.natname }}, (wörtl. <i>{{ place.language.translation }}</i> )
+                                    </td>
                                 </tr>
                             {% endif %}
                         {% endif %}
@@ -47,6 +48,12 @@
                             <td>Art des Ortes</td>
                             <td>{{ place.placetype }}</td>
                         </tr>
+                        {% if place.demography %}
+                            <tr>
+                                <td>Demographie</td>
+                                <td>{{ place.demography }} Einwohner</td>
+                            </tr>
+                        {% endif %}
                         {% if place.capital %}
                             <tr>
                                 <td>Hauptstadt</td>

@@ -41,12 +41,15 @@
                         <div class="home-left-featured-left characters-container"
                              style="justify-content: left; border-right: 1px black">
                             <div class="characters-element">
-                                <a href="{{ url_for('character', character_name=rand_char.name) }}">
-                                    {% set url = g.img_host_resized + "characters/" + rand_char.name | lower %}
+                                {% set char_name = rand_char.name | lower | replace(" ", "-") %}
+                                <a href="{{ url_for('character', character_name=char_name) }}">
+                                    {% set url = g.img_host_resized + "characters/" + char_name %}
                                     <img src="
                                         {{ url }}{% if "artwork" in rand_char.alt_images %} artwork{% endif %}.png"
                                          alt=""></a>
-                                <button class="characters-element-name">{{ rand_char.name }}</button>
+                                <form action="{{ url_for('character', character_name=char_name) }}">
+                                    <button class="characters-element-name">{{ rand_char.name }}</button>
+                                </form>
                             </div>
                         </div>
                         <div class="home-left-featured-right">

@@ -45,9 +45,10 @@
                             </tr>
                             <tr>
                                 <td>Geburtstag</td>
-                                <td>{{ character.birth_day }}. Tag, {{ character.birth_month }} im
-                                    Jahre {{ character.birth_year | replace("-", "") }}
-                                    {% if "-" in character.birth_year %}v.V.{% else %}n.V.{% endif %}</td>
+                                <td>{{ character.birth_day }}. Tag, {{ character.birth_month }}
+                                    {% if character.birth_year %} im Jahre {{ character.birth_year | replace("-", "") }}
+                                        {% if "-" in character.birth_year %}v.V.{% else %}n.V.
+                                        {% endif %}{% endif %}</td>
                             </tr>
                         {% endif %}
                         {% if character.aliases %}
@@ -65,7 +66,11 @@
                         {% if character.nationality %}
                             <tr>
                                 <td>Staatsangehörigkeit</td>
-                                <td>{{ character.nationality }}</td>
+                                <td>
+                                    {% set place_name = character.nationality | lower | replace(" ", "-") %}
+                                    <a href="{{ url_for('place', place_name=place_name) }}">
+                                        {{ character.nationality }}</a>
+                                </td>
                             </tr>
                         {% endif %}
                         </tbody>
@@ -138,11 +143,13 @@
                         <tbody>
                         {% if character.homes %}
                             <tr>
-                                <td>Wohnorte</td>
+                                <td>Orte</td>
                                 <td>
                                     <ul>
                                         {% for home in character.homes %}
-                                            <li>{{ home.place }} <small>({{ home.attachment }})</small></li>
+                                            {% set place_name = home.place | lower | replace(" ", "-") %}
+                                            <li><a href="{{ url_for('place', place_name=place_name) }}">
+                                                {{ home.place }}</a> <small>({{ home.attachment }})</small></li>
                                         {% endfor %}
                                     </ul>
                                 </td>
@@ -202,7 +209,12 @@
                                 <td>
                                     <ul>
                                         {% for relation in character.relationships | sort(attribute='character') %}
-                                            <li>{{ relation.character }} <small>({{ relation.relation }})</small></li>
+                                            {% set char_name = relation.character | lower | replace(" ", "-") %}
+                                            <li>
+                                                <a href="{{ url_for('character', character_name=char_name) }}">
+                                                    {{ relation.character }}</a>
+                                                <small>({{ relation.relation }})</small>
+                                            </li>
                                         {% endfor %}
                                     </ul>
                                 </td>
@@ -210,8 +222,10 @@
                         {% endif %}
                         {% if character.lover %}
                             <tr>
+                                {% set char_name = character.lover | lower | replace(" ", "-") %}
                                 <td>Liebe</td>
-                                <td>{{ character.lover }}</td>
+                                <td><a href="{{ url_for('character', character_name=char_name) }}">
+                                    {{ character.lover }}</a></td>
                             </tr>
                         {% endif %}
                         </tbody>
@@ -225,11 +239,38 @@
 
                     <hr>
 
+                    {% if not character.content.sections %}
+                        <p>Hier steht noch nichts! Erinnere doch gerne den DM daran, für diesen Charakter etwas
+                            epochales zu schreiben :)</p>
+                    {% endif %}
                     {% for section in character.content.sections %}
                         <div class="character-text-heading"><h2>{{ section.title }}</h2></div>
-                        <p>{{ section.text }}</p>
+                        <p style="white-space: pre-line;">{{ section.text }}</p>
                         <hr>
                     {% endfor %}
+
+                    {% if character.alt_images %}
+                        <div class="character-text-heading"><h2>Gallerie</h2></div>
+                        <div class="gallery-container">
+                            {% for img in character.alt_images %}
+                                <div class="gallery-element">
+                                    {% set character_name = character.name | lower | replace(" ", "-") %}
+                                    {% set alt = img | capitalize %}
+                                    {% set suffix = img | lower | replace(" ", "-") %}
+                                    {% set url = g.img_host + "characters/" + character_name %}
+                                    {% if suffix == 'artwork' %}
+                                        {% set url = url + ".png" %}
+                                        {% set alt = 'KI-Porträt' %}
+                                    {% else %}
+                                        {% set url = url + " " + suffix + ".png" %}
+                                    {% endif %}
+
+                                    <img src="{{ url }}" alt="">
+                                    <h3 style="margin: 0">{{ alt }}</h3>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
                 </div>
             </div>
         </div>
