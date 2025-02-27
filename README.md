@@ -8,36 +8,38 @@
 
 
 <!-- TOC -->
-  * [1. Einleitung](#1-einleitung)
-  * [2. Mitwirkende](#2-mitwirkende)
-  * [3. API-Referenz](#3-api-referenz)
+
+* [1. Einleitung](#1-einleitung)
+* [2. Mitwirkende](#2-mitwirkende)
+* [3. API-Referenz](#3-api-referenz)
     * [current_date.json](#current_datejson)
     * [characters.json](#charactersjson)
-      * [aliases](#aliases)
-      * [measurements](#measurements)
-      * [classes](#classes)
-      * [homes](#homes)
-      * [relationships](#relationships)
-      * [content](#content)
-      * [sections](#sections)
+        * [aliases](#aliases)
+        * [measurements](#measurements)
+        * [classes](#classes)
+        * [homes](#homes)
+        * [relationships](#relationships)
+        * [content](#content)
+        * [sections](#sections)
     * [places.json](#placesjson)
-      * [language](#language)
-      * [leader](#leader)
+        * [language](#language)
+        * [leader](#leader)
     * [calendar.json](#calendarjson)
     * [news.json](#newsjson)
     * [actions.json](#actionsjson)
-      * [cooldown](#cooldown)
-      * [savereq](#savereq)
-      * [damage](#damage)
-      * [effects](#effects)
+        * [cooldown](#cooldown)
+        * [savereq](#savereq)
+        * [damage](#damage)
+        * [effects](#effects)
     * [compendia.json](#compendiajson)
     * [bestiarium.json](#bestiariumjson)
-      * [movement](#movement)
-      * [abilities](#abilities)
+        * [movement](#movement)
+        * [abilities](#abilities)
     * [theologarium.json](#theologariumjson)
     * [linguarium.json](#linguariumjson)
     * [gentarium.json](#gentariumjson)
     * [effects.json](#effectsjson)
+
 <!-- TOC -->
 
 ## 1. Einleitung
@@ -71,28 +73,29 @@ Alle JSON-Files können unter dem Base-Path https://tome.zetsuboushii.site/stati
 
 `characters.json` ist ein Array von Charakter-Objekten. Ein Charakter besteht aus folgenden Feldern:
 
-| Feldname        | Datentyp | Erklärung                                                                                                                |
-|-----------------|----------|--------------------------------------------------------------------------------------------------------------------------|
-| `name`          | `string` | Vorname des Charakters                                                                                                   |
-| `surname`       | `string` | Nachname des Charakters                                                                                                  |
-| `title`         | `string` | Titel des Charakters                                                                                                     |
-| `race`          | `string` | Rasse des Charakters;<br>Verweis auf Objekte in `gentarium.json`                                                         |
-| `sex`           | `string` | Geschlecht des Charakters;<br>`"m"` für "männlich", `"w"` für "weiblich"                                                 |
-| `birthday`      | `string` | Geburtstag des Charakters;<br>Format: `"dd.mm.yyy"`;<br>Negatives Jahr = "v.V.", Positives Jahr = "n.V."                 |
-| `aliases`       | `array`  | Aliase für den Charakter von anderen Charakteren;<br>Dokumentation [hier](#aliases)                                      |
-| `measurements`  | `object` | Körpermaße des Charakters;<br>Dokumentation [hier](#measurements)                                                        |
-| `functions`     | `array`  | Funktionen / Berufungen des Charakters;<br>Einzelne Funktionen sind als `string` definiert                               |
-| `classes`       | `object` | Klassen des Charakters;<br>Dokumentation [hier](#classes)                                                                |
-| `nationality`   | `string` | Nationalität des Charakters;<br>Verweis auf Objekte in [`places.json`](#placesjson)                                      |
-| `homes`         | `array`  | Heimatorte / Besondere Orte des Charakters;<br>Dokumentation [hier](#homes)                                              |
-| `alignment`     | `string` | Gesinnung des Charakters                                                                                                 |
-| `affiliations`  | `array`  | Zugehörigkeiten des Charakters zu einer Organisation / Religion;<br>Einzelne Zugehörigkeiten sind als `string` definiert |
-| `likes`         | `array`  | Dinge, die der Charakter mag;<br>Einzelne Dinge sind als `string` definiert                                              |
-| `dislikes`      | `array`  | Dinge, die der Charakter nicht mag;<br>Einzelne Dinge sind als `string` definiert                                        |
-| `status`        | `string` | Status des Charakters, ob dieser lebt usw.                                                                               |
-| `relationships` | `array`  | Beziehungen des Charakters zu anderen Charakteren;<br>Dokumentation [hier](#relationships)                               |
-| `alt_images`    | `array`  | Liste der Namenssuffixe für alternative Bilder des Charakters;<br>Einzelne Suffixe sind als `string` definiert           |
-| `content`       | `object` | Liste der Texte des Charakterprofils;<br>Dokumentation [hier](#content)                                                  |
+| Feldname        | Datentyp  | Erklärung                                                                                                                |
+|-----------------|-----------|--------------------------------------------------------------------------------------------------------------------------|
+| `name`          | `string`  | Vorname des Charakters                                                                                                   |
+| `surname`       | `string`  | Nachname des Charakters                                                                                                  |
+| `title`         | `string`  | Titel des Charakters                                                                                                     |
+| `race`          | `string`  | Rasse des Charakters;<br>Verweis auf Objekte in `gentarium.json`                                                         |
+| `sex`           | `string`  | Geschlecht des Charakters;<br>`"m"` für "männlich", `"w"` für "weiblich"                                                 |
+| `birthday`      | `string`  | Geburtstag des Charakters;<br>Format: `"dd.mm.yyy"`;<br>Negatives Jahr = "v.V.", Positives Jahr = "n.V."                 |
+| `aliases`       | `array`   | Aliase für den Charakter von anderen Charakteren;<br>Dokumentation [hier](#aliases)                                      |
+| `measurements`  | `object`  | Körpermaße des Charakters;<br>Dokumentation [hier](#measurements)                                                        |
+| `functions`     | `array`   | Funktionen / Berufungen des Charakters;<br>Einzelne Funktionen sind als `string` definiert                               |
+| `classes`       | `object`  | Klassen des Charakters;<br>Dokumentation [hier](#classes)                                                                |
+| `nationality`   | `string`  | Nationalität des Charakters;<br>Verweis auf Objekte in [`places.json`](#placesjson)                                      |
+| `homes`         | `array`   | Heimatorte / Besondere Orte des Charakters;<br>Dokumentation [hier](#homes)                                              |
+| `alignment`     | `string`  | Gesinnung des Charakters                                                                                                 |
+| `affiliations`  | `array`   | Zugehörigkeiten des Charakters zu einer Organisation / Religion;<br>Einzelne Zugehörigkeiten sind als `string` definiert |
+| `likes`         | `array`   | Dinge, die der Charakter mag;<br>Einzelne Dinge sind als `string` definiert                                              |
+| `dislikes`      | `array`   | Dinge, die der Charakter nicht mag;<br>Einzelne Dinge sind als `string` definiert                                        |
+| `status`        | `string`  | Status des Charakters, ob dieser lebt usw.                                                                               |
+| `relationships` | `array`   | Beziehungen des Charakters zu anderen Charakteren;<br>Dokumentation [hier](#relationships)                               |
+| `alt_images`    | `array`   | Liste der Namenssuffixe für alternative Bilder des Charakters;<br>Einzelne Suffixe sind als `string` definiert           |
+| `content`       | `object`  | Liste der Texte des Charakterprofils;<br>Dokumentation [hier](#content)                                                  |
+| `hidden`        | `boolean` | Flag, ob Charakter noch nicht veröffentlicht ist                                                                         |
 
 #### aliases
 
@@ -274,6 +277,7 @@ Alle JSON-Files können unter dem Base-Path https://tome.zetsuboushii.site/stati
 | `severity`      | `number` | Schwere des Effekts                                                  |
 | `duration`      | `number` | Dauer des Effekts                                                    |
 | `duration_type` | `string` | Art der Dauer;<br>"r" für Runde, "d" für Tag                         |
+| `range`         | `number` | Reichweite des Effekts in Fuß                                        |
 
 ### compendia.json
 
@@ -361,8 +365,8 @@ Alle JSON-Files können unter dem Base-Path https://tome.zetsuboushii.site/stati
 
 `effects.json` ist ein Array von Effekt-Objekten. Ein Effekt besteht aus folgenden Feldern:
 
-| Feldname      | Datentyp | Erklärung                                                            |
-|---------------|----------|----------------------------------------------------------------------|
-| `name`        | `string` | Name des Effekts                                                     |
-| `impact`      | `number` | Grad der Auswirkung des Effekts                                      |
-| `description` | `string` | Beschreibung des Effekts                                             |
+| Feldname      | Datentyp | Erklärung                       |
+|---------------|----------|---------------------------------|
+| `name`        | `string` | Name des Effekts                |
+| `impact`      | `number` | Grad der Auswirkung des Effekts |
+| `description` | `string` | Beschreibung des Effekts        |
