@@ -21,7 +21,7 @@
     "effects": [
       {
         "type": "exhausted",
-        "severity": "lv4"
+        "severity": 4
       }
     ]
   },
@@ -44,8 +44,8 @@
     "effects": [
       {
         "type": "prone",
-        "duration": "1r",
-        "duration_type": ""
+        "duration": 1,
+        "duration_type": "r"
       }
     ]
   },
@@ -65,8 +65,8 @@
     "effects": [
       {
         "type": "blinded",
-        "duration": "1r",
-        "duration_type": ""
+        "duration": 1,
+        "duration_type": "r"
       }
     ]
   },
@@ -92,8 +92,8 @@
     "effects": [
       {
         "type": "paralysed",
-        "duration": "2r",
-        "duration_type": ""
+        "duration": 2,
+        "duration_type": "r"
       }
     ]
   },
@@ -116,8 +116,8 @@
     "effects": [
       {
         "type": "paralysed",
-        "duration": "1r",
-        "duration_type": ""
+        "duration": 1,
+        "duration_type": "r"
       }
     ]
   },
@@ -156,7 +156,7 @@
     "effects": [
       {
         "type": "bleeding",
-        "severity": "lv1"
+        "severity": 1
       }
     ]
   },
@@ -203,7 +203,7 @@
     "effects": [
       {
         "type": "bleeding",
-        "severity": "lv2"
+        "severity": 2
       }
     ]
   },
@@ -239,7 +239,7 @@
     "effects": [
       {
         "type": "bleeding",
-        "severity": "lv2"
+        "severity": 2
       }
     ]
   },
@@ -265,8 +265,8 @@
     "effects": [
       {
         "type": "deaf",
-        "duration": "1r",
-        "duration_type": ""
+        "duration": 1,
+        "duration_type": "r"
       }
     ]
   },
@@ -322,7 +322,7 @@
     "effects": [
       {
         "type": "petrified",
-        "duration": "1r",
+        "duration": 1,
         "duration_type": ""
       }
     ]
@@ -366,8 +366,8 @@
     "effects": [
       {
         "type": "grappled",
-        "duration": "1r",
-        "duration_type": ""
+        "duration": 1,
+        "duration_type": "r"
       }
     ]
   },
@@ -393,8 +393,8 @@
     "effects": [
       {
         "type": "restrained",
-        "duration": "2r",
-        "duration_type": ""
+        "duration": 2,
+        "duration_type": "r"
       }
     ]
   },
@@ -420,8 +420,8 @@
     "effects": [
       {
         "type": "difficult_terrain",
-        "duration": "20r",
-        "duration_type": ""
+        "duration": 20,
+        "duration_type": "r"
       }
     ]
   },
@@ -433,8 +433,8 @@
     "effects": [
       {
         "type": "resistance_(all)",
-        "duration": "1r",
-        "duration_type": ""
+        "duration": 1,
+        "duration_type": "r"
       }
     ]
   },
@@ -502,7 +502,7 @@
     "effects": [
       {
         "type": "bleeding",
-        "severity": "lv1"
+        "severity": 1
       }
     ]
   },
@@ -524,8 +524,8 @@
     "effects": [
       {
         "type": "disadvantage_(hit)",
-        "duration": "1r",
-        "duration_type": ""
+        "duration": 1,
+        "duration_type": "r"
       }
     ]
   },
@@ -567,8 +567,8 @@
     "effects": [
       {
         "type": "petrified",
-        "duration": "1r",
-        "duration_type": ""
+        "duration": 1,
+        "duration_type": "r"
       }
     ]
   },
@@ -640,8 +640,8 @@
     "effects": [
       {
         "type": "disadvantage_(hit)",
-        "duration": "1r",
-        "duration_type": ""
+        "duration": 1,
+        "duration_type": "r"
       }
     ]
   },
@@ -663,8 +663,8 @@
     "effects": [
       {
         "type": "petrified",
-        "duration": "2r",
-        "duration_type": ""
+        "duration": 2,
+        "duration_type": "r"
       }
     ]
   },
@@ -713,8 +713,8 @@
     "effects": [
       {
         "type": "stunned",
-        "duration": "1r",
-        "duration_type": ""
+        "duration": 1,
+        "duration_type": "r"
       }
     ]
   },
@@ -736,8 +736,8 @@
     "effects": [
       {
         "type": "disadvantage_(hit)",
-        "duration": "1r",
-        "duration_type": ""
+        "duration": 1,
+        "duration_type": "r"
       }
     ]
   },
@@ -763,8 +763,8 @@
     "effects": [
       {
         "type": "stunned",
-        "duration": "1r",
-        "duration_type": ""
+        "duration": 1,
+        "duration_type": "r"
       }
     ]
   },
@@ -800,8 +800,8 @@
     "effects": [
       {
         "type": "poisoned",
-        "duration": "2r",
-        "duration_type": ""
+        "duration": 2,
+        "duration_type": "r"
       }
     ]
   },
@@ -862,13 +862,13 @@
     "effects": [
       {
         "type": "invisible",
-        "duration": "10r",
-        "duration_type": ""
+        "duration": 10,
+        "duration_type": "r"
       },
       {
         "type": "double_damage",
-        "duration": "2r",
-        "duration_type": ""
+        "duration": 2,
+        "duration_type": "r"
       }
     ]
   },
@@ -936,13 +936,13 @@
     "effects": [
       {
         "type": "disadvantage_(hit)",
-        "duration": "2r",
-        "duration_type": ""
+        "duration": 2,
+        "duration_type": "r"
       },
       {
         "type": "disadvantage_(dmg)",
-        "duration": "2r",
-        "duration_type": ""
+        "duration": 2,
+        "duration_type": "r"
       }
     ]
   },
@@ -992,8 +992,8 @@
     "effects": [
       {
         "type": "petrified",
-        "duration": "2r",
-        "duration_type": ""
+        "duration": 2,
+        "duration_type": "r"
       }
     ]
   },
@@ -1032,8 +1032,8 @@
     "effects": [
       {
         "type": "stunned",
-        "duration": "1r",
-        "duration_type": ""
+        "duration": 1,
+        "duration_type": "r"
       }
     ]
   },
@@ -1058,8 +1058,8 @@
       },
       {
         "type": "restrained",
-        "duration": "1r",
-        "duration_type": ""
+        "duration": 1,
+        "duration_type": "r"
       }
     ]
   },
@@ -1082,8 +1082,8 @@
     "effects": [
       {
         "type": "grappled",
-        "duration": "1r",
-        "duration_type": ""
+        "duration": 1,
+        "duration_type": "r"
       }
     ]
   },
@@ -1109,8 +1109,8 @@
     "effects": [
       {
         "type": "poisoned",
-        "duration": "4r",
-        "duration_type": ""
+        "duration": 4,
+        "duration_type": "r"
       }
     ]
   },
@@ -1136,8 +1136,8 @@
     "effects": [
       {
         "type": "stunned",
-        "duration": "1r",
-        "duration_type": ""
+        "duration": 1,
+        "duration_type": "r"
       }
     ]
   },
@@ -1159,13 +1159,13 @@
     "effects": [
       {
         "type": "poisoned",
-        "duration": "3r",
-        "duration_type": ""
+        "duration": 3,
+        "duration_type": "r"
       },
       {
         "type": "prone",
-        "duration": "2r",
-        "duration_type": ""
+        "duration": 2,
+        "duration_type": "r"
       }
     ]
   },
@@ -1187,8 +1187,8 @@
     "effects": [
       {
         "type": "exhausted",
-        "duration": "1r",
-        "duration_type": ""
+        "duration": 1,
+        "duration_type": "r"
       }
     ]
   },
@@ -1207,13 +1207,13 @@
     "effects": [
       {
         "type": "disadvantage_(hit)",
-        "duration": "1r",
-        "duration_type": ""
+        "duration": 1,
+        "duration_type": "r"
       },
       {
         "type": "double_damage",
-        "duration": "1r",
-        "duration_type": ""
+        "duration": 1,
+        "duration_type": "r"
       }
     ]
   },
@@ -1236,8 +1236,8 @@
     "effects": [
       {
         "type": "poisoned",
-        "duration": "2r",
-        "duration_type": ""
+        "duration": 2,
+        "duration_type": "r"
       }
     ]
   },
@@ -1272,7 +1272,7 @@
     "effects": [
       {
         "type": "bleeding",
-        "severity": "lv2"
+        "severity": 2
       }
     ]
   },
@@ -1325,8 +1325,8 @@
     "effects": [
       {
         "type": "prone",
-        "duration": "2r",
-        "duration_type": ""
+        "duration": 2,
+        "duration_type": "r"
       }
     ]
   },
@@ -1430,8 +1430,8 @@
     "effects": [
       {
         "type": "increased_movement",
-        "duration": "1r",
-        "duration_type": ""
+        "duration": 1,
+        "duration_type": "r"
       }
     ]
   },
@@ -1487,8 +1487,8 @@
     "effects": [
       {
         "type": "disadvantage_(hit)",
-        "duration": "1r",
-        "duration_type": ""
+        "duration": 1,
+        "duration_type": "r"
       }
     ]
   },
@@ -1507,8 +1507,8 @@
     "effects": [
       {
         "type": "stunned",
-        "duration": "1r",
-        "duration_type": ""
+        "duration": 1,
+        "duration_type": "r"
       }
     ]
   },
@@ -1552,8 +1552,8 @@
     "effects": [
       {
         "type": "frightened",
-        "duration": "3r",
-        "duration_type": ""
+        "duration": 3,
+        "duration_type": "r"
       }
     ]
   },
@@ -1576,8 +1576,8 @@
     "effects": [
       {
         "type": "poisoned",
-        "duration": "2r",
-        "duration_type": ""
+        "duration": 2,
+        "duration_type": "r"
       }
     ]
   },
@@ -1599,7 +1599,7 @@
     ]
   },
   {
-    "name": "Steinsalve",
+    "name": "Steinsae",
     "legendary": false,
     "range": 60,
     "aoe": "single",
@@ -1723,8 +1723,8 @@
     "effects": [
       {
         "type": "ac-1",
-        "duration": "2r",
-        "duration_type": ""
+        "duration": 2,
+        "duration_type": "r"
       }
     ]
   },
@@ -1750,8 +1750,8 @@
     "effects": [
       {
         "type": "paralysed",
-        "duration": "3r",
-        "duration_type": ""
+        "duration": 3,
+        "duration_type": "r"
       }
     ]
   },
@@ -1773,8 +1773,8 @@
     "effects": [
       {
         "type": "ac-1",
-        "duration": "2r",
-        "duration_type": ""
+        "duration": 2,
+        "duration_type": "r"
       }
     ]
   },
@@ -1800,8 +1800,8 @@
     "effects": [
       {
         "type": "restrained",
-        "duration": "1r",
-        "duration_type": ""
+        "duration": 1,
+        "duration_type": "r"
       }
     ]
   },
@@ -1856,8 +1856,8 @@
     "effects": [
       {
         "type": "blinded",
-        "duration": "1r",
-        "duration_type": ""
+        "duration": 1,
+        "duration_type": "r"
       }
     ]
   },
@@ -1879,8 +1879,8 @@
     "effects": [
       {
         "type": "restrained",
-        "duration": "2r",
-        "duration_type": ""
+        "duration": 2,
+        "duration_type": "r"
       }
     ]
   },
@@ -2021,8 +2021,8 @@
     "effects": [
       {
         "type": "grappled",
-        "duration": "1r",
-        "duration_type": ""
+        "duration": 1,
+        "duration_type": "r"
       }
     ]
   },
@@ -2041,8 +2041,8 @@
     "effects": [
       {
         "type": "restrained",
-        "duration": "1r",
-        "duration_type": ""
+        "duration": 1,
+        "duration_type": "r"
       }
     ]
   },
