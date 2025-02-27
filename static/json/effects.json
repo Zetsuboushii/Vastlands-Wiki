@@ -1,136 +1,131 @@
 [
   {
-    "name": "ac-1",
+    "name": "Verringerte Rüstungsklasse",
     "impact": 0,
     "description": ""
   },
   {
-    "name": "bleeding",
+    "name": "Blutung",
     "impact": 0,
     "description": ""
   },
   {
-    "name": "blinded",
+    "name": "Blind",
     "impact": 0,
     "description": ""
   },
   {
-    "name": "deaf",
+    "name": "Taub",
     "impact": 0,
     "description": ""
   },
   {
-    "name": "difficult_terrain",
+    "name": "Schwieriges Terrain",
     "impact": 0,
     "description": ""
   },
   {
-    "name": "disadvantage_(dmg)",
+    "name": "Nachteil (Schadenswurf)",
     "impact": 0,
     "description": ""
   },
   {
-    "name": "disadvantage_(hit)",
+    "name": "Nachteil (Trefferwurf)",
     "impact": 0,
     "description": ""
   },
   {
-    "name": "double_damage",
+    "name": "Doppelter Schaden",
     "impact": 0,
     "description": ""
   },
   {
-    "name": "escape",
+    "name": "Flucht",
     "impact": 0,
     "description": ""
   },
   {
-    "name": "exhausted",
+    "name": "Erschöpft",
     "impact": 0,
     "description": ""
   },
   {
-    "name": "frightened",
+    "name": "Verängstigt",
     "impact": 0,
     "description": ""
   },
   {
-    "name": "grappled",
+    "name": "Gepackt",
     "impact": 0,
     "description": ""
   },
   {
-    "name": "heal",
+    "name": "Heilung",
     "impact": 0,
     "description": ""
   },
   {
-    "name": "increased_movement",
+    "name": "Erhöhte Bewegungsrate",
     "impact": 0,
     "description": ""
   },
   {
-    "name": "invisible",
+    "name": "Unsichtbar",
     "impact": 0,
     "description": ""
   },
   {
-    "name": "knockback",
+    "name": "Rückstoß",
     "impact": 0,
     "description": ""
   },
   {
-    "name": "leap",
+    "name": "Sprung",
     "impact": 0,
     "description": ""
   },
   {
-    "name": "paralysed",
+    "name": "Gelähmt",
     "impact": 0,
     "description": ""
   },
   {
-    "name": "petrified",
+    "name": "Versteinert",
     "impact": 0,
     "description": ""
   },
   {
-    "name": "poisoned",
+    "name": "Vergifted",
     "impact": 0,
     "description": ""
   },
   {
-    "name": "prone",
+    "name": "Liegend",
     "impact": 0,
     "description": ""
   },
   {
-    "name": "pull",
+    "name": "Heranziehen",
     "impact": 0,
     "description": ""
   },
   {
-    "name": "pulled",
+    "name": "Wegstoßen",
     "impact": 0,
     "description": ""
   },
   {
-    "name": "push",
+    "name": "Resistenz (Alles)",
     "impact": 0,
     "description": ""
   },
   {
-    "name": "resistance_(all)",
+    "name": "Festgesetzt",
     "impact": 0,
     "description": ""
   },
   {
-    "name": "restrained",
-    "impact": 0,
-    "description": ""
-  },
-  {
-    "name": "stunned",
+    "name": "Betäubt",
     "impact": 0,
     "description": ""
   }
