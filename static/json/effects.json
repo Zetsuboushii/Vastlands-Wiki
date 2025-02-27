@@ -1,0 +1,137 @@
+[
+  {
+    "name": "ac-1",
+    "impact": 0,
+    "description": ""
+  },
+  {
+    "name": "bleeding",
+    "impact": 0,
+    "description": ""
+  },
+  {
+    "name": "blinded",
+    "impact": 0,
+    "description": ""
+  },
+  {
+    "name": "deaf",
+    "impact": 0,
+    "description": ""
+  },
+  {
+    "name": "difficult_terrain",
+    "impact": 0,
+    "description": ""
+  },
+  {
+    "name": "disadvantage_(dmg)",
+    "impact": 0,
+    "description": ""
+  },
+  {
+    "name": "disadvantage_(hit)",
+    "impact": 0,
+    "description": ""
+  },
+  {
+    "name": "double_damage",
+    "impact": 0,
+    "description": ""
+  },
+  {
+    "name": "escape",
+    "impact": 0,
+    "description": ""
+  },
+  {
+    "name": "exhausted",
+    "impact": 0,
+    "description": ""
+  },
+  {
+    "name": "frightened",
+    "impact": 0,
+    "description": ""
+  },
+  {
+    "name": "grappled",
+    "impact": 0,
+    "description": ""
+  },
+  {
+    "name": "heal",
+    "impact": 0,
+    "description": ""
+  },
+  {
+    "name": "increased_movement",
+    "impact": 0,
+    "description": ""
+  },
+  {
+    "name": "invisible",
+    "impact": 0,
+    "description": ""
+  },
+  {
+    "name": "knockback",
+    "impact": 0,
+    "description": ""
+  },
+  {
+    "name": "leap",
+    "impact": 0,
+    "description": ""
+  },
+  {
+    "name": "paralysed",
+    "impact": 0,
+    "description": ""
+  },
+  {
+    "name": "petrified",
+    "impact": 0,
+    "description": ""
+  },
+  {
+    "name": "poisoned",
+    "impact": 0,
+    "description": ""
+  },
+  {
+    "name": "prone",
+    "impact": 0,
+    "description": ""
+  },
+  {
+    "name": "pull",
+    "impact": 0,
+    "description": ""
+  },
+  {
+    "name": "pulled",
+    "impact": 0,
+    "description": ""
+  },
+  {
+    "name": "push",
+    "impact": 0,
+    "description": ""
+  },
+  {
+    "name": "resistance_(all)",
+    "impact": 0,
+    "description": ""
+  },
+  {
+    "name": "restrained",
+    "impact": 0,
+    "description": ""
+  },
+  {
+    "name": "stunned",
+    "impact": 0,
+    "description": ""
+  }
+]

@@ -129,20 +129,23 @@
 
                         <ul>
                             {% if action.cooldown %}
-                                <li>Abklingzeit: {{ action.cooldown.duration }}{{ action.cooldown.duration_type }}</li>{% endif %}
+                                <li>Abklingzeit:
+                                    {{ action.cooldown.duration }}{{ action.cooldown.duration_type }}</li>{% endif %}
                             <li>Reichtweite: {{ action.range }} ft. {{ action.aoe }}</li>
                             {% if action.hitbonus %}
                                 <li>Trefferbonus: +{{ action.hitbonus }}</li>{% endif %}
                             {% if action.savereq %}
-                                <li>Gegnerischer Rettungswurf: ≥{{ action.savereq.bound }} {{ action.savereq.ability | capitalize }}</li>
+                                <li>Gegnerischer Rettungswurf:
+                                    ≥{{ action.savereq.bound }} {{ action.savereq.ability | capitalize }}</li>
                             {% endif %}
                             {% if action.damage %}
                                 <li>Schadenswurf: {% for d in action.damage %}{{ d.dice_term }} {{ d.type }}
                                     {{ ", " if not loop.last else "" }}{% endfor %}</li>
                             {% endif %}
                             {% if action.effects %}
-                                <li>Effekte: {% for e in action.effects %}{{ e.type }} ({{ e.duration }}{{ e.duration_type }}{{ e.dice_term }}{{ e.severity }}{{ e.range }})
-                                    {{ ", " if not loop.last else "" }}{% endfor %}</li>
+                                <li>Effekte: {% for e in action.effects %}{{ e.type }}
+                                    ({{ e.duration }}{{ e.duration_type }}{{ e.dice_term }}{{ e.severity }}{{ e.range }}
+                                    ){{ ", " if not loop.last else "" }}{% endfor %}</li>
                             {% endif %}
                         </ul>
 

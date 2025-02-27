@@ -355,3 +355,13 @@ Alle JSON-Files können unter dem Base-Path https://tome.zetsuboushii.site/stati
 | `age_average` | `number` | Durchschnittliche Lebenserwartung für Individuen der Rasse                                                                                                                          |
 | `domains`     | `array`  | Liste der Orte, an denen Individuen der Rasse hauptsächlich vertreten sind;<br>Einzelne Domains sind als `string` definiert;<br>Verweis auf Objekte in [`places.json`](#placesjson) |
 | `content`     | `object` | Liste der Texte zur Rasse;<br>Analoge Dokumentation [hier](#content)                                                                                                                |
+
+### effects.json
+
+`effects.json` ist ein Array von Effekt-Objekten. Ein Effekt besteht aus folgenden Feldern:
+
+| Feldname      | Datentyp | Erklärung                                                            |
+|---------------|----------|----------------------------------------------------------------------|
+| `name`        | `string` | Name des Effekts                                                     |
+| `impact`      | `number` | Grad der Auswirkung des Effekts                                      |
+| `description` | `string` | Beschreibung des Effekts                                             |
