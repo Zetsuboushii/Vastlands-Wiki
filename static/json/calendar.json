@@ -370,5 +370,35 @@
       "sections": [
       ]
     }
+  },
+  {
+    "name": "Fürsorgetag",
+    "date": "9.9",
+    "type": "",
+    "content": {
+      "excerpt": "",
+      "sections": [
+      ]
+    }
+  },
+  {
+    "name": "Kindertag",
+    "date": "27.2",
+    "type": "",
+    "content": {
+      "excerpt": "",
+      "sections": [
+      ]
+    }
+  },
+  {
+    "name": "Nationaler Spartag",
+    "date": "10.10",
+    "type": "",
+    "content": {
+      "excerpt": "",
+      "sections": [
+      ]
+    }
   }
 ]
