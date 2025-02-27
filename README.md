@@ -270,7 +270,7 @@ Alle JSON-Files können unter dem Base-Path https://tome.zetsuboushii.site/stati
 |-----------------|----------|----------------------------------------------------------------------|
 | `type`          | `string` | Effekt-Typ;<br>Verweis auf Objekte in [`effects.json`](#effectsjson) |
 | `dice_term`     | `string` | Würfelwurf-Term für Effekt                                           |
-| `severity`      | `string` | Schwere des Effekts                                                  |
+| `severity`      | `number` | Schwere des Effekts                                                  |
 | `duration`      | `number` | Dauer des Effekts                                                    |
 | `duration_type` | `string` | Art der Dauer;<br>"r" für Runde, "d" für Tag                         |
 
