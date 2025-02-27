@@ -37,6 +37,7 @@
     * [theologarium.json](#theologariumjson)
     * [linguarium.json](#linguariumjson)
     * [gentarium.json](#gentariumjson)
+    * [effects.json](#effectsjson)
 <!-- TOC -->
 
 ## 1. Einleitung
