@@ -5,9 +5,9 @@
   align-items: flex-start; }
 
 .character-data {
-  flex: 0 0 30%;
-  border-right: 1px solid #2e2622; }
+  flex: 0 0 30%; }
   .character-data .character-data-box {
+    border-right: 1px solid #2e2622;
     position: relative;
     width: 500px;
     top: 25px;
