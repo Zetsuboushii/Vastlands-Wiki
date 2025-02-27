@@ -71,6 +71,7 @@ abilities_list = load_from_json("abilities")
 def index():
     characters_list = load_from_json("characters")
     calendar_list = load_from_json("calendar")
+    current_day = date.today()
 
     birthday_characters = []
     for char in characters_list:
@@ -84,14 +85,14 @@ def index():
             if len(data["birthday"].split(".")) == 3:
                 birthday_day, birthday_month, birthday_year = map(int, data['birthday'].split('.'))
 
-            current_day = date.today()
+
             if f"{birthday_day:02}" == f"{current_day.day:02}" and f"{birthday_month:02}" == f"{current_day.month:02}":
                 birthday_characters.append(data)
 
     rand_char = random.choice(characters_list)
 
     return render_template('index.html', birthday_characters=birthday_characters, news=news_list, rand_char=rand_char,
-                           holidays=calendar_list, characters=characters_list)
+                           holidays=calendar_list, characters=characters_list, current_day=current_day)
 
 
 @app.route('/characters/')

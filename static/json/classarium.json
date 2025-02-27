@@ -1,3 +1,578 @@
-{
-
-}
+[
+  {
+    "name": "Abenteurer",
+    "type": "Basisklasse",
+    "description": ""
+  },
+  {
+    "name": "Adliger",
+    "type": "Basisklasse",
+    "description": ""
+  },
+  {
+    "name": "Barbar",
+    "type": "Basisklasse",
+    "leaning": "Barbarian",
+    "description": [],
+    "advances": [
+      "Ahnenwächter",
+      "Bestienmeister",
+      "Berserker",
+      "Sturmherold",
+      "Totemkrieger",
+      "Wilder Magier",
+      "Vollstrecker"
+    ]
+  },
+  {
+    "name": "Ahnenwächter",
+    "type": "Subklasse",
+    "leaning": [
+      "Ancestral Guardian"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Bestienmeister",
+    "type": "Subklasse",
+    "leaning": [
+      "Beast Master"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Berserker",
+    "type": "Subklasse",
+    "leaning": [
+      "Berserker"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Sturmherold",
+    "type": "Subklasse",
+    "leaning": [
+      "Storm Herald"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Totemkrieger",
+    "type": "Subklasse",
+    "leaning": [
+      "Totem Warrior"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Wilder Magier",
+    "type": "Subklasse",
+    "leaning": [
+      "Wild Magic"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Vollstrecker",
+    "type": "Subklasse",
+    "leaning": [
+      "Zealot"
+    ],
+    "description": [],
+    "advances": []
+  },
+  {
+    "name": "Barde",
+    "type": "Basisklasse",
+    "leaning": "Bard",
+    "description": [],
+    "advances": [
+      "Sänger der Schöpfung",
+      "Sänger der Eloquenz",
+      "Sänger der Elegie",
+      "Sänger des Wissens",
+      "Sänger der Klingen",
+      "Sänger der Tapferkeit",
+      "Sänger der Stimmen"
+    ]
+  },
+  {
+    "name": "Sänger der Schöpfung",
+    "type": "Subklasse",
+    "leaning": [
+      "College of Creation"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Sänger der Eloquenz",
+    "type": "Subklasse",
+    "leaning": [
+      "College of Eloquence"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Sänger der Elegie",
+    "type": "Subklasse",
+    "leaning": [
+      "College of Glamour"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Sänger des Wissens",
+    "type": "Subklasse",
+    "leaning": [
+      "College of Lore"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Sänger der Klingen",
+    "type": "Subklasse",
+    "leaning": [
+      "College of Swords"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Sänger der Tapferkeit",
+    "type": "Subklasse",
+    "leaning": [
+      "College of Valor"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Sänger der Stimmen",
+    "type": "Subklasse",
+    "leaning": [
+      "College of Whispers"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Kleriker",
+    "type": "Basisklasse",
+    "leaning": [
+      "Cleric"
+    ],
+    "description": "",
+    "advances": [
+      "Kleriker der Avila",
+      "Kleriker der Farone",
+      "Kleriker der Fortuna",
+      "Kleriker der Hama",
+      "Kleriker der Justicia",
+      "Kleriker der Seloue",
+      "Kleriker der Zora",
+      "Kleriker des Bellum",
+      "Kleriker des Kaze",
+      "Kleriker des Mudo",
+      "Kleriker des Niruin",
+      "Kleriker des Rai",
+      "Kleriker des Thanatos"
+    ]
+  },
+  {
+    "name": "Kleriker der Avila",
+    "type": "Subklasse",
+    "leaning": [],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Kleriker der Farone",
+    "type": "Subklasse",
+    "leaning": [
+      "Nature Domain",
+      "Arcana Domain"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Kleriker der Fortuna",
+    "type": "Subklasse",
+    "leaning": [],
+    "description": "",
+    "advances": [
+      "Schicksalsbischof"
+    ]
+  },
+  {
+    "name": "Schicksalsbischof",
+    "type": "Meisterklasse",
+    "leaning": [],
+    "description": ""
+  },
+  {
+    "name": "Kleriker der Hama",
+    "type": "Subklasse",
+    "leaning": [
+      "Life Domain"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Kleriker der Justicia",
+    "type": "Subklasse",
+    "leaning": [
+      "Order Domain",
+      "Light Domain"
+    ],
+    "description": "",
+    "advances": [
+      "Erzbischof der Gerechtigkeit"
+    ]
+  },
+  {
+    "name": "Erzbischof der Gerechtigkeit",
+    "type": "Meisterklasse",
+    "leaning": [],
+    "description": ""
+  },
+  {
+    "name": "Kleriker der Seloue",
+    "type": "Subklasse",
+    "leaning": [
+      "Knowledge Domain"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Kleriker der Zora",
+    "type": "Subklasse",
+    "leaning": [],
+    "description": "",
+    "advances": [
+      "Orakel des Wassers"
+    ]
+  },
+  {
+    "name": "Orakel des Wassers",
+    "type": "Meisterklasse",
+    "leaning": [],
+    "description": ""
+  },
+  {
+    "name": "Kleriker des Bellum",
+    "type": "Subklasse",
+    "leaning": [
+      "War Domain"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Kleriker des Kaze",
+    "type": "Subklasse",
+    "leaning": [
+      "Tempest Domain"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Kleriker des Mudo",
+    "type": "Subklasse",
+    "leaning": [
+      "Death Domain",
+      "Grave Domain"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Kleriker des Rai",
+    "type": "Subklasse",
+    "leaning": [
+      "Forge Domain"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Kleriker des Thanatos",
+    "type": "Subklasse",
+    "leaning": [],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Druide",
+    "type": "Basisklasse",
+    "leaning": [
+      "Druid"
+    ],
+    "description": "",
+    "advances": [
+      "Traumweber",
+      "Sterngucker",
+      "Urwissenshüter",
+      "Mondwandler",
+      "Seelenhirte",
+      "Flammenhüter"
+    ]
+  },
+  {
+    "name": "Traumweber",
+    "type": "Subklasse",
+    "leaning": [
+      "Circle of Dreams"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Sterngucker",
+    "type": "Subklasse",
+    "leaning": [
+      "Circle of Stars"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Urwissenshüter",
+    "type": "Subklasse",
+    "leaning": [
+      "Circle of the Land"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Mondwandler",
+    "type": "Subklasse",
+    "leaning": [
+      "Circle of the Moon"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Seelenhirte",
+    "type": "Subklasse",
+    "leaning": [
+      "Circle of the Shepherd"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Flammenhüter",
+    "type": "Subklasse",
+    "leaning": [
+      "Circle of Wildfire"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Kämpfer",
+    "type": "Basisklasse",
+    "leaning": [
+      "Fighter"
+    ],
+    "description": "",
+    "advances": [
+      "Magieschütze",
+      "Kampfmeister",
+      "Kavallerist",
+      "Champion",
+      "Magieritter",
+      "Falkenritter",
+      "Psi-Klinge",
+      "Runenritter",
+      "Samurai",
+      "Drachenritter"
+    ]
+  },
+  {
+    "name": "Magieschütze",
+    "type": "Subklasse",
+    "leaning": [
+      "Arcane Archer"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Kampfmeister",
+    "type": "Subklasse",
+    "leaning": [
+      "Kampfmeister"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Kavellerist",
+    "type": "Subklasse",
+    "leaning": [
+      "Cavalier"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Champion",
+    "type": "Subklasse",
+    "leaning": [
+      "Champion"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Magieritter",
+    "type": "Subklasse",
+    "leaning": [
+      "Eldritch Knight"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Falkenritter",
+    "type": "Subklasse",
+    "leaning": [
+      "Falcon Knight"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Psi-Klinge",
+    "type": "Subklasse",
+    "leaning": [
+      "Psi Warrior"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Runenritter",
+    "type": "Subklasse",
+    "leaning": [
+      "Rune Knight"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Samurai",
+    "type": "Subklasse",
+    "leaning": [
+      "Samurai"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Drachenritter",
+    "type": "Subklasse",
+    "leaning": [
+      "Wyvern Rider"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Mönch",
+    "type": "Basisklasse",
+    "leaning": [
+      "Monk"
+    ],
+    "description": "",
+    "advances": [
+      "Schattenbängier",
+      "Astralbändiger",
+      "Rauschbändiger",
+      "Elementarbändiger",
+      "Klingenbändiger",
+      "Faustbändiger",
+      "Sonnenbändiger"
+    ]
+  },
+  {
+    "name": "Schattenbändiger",
+    "type": "Subklasse",
+    "leaning": [
+      "Way of Shadow"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Astralbändiger",
+    "type": "Subklasse",
+    "leaning": [
+      "Way of the Astral Self"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Rauschbändiger",
+    "type": "Subklasse",
+    "leaning": [
+      "Way of the Drunken Master"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Elementarbändiger",
+    "type": "Subklasse",
+    "leaning": [
+      "Way of the Four Elements"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Klingenbändiger",
+    "type": "Subklasse",
+    "leaning": [
+      "Way of the Kensei"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Faustbändiger",
+    "type": "Subklasse",
+    "leaning": [
+      "Way of the Open Hand"
+    ],
+    "description": "",
+    "advances": []
+  },
+  {
+    "name": "Sonnenbändiger",
+    "type": "Subklasse",
+    "leaning": [
+      "Way of the Sun Soul"
+    ],
+    "description": "",
+    "advances": []
+  }
+]

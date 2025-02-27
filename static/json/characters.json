@@ -192,7 +192,12 @@
     "race": "Götter",
     "sex": "m",
     "birthday": "",
-    "aliases": [],
+    "aliases": [
+      {
+        "alias": "Onkelchen",
+        "origin": "U-Ranos"
+      }
+    ],
     "measurements": {
       "height": 2.37
     },
@@ -480,8 +485,13 @@
     "title": "Erbamungsloser Inquisitor",
     "race": "Engel",
     "sex": "m",
-    "birthday": "",
-    "aliases": [],
+    "birthday": "10.03",
+    "aliases": [
+      {
+        "alias": "Meri",
+        "origin": "U-Ranos"
+      }
+    ],
     "measurements": {
       "height": 1.96,
       "weight": 105,
@@ -711,7 +721,7 @@
     "title": "Immerfrohe Verkupplerin",
     "race": "Halbelfen",
     "sex": "w",
-    "birthday": "",
+    "birthday": "14.2",
     "aliases": [],
     "measurements": {
       "height": 1.68,
@@ -1945,7 +1955,7 @@
     "title": "Heiliger Krieger",
     "race": "Engel",
     "sex": "m",
-    "birthday": "1.1.370",
+    "birthday": "12.03",
     "aliases": [
       {
         "alias": "Toadi",
@@ -2934,7 +2944,7 @@
     "title": "Knuffiges Eis des Nordens",
     "race": "Schutzgeister",
     "sex": "w",
-    "birthday": "",
+    "birthday": "30.1",
     "aliases": [],
     "measurements": {
       "height": 1.44,
@@ -3412,10 +3422,11 @@
       "Diakon der Kirche der Himmlischen Gerechtigkeit"
     ],
     "classes": {
-      "baseclass": "Kleriker der Justicia",
+      "baseclass": "Kleriker",
       "subclasses": [
-        "Erzbischof der Gerechtigkeit"
-      ]
+        "Kleriker der Justicia"
+      ],
+      "masterclass": "Erzbischof der Gerechtigkeit"
     },
     "nationality": "Faergria",
     "homes": [
@@ -3454,7 +3465,7 @@
     "title": "Forsches Heilungswunder",
     "race": "Pikori",
     "sex": "w",
-    "birthday": "",
+    "birthday": "9.9",
     "aliases": [],
     "measurements": {
       "height": 1.78,
@@ -3841,8 +3852,13 @@
     "title": "Rätselhafte Verbündete",
     "race": "Dämonen",
     "sex": "w",
-    "birthday": "",
-    "aliases": [],
+    "birthday": "10.10",
+    "aliases": [
+      {
+        "alias": "Chefin",
+        "origin": "Bewohner von Niddarvellir"
+      }
+    ],
     "measurements": {
       "height": 1.7,
       "weight": 64,
@@ -4100,7 +4116,7 @@
     "title": "Lichtbringende Botin",
     "race": "Engel",
     "sex": "w",
-    "birthday": "",
+    "birthday": "14.03",
     "aliases": [
       {
         "alias": "Ili",
@@ -4912,7 +4928,7 @@
     "title": "Hitzköpfige Zeitgenossin",
     "race": "Schutzgeister",
     "sex": "w",
-    "birthday": "",
+    "birthday": "4.10",
     "aliases": [],
     "measurements": {
       "height": 1.58,
@@ -6127,8 +6143,13 @@
     "title": "Schicksalsklinge der Fortuna",
     "race": "Menschen",
     "sex": "w",
-    "birthday": "",
-    "aliases": [],
+    "birthday": "1.1",
+    "aliases": [
+      {
+        "alias": "Cousinchen",
+        "origin": "U-Ranos"
+      }
+    ],
     "measurements": {
       "height": 1.82,
       "weight": 75,
@@ -6443,7 +6464,7 @@
     "title": "Klinge des Todes",
     "race": "Dämonen",
     "sex": "m",
-    "birthday": "",
+    "birthday": "31.10",
     "aliases": [
       {
         "alias": "Dodo",
@@ -6925,7 +6946,7 @@
     "title": "Himmlische Bestrafung",
     "race": "Engel",
     "sex": "m",
-    "birthday": "",
+    "birthday": "11.03",
     "aliases": [
       {
         "alias": "Galli",
@@ -7250,7 +7271,7 @@
     "title": "Ewige Jugend",
     "race": "Pikori",
     "sex": "m",
-    "birthday": "",
+    "birthday": "27.2",
     "aliases": [],
     "measurements": {
       "height": 1.63,
@@ -7497,11 +7518,15 @@
     "title": "Elektrisierender Schmiedegott",
     "race": "Menschen",
     "sex": "m",
-    "birthday": "",
+    "birthday": "3.6",
     "aliases": [
       {
         "alias": "Aurelia",
         "origin": "Zwergenvolk"
+      },
+      {
+        "alias": "Erzprinzesschen",
+        "origin": "U-Ranos"
       }
     ],
     "measurements": {
@@ -7801,7 +7826,7 @@
     "title": "Sündhaft obszöne Erzmagierin",
     "race": "Dämonen",
     "sex": "w",
-    "birthday": "",
+    "birthday": "17.11",
     "aliases": [],
     "measurements": {
       "height": 1.85,
@@ -10009,7 +10034,7 @@
     "title": "Nachfahrin des Meeres",
     "race": "Nixen",
     "sex": "w",
-    "birthday": "",
+    "birthday": "10.7",
     "aliases": [],
     "measurements": {
       "height": 1.72,

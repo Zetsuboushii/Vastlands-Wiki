@@ -8,38 +8,37 @@
 
 
 <!-- TOC -->
-
-* [1. Einleitung](#1-einleitung)
-* [2. Mitwirkende](#2-mitwirkende)
-* [3. API-Referenz](#3-api-referenz)
+  * [1. Einleitung](#1-einleitung)
+  * [2. Mitwirkende](#2-mitwirkende)
+  * [3. API-Referenz](#3-api-referenz)
     * [current_date.json](#current_datejson)
     * [characters.json](#charactersjson)
-        * [aliases](#aliases)
-        * [measurements](#measurements)
-        * [classes](#classes)
-        * [homes](#homes)
-        * [relationships](#relationships)
-        * [content](#content)
-        * [sections](#sections)
+      * [aliases](#aliases)
+      * [measurements](#measurements)
+      * [classes](#classes)
+      * [homes](#homes)
+      * [relationships](#relationships)
+      * [content](#content)
+      * [sections](#sections)
     * [places.json](#placesjson)
-        * [language](#language)
-        * [leader](#leader)
+      * [language](#language)
+      * [leader](#leader)
     * [calendar.json](#calendarjson)
     * [news.json](#newsjson)
     * [actions.json](#actionsjson)
-        * [cooldown](#cooldown)
-        * [savereq](#savereq)
-        * [damage](#damage)
-        * [effects](#effects)
+      * [cooldown](#cooldown)
+      * [savereq](#savereq)
+      * [damage](#damage)
+      * [effects](#effects)
     * [compendia.json](#compendiajson)
     * [bestiarium.json](#bestiariumjson)
-        * [movement](#movement)
-        * [abilities](#abilities)
+      * [movement](#movement)
+      * [abilities](#abilities)
     * [theologarium.json](#theologariumjson)
     * [linguarium.json](#linguariumjson)
     * [gentarium.json](#gentariumjson)
     * [effects.json](#effectsjson)
-
+    * [classarium.json](#classariumjson)
 <!-- TOC -->
 
 ## 1. Einleitung
@@ -125,11 +124,11 @@ Alle JSON-Files können unter dem Base-Path https://tome.zetsuboushii.site/stati
 
 `classes` ist ein Objekt mit folgenden Feldern:
 
-| Feldname      | Datentyp | Erklärung                                                                     |
-|---------------|----------|-------------------------------------------------------------------------------|
-| `baseclass`   | `string` | Basisklasse des Charakters                                                    |
-| `subclasses`  | `array`  | Subklassen des Charakters;<br>Einzelne Subklassen sind als `string` definiert |
-| `masterclass` | `string` | Meisterklasse des Charakters                                                  |
+| Feldname      | Datentyp | Erklärung                                                                                                                                     |
+|---------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| `baseclass`   | `string` | Basisklasse des Charakters;<br>Verweis auf Objekte in [`classarium.json`](#classariumjson)                                                    |
+| `subclasses`  | `array`  | Subklassen des Charakters;<br>Einzelne Subklassen sind als `string` definiert;<br>Verweis auf Objekte in [`classarium.json`](#classariumjson) |
+| `masterclass` | `string` | Meisterklasse des Charakters;<br>Verweis auf Objekte in [`classarium.json`](#classariumjson)                                                  |
 
 #### homes
 
@@ -370,3 +369,15 @@ Alle JSON-Files können unter dem Base-Path https://tome.zetsuboushii.site/stati
 | `name`        | `string` | Name des Effekts                |
 | `impact`      | `number` | Grad der Auswirkung des Effekts |
 | `description` | `string` | Beschreibung des Effekts        |
+
+### classarium.json
+
+`classarium.json` ist ein Array von Klassen-Objekten. Eine Klasse besteht aus folgenden Feldern:
+
+| Feldname      | Datentyp | Erklärung                                                                                                                                |
+|---------------|----------|------------------------------------------------------------------------------------------------------------------------------------------|
+| `name`        | `string` | Name der Klasse                                                                                                                          |
+| `type`        | `string` | Typ der Klasse                                                                                                                           |
+| `leaning`     | `array`  | Anlehnungen der Klasse an Klassen aus 5e;<br>Einzelne Anlehnungen sind als `string` definiert                                            |
+| `description` | `string` | Beschreibung des Klasse                                                                                                                  |
+| `advances`    | `array`  | Höhere Stufen der Klasse;<br>Einzelne Stufen sind als `string` definiert;<br>Verweis auf Objekte in [`classarium.json`](#classariumjson) |

@@ -81,7 +81,7 @@
                                     <div class="home-birthdays-heading">
                                         <h3>
                                             <a href="{{ url_for('character', character_name=char.name) }}">{{ char.name }}</a>
-                                            hat heute Geburtstag!</h3>
+                                            hat heute am {{ current_day }} Geburtstag!</h3>
                                     </div>
                                 {% endfor %}
                             </div>
