@@ -127,11 +127,17 @@
 
             <div class="character-text">
                 <div class="character-text-box">
+                    <iframe src="https://map.zetsuboushii.site?marker={{ place.name }}"
+                            style="margin-top: 20px; width: 100%; height: 500px"></iframe>
                     {% if place.content %}
                         <p>{{ place.content.excerpt }}</p>
 
                         <hr>
 
+                        {% if not place.content.sections %}
+                            <p>Hier steht noch nichts! Erinnere doch gerne den DM daran, für diesen Charakter etwas
+                                epochales zu schreiben :)</p>
+                        {% endif %}
                         {% for section in place.content.sections %}
                             <div class="character-text-heading"><h2>{{ section.title }}</h2></div>
                             <p>{{ section.text }}</p>
