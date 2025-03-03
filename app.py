@@ -70,6 +70,7 @@ abilities_list = load_from_json("abilities")
 @app.route('/')
 def index():
     characters_list = load_from_json("characters")
+    characters_list.sort(key=lambda character: character["name"].lower())
     calendar_list = load_from_json("calendar")
     current_day = date.today()
 
@@ -85,7 +86,6 @@ def index():
             if len(data["birthday"].split(".")) == 3:
                 birthday_day, birthday_month, birthday_year = map(int, data['birthday'].split('.'))
 
-
             if f"{birthday_day:02}" == f"{current_day.day:02}" and f"{birthday_month:02}" == f"{current_day.month:02}":
                 birthday_characters.append(data)
 
@@ -98,6 +98,7 @@ def index():
 @app.route('/characters/')
 def characters():
     characters_list = load_from_json("characters")
+    characters_list.sort(key=lambda character: character["name"].lower())
 
     letters = sorted({character['name'][0].upper() for character in characters_list})
     nationalities = sorted({character['nationality'] for character in characters_list if "nationality" in character})
@@ -108,6 +109,7 @@ def characters():
 @app.route('/characters/<character_name>/')
 def character(character_name):
     characters_list = load_from_json("characters")
+    characters_list.sort(key=lambda character: character["name"].lower())
     character_data = None
     data = None
 
@@ -255,15 +257,13 @@ def holidays(holiday_name):
     return render_template('holidays.html', entry=entry)
 
 
+@app.route('/tierlist/')
+def tierlist():
+    characters_list = load_from_json("characters")
+    characters_list.sort(key=lambda character: character["name"].lower())
 
+    return render_template('tierlist.html', characters=characters_list)
 
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-
-@app.route('/tierlist/')
-def tierlist():
-    characters_list = load_from_json("characters")
-
-    return render_template('tierlist.html', characters=characters_list)
