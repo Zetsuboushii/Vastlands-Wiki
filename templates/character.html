@@ -39,10 +39,12 @@
                             </td>
                         </tr>
                         {% if character.birthday %}
-                            <tr>
-                                <td>Alter</td>
-                                <td>{{ character.age }} Jahre</td>
-                            </tr>
+                            {% if character.birth_year %}
+                                <tr>
+                                    <td>Alter</td>
+                                    <td>{{ character.age }} Jahre</td>
+                                </tr>
+                            {% endif %}
                             <tr>
                                 <td>Geburtstag</td>
                                 <td>{{ character.birth_day }}. Tag, {{ character.birth_month }}

@@ -67,6 +67,14 @@
       {
         "character": "Phaerille",
         "relation": "Kleine Schwester"
+      },
+      {
+        "character": "Scarlet",
+        "relation": "Cousine"
+      },
+      {
+        "character": "Cinnabar",
+        "relation": "Cousine"
       }
     ],
     "lover": "",
@@ -795,6 +803,14 @@
       {
         "character": "Thanatos",
         "relation": "guter Freund"
+      },
+      {
+        "character": "Eliza",
+        "relation": "Gute Freundin"
+      },
+      {
+        "character": "Hama",
+        "relation": "Freundin"
       }
     ],
     "lover": "",
@@ -1299,6 +1315,18 @@
       {
         "character": "Nayru",
         "relation": "Freundin"
+      },
+      {
+        "character": "Adamar",
+        "relation": "Cousin"
+      },
+      {
+        "character": "Phaerille",
+        "relation": "Cousine"
+      },
+      {
+        "character": "Finnea",
+        "relation": "Cousine"
       }
     ],
     "lover": "",
@@ -1723,6 +1751,10 @@
       {
         "character": "Nayru",
         "relation": "Herrin"
+      },
+      {
+        "character": "Eliza",
+        "relation": "Freund"
       }
     ],
     "lover": "",
@@ -1882,6 +1914,62 @@
       {
         "character": "Marisa",
         "relation": "Cousine, Freundin"
+      },
+      {
+        "character": "Fubuki",
+        "relation": "Adoptivtochter"
+      },
+      {
+        "character": "U-Ranos",
+        "relation": "Verlobter"
+      },
+      {
+        "character": "Meilira",
+        "relation": "Vertraute"
+      },
+      {
+        "character": "Kaen",
+        "relation": "Freundin"
+      },
+      {
+        "character": "Mei",
+        "relation": "Freundin"
+      },
+      {
+        "character": "Nerissa",
+        "relation": "Freundin"
+      },
+      {
+        "character": "Oscar",
+        "relation": "Freund"
+      },
+      {
+        "character": "Escaar",
+        "relation": "Freundin"
+      },
+      {
+        "character": "Nayru",
+        "relation": "Freundin"
+      },
+      {
+        "character": "Avila",
+        "relation": "Gute Freundin"
+      },
+      {
+        "character": "Hama",
+        "relation": "Gute Freundin"
+      },
+      {
+        "character": "Eris",
+        "relation": "Freundin"
+      },
+      {
+        "character": "Karl",
+        "relation": "Bediensteter"
+      },
+      {
+        "character": "Edgar",
+        "relation": "Freund"
       }
     ],
     "lover": "U-Ranos",
@@ -2178,6 +2266,10 @@
       {
         "character": "Karl",
         "relation": "guter Freund und Kollege"
+      },
+      {
+        "character": "Eliza",
+        "relation": "Freundin"
       }
     ],
     "lover": "",
@@ -2374,7 +2466,7 @@
     "homes": [
       {
         "place": "Garten der Magie",
-        "attachment": "Geburtsort"
+        "attachment": "Schaffensort"
       }
     ],
     "alignment": "CN",
@@ -2402,6 +2494,18 @@
       {
         "character": "Alcuin",
         "relation": "Abneigung"
+      },
+      {
+        "character": "Thanatos",
+        "relation": "Großer Bruder"
+      },
+      {
+        "character": "Justicia",
+        "relation": "Gute Freundin"
+      },
+      {
+        "character": "Fortuna",
+        "relation": "Gute Freundin"
       }
     ],
     "lover": "",
@@ -2616,6 +2720,14 @@
       {
         "character": "Nayru",
         "relation": "Kleine Schwester"
+      },
+      {
+        "character": "Scarlet",
+        "relation": "Cousine"
+      },
+      {
+        "character": "Cinnabar",
+        "relation": "Cousine"
       }
     ],
     "lover": "",
@@ -2734,6 +2846,10 @@
       {
         "alias": "Tantchen",
         "origin": "U-Ranos"
+      },
+      {
+        "alias": "Mutter",
+        "origin": "Meilira"
       }
     ],
     "measurements": {
@@ -2756,7 +2872,7 @@
     "homes": [
       {
         "place": "See des Schicksals",
-        "attachment": "Geburtsort"
+        "attachment": "Schaffensort"
       }
     ],
     "alignment": "NG",
@@ -2799,7 +2915,7 @@
       },
       {
         "character": "Farone",
-        "relation": "Freundin"
+        "relation": "Gute Freundin"
       },
       {
         "character": "Seloue",
@@ -2824,11 +2940,11 @@
           "text": "Als Schwester von Justicia, der Göttin der Gerechtigkeit, und Tante zahlreicher Recken, nimmt Fortuna eine herausragende Rolle innerhalb der göttlichen Familie ein. Ihre Beziehung zu ihrer Schwester Justicia ist von tiefer Liebe und einer Mischung aus Bewunderung und gegenseitigem Respekt geprägt. Als die jüngere Schwester ist Fortuna oft humorvoll und stichelnd gegenüber Justicia, wobei sie sich an ihre gemeinsamen Tage erinnert, als sie ihrer Schwester gerne auf die Nerven ging. Trotz dieser Spielereien verbindet sie eine tiefe Geschwisterliebe, und Fortuna würde alles tun, um ihrer Schwester zu helfen. Sie sieht sich selbst als Justicias moralische Stütze und hat es sich zur Aufgabe gemacht, ihrer Schwester in Zeiten von Stress und Belastung eine Schulter zum Anlehnen zu bieten. Dies zeigt, wie tief die Bindung zwischen den beiden ist und welche Verantwortung Fortuna als Familienmitglied übernimmt. Als Mutter ist Fortuna sehr beschützend gegenüber ihrer Tochter Meilira. Meilira ist Fortunas größte Freude und gleichzeitig die Quelle ihrer sämtlichen Ängste. Fortuna neigt dazu, übertrieben vorsichtig zu sein, wenn es um Meilira geht, und versucht stets, sie vor den Gefahren der Welt zu beschützen, auch wenn Meilira mittlerweile stark genug ist, um sich selbst zu behaupten. Fortuna will einfach nur sicherstellen, dass ihre Tochter ein gutes und erfülltes Leben hat. Sie investiert viel Zeit darin, Meilira Weisheit und moralische Stärke zu vermitteln, um sicherzustellen, dass sie den Herausforderungen des Lebens gewachsen ist. Diese beschützende Fürsorge ist ein zentraler Bestandteil von Fortunas Charakter und zeigt, dass auch Götter die gleichen Ängste und Sorgen um ihre Kinder haben können wie sterbliche Eltern. Mit ihren zahlreichen Nichten und Neffen pflegt Fortuna unterschiedliche Beziehungen. Während sie für einige wie En-Troad und Il-Vernia stets ein offenes Ohr hat und gerne die Rolle der weisen, fürsorglichen Tante übernimmt, gibt es auch problematischere Verhältnisse. Insbesondere zu ihrem Neffen Ar-Merer hat Fortuna ein eher schlechtes Verhältnis. Sie verachtet seine Aufgeblasenheit und seine Angewohnheit, ihren Lieblingsneffen U-Ranos zu benachteiligen. Ar-Merer ist eine Quelle des Ärgernisses für Fortuna, und sie scheut nicht davor zurück, ihm dies auch direkt zu sagen. Gleichzeitig hofft sie insgeheim, dass Ar-Merer sich eines Tages ändert und seinen Hochmut ablegt, da sie tief im Inneren den Wunsch hat, Frieden innerhalb der Familie zu bewahren. Ihre Verbindungen zu ihren anderen Neffen und Nichten sind dagegen meist liebevoll und unterstützend, wobei sie stets bemüht ist, ihre Familienmitglieder zu motivieren, das Beste aus sich herauszuholen. "
         },
         {
-          "title": "Rolle als Göttin des Schicksals",
+          "title": "Rolle als Göttin",
           "text": "Fortunas wichtigste Aufgabe ist es, den Seelen ihren Sinn zu verleihen und sicherzustellen, dass sie ihrem vorherbestimmten Schicksal folgen. Mit Hilfe ihres großen Buches, in das sie das Schicksal jeder einzelnen Seele niederschreibt, gewährleistet sie, dass das göttliche Gefüge von Ursache und Wirkung ungebrochen bleibt. Jede Seele, die in die Welt kommt, trägt das Potenzial in sich, Großes zu erreichen oder Herausforderungen zu meistern, die ihr von Fortuna zugeschrieben werden. Ihre Arbeit erfordert ein hohes Maß an Sorgfalt und Verantwortung, doch Fortuna hat eine Schwäche dafür, sich leicht ablenken zu lassen. Ihr Büro am See des Schicksals ist oft mit Stapeln unerledigter Arbeit übersät, und es kommt nicht selten vor, dass sie an ihrem Schreibtisch einschläft, erschöpft von den endlosen Aufgaben, die sie zu erledigen hat. Doch auch in solchen Momenten zeigt sich ihre menschliche Seite, die vielen Seelen Trost spendet. Ihr übermüdetes Lächeln ist ein Symbol für ihre unermüdliche Hingabe. Fortuna ist nicht nur die Weberin des Schicksals der Seelen, sondern auch die Vermittlerin zwischen den Göttern. Wenn es Streit oder Konflikte gibt, ist es oft Fortuna, die als Diplomatin einspringt. Besonders berühmt ist die Episode, in der sie Justicia und Thanatos nach einem heftigen Streit versöhnen konnte, indem sie das Eis zwischen den beiden brach und die Harmonie wiederherstellte. Ihre Fähigkeit, die Dinge mit einem Hauch von Humor zu lösen, ist einzigartig, und Fortuna genießt das Vertrauen vieler Götter, die sie als jemanden sehen, der mit Bedacht, aber auch mit Herz handelt. Sie weiß, dass jeder Streit, der nicht rechtzeitig beigelegt wird, große Konsequenzen für die Balance des Universums haben könnte. Daher hat sie es sich zur Aufgabe gemacht, immer wachsam zu sein und Konflikte frühzeitig zu erkennen und zu entschärfen. "
         },
         {
-          "title": "Persönliche Eigenschaften und Beziehungen",
+          "title": "Persönlichkeit",
           "text": "Fortuna ist eine mitfühlende, mütterliche und gleichzeitig schalkhafte Persönlichkeit. Sie hat ein offenes Herz und sorgt sich aufrichtig um die Seelen und Menschen, deren Schicksal sie bestimmt. Trotz ihrer wichtigen Rolle als Göttin des Schicksals ist sie für ihr humorvolles Wesen bekannt. Fortuna liebt es, Witze zu reißen, die oft auf Kosten anderer gehen. Dabei überschreitet sie nie eine gewisse Grenze, aber sie macht sich einen Spaß daraus, ihre Liebsten in Verlegenheit zu bringen. Besonders ihr Lieblingsneffe U-Ranos bekommt dies oft zu spüren. Fortuna glaubt daran, dass Humor eine wichtige Brücke ist, um Vertrauen und Nähe aufzubauen, weshalb sie stets bestrebt ist, die Ernsthaftigkeit ihrer Arbeit mit einer gewissen Leichtigkeit zu verbinden. Diese Eigenschaft hat sie auch mit Justicia gemeinsam, auch wenn ihre Schwester ihre humorvolle Seite weniger zeigt. Ihre Freundschaft zu Thanatos ist ebenfalls von großer Bedeutung. Trotz der Tatsache, dass er der Gott des Todes ist, versteht sich Fortuna gut mit ihm und pflegt einen regen Austausch. Thanatos, der ihr einst sagte, dass ihr eine Brille gut stehen würde, brachte sie sogar dazu, beim Arbeiten eine Lesebrille zu tragen, die sie eigentlich gar nicht benötigt. Diese kleine Marotte ist ein weiteres Beispiel für Fortunas liebevolle Eitelkeit und ihre Neigung, humorvolle Momente in ihren Alltag einzubauen. Die Beziehung zu Thanatos ist geprägt von gegenseitigem Respekt und einer tiefen Freundschaft, die durch ihre häufigen Treffen gefestigt wird. Es gibt kaum jemanden, der Thanatos so gut versteht wie Fortuna, und sie ist oft diejenige, die ihn zum Lachen bringt, auch wenn er sich selbst oft als düster und distanziert gibt. Auch zu ihren Freunden wie Farone und Seloue pflegt Fortuna innige Beziehungen. Sie trifft sich oft mit Seloue, um gemeinsam Tee zu trinken, den diese aus Faergria mitbringt. Diese Teestunden sind für Fortuna heilige Rituale der Entspannung und Freundschaft. Die Freundschaft mit Farone führte sogar zur Pflanzung des großen Kirschblütenbaums bei ihrem Arbeitsplatz, der zu einem Symbol für die Verbindung von Leben und Schicksal wurde. Dieser Baum erinnert Fortuna täglich daran, dass das Leben, auch wenn es unbeständig und oft chaotisch ist, dennoch Schönheit und Harmonie hervorbringen kann. Fortuna badet manchmal im See des Schicksals und genießt die Ruhe, die diese Momente ihr bieten. Der See ist für sie ein Ort der Reflexion, an dem sie die Gedanken ordnen und sich auf das Wesentliche besinnen kann. "
         },
         {
@@ -2836,7 +2952,7 @@
           "text": "Fortuna besitzt eine außerordentliche Fähigkeit, das Schicksal der Seelen zu erkennen und zu beeinflussen. Ihr Einfühlungsvermögen ermöglicht es ihr, die Bedürfnisse und den Sinn einer jeden Existenz zu verstehen, und ihre Weisheit verleiht ihr die Autorität, Entscheidungen über das Schicksal der Seelen zu treffen. Sie verfügt über einen tiefen Sinn für Gerechtigkeit und Ausgewogenheit, und diese Tugenden verleihen ihren Entscheidungen sowohl moralische als auch ethische Kraft. Ihre Rolle als Vermittlerin zwischen den Göttern ist eine weitere Stärke von Fortuna, die Konflikte mit ihrer warmherzigen und humorvollen Art entschärfen kann. Ihre Fähigkeit, in den kompliziertesten Situationen einen klaren Kopf zu bewahren und Lösungen zu finden, hat ihr den Ruf eingebracht, die “ Hüterin der Balance ” zu sein. Gleichzeitig hat Fortuna Schwächen, die sie als Charakter umso liebenswerter machen. Ihre Neigung zur Ablenkung und ihre Vergesslichkeit führen oft dazu, dass sie wichtige Aufgaben vor sich herschiebt oder Dinge vergisst. Es wird sogar gemunkelt, dass sie beim Schlafen schnarcht, was ihrer sonst mächtigen und erhabenen Erscheinung eine menschliche Note verleiht. Auch ist sie oft übermüdet, weil sie so viel arbeitet und selten wirklich zur Ruhe kommt. Ihre Tendenz, an ihrem Schreibtisch einzuschlafen, ist ein Zeugnis für ihre Hingabe, aber auch für ihren Hang zur Selbstüberforderung. Manchmal ist es gerade ihre Leidenschaft, die sie dazu bringt, mehr Aufgaben zu übernehmen, als sie bewältigen kann. Doch trotz ihrer Schwächen schafft es Fortuna immer wieder, sich zusammenzureißen und ihren Pflichten nachzukommen, da sie weiß, wie wichtig ihre Arbeit für das Wohl der Welten ist. "
         },
         {
-          "title": "Das Vermächtnis von Fortuna",
+          "title": "Ihr Vermächtnis",
           "text": "Fortunas Bedeutung reicht weit über ihre Funktion als Schicksalsweberin hinaus. Sie ist diejenige, die die Menschen erschuf und ihnen die Gabe der Intelligenz und Weisheit verlieh. Diese Gabe ist der Grundstein für die Entwicklung der Menschheit und der Schlüssel zu ihrer Fähigkeit, ihre eigenen Entscheidungen zu treffen. Fortuna sorgt dafür, dass die Ereignisse in der Elementarebene Terralithia dokumentiert werden, und behält den Überblick über das große Geflecht des Schicksals, das alle Welten und Existenzen miteinander verbindet. Ihr Vermächtnis ist die Hoffnung, dass jedes Leben, sei es ein sterbliches oder ein göttliches, seinen Platz im Gefüge des Seins findet und einen Sinn erfüllt, der zur Harmonie der gesamten Existenz beiträgt. Sie glaubt daran, dass jede Existenz, egal wie klein oder groß, eine Bedeutung hat und dass alle Schicksale miteinander verknüpft sind. Das Wissen um diese tiefen Verbindungen und ihre Rolle darin treibt Fortuna an, weiterhin mit ganzem Herzen ihrer Aufgabe als Göttin des Schicksals nachzugehen und für das Wohl der Welten zu sorgen. "
         }
       ]
@@ -3021,6 +3137,10 @@
       {
         "character": "Scarlet",
         "relation": "Gute Freundin"
+      },
+      {
+        "character": "Eliza",
+        "relation": "'Mama'"
       }
     ],
     "lover": "",
@@ -3483,11 +3603,11 @@
     "classes": {
       "baseclass": "Hohefürst"
     },
-    "nationality": "Unbekannt",
+    "nationality": "Faergria",
     "homes": [
       {
-        "place": "{}",
-        "attachment": "Geburtsort"
+        "place": "Kloster der Heilenden Hand",
+        "attachment": "Wirkungsstätte"
       }
     ],
     "alignment": "LG",
@@ -3525,6 +3645,14 @@
       {
         "character": "U-Ranos",
         "relation": "Sehr guter Freund"
+      },
+      {
+        "character": "Eliza",
+        "relation": "Gute Freundin"
+      },
+      {
+        "character": "Avila",
+        "relation": "Gute Freundin"
       }
     ],
     "lover": "",
@@ -4836,7 +4964,7 @@
       },
       {
         "character": "Farone",
-        "relation": "gute Freundin"
+        "relation": "Gute Freundin"
       },
       {
         "character": "Seloue",
@@ -5001,6 +5129,10 @@
       {
         "character": "Inoro",
         "relation": "Alter Freund"
+      },
+      {
+        "character": "Eliza",
+        "relation": "Freundin"
       }
     ],
     "lover": "",
@@ -5113,6 +5245,10 @@
       {
         "character": "Burdig",
         "relation": "Bruder"
+      },
+      {
+        "character": "Eliza",
+        "relation": "Herrin"
       }
     ],
     "lover": "",
@@ -6128,6 +6264,10 @@
       {
         "character": "Rai",
         "relation": "Bruder"
+      },
+      {
+        "character": "Eliza",
+        "relation": "Freundin"
       }
     ],
     "lover": "",
@@ -6233,7 +6373,7 @@
       },
       {
         "character": "Eliza",
-        "relation": "Freundin"
+        "relation": "Vertraute"
       },
       {
         "character": "Nayru",
@@ -6759,7 +6899,7 @@
       },
       {
         "character": "Hindrik",
-        "relation": "Bekannter"
+        "relation": "Objekt der Begierde"
       },
       {
         "character": "Burdig",
@@ -6772,9 +6912,13 @@
       {
         "character": "Valerius",
         "relation": "Bekannter"
+      },
+      {
+        "character": "Thanatos",
+        "relation": "Ehemalige Liebe"
       }
     ],
-    "lover": "Thanatos",
+    "lover": "",
     "alt_images": [],
     "content": {
       "excerpt": "Nayru ist eine Erbin der Drachenritter aus dem sagenumwobenen Orrin.",
@@ -6840,6 +6984,18 @@
       {
         "character": "Till",
         "relation": "Kindheitsfreund"
+      },
+      {
+        "character": "Eliza",
+        "relation": "Freundin"
+      },
+      {
+        "character": "Oscar",
+        "relation": "Guter Bekannter"
+      },
+      {
+        "character": "U-Ranos",
+        "relation": "Freund"
       }
     ],
     "lover": "Till",
@@ -7188,7 +7344,12 @@
     "likes": [],
     "dislikes": [],
     "status": "am Leben",
-    "relationships": [],
+    "relationships": [
+      {
+        "character": "Nerissa",
+        "relation": "Ehemaliges Objekt der Begierde"
+      }
+    ],
     "lover": "",
     "alt_images": [
       "pre-death"
@@ -7439,6 +7600,14 @@
       {
         "character": "U-Ranos",
         "relation": "'Kleiner Bruder'"
+      },
+      {
+        "character": "Scarlet",
+        "relation": "Cousine"
+      },
+      {
+        "character": "Cinnabar",
+        "relation": "Cousine"
       }
     ],
     "lover": "",
@@ -7927,7 +8096,7 @@
       },
       {
         "character": "U-Ranos",
-        "relation": "Sehr guter Freund"
+        "relation": "Sehr guter Freund und Lieblingsopfer"
       },
       {
         "character": "Nayru",
@@ -7956,12 +8125,15 @@
       {
         "character": "Ar-Merer",
         "relation": "Rivale"
+      },
+      {
+        "character": "Oscar",
+        "relation": "Lehrling"
       }
     ],
     "lover": "",
     "alt_images": [
       "artwork",
-      "",
       "pixelart"
     ],
     "content": {
@@ -7976,7 +8148,7 @@
           "text": "Scarlet wurde nach dem Abschluss ihres Trainings zur Verkörperung der Todsünde Wollust ernannt. Diese Entscheidung stieß zunächst auf Verwunderung, sowohl bei Scarlet als auch bei ihrem Umfeld, da sie selbst noch nie Liebe oder echte Leidenschaft für eine andere Person empfunden hat. Für Scarlet ist der Aspekt der Wollust eher eine Manifestation von Macht und Kontrolle als ein Ausdruck von Liebe oder Begehren. Sie nutzt ihre Fähigkeit der Verführung, um Sünder in die Falle zu locken – oft spielt sie mit den Erwartungen von Männern und Frauen gleichermaßen, indem sie sie mit ihrer Sinnlichkeit umgarnt, nur um sie im letzten Moment fallen zu lassen. Diese Spielchen sind für Scarlet eine Form der Unterhaltung, aber auch ein Mittel, ihre überlegene Position gegenüber den Sündern zu demonstrieren. Regelmäßig trifft sich Scarlet mit Avila, der Hohefürstin der Liebe, um über Beziehungen und Paare zu sprechen, die von Avila verkuppelt wurden. Dabei analysiert Scarlet auf eine fast schon spielerische Art, wie sich die Paare entwickeln könnten. Obwohl sie selbst noch nie in einer Beziehung war, hat sie ein scharfes Auge dafür, wie Liebe zwischen anderen funktioniert, und gibt oft wertvolle – wenn auch manchmal unkonventionelle – Ratschläge. Diese Gespräche mit Avila geben Scarlet die Möglichkeit, sich mit dem Thema Liebe auf einer theoretischen Ebene auseinanderzusetzen, während sie im echten Leben immer noch nach ihrer eigenen großen Liebe sucht. "
         },
         {
-          "title": "Persönliche Eigenschaften und innere Konflikte",
+          "title": "Persönlichkeit",
           "text": "Scarlet ist eine äußerst extrovertierte Persönlichkeit, die gerne im Mittelpunkt steht und keine Scheu hat, auch unangenehme oder als unangebracht geltende Themen anzusprechen. Ihre Offenheit gegenüber obszönen oder tabubelasteten Gesprächsthemen schreckt viele Menschen ab, und Scarlet hat es oft schwer, passende Gesprächspartner zu finden. Sie ist direkt, freimütig und liebt es, ihre Meinung zu äußern, auch wenn sie damit manchmal über die Stränge schlägt. Unter dieser lautstarken und selbstbewussten Fassade verbirgt sich jedoch ein tiefes Gefühl der Einsamkeit. Scarlet befürchtet oft, dass sie durch ihre aufdringliche Art andere Menschen vertreibt. Ihre Unsicherheit, zu viel zu sein oder nicht richtig verstanden zu werden, sorgt dafür, dass sie sich trotz ihrer zahlreichen sozialen Interaktionen manchmal sehr isoliert fühlt. Dieses innere Spannungsfeld zwischen ihrer Extraversion und ihrer Einsamkeit verleiht ihr eine gewisse Verletzlichkeit, die sie nur selten nach außen zeigt. In freien Momenten sucht Scarlet Ruhe in den Wäldern, wo sie Pilze sammelt und Essen für ihre Familie vorbereitet – eine ihrer liebsten Beschäftigungen, die sie entspannt und ihr ein Gefühl von Normalität gibt. Ihre kulinarischen Bemühungen werden oft durch ihre Vorliebe für Schokolade aus Faergria ergänzt, die sie mit großem Genuss in viele ihrer Kreationen einbindet. Sie liebt es auch, Bücher aus aller Welt zu lesen, begleitet von einer heißen Tasse Tee, und sich dabei in die Geschichten und Weisheiten anderer Kulturen zu vertiefen. Trotz ihrer Verkörperung der Wollust sehnt sich Scarlet im Inneren nach etwas, das sie selbst noch nie erlebt hat – echte, tiefe Liebe. Ihr Wunsch, einen Partner zu finden, dem sie all ihre Zuneigung schenken kann, steht im starken Kontrast zu ihrer verkörperten Sünde der Wollust, die sie oft als oberflächliches Spiel betrachtet. Diese innere Sehnsucht macht Scarlet zu einer überraschend romantischen Seele, die unter ihrer frechen und unkonventionellen Fassade verborgen liegt. Scarlet liebt schlecht erzählte Witze, besonders die von U-Ranos, die sie jedes Mal zum Lachen bringen – nicht wegen des Inhalts, sondern wegen der unbeholfenen Art, wie er sie vorträgt. Dieses kindliche Vergnügen bietet ihr eine seltene Gelegenheit, einfach loszulassen und Spaß zu haben. Ihre Rivalität mit Ar-Merer, dem mächtigsten Recken der Göttin Justicia, ist geprägt von gegenseitiger Verachtung. Beide wetteifern darum ihre jeweils eignen Ansichten behaupten zukönnen, wobei ihre Kämpfe oft nicht nur auf physischer, sondern auch auf psychologischer Ebene ausgetragen werden. Erschwerend kommt zu ihren Kämpfen hinzu, dass die beiden primären Elemente, Finsternis und Licht, jeweils ihre elementaren Schwächen sind und bereits die ein oder andere fatalen Situationen entstanden sind, in der es ohne Einschreiten eines Dritten einen Toten gegeben hätte. "
         },
         {
@@ -9394,11 +9566,11 @@
       },
       {
         "place": "Frelia",
-        "attachment": "Geburtsort"
+        "attachment": "Heimat"
       },
       {
         "place": "Dünsberg",
-        "attachment": "Geburtsort"
+        "attachment": "Hauptwohnsitz"
       }
     ],
     "alignment": "NG",
@@ -9547,6 +9719,18 @@
       {
         "character": "Avarne",
         "relation": "Freund"
+      },
+      {
+        "character": "Eliza",
+        "relation": "Verlobte"
+      },
+      {
+        "character": "Nerissa",
+        "relation": "Freundin"
+      },
+      {
+        "character": "Scarlet",
+        "relation": "Sehr gute Freundin"
       }
     ],
     "lover": "Eliza",
@@ -10067,7 +10251,28 @@
     "likes": [],
     "dislikes": [],
     "status": "am Leben",
-    "relationships": [],
+    "relationships": [
+      {
+        "character": "Fubuki",
+        "relation": "Freundin"
+      },
+      {
+        "character": "Il-Vernia",
+        "relation": "Freundin"
+      },
+      {
+        "character": "Kaen",
+        "relation": "Gute Freundin"
+      },
+      {
+        "character": "Rai",
+        "relation": "Guter Freund"
+      },
+      {
+        "character": "U-Ranos",
+        "relation": "Langjährige unerfüllte Liebe"
+      }
+    ],
     "lover": "",
     "alt_images": [
       "artwork"
