@@ -3,15 +3,17 @@
 import sys
 import json
 
+
 def main():
-    if len(sys.argv) != 5:
+    if len(sys.argv) < 3:
         print("Call: python script.py <NameA> <NameB> <RelationAB> <RelationBA>")
         sys.exit(1)
 
     nameA = sys.argv[1]
     nameB = sys.argv[2]
     relationAB = sys.argv[3]
-    relationBA = sys.argv[4]
+    if len(sys.argv) > 4:
+        relationBA = sys.argv[4]
 
     json_path = "characters.json"
 
@@ -44,19 +46,21 @@ def main():
     if not updated:
         charA["relationships"].append({"character": nameB, "relation": relationAB})
 
-    updated = False
-    for rel in charB["relationships"]:
-        if rel.get("character") == nameA:
-            rel["relation"] = relationBA
-            updated = True
-            break
-    if not updated:
-        charB["relationships"].append({"character": nameA, "relation": relationBA})
+    if len(sys.argv) > 4:
+        updated = False
+        for rel in charB["relationships"]:
+            if rel.get("character") == nameA:
+                rel["relation"] = relationBA
+                updated = True
+                break
+        if not updated:
+            charB["relationships"].append({"character": nameA, "relation": relationBA})
 
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(characters, f, ensure_ascii=False, indent=2)
 
     print(f"Wrote relation of '{nameA}' and '{nameB}' successfully.")
+
 
 if __name__ == "__main__":
     main()

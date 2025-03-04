@@ -2066,6 +2066,15 @@
                       "sections": [
                       ]
                     }
+                  },
+                  {
+                    "name": "Kloster der Heilenden Hand",
+                    "placetype": "Kloster",
+                    "content": {
+                      "excerpt": "",
+                      "sections": [
+                      ]
+                    }
                   }
                 ]
               },
