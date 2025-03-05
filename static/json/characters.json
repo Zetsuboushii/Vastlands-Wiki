@@ -2296,7 +2296,9 @@
       "shoulder_width": 49,
       "muscle_mass": 46
     },
-    "functions": [],
+    "functions": [
+      "Stammkundin in Burdigs Taverne"
+    ],
     "classes": {
       "baseclass": "Mönch",
       "subclasses": [
@@ -2311,13 +2313,28 @@
       },
       {
         "place": "Dünsberg",
-        "attachment": "Geburtsort"
+        "attachment": "Aktueller Wohnsitz"
+      },
+      {
+        "place": "Garadzar",
+        "attachment": "Längerer Aufenthalt"
       }
     ],
     "alignment": "CN",
     "affiliations": [],
-    "likes": [],
-    "dislikes": [],
+    "likes": [
+      "Alkohol",
+      "Burdigs Ebbelwoi",
+      "Greifen",
+      "Faire Kämpfe",
+      "Reisen"
+    ],
+    "dislikes": [
+      "Nüchtern sein",
+      "Religionen",
+      "Vertrauensbrüche",
+      "Unfaire Kämpfe"
+    ],
     "status": "am Leben",
     "relationships": [
       {
@@ -2331,6 +2348,46 @@
       {
         "character": "Aelua",
         "relation": "Ziehmutter"
+      },
+      {
+        "character": "Nayru",
+        "relation": "Gute Freundin"
+      },
+      {
+        "character": "Oscar",
+        "relation": "Lieblingsopfer"
+      },
+      {
+        "character": "U-Ranos",
+        "relation": "U-nsicher"
+      },
+      {
+        "character": "Siegmund",
+        "relation": "Enigma"
+      },
+      {
+        "character": "Keith",
+        "relation": "Süßi"
+      },
+      {
+        "character": "Grenze",
+        "relation": "Rivalin"
+      },
+      {
+        "character": "Cordelia",
+        "relation": "Rivalin"
+      },
+      {
+        "character": "Ar-Merer",
+        "relation": "Rivale"
+      },
+      {
+        "character": "Scarlet",
+        "relation": "Potenzielle Fehde"
+      },
+      {
+        "character": "Fubuki",
+        "relation": "Kleine Cousine"
       }
     ],
     "lover": "",
@@ -7323,9 +7380,13 @@
       }
     ],
     "measurements": {
-      "height": 1.8
+      "height": 1.9,
+      "weight": 80
     },
-    "functions": [],
+    "functions": [
+      "Emeritierter Professor für Nekromantie",
+      "Ehemaliger Leiter der geisteswissenschaftlichen Fakultät"
+    ],
     "classes": {
       "baseclass": "Zauberer",
       "subclasses": [
@@ -7337,17 +7398,88 @@
       {
         "place": "Llurthargothr",
         "attachment": "Geburtsort"
+      },
+      {
+        "place": "Dünsberg",
+        "attachment": "Aktueller Wohnsitz"
+      },
+      {
+        "place": "Kloster der Himmlischen Recken",
+        "attachment": "Forschungsstätte"
       }
     ],
     "alignment": "CG",
-    "affiliations": [],
-    "likes": [],
-    "dislikes": [],
+    "affiliations": [
+      "Magieakademie Llurthargothr"
+    ],
+    "likes": [
+      "Ordnung",
+      "Katzen",
+      "Kaffee",
+      "Vertrauen haben",
+      "Ruhe",
+      "Alleinsein"
+    ],
+    "dislikes": [
+      "Unwissenheit",
+      "Lügen",
+      "Ungerechtfertigtes Vertrauen",
+      "Neue Personen kennenlernen",
+      "Kontrollverlust"
+    ],
     "status": "am Leben",
     "relationships": [
       {
         "character": "Nerissa",
         "relation": "Ehemaliges Objekt der Begierde"
+      },
+      {
+        "character": "U-Ranos",
+        "relation": "Freund"
+      },
+      {
+        "character": "Siegmund",
+        "relation": "Angst"
+      },
+      {
+        "character": "Nayru",
+        "relation": "Bewunderung"
+      },
+      {
+        "character": "Escaar",
+        "relation": "Bewunderung"
+      },
+      {
+        "character": "Till",
+        "relation": "Bekannter"
+      },
+      {
+        "character": "Philip",
+        "relation": "Größter Fan"
+      },
+      {
+        "character": "Scarlet",
+        "relation": "Bewunderung"
+      },
+      {
+        "character": "Eris",
+        "relation": "Opfer"
+      },
+      {
+        "character": "Rosalinde",
+        "relation": "Heimliche Liebe"
+      },
+      {
+        "character": "Grenze",
+        "relation": "Bewunderung"
+      },
+      {
+        "character": "Flüstern",
+        "relation": "Eifersucht"
+      },
+      {
+        "character": "Igor",
+        "relation": "Größter Bewunderer"
       }
     ],
     "lover": "",
