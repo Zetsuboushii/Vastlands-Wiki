@@ -2286,7 +2286,12 @@
     "race": "Elfen",
     "sex": "w",
     "birthday": "16.10.0",
-    "aliases": [],
+    "aliases": [
+      {
+        "alias": "Peachidaisy",
+        "origin": "Oscar, als Bäcker-Deckname"
+      }
+    ],
     "measurements": {
       "height": 1.8,
       "weight": 87,
@@ -7322,6 +7327,10 @@
       {
         "alias": "Professor",
         "origin": "Studenten, Leute in Markath, U-Ranos"
+      },
+      {
+        "alias": "Mario Nintendo",
+        "origin": "er selbst, als Bäcker-Deckname"
       }
     ],
     "measurements": {
@@ -10398,7 +10407,6 @@
     "content": {
       "excerpt": "",
       "sections": []
-    },
-    "hidden": true
+    }
   }
 ]
