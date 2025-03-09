@@ -5596,7 +5596,9 @@
       }
     ],
     "lover": "",
-    "alt_images": [],
+    "alt_images": [
+      "Jünger"
+    ],
     "content": {
       "excerpt": "…",
       "sections": []
@@ -7329,7 +7331,8 @@
     "classes": {
       "baseclass": "Zauberer",
       "subclasses": [
-        "Nekromant"
+        "Nekromant",
+        "Kleriker der Avila"
       ]
     },
     "nationality": "Markath",
@@ -10350,5 +10353,52 @@
       "excerpt": "Rosalinde ist eine Nonne und Glaubensschwester in der Kirche der Himmlischen Gerechtigkeit und führt verschiedene Aufgaben innerhalb der Kathedrale Grenbrocks aus.",
       "sections": []
     }
+  },
+  {
+    "name": "Slearg",
+    "surname": "",
+    "title": "",
+    "race": "Goblins",
+    "sex": "m",
+    "birthday": "",
+    "aliases": [],
+    "measurements": {
+      "height": 0
+    },
+    "functions": [],
+    "classes": {
+      "baseclass": "Druide",
+      "subclasses": [
+
+      ]
+    },
+    "nationality": "Faergria",
+    "homes": [
+      {
+        "place": "",
+        "attachment": "Geburtsort"
+      }
+    ],
+    "alignment": "",
+    "affiliations": [
+    ],
+    "likes": [
+    ],
+    "dislikes": [
+    ],
+    "status": "am Leben",
+    "relationships": [
+      {
+        "character": "",
+        "relation": ""
+      }
+    ],
+    "lover": "",
+    "alt_images": [],
+    "content": {
+      "excerpt": "",
+      "sections": []
+    },
+    "hidden": true
   }
 ]
