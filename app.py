@@ -70,6 +70,7 @@ abilities_list = load_from_json("abilities")
 @app.route('/')
 def index():
     characters_list = load_from_json("characters")
+    characters_list = [entry for entry in characters_list if not entry.get('hidden')]
     characters_list.sort(key=lambda character: character["name"].lower())
     calendar_list = load_from_json("calendar")
     current_day = date.today()
@@ -98,6 +99,7 @@ def index():
 @app.route('/characters/')
 def characters():
     characters_list = load_from_json("characters")
+    characters_list = [entry for entry in characters_list if not entry.get('hidden')]
     characters_list.sort(key=lambda character: character["name"].lower())
 
     letters = sorted({character['name'][0].upper() for character in characters_list})
@@ -109,6 +111,7 @@ def characters():
 @app.route('/characters/<character_name>/')
 def character(character_name):
     characters_list = load_from_json("characters")
+    characters_list = [entry for entry in characters_list if not entry.get('hidden')]
     characters_list.sort(key=lambda character: character["name"].lower())
     character_data = None
     data = None
@@ -260,6 +263,7 @@ def holidays(holiday_name):
 @app.route('/tierlist/')
 def tierlist():
     characters_list = load_from_json("characters")
+    characters_list = [entry for entry in characters_list if not entry.get('hidden')]
     characters_list.sort(key=lambda character: character["name"].lower())
 
     return render_template('tierlist.html', characters=characters_list)
