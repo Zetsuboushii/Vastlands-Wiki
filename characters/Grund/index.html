@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Grund | Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../../static/css/base.css">
+    <link rel="stylesheet" href="../../static/css/character.css">
+</head>
+<body>
+
+<link rel="stylesheet" href="../../static/css/banner.css">
+<link rel="shortcut icon" href="../../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../../static/ui/banner-8.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../../static/imgs/logo.png" alt="" class="logo" style="left: -40px; position: relative">
+            <a href="../../index.html" style="left: -40px; position: relative">Tome of the Vastlands</a>
+            <sub style="left: -40px; position: relative">b3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('../index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('../../compendium/index.html')">Kompendien</button>
+        
+            <button class="nav-button" onclick="loadPage('../../places/index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('../../tierlist/index.html')">Tierlist</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        <div class="character-container">
+            <div class="character-data">
+                <div class="character-data-box">
+                    
+                    
+                    
+                    <img src="https://images.zetsuboushii.site/dnd/characters/grund.png" alt="">
+
+                    <div class="character-data-name"><h1>Grund </h1></div>
+                    <div class="character-data-title"><h3>Tiefstes aller Wasser</h3></div>
+
+                    <div class="character-data-field-title"><h4>Informationen zur Person</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Rasse</td>
+                            <td>Tieflinge</td>
+                        </tr>
+                        <tr>
+                            <td>Geschlecht</td>
+                            <td>
+                                männlich
+                            </td>
+                        </tr>
+                        
+                            
+                                <tr>
+                                    <td>Alter</td>
+                                    <td>128 Jahre</td>
+                                </tr>
+                            
+                            <tr>
+                                <td>Geburtstag</td>
+                                <td>10. Tag, Saatmond
+                                     im Jahre 266
+                                        n.V.
+                                        </td>
+                            </tr>
+                        
+                        
+                        
+                            <tr>
+                                <td>Staatsangehörigkeit</td>
+                                <td>
+                                    
+                                    <a href="../../places/markath/index.html">
+                                        Markath</a>
+                                </td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+
+                    
+                        <div class="character-data-field-title"><h4>Maße</h4></div>
+                        <table>
+                            <tbody>
+                            
+                                <tr>
+                                    <td>Körpergröße</td>
+                                    <td>1,76 m</td>
+                                </tr>
+                            
+                            
+                                <tr>
+                                    <td>Gewicht</td>
+                                    <td>67 kg</td>
+                                </tr>
+                            
+                            </tbody>
+                        </table>
+                    
+
+                    <div class="character-data-field-title"><h4>Profession</h4></div>
+                    <table>
+                        <tbody>
+                        
+                        
+                            <tr>
+                                <td>Basisklasse</td>
+                                <td>Druide</td>
+                            </tr>
+                            
+                                <tr>
+                                    <td>Subklasse</td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>Mondwandler</li>
+                                            
+                                        </ul>
+                                    </td>
+                                </tr>
+                            
+                            
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Weitere Informationen</h4></div>
+                    <table>
+                        <tbody>
+                        
+                            <tr>
+                                <td>Orte</td>
+                                <td>
+                                    <ul>
+                                        
+                                            
+                                            <li><a href="../../places/undraridor/index.html">
+                                                Undraridor</a> <small>(Geburtsort)</small></li>
+                                        
+                                            
+                                            <li><a href="../../places/llurthargothr/index.html">
+                                                Llurthargothr</a> <small>(Geburtsort)</small></li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        
+                            <tr>
+                                <td>Gesinnung</td>
+                                <td>NG</td>
+                            </tr>
+                        
+                        
+                            <tr>
+                                <td>Zugehörigkeit</td>
+                                <td>
+                                    <ul>
+                                        
+                                            <li>Abgrundkirche der Glimmenden Sünde</li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Persönlicher Status</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Verbleib</td>
+                            <td>am Leben</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>Beziehungen</td>
+                                <td>
+                                    <ul>
+                                        
+                                            
+                                            <li>
+                                                <a href="../fl%C3%BCstern/index.html">
+                                                    Flüstern</a>
+                                                <small>(Kollege)</small>
+                                            </li>
+                                        
+                                            
+                                            <li>
+                                                <a href="../grenze/index.html">
+                                                    Grenze</a>
+                                                <small>(Vorgesetzte)</small>
+                                            </li>
+                                        
+                                            
+                                            <li>
+                                                <a href="../horizont/index.html">
+                                                    Horizont</a>
+                                                <small>(Herr)</small>
+                                            </li>
+                                        
+                                            
+                                            <li>
+                                                <a href="../spitze/index.html">
+                                                    Spitze</a>
+                                                <small>(Kollegin)</small>
+                                            </li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="character-text">
+                <div class="character-text-box">
+                    <p>Grund ist der letzte der drei Richter des Herzogs. Er kümmert sich um organisatorische Angelegenheiten seines Teams.</p>
+
+                    <hr>
+
+                    
+                    
+                        <div class="character-text-heading"><h2>Persönlichkeit</h2></div>
+                        <p style="white-space: pre-line;">Grund ist der ordentlichste aus dem Dreiergespann zwischen ihm, Spitze und Flüstern. Einher geht, dass er meist sehr zurückhaltend und förmlich auftritt. Spitze versucht öfters Grund in Verlegenheit zu bringen, in dem sie ihn aus seiner Komfortzone holt, doch enden diese Aktionen meist darin, dass Spitze einen auf den Deckel bekommt. </p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Familie</h2></div>
+                        <p style="white-space: pre-line;">Grund ist der einzige Sohn eines Gutsherren in Llurthargothr und wurde früh nach Herzogtum Markath geschickt, um die politische Bindung zur Hauptstadt zu festigen. Von seiner Familie hat er lange nichts mehr gehört, obwohl Grund sich sehr um seine alte Großmutter sorgt. Oft denkt er an seine Familie zurück und wird gelegentlich melancholisch, was Spitze selbstvertsändlich nicht entgeht. Immer wenn Spitze ihn versucht darauf anzusprechen, weicht Grund aus und lenkt vom Thema ab </p>
+                        <hr>
+                    
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
