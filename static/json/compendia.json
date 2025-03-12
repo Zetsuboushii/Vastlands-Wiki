@@ -25,6 +25,10 @@
   },
   {
     "name": "Gladiarium",
-    "text": ""
+    "text": "Das Gladiarium ist ein umfassenden Kompendium der Waffen, die in den Vastlands verwendet werden. Es dient als zentrale Wissensquelle für bewaffnete Kämpfer, Söldner und Abenteurer."
+  },
+  {
+    "name": "Magickarium",
+    "text": "Das Magickarium ist ein umfassenden Kompendium der Magie und Zauber der Vastlands. Es dient als zentrale Wissensquelle für Zauberer, Magier, Kleriker und alle Magiewirkenden."
   }
 ]

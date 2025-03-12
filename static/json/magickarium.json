@@ -1,0 +1,95 @@
+[
+  {
+    "name": "Elementartransfer - Loderndes Feuer",
+    "type": "Kanalisierung",
+    "association": "Loderndes Feuer von Kaen",
+    "level": 1,
+    "cooldown": {
+      "cooldown_time": 4,
+      "cooldown_type": "r"
+    },
+    "concentration": false,
+    "range": 0,
+    "aoe": "self",
+    "duration": {
+      "duration_time": 1,
+      "duration_type": "r"
+    },
+    "casting_duration": {
+      "casting_time": 0,
+      "casting_type": "sofort"
+    },
+    "damage": [],
+    "description": "Versetzt eine Waffe in lodernde Flammen. Phyischer Schaden wird in Feuerschaden umgewandelt."
+  },
+  {
+    "name": "Magmaschuss",
+    "type": "Kanalisierung",
+    "association": "Loderndes Feuer von Kaen",
+    "level": 2,
+    "cooldown": {
+      "cooldown_time": 6,
+      "cooldown_type": "r"
+    },
+    "concentration": false,
+    "range": 60,
+    "aoe": {
+      "aoe_range": 10,
+      "aoe_type": "radius"
+    },
+    "duration": {
+      "duration_time": 1,
+      "duration_type": "r"
+    },
+    "casting_duration": {
+      "casting_time": 0,
+      "casting_type": "sofort"
+    },
+    "damage": [
+      {
+        "dice_term": "2d10",
+        "type": "fire"
+      },
+      {
+        "dice_term": "1d4",
+        "type": "bludgeoning"
+      }
+    ],
+    "description": "Schleudert einen Brocken glühendes Magma. Explodiert bei Kontakt in Radius."
+  },
+  {
+    "name": "Stärkende Flamme",
+    "type": "Kanalisierung",
+    "association": "Loderndes Feuer von Kaen",
+    "level": 3,
+    "cooldown": {
+      "cooldown_time": 8,
+      "cooldown_type": "r"
+    },
+    "concentration": false,
+    "range": 0,
+    "aoe": {
+      "aoe_range": 0,
+      "aoe_type": "self"
+    },
+    "duration": {
+      "duration_time": 1,
+      "duration_type": "r"
+    },
+    "casting_duration": {
+      "casting_time": 0,
+      "casting_type": "sofort"
+    },
+    "damage": [
+      {
+        "dice_term": "2d10",
+        "type": "fire"
+      },
+      {
+        "dice_term": "1d4",
+        "type": "bludgeoning"
+      }
+    ],
+    "description": "Erschafft im Inneren des Anwenders ein belebendes Feuer, dass nicht-magische und Feuer-Angriffe verstärkt. Verbrennt den Anwender leicht. Die Stärke des Anwenders "
+  }
+]

@@ -60,7 +60,6 @@ def find_place_recursively(place_list, place_slug, parent_name=None):
 
 
 news_list = load_from_json("news")
-compendium_list = load_from_json("compendia")
 enemy_list = load_from_json("bestiarium")
 actions_list = load_from_json("actions")
 places_list = load_from_json("places")
@@ -70,6 +69,7 @@ abilities_list = load_from_json("abilities")
 @app.route('/')
 def index():
     characters_list = load_from_json("characters")
+    characters_list = [entry for entry in characters_list if not entry.get('hidden')]
     characters_list.sort(key=lambda character: character["name"].lower())
     calendar_list = load_from_json("calendar")
     current_day = date.today()
@@ -98,6 +98,7 @@ def index():
 @app.route('/characters/')
 def characters():
     characters_list = load_from_json("characters")
+    characters_list = [entry for entry in characters_list if not entry.get('hidden')]
     characters_list.sort(key=lambda character: character["name"].lower())
 
     letters = sorted({character['name'][0].upper() for character in characters_list})
@@ -109,6 +110,7 @@ def characters():
 @app.route('/characters/<character_name>/')
 def character(character_name):
     characters_list = load_from_json("characters")
+    characters_list = [entry for entry in characters_list if not entry.get('hidden')]
     characters_list.sort(key=lambda character: character["name"].lower())
     character_data = None
     data = None
@@ -173,11 +175,16 @@ def edit_place(place_name):
 
 @app.route('/compendium/')
 def compendia():
+    compendium_list = load_from_json("compendia")
+    compendium_list.sort(key=lambda compendium: compendium["name"])
+
     return render_template('compendia.html', compendium_list=compendium_list)
 
 
 @app.route('/compendium/<compendium_name>/')
 def compendium(compendium_name):
+    compendium_list = load_from_json("compendia")
+    compendium_list.sort(key=lambda compendium: compendium["name"])
     compendium_data = None
 
     for compendium in compendium_list:
@@ -260,6 +267,7 @@ def holidays(holiday_name):
 @app.route('/tierlist/')
 def tierlist():
     characters_list = load_from_json("characters")
+    characters_list = [entry for entry in characters_list if not entry.get('hidden')]
     characters_list.sort(key=lambda character: character["name"].lower())
 
     return render_template('tierlist.html', characters=characters_list)
