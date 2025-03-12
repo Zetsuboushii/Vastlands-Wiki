@@ -60,7 +60,6 @@ def find_place_recursively(place_list, place_slug, parent_name=None):
 
 
 news_list = load_from_json("news")
-compendium_list = load_from_json("compendia")
 enemy_list = load_from_json("bestiarium")
 actions_list = load_from_json("actions")
 places_list = load_from_json("places")
@@ -176,11 +175,16 @@ def edit_place(place_name):
 
 @app.route('/compendium/')
 def compendia():
+    compendium_list = load_from_json("compendia")
+    compendium_list.sort(key=lambda compendium: compendium["name"])
+
     return render_template('compendia.html', compendium_list=compendium_list)
 
 
 @app.route('/compendium/<compendium_name>/')
 def compendium(compendium_name):
+    compendium_list = load_from_json("compendia")
+    compendium_list.sort(key=lambda compendium: compendium["name"])
     compendium_data = None
 
     for compendium in compendium_list:
