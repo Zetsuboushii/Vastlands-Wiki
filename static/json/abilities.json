@@ -13,7 +13,7 @@
   },
   {
     "name": "Dornenrankenexplosion",
-    "description": "Um die Einstichstelle entfalten sich in einem 5 ft. Radius spitze Dornenranken, die Ziele innerhalb des Radius festhalten und Schaden zufügen."
+    "description": "Um die Einstichstelle entfalten sich in einem 5 ft. Radius spitze Dornenranken, die Ziele innerhalb des Radius festhalten und 3d4 Stich-Schaden zufügen."
   },
   {
     "name": "Drachenblitz",
