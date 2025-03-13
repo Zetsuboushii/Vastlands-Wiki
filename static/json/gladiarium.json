@@ -17,11 +17,11 @@
     "damage": [
       {
         "dice_term": "1d8+4",
-        "type": "slashing"
+        "type": "Schnitt"
       },
       {
         "dice_term": "1d8+6",
-        "type": "slashing"
+        "type": "Schnitt"
       }
     ],
     "abilities": [
@@ -43,11 +43,11 @@
     "damage": [
       {
         "dice_term": "1d8",
-        "type": "piercing"
+        "type": "Stich"
       },
       {
         "dice_term": "2d8",
-        "type": "acid"
+        "type": "Säure"
       }
     ],
     "abilities": [
@@ -72,11 +72,11 @@
     "damage": [
       {
         "dice_term": "3d12",
-        "type": "slashing"
+        "type": "Schnitt"
       },
       {
         "dice_term": "2d4",
-        "type": "thunder"
+        "type": "Donner"
       }
     ],
     "abilities": [
@@ -97,11 +97,11 @@
     "damage": [
       {
         "dice_term": "3d8",
-        "type": "piercing"
+        "type": "Stich"
       },
       {
         "dice_term": "2d10",
-        "type": "fire"
+        "type": "Feuer"
       }
     ],
     "abilities": [
@@ -123,7 +123,7 @@
     "damage": [
       {
         "dice_term": "3d6",
-        "type": "piercing"
+        "type": "Stich"
       },
       {
         "dice_term": "4d6",
@@ -147,7 +147,7 @@
     "damage": [
       {
         "dice_term": "2d8+2",
-        "type": "piercing"
+        "type": "Stich"
       }
     ],
     "abilities": [
@@ -168,12 +168,8 @@
     "range_far": 80,
     "damage": [
       {
-        "dice_term": "2d12+4",
-        "type": "piercing"
-      },
-      {
-        "dice_term": "3d4",
-        "type": "piercing"
+        "dice_term": "2d12+3d4+4",
+        "type": "Stich"
       }
     ],
     "abilities": [
@@ -195,11 +191,11 @@
     "damage": [
       {
         "dice_term": "2d12",
-        "type": "slashing"
+        "type": "Schnitt"
       },
       {
         "dice_term": "4d4",
-        "type": "lightning"
+        "type": "Blitz"
       }
     ],
     "abilities": [
@@ -221,7 +217,7 @@
     "damage": [
       {
         "dice_term": "1d4",
-        "type": "piercing"
+        "type": "Stich"
       }
     ],
     "abilities": [
@@ -242,7 +238,7 @@
     "damage": [
       {
         "dice_term": "1d4",
-        "type": "piercing"
+        "type": "Stich"
       },
       {
         "dice_term": "1d8",
@@ -272,11 +268,11 @@
     "damage": [
       {
         "dice_term": "2d10",
-        "type": "slashing"
+        "type": "Schnitt"
       },
       {
         "dice_term": "2d6",
-        "type": "bludgeoning"
+        "type": "Stumpf"
       }
     ],
     "abilities": [
@@ -301,7 +297,7 @@
     "damage": [
       {
         "dice_term": "2d6",
-        "type": "piercing"
+        "type": "Stich"
       }
     ],
     "abilities": [
@@ -323,7 +319,7 @@
     "damage": [
       {
         "dice_term": "3d6+3",
-        "type": "piercing"
+        "type": "Stich"
       }
     ],
     "abilities": [
@@ -348,11 +344,11 @@
     "damage": [
       {
         "dice_term": "2d8+5",
-        "type": "piercing"
+        "type": "Stich"
       },
       {
         "dice_term": "3d6",
-        "type": "poison"
+        "type": "Gift"
       }
     ],
     "abilities": [
@@ -374,7 +370,7 @@
     "damage": [
       {
         "dice_term": "2d12",
-        "type": "slashing"
+        "type": "Schnitt"
       }
     ],
     "abilities": [
@@ -396,7 +392,7 @@
     "damage": [
       {
         "dice_term": "1d12",
-        "type": "bludgeoning"
+        "type": "Stumpf"
       }
     ],
     "abilities": [
@@ -418,7 +414,7 @@
     "damage": [
       {
         "dice_term": "2d6",
-        "type": "bludgeoning"
+        "type": "Stumpf"
       }
     ],
     "abilities": [
@@ -439,7 +435,7 @@
     "damage": [
       {
         "dice_term": "1d4",
-        "type": "piercing"
+        "type": "Stich"
       }
     ],
     "abilities": [
@@ -465,7 +461,7 @@
     "damage": [
       {
         "dice_term": "3d8+2",
-        "type": "piercing"
+        "type": "Stich"
       }
     ],
     "abilities": [
@@ -488,7 +484,7 @@
     "damage": [
       {
         "dice_term": "1d8",
-        "type": "bludgeoning"
+        "type": "Stumpf"
       }
     ],
     "abilities": [
@@ -508,11 +504,11 @@
     "damage": [
       {
         "dice_term": "2d12",
-        "type": "slashing"
+        "type": "Schnitt"
       },
       {
         "dice_term": "5d6",
-        "type": "slashing"
+        "type": "Schnitt"
       }
     ],
     "abilities": [
@@ -533,7 +529,7 @@
     "damage": [
       {
         "dice_term": "1d10",
-        "type": "piercing"
+        "type": "Stich"
       }
     ],
     "abilities": [
@@ -553,7 +549,7 @@
     "damage": [
       {
         "dice_term": "1d6",
-        "type": "piercing"
+        "type": "Stich"
       }
     ],
     "abilities": [
@@ -573,7 +569,7 @@
     "damage": [
       {
         "dice_term": "3d4",
-        "type": "slashing"
+        "type": "Schnitt"
       }
     ],
     "abilities": [
@@ -593,7 +589,7 @@
     "damage": [
       {
         "dice_term": "1d10",
-        "type": "piercing"
+        "type": "Stich"
       },
       {
         "dice_term": "1d4",
@@ -617,7 +613,7 @@
     "damage": [
       {
         "dice_term": "1d8",
-        "type": "piercing"
+        "type": "Stich"
       }
     ],
     "abilities": [
@@ -641,11 +637,11 @@
     "damage": [
       {
         "dice_term": "2d10",
-        "type": "slashing"
+        "type": "Schnitt"
       },
       {
         "dice_term": "1d4",
-        "type": "fire"
+        "type": "Feuer"
       }
     ],
     "abilities": [
@@ -670,11 +666,11 @@
     "damage": [
       {
         "dice_term": "4d6",
-        "type": "slashing"
+        "type": "Schnitt"
       },
       {
         "dice_term": "2d6",
-        "type": "necrotic"
+        "type": "Nekrotisch"
       }
     ],
     "abilities": [
@@ -700,7 +696,7 @@
     "damage": [
       {
         "dice_term": "1d10",
-        "type": "piercing"
+        "type": "Stich"
       }
     ],
     "abilities": [
@@ -726,7 +722,7 @@
     "damage": [
       {
         "dice_term": "1d8",
-        "type": "piercing"
+        "type": "Stich"
       }
     ],
     "abilities": [
@@ -747,7 +743,7 @@
     "damage": [
       {
         "dice_term": "2d8",
-        "type": "piercing"
+        "type": "Stich"
       }
     ],
     "abilities": [
@@ -768,7 +764,7 @@
     "damage": [
       {
         "dice_term": "1d8",
-        "type": "bludgeoning"
+        "type": "Stumpf"
       }
     ],
     "abilities": [
@@ -792,7 +788,7 @@
     "damage": [
       {
         "dice_term": "2d8",
-        "type": "piercing"
+        "type": "Stich"
       }
     ],
     "abilities": [
@@ -814,7 +810,7 @@
     "damage": [
       {
         "dice_term": "2d10",
-        "type": "bludeoning"
+        "type": "Stumpf"
       }
     ],
     "abilities": [
@@ -824,5 +820,33 @@
       "Zerfledderte Fahne",
       "Deckenbrecher"
     ]
+  },
+  {
+    "name": "Glutklinge von Kaen",
+    "type": "Dolche",
+    "rarity": "legendär",
+    "prerequisites": [
+      {
+        "needed": 16,
+        "attribute": "dex"
+      },
+      {
+        "needed": 15,
+        "attribute": "con"
+      }
+    ],
+    "range": 5,
+    "range_far": 30,
+    "damage": [
+      {
+        "dice_term": "3d6+1d8",
+        "type": "Feuer"
+      }
+    ],
+    "abilities": [
+      "Doppelter Angriff",
+      "Kaens Wille"
+    ],
+    "description": "Dieser kunstvoll gefertigte Dolch scheint aus lebendigem Feuer geschmiedet zu sein. Seine Klinge leuchtet in tiefem Rot und Gold, als würde darin eine unsterbliche Flamme lodern. Der Griff besteht aus schwarzem Obsidian, stets warm in der Hand des Trägers. Wenn der Dolch geschwungen wird, hinterlässt er feine Glutspuren in der Luft, als hätte die Feuergöttin Kaen selbst ihn gesegnet."
   }
 ]

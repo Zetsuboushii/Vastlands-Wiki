@@ -138,5 +138,17 @@
       "sections": [
       ]
     }
+  },
+  {
+    "name": "Goblins",
+    "age_average": 50,
+    "domains": [
+      "Faergria"
+    ],
+    "content": {
+      "excerpt": "",
+      "sections": [
+      ]
+    }
   }
 ]

@@ -7496,6 +7496,10 @@
       {
         "character": "Mei",
         "relation": "Nie gehabte kleine Schwester"
+      },
+      {
+        "character": "Kürbis",
+        "relation": "Kater"
       }
     ],
     "lover": "",
@@ -9879,6 +9883,10 @@
       {
         "character": "Scarlet",
         "relation": "Sehr gute Freundin"
+      },
+      {
+        "character": "Bratkartoffel",
+        "relation": "Kater"
       }
     ],
     "lover": "Eliza",
@@ -10502,29 +10510,34 @@
   {
     "name": "Slearg",
     "surname": "",
-    "title": "",
+    "title": "Tierischer Druide alter Schule",
     "race": "Goblins",
     "sex": "m",
-    "birthday": "",
+    "birthday": "15.8.350",
     "aliases": [],
     "measurements": {
-      "height": 0
+      "height": 1.01,
+      "weight": 28
     },
-    "functions": [],
+    "functions": [
+      "Eremit-Druide"
+    ],
     "classes": {
       "baseclass": "Druide",
       "subclasses": [
+        "Zirkel des Mondes"
       ]
     },
     "nationality": "Faergria",
     "homes": [
       {
-        "place": "",
+        "place": "Nördliche Irrwälder",
         "attachment": "Geburtsort"
       }
     ],
-    "alignment": "",
+    "alignment": "NG",
     "affiliations": [
+      "Mondzirkel"
     ],
     "likes": [
     ],
@@ -10532,9 +10545,171 @@
     ],
     "status": "am Leben",
     "relationships": [
+    ],
+    "lover": "",
+    "alt_images": [],
+    "content": {
+      "excerpt": "",
+      "sections": []
+    }
+  },
+  {
+    "name": "Kürbis",
+    "surname": "",
+    "title": "Versucht zu denken",
+    "race": "Katzen",
+    "sex": "m",
+    "birthday": "4.4.393",
+    "aliases": [],
+    "measurements": {
+      "height": 0.023,
+      "weight": 3
+    },
+    "functions": [
+      "Katze im Jagdschloss"
+    ],
+    "classes": {
+    },
+    "nationality": "Faergria",
+    "homes": [
       {
-        "character": "",
-        "relation": ""
+        "place": "Llurthargothr",
+        "attachment": "Geburtsort"
+      },
+      {
+        "place": "Dünsberg",
+        "attachment": "Zuhause"
+      }
+    ],
+    "alignment": "CE",
+    "affiliations": [
+    ],
+    "likes": [
+    ],
+    "dislikes": [
+      "Denken"
+    ],
+    "status": "am Leben",
+    "relationships": [
+      {
+        "character": "Oscar",
+        "relation": "Besitzer"
+      },
+      {
+        "character": "Flüstern",
+        "relation": "Vorheriger Besitzer"
+      }
+    ],
+    "lover": "",
+    "alt_images": [],
+    "content": {
+      "excerpt": "",
+      "sections": []
+    }
+  },
+  {
+    "name": "Bratkartoffel",
+    "surname": "",
+    "title": "Kuhflecken-Katze",
+    "race": "Katzen",
+    "sex": "m",
+    "birthday": "3.2.393",
+    "aliases": [],
+    "measurements": {
+      "height": 0.025,
+      "weight": 4
+    },
+    "functions": [
+      "Katze im Jagdschloss"
+    ],
+    "classes": {
+    },
+    "nationality": "Faergria",
+    "homes": [
+      {
+        "place": "Llurthargothr",
+        "attachment": "Geburtsort"
+      },
+      {
+        "place": "Dünsberg",
+        "attachment": "Zuhause"
+      }
+    ],
+    "alignment": "CE",
+    "affiliations": [
+    ],
+    "likes": [
+      "Essen"
+    ],
+    "dislikes": [
+    ],
+    "status": "am Leben",
+    "relationships": [
+      {
+        "character": "U-Ranos",
+        "relation": "Besitzer"
+      },
+      {
+        "character": "Amlin",
+        "relation": "Tantchen"
+      },
+      {
+        "character": "Flüstern",
+        "relation": "Vorheriger Besitzer"
+      }
+    ],
+    "lover": "",
+    "alt_images": [],
+    "content": {
+      "excerpt": "",
+      "sections": []
+    }
+  },
+  {
+    "name": "Hugo",
+    "surname": "",
+    "title": "Schläfrigster Krieger",
+    "race": "Katzen",
+    "sex": "m",
+    "birthday": "30.12.392",
+    "aliases": [],
+    "measurements": {
+      "height": 0.026,
+      "weight": 5
+    },
+    "functions": [
+      "Katze im Jagdschloss"
+    ],
+    "classes": {
+    },
+    "nationality": "Faergria",
+    "homes": [
+      {
+        "place": "Llurthargothr",
+        "attachment": "Geburtsort"
+      },
+      {
+        "place": "Dünsberg",
+        "attachment": "Zuhause"
+      }
+    ],
+    "alignment": "CE",
+    "affiliations": [
+    ],
+    "likes": [
+      "Schlafen"
+    ],
+    "dislikes": [
+    ],
+    "status": "am Leben",
+    "relationships": [
+      {
+        "character": "Escaar",
+        "relation": "Besitzerin"
+      },
+      {
+        "character": "Flüstern",
+        "relation": "Vorheriger Besitzer"
       }
     ],
     "lover": "",

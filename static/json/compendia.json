@@ -30,5 +30,9 @@
   {
     "name": "Magickarium",
     "text": "Das Magickarium ist ein umfassenden Kompendium der Magie und Zauber der Vastlands. Es dient als zentrale Wissensquelle für Zauberer, Magier, Kleriker und alle Magiewirkenden."
+  },
+  {
+    "name": "Antiquarium",
+    "text": "Das Antiquarium ist ein umfassendes Komendium einzigartiger Gegenstände, mysteriösen, magischen oder göttlichen Ursprungs. Es dient als zentrale Wissensquelle für Händler, Sammler und alle, die sich für Kuriositäten interessieren."
   }
 ]

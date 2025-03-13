@@ -13,7 +13,7 @@
   },
   {
     "name": "Dornenrankenexplosion",
-    "description": ""
+    "description": "Um die Einstichstelle entfalten sich in einem 5 ft. Radius spitze Dornenranken, die Ziele innerhalb des Radius festhalten und Schaden zufügen."
   },
   {
     "name": "Drachenblitz",
@@ -82,5 +82,9 @@
   {
     "name": "Zweihändig",
     "description": "Die Waffe muss zweihändig gehalten werden. Dadurch kann kein Schild oder andere Gegenstände gehalten werden."
+  },
+  {
+    "name": "Kaens Wille",
+    "description": "Die Waffe gewährt dem Anwender einen +2 Bonus auf Angriffs- und Schadenswürfe. Wenn der Anwender mit dieser Waffe eine Kreatur auf 0 Trefferpunkte reduzierst, entzünden sich ihre Überreste und explodieren mit 2d10 Feuerschaden in einem Radius von 5 Fuß."
   }
 ]

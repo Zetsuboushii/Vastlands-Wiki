@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Sanduhr der Fließenden Sekunden | Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../../../static/css/base.css">
+    <link rel="stylesheet" href="../../../static/css/character.css">
+</head>
+<body>
+
+<link rel="stylesheet" href="../../../static/css/banner.css">
+<link rel="shortcut icon" href="../../../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../../../static/ui/banner-1.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../../../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../../../static/imgs/logo.png" alt="" class="logo" style="left: -40px; position: relative">
+            <a href="../../../index.html" style="left: -40px; position: relative">Tome of the Vastlands</a>
+            <sub style="left: -40px; position: relative">b3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('../../../characters/index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('../../index.html')">Kompendien</button>
+        
+            <button class="nav-button" onclick="loadPage('../../../places/index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('../../../tierlist/index.html')">Tierlist</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        <div class="character-container">
+            <div class="character-data">
+                <div class="character-data-box" style="position: relative; top: 60px; margin-bottom: 60px">
+                    <br>
+                    <div class="character-data-name"><h1>Sanduhr der Fließenden Sekunden</h1></div>
+                    <div class="character-data-title"><h3>Wundersame Gegenstände</h3></div>
+
+                    <div class="character-data-field-title"><h4>Allgemeines</h4></div>
+                    <table>
+                        <tbody>
+                        
+                            <tr>
+                                <td>Seltenheit</td>
+                                <td>Legendär</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="character-text">
+                <div class="character-text-box">
+                    <p style="white-space: pre-line;">Diese elegante Sanduhr besteht aus silbernem Glas und ist mit feinen Gravuren versehen, die den endlosen Fluss der Zeit darstellen. Der Sand im Inneren scheint niemals stillzustehen – manchmal rieselt er schneller, manchmal langsamer, als würde er nach einem eigenen Rhythmus fließen. Wer die Sanduhr betrachtet, spürt für einen Moment die Ewigkeit, eingefangen in winzigen Körnern.</p>
+
+                    <br>
+
+                    
+                        <div class="character-text-heading"><h2>Amlins Segen</h2></div>
+                        <p style="white-space: pre-line;">Während du diese Sanduhr trägst, kannst du einmal pro langer Rast eine deiner verbrauchten Aktionen zurückholen. Nachdem du eine Aktion ausgeführt hast, kannst du als Reaktion die Sanduhr umdrehen. Deine Aktion wird sofort „zurückgesetzt“, sodass du sie erneut in derselben Runde einsetzen kannst.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Fluss der Zeit</h2></div>
+                        <p style="white-space: pre-line;">Einmal pro Tag kannst du die Sanduhr aktivieren, um für 1 Minute deine Initiativewürfe mit Vorteil zu machen und deine Bewegungsgeschwindigkeit um 10 Fuß zu erhöhen. Während dieser Zeit fühlst du dich, als würdest du im Rhythmus der Zeit tanzen, deinen Gegnern stets einen Schritt voraus.</p>
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Verlorene Sekunden</h2></div>
+                        <p style="white-space: pre-line;">Wenn du eine feindliche Kreatur berührst und die Sanduhr umdrehst, kann sie einen Weisheitsrettungswurf (SG 16) machen. Bei einem Misserfolg wird sie für 1 Runde verlangsamt (wie durch den Langsam-Zauber). Diese Fähigkeit kann einmal pro lange Rast genutzt werden.</p>
+                        <hr>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
