@@ -17,12 +17,19 @@
         <div class="character-container">
             <div class="character-data">
                 <div class="character-data-box" style="position: relative; top: 60px; margin-bottom: 60px">
+                    <br>
                     <div class="character-data-name"><h1>{{ weapon.name }}</h1></div>
                     <div class="character-data-title"><h3>{{ weapon.type }}</h3></div>
 
                     <div class="character-data-field-title"><h4>Allgemeine Werte</h4></div>
                     <table>
                         <tbody>
+                        {% if weapon.rarity %}
+                            <tr>
+                                <td>Seltenheit</td>
+                                <td>{{ weapon.rarity | capitalize }}</td>
+                            </tr>
+                        {% endif %}
                         {% if weapon.prerequisites %}
                             <tr>
                                 <td>Benötigte Attribute</td>
@@ -66,10 +73,14 @@
 
             <div class="character-text">
                 <div class="character-text-box">
+                    <p style="white-space: pre-line;">{{ weapon.description }}</p>
+
+                    <br>
+
                     {% for ability in abilities %}
                         <div class="character-text-heading"><h2>{{ ability.name }}</h2></div>
 
-                        <p>{{ ability.description }}</p>
+                        <p style="white-space: pre-line;">{{ ability.description }}</p>
 
                         <hr>
                     {% endfor %}

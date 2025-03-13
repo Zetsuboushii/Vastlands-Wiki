@@ -98,47 +98,49 @@
                         </table>
                     {% endif %}
 
-                    <div class="character-data-field-title"><h4>Profession</h4></div>
-                    <table>
-                        <tbody>
-                        {% if character.function %}
-                            <tr>
-                                <td>Funktion</td>
-                                <td>
-                                    <ul>
-                                        {% for function in character.functions | sort %}
-                                            <li>{{ function }}</li>
-                                        {% endfor %}
-                                    </ul>
-                                </td>
-                            </tr>
-                        {% endif %}
-                        {% if character.classes %}
-                            <tr>
-                                <td>Basisklasse</td>
-                                <td>{{ character.classes.baseclass }}</td>
-                            </tr>
-                            {% if character.classes.subclasses %}
+                    {% if character.function or character.classes %}
+                        <div class="character-data-field-title"><h4>Profession</h4></div>
+                        <table>
+                            <tbody>
+                            {% if character.function %}
                                 <tr>
-                                    <td>Subklasse{% if character.classes.subclasses | length > 1 %}n{% endif %}</td>
+                                    <td>Funktion</td>
                                     <td>
                                         <ul>
-                                            {% for subclass in character.classes.subclasses | sort %}
-                                                <li>{{ subclass }}</li>
+                                            {% for function in character.functions | sort %}
+                                                <li>{{ function }}</li>
                                             {% endfor %}
                                         </ul>
                                     </td>
                                 </tr>
                             {% endif %}
-                            {% if character.classes.masterclass %}
+                            {% if character.classes %}
                                 <tr>
-                                    <td>Meisterklasse</td>
-                                    <td>{{ character.classes.masterclass }}</td>
+                                    <td>Basisklasse</td>
+                                    <td>{{ character.classes.baseclass }}</td>
                                 </tr>
+                                {% if character.classes.subclasses %}
+                                    <tr>
+                                        <td>Subklasse{% if character.classes.subclasses | length > 1 %}n{% endif %}</td>
+                                        <td>
+                                            <ul>
+                                                {% for subclass in character.classes.subclasses | sort %}
+                                                    <li>{{ subclass }}</li>
+                                                {% endfor %}
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                {% endif %}
+                                {% if character.classes.masterclass %}
+                                    <tr>
+                                        <td>Meisterklasse</td>
+                                        <td>{{ character.classes.masterclass }}</td>
+                                    </tr>
+                                {% endif %}
                             {% endif %}
-                        {% endif %}
-                        </tbody>
-                    </table>
+                            </tbody>
+                        </table>
+                    {% endif %}
 
                     <div class="character-data-field-title"><h4>Weitere Informationen</h4></div>
                     <table>
