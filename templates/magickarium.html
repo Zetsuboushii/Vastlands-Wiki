@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>{{ spell.name }} | {{ g.site_title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/character.css') }}">
+</head>
+<body>
+
+{% include "banner.html" %}
+
+<div class="page-containter">
+    {% include "header.html" %}
+
+    <div class="page">
+        <div class="character-container">
+            <div class="character-data">
+                <div class="character-data-box" style="position: relative; top: 60px; margin-bottom: 60px">
+                    <div class="character-data-name"><h1>{{ spell.name }}</h1></div>
+                    <div class="character-data-title"><h3>{{ spell.association }}</h3></div>
+
+                    <div class="character-data-field-title"><h4>Allgemeine Werte</h4></div>
+                    <table>
+                        <tbody>
+                        {% if spell.level %}
+                            <tr>
+                                <td>Stufe</td>
+                                <td>{{ spell.level }}</td>
+                            </tr>
+                        {% endif %}
+                        {% if spell.type %}
+                            <tr>
+                                <td>Typ</td>
+                                <td>{{ spell.type }}</td>
+                            </tr>
+                        {% endif %}
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Wirkung</h4></div>
+                    <table>
+                        <tbody>
+                        {% if spell.concentration %}
+                            <tr>
+                                <td>Konzentration</td>
+                                <td>Ja</td>
+                            </tr>
+                        {% endif %}
+                        {% if spell.cooldown.cooldown_time != 0 %}
+                            <tr>
+                                <td>Abklingzeit</td>
+                                <td>
+                                    {{ spell.cooldown.cooldown_time }}
+                                    {{ spell.cooldown.cooldown_type | replace("d", "Tag(e)") | replace("m", "Minute") | replace("r", "Runde(n)") }}
+                                </td>
+                            </tr>
+                        {% endif %}
+                        {% if spell.range %}
+                            <tr>
+                                <td>Reichweite</td>
+                                <td>{{ spell.range }} ft.</td>
+                            </tr>
+                        {% endif %}
+                        {% if spell.aoe %}
+                            <tr>
+                                <td>Wirkungsbereich</td>
+                                <td>
+                                    {% if spell.aoe.aoe_range != 0 %}
+                                        {{ spell.aoe.aoe_range }} ft.
+                                    {% endif %}
+                                    {{ spell.aoe.aoe_type | capitalize }}
+                                </td>
+                            </tr>
+                        {% endif %}
+                        {% if spell.duration %}
+                            <tr>
+                                <td>Wirkungsdauer</td>
+                                <td>
+                                    {% if spell.duration.duration_time != 0 %}
+                                        {{ spell.duration.duration_time }}
+                                    {% endif %}
+                                    {{ spell.duration.duration_type | replace("d", "Tag(e)") | replace("m", "Minute") | replace("r", "Runde(n)") }}
+                                </td>
+                            </tr>
+                        {% endif %}
+                        {% if spell.casting_duration %}
+                            <tr>
+                                <td>Wirkungsdauer</td>
+                                <td>
+                                    {% if spell.casting_duration.casting_time != 0 %}
+                                        {{ spell.casting_duration.casting_time }}
+                                    {% endif %}
+                                    {{ spell.casting_duration.casting_type | replace("d", "Tag(e)") | replace("m", "Minute") | replace("r", "Runde(n)") | replace("s", "Sofort") }}
+                                </td>
+                            </tr>
+                        {% endif %}
+                        {% if spell.damage %}
+                            <tr>
+                                <td>Schaden</td>
+                                <td>
+                                    <ul>{% for d in spell.damage %}
+                                        <li>{{ d.dice_term }} {{ d.type }}</li>
+                                    {% endfor %}</ul>
+                                </td>
+                            </tr>
+                        {% endif %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="character-text">
+                <div class="character-text-box">
+                    <p style="white-space: pre-line;">{{ spell.description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

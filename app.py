@@ -190,6 +190,7 @@ def compendium(compendium_name):
     for compendium in compendium_list:
         if compendium['name'].lower() == compendium_name.lower():
             compendium_data = load_from_json(compendium['name'].lower())
+            compendium_data.sort(key=lambda entry: entry["name"].lower())
             break
 
     if compendium_name == "gentarium":
@@ -198,14 +199,23 @@ def compendium(compendium_name):
             for character in characters_list:
                 if character["race"] == race["name"]:
                     race["example"] = character["name"]
-
     elif compendium_name == "gladiarium":
         types = []
-        for weapon in compendium_data:
-            types.append(weapon['type'])
+        for entry in compendium_data:
+            types.append(entry['type'])
         types = list(set(types))
         return render_template('compendium.html', compendium_name=compendium_name, compendium=compendium_data,
                                types=types)
+    elif compendium_name == "magickarium":
+        types = []
+        associations = []
+        for entry in compendium_data:
+            types.append(entry['type'])
+            associations.append(entry['association'])
+        types = list(set(types))
+        associations = list(set(associations))
+        return render_template('compendium.html', compendium_name=compendium_name, compendium=compendium_data,
+                               types=types, associations=associations)
 
     return render_template('compendium.html', compendium_name=compendium_name, compendium=compendium_data)
 
@@ -249,6 +259,8 @@ def compendium_entry(compendium_name, entry_name):
                     if ability['name'] == weapon_ability:
                         abilities.append(ability)
             return render_template('gladiarium.html', weapon=entry, abilities=abilities)
+        case "magickarium":
+            return render_template('magickarium.html', spell=entry)
 
 
 @app.route('/holidays/<holiday_name>/')

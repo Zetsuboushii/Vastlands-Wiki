@@ -1,7 +1,7 @@
 [
   {
-    "name": "Elementartransfer - Loderndes Feuer",
-    "type": "Kanalisierung",
+    "name": "Loderndes Feuer",
+    "type": "Kanalisierungen",
     "association": "Loderndes Feuer von Kaen",
     "level": 1,
     "cooldown": {
@@ -10,21 +10,24 @@
     },
     "concentration": false,
     "range": 0,
-    "aoe": "self",
+    "aoe": {
+      "aoe_range": 0,
+      "aoe_type": "self"
+    },
     "duration": {
       "duration_time": 1,
       "duration_type": "r"
     },
     "casting_duration": {
       "casting_time": 0,
-      "casting_type": "sofort"
+      "casting_type": "s"
     },
     "damage": [],
     "description": "Versetzt eine Waffe in lodernde Flammen. Phyischer Schaden wird in Feuerschaden umgewandelt."
   },
   {
     "name": "Magmaschuss",
-    "type": "Kanalisierung",
+    "type": "Kanalisierungen",
     "association": "Loderndes Feuer von Kaen",
     "level": 2,
     "cooldown": {
@@ -43,23 +46,23 @@
     },
     "casting_duration": {
       "casting_time": 0,
-      "casting_type": "sofort"
+      "casting_type": "s"
     },
     "damage": [
       {
         "dice_term": "2d10",
-        "type": "fire"
+        "type": "Feuer"
       },
       {
         "dice_term": "1d4",
-        "type": "bludgeoning"
+        "type": "Stumpf"
       }
     ],
     "description": "Schleudert einen Brocken glühendes Magma. Explodiert bei Kontakt in Radius."
   },
   {
     "name": "Stärkende Flamme",
-    "type": "Kanalisierung",
+    "type": "Kanalisierungen",
     "association": "Loderndes Feuer von Kaen",
     "level": 3,
     "cooldown": {
@@ -73,23 +76,41 @@
       "aoe_type": "self"
     },
     "duration": {
-      "duration_time": 1,
+      "duration_time": 2,
       "duration_type": "r"
     },
     "casting_duration": {
       "casting_time": 0,
-      "casting_type": "sofort"
+      "casting_type": "s"
+    },
+    "damage": [],
+    "description": "Erschafft im Inneren des Anwenders ein belebendes Feuer, dass nicht-magische und Feuer-Angriffe verstärkt. Verbrennt den Anwender leicht. Die Stärke des Anwenders wird um +1 erhöht. Vorteil und Bonus [Str Mod]d4 auf nicht-magische und Feuer Angriffe für 2 Runden."
+  },
+  {
+    "name": "Avilas Strahlende Umarmung",
+    "type": "Glaube",
+    "association": "Wärmende Harmonie von Avila",
+    "level": 3,
+    "cooldown": {
+      "cooldown_time": 0,
+      "cooldown_type": "r"
+    },
+    "concentration": true,
+    "range": 30,
+    "aoe": {
+      "aoe_range": 0,
+      "aoe_type": "einzel"
+    },
+    "duration": {
+      "duration_time": 1,
+      "duration_type": "m"
+    },
+    "casting_duration": {
+      "casting_time": 0,
+      "casting_type": "s"
     },
     "damage": [
-      {
-        "dice_term": "2d10",
-        "type": "fire"
-      },
-      {
-        "dice_term": "1d4",
-        "type": "bludgeoning"
-      }
     ],
-    "description": "Erschafft im Inneren des Anwenders ein belebendes Feuer, dass nicht-magische und Feuer-Angriffe verstärkt. Verbrennt den Anwender leicht. Die Stärke des Anwenders "
+    "description": "Du rufst die sanfte, aber mächtige Energie von Avila an, um das Herz eines Wesens zu berühren. Wähle eine Kreatur in Reichweite, die dich sehen und hören kann. Sie muss einen Weisheitsrettungswurf gegen deinen Zauber-SG ablegen. Bei einem Misserfolg wird sie von einem warmen Gefühl der Zuneigung durchflutet und ist für die Dauer des Zaubers freundlich gegenüber dir und Kreaturen deiner Wahl.\n\nZusätzlich erhält das Ziel temporäre Trefferpunkte in Höhe von 3d8 + dein Zauberfähigkeitsmodifikator, da Avilas Segen es schützt. Wenn das Ziel bereits positive Gefühle für dich hegt (z. B. ein Verbündeter oder eine romantische Verbindung), hat es Nachteil auf den Rettungswurf.\nDer Zauber endet vorzeitig, wenn du oder deine Verbündeten das Ziel angreift oder ihm Schaden zufügt.\n\nAuf höheren Graden:\nWenn du diesen Zauber mit einem Zauberplatz des 4. Grades oder höher wirkst, erhält das Ziel 1d8 zusätzliche temporäre Trefferpunkte für jede Stufe über 3 hinaus."
   }
 ]
