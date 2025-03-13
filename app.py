@@ -184,7 +184,6 @@ def compendia():
 @app.route('/compendium/<compendium_name>/')
 def compendium(compendium_name):
     compendium_list = load_from_json("compendia")
-    compendium_list.sort(key=lambda compendium: compendium["name"])
     compendium_data = None
 
     for compendium in compendium_list:
@@ -207,6 +206,7 @@ def compendium(compendium_name):
         return render_template('compendium.html', compendium_name=compendium_name, compendium=compendium_data,
                                types=types)
     elif compendium_name == "magickarium":
+        compendium_list.sort(key=lambda compendium: compendium["name"])
         types = []
         associations = []
         for entry in compendium_data:
