@@ -189,7 +189,6 @@ def compendium(compendium_name):
     for compendium in compendium_list:
         if compendium['name'].lower() == compendium_name.lower():
             compendium_data = load_from_json(compendium['name'].lower())
-            compendium_data.sort(key=lambda entry: entry["name"].lower())
             break
 
     if compendium_name == "gentarium":
