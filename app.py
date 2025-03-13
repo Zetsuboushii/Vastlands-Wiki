@@ -197,7 +197,7 @@ def compendium(compendium_name):
             for character in characters_list:
                 if character["race"] == race["name"]:
                     race["example"] = character["name"]
-    elif compendium_name == "gladiarium":
+    elif compendium_name in ["gladiarium", "antiquarium"]:
         types = []
         for entry in compendium_data:
             types.append(entry['type'])
@@ -260,6 +260,8 @@ def compendium_entry(compendium_name, entry_name):
             return render_template('gladiarium.html', weapon=entry, abilities=abilities)
         case "magickarium":
             return render_template('magickarium.html', spell=entry)
+        case "antiquarium":
+            return render_template('antiquarium.html', item=entry)
 
 
 @app.route('/holidays/<holiday_name>/')

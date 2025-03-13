@@ -40,7 +40,7 @@
                     </div>
                 {% endfor %}
             </div>
-        {% elif compendium_name == 'gladiarium' %}
+        {% elif compendium_name in ['gladiarium', 'antiquarium'] %}
             {% for type in types | sort %}
                 <div class="type-name"><h1>{{ type }}</h1></div>
                 <div class="themed-container">

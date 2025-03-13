@@ -1,0 +1,69 @@
+[
+  {
+    "name": "Haarspange des Ewigen Frühlings",
+    "type": "Wundersame Gegenstände",
+    "rarity": "legendär",
+    "description": "Diese kunstvoll gearbeitete Haarspange besteht aus glänzendem Gold und schimmert in sanften Pastelltönen, als würde sie das Licht eines ewigen Frühlingsmorgens einfangen. Ihr filigranes Design erinnert an junge Blüten und sanfte Brisen – ein Symbol für Jugend, Schönheit und Unbeschwertheit.",
+    "attributes": [
+      {
+        "name": "Gottesgleiche Ausstrahlung",
+        "text": "Solange du diese Haarspange trägst, erhältst du einen +1 Bonus auf Charisma (bis zu einem Maximum von 20)."
+      },
+      {
+        "name": "Jugendlicher Glanz",
+        "text": "Du wirkst auf andere besonders charmant und strahlst eine natürliche Frische aus. Du erhältst Vorteil auf Überzeugen-Würfe, wenn du versuchst, jemanden freundlich zu stimmen."
+      },
+      {
+        "name": "Blick der Jugend",
+        "text": "Einmal pro Tag kannst du eine Bonusaktion verwenden, um dich für die nächsten 10 Minuten in eine jugendliche Version deiner selbst zu verwandeln. Deine Haut erscheint glatter, deine Augen leuchten heller, und du wirkst unwiderstehlich. Während dieser Zeit hast du Vorteil auf Täuschen- und Überreden-Würfe."
+      }
+    ],
+    "rumor": "Man sagt, dass diejenigen, die diese Haarspange tragen, gelegentlich ein leises, fröhliches Lachen hören – als würde Ouin selbst sich an ihrer jugendlichen Ausstrahlung erfreuen."
+  },
+  {
+    "name": "Sanduhr der Fließenden Sekunden",
+    "type": "Wundersame Gegenstände",
+    "rarity": "legendär",
+    "description": "Diese elegante Sanduhr besteht aus silbernem Glas und ist mit feinen Gravuren versehen, die den endlosen Fluss der Zeit darstellen. Der Sand im Inneren scheint niemals stillzustehen – manchmal rieselt er schneller, manchmal langsamer, als würde er nach einem eigenen Rhythmus fließen. Wer die Sanduhr betrachtet, spürt für einen Moment die Ewigkeit, eingefangen in winzigen Körnern.",
+    "attributes": [
+      {
+        "name": "Amlins Segen",
+        "text": "Während du diese Sanduhr trägst, kannst du einmal pro langer Rast eine deiner verbrauchten Aktionen zurückholen. Nachdem du eine Aktion ausgeführt hast, kannst du als Reaktion die Sanduhr umdrehen. Deine Aktion wird sofort „zurückgesetzt“, sodass du sie erneut in derselben Runde einsetzen kannst."
+      },
+      {
+        "name": "Fluss der Zeit",
+        "text": "Einmal pro Tag kannst du die Sanduhr aktivieren, um für 1 Minute deine Initiativewürfe mit Vorteil zu machen und deine Bewegungsgeschwindigkeit um 10 Fuß zu erhöhen. Während dieser Zeit fühlst du dich, als würdest du im Rhythmus der Zeit tanzen, deinen Gegnern stets einen Schritt voraus."
+      },
+      {
+        "name": "Verlorene Sekunden",
+        "text": "Wenn du eine feindliche Kreatur berührst und die Sanduhr umdrehst, kann sie einen Weisheitsrettungswurf (SG 16) machen. Bei einem Misserfolg wird sie für 1 Runde verlangsamt (wie durch den Langsam-Zauber). Diese Fähigkeit kann einmal pro lange Rast genutzt werden."
+      }
+    ],
+    "rumor": "Manche sagen, dass diejenigen, die diese Sanduhr zu lange betrachten, das Ticken der Zeit in ihren Träumen hören – und Visionen von Dingen sehen, die längst geschehen sind oder noch geschehen werden."
+  },
+  {
+    "name": "Tonikum der Lebensquelle",
+    "type": "Wundersame Gegenstände",
+    "rarity": "legendär",
+    "description": "Dieses kristallklare Tonikum ist in einer eleganten Phiole mit goldenen Verzierungen abgefüllt. Wenn es geschüttelt wird, schimmert die Flüssigkeit in sanften Grün- und Blautönen, als würde sie lebendige Energie in sich tragen. Ein leichter, erdiger Duft steigt auf, erinnert an frisch erblühte Wiesen nach einem Frühlingsregen.",
+    "attributes": [
+      {
+        "name": "Erneuerung des Körpers",
+        "text": "Der Trinker stellt 6d6+10 Trefferpunkte wieder her."
+      },
+      {
+        "name": "Reinigung des Geistes",
+        "text": "Alle Gifte und Krankheiten werden sofort geheilt."
+      },
+      {
+        "name": "Segen der Gesundheit",
+        "text": "Für die nächsten 10 Minuten erhält der Trinker Widerstand gegen Nekrotischen Schaden und kann nicht auf magische Weise erkranken."
+      },
+      {
+        "name": "Hamas Gnade",
+        "text": "Wenn das Tonikum an eine andere Kreatur weitergegeben wird (statt es selbst zu trinken), verstärkt sich seine Wirkung. In diesem Fall stellt die Kreatur 8d6+15 Trefferpunkte wieder her. Die Legenden sagen, dass Hama selbst diejenigen belohnt, die ihre heilende Kraft mit anderen teilen."
+      }
+    ],
+    "rumor": "Manche behaupten, dass das Trinken des Tonikums für einen kurzen Moment das sanfte Murmeln eines heiligen Baches oder das entfernte Lachen einer wohlwollenden Präsenz hören lässt."
+  }
+]
