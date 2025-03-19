@@ -72,6 +72,10 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   #letter-filter {
@@ -80,6 +84,10 @@
       background-size: contain;
       width: 56px;
       height: 56px;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
@@ -89,6 +97,10 @@
       background-size: contain;
       width: 250px;
       height: 67px;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }

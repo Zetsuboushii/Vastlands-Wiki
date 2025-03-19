@@ -1,7 +1,6 @@
 .header-wrapper {
   display: flex;
   flex-direction: column;
-  height: 150px;
   justify-content: flex-end;
   position: relative; }
 
@@ -31,10 +30,14 @@ header {
     header .site-title a {
       color: white;
       font-family: "Grenze Gotisch";
-      font-size: 40px; }
-    @media (max-width: 768px) {
+      font-size: 40px;
+      left: -40px; }
+    @media (max-width: 890px) {
       header .site-title a {
-        font-size: 30px; } }
+        left: 10px;
+        font-size: 30px; }
+      header .site-title button {
+        left: 0px; } }
     header .site-title .logo {
       height: 30px;
       margin: 5px 20px 0 12px;

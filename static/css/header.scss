@@ -1,7 +1,6 @@
 .header-wrapper {
   display: flex;
   flex-direction: column;
-  height: 150px;
   justify-content: flex-end;
   position: relative;
 }
@@ -37,11 +36,17 @@ header {
       color: white;
       font-family: "Grenze Gotisch";
       font-size: 40px;
+      left: -40px;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 890px) {
       a {
+        left: 10px;
         font-size: 30px;
+      }
+
+      button {
+        left: 0px;
       }
     }
 

@@ -58,16 +58,22 @@
     background-color: transparent;
     border: none;
     cursor: pointer; }
+    .filters button:hover {
+      text-decoration: underline; }
   .filters #letter-filter button {
     background-image: url("../ui/button-square.png");
     background-size: contain;
     width: 56px;
     height: 56px; }
+    .filters #letter-filter button:hover {
+      text-decoration: underline; }
   .filters #nationality-filter button {
     background-image: url("../ui/button-text.png");
     background-size: contain;
     width: 250px;
     height: 67px; }
+    .filters #nationality-filter button:hover {
+      text-decoration: underline; }
 
 .collapsible-list ul {
   display: block;
