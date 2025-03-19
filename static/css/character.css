@@ -1,25 +1,44 @@
+@charset "UTF-8";
 .character-container {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 25px;
-  align-items: flex-start; }
+  display: grid;
+  grid-template-areas: "character-data character-text";
+  grid-template-columns: 1fr 2fr;
+  gap: 25px; }
 
 .character-data {
-  flex: 0 0 30%; }
+  grid-area: character-data; }
   .character-data .character-data-box {
-    border-right: 1px solid #2e2622;
     position: relative;
-    width: 500px;
-    top: 25px;
-    margin: 0 0 50px 25px;
+    margin: 20px 0 50px 25px;
     padding-right: 25px;
     text-align: center; }
     .character-data .character-data-box img {
-      max-width: 380px;
+      max-width: 300px;
       max-height: 600px;
       position: relative; }
+    .character-data .character-data-box .character-data-top {
+      position: relative;
+      /* Erlaubt, dass Kinder (die Headings) absolut positioniert werden */
+      /* Beispiel:
+         Das erste Heading direkt am oberen Rand,
+         das zweite Heading darunter. */ }
+      .character-data .character-data-box .character-data-top .character-data-name,
+      .character-data .character-data-box .character-data-top .character-data-title {
+        position: absolute;
+        /* Nimmt sie aus dem Flow, kein Platzverbrauch */
+        left: 0;
+        /* Ggf. an den linken Rand anheften */
+        width: 100%;
+        /* Breite ausfüllen oder anpassen, je nach gewünschter Optik */
+        /* Entferne ggf. das feste height:. Wenn du es lässt, kannst du die Overlay-Größe steuern */ }
+      .character-data .character-data-box .character-data-top .character-data-name {
+        top: -54px;
+        z-index: 2; }
+      .character-data .character-data-box .character-data-top .character-data-title {
+        top: 60px;
+        /* Je nach Abstand, der gewünscht ist. */
+        z-index: 1; }
     .character-data .character-data-box .character-data-name {
-      top: -80px;
       position: relative;
       z-index: 2;
       background-image: url("../ui/name-backdrop-2.png");
@@ -29,11 +48,10 @@
       color: white;
       background-position: center; }
       .character-data .character-data-box .character-data-name h1 {
-        top: 54px;
+        bottom: -53px;
         margin: 0;
         position: relative; }
     .character-data .character-data-box .character-data-title {
-      top: -96px;
       position: relative;
       z-index: 1;
       background-image: url("../ui/title-banner.png");
@@ -47,7 +65,6 @@
         margin: 0;
         position: relative; }
     .character-data .character-data-box .character-data-field-title {
-      top: -80px;
       position: relative;
       z-index: 1;
       background-image: url("../ui/field-name-background.png");
@@ -63,7 +80,6 @@
     .character-data .character-data-box h3 {
       margin-bottom: 0; }
     .character-data .character-data-box table {
-      top: -80px;
       position: relative;
       font-family: "Grenze Gotisch";
       width: 100%;
@@ -86,39 +102,86 @@
     .character-data .character-data-box a {
       color: black; }
 
-.character-text .character-text-box {
-  margin: 25px 25px 25px 0; }
-  .character-text .character-text-box p {
-    text-align: justify; }
-  .character-text .character-text-box .character-text-heading {
-    top: 10px;
-    position: relative;
-    z-index: 1;
-    background-image: url("../ui/text-heading-backdrop.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 60px;
-    width: 336px;
-    color: white; }
-    .character-text .character-text-box .character-text-heading h2 {
-      text-align: center;
-      left: -8px;
-      top: 14px;
-      margin: 0;
-      position: relative; }
-  .character-text .character-text-box .gallery-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; }
-    .character-text .character-text-box .gallery-container .gallery-element {
+.character-text {
+  grid-area: character-text; }
+  .character-text .character-text-box {
+    margin: 25px 25px 25px 0; }
+    .character-text .character-text-box p {
+      text-align: justify; }
+    .character-text .character-text-box .character-text-heading {
+      top: 10px;
+      position: relative;
+      z-index: 1;
+      background-image: url("../ui/text-heading-backdrop.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 60px;
+      width: 336px;
+      color: white; }
+      .character-text .character-text-box .character-text-heading h2 {
+        text-align: center;
+        left: -8px;
+        top: 14px;
+        margin: 0;
+        position: relative; }
+    .character-text .character-text-box .gallery-container {
       display: flex;
-      flex-direction: column;
-      margin: 10px;
-      height: auto;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .character-text .character-text-box .gallery-container .gallery-element {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        height: auto;
+        text-align: center; }
+        .character-text .character-text-box .gallery-container .gallery-element img {
+          max-height: 300px;
+          position: relative;
+          object-fit: contain; }
+
+@media (max-width: 890px) {
+  .character-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+    align-items: center;
+    /* Zentriert alles */ }
+
+  .character-data {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; }
+    .character-data .character-data-box {
+      width: 90%;
+      /* Statt fester 500px */
+      max-width: 500px;
+      /* Falls auf größeren Handys mehr Platz ist */
+      margin: 20px auto 0 auto;
+      padding: 0; }
+      .character-data .character-data-box .character-data-top .character-data-title {
+        top: 48px; }
+    .character-data .character-data-box img {
+      max-width: 220px; }
+
+  .character-text {
+    width: 100%;
+    padding: 0; }
+    .character-text .character-text-box {
+      width: 95%;
+      /* Volle Breite nutzen */
+      max-width: 700px;
+      /* Falls Bildschirm breit genug ist */
+      margin: 0 auto;
+      padding: 0; }
+    .character-text .character-text-heading {
+      width: 100%;
       text-align: center; }
-      .character-text .character-text-box .gallery-container .gallery-element img {
-        max-height: 300px;
-        position: relative;
-        object-fit: contain; }
+    .character-text .gallery-container {
+      flex-direction: column;
+      align-items: center; }
+    .character-text .gallery-element img {
+      max-width: 100%;
+      height: auto; } }
 
 /*# sourceMappingURL=character.css.map */

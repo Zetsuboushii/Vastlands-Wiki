@@ -79,7 +79,7 @@
           text-align: center;
           margin: 0;
           position: relative; }
-      @media (max-width: 768px) {
+      @media (max-width: 890px) {
         .home-right .home-right-text .home-right-text-box .home-right-text-heading h2 {
           top: 0; } }
       .home-right .home-right-text .home-right-text-box .home-birthdays-box {

@@ -30,7 +30,6 @@ body {
   background-position: 0 200px; }
 
 .page-containter {
-  top: -120px;
   display: flex;
   flex-direction: column;
   margin: 0 auto 0;
@@ -38,10 +37,14 @@ body {
   position: relative;
   width: 85%; }
 
-@media only screen and (max-width: 1300px) {
+@media (max-width: 890px) {
   .page-containter {
     max-width: none;
-    width: 95%; } }
+    width: 100%;
+    overflow: hidden; }
+
+  .hide-on-mobile {
+    display: none; } }
 .page {
   position: relative;
   top: -30px;

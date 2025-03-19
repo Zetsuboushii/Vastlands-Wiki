@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="de">
 <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"/>
     <title>{{ character.name }} | {{ g.site_title }}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/character.css') }}">
@@ -21,9 +21,16 @@
                     {% set character_name = character.name | lower | replace(" ", "-") %}
                     {% set url = g.img_host + "characters/" + character_name %}
                     <img src="{{ url }}{% if artwork_flag %} artwork{% endif %}.png" alt="">
-
-                    <div class="character-data-name"><h1>{{ character.name }} {{ character.surname }}</h1></div>
-                    <div class="character-data-title"><h3>{{ character.title }}</h3></div>
+                    <div class="character-data-top">
+                        <div class="character-data-name"><h1>{{ character.name }} {{ character.surname }}</h1></div>
+                        <div class="character-data-title"><h3>{{ character.title }}</h3></div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
 
                     <div class="character-data-field-title"><h4>Informationen zur Person</h4></div>
                     <table>
