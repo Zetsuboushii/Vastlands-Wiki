@@ -1858,7 +1858,7 @@
       },
       {
         "place": "Gebirge der Sünde",
-        "attachment": "Geburtsort"
+        "attachment": "Zuhause"
       }
     ],
     "alignment": "TN",
@@ -1885,7 +1885,7 @@
       },
       {
         "character": "Tristan",
-        "relation": "eigentlicher kleiner Bruder"
+        "relation": "Halbbruder"
       },
       {
         "character": "Nayru",
@@ -2758,7 +2758,7 @@
       },
       {
         "place": "Garten der Magie",
-        "attachment": "Geburtsort"
+        "attachment": "Schaffensort"
       }
     ],
     "alignment": "NG",
@@ -3540,7 +3540,7 @@
       },
       {
         "place": "Llurthargothr",
-        "attachment": "Geburtsort"
+        "attachment": "Wohnort"
       }
     ],
     "alignment": "NG",
@@ -4180,7 +4180,7 @@
       },
       {
         "place": "Aegir",
-        "attachment": "Geburtsort"
+        "attachment": "Ehemaliges Zuhause"
       }
     ],
     "alignment": "NG",
@@ -4691,7 +4691,7 @@
     "homes": [
       {
         "place": "Dünsberg",
-        "attachment": "Geburtsort"
+        "attachment": "Wohnort"
       },
       {
         "place": "Aegir",
@@ -4775,7 +4775,7 @@
     "homes": [
       {
         "place": "Dünsberg",
-        "attachment": "Geburtsort"
+        "attachment": "Wohnort"
       },
       {
         "place": "Grenbrock",
@@ -5960,7 +5960,7 @@
       },
       {
         "place": "Inidal-Grenzposten",
-        "attachment": "Geburtsort"
+        "attachment": "Schaffensort"
       }
     ],
     "alignment": "NG",
@@ -8831,7 +8831,7 @@
       },
       {
         "place": "Grenbrock",
-        "attachment": "Geburtsort"
+        "attachment": "Schaffensort"
       }
     ],
     "alignment": "TN",
@@ -8990,7 +8990,7 @@
     "relationships": [
       {
         "character": "Tristan",
-        "relation": "kleiner Bruder"
+        "relation": "Halbbruder"
       },
       {
         "character": "Eliza",
@@ -9002,7 +9002,7 @@
       },
       {
         "character": "Cordelia",
-        "relation": "lieblings Cousine"
+        "relation": "Lieblingscousine"
       },
       {
         "character": "Narcian",
@@ -9528,11 +9528,11 @@
     "relationships": [
       {
         "character": "Stephan",
-        "relation": "großer Bruder"
+        "relation": "Halbbruder"
       },
       {
         "character": "Eliza",
-        "relation": "große Schwester"
+        "relation": "Halbschwester"
       },
       {
         "character": "Jervar",
@@ -10297,7 +10297,7 @@
       },
       {
         "place": "Kloster Schicksalsweg",
-        "attachment": "Geburtsort"
+        "attachment": "Neues Zuhause"
       }
     ],
     "alignment": "CG",
@@ -10539,13 +10539,10 @@
     "affiliations": [
       "Mondzirkel"
     ],
-    "likes": [
-    ],
-    "dislikes": [
-    ],
+    "likes": [],
+    "dislikes": [],
     "status": "am Leben",
-    "relationships": [
-    ],
+    "relationships": [],
     "lover": "",
     "alt_images": [],
     "content": {
@@ -10562,14 +10559,13 @@
     "birthday": "4.4.393",
     "aliases": [],
     "measurements": {
-      "height": 0.023,
+      "height": 0.23,
       "weight": 3
     },
     "functions": [
       "Katze im Jagdschloss"
     ],
-    "classes": {
-    },
+    "classes": {},
     "nationality": "Faergria",
     "homes": [
       {
@@ -10582,10 +10578,8 @@
       }
     ],
     "alignment": "CE",
-    "affiliations": [
-    ],
-    "likes": [
-    ],
+    "affiliations": [],
+    "likes": [],
     "dislikes": [
       "Denken"
     ],
@@ -10616,14 +10610,13 @@
     "birthday": "3.2.393",
     "aliases": [],
     "measurements": {
-      "height": 0.025,
+      "height": 0.25,
       "weight": 4
     },
     "functions": [
       "Katze im Jagdschloss"
     ],
-    "classes": {
-    },
+    "classes": {},
     "nationality": "Faergria",
     "homes": [
       {
@@ -10636,13 +10629,11 @@
       }
     ],
     "alignment": "CE",
-    "affiliations": [
-    ],
+    "affiliations": [],
     "likes": [
       "Essen"
     ],
-    "dislikes": [
-    ],
+    "dislikes": [],
     "status": "am Leben",
     "relationships": [
       {
@@ -10674,14 +10665,13 @@
     "birthday": "30.12.392",
     "aliases": [],
     "measurements": {
-      "height": 0.026,
+      "height": 0.26,
       "weight": 5
     },
     "functions": [
       "Katze im Jagdschloss"
     ],
-    "classes": {
-    },
+    "classes": {},
     "nationality": "Faergria",
     "homes": [
       {
@@ -10694,13 +10684,11 @@
       }
     ],
     "alignment": "CE",
-    "affiliations": [
-    ],
+    "affiliations": [],
     "likes": [
       "Schlafen"
     ],
-    "dislikes": [
-    ],
+    "dislikes": [],
     "status": "am Leben",
     "relationships": [
       {
