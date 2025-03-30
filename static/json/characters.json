@@ -10706,5 +10706,47 @@
       "excerpt": "",
       "sections": []
     }
+  },
+  {
+    "name": "Balthus",
+    "surname": "",
+    "title": "Rätselhafter Drachenrittmeister",
+    "race": "Menschen",
+    "sex": "m",
+    "birthday": "",
+    "aliases": [],
+    "measurements": {
+      "height": 0,
+      "weight": 0
+    },
+    "functions": [
+      "Ehemaliger Anführer der Drachenritter von Orrin"
+    ],
+    "classes": {},
+    "nationality": "Faergria",
+    "homes": [
+      {
+        "place": "Orrin",
+        "attachment": "Ehemaliger Wohnort"
+      }
+    ],
+    "alignment": "",
+    "affiliations": [],
+    "likes": [
+    ],
+    "dislikes": [],
+    "status": "am Leben",
+    "relationships": [
+      {
+        "character": "Nayru",
+        "relation": "Schülerin"
+      }
+    ],
+    "lover": "",
+    "alt_images": [],
+    "content": {
+      "excerpt": "",
+      "sections": []
+    }
   }
 ]
