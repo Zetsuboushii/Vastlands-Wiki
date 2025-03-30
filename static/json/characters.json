@@ -431,7 +431,7 @@
     ],
     "alignment": "CG",
     "affiliations": [
-      "2.Generation der Hohefürsten"
+      "2. Generation der Hohefürsten"
     ],
     "likes": [
       "Plüschtiere",
@@ -10742,6 +10742,70 @@
         "relation": "Schülerin"
       }
     ],
+    "lover": "",
+    "alt_images": [],
+    "content": {
+      "excerpt": "",
+      "sections": []
+    }
+  },
+  {
+    "name": "Bellum",
+    "surname": "",
+    "title": "Hohefürst des Krieges",
+    "race": "Dämonen",
+    "sex": "m",
+    "birthday": "",
+    "aliases": [],
+    "measurements": {
+      "height": 1.99
+    },
+    "functions": [
+      "Hohefürst des Krieges"
+    ],
+    "classes": {},
+    "nationality": "Faergria",
+    "homes": [],
+    "alignment": "",
+    "affiliations": [
+      "4. Generation der Hohefürsten"
+    ],
+    "likes": [],
+    "dislikes": [],
+    "status": "am Leben",
+    "relationships": [],
+    "lover": "",
+    "alt_images": [],
+    "content": {
+      "excerpt": "",
+      "sections": []
+    }
+  },
+  {
+    "name": "Serff",
+    "surname": "",
+    "title": "Hohefürst des Wahnsinns",
+    "race": "Dämonen",
+    "sex": "m",
+    "birthday": "",
+    "aliases": [],
+    "measurements": {
+      "height": 1.78
+    },
+    "functions": [
+      "Hohefürst des Wahnsinns"
+    ],
+    "classes": {},
+    "nationality": "Faergria",
+    "homes": [],
+    "alignment": "",
+    "affiliations": [
+      "4. Generation der Hohefürsten"
+    ],
+    "likes": [],
+    "dislikes": [],
+    "status": "am Leben",
+    "relationships": [],
     "lover": "",
     "alt_images": [],
     "content": {
