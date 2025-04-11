@@ -1,0 +1,40 @@
+.timeline-container {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.timeline-item {
+  margin-top: 2rem;
+  border-left: 2px solid #ccc;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.timeline-date {
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+}
+
+.timeline-content h2 {
+  margin-top: 0;
+}
+
+.image-container {
+  margin-top: 1rem;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #ddd;
+}
