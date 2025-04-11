@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"/>
+    <title>Timeline | Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/timeline.css">
+</head>
+<body>
+
+<link rel="stylesheet" href="../static/css/banner.css">
+<link rel="shortcut icon" href="../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../static/ui/banner-5.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../static/imgs/logo.png" alt="" class="logo hide-on-mobile" style="left: -40px; position: relative">
+            <a href="../index.html" style="position: relative">Tome of the Vastlands</a>
+            <sub class="hide-on-mobile" style="left: -40px; position: relative">b3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('../characters/index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('../compendium/index.html')">Kompendien</button>
+        
+            <button class="nav-button" onclick="loadPage('../places/index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('../tierlist/index.html')">Tierlist</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        
+
+        <div class="timeline-container">
+            
+                
+
+                <div class="timeline-item"
+                     >
+
+                    
+                        <div class="timeline-date">
+                            <strong></strong>
+                            (vor langer Zeit)
+                        </div>
+                    
+
+                    <div class="timeline-content">
+                        <h2>Erschaffung der Elementarebenen</h2>
+                        <p>Die Fünf Großen Götter des Animus erschaffen die Elementarebenen.</p>
+                        
+                    </div>
+                </div>
+
+                
+                
+            
+                
+
+                <div class="timeline-item"
+                     >
+
+                    
+                        <div class="timeline-date">
+                            <strong>01.01.1</strong>
+                            (vor Vereinigung)
+                        </div>
+                    
+
+                    <div class="timeline-content">
+                        <h2>Entstehung</h2>
+                        <p>ghsoeighsioeg osiehg oisehg oisehgoishoighso iehoigseh ogi sheiogishe ogiseh osehg oiseh goiseh gosig hosei ghsioge ihg oseghoseigh osieh goseihg osieghso</p>
+                        
+                    </div>
+                </div>
+
+                
+                
+            
+                
+
+                <div class="timeline-item"
+                     style="margin-top: 0">
+
+                    
+
+                    <div class="timeline-content">
+                        <h2>Entstehung</h2>
+                        <p>ghsoeighsioeg osiehg oisehg oisehgoishoighso iehoigseh ogi sheiogishe ogiseh osehg oiseh goiseh gosig hosei ghsioge ihg oseghoseigh osieh goseihg osieghso</p>
+                        
+                    </div>
+                </div>
+
+                
+                
+            
+                
+
+                <div class="timeline-item"
+                     >
+
+                    
+                        <div class="timeline-date">
+                            <strong>01.01.01</strong>
+                            (nach Vereinigung)
+                        </div>
+                    
+
+                    <div class="timeline-content">
+                        <h2>Faergrias Vereinigung</h2>
+                        <p>Der Kontinent Faergria wird unter König Gunthard dem Gütigen vereint. Mit der Vereinigung wird eine Zeitrechnung implementiert, die sich global auf der Elementarebene Terralithia durchsetzt.</p>
+                        
+                    </div>
+                </div>
+
+                
+                
+            
+        </div>
+    </div>
+</div>
+</body>
+</html>
