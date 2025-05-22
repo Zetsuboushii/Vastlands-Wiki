@@ -6986,7 +6986,24 @@
     "alt_images": [],
     "content": {
       "excerpt": "Nayru ist eine Erbin der Drachenritter aus dem sagenumwobenen Orrin.",
-      "sections": []
+      "sections": [
+        {
+          "title": "Persönlichkeit und Werte",
+          "text": "Nayru schätzt das einfache und natürliche Leben. Sie braucht nicht mehr, als etwas Gutes zu essen, Nähe zu anderen und eine Aufgabe im Leben – obwohl ein guter Bogen hier und da auch nicht schaden kann. Nayru ist sich ihrer Schwächen etwas bewusster als ihrer Stärken und trainiert in jeder freien Minute, um diese Schwächen zu überkommen. Sei es durch Krafttraining hinter dem Jagdschloss, Vokabelpauken vor dem Einschlafen oder das Schreiben emotionaler Briefe, Nayru ist der Meinung, dass es nie zu spät ist, etwas zu verändern – wenn man sich denn traut. Sie ist dankbar für jeden menschlichen und kreatürlichen Kontakt, den sie im Laufe ihres Abenteuers machen durfte, und schätzt ihre Freunde für ihre Natürlichkeit, ihre Aufrichtigkeit, ihre Gerissenheit und ihre Schlagfertigkeit. Und natürlich für die Nähe, die sie ihr entgegenbringen."
+        },
+        {
+          "title": "Herkunft, Wanderschaft und Abenteuer",
+          "text": "Nayru wuchs in einem Wald nahe des kleinen Dorfs Orrin im Nordosten Faergrias auf. Ihr Meister Balthus zog sie auf, nachdem sie als Baby im Dorf ausgesetzt worden war, und lehrte sie den Umgang mit Waffen und das Überleben in der Natur. Doch jedes Training schien umsonst gewesen, als eines Tages eine übermächtige Monsterschar das Dorf angriff, Nayru und Balthus voneinander trennte und Orrin letztlich dem Erdboden gleichmachte. Von der Schlacht schwer geschädigt schleppte sich Nayru eine unbestimmte Zeit durch ganz Faergria, stets auf der Suche nach ihrem verschwundenen Meister. Doch bevor sie die Hoffnung endgültig aufgeben und den schweren Wunden in ihrem Herzen erliegen wollte, traf sie auf die Reisenden Siegmund und Uranos. Sie nahmen sie in ihre Gruppe auf, boten ihr ihre Hilfe an und stürzen sich seitdem mit Nayru an ihrer Seite in jedes noch so große Abenteuer."
+        },
+        {
+          "title": "Reckenschaft und Erbe Orrins",
+          "text": "Obgleich Nayru schon von Kindesbeinen an eine tiefe Verbindung zur Natur hatte, wurde diese Neigung erst durch den Kontakt zu Farone zu einer festen Säule in ihrem Leben. Angeleitet durch ihren Mentor und Kumpanen Uranos reist sie fortan als Reckin Farones durch das Land, um überall die Natur wie die Hoffnung zu nähren, zu schützen und zu pflegen. Diese neue Stellung, die schicksalhafte Begegnung mit Odiak, dem vermeidlich letzten Drachen Faergrias, und das Gespräch mit Schwertgeist Justine verdeutlichten Nayru ihr Potential und versicherten ihr, dass sie bereit ist, das Erbe Orrins anzutreten."
+        },
+        {
+          "title": "Wünsche für die Zukunft",
+          "text": "Wenn es nach Nayru ginge, sollte das Abenteuer niemals enden. Aber sie weiß, dass sie und ihre Freunde eines Tages dem entscheidenden Kampf ins Auge blicken werden und sie ist gewillt, sich den Kräften des Unheils zu beugen. Für die Friedenszeiten wünscht sich Nayru, dass alle Menschen, Götter und andere Völker des Kontinents einander besser kennen und schätzen lernen und dampfkraftgetriebene, schienengebundene Fortbewegungsmittel künftig alle Ecken und Enden der Elementarebene miteinander vernetzen. Und dann, wenn die Last der Verantwortung von ihren Schultern genommen worden ist und die anderen glücklich sind, wünscht sich Nayru, auch einmal schwach und sein zu dürfen und ein Leben in Geborgenheit und Sicherheit mit einem liebevollen Partner an ihrer Seite. Und wer weiß, vielleicht wird sie ihr Wissen eines Tages auch an einen Schüler weitergeben können, so wie es einst Balthus bei ihr getan hatte."
+        }
+      ]
     }
   },
   {
