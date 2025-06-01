@@ -796,7 +796,7 @@
     ]
   },
   {
-    "name": "Fingerkrabller",
+    "name": "Fingerkrabbler",
     "bosstitle": "",
     "type": "Monstrosität",
     "hp": 95,
@@ -1510,6 +1510,42 @@
       "Säurebiss",
       "Säurespucke",
       "Säureexplosion"
+    ]
+  },
+  {
+    "name": "Reiter",
+    "bosstitle": "",
+    "type": "Humanoid",
+    "hp": 95,
+    "ac": 18,
+    "movement": [
+      {
+        "type": "laufend",
+        "range": 30
+      },
+      {
+        "type": "reitend",
+        "range": 60
+      }
+    ],
+    "abilities": {
+      "str": 4,
+      "dex": 2,
+      "con": 3,
+      "int": 1,
+      "wis": 1,
+      "cha": 2
+    },
+    "weaknesses": [
+      "Donner"
+    ],
+    "resistances": [],
+    "immunities": [],
+    "actions": [
+      "Lanzenangriff",
+      "Spornstoß",
+      "Kurzbogen",
+      "Schildschlag"
     ]
   }
 ]
