@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"/>
+    <title>Timeline | {{ g.site_title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/timeline.css') }}">
+</head>
+<body>
+
+{% include "banner.html" %}
+
+<div class="page-containter">
+    {% include "header.html" %}
+
+    <div class="page">
+        {% set ns = namespace(prev_date=None, prev_epoch=None) %}
+
+        <div class="timeline-container">
+            {% for event in events %}
+                {% set same_date_epoch = (event.date == ns.prev_date and event.epoch == ns.prev_epoch) %}
+
+                <div class="timeline-item"
+                     {% if same_date_epoch %}style="margin-top: 0"{% endif %}>
+
+                    {% if not same_date_epoch %}
+                        <div class="timeline-date">
+                            <strong>{{ event.date }}</strong>
+                            ({{ event.epoch }})
+                        </div>
+                    {% endif %}
+
+                    <div class="timeline-content">
+                        <h2>{{ event.title }}</h2>
+                        <p>{{ event.description }}</p>
+                        {% if event.image_url %}
+                            <div class="timeline-image-container">
+                                <img src="{{ event.image_url }}" alt="{{ event.title }}">
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+
+                {% set ns.prev_date = event.date %}
+                {% set ns.prev_epoch = event.epoch %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+</body>
+</html>
