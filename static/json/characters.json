@@ -8463,6 +8463,10 @@
       {
         "character": "Solenne",
         "relation": "Freundin"
+      },
+      {
+        "character": "Turald",
+        "relation": "Kollege und Freund"
       }
     ],
     "lover": "",
@@ -10788,7 +10792,12 @@
     "race": "Dämonen",
     "sex": "m",
     "birthday": "",
-    "aliases": [],
+    "aliases": [
+      {
+        "alias": "Elfen-Lellek",
+        "origin": "Nayru"
+      }
+    ],
     "measurements": {
       "height": 1.78
     },
@@ -10801,6 +10810,44 @@
     "alignment": "",
     "affiliations": [
       "4. Generation der Hohefürsten"
+    ],
+    "likes": [],
+    "dislikes": [],
+    "status": "am Leben",
+    "relationships": [],
+    "lover": "",
+    "alt_images": [],
+    "content": {
+      "excerpt": "",
+      "sections": []
+    }
+  },
+  {
+    "name": "Turald",
+    "surname": "",
+    "title": "Strenger Professor",
+    "race": "Menschen",
+    "sex": "m",
+    "birthday": "7.2.342",
+    "aliases": [
+      "Der Exmatrikulator"
+    ],
+    "measurements": {
+      "height": 1.84
+    },
+    "functions": [
+      "Professor"
+    ],
+    "classes": {
+      "baseclass": "Zauberer"
+    },
+    "nationality": "Faergria",
+    "homes": [
+      "Frelia"
+    ],
+    "alignment": "",
+    "affiliations": [
+      "Magieakademie von Frelia"
     ],
     "likes": [],
     "dislikes": [],

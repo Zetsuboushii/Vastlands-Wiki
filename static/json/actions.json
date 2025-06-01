@@ -2085,5 +2085,80 @@
         "type": "Gelähmt"
       }
     ]
+  },
+  {
+    "name": "Lanzenangriff",
+    "legendary": false,
+    "range": 10,
+    "aoe": "single",
+    "hitbonus": 7,
+    "damage": [
+      {
+        "dice_term": "1d12+4",
+        "type": "piercing"
+      }
+    ]
+  },
+  {
+    "name": "Spornstoß",
+    "legendary": false,
+    "range": 10,
+    "aoe": "single",
+    "hitbonus": 7,
+    "damage": [
+      {
+        "dice_term": "1d12+4",
+        "type": "piercing"
+      },
+      {
+        "dice_term": "2d6",
+        "type": "bludgeoning"
+      }
+    ],
+    "savereq": {
+      "ability": "str",
+      "bound": 14
+    },
+    "effects": [
+      {
+        "type": "Gestürzt",
+        "duration": 1,
+        "duration_type": "r"
+      }
+    ]
+  },
+  {
+    "name": "Kurzbogen",
+    "legendary": false,
+    "range": 80,
+    "aoe": "single",
+    "hitbonus": 5,
+    "damage": [
+      {
+        "dice_term": "1d8+2",
+        "type": "piercing"
+      }
+    ]
+  },
+  {
+    "name": "Schildschlag",
+    "legendary": false,
+    "range": 5,
+    "aoe": "single",
+    "savereq": {
+      "ability": "str",
+      "bound": 14
+    },
+    "effects": [
+      {
+        "type": "Zurückgestoßen",
+        "range": 10
+      },
+      {
+        "type": "Benommen",
+        "duration": 1,
+        "duration_type": "r"
+      }
+    ]
   }
 ]
