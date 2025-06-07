@@ -121,13 +121,7 @@ def character(character_name):
         char_name = char['name'].lower().replace(" ", "-")
         if char_name == character_name:
             data = char.copy()
-
             break
-        else:
-            for alias in char["aliases"]:
-                if character_name == alias['alias'].lower().replace(" ", "-"):
-                    data = char.copy()
-                    break
 
     if data is not None and data.get('birthday') != "":
         ingame_day, ingame_month, ingame_year = map(int, g.ingame_date.split('.'))
