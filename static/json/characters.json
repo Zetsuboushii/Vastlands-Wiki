@@ -10876,5 +10876,209 @@
       "excerpt": "",
       "sections": []
     }
+  },
+  {
+    "name": "Citrio",
+    "surname": "",
+    "title": "Begeisteter Kürbiszüchter",
+    "race": "Menschen",
+    "sex": "m",
+    "birthday": "28.6.370",
+    "aliases": [],
+    "measurements": {
+      "height": 1.74
+    },
+    "functions": [
+      "Letzter Überlebender aus Daein"
+    ],
+    "classes": {
+      "baseclass": "Bürger"
+    },
+    "nationality": "Faergria",
+    "homes": [
+      {
+        "place": "Daein",
+        "attachment": "Geburtsort"
+      }
+    ],
+    "alignment": "NG",
+    "affiliations": [],
+    "likes": [
+      "Kürbisse"
+    ],
+    "dislikes": [],
+    "status": "am Leben",
+    "relationships": [],
+    "lover": "",
+    "alt_images": [],
+    "content": {
+      "excerpt": "",
+      "sections": []
+    }
+  },
+  {
+    "name": "Yavin",
+    "surname": "",
+    "title": "Kräftiger Obermönch",
+    "race": "Menschen",
+    "sex": "m",
+    "birthday": "4.9.356",
+    "aliases": [],
+    "measurements": {
+      "height": 1.92
+    },
+    "functions": [
+      "Obermönch im Kloster der Heilenden Hand"
+    ],
+    "classes": {
+      "baseclass": "Mönch"
+    },
+    "nationality": "Faergria",
+    "homes": [
+      {
+        "place": "Kloster der Heilenden Hand",
+        "attachment": "Tätigkeitsstätte"
+      }
+    ],
+    "alignment": "LG",
+    "affiliations": [
+      "Orden der Heilenden Hand"
+    ],
+    "likes": [],
+    "dislikes": [],
+    "status": "am Leben",
+    "relationships": [
+      {
+        "character": "Hama",
+        "relation": "Oberhaupt"
+      }
+    ],
+    "lover": "",
+    "alt_images": [],
+    "content": {
+      "excerpt": "",
+      "sections": []
+    }
+  },
+  {
+    "name": "Gralnach",
+    "surname": "von Faergria",
+    "title": "Amtierender König",
+    "race": "Menschen",
+    "sex": "m",
+    "birthday": "13.8.327",
+    "aliases": [],
+    "measurements": {
+      "height": 1.78
+    },
+    "functions": [
+      "König von Faergria"
+    ],
+    "classes": {
+      "baseclass": "Adliger"
+    },
+    "nationality": "Faergria",
+    "homes": [
+      {
+        "place": "Aegir",
+        "attachment": "Geburtsort"
+      }
+    ],
+    "alignment": "NG",
+    "affiliations": [
+      "Königshaus von Faergria"
+    ],
+    "likes": [],
+    "dislikes": [],
+    "status": "am Leben",
+    "relationships": [],
+    "lover": "Cathlen",
+    "alt_images": [],
+    "content": {
+      "excerpt": "",
+      "sections": []
+    }
+  },
+  {
+    "name": "Cathlen",
+    "surname": "von Faergria",
+    "title": "Amtierende Königin",
+    "race": "Elfen",
+    "sex": "m",
+    "birthday": "13.8.-67",
+    "aliases": [],
+    "measurements": {
+      "height": 1.71
+    },
+    "functions": [
+      "Königin von Faergria"
+    ],
+    "classes": {
+      "baseclass": "Adliger"
+    },
+    "nationality": "Faergria",
+    "homes": [
+      {
+        "place": "Yerenas",
+        "attachment": "Geburtsort"
+      },
+      {
+        "place": "Aegir",
+        "attachment": "Wohnort"
+      }
+    ],
+    "alignment": "NG",
+    "affiliations": [
+      "Königshaus von Faergria"
+    ],
+    "likes": [],
+    "dislikes": [],
+    "status": "am Leben",
+    "relationships": [],
+    "lover": "Gralnach",
+    "alt_images": [],
+    "content": {
+      "excerpt": "",
+      "sections": []
+    }
+  },
+  {
+    "name": "Kaze",
+    "surname": "",
+    "title": "Schnöseliger Windgeist",
+    "race": "Schutzgeister",
+    "sex": "m",
+    "birthday": "6.6",
+    "aliases": [],
+    "measurements": {
+      "height": 1.85
+    },
+    "functions": [
+      "Hohefürst des Windes"
+    ],
+    "classes": {
+      "baseclass": "Hohefürst"
+    },
+    "nationality": "Faergria",
+    "homes": [
+      {
+        "place": "Reich des Windes",
+        "attachment": "Geburtsort"
+      }
+    ],
+    "alignment": "NG",
+    "affiliations": [
+      "1. Generation der Hohefürsten"
+    ],
+    "likes": [],
+    "dislikes": [],
+    "status": "am Leben",
+    "relationships": [],
+    "lover": "",
+    "alt_images": [],
+    "content": {
+      "excerpt": "",
+      "sections": []
+    }
   }
 ]
