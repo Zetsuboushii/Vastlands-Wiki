@@ -134,7 +134,7 @@ def character(character_name):
         if len(data["birthday"].split(".")) == 3:
             birthday_day, birthday_month, birthday_year = map(int, data['birthday'].split('.'))
             data['birth_year'] = str(birthday_year)
-            data['age'] = ingame_year - birthday_year - (
+            data['age'] = 394 - birthday_year - (
                     (ingame_month, ingame_day) < (birthday_month, birthday_day))
             data['birth_day'] = str(birthday_day)
             data['birth_month'] = g.lore_months[birthday_month - 1]

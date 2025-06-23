@@ -7955,7 +7955,9 @@
       }
     ],
     "lover": "",
-    "alt_images": [],
+    "alt_images": [
+      "artwork"
+    ],
     "content": {
       "excerpt": "",
       "sections": []
