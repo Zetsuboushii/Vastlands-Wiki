@@ -4199,6 +4199,10 @@
       {
         "character": "U-Ranos",
         "relation": "Langjähriger Freund"
+      },
+      {
+        "character": "Valentina",
+        "relation": "Ziehenkelin"
       }
     ],
     "lover": "",
@@ -4438,7 +4442,7 @@
     "classes": {
       "baseclass": "Hohefürst"
     },
-    "nationality": "Unbekannt",
+    "nationality": "Faergria",
     "homes": [
       {
         "place": "???",
@@ -5338,7 +5342,7 @@
     "classes": {
       "baseclass": "Götterverspeiser"
     },
-    "nationality": "Unbekannt",
+    "nationality": "Faergria",
     "homes": [
       {
         "place": "Siegmund",
@@ -6492,7 +6496,7 @@
     "classes": {
       "baseclass": "Hohefürst"
     },
-    "nationality": "Unbekannt",
+    "nationality": "Faergria",
     "homes": [
       {
         "place": "???",
@@ -6689,11 +6693,11 @@
     "classes": {
       "baseclass": "Hohefürst"
     },
-    "nationality": "Unbekannt",
+    "nationality": "Faergria",
     "homes": [
       {
         "place": "???",
-        "attachment": "Geburtsort"
+        "attachment": "Wohnort"
       }
     ],
     "alignment": "LN",
@@ -10753,8 +10757,7 @@
     ],
     "alignment": "",
     "affiliations": [],
-    "likes": [
-    ],
+    "likes": [],
     "dislikes": [],
     "status": "am Leben",
     "relationships": [
@@ -10991,7 +10994,20 @@
     "likes": [],
     "dislikes": [],
     "status": "am Leben",
-    "relationships": [],
+    "relationships": [
+      {
+        "character": "Cathlen",
+        "relation": "Gattin"
+      },
+      {
+        "character": "Narcian",
+        "relation": "Sohn"
+      },
+      {
+        "character": "Marisa",
+        "relation": "Tochter"
+      }
+    ],
     "lover": "Cathlen",
     "alt_images": [],
     "content": {
@@ -11034,7 +11050,20 @@
     "likes": [],
     "dislikes": [],
     "status": "am Leben",
-    "relationships": [],
+    "relationships": [
+      {
+        "character": "Gralnach",
+        "relation": "Gatte"
+      },
+      {
+        "character": "Marisa",
+        "relation": "Tochter"
+      },
+      {
+        "character": "Narcian",
+        "relation": "Sohn"
+      }
+    ],
     "lover": "Gralnach",
     "alt_images": [],
     "content": {
@@ -11074,6 +11103,194 @@
     "dislikes": [],
     "status": "am Leben",
     "relationships": [],
+    "lover": "",
+    "alt_images": [],
+    "content": {
+      "excerpt": "",
+      "sections": []
+    }
+  },
+  {
+    "name": "Silvia",
+    "surname": "",
+    "title": "Prinzessin der Wüste",
+    "race": "Menschen",
+    "sex": "w",
+    "birthday": "12.9.372",
+    "aliases": [],
+    "measurements": {
+      "height": 1.71
+    },
+    "functions": [
+      "Prinzessin von Zarashan"
+    ],
+    "classes": {
+      "baseclass": "Adliger"
+    },
+    "nationality": "Kradian",
+    "homes": [
+      {
+        "place": "Zarashan",
+        "attachment": "Geburtsort"
+      }
+    ],
+    "alignment": "LG",
+    "affiliations": [
+      "Königshaus von Zarashan"
+    ],
+    "likes": [],
+    "dislikes": [],
+    "status": "am Leben",
+    "relationships": [],
+    "lover": "",
+    "alt_images": [],
+    "content": {
+      "excerpt": "",
+      "sections": []
+    }
+  },
+  {
+    "name": "Wilfried",
+    "surname": "",
+    "title": "Vielseitiger Zauberer",
+    "race": "Menschen",
+    "sex": "m",
+    "birthday": "24.2.371",
+    "aliases": [],
+    "measurements": {
+      "height": 1.78
+    },
+    "functions": [
+      "Zauberer"
+    ],
+    "classes": {
+      "baseclass": "Zauberer"
+    },
+    "nationality": "Kradian",
+    "homes": [
+      {
+        "place": "Riessstedt",
+        "attachment": "Wohnort"
+      }
+    ],
+    "alignment": "TN",
+    "affiliations": [],
+    "likes": [],
+    "dislikes": [],
+    "status": "am Leben",
+    "relationships": [],
+    "lover": "",
+    "alt_images": [],
+    "content": {
+      "excerpt": "",
+      "sections": []
+    }
+  },
+  {
+    "name": "Garnet",
+    "surname": "",
+    "title": "Sternsucherin",
+    "race": "Elfen",
+    "sex": "w",
+    "birthday": "7.9.101",
+    "aliases": [],
+    "measurements": {
+      "height": 1.8
+    },
+    "functions": [
+      "Astronomin"
+    ],
+    "classes": {
+      "baseclass": "Druide"
+    },
+    "nationality": "Kradian",
+    "homes": [
+      {
+        "place": "Riessstedt",
+        "attachment": "Wohnort"
+      }
+    ],
+    "alignment": "CG",
+    "affiliations": [],
+    "likes": [],
+    "dislikes": [],
+    "status": "am Leben",
+    "relationships": [],
+    "lover": "",
+    "alt_images": [],
+    "content": {
+      "excerpt": "",
+      "sections": []
+    }
+  },
+  {
+    "name": "Jonatan",
+    "surname": "",
+    "title": "Heldenhafter Vagabund",
+    "race": "Menschen",
+    "sex": "m",
+    "birthday": "20.8.364",
+    "aliases": [],
+    "measurements": {
+      "height": 1.85
+    },
+    "functions": [],
+    "classes": {
+      "baseclass": "Kämpfer"
+    },
+    "nationality": "Kradian",
+    "homes": [
+      {
+        "place": "Riessstedt",
+        "attachment": "Wohnort"
+      }
+    ],
+    "alignment": "TN",
+    "affiliations": [],
+    "likes": [],
+    "dislikes": [],
+    "status": "am Leben",
+    "relationships": [],
+    "lover": "",
+    "alt_images": [],
+    "content": {
+      "excerpt": "",
+      "sections": []
+    }
+  },
+  {
+    "name": "Valentina",
+    "surname": "",
+    "title": "Hüterin des Reiches des Windes",
+    "race": "Menschen",
+    "sex": "w",
+    "birthday": "20.8.369",
+    "aliases": [],
+    "measurements": {
+      "height": 1.69
+    },
+    "functions": [],
+    "classes": {
+      "baseclass": "Kleriker"
+    },
+    "nationality": "Faergria",
+    "homes": [
+      {
+        "place": "Reich des Windes",
+        "attachment": "Wohnort"
+      }
+    ],
+    "alignment": "LG",
+    "affiliations": [],
+    "likes": [],
+    "dislikes": [],
+    "status": "am Leben",
+    "relationships": [
+      {
+        "character": "Igmusur",
+        "relation": "Ziehgroßvater"
+      }
+    ],
     "lover": "",
     "alt_images": [],
     "content": {
