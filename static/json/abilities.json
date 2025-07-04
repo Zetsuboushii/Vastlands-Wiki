@@ -86,5 +86,37 @@
   {
     "name": "Kaens Wille",
     "description": "Die Waffe gewährt dem Anwender einen +2 Bonus auf Angriffs- und Schadenswürfe. Wenn der Anwender mit dieser Waffe eine Kreatur auf 0 Trefferpunkte reduzierst, entzünden sich ihre Überreste und explodieren mit 2d10 Feuerschaden in einem Radius von 5 Fuß."
+  },
+  {
+    "name": "Klinge der Verdammnis",
+    "description": "Der Rapier gewährt einen +2 Bonus auf Angriffs- und Schadenswürfe und verursacht zusätzlich 1d6 Nekrotischen Schaden bei jedem Treffer."
+  },
+  {
+    "name": "Schattenhafte Verführung",
+    "description": "Wenn du eine Kreatur triffst, muss sie einen Weisheitsrettungswurf ablegen. Bei einem Misserfolg wird sie von einer der Neun Todsünden befallen (würfle einen d10):\n1. Wollust – Das Ziel wird für 1 Runde verzaubert und sieht den Träger als unwiderstehlich.\n2. Habgier – Das Ziel kann in seinem nächsten Zug nur versuchen, einen Gegenstand zu stehlen.\n3. Zorn – Das Ziel muss in seinem nächsten Zug seinen stärksten Angriff gegen das nächste Wesen ausführen, egal ob Freund oder Feind.\n4. Verrat – Das Ziel erleidet 2d6 zusätzlichen Nekrotischen Schaden, wenn es seinen nächsten Angriff gegen einen Verbündeten richtet.\n5. Hoffnungslosigkeit – Das Ziel kann in seinem nächsten Zug keine Aktionen oder Reaktionen ausführen.\n6. Vergessenheit – Das Ziel vergisst für 1 Minute den Träger der Waffe (kann sich nicht an ihn erinnern oder ihn angreifen).\n7. Verblendung – Das Ziel ist für 1 Runde blind.\n8. Neid – Das Ziel muss seinen nächsten Angriff gegen die am besten ausgerüstete Kreatur in der Nähe richten.\n9. Hochmut – Das Ziel kann keine Hilfe oder Buffs annehmen, bis es Schaden erleidet."
+  },
+  {
+    "name": "Schattenschritt",
+    "description": "Schattenschritt (1x pro lange Rast): Einmal pro lange Rast kannst du dich als Bonusaktion in pure Dunkelheit verwandeln und dich bis zu 30 Fuß teleportieren. Während dieser Bewegung bist du immun gegen Gelegenheitsangriffe."
+  },
+  {
+    "name": "Schattenschritt",
+    "description": "Umarmung der Nimmerweichenden Finsternis: Wenn du eine Kreatur auf 0 Trefferpunkte reduzierst, wird sie von Thanatos' Schatten berührt. Du kannst entscheiden, ob:\n- Sie stirbt sofort, ohne Rettungswürfe.\n- Sie für 1 Minute von einer der Neun Todsünden vollständig übernommen wird, sodass sie ihre Persönlichkeit ändert und dem Träger dient (Weisheitswurf DC 18 nach 1 Minute, um den Effekt zu brechen)."
+  },
+  {
+    "name": "Geteilte Essenz",
+    "description": "Einmal pro kurze Rast kannst du als Bonusaktion den Befehl „Wurzel und Wind“ flüstern. Die Armbrust spaltet sich in zwei identische, kleinere Handarmbrüste, die du für Zweihandkampf (Dual Wielding) verwenden kannst. Es ist nur ein Trefferwurf notwendig. Für beide Armbrüste werden separate Schadenswürfe gerollt.\n- Du kannst zwei verschiedene Effekte gleichzeitig einsetzen.\n- Die Zwillingsform hält 1 Minute oder bis du sie freiwillig beendest (Bonusaktion)."
+  },
+  {
+    "name": "Samen der Macht",
+    "description": "Die Armbrust nutzt magisch geladene Samen, Nüsse oder Früchte anstelle normaler Bolzen:\nFeuernuss - Explodiert bei Aufprall: 2d6 Feuerschaden in einem 10-Fuß-Radius (Geschicklichkeitswurf DC 16, halber Schaden bei Erfolg).\nEisbeere - Beim Treffer: Ziel muss einen Konstitutionswurf (DC 16) ablegen oder wird 1 Runde verlangsamt.\nDonnerkern - Beim Aufprall: Erzeugt einen lauten Knall. Alle Kreaturen im Umkreis von 15 Fuß machen einen Konstitutionswurf (DC 14) oder sind 1 Runde taub und erleiden 1d8 Donnerschaden.\nHeilsame Eichel - Kann auf Verbündete verschossen werden: Heilt 4d6 Trefferpunkte. Wenn sie „kritisch trifft“, heilt sie das Maximum.\nExplosionssamen - Streut Splitter aus Naturmagie: 3 Ziele im Umkreis von 10 Fuß erleiden je 2d6 magischen Stichschaden."
+  },
+  {
+    "name": "Rankenpfeil",
+    "description": "3x pro lange Rast kannst du als Aktion einen Rankenpfeil verschießen:\nAuf eine Kreatur: Muss einen Stärkewurf (DC 15) bestehen oder wird gefangen (grappled).\nAuf ein Objekt oder Gelände: Die Ranke zieht dich dorthin, wie ein grüner Greifhaken (bis 30 Fuß, keine Gelegenheitsangriffe gegen dich währenddessen).\nBei Erfolg wächst aus der Einschlagsstelle kurzzeitig Vegetation, die für 1 Minute als halbe Deckung dienen kann."
+  },
+  {
+    "name": "Farones Vielfalt",
+    "description": "Einmal pro lange Rast kannst du einen der folgenden Zauber ohne Komponentenkosten wirken, indem du ein passendes Projektil in die Armbrust legst und abschießt:\nRankenwachstum (Entangle)\nMagische Rüstung (Mage Armor) – aus gewebtem Blattwerk\nPflanzenwachstum (Plant Growth) – wenn du in einer natürlichen Umgebung bist\nStille (Silence) – die Nuss platzt lautlos auf und dämpft magisch den Bereich"
   }
 ]
