@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"/>
+    <title>Rapier der Neun Schatten | Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../../../static/css/base.css">
+    <link rel="stylesheet" href="../../../static/css/character.css">
+</head>
+<body>
+
+<link rel="stylesheet" href="../../../static/css/banner.css">
+<link rel="shortcut icon" href="../../../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../../../static/ui/banner-5.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../../../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../../../static/imgs/logo.png" alt="" class="logo hide-on-mobile" style="left: -40px; position: relative">
+            <a href="../../../index.html" style="position: relative">Tome of the Vastlands</a>
+            <sub class="hide-on-mobile" style="left: -40px; position: relative">b3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('../../../characters/index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('../../index.html')">Kompendien</button>
+        
+            <button class="nav-button" onclick="loadPage('../../../places/index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('../../../tierlist/index.html')">Tierlist</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        <div class="character-container">
+            <div class="character-data">
+                <div class="character-data-box" style="position: relative; top: 60px; margin-bottom: 60px">
+                    <br>
+                    <div class="character-data-name"><h1>Rapier der Neun Schatten</h1></div>
+                    <div class="character-data-title"><h3>Stichschwerter</h3></div>
+
+                    <div class="character-data-field-title"><h4>Allgemeine Werte</h4></div>
+                    <table>
+                        <tbody>
+                        
+                        
+                            <tr>
+                                <td>Benötigte Attribute</td>
+                                <td>
+                                    <ul>
+                                        
+                                            <li>14 Dex</li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        
+                            <tr>
+                                <td>Reichweite</td>
+                                <td>5 ft.</td>
+                            </tr>
+                        
+                        
+                        
+                            <tr>
+                                <td>Schaden</td>
+                                <td>
+                                    <ul>
+                                        
+                                            <li>3d8 Stich</li>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="character-text">
+                <div class="character-text-box">
+                    <p style="white-space: pre-line;"></p>
+
+                    <br>
+
+                    
+                        <div class="character-text-heading"><h2>Klinge der Verdammnis</h2></div>
+
+                        <p style="white-space: pre-line;">Der Rapier gewährt einen +2 Bonus auf Angriffs- und Schadenswürfe und verursacht zusätzlich 1d6 Nekrotischen Schaden bei jedem Treffer.</p>
+
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Schattenhafte Verführung</h2></div>
+
+                        <p style="white-space: pre-line;">Wenn du eine Kreatur triffst, muss sie einen Weisheitsrettungswurf ablegen. Bei einem Misserfolg wird sie von einer der Neun Todsünden befallen (würfle einen d10):
+1. Wollust – Das Ziel wird für 1 Runde verzaubert und sieht den Träger als unwiderstehlich.
+2. Habgier – Das Ziel kann in seinem nächsten Zug nur versuchen, einen Gegenstand zu stehlen.
+3. Zorn – Das Ziel muss in seinem nächsten Zug seinen stärksten Angriff gegen das nächste Wesen ausführen, egal ob Freund oder Feind.
+4. Verrat – Das Ziel erleidet 2d6 zusätzlichen Nekrotischen Schaden, wenn es seinen nächsten Angriff gegen einen Verbündeten richtet.
+5. Hoffnungslosigkeit – Das Ziel kann in seinem nächsten Zug keine Aktionen oder Reaktionen ausführen.
+6. Vergessenheit – Das Ziel vergisst für 1 Minute den Träger der Waffe (kann sich nicht an ihn erinnern oder ihn angreifen).
+7. Verblendung – Das Ziel ist für 1 Runde blind.
+8. Neid – Das Ziel muss seinen nächsten Angriff gegen die am besten ausgerüstete Kreatur in der Nähe richten.
+9. Hochmut – Das Ziel kann keine Hilfe oder Buffs annehmen, bis es Schaden erleidet.</p>
+
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Schattenschritt</h2></div>
+
+                        <p style="white-space: pre-line;">Schattenschritt (1x pro lange Rast): Einmal pro lange Rast kannst du dich als Bonusaktion in pure Dunkelheit verwandeln und dich bis zu 30 Fuß teleportieren. Während dieser Bewegung bist du immun gegen Gelegenheitsangriffe.</p>
+
+                        <hr>
+                    
+                        <div class="character-text-heading"><h2>Schattenschritt</h2></div>
+
+                        <p style="white-space: pre-line;">Umarmung der Nimmerweichenden Finsternis: Wenn du eine Kreatur auf 0 Trefferpunkte reduzierst, wird sie von Thanatos&#39; Schatten berührt. Du kannst entscheiden, ob:
+- Sie stirbt sofort, ohne Rettungswürfe.
+- Sie für 1 Minute von einer der Neun Todsünden vollständig übernommen wird, sodass sie ihre Persönlichkeit ändert und dem Träger dient (Weisheitswurf DC 18 nach 1 Minute, um den Effekt zu brechen).</p>
+
+                        <hr>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"/>
+    <title>Avilas Ewiges Band | Tome of the Vastlands</title>
+    <link rel="stylesheet" href="../../../static/css/base.css">
+    <link rel="stylesheet" href="../../../static/css/character.css">
+</head>
+<body>
+
+<link rel="stylesheet" href="../../../static/css/banner.css">
+<link rel="shortcut icon" href="../../../static/favicon.ico">
+
+<div class="banner" style="background-image: url('../../../static/ui/banner-8.png');"></div>
+
+<div class="page-containter">
+    <link rel="stylesheet" href="../../../static/css/header.css">
+
+<div class="header-wrapper">
+    <header>
+        <div class="site-title">
+            <button class="menu-button" id="menu-button" onclick="toggleMenu()"></button>
+            <img src="../../../static/imgs/logo.png" alt="" class="logo hide-on-mobile" style="left: -40px; position: relative">
+            <a href="../../../index.html" style="position: relative">Tome of the Vastlands</a>
+            <sub class="hide-on-mobile" style="left: -40px; position: relative">b3.⛩</sub>
+        </div>
+    </header>
+    <div class="nav-dropdown-container" id="navdropdown">
+        
+            <button class="nav-button" onclick="loadPage('../../../characters/index.html')">Charaktere</button>
+        
+            <button class="nav-button" onclick="loadPage('../../index.html')">Kompendien</button>
+        
+            <button class="nav-button" onclick="loadPage('../../../places/index.html')">Orte</button>
+        
+            <button class="nav-button" onclick="loadPage('../../../tierlist/index.html')">Tierlist</button>
+        
+    </div>
+</div>
+
+<script>
+    let turn = 0;
+
+    function toggleMenu() {
+        const menu = document.getElementById("navdropdown");
+        menu.classList.toggle("show");
+
+        const menuButton = document.getElementById('menu-button');
+        menuButton.style.transition = 'transform 0.3s ease';
+        if (turn === 90) {
+            turn -= 90
+        } else {
+            turn += 90
+        }
+        menuButton.style.transform = `rotate(${turn}deg)`;
+    }
+
+    function loadPage(url) {
+        window.location.href = url;
+    }
+</script>
+
+    <div class="page">
+        <div class="character-container">
+            <div class="character-data">
+                <div class="character-data-box" style="position: relative; top: 60px; margin-bottom: 60px">
+                    <br>
+                    <div class="character-data-name"><h1>Avilas Ewiges Band</h1></div>
+                    <div class="character-data-title"><h3>Wärmende Harmonie von Avila</h3></div>
+
+                    <div class="character-data-field-title"><h4>Allgemeine Werte</h4></div>
+                    <table>
+                        <tbody>
+                        
+                            <tr>
+                                <td>Stufe</td>
+                                <td>3</td>
+                            </tr>
+                        
+                        
+                            <tr>
+                                <td>Typ</td>
+                                <td>Glaube</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+
+                    <div class="character-data-field-title"><h4>Wirkung</h4></div>
+                    <table>
+                        <tbody>
+                        
+                            <tr>
+                                <td>Konzentration</td>
+                                <td>Ja</td>
+                            </tr>
+                        
+                        
+                        
+                            <tr>
+                                <td>Reichweite</td>
+                                <td>60 ft.</td>
+                            </tr>
+                        
+                        
+                            <tr>
+                                <td>Wirkungsbereich</td>
+                                <td>
+                                    
+                                    Single
+                                </td>
+                            </tr>
+                        
+                        
+                            <tr>
+                                <td>Wirkungsdauer</td>
+                                <td>
+                                    
+                                        1
+                                    
+                                    Minute
+                                </td>
+                            </tr>
+                        
+                        
+                            <tr>
+                                <td>Wirkungsdauer</td>
+                                <td>
+                                    
+                                    Sofort
+                                </td>
+                            </tr>
+                        
+                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="character-text">
+                <div class="character-text-box">
+                    <p style="white-space: pre-line;">Du webst ein heiliges Band zwischen zwei Kreaturen deiner Wahl, die du innerhalb der Reichweite sehen kannst. Beide müssen dem Zauber zustimmen (kein Rettungswurf nötig), oder sie müssen einen Weisheitsrettungswurf (DC 17) bestehen, um nicht davon betroffen zu werden.
+Ist das Band einmal gewebt, sind die beiden Kreaturen für die Wirkungsdauer magisch verbunden – körperlich, geistig und seelisch. Das Band manifestiert sich als zartes, schimmerndes Licht, das ihre Herzen verbindet.
+
+Solange der Zauber wirkt, gelten folgende Effekte für die beiden Verbundenen:
+Geteilte Stärke: Wenn eine der beiden Kreaturen Schaden erleidet, kann der andere als Reaktion die Hälfte davon übernehmen (kein Limit pro Runde).
+Gespiegelte Magie: Wenn eine der Kreaturen geheilt wird oder einen Buff-Zauber erhält, erhält die andere automatisch denselben Effekt (sofern sinnvoll).
+Herzverbindung: Beide Kreaturen haben telepathischen Kontakt (bis 1km), können Vorteil auf Rettungswürfe gegen Angst und Bezauberung erhalten, solange sie sich gegenseitig sehen oder hören.
+Avilas Urteil: Wenn eine der beiden Kreaturen stirbt, kann die andere einen Konstitutionsrettungswurf (DC 18) machen. Bei Erfolg bleibt der Tote stabil bei 0 TP (statt tot), aber der Überlebende erleidet sofort 4d10 seelischen Schaden.
+
+Wenn das Band ohne Einverständnis beider Beteiligten gewebt wird (z.B. in einem Akt der Manipulation), erleiden beide Kreaturen bei Beendigung des Zaubers 3d10 psychischen Schaden und erhalten für 24 Stunden Nachteil auf Charismawürfe gegeneinander.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

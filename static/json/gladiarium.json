@@ -600,6 +600,30 @@
     ]
   },
   {
+    "name": "Rapier der Neun Schatten",
+    "type": "Stichschwerter",
+    "prerequisites": [
+      {
+        "needed": 14,
+        "attribute": "dex"
+      }
+    ],
+    "range": 5,
+    "range_far": 0,
+    "damage": [
+      {
+        "dice_term": "3d8",
+        "type": "Stich"
+      }
+    ],
+    "abilities": [
+      "Klinge der Verdammnis",
+      "Schattenhafte Verführung",
+      "Schattenschritt",
+      "Umarmung der Nimmerweichenden Finsternis"
+    ]
+  },
+  {
     "name": "Rapier",
     "type": "Stichschwerter",
     "prerequisites": [
@@ -702,6 +726,35 @@
     "abilities": [
       "Zweihändig",
       "Vorladen"
+    ]
+  },
+  {
+    "name": "Armbrust von Wurzel und Wind",
+    "type": "Armbrüste",
+    "prerequisites": [
+      {
+        "needed": 10,
+        "attribute": "str"
+      },
+      {
+        "needed": 14,
+        "attribute": "dex"
+      }
+    ],
+    "range": 70,
+    "range_far": 350,
+    "damage": [
+      {
+        "dice_term": "1d10",
+        "type": "Stich"
+      }
+    ],
+    "abilities": [
+      "Vorladen",
+      "Geteilte Essenz",
+      "Samen der Macht",
+      "Rankenpfeil",
+      "Farones Vielfalt"
     ]
   },
   {

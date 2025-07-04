@@ -99,7 +99,7 @@
     "range": 30,
     "aoe": {
       "aoe_range": 0,
-      "aoe_type": "einzel"
+      "aoe_type": "single"
     },
     "duration": {
       "duration_time": 1,
@@ -112,5 +112,471 @@
     "damage": [
     ],
     "description": "Du rufst die sanfte, aber mächtige Energie von Avila an, um das Herz eines Wesens zu berühren. Wähle eine Kreatur in Reichweite, die dich sehen und hören kann. Sie muss einen Weisheitsrettungswurf gegen deinen Zauber-SG ablegen. Bei einem Misserfolg wird sie von einem warmen Gefühl der Zuneigung durchflutet und ist für die Dauer des Zaubers freundlich gegenüber dir und Kreaturen deiner Wahl.\n\nZusätzlich erhält das Ziel temporäre Trefferpunkte in Höhe von 3d8 + dein Zauberfähigkeitsmodifikator, da Avilas Segen es schützt. Wenn das Ziel bereits positive Gefühle für dich hegt (z. B. ein Verbündeter oder eine romantische Verbindung), hat es Nachteil auf den Rettungswurf.\nDer Zauber endet vorzeitig, wenn du oder deine Verbündeten das Ziel angreift oder ihm Schaden zufügt.\n\nAuf höheren Graden:\nWenn du diesen Zauber mit einem Zauberplatz des 4. Grades oder höher wirkst, erhält das Ziel 1d8 zusätzliche temporäre Trefferpunkte für jede Stufe über 3 hinaus."
+  },
+  {
+    "name": "Feuerverzehrung",
+    "type": "Kanalisierungen",
+    "association": "Loderndes Feuer von Kaen",
+    "level": 4,
+    "cooldown": {
+      "cooldown_time": 10,
+      "cooldown_type": "r"
+    },
+    "concentration": false,
+    "range": 5,
+    "aoe": {
+      "aoe_range": 30,
+      "aoe_type": "cone"
+    },
+    "casting_duration": {
+      "casting_time": 0,
+      "casting_type": "s"
+    },
+    "damage": [
+      {
+        "dice_term": "4d10",
+        "type": "Feuer"
+      }
+    ],
+    "description": "Erschafft ein Kegel aus lodernden Flammen, dass alles in seinem Weg verzehrt. Alle Ziele im Bereich des Kegels muss einen Stärke-Rettungswurf auf DC 15 schaffen. Sollte ein Ziel scheitern, erhält es Feuerschaden und brennt mit 1d6 Feuerschaden für 2 Runden."
+  },
+  {
+    "name": "Infernoherz",
+    "type": "Kanalisierungen",
+    "association": "Loderndes Feuer von Kaen",
+    "level": 5,
+    "cooldown": {
+      "cooldown_time": 12,
+      "cooldown_type": "r"
+    },
+    "concentration": false,
+    "range": 0,
+    "aoe": {
+      "aoe_range": 0,
+      "aoe_type": "self"
+    },
+    "casting_duration": {
+      "casting_time": 0,
+      "casting_type": "s"
+    },
+    "damage": [],
+    "description": "Der Anwender hüllt sein Herz in das chaotische Inferno Kaens und erhält für 3 Runden Immunität gegen Feuerschaden, zusätzlichen 2d6 Feuerschaden für jeden Angriff und ein leichtes Leuchten von Glut über den gesamten Körper."
+  },
+  {
+    "name": "Donnerndes Gewitter",
+    "type": "Kanalisierungen",
+    "association": "Donnerndes Gewitter von Rai",
+    "level": 1,
+    "cooldown": {
+      "cooldown_time": 4,
+      "cooldown_type": "r"
+    },
+    "concentration": false,
+    "range": 0,
+    "aoe": {
+      "aoe_range": 0,
+      "aoe_type": "self"
+    },
+    "duration": {
+      "duration_time": 1,
+      "duration_type": "r"
+    },
+    "casting_duration": {
+      "casting_time": 0,
+      "casting_type": "s"
+    },
+    "damage": [],
+    "description": "Versetzt eine Waffe in funkende Blitze. Phyischer Schaden wird in Blitzschaden umgewandelt."
+  },
+  {
+    "name": "Kettenfunken",
+    "type": "Kanalisierungen",
+    "association": "Donnerndes Gewitter von Rai",
+    "level": 2,
+    "cooldown": {
+      "cooldown_time": 6,
+      "cooldown_type": "r"
+    },
+    "concentration": false,
+    "range": 60,
+    "aoe": {
+      "aoe_range": 0,
+      "aoe_type": "single"
+    },
+    "casting_duration": {
+      "casting_time": 0,
+      "casting_type": "s"
+    },
+    "damage": [
+      {
+        "dice_term": "2d8",
+        "type": "Blitz"
+      }
+    ],
+    "description": "Innerhalb von 60ft springt der Blitz auf bis zu 3 Ziele in je max. 15ft Abstand. Der Schaden wird jeweils ausgeteilt."
+  },
+  {
+    "name": "Blitzresonanz",
+    "type": "Kanalisierungen",
+    "association": "Donnerndes Gewitter von Rai",
+    "level": 3,
+    "cooldown": {
+      "cooldown_time": 8,
+      "cooldown_type": "r"
+    },
+    "concentration": false,
+    "range": 30,
+    "aoe": {
+      "aoe_range": 0,
+      "aoe_type": "self"
+    },
+    "duration": {
+      "duration_time": 2,
+      "duration_type": "r"
+    },
+    "casting_duration": {
+      "casting_time": 0,
+      "casting_type": "s"
+    },
+    "damage": [],
+    "description": "Der Anwender oder ein Verbündeter in 30ft. Entfernung erhält Resistenz gegen Blitz- und Donnerschaden, sowie +2 Dex"
+  },
+  {
+    "name": "Donnernde Barriere",
+    "type": "Kanalisierungen",
+    "association": "Donnerndes Gewitter von Rai",
+    "level": 4,
+    "cooldown": {
+      "cooldown_time": 10,
+      "cooldown_type": "r"
+    },
+    "concentration": false,
+    "range": 0,
+    "aoe": {
+      "aoe_range": 20,
+      "aoe_type": "radius"
+    },
+    "casting_duration": {
+      "casting_time": 0,
+      "casting_type": "s"
+    },
+    "damage": [],
+    "description": "Der Anwender erschafft eine Barriere aus Blitz und Donner in einem 20ft. Radius. Gegner, die eindringen oder ihren Zug innerhalb der Barriere starten, müssen einen Konstitutionsrettungswurf (DC 15) machen, sonst werden sie für 1 Runde gestunned."
+  },
+  {
+    "name": "Gewittersturmverkörperung",
+    "type": "Kanalisierungen",
+    "association": "Donnerndes Gewitter von Rai",
+    "level": 5,
+    "cooldown": {
+      "cooldown_time": 12,
+      "cooldown_type": "r"
+    },
+    "concentration": false,
+    "range": 60,
+    "aoe": {
+      "aoe_range": 0,
+      "aoe_type": "self"
+    },
+    "casting_duration": {
+      "casting_time": 0,
+      "casting_type": "s"
+    },
+    "damage": [
+      {
+        "dice_term": "4d10",
+        "type": "Blitz"
+      },
+      {
+        "dice_term": "2d6",
+        "type": "Magische Energie"
+      }
+    ],
+    "description": "Der Anwender teleportiert sich bis zu 60ft. als Blitz und verursacht Schaden bei jedem Gegner, den er passiert."
+  },
+  {
+    "name": "Ewiges Eis",
+    "type": "Kanalisierungen",
+    "association": "Ewiges Eis von Fubuki",
+    "level": 1,
+    "cooldown": {
+      "cooldown_time": 4,
+      "cooldown_type": "r"
+    },
+    "concentration": false,
+    "range": 0,
+    "aoe": {
+      "aoe_range": 0,
+      "aoe_type": "self"
+    },
+    "duration": {
+      "duration_time": 1,
+      "duration_type": "r"
+    },
+    "casting_duration": {
+      "casting_time": 0,
+      "casting_type": "s"
+    },
+    "damage": [],
+    "description": "Versetzt eine Waffe in ewiges Eis. Phyischer Schaden wird in Eisschaden umgewandelt. Bei einem Treffer muss das Ziel einen Konstitutionsrettungswurf (DC 16) bestehen, sonst -10ft. Movement."
+  },
+  {
+    "name": "Eiswall",
+    "type": "Kanalisierungen",
+    "association": "Ewiges Eis von Fubuki",
+    "level": 2,
+    "cooldown": {
+      "cooldown_time": 6,
+      "cooldown_type": "r"
+    },
+    "concentration": false,
+    "range": 25,
+    "aoe": {
+      "aoe_range": 0,
+      "aoe_type": "line"
+    },
+    "casting_duration": {
+      "casting_time": 0,
+      "casting_type": "s"
+    },
+    "damage": [
+      {
+        "dice_term": "2d12",
+        "type": "Kälte"
+      }
+    ],
+    "description": "Anwender erschafft einen Eiswall, der bei Gegnerkontakt Schaden zufügt. Der Wall ist undurchdringbar und friert Wasseroberflächen ein."
+  },
+  {
+    "name": "Frostherz",
+    "type": "Kanalisierungen",
+    "association": "Ewiges Eis von Fubuki",
+    "level": 3,
+    "cooldown": {
+      "cooldown_time": 8,
+      "cooldown_type": "r"
+    },
+    "concentration": false,
+    "range": 0,
+    "aoe": {
+      "aoe_range": 5,
+      "aoe_type": "radius"
+    },
+    "duration": {
+      "duration_time": 2,
+      "duration_type": "r"
+    },
+    "casting_duration": {
+      "casting_time": 0,
+      "casting_type": "s"
+    },
+    "damage": [],
+    "description": "Der Anwender erhält Resistenz gegen Kälteschaden. In 5ft. Reichweite verströmt der Anwender eine Kälteaura und gibt Gegnern in dieser Reichweite Nachteil auf Trefferwürfe."
+  },
+  {
+    "name": "Tiefenfrost",
+    "type": "Kanalisierungen",
+    "association": "Ewiges Eis von Fubuki",
+    "level": 4,
+    "cooldown": {
+      "cooldown_time": 10,
+      "cooldown_type": "r"
+    },
+    "concentration": false,
+    "range": 60,
+    "aoe": {
+      "aoe_range": 0,
+      "aoe_type": "single"
+    },
+    "duration": {
+      "duration_time": 2,
+      "duration_type": "r"
+    },
+    "casting_duration": {
+      "casting_time": 0,
+      "casting_type": "s"
+    },
+    "damage": [],
+    "description": "Ein beliebiges Ziel in Reichweite muss einen Konstitutionsrettungswurf (DC 17) bestehen, sonst ist es eingefroren (versteinert) und erhält Schaden. Bei Erfolg teilt es nur noch halben Schaden aus und hat halbe Bewegunsreichweite."
+  },
+  {
+    "name": "Glacialer Zufall",
+    "type": "Kanalisierungen",
+    "association": "Ewiges Eis von Fubuki",
+    "level": 5,
+    "cooldown": {
+      "cooldown_time": 12,
+      "cooldown_type": "r"
+    },
+    "concentration": false,
+    "range": 0,
+    "aoe": {
+      "aoe_range": 40,
+      "aoe_type": "radius"
+    },
+    "casting_duration": {
+      "casting_time": 0,
+      "casting_type": "s"
+    },
+    "damage": [
+      {
+        "dice_term": "8d8",
+        "type": "Kälte"
+      }
+    ],
+    "duration": {
+      "duration_time": 2,
+      "duration_type": "r"
+    },
+    "description": "Alle Gegner im Radius erhalten Schaden und müssen einen Konstitutionsrettungswurf (DC 17) bestehen. Bei Versagen wird ein Ziel eingefroren."
+  },
+  {
+    "name": "Schneidende Böe",
+    "type": "Kanalisierungen",
+    "association": "Schneidende Böe von Kaze",
+    "level": 1,
+    "cooldown": {
+      "cooldown_time": 4,
+      "cooldown_type": "r"
+    },
+    "concentration": false,
+    "range": 30,
+    "aoe": {
+      "aoe_range": 0,
+      "aoe_type": "line"
+    },
+    "duration": {
+      "duration_time": 1,
+      "duration_type": "r"
+    },
+    "casting_duration": {
+      "casting_time": 0,
+      "casting_type": "s"
+    },
+    "damage": [],
+    "description": "Wandelt den Angriff einer Waffe in einen Windschnitt. Phyischer Schaden wird in Schnittschaden umgewandelt und erhält eine Reichweite von 30ft."
+  },
+  {
+    "name": "Windritt",
+    "type": "Kanalisierungen",
+    "association": "Schneidende Böe von Kaze",
+    "level": 2,
+    "cooldown": {
+      "cooldown_time": 6,
+      "cooldown_type": "r"
+    },
+    "concentration": false,
+    "range": 30,
+    "aoe": {
+      "aoe_range": 0,
+      "aoe_type": "self"
+    },
+    "casting_duration": {
+      "casting_time": 0,
+      "casting_type": "s"
+    },
+    "damage": [],
+    "description": "Anwender erhält sofortige Bewegung von genau 30ft. und Ausweichen vor Gelegenheitsangriffen"
+  },
+  {
+    "name": "Atem der Freiheit",
+    "type": "Kanalisierungen",
+    "association": "Schneidende Böe von Kaze",
+    "level": 3,
+    "cooldown": {
+      "cooldown_time": 8,
+      "cooldown_type": "r"
+    },
+    "concentration": false,
+    "range": 30,
+    "aoe": {
+      "aoe_range": 0,
+      "aoe_type": "single"
+    },
+    "casting_duration": {
+      "casting_time": 0,
+      "casting_type": "s"
+    },
+    "damage": [],
+    "description": "Anwender löst Paralyse, Festhalten und Verlangsamen bei einem Verbündeten in Reichweite."
+  },
+  {
+    "name": "Zyklonfaust",
+    "type": "Kanalisierungen",
+    "association": "Schneidende Böe von Kaze",
+    "level": 4,
+    "cooldown": {
+      "cooldown_time": 10,
+      "cooldown_type": "r"
+    },
+    "concentration": false,
+    "range": 0,
+    "aoe": {
+      "aoe_range": 15,
+      "aoe_type": "radius"
+    },
+    "casting_duration": {
+      "casting_time": 0,
+      "casting_type": "s"
+    },
+    "damage": [
+      {
+        "dice_term": "2d10",
+        "type": "Magische Energie"
+      }
+    ],
+    "description": "Im Radius um Anwender wird ein Zyklon erzeugt. Alle Gegner in Reichweite bekommen Schaden und müssen Stärkerettungswurf (DC 16) bestehen, sonst prone und 20ft. weggeschleudert."
+  },
+  {
+    "name": "Sturminkarnation",
+    "type": "Kanalisierungen",
+    "association": "Schneidende Böe von Kaze",
+    "level": 5,
+    "cooldown": {
+      "cooldown_time": 12,
+      "cooldown_type": "r"
+    },
+    "concentration": false,
+    "range": 0,
+    "aoe": {
+      "aoe_range": 0,
+      "aoe_type": "self"
+    },
+    "casting_duration": {
+      "casting_time": 0,
+      "casting_type": "s"
+    },
+    "damage": [],
+    "duration": {
+      "duration_time": 2,
+      "duration_type": "r"
+    },
+    "description": "Für 2 Runden wird der Anwender zu einer Inkarnation Kazes Sturm. Der Anwender kann 60ft. weit fliegen, erhält Vorteil auf alle Geschicklichkeitswürfe und alle Angriffe teilen zusätzlich 2d6 Schnittschaden aus."
+  },
+  {
+    "name": "Avilas Ewiges Band",
+    "type": "Glaube",
+    "association": "Wärmende Harmonie von Avila",
+    "level": 3,
+    "cooldown": {
+      "cooldown_time": 0,
+      "cooldown_type": "r"
+    },
+    "concentration": true,
+    "range": 60,
+    "aoe": {
+      "aoe_range": 0,
+      "aoe_type": "single"
+    },
+    "casting_duration": {
+      "casting_time": 0,
+      "casting_type": "s"
+    },
+    "duration": {
+      "duration_time": 1,
+      "duration_type": "m"
+    },
+    "damage": [],
+    "description": "Du webst ein heiliges Band zwischen zwei Kreaturen deiner Wahl, die du innerhalb der Reichweite sehen kannst. Beide müssen dem Zauber zustimmen (kein Rettungswurf nötig), oder sie müssen einen Weisheitsrettungswurf (DC 17) bestehen, um nicht davon betroffen zu werden.\nIst das Band einmal gewebt, sind die beiden Kreaturen für die Wirkungsdauer magisch verbunden – körperlich, geistig und seelisch. Das Band manifestiert sich als zartes, schimmerndes Licht, das ihre Herzen verbindet.\n\nSolange der Zauber wirkt, gelten folgende Effekte für die beiden Verbundenen:\nGeteilte Stärke: Wenn eine der beiden Kreaturen Schaden erleidet, kann der andere als Reaktion die Hälfte davon übernehmen (kein Limit pro Runde).\nGespiegelte Magie: Wenn eine der Kreaturen geheilt wird oder einen Buff-Zauber erhält, erhält die andere automatisch denselben Effekt (sofern sinnvoll).\nHerzverbindung: Beide Kreaturen haben telepathischen Kontakt (bis 1km), können Vorteil auf Rettungswürfe gegen Angst und Bezauberung erhalten, solange sie sich gegenseitig sehen oder hören.\nAvilas Urteil: Wenn eine der beiden Kreaturen stirbt, kann die andere einen Konstitutionsrettungswurf (DC 18) machen. Bei Erfolg bleibt der Tote stabil bei 0 TP (statt tot), aber der Überlebende erleidet sofort 4d10 seelischen Schaden.\n\nWenn das Band ohne Einverständnis beider Beteiligten gewebt wird (z.B. in einem Akt der Manipulation), erleiden beide Kreaturen bei Beendigung des Zaubers 3d10 psychischen Schaden und erhalten für 24 Stunden Nachteil auf Charismawürfe gegeneinander."
   }
 ]
