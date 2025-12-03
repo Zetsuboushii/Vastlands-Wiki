@@ -42,7 +42,7 @@ def before_request():
     image_subdomain = "https://images."
     g.img_host = image_subdomain + apex_domain + "dnd/"
     g.img_host_resized = image_subdomain + apex_domain + "resized/dnd/"
-
+    g.current_date = date.today()
     g.random_banner = f'ui/banner-{random.randint(1, 9)}.png'
 
 
@@ -72,7 +72,7 @@ def index():
     characters_list = [entry for entry in characters_list if not entry.get('hidden')]
     characters_list.sort(key=lambda character: character["name"].lower())
     calendar_list = load_from_json("calendar")
-    current_day = date.today()
+    current_day = g.current_date
 
     birthday_characters = []
     for char in characters_list:
@@ -97,53 +97,44 @@ def index():
 
 @app.route('/characters/')
 def characters():
-    characters_list = load_from_json("characters")
-    characters_list = [entry for entry in characters_list if not entry.get('hidden')]
-    characters_list.sort(key=lambda character: character["name"].lower())
+    characters_list = load_from_json("npcs")
+    characters_list[:] = [c for c in characters_list if "," not in c["name"] and "[hidden]" not in c["name"]]
+    characters_list.sort(key=lambda character: character["name"].lower().replace(" & ", ""))
 
     letters = sorted({character['name'][0].upper() for character in characters_list})
     nationalities = sorted({character['nationality'] for character in characters_list if "nationality" in character})
 
-    return render_template('characters.html', characters=characters_list, letters=letters, nationalities=nationalities)
+    def is_complete(entry):
+        for value in entry.values():
+            if isinstance(value, str) and not value.strip():
+                return False
+            if isinstance(value, (list, dict)) and not value:
+                return False
+        return True
+
+    return render_template('characters.html', characters=characters_list, letters=letters, nationalities=nationalities,
+                           is_complete=is_complete)
 
 
 @app.route('/characters/<character_name>/')
 def character(character_name):
-    characters_list = load_from_json("characters")
-    characters_list = [entry for entry in characters_list if not entry.get('hidden')]
-    characters_list.sort(key=lambda character: character["name"].lower())
-    character_data = None
+    characters_list = load_from_json("npcs")
+    characters_list[:] = [c for c in characters_list if "," not in c["name"] and "[hidden]" not in c["name"]]
+    characters_list.sort(key=lambda character: character["name"].lower().split(",")[0])
     data = None
 
     character_name = character_name.lower().replace(" ", "-")
 
     for char in characters_list:
         char_name = char['name'].lower().replace(" ", "-")
+
         if char_name == character_name:
             data = char.copy()
             break
 
-    if data is not None and data.get('birthday') != "":
-        ingame_day, ingame_month, ingame_year = map(int, g.ingame_date.split('.'))
-
-        if len(data["birthday"].split(".")) == 2:
-            birthday_day, birthday_month = map(int, data['birthday'].split('.'))
-            data['birth_day'] = str(birthday_day)
-            data['birth_month'] = g.lore_months[birthday_month - 1]
-
-        if len(data["birthday"].split(".")) == 3:
-            birthday_day, birthday_month, birthday_year = map(int, data['birthday'].split('.'))
-            data['birth_year'] = str(birthday_year)
-            data['age'] = 394 - birthday_year - (
-                    (ingame_month, ingame_day) < (birthday_month, birthday_day))
-            data['birth_day'] = str(birthday_day)
-            data['birth_month'] = g.lore_months[birthday_month - 1]
-
-    character_data = data
-
-    if character_data is None:
+    if data is None:
         return redirect('/')
-    return render_template('character.html', character=character_data)
+    return render_template('character.html', character=data)
 
 
 @app.route('/places/')

@@ -18,6 +18,8 @@
     <div id="tooltip"></div>
 </div>
 
+<!-- TODO Tagesmapping vernünftig machen -->
+
 <script>
     const loreDays = {{ g.lore_days|tojson }};
     const loreMonths = {{ g.lore_months|tojson }};
@@ -26,10 +28,9 @@
 
     const monthLengths = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
-    const ingameDateParts = "{{ g.ingame_date }}".split(".");
-    const currentDay = parseInt(ingameDateParts[0]);
-    const currentMonth = parseInt(ingameDateParts[1]);
-    const currentYear = parseInt(ingameDateParts[2]);
+    const currentDay = parseInt({{ g.current_date.day }});
+    const currentMonth = parseInt({{ g.current_date.month }});
+    const currentYear = parseInt({{ g.current_date.year }});
 
     let displayMonth = currentMonth;
     let displayYear = currentYear;

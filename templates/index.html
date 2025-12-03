@@ -44,16 +44,20 @@
                                 {% set char_name = rand_char.name | lower | replace(" ", "-") %}
                                 <a href="{{ url_for('character', character_name=char_name) }}">
                                     {% set url = g.img_host_resized + "characters/" + char_name %}
-                                    <img src="
-                                        {{ url }}{% if "artwork" in rand_char.alt_images %} artwork{% endif %}.png"
-                                         alt=""></a>
+                                    <img src="{{ url }} token.png" alt="">
+                                </a>
                                 <form action="{{ url_for('character', character_name=char_name) }}">
                                     <button class="characters-element-name">{{ rand_char.name }}</button>
                                 </form>
                             </div>
                         </div>
                         <div class="home-left-featured-right">
-                            <p>{{ rand_char.content.excerpt }}</p>
+                            {% if not rand_char.content.excerpt %}
+                                <p>Hier steht noch nichts! Erinnere doch gerne den DM daran, für diesen Charakter etwas
+                                    epochales zu schreiben :)</p>
+                            {% else %}
+                                <p>{{ rand_char.content.excerpt | safe }}</p>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
@@ -74,9 +78,8 @@
                             <div class="home-birthdays-box">
                                 {% for char in birthday_characters %}
                                     <a href="{{ url_for('character', character_name=char.name) }}">
-                                        <img src="
-{{ g.img_host_resized }}characters/{{ char.name | lower }}{% if 'artwork' in char.alt_images %} artwork{% endif %}.png"
-                                             alt="">
+                                        {% set url = g.img_host_resized + "characters/" + char.name %}
+                                        <img src="{{ url }} token.png" alt="">
                                     </a>
                                     <div class="home-birthdays-heading">
                                         <h3>
