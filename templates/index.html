@@ -30,9 +30,9 @@
 
                     <div class="home-left-text-heading"><h2>Aktuelles</h2></div>
                     <div class="home-left-text-subsection">
-                        {% for n in news %}
-                            <div class="home-left-text-subheading"><h3>Session #{{ n.session }}</h3></div>
-                            <p>{{ n.text }}</p>
+                        {% for page in journal | reverse%}
+                            <div class="home-left-text-subheading"><h3>{{ page.title }}</h3></div>
+                            {{ page.content | safe }}
                         {% endfor %}
                     </div>
 

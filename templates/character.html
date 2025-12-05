@@ -31,7 +31,7 @@
                     <br>
                     <br>
 
-                    <div class="character-data-field-title"><h4>Informationen zur Person</h4></div>
+                    <div class="character-data-field-title"><h4>Identität</h4></div>
                     <table>
                         <tbody>
                         <tr>
@@ -47,6 +47,10 @@
                             <td>{% if character.age %}{{ character.age }} Jahre{% else %}N/A{% endif %}</td>
                         </tr>
                         <tr>
+                            <td>Geburtstag</td>
+                            <td>{% if character.birthday %}{{ character.birthday }}{% else %}N/A{% endif %}</td>
+                        </tr>
+                        <tr>
                             <td>Staatsangehörigkeit</td>
                             <td>
                                 {% if character.nationality %}
@@ -58,19 +62,9 @@
                         </tr>
                         </tbody>
                     </table>
-                    <div class="character-data-field-title"><h4>Persönlich</h4></div>
+                    <div class="character-data-field-title"><h4>Präferenzen</h4></div>
                     <table>
                         <tbody>
-                        <tr>
-                            <td>Funktionen</td>
-                            <td>
-                                {% if character.functions %}
-                                    {% for f in character.functions %}
-                                        {{ f }}{% if not loop.last %}<br>{% endif %}
-                                    {% endfor %}
-                                {% else %}N/A{% endif %}
-                            </td>
-                        </tr>
                         <tr>
                             <td>Mag</td>
                             <td>
@@ -91,6 +85,21 @@
                                 {% else %}N/A{% endif %}
                             </td>
                         </tr>
+                        </tbody>
+                    </table>
+                    <div class="character-data-field-title"><h4>Rolle</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Funktionen</td>
+                            <td>
+                                {% if character.functions %}
+                                    {% for f in character.functions %}
+                                        {{ f }}{% if not loop.last %}<br>{% endif %}
+                                    {% endfor %}
+                                {% else %}N/A{% endif %}
+                            </td>
+                        </tr>
                         <tr>
                             <td>Glaube</td>
                             <td>
@@ -101,19 +110,27 @@
                                 {% else %}N/A{% endif %}
                             </td>
                         </tr>
+                        </tbody>
+                    </table>
+                    <div class="character-data-field-title"><h4>Sozial</h4></div>
+                    <table>
+                        <tbody>
                         <tr>
                             <td>Bande</td>
                             <td>
                                 {% if character.bonds %}
                                     {% for bond in character.bonds %}
-                                        {% if "," in bond %}{% set c, r = bond.split(",") %}
-                                        {% else %}{% set c = bond %}{% endif %}
-                                        {{ c }}{% if r %} <small>({{ r }})</small>{% endif %}
+                                        {{ bond.name }}
+                                        {% if bond.relation %} <small>({{ bond.relation }})</small>{% endif %}
                                         {% if not loop.last %}<br>
-                                    {% endif %}
+                                        {% endif %}
                                     {% endfor %}
                                 {% else %}N/A{% endif %}
                             </td>
+                        </tr>
+                        <tr>
+                            <td>Ausrichtung</td>
+                            <td>{% if character.alignment %}{{ character.alignment }}{% else %}N/A{% endif %}</td>
                         </tr>
                         </tbody>
                     </table>

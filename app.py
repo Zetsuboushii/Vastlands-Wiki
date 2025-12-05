@@ -14,7 +14,7 @@ app.config['FREEZER_DEFAULT_MIMETYPE'] = 'text/html'
 
 
 def load_from_json(filename):
-    with open(f'api/{filename}.json', encoding="utf8") as file:
+    with open(f'static/api/{filename}.json', encoding="utf8") as file:
         return json.load(file)
 
 
@@ -59,7 +59,7 @@ def find_place_recursively(place_list, place_slug, parent_name=None):
     return None, None
 
 
-news_list = load_from_json("news")
+journal = load_from_json("journal")
 enemy_list = load_from_json("bestiarium")
 actions_list = load_from_json("actions")
 places_list = load_from_json("places")
@@ -91,7 +91,7 @@ def index():
 
     rand_char = random.choice(characters_list)
 
-    return render_template('index.html', birthday_characters=birthday_characters, news=news_list, rand_char=rand_char,
+    return render_template('index.html', birthday_characters=birthday_characters, journal=journal, rand_char=rand_char,
                            holidays=calendar_list, characters=characters_list, current_day=current_day)
 
 
@@ -121,20 +121,24 @@ def character(character_name):
     characters_list = load_from_json("npcs")
     characters_list[:] = [c for c in characters_list if "," not in c["name"] and "[hidden]" not in c["name"]]
     characters_list.sort(key=lambda character: character["name"].lower().split(",")[0])
-    data = None
+    character = None
 
     character_name = character_name.lower().replace(" ", "-")
 
     for char in characters_list:
         char_name = char['name'].lower().replace(" ", "-")
-
         if char_name == character_name:
-            data = char.copy()
+            character = char.copy()
             break
 
-    if data is None:
+    if character['birthday']:
+        birthday_d, birthday_m, _ = character['birthday'].split('.')
+        birthday_string = f"{birthday_d}. Tag des {g.lore_months[int(birthday_m) - 1]}"
+        character['birthday'] = birthday_string
+
+    if character is None:
         return redirect('/')
-    return render_template('character.html', character=data)
+    return render_template('character.html', character=character)
 
 
 @app.route('/places/')

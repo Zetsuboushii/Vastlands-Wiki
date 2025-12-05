@@ -63,6 +63,14 @@ components:
         bonds:
           type: array
           description: List of relations to other characters of NPC
+          items:
+            properties:
+              name:
+                type: string
+                description: Name of character that NPC has a bond to
+              relation:
+                type: string
+                description: Kind of relation the character has to NPC
         functions:
           type: array
           description: List of functions/occupations of NPC
