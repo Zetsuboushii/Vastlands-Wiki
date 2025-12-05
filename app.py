@@ -14,14 +14,14 @@ app.config['FREEZER_DEFAULT_MIMETYPE'] = 'text/html'
 
 
 def load_from_json(filename):
-    with open(f'static/json/{filename}.json', encoding="utf8") as file:
+    with open(f'api/{filename}.json', encoding="utf8") as file:
         return json.load(file)
 
 
 @app.before_request
 def before_request():
     g.site_title = "Tome of the Vastlands"
-    g.version_number = "b3.⛩"
+    g.version_number = "4.0.0"
 
     g.ingame_date = load_from_json("current_date")["current_ingame_date"]
     g.lore_days = ["Lunesdag", "Flamdag", "Quellsdag", "Waldsdag", "Goldag", "Terrasdag", "Sunnesdag"]
