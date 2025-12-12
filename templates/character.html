@@ -175,8 +175,7 @@
                         </div>
                         <div class="gallery-element">
                             {% if character.has_alt %}
-                                <img src="{{ url }} alt.png" alt="" style="max-height: 350px">
-                                <img src="{{ url }} alt.jpg" alt="" style="max-height: 350px">
+                                <img src="{{ character.alt_img_url }}" alt="" style="max-height: 350px">
                                 <h4 style="margin: 0">Alternative Form</h4>
                             {% endif %}
                         </div>

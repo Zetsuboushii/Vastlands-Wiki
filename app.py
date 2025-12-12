@@ -60,7 +60,7 @@ def find_place_recursively(place_list, place_slug, parent_name=None):
     return None, None
 
 
-def check_alt_image_exists(name: str, timeout: float = 5.0) -> dict:
+def check_alt_image_exists(name: str, timeout: float = 5.0) -> tuple[bool, str, int] | tuple[bool, None, None]:
     base_url = f"{g.img_host}characters/{name} alt"
     extensions = ["png", "jpg"]
 
@@ -69,19 +69,11 @@ def check_alt_image_exists(name: str, timeout: float = 5.0) -> dict:
         try:
             response = requests.head(url, timeout=timeout, allow_redirects=True)
             if response.status_code == 200:
-                return {
-                    "alt_exists": True,
-                    "url": url,
-                    "status_code": response.status_code,
-                }
+                return True, url, response.status_code
         except requests.RequestException:
             pass
 
-    return {
-        "alt_exists": False,
-        "url": None,
-        "status_code": None,
-    }
+    return False, None, None
 
 
 journal = load_from_json("journal")
@@ -156,8 +148,7 @@ def character(character_name):
                 birthday_string = f"{birthday_d}. Tag des {g.lore_months[int(birthday_m) - 1]}"
                 character['birthday'] = birthday_string
 
-            if check_alt_image_exists(char_name):
-                character['has_alt'] = True
+            character['has_alt'], character['alt_img_url'], _ = check_alt_image_exists(character_name)
             break
 
     if character is None:
