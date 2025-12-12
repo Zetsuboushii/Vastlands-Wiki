@@ -29,10 +29,10 @@
         <div id="characterPool">
             {% for char in characters %}
                 {% set char_name = char.name | lower | replace(" ", "-") %}
-                {% set url = g.img_host_resized + "characters/" + char_name %}
+                {% set url = g.img_host_resized + "characters/" + char_name | replace(" ", "-") | replace("-&-", "") %}
 
                 <div class="draggable" draggable="true" data-name="{{ char_name }}">
-                    <img src="{{ url }}{% if "artwork" in char.alt_images %} artwork{% endif %}.png" alt="">
+                    <img src="{{ url }} token.png" alt="">
                 </div>
             {% endfor %}
         </div>

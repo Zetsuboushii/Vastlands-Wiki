@@ -19,7 +19,7 @@
         <div class="home-container">
             <div class="home-left">
                 <div class="home-left-text">
-                    <img src="{{ url_for('static', filename='imgs/totv_logo.png') }}" style="max-width: 500px">
+                    <!--<img src="{{ url_for('static', filename='imgs/totv_logo.png') }}" style="max-width: 500px">-->
 
                     <p>
                         Herzlich willkommen im <b style="font-family: 'Grenze Gotisch'">Tome of the Vastlands</b>! Auf
@@ -54,11 +54,11 @@
                             </div>
                         </div>
                         <div class="home-left-featured-right">
-                            {% if not rand_char.content.excerpt %}
+                            {% if not rand_char.excerpt %}
                                 <p>Hier steht noch nichts! Erinnere doch gerne den DM daran, für diesen Charakter etwas
                                     epochales zu schreiben :)</p>
                             {% else %}
-                                <p>{{ rand_char.content.excerpt | safe }}</p>
+                                <p>{{ rand_char.excerpt | safe }}</p>
                             {% endif %}
                         </div>
                     </div>

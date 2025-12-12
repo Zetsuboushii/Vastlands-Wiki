@@ -54,7 +54,7 @@
   .filters button {
     color: white;
     font-family: "Grenze Gotisch";
-    font-size: 20px;
+    font-size: 18px;
     background-color: transparent;
     border: none;
     cursor: pointer; }
@@ -63,8 +63,8 @@
   .filters #letter-filter button {
     background-image: url("../ui/button-square.png");
     background-size: contain;
-    width: 56px;
-    height: 56px; }
+    width: 45px;
+    height: 45px; }
     .filters #letter-filter button:hover {
       text-decoration: underline; }
   .filters #nationality-filter button {

@@ -160,29 +160,23 @@
                         {{ character.biography | safe }}
                     {% endif %}
 
-                    <!-- TODO find better solution to check for alt images -->
-                    {% if character.alt_images %}
-                        <div class="character-text-heading"><h2>Gallerie</h2></div>
-                        <div class="gallery-container">
-                            {% for img in character.alt_images %}
-                                <div class="gallery-element">
-                                    {% set character_name = character.name | lower | replace(" ", "-") %}
-                                    {% set alt = img | capitalize %}
-                                    {% set suffix = img | lower | replace(" ", "-") %}
-                                    {% set url = g.img_host + "characters/" + character_name %}
-                                    {% if suffix == 'artwork' %}
-                                        {% set url = url + ".png" %}
-                                        {% set alt = 'KI-Porträt' %}
-                                    {% else %}
-                                        {% set url = url + " " + suffix + ".png" %}
-                                    {% endif %}
+                    <!--
+                    <h3 style="margin-bottom: 0">Gallerie</h3>
+                    <hr style="margin-top: 0">
 
-                                    <img src="{{ url }}" alt="">
-                                    <h3 style="margin: 0">{{ alt }}</h3>
-                                </div>
-                            {% endfor %}
+                    <div class="gallery-container">
+                        <div class="gallery-element" style="">
+                            {% set character_name = character.name | lower | replace(" ", "-") %}
+                            {% set alt = img | capitalize %}
+                            {% set suffix = img | lower | replace(" ", "-") %}
+                            {% set url = g.img_host + "characters/" + character_name %}
+
+                            <img src="{{ url }}.png" alt="" style="max-height: 500px">
+                            <img src="{{ url }}.jpg" alt="" style="max-height: 500px">
                         </div>
-                    {% endif %}
+                    </div>
+                    -->
+
                 </div>
             </div>
         </div>

@@ -68,9 +68,9 @@ abilities_list = load_from_json("abilities")
 
 @app.route('/')
 def index():
-    characters_list = load_from_json("characters")
-    characters_list = [entry for entry in characters_list if not entry.get('hidden')]
-    characters_list.sort(key=lambda character: character["name"].lower())
+    characters_list = load_from_json("npcs")
+    characters_list[:] = [c for c in characters_list if "," not in c["name"] and "[hidden]" not in c["name"]]
+    characters_list.sort(key=lambda character: character["name"].lower().replace(" & ", ""))
     calendar_list = load_from_json("calendar")
     current_day = g.current_date
 
@@ -82,10 +82,6 @@ def index():
             birthday_day, birthday_month = 0, 0
             if len(data["birthday"].split(".")) == 2:
                 birthday_day, birthday_month = map(int, data['birthday'].split('.'))
-
-            if len(data["birthday"].split(".")) == 3:
-                birthday_day, birthday_month, birthday_year = map(int, data['birthday'].split('.'))
-
             if f"{birthday_day:02}" == f"{current_day.day:02}" and f"{birthday_month:02}" == f"{current_day.month:02}":
                 birthday_characters.append(data)
 
@@ -129,12 +125,13 @@ def character(character_name):
         char_name = char['name'].lower().replace(" ", "-")
         if char_name == character_name:
             character = char.copy()
+
+            if character['birthday']:
+                birthday_d, birthday_m, _ = character['birthday'].split('.')
+                birthday_string = f"{birthday_d}. Tag des {g.lore_months[int(birthday_m) - 1]}"
+                character['birthday'] = birthday_string
             break
 
-    if character['birthday']:
-        birthday_d, birthday_m, _ = character['birthday'].split('.')
-        birthday_string = f"{birthday_d}. Tag des {g.lore_months[int(birthday_m) - 1]}"
-        character['birthday'] = birthday_string
 
     if character is None:
         return redirect('/')
@@ -268,9 +265,9 @@ def holidays(holiday_name):
 
 @app.route('/tierlist/')
 def tierlist():
-    characters_list = load_from_json("characters")
-    characters_list = [entry for entry in characters_list if not entry.get('hidden')]
-    characters_list.sort(key=lambda character: character["name"].lower())
+    characters_list = load_from_json("npcs")
+    characters_list[:] = [c for c in characters_list if "," not in c["name"] and "[hidden]" not in c["name"]]
+    characters_list.sort(key=lambda character: character["name"].lower().replace(" & ", ""))
 
     return render_template('tierlist.html', characters=characters_list)
 
