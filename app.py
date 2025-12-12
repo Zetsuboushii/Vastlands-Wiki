@@ -14,14 +14,14 @@ app.config['FREEZER_DEFAULT_MIMETYPE'] = 'text/html'
 
 
 def load_from_json(filename):
-    with open(f'static/json/{filename}.json', encoding="utf8") as file:
+    with open(f'static/api/{filename}.json', encoding="utf8") as file:
         return json.load(file)
 
 
 @app.before_request
 def before_request():
     g.site_title = "Tome of the Vastlands"
-    g.version_number = "b3.⛩"
+    g.version_number = "4.0.0"
 
     g.ingame_date = load_from_json("current_date")["current_ingame_date"]
     g.lore_days = ["Lunesdag", "Flamdag", "Quellsdag", "Waldsdag", "Goldag", "Terrasdag", "Sunnesdag"]
@@ -42,7 +42,7 @@ def before_request():
     image_subdomain = "https://images."
     g.img_host = image_subdomain + apex_domain + "dnd/"
     g.img_host_resized = image_subdomain + apex_domain + "resized/dnd/"
-
+    g.current_date = date.today()
     g.random_banner = f'ui/banner-{random.randint(1, 9)}.png'
 
 
@@ -59,7 +59,7 @@ def find_place_recursively(place_list, place_slug, parent_name=None):
     return None, None
 
 
-news_list = load_from_json("news")
+journal = load_from_json("journal")
 enemy_list = load_from_json("bestiarium")
 actions_list = load_from_json("actions")
 places_list = load_from_json("places")
@@ -68,11 +68,11 @@ abilities_list = load_from_json("abilities")
 
 @app.route('/')
 def index():
-    characters_list = load_from_json("characters")
-    characters_list = [entry for entry in characters_list if not entry.get('hidden')]
-    characters_list.sort(key=lambda character: character["name"].lower())
+    characters_list = load_from_json("npcs")
+    characters_list[:] = [c for c in characters_list if "," not in c["name"] and "[hidden]" not in c["name"]]
+    characters_list.sort(key=lambda character: character["name"].lower().replace(" & ", ""))
     calendar_list = load_from_json("calendar")
-    current_day = date.today()
+    current_day = g.current_date
 
     birthday_characters = []
     for char in characters_list:
@@ -82,68 +82,60 @@ def index():
             birthday_day, birthday_month = 0, 0
             if len(data["birthday"].split(".")) == 2:
                 birthday_day, birthday_month = map(int, data['birthday'].split('.'))
-
-            if len(data["birthday"].split(".")) == 3:
-                birthday_day, birthday_month, birthday_year = map(int, data['birthday'].split('.'))
-
             if f"{birthday_day:02}" == f"{current_day.day:02}" and f"{birthday_month:02}" == f"{current_day.month:02}":
                 birthday_characters.append(data)
 
     rand_char = random.choice(characters_list)
 
-    return render_template('index.html', birthday_characters=birthday_characters, news=news_list, rand_char=rand_char,
+    return render_template('index.html', birthday_characters=birthday_characters, journal=journal, rand_char=rand_char,
                            holidays=calendar_list, characters=characters_list, current_day=current_day)
 
 
 @app.route('/characters/')
 def characters():
-    characters_list = load_from_json("characters")
-    characters_list = [entry for entry in characters_list if not entry.get('hidden')]
-    characters_list.sort(key=lambda character: character["name"].lower())
+    characters_list = load_from_json("npcs")
+    characters_list[:] = [c for c in characters_list if "," not in c["name"] and "[hidden]" not in c["name"]]
+    characters_list.sort(key=lambda character: character["name"].lower().replace(" & ", ""))
 
     letters = sorted({character['name'][0].upper() for character in characters_list})
     nationalities = sorted({character['nationality'] for character in characters_list if "nationality" in character})
 
-    return render_template('characters.html', characters=characters_list, letters=letters, nationalities=nationalities)
+    def is_complete(entry):
+        for value in entry.values():
+            if isinstance(value, str) and not value.strip():
+                return False
+            if isinstance(value, (list, dict)) and not value:
+                return False
+        return True
+
+    return render_template('characters.html', characters=characters_list, letters=letters, nationalities=nationalities,
+                           is_complete=is_complete)
 
 
 @app.route('/characters/<character_name>/')
 def character(character_name):
-    characters_list = load_from_json("characters")
-    characters_list = [entry for entry in characters_list if not entry.get('hidden')]
-    characters_list.sort(key=lambda character: character["name"].lower())
-    character_data = None
-    data = None
+    characters_list = load_from_json("npcs")
+    characters_list[:] = [c for c in characters_list if "," not in c["name"] and "[hidden]" not in c["name"]]
+    characters_list.sort(key=lambda character: character["name"].lower().split(",")[0])
+    character = None
 
     character_name = character_name.lower().replace(" ", "-")
 
     for char in characters_list:
         char_name = char['name'].lower().replace(" ", "-")
         if char_name == character_name:
-            data = char.copy()
+            character = char.copy()
+
+            if character['birthday']:
+                birthday_d, birthday_m, _ = character['birthday'].split('.')
+                birthday_string = f"{birthday_d}. Tag des {g.lore_months[int(birthday_m) - 1]}"
+                character['birthday'] = birthday_string
             break
 
-    if data is not None and data.get('birthday') != "":
-        ingame_day, ingame_month, ingame_year = map(int, g.ingame_date.split('.'))
 
-        if len(data["birthday"].split(".")) == 2:
-            birthday_day, birthday_month = map(int, data['birthday'].split('.'))
-            data['birth_day'] = str(birthday_day)
-            data['birth_month'] = g.lore_months[birthday_month - 1]
-
-        if len(data["birthday"].split(".")) == 3:
-            birthday_day, birthday_month, birthday_year = map(int, data['birthday'].split('.'))
-            data['birth_year'] = str(birthday_year)
-            data['age'] = 394 - birthday_year - (
-                    (ingame_month, ingame_day) < (birthday_month, birthday_day))
-            data['birth_day'] = str(birthday_day)
-            data['birth_month'] = g.lore_months[birthday_month - 1]
-
-    character_data = data
-
-    if character_data is None:
+    if character is None:
         return redirect('/')
-    return render_template('character.html', character=character_data)
+    return render_template('character.html', character=character)
 
 
 @app.route('/places/')
@@ -273,9 +265,9 @@ def holidays(holiday_name):
 
 @app.route('/tierlist/')
 def tierlist():
-    characters_list = load_from_json("characters")
-    characters_list = [entry for entry in characters_list if not entry.get('hidden')]
-    characters_list.sort(key=lambda character: character["name"].lower())
+    characters_list = load_from_json("npcs")
+    characters_list[:] = [c for c in characters_list if "," not in c["name"] and "[hidden]" not in c["name"]]
+    characters_list.sort(key=lambda character: character["name"].lower().replace(" & ", ""))
 
     return render_template('tierlist.html', characters=characters_list)
 

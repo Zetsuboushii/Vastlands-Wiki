@@ -1,0 +1,88 @@
+openapi: 3.0.3
+info:
+  title: Tome of the Vastlands API
+  version: 4.0.0
+  description: API Reference for everything "Tome of the Vastlands"
+
+servers:
+  - url: https://tome.zetsuboushii.site
+
+paths:
+  /api/npcs.json:
+    get:
+      summary: List of all NPCs
+      operationId: listNPCs
+      responses:
+        '200':
+          description: Array of Non-Player Characters
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/NPC'
+
+components:
+  schemas:
+    NPC:
+      type: object
+      properties:
+        id:
+          type: string
+          description: ID of NPC
+        name:
+          type: string
+          description: Forename of NPC
+        surname:
+          type: string
+          description: Surname of NPC
+        title:
+          type: string
+          description: Rhetoric title of NPC
+        race:
+          type: string
+          description: Race of NPC. References a 'Race' object
+        alignment:
+          type: string
+          description: Alignment abbreviation of NPC
+        sex:
+          type: string
+          description: Biological gender of NPC
+        age:
+          type: number
+          description: Age of NPC in years
+        nationality:
+          type: string
+          description: Nationality of NPC. References a 'Place' object
+        likes:
+          type: array
+          description: List of likings of NPC
+        dislikes:
+          type: array
+          description: List of dislikings of NPC
+        bonds:
+          type: array
+          description: List of relations to other characters of NPC
+          items:
+            properties:
+              name:
+                type: string
+                description: Name of character that NPC has a bond to
+              relation:
+                type: string
+                description: Kind of relation the character has to NPC
+        functions:
+          type: array
+          description: List of functions/occupations of NPC
+        faith:
+          type: array
+          description: List of faiths of NPC. References a 'Faith' object
+        excerpt:
+          type: string
+          description: HTML string of a short description of NPC
+        biography:
+          type: string
+          description: HTML string of a detailed description of NPC
+      required:
+        - id
+        - name

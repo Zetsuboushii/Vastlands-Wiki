@@ -17,10 +17,9 @@
         <div class="character-container">
             <div class="character-data">
                 <div class="character-data-box">
-                    {% set artwork_flag = "artwork" in character.alt_images %}
                     {% set character_name = character.name | lower | replace(" ", "-") %}
                     {% set url = g.img_host + "characters/" + character_name %}
-                    <img src="{{ url }}{% if artwork_flag %} artwork{% endif %}.png" alt="">
+                    <img src="{{ url }} token.png" alt="">
                     <div class="character-data-top">
                         <div class="character-data-name"><h1>{{ character.name }} {{ character.surname }}</h1></div>
                         <div class="character-data-title"><h3>{{ character.title }}</h3></div>
@@ -32,213 +31,107 @@
                     <br>
                     <br>
 
-                    <div class="character-data-field-title"><h4>Informationen zur Person</h4></div>
+                    <div class="character-data-field-title"><h4>Identität</h4></div>
                     <table>
                         <tbody>
                         <tr>
                             <td>Rasse</td>
-                            <td>{{ character.race }}</td>
+                            <td>{% if character.race %}{{ character.race }}{% else %}N/A{% endif %}</td>
                         </tr>
                         <tr>
                             <td>Geschlecht</td>
-                            <td>
-                                {% if character.sex == "m" %}männlich{% elif character.sex == "w" %}weiblich{% endif %}
-                            </td>
+                            <td>{% if character.sex %}{{ character.sex }}{% else %}N/A{% endif %}</td>
                         </tr>
-                        {% if character.birthday %}
-                            {% if character.birth_year %}
-                                <tr>
-                                    <td>Alter</td>
-                                    <td>{{ character.age }} Jahre</td>
-                                </tr>
-                            {% endif %}
-                            <tr>
-                                <td>Geburtstag</td>
-                                <td>{{ character.birth_day }}. Tag, {{ character.birth_month }}
-                                    <!--{% if character.birth_year %} im Jahre {{ character.birth_year | replace("-", "") }}
-                                        {% if "-" in character.birth_year %}v.V.{% else %}n.V.
-                                        {% endif %}{% endif %}--></td>
-                            </tr>
-                        {% endif %}
-                        {% if character.aliases %}
-                            <tr>
-                                <td>Aliase</td>
-                                <td>
-                                    <ul>
-                                        {% for alias in character.aliases | sort(attribute='alias') %}
-                                            <li>{{ alias.alias }} <small>({{ alias.origin }})</small></li>
-                                        {% endfor %}
-                                    </ul>
-                                </td>
-                            </tr>
-                        {% endif %}
-                        {% if character.nationality %}
-                            <tr>
-                                <td>Staatsangehörigkeit</td>
-                                <td>
+                        <tr>
+                            <td>Alter</td>
+                            <td>{% if character.age %}{{ character.age }} Jahre{% else %}N/A{% endif %}</td>
+                        </tr>
+                        <tr>
+                            <td>Geburtstag</td>
+                            <td>{% if character.birthday %}{{ character.birthday }}{% else %}N/A{% endif %}</td>
+                        </tr>
+                        <tr>
+                            <td>Staatsangehörigkeit</td>
+                            <td>
+                                {% if character.nationality %}
                                     {% set place_name = character.nationality | lower | replace(" ", "-") %}
                                     <a href="{{ url_for('place', place_name=place_name) }}">
                                         {{ character.nationality }}</a>
-                                </td>
-                            </tr>
-                        {% endif %}
+                                {% else %}N/A{% endif %}
+                            </td>
+                        </tr>
                         </tbody>
                     </table>
-
-                    {% if character.measurements %}
-                        <div class="character-data-field-title"><h4>Maße</h4></div>
-                        <table>
-                            <tbody>
-                            {% if character.measurements.height %}
-                                <tr>
-                                    <td>Körpergröße</td>
-                                    <td>{{ character.measurements.height | replace(".", ",") }} m</td>
-                                </tr>
-                            {% endif %}
-                            {% if character.measurements.weight %}
-                                <tr>
-                                    <td>Gewicht</td>
-                                    <td>{{ character.measurements.weight }} kg</td>
-                                </tr>
-                            {% endif %}
-                            </tbody>
-                        </table>
-                    {% endif %}
-
-                    {% if character.function or character.classes %}
-                        <div class="character-data-field-title"><h4>Profession</h4></div>
-                        <table>
-                            <tbody>
-                            {% if character.function %}
-                                <tr>
-                                    <td>Funktion</td>
-                                    <td>
-                                        <ul>
-                                            {% for function in character.functions | sort %}
-                                                <li>{{ function }}</li>
-                                            {% endfor %}
-                                        </ul>
-                                    </td>
-                                </tr>
-                            {% endif %}
-                            {% if character.classes %}
-                                <tr>
-                                    <td>Basisklasse</td>
-                                    <td>{{ character.classes.baseclass }}</td>
-                                </tr>
-                                {% if character.classes.subclasses %}
-                                    <tr>
-                                        <td>Subklasse{% if character.classes.subclasses | length > 1 %}n{% endif %}</td>
-                                        <td>
-                                            <ul>
-                                                {% for subclass in character.classes.subclasses | sort %}
-                                                    <li>{{ subclass }}</li>
-                                                {% endfor %}
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                {% endif %}
-                                {% if character.classes.masterclass %}
-                                    <tr>
-                                        <td>Meisterklasse</td>
-                                        <td>{{ character.classes.masterclass }}</td>
-                                    </tr>
-                                {% endif %}
-                            {% endif %}
-                            </tbody>
-                        </table>
-                    {% endif %}
-
-                    <div class="character-data-field-title"><h4>Weitere Informationen</h4></div>
-                    <table>
-                        <tbody>
-                        {% if character.homes %}
-                            <tr>
-                                <td>Orte</td>
-                                <td>
-                                    <ul>
-                                        {% for home in character.homes %}
-                                            {% set place_name = home.place | lower | replace(" ", "-") %}
-                                            <li><a href="{{ url_for('place', place_name=place_name) }}">
-                                                {{ home.place }}</a> <small>({{ home.attachment }})</small></li>
-                                        {% endfor %}
-                                    </ul>
-                                </td>
-                            </tr>
-                        {% endif %}
-                        {% if character.alignment %}
-                            <tr>
-                                <td>Gesinnung</td>
-                                <td>{{ character.alignment }}</td>
-                            </tr>
-                        {% endif %}
-                        {% if character.affiliations %}
-                            <tr>
-                                <td>Zugehörigkeit{% if character.affiliations | length > 1 %}en{% endif %}</td>
-                                <td>
-                                    <ul>
-                                        {% for affiliation in character.affiliations | sort %}
-                                            <li>{{ affiliation }}</li>
-                                        {% endfor %}
-                                    </ul>
-                                </td>
-                            </tr>
-                        {% endif %}
-                        {% if character.likes %}
-                            <tr>
-                                <td>Mag</td>
-                                <td>
-                                    {% for like in character.likes | sort %}
-                                        {{ like }}{{ ", " if not loop.last else "" }}
-                                    {% endfor %}
-                                </td>
-                            </tr>
-                        {% endif %}
-                        {% if character.dislikes %}
-                            <tr>
-                                <td>Mag nicht</td>
-                                <td>
-                                    {% for dislike in character.dislikes | sort %}
-                                        {{ dislike }}{{ ", " if not loop.last else "" }}
-                                    {% endfor %}
-                                </td>
-                            </tr>
-                        {% endif %}
-                        </tbody>
-                    </table>
-
-                    <div class="character-data-field-title"><h4>Persönlicher Status</h4></div>
+                    <div class="character-data-field-title"><h4>Präferenzen</h4></div>
                     <table>
                         <tbody>
                         <tr>
-                            <td>Verbleib</td>
-                            <td>{{ character.status }}</td>
+                            <td>Mag</td>
+                            <td>
+                                {% if character.likes %}
+                                    {% for f in character.likes %}
+                                        {{ f }}{% if not loop.last %}<br>{% endif %}
+                                    {% endfor %}
+                                {% else %}N/A{% endif %}
+                            </td>
                         </tr>
-                        {% if character.relationships %}
-                            <tr>
-                                <td>Beziehungen</td>
-                                <td>
-                                    <ul>
-                                        {% for relation in character.relationships | sort(attribute='character') %}
-                                            {% set char_name = relation.character | lower | replace(" ", "-") %}
-                                            <li>
-                                                <a href="{{ url_for('character', character_name=char_name) }}">
-                                                    {{ relation.character }}</a>
-                                                <small>({{ relation.relation }})</small>
-                                            </li>
-                                        {% endfor %}
-                                    </ul>
-                                </td>
-                            </tr>
-                        {% endif %}
-                        {% if character.lover %}
-                            <tr>
-                                {% set char_name = character.lover | lower | replace(" ", "-") %}
-                                <td>Liebe</td>
-                                <td><a href="{{ url_for('character', character_name=char_name) }}">
-                                    {{ character.lover }}</a></td>
-                            </tr>
-                        {% endif %}
+                        <tr>
+                            <td>Mag nicht</td>
+                            <td>
+                                {% if character.dislikes %}
+                                    {% for f in character.dislikes %}
+                                        {{ f }}{% if not loop.last %}<br>{% endif %}
+                                    {% endfor %}
+                                {% else %}N/A{% endif %}
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="character-data-field-title"><h4>Rolle</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Funktionen</td>
+                            <td>
+                                {% if character.functions %}
+                                    {% for f in character.functions %}
+                                        {{ f }}{% if not loop.last %}<br>{% endif %}
+                                    {% endfor %}
+                                {% else %}N/A{% endif %}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Glaube</td>
+                            <td>
+                                {% if character.faith %}
+                                    {% for f in character.faith %}
+                                        {{ f }}{% if not loop.last %}<br>{% endif %}
+                                    {% endfor %}
+                                {% else %}N/A{% endif %}
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="character-data-field-title"><h4>Sozial</h4></div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Bande</td>
+                            <td>
+                                {% if character.bonds %}
+                                    {% for bond in character.bonds %}
+                                        {{ bond.name }}
+                                        {% if bond.relation %} <small>({{ bond.relation }})</small>{% endif %}
+                                        {% if not loop.last %}<br>
+                                        {% endif %}
+                                    {% endfor %}
+                                {% else %}N/A{% endif %}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ausrichtung</td>
+                            <td>{% if character.alignment %}{{ character.alignment }}{% else %}N/A{% endif %}</td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>
@@ -246,42 +139,44 @@
 
             <div class="character-text">
                 <div class="character-text-box">
-                    <p>{{ character.content.excerpt }}</p>
 
-                    <hr>
+                    <h3 style="margin-bottom: 0">Kurzzusammenfassung</h3>
+                    <hr style="margin-top: 0">
 
-                    {% if not character.content.sections %}
+                    {% if not character.excerpt %}
                         <p>Hier steht noch nichts! Erinnere doch gerne den DM daran, für diesen Charakter etwas
                             epochales zu schreiben :)</p>
+                    {% else %}
+                        {{ character.excerpt | safe }}
                     {% endif %}
-                    {% for section in character.content.sections %}
-                        <div class="character-text-heading"><h2>{{ section.title }}</h2></div>
-                        <p style="white-space: pre-line;">{{ section.text }}</p>
-                        <hr>
-                    {% endfor %}
 
-                    {% if character.alt_images %}
-                        <div class="character-text-heading"><h2>Gallerie</h2></div>
-                        <div class="gallery-container">
-                            {% for img in character.alt_images %}
-                                <div class="gallery-element">
-                                    {% set character_name = character.name | lower | replace(" ", "-") %}
-                                    {% set alt = img | capitalize %}
-                                    {% set suffix = img | lower | replace(" ", "-") %}
-                                    {% set url = g.img_host + "characters/" + character_name %}
-                                    {% if suffix == 'artwork' %}
-                                        {% set url = url + ".png" %}
-                                        {% set alt = 'KI-Porträt' %}
-                                    {% else %}
-                                        {% set url = url + " " + suffix + ".png" %}
-                                    {% endif %}
+                    <h3 style="margin-bottom: 0">Biographie</h3>
+                    <hr style="margin-top: 0">
 
-                                    <img src="{{ url }}" alt="">
-                                    <h3 style="margin: 0">{{ alt }}</h3>
-                                </div>
-                            {% endfor %}
+                    {% if not character.biography %}
+                        <p>Hier steht noch nichts! Erinnere doch gerne den DM daran, für diesen Charakter etwas
+                            epochales zu schreiben :)</p>
+                    {% else %}
+                        {{ character.biography | safe }}
+                    {% endif %}
+
+                    <!--
+                    <h3 style="margin-bottom: 0">Gallerie</h3>
+                    <hr style="margin-top: 0">
+
+                    <div class="gallery-container">
+                        <div class="gallery-element" style="">
+                            {% set character_name = character.name | lower | replace(" ", "-") %}
+                            {% set alt = img | capitalize %}
+                            {% set suffix = img | lower | replace(" ", "-") %}
+                            {% set url = g.img_host + "characters/" + character_name %}
+
+                            <img src="{{ url }}.png" alt="" style="max-height: 500px">
+                            <img src="{{ url }}.jpg" alt="" style="max-height: 500px">
                         </div>
-                    {% endif %}
+                    </div>
+                    -->
+
                 </div>
             </div>
         </div>

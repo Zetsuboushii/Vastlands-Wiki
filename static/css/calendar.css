@@ -46,11 +46,15 @@
   background-image: url("../ui/table-background-purple.png");
   background-size: cover; }
 
+#calendar-table td {
+  background-image: url("../ui/table-background-white.png");
+  background-size: cover; }
+
 /* Markierungen */
 .today {
-  background-image: url("../ui/table-background-purple.png");
-  background-size: cover;
-  color: white; }
+  background-image: url("../ui/table-background-purple.png") !important;
+  background-size: cover !important;
+  color: white !important; }
 
 /* Für die Tageszahl im Feld */
 .day-number {

@@ -33,12 +33,13 @@
 
         <div class="characters-container">
             {% for character in characters | sort(attribute='name') %}
-                <div class="characters-element" data-letter="{{ character.name[0]|upper }}"
+                <div class="characters-element" data-letter="{{ character.name[0] | upper }}"
                      data-nationality="{{ character.nationality }}">
-                    {% set character_name = character.name | lower | replace(" ", "-") %}
+                    <!-- TODO completion status indicator -->
+                    {% set character_name = character.name | lower | replace(" ", "-") | replace("-&-", "") %}
                     <a href="{{ url_for('character', character_name=character_name) }}">
                         {% set url = g.img_host_resized + "characters/" + character_name %}
-                        <img src="{{ url }}{% if "artwork" in character.alt_images %} artwork{% endif %}.png" alt="">
+                        <img src="{{ url }} token.png" alt="">
                     </a>
                     <form action="{{ url_for('character', character_name=character_name) }}">
                         <button class="characters-element-name" type="submit">{{ character.name }}</button>
