@@ -1,6 +1,7 @@
 import random
 from datetime import date
 
+import requests
 from flask import Flask, render_template, request, g, redirect, url_for
 import json
 
@@ -57,6 +58,30 @@ def find_place_recursively(place_list, place_slug, parent_name=None):
                 return found, parent
 
     return None, None
+
+
+def check_alt_image_exists(name: str, timeout: float = 5.0) -> dict:
+    base_url = f"{g.img_host}characters/{name} alt"
+    extensions = ["png", "jpg"]
+
+    for ext in extensions:
+        url = f"{base_url}.{ext}"
+        try:
+            response = requests.head(url, timeout=timeout, allow_redirects=True)
+            if response.status_code == 200:
+                return {
+                    "alt_exists": True,
+                    "url": url,
+                    "status_code": response.status_code,
+                }
+        except requests.RequestException:
+            pass
+
+    return {
+        "alt_exists": False,
+        "url": None,
+        "status_code": None,
+    }
 
 
 journal = load_from_json("journal")
@@ -130,8 +155,10 @@ def character(character_name):
                 birthday_d, birthday_m, _ = character['birthday'].split('.')
                 birthday_string = f"{birthday_d}. Tag des {g.lore_months[int(birthday_m) - 1]}"
                 character['birthday'] = birthday_string
-            break
 
+            if check_alt_image_exists(char_name):
+                character['has_alt'] = True
+            break
 
     if character is None:
         return redirect('/')

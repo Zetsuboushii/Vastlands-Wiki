@@ -160,22 +160,27 @@
                         {{ character.biography | safe }}
                     {% endif %}
 
-                    <!--
                     <h3 style="margin-bottom: 0">Gallerie</h3>
                     <hr style="margin-top: 0">
 
                     <div class="gallery-container">
-                        <div class="gallery-element" style="">
-                            {% set character_name = character.name | lower | replace(" ", "-") %}
-                            {% set alt = img | capitalize %}
-                            {% set suffix = img | lower | replace(" ", "-") %}
-                            {% set url = g.img_host + "characters/" + character_name %}
-
-                            <img src="{{ url }}.png" alt="" style="max-height: 500px">
-                            <img src="{{ url }}.jpg" alt="" style="max-height: 500px">
+                        {% set character_name = character.name | lower | replace(" ", "-") %}
+                        {% set alt = img | capitalize %}
+                        {% set suffix = img | lower | replace(" ", "-") %}
+                        {% set url = g.img_host + "characters/" + character_name %}
+                        <div class="gallery-element">
+                            <img src="{{ url }}.png" alt="" style="max-height: 350px">
+                            <img src="{{ url }}.jpg" alt="" style="max-height: 350px">
+                            <h4 style="margin: 0">Charakter-Illustration</h4>
+                        </div>
+                        <div class="gallery-element">
+                            {% if character.has_alt %}
+                                <img src="{{ url }} alt.png" alt="" style="max-height: 350px">
+                                <img src="{{ url }} alt.jpg" alt="" style="max-height: 350px">
+                                <h4 style="margin: 0">Alternative Form</h4>
+                            {% endif %}
                         </div>
                     </div>
-                    -->
 
                 </div>
             </div>
