@@ -44,7 +44,7 @@ def before_request():
     g.img_host = image_subdomain + apex_domain + "dnd/"
     g.img_host_resized = image_subdomain + apex_domain + "resized/dnd/"
     g.current_date = date.today()
-    g.random_banner = f'ui/banner-{random.randint(1, 9)}.png'
+    g.random_banner = f'ui/banner-{random.randint(1, 3)}.png'
 
 
 def find_place_recursively(place_list, place_slug, parent_name=None):
