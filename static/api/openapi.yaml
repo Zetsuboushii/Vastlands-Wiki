@@ -21,6 +21,19 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/NPC'
+  /api/journal.json:
+    get:
+      summary: List of Journal Entries
+      operationId: listJournalEntries
+      responses:
+        '200':
+          description: Array of Journal Entries
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Journal Entry'
 
 components:
   schemas:
@@ -86,3 +99,12 @@ components:
       required:
         - id
         - name
+    Journal Entry:
+      type: object
+      properties:
+        title:
+          type: string
+          description: Title of Entry. Mainly 'Session \#{No. of Session}'
+        content:
+          type: string
+          description: HTML content of Entry
