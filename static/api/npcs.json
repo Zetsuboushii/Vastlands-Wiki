@@ -3468,7 +3468,7 @@
     "race": "Elfen",
     "alignment": "",
     "sex": "weiblich",
-    "age": null,
+    "age": 248,
     "birthday": "",
     "nationality": "Faergria",
     "likes": [],
@@ -6520,6 +6520,93 @@
     ],
     "functions": [
       "Hohefürstin des Wassers"
+    ],
+    "faith": [],
+    "excerpt": "",
+    "biography": ""
+  },
+  {
+    "id": "XlHSVK2nJ9q8lYhG",
+    "name": "Navarre",
+    "surname": "",
+    "title": "",
+    "race": "Wüstenelfen",
+    "alignment": "",
+    "sex": "männlich",
+    "age": null,
+    "birthday": "",
+    "nationality": "Vigias",
+    "likes": [],
+    "dislikes": [],
+    "bonds": [],
+    "functions": [],
+    "faith": [],
+    "excerpt": "",
+    "biography": ""
+  },
+  {
+    "id": "4xXuP2bIVu37F7lF",
+    "name": "Justine",
+    "surname": "",
+    "title": "Geist der Legendären Klinge",
+    "race": "Schutzgeister",
+    "alignment": "",
+    "sex": "weiblich",
+    "age": null,
+    "birthday": "",
+    "nationality": "Faergria",
+    "likes": [],
+    "dislikes": [],
+    "bonds": [
+      {
+        "name": "Inoro",
+        "relation": "Herr"
+      },
+      {
+        "name": "Balthus",
+        "relation": "Pfleger"
+      },
+      {
+        "name": "Nayru",
+        "relation": "Erbin des Schwertes"
+      }
+    ],
+    "functions": [
+      "Geist der Klinge \"Judikles\""
+    ],
+    "faith": [],
+    "excerpt": "",
+    "biography": ""
+  },
+  {
+    "id": "whW8VlAmQU9UsY9B",
+    "name": "Justine",
+    "surname": "",
+    "title": "Geist der Legendären Klinge",
+    "race": "Schutzgeister",
+    "alignment": "",
+    "sex": "weiblich",
+    "age": null,
+    "birthday": "",
+    "nationality": "Faergria",
+    "likes": [],
+    "dislikes": [],
+    "bonds": [
+      {
+        "name": "Inoro",
+        "relation": "Herr"
+      },
+      {
+        "name": "Balthus",
+        "relation": "Pfleger"
+      },
+      {
+        "name": "Nayru",
+        "relation": "Erbin des Schwertes"
+      }
+    ],
+    "functions": [
+      "Geist der Klinge \"Judikles\""
     ],
     "faith": [],
     "excerpt": "",
