@@ -258,12 +258,12 @@
   },
   {
     "id": "k68oNvzcDjD6MTFV",
-    "name": "Almund [hidden]",
-    "surname": "",
+    "name": "Almund",
+    "surname": "von Federthal",
     "title": "",
-    "race": null,
+    "race": "Menschen",
     "alignment": "",
-    "sex": "",
+    "sex": "männlich",
     "age": null,
     "birthday": "",
     "nationality": "Faergria",
@@ -1833,7 +1833,7 @@
     "sex": "männlich",
     "age": 136,
     "birthday": "05.04.",
-    "nationality": "Faergria",
+    "nationality": "Markath",
     "likes": [
       "Katzen"
     ],
@@ -3104,7 +3104,7 @@
     "sex": "weiblich",
     "age": null,
     "birthday": "",
-    "nationality": "Faergria",
+    "nationality": "Animus",
     "likes": [],
     "dislikes": [],
     "bonds": [],
@@ -4108,6 +4108,25 @@
       "Malusdur",
       "Alcuin"
     ],
+    "excerpt": "",
+    "biography": ""
+  },
+  {
+    "id": "XlHSVK2nJ9q8lYhG",
+    "name": "Navarre",
+    "surname": "",
+    "title": "",
+    "race": "Wüstenelfen",
+    "alignment": "",
+    "sex": "männlich",
+    "age": null,
+    "birthday": "",
+    "nationality": "Vigias",
+    "likes": [],
+    "dislikes": [],
+    "bonds": [],
+    "functions": [],
+    "faith": [],
     "excerpt": "",
     "biography": ""
   },
@@ -6521,25 +6540,6 @@
     "functions": [
       "Hohefürstin des Wassers"
     ],
-    "faith": [],
-    "excerpt": "",
-    "biography": ""
-  },
-  {
-    "id": "XlHSVK2nJ9q8lYhG",
-    "name": "Navarre",
-    "surname": "",
-    "title": "",
-    "race": "Wüstenelfen",
-    "alignment": "",
-    "sex": "männlich",
-    "age": null,
-    "birthday": "",
-    "nationality": "Vigias",
-    "likes": [],
-    "dislikes": [],
-    "bonds": [],
-    "functions": [],
     "faith": [],
     "excerpt": "",
     "biography": ""

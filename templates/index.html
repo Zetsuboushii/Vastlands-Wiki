@@ -28,9 +28,9 @@
 
                     <hr>
 
-                    <div class="home-left-text-heading"><h2>Aktuelles</h2></div>
-                    <div class="home-left-text-subsection">
-                        {% for page in journal | reverse%}
+                    <div class="home-left-text-heading"><h2>Session-Logbuch</h2></div>
+                    <div class="home-left-text-subsection" style="max-height: 500px; overflow-y: scroll">
+                        {% for page in journal | reverse %}
                             <div class="home-left-text-subheading"><h3>{{ page.title }}</h3></div>
                             {{ page.content | safe }}
                         {% endfor %}
