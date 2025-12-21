@@ -21,14 +21,24 @@
                 <div class="home-left-text">
                     <!--<img src="{{ url_for('static', filename='imgs/totv_logo.png') }}" style="max-width: 500px">-->
 
-                    <p>
-                        Herzlich willkommen im <b style="font-family: 'Grenze Gotisch'">Tome of the Vastlands</b>! Auf
-                        dieser Website findest Du etliche Informationen und Neuigkeiten rund um die Welt der Vastlands.
+                    <p>Vor dir liegt ein alter Foliant, gebunden aus Erinnerung und Schwur. Das
+                        <b style="font-family: 'Grenze Gotisch'">Tome of the Vastlands</b>! Seine Seiten tragen die
+                        Namen der Völker, die Zeichen der Götter und die Pfade der Länder, wie sie waren, wie sie sind
+                        und wie sie vielleicht sein werden. Kein Wort ruht hier ohne Gewicht, kein Name ohne Nachhall.
                     </p>
+                    <p>Dies ist ein heiliger Hort des Wissens, bewahrt von jenen, die hören konnten, wo andere
+                        schwiegen. Doch auch dieses Werk ist unvollständig, denn Wahrheit offenbart sich nur dem, der
+                        sucht. So bist auch du gerufen, zu lesen, zu deuten und zu schreiben – nicht als Herr über die
+                        Geschichte, sondern als ihr Diener.</p>
+
+                    <p><b style="font-family: 'Grenze Gotisch'">Tritt ein mit Ehrfurcht. Verweile mit Bedacht.</b></p>
+
 
                     <hr>
 
-                    <div class="home-left-text-heading"><h2>Session-Logbuch</h2></div>
+                    <div class="home-left-text-heading">
+                        <h2><a style="text-decoration: underline; color: white" href="{{ url_for('character', character_name='Nayru') }}">Nayrus</a> Logbuch</h2>
+                    </div>
                     <div class="home-left-text-subsection" style="max-height: 500px; overflow-y: scroll">
                         {% for page in journal | reverse %}
                             <div class="home-left-text-subheading"><h3>{{ page.title }}</h3></div>
