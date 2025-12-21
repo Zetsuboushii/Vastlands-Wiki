@@ -22,7 +22,7 @@ def load_from_json(filename):
 @app.before_request
 def before_request():
     g.site_title = "Tome of the Vastlands"
-    g.version_number = "5.4.0"
+    g.version_number = "5.4.1"
 
     g.ingame_date = load_from_json("current_date")["current_ingame_date"]
     g.lore_days = ["Lunesdag", "Flamdag", "Quellsdag", "Waldsdag", "Goldag", "Terrasdag", "Sunnesdag"]
@@ -269,36 +269,6 @@ def tierlist():
     characters_list.sort(key=lambda character: character["name"].lower().replace(" & ", ""))
 
     return render_template('tierlist.html', characters=characters_list)
-
-
-@app.route('/timeline/')
-def timeline():
-    EPOCH_OFFSETS = {
-        "vor langer Zeit": -9999999,
-        "vor Vereinigung": -4000,
-        "nach Vereinigung": 0
-    }
-
-    events = load_from_json("timeline")
-
-    def parse_event_date(event):
-        epoch = event["epoch"]
-        offset = EPOCH_OFFSETS.get(epoch, 0)
-
-        if "date" not in event or not event["date"]:
-            return (offset, 0, 0)
-
-        day_str, month_str, year_str = event["date"].split(".")
-        day = int(day_str)
-        month = int(month_str)
-        year = int(year_str)
-        sort_year = offset + year
-
-        return (sort_year, month, day)
-
-    events.sort(key=parse_event_date)
-
-    return render_template("timeline.html", events=events)
 
 
 if __name__ == '__main__':
