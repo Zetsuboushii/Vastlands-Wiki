@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"/>
+    <title>Gentarium | {{ g.site_title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/compendium.css') }}">
+
+</head>
+<body>
+
+{% include "banner.html" %}
+
+<div class="page-containter">
+    {% include "header.html" %}
+
+    <div class="page">
+            <div class="themed-container">
+                {% for element in compendium | sort(attribute='title') %}
+                    <div class="themed-element">
+                        {% set race_name = element.title | lower | replace(" ", "-") %}
+                        {% set example = element.example | lower | replace(" ", "-") | replace("-&-", "") %}
+                        {% set url = g.img_host + "characters/" + example + " token.png" %}
+                        <a href="{{ url_for('gentarium_entry', entry_name=race_name) }}">
+                            <img src="{{ url }}" alt="">
+                        </a>
+                        <form action="{{ url_for('gentarium_entry', entry_name=race_name) }}">
+                            <button type="submit">{{ element.title }}</button>
+                        </form>
+                    </div>
+                {% endfor %}
+            </div>
+    </div>
+</div>
+
+</body>
+</html>
