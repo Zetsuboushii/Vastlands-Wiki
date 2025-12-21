@@ -12,11 +12,11 @@
     flex-wrap: wrap;
 
     img {
-        top: 60px;
-        height: 400px;
-        position: relative;
-        object-fit: contain;
-      }
+      top: 60px;
+      height: 400px;
+      position: relative;
+      object-fit: contain;
+    }
 
     .theologarium-column {
       margin: 10px;
@@ -75,6 +75,24 @@
 
     .theologarium-text-box {
       width: 700px;
+
+      table {
+        width: 100%;
+        font-family: "Grenze Gotisch";
+        font-size: 20px;
+        border-collapse: collapse;
+
+        tr {
+          background-image: url('../ui/input-background.png');
+          background-size: contain;
+          text-align: center;
+
+          td:first-child p {
+            color: white;
+            padding-left: 90px;
+          }
+        }
+      }
 
       p {
         text-align: justify;

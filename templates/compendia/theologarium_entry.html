@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"/>
-    <title>{{ entry.name }} | {{ g.site_title }}</title>
+    <title>{{ entry.title }} | {{ g.site_title }}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/theologarium.css') }}">
 </head>
@@ -16,36 +16,16 @@
     <div class="page">
         <div class="theologarium-container">
             <div class="theologarium-row">
+                {% set entry_name = entry.title | lower | replace(" ", "-") %}
+                {% set url = g.img_host + "crests/" + entry_name + "-crest.png" %}
+                <img src="{{ url }}" alt="">
                 <div class="theologarium-name">
-                    <h1>{{ entry.name }}</h1>
+                    <h1>{{ entry.title }}</h1>
                 </div>
             </div>
-            <div class="theologarium-row">
-                <div class="theologarium-column">
-                    {% set entry_name = entry.name | lower | replace(" ", "-") %}
-                    {% set url = g.img_host + "crests/" + entry_name + "-crest.png" %}
-                    <img src="{{ url }}" alt="">
-                    <button>Zeichen</button>
-                </div>
-                <div class="theologarium-column">
-                    {% set central_figure = entry.central_figure | lower | replace(" ", "-") %}
-                    {% set url = g.img_host + "characters/" + central_figure + ".png" %}
-                    <img src="{{ url }}" alt="">
-                    <button>Zentrale Figur - {{ entry.central_figure }}</button>
-                </div>
-            </div>
-
             <div class="theologarium-row">
                 <div class="theologarium-text-box">
-                    <p>{{ entry.content.excerpt }}</p>
-
-                    <hr>
-
-                    {% for section in entry.content.sections %}
-                        <div class="theologarium-text-heading"><h2>{{ section.title }}</h2></div>
-                        <p>{{ section.text }}</p>
-                        <hr>
-                    {% endfor %}
+                    {{ entry.content | safe }}
                 </div>
             </div>
         </div>

@@ -12,11 +12,11 @@
         "Gebirge der Sünde": {
           "name": "Gebirge der Sünde",
           "children": {
-            "Sünden-Anwesen": {
-              "name": "Sünden-Anwesen",
+            "Herbstlaub-Anwesen": {
+              "name": "Herbstlaub-Anwesen",
               "children": {},
               "scenes": [
-                "Sünden-Anwesen"
+                "Herbstlaub-Anwesen"
               ]
             }
           },
@@ -74,19 +74,89 @@
         "Markath": {
           "name": "Markath",
           "children": {
-            "Aschener Wald": {
-              "name": "Aschener Wald",
-              "children": {},
-              "scenes": [
-                "Aschener Wald"
-              ]
+            "Farblose Berge": {
+              "name": "Farblose Berge",
+              "children": {
+                "Aschener Wald": {
+                  "name": "Aschener Wald",
+                  "children": {},
+                  "scenes": [
+                    "Aschener Wald"
+                  ]
+                }
+              },
+              "scenes": []
             },
-            "Ausgrabungsstätte": {
-              "name": "Ausgrabungsstätte",
+            "Felder von Undraridor": {
+              "name": "Felder von Undraridor",
+              "children": {
+                "Undraridor": {
+                  "name": "Undraridor",
+                  "children": {},
+                  "scenes": [
+                    "Undraridor"
+                  ]
+                }
+              },
+              "scenes": []
+            },
+            "Grannar-Sumpfland": {
+              "name": "Grannar-Sumpfland",
               "children": {},
-              "scenes": [
-                "Ausgrabungsstätte"
-              ]
+              "scenes": []
+            },
+            "Llurthargothr-Hochland": {
+              "name": "Llurthargothr-Hochland",
+              "children": {
+                "Ausgrabungsstätte": {
+                  "name": "Ausgrabungsstätte",
+                  "children": {},
+                  "scenes": [
+                    "Ausgrabungsstätte"
+                  ]
+                },
+                "Llurthargothr": {
+                  "name": "Llurthargothr",
+                  "children": {
+                    "Magieakademie von Markath": {
+                      "name": "Magieakademie von Markath",
+                      "children": {},
+                      "scenes": [
+                        "Llurthargothr - Magieakademie von Markath"
+                      ]
+                    },
+                    "Schloss des Herzogs": {
+                      "name": "Schloss des Herzogs",
+                      "children": {},
+                      "scenes": [
+                        "Llurthargothr - Schloss des Herzogs"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                }
+              },
+              "scenes": []
+            },
+            "See von Chylath": {
+              "name": "See von Chylath",
+              "children": {},
+              "scenes": []
+            },
+            "Stille Ebenen": {
+              "name": "Stille Ebenen",
+              "children": {},
+              "scenes": []
+            },
+            "Tal von Mubraz": {
+              "name": "Tal von Mubraz",
+              "children": {},
+              "scenes": []
+            },
+            "Wandelwälder": {
+              "name": "Wandelwälder",
+              "children": {},
+              "scenes": []
             }
           },
           "scenes": []
@@ -533,6 +603,34 @@
                           "children": {},
                           "scenes": [
                             "Frelia - Blütenschloss"
+                          ]
+                        },
+                        "Freifrau Seloue Universität": {
+                          "name": "Freifrau Seloue Universität",
+                          "children": {},
+                          "scenes": [
+                            "Frelia - Freifrau Seloue Universität"
+                          ]
+                        },
+                        "Große Bibliothek von Hal": {
+                          "name": "Große Bibliothek von Hal",
+                          "children": {},
+                          "scenes": [
+                            "Frelia - Große Bibliothek von Hal"
+                          ]
+                        },
+                        "Hauptwache der Magiepolizei": {
+                          "name": "Hauptwache der Magiepolizei",
+                          "children": {},
+                          "scenes": [
+                            "Frelia - Hauptwache der Magiepolizei"
+                          ]
+                        },
+                        "Juliannes Bar": {
+                          "name": "Juliannes Bar",
+                          "children": {},
+                          "scenes": [
+                            "Frelia - Juliannes Bar"
                           ]
                         }
                       },
@@ -1201,6 +1299,11 @@
               ]
             }
           },
+          "scenes": []
+        },
+        "Vigias": {
+          "name": "Vigias",
+          "children": {},
           "scenes": []
         }
       },

@@ -1,7 +1,6 @@
 import random
 from collections import defaultdict
 from datetime import date
-
 import requests
 from flask import Flask, render_template, request, g, redirect
 import json
@@ -23,7 +22,7 @@ def load_from_json(filename):
 @app.before_request
 def before_request():
     g.site_title = "Tome of the Vastlands"
-    g.version_number = "5.1.0"
+    g.version_number = "5.3.0"
 
     g.ingame_date = load_from_json("current_date")["current_ingame_date"]
     g.lore_days = ["Lunesdag", "Flamdag", "Quellsdag", "Waldsdag", "Goldag", "Terrasdag", "Sunnesdag"]
@@ -245,7 +244,7 @@ def theologarium():
 @app.route('/theologarium/<entry_name>/')
 def theologarium_entry(entry_name):
     entries = load_from_json("compendia/theologarium")
-    entry = next((e for e in entries if e.get("name", "").lower().replace(" ", "-") == entry_name), None)
+    entry = next((e for e in entries if e.get("title", "").lower().replace(" ", "-") == entry_name), None)
 
     return render_template('compendia/theologarium_entry.html', entry=entry)
 

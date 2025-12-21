@@ -1,76 +1,38 @@
 [
   {
-    "name": "Abgrundkirche der Glimmenden Sünde",
-    "central_figure": "Thanatos",
-    "type": "Kult",
-    "content": {
-      "excerpt": "",
-      "sections": [
-      ]
-    }
+    "title": "Abgrundkirche der Glimmenden Sünde",
+    "content": "<table><tbody><tr><td><p>Art des Glaubens</p></td><td><p>Kult</p></td></tr><tr><td><p>Zentrale Figur</p></td><td><p>Thanatos</p></td></tr><tr><td><p>Glaubensstandorte</p></td><td><p>Markath;Faergria</p></td></tr></tbody></table><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>"
   },
   {
-    "name": "Kinder des Waldes",
-    "central_figure": "Farone",
-    "type": "Anerkannte Glaubensgemeinschaft",
-    "content": {
-      "excerpt": "",
-      "sections": [
-      ]
-    }
+    "title": "Kinder des Waldes",
+    "content": ""
   },
   {
-    "name": "Kirche der Himmlischen Gerechtigkeit",
-    "central_figure": "Justicia",
-    "type": "Anerkannte Glaubensgemeinschaft",
-    "content": {
-      "excerpt": "",
-      "sections": [
-      ]
-    }
+    "title": "Kirche der Himmlischen Gerechtigkeit",
+    "content": ""
   },
   {
-    "name": "Klauen des Hasses",
-    "central_figure": "Malusdur",
-    "type": "Kult",
-    "content": {
-      "excerpt": "",
-      "sections": [
-      ]
-    }
+    "title": "Klauen des Hasses",
+    "content": ""
   },
   {
-    "name": "Orden der Heilenden Hand",
-    "central_figure": "Hama",
-    "type": "Anerkannte Glaubensgemeinschaft",
-    "content": {
-      "excerpt": "ghsoeg osghsoieh s osgehoih gseoighsoeigs sioehgsoihg soiehg osegosiheoghs  ghso gsoghsoei gse sgh osgh.",
-      "sections": [
-        {
-          "title": "ghesoi gsheoighsoi",
-          "text": "ghsoig seighs ogihsoighsoighsoigs eoigshoighsoegi\nhegoishg seioghsoieghs sis ohgsgshoisehos gs sohgos soghsoi gsoegh gos hgi\nshgosi gpawj pofapv dvhiosi vaüwvj ioifboiscn acai wiao voshoiaishbro vh oashvn coi"
-        }
-      ]
-    }
+    "title": "Orden der Heilenden Hand",
+    "content": ""
   },
   {
-    "name": "Glückauf der Aurelia",
-    "central_figure": "Aurelia",
-    "type": "Lokaler Glaube",
-    "content": {
-      "excerpt": "",
-      "sections": [
-      ]
-    }
+    "title": "Glückauf der Aurelia",
+    "content": ""
   },
   {
-    "name": "Schicksalsjünger Fortunas",
-    "central_figure": "Fortuna",
-    "type": "Anerkannte Glaubensgemeinschaft",
-    "content": {
-      "excerpt": "",
-      "sections": [
-      ]
-    }
+    "title": "Schicksalsjünger Fortunas",
+    "content": ""
+  },
+  {
+    "title": "Einklang der Götter",
+    "content": ""
+  },
+  {
+    "title": "Schmiede der Seelen",
+    "content": ""
   }
 ]
