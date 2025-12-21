@@ -15,26 +15,43 @@
 
     <div class="page">
         <div class="filters">
-            <div id="letter-filter">
+            <div id="letter-filter" class="filter-section is-collapsed">
                 <div class="filter-title"><h3>Nach Anfangsbuchstabe filtern</h3></div>
-                <button data-letter="all">Alle</button>
-                {% for letter in letters %}
-                    <button data-letter="{{ letter }}">{{ letter }}</button>
-                {% endfor %}
+                <div class="filter-content">
+                    <button data-letter="all">Alle</button>
+                    {% for letter in letters %}
+                        <button data-letter="{{ letter }}">{{ letter }}</button>
+                    {% endfor %}
+                </div>
             </div>
-            <div id="nationality-filter">
+
+            <div id="nationality-filter" class="filter-section is-collapsed">
                 <div class="filter-title"><h3>Nach Staatsangehörigkeit filtern</h3></div>
-                <button data-nationality="all">Alle</button>
-                {% for nation in nationalities %}
-                    <button data-nationality="{{ nation }}">{{ nation }}</button>
-                {% endfor %}
+                <div class="filter-content">
+                    <button data-nationality="all">Alle</button>
+                    {% for nation in nationalities %}
+                        <button data-nationality="{{ nation }}">{{ nation }}</button>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div id="race-filter" class="filter-section is-collapsed">
+                <div class="filter-title"><h3>Nach Rasse filtern</h3></div>
+                <div class="filter-content">
+                    <button data-race="all">Alle</button>
+                    {% for race in races %}
+                        <button data-race="{{ race }}">{{ race }}</button>
+                    {% endfor %}
+                </div>
             </div>
         </div>
 
         <div class="characters-container">
             {% for character in characters | sort(attribute='name') %}
-                <div class="characters-element" data-letter="{{ character.name[0] | upper }}"
-                     data-nationality="{{ character.nationality }}">
+                <div class="characters-element"
+                     data-letter="{{ character.name[0] | upper }}"
+                     data-nationality="{{ character.nationality }}"
+                     data-race="{{ character.race }}">
                     <!-- TODO completion status indicator -->
                     {% set character_name = character.name | lower | replace(" ", "-") | replace("-&-", "") %}
                     <a href="{{ url_for('character', character_name=character_name) }}">
@@ -52,14 +69,40 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
+        // --- Collapsible filter sections (default collapsed) ---
+        function setCollapsed(section, collapsed) {
+            section.classList.toggle('is-collapsed', collapsed);
+            section.classList.toggle('is-expanded', !collapsed);
+
+            const content = section.querySelector('.filter-content');
+            if (content) content.style.display = collapsed ? 'none' : '';
+        }
+
+        document.querySelectorAll('.filter-section').forEach(section => {
+            // start collapsed
+            setCollapsed(section, true);
+
+            const h3 = section.querySelector('.filter-title h3');
+            if (h3) {
+                h3.style.cursor = 'pointer';
+                h3.addEventListener('click', () => {
+                    const currentlyCollapsed = section.classList.contains('is-collapsed');
+                    setCollapsed(section, !currentlyCollapsed);
+                });
+            }
+        });
+
+        // --- Filters ---
         let activeLetterFilter = "all";
         let activeNationalityFilter = "all";
+        let activeRaceFilter = "all";
 
         function applyFilters() {
             const characters = document.querySelectorAll('.characters-element');
             characters.forEach(elem => {
                 const elemLetter = elem.getAttribute('data-letter');
                 const elemNation = elem.getAttribute('data-nationality');
+                const elemRace = elem.getAttribute('data-race');
                 let show = true;
 
                 if (activeLetterFilter !== "all" && elemLetter !== activeLetterFilter) {
@@ -68,6 +111,10 @@
                 if (activeNationalityFilter !== "all" && elemNation !== activeNationalityFilter) {
                     show = false;
                 }
+                if (activeRaceFilter !== "all" && elemRace !== activeRaceFilter) {
+                    show = false;
+                }
+
                 elem.style.display = show ? '' : 'none';
             });
         }
@@ -82,6 +129,13 @@
         document.querySelectorAll('#nationality-filter button').forEach(btn => {
             btn.addEventListener('click', function () {
                 activeNationalityFilter = this.getAttribute('data-nationality');
+                applyFilters();
+            });
+        });
+
+        document.querySelectorAll('#race-filter button').forEach(btn => {
+            btn.addEventListener('click', function () {
+                activeRaceFilter = this.getAttribute('data-race');
                 applyFilters();
             });
         });

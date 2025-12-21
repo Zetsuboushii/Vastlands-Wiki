@@ -1,0 +1,1211 @@
+{
+  "name": "root",
+  "children": {
+    "Animus": {
+      "name": "Animus",
+      "children": {
+        "Garten der Magie": {
+          "name": "Garten der Magie",
+          "children": {},
+          "scenes": []
+        },
+        "Gebirge der Sünde": {
+          "name": "Gebirge der Sünde",
+          "children": {
+            "Sünden-Anwesen": {
+              "name": "Sünden-Anwesen",
+              "children": {},
+              "scenes": [
+                "Sünden-Anwesen"
+              ]
+            }
+          },
+          "scenes": []
+        },
+        "Hof der Gerechtigkeit": {
+          "name": "Hof der Gerechtigkeit",
+          "children": {
+            "Gericht des Himmels": {
+              "name": "Gericht des Himmels",
+              "children": {},
+              "scenes": [
+                "Gericht des Himmels"
+              ]
+            }
+          },
+          "scenes": []
+        },
+        "See des Schicksals": {
+          "name": "See des Schicksals",
+          "children": {},
+          "scenes": []
+        },
+        "Wüste der Seelen": {
+          "name": "Wüste der Seelen",
+          "children": {},
+          "scenes": []
+        },
+        "Zentraler Platz": {
+          "name": "Zentraler Platz",
+          "children": {},
+          "scenes": [
+            "Zentraler Platz"
+          ]
+        }
+      },
+      "scenes": []
+    },
+    "Jenseits der Zeit": {
+      "name": "Jenseits der Zeit",
+      "children": {
+        "Uhrenturm im Nichts": {
+          "name": "Uhrenturm im Nichts",
+          "children": {},
+          "scenes": [
+            "Uhrenturm im Nichts"
+          ]
+        }
+      },
+      "scenes": []
+    },
+    "Tenebris": {
+      "name": "Tenebris",
+      "children": {
+        "Markath": {
+          "name": "Markath",
+          "children": {
+            "Aschener Wald": {
+              "name": "Aschener Wald",
+              "children": {},
+              "scenes": [
+                "Aschener Wald"
+              ]
+            },
+            "Ausgrabungsstätte": {
+              "name": "Ausgrabungsstätte",
+              "children": {},
+              "scenes": [
+                "Ausgrabungsstätte"
+              ]
+            }
+          },
+          "scenes": []
+        }
+      },
+      "scenes": []
+    },
+    "Terralithia": {
+      "name": "Terralithia",
+      "children": {
+        "Faergria": {
+          "name": "Faergria",
+          "children": {
+            "Adrestia": {
+              "name": "Adrestia",
+              "children": {
+                "Adrestia-Ebene": {
+                  "name": "Adrestia-Ebene",
+                  "children": {},
+                  "scenes": []
+                },
+                "Halbinsel der Verbannten": {
+                  "name": "Halbinsel der Verbannten",
+                  "children": {
+                    "Drakensumpf": {
+                      "name": "Drakensumpf",
+                      "children": {
+                        "Hütte von Craindre": {
+                          "name": "Hütte von Craindre",
+                          "children": {},
+                          "scenes": [
+                            "Drakensumpf - Hütte von Craindre"
+                          ]
+                        }
+                      },
+                      "scenes": [
+                        "Drakensumpf"
+                      ]
+                    },
+                    "Niddarvellir": {
+                      "name": "Niddarvellir",
+                      "children": {
+                        "Schattenmarktplatz": {
+                          "name": "Schattenmarktplatz",
+                          "children": {},
+                          "scenes": [
+                            "Niddarvellir - Schattenmarktplatz (Tempel)"
+                          ]
+                        }
+                      },
+                      "scenes": []
+                    }
+                  },
+                  "scenes": []
+                },
+                "Königsklippen": {
+                  "name": "Königsklippen",
+                  "children": {
+                    "Aegir": {
+                      "name": "Aegir",
+                      "children": {
+                        "Schloss Aegir": {
+                          "name": "Schloss Aegir",
+                          "children": {},
+                          "scenes": [
+                            "Aegir - Schloss Aegir (Thronsaal des Königs)"
+                          ]
+                        }
+                      },
+                      "scenes": []
+                    }
+                  },
+                  "scenes": []
+                },
+                "Mondblickinsel": {
+                  "name": "Mondblickinsel",
+                  "children": {
+                    "Ruinen des Mondes": {
+                      "name": "Ruinen des Mondes",
+                      "children": {},
+                      "scenes": [
+                        "Ruinen des Mondes"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "Nördliche Irrwälder": {
+                  "name": "Nördliche Irrwälder",
+                  "children": {
+                    "Lichtung des Mondzirkels": {
+                      "name": "Lichtung des Mondzirkels",
+                      "children": {},
+                      "scenes": [
+                        "Lichtung des Mondzirkels"
+                      ]
+                    },
+                    "Sleargs Hütte": {
+                      "name": "Sleargs Hütte",
+                      "children": {},
+                      "scenes": [
+                        "Sleargs Hütte"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "Plateau der Legenden": {
+                  "name": "Plateau der Legenden",
+                  "children": {
+                    "Orrin": {
+                      "name": "Orrin",
+                      "children": {
+                        "Herz des Waldes": {
+                          "name": "Herz des Waldes",
+                          "children": {},
+                          "scenes": [
+                            "Orrin - Herz des Waldes"
+                          ]
+                        },
+                        "Schwerthain": {
+                          "name": "Schwerthain",
+                          "children": {},
+                          "scenes": [
+                            "Orrin - Schwerthain"
+                          ]
+                        }
+                      },
+                      "scenes": [
+                        "Orrin"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "Regenfalltal": {
+                  "name": "Regenfalltal",
+                  "children": {
+                    "Renais": {
+                      "name": "Renais",
+                      "children": {},
+                      "scenes": [
+                        "Renais"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "See der Jugend": {
+                  "name": "See der Jugend",
+                  "children": {},
+                  "scenes": []
+                },
+                "Sonnenscheininsel": {
+                  "name": "Sonnenscheininsel",
+                  "children": {},
+                  "scenes": []
+                },
+                "Sternstaubinsel": {
+                  "name": "Sternstaubinsel",
+                  "children": {},
+                  "scenes": []
+                }
+              },
+              "scenes": []
+            },
+            "Escrigria": {
+              "name": "Escrigria",
+              "children": {
+                "Einsame Schneefelder": {
+                  "name": "Einsame Schneefelder",
+                  "children": {
+                    "Nordholm": {
+                      "name": "Nordholm",
+                      "children": {
+                        "Außenposten Ost": {
+                          "name": "Außenposten Ost",
+                          "children": {},
+                          "scenes": [
+                            "Nordholm - Außenposten Ost"
+                          ]
+                        },
+                        "Außenposten West": {
+                          "name": "Außenposten West",
+                          "children": {},
+                          "scenes": [
+                            "Nordholm - Außenposten West"
+                          ]
+                        }
+                      },
+                      "scenes": [
+                        "Nordholm (Tavernenviertel)"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "Eisige Hinterlande": {
+                  "name": "Eisige Hinterlande",
+                  "children": {
+                    "Stephans Hütte": {
+                      "name": "Stephans Hütte",
+                      "children": {},
+                      "scenes": [
+                        "Stephans Hütte"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "Fröstelnde Moräne": {
+                  "name": "Fröstelnde Moräne",
+                  "children": {
+                    "Höhlenheiligtum des Kämpfers": {
+                      "name": "Höhlenheiligtum des Kämpfers",
+                      "children": {},
+                      "scenes": [
+                        "Höhlenheiligtum des Kämpfers"
+                      ]
+                    },
+                    "Krofenheim": {
+                      "name": "Krofenheim",
+                      "children": {},
+                      "scenes": [
+                        "Krofenheim"
+                      ]
+                    },
+                    "Krofenheim-Brücke": {
+                      "name": "Krofenheim-Brücke",
+                      "children": {},
+                      "scenes": [
+                        "Krofenheim-Brücke"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "Kronen-Schneeberge": {
+                  "name": "Kronen-Schneeberge",
+                  "children": {
+                    "Gerards Hütte": {
+                      "name": "Gerards Hütte",
+                      "children": {},
+                      "scenes": [
+                        "Gerards Hütte"
+                      ]
+                    },
+                    "Kronenpass": {
+                      "name": "Kronenpass",
+                      "children": {},
+                      "scenes": [
+                        "Kronenpass"
+                      ]
+                    },
+                    "Schneespitze": {
+                      "name": "Schneespitze",
+                      "children": {},
+                      "scenes": [
+                        "Schneespitze"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "Mondscheintal": {
+                  "name": "Mondscheintal",
+                  "children": {
+                    "Kloster der Himmlischen Recken": {
+                      "name": "Kloster der Himmlischen Recken",
+                      "children": {},
+                      "scenes": [
+                        "Kloster der Himmlischen Recken"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "Tal der Drei Winde": {
+                  "name": "Tal der Drei Winde",
+                  "children": {
+                    "Diebeslager": {
+                      "name": "Diebeslager",
+                      "children": {},
+                      "scenes": [
+                        "Diebeslager"
+                      ]
+                    },
+                    "Schachendorf": {
+                      "name": "Schachendorf",
+                      "children": {},
+                      "scenes": [
+                        "Schachendorf"
+                      ]
+                    },
+                    "Schicksalspass": {
+                      "name": "Schicksalspass",
+                      "children": {
+                        "Tempel": {
+                          "name": "Tempel",
+                          "children": {},
+                          "scenes": [
+                            "Schicksalspass - Tempel"
+                          ]
+                        }
+                      },
+                      "scenes": [
+                        "Schicksalspass"
+                      ]
+                    },
+                    "Windige Kirchenruine": {
+                      "name": "Windige Kirchenruine",
+                      "children": {},
+                      "scenes": [
+                        "Windige Kirchenruine"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                }
+              },
+              "scenes": []
+            },
+            "Farodris": {
+              "name": "Farodris",
+              "children": {
+                "Dämmerwald": {
+                  "name": "Dämmerwald",
+                  "children": {},
+                  "scenes": []
+                },
+                "Dickicht der Wahrheit": {
+                  "name": "Dickicht der Wahrheit",
+                  "children": {
+                    "Giftdornsee": {
+                      "name": "Giftdornsee",
+                      "children": {},
+                      "scenes": [
+                        "Giftdornsee"
+                      ]
+                    },
+                    "Hütte von Noi": {
+                      "name": "Hütte von Noi",
+                      "children": {},
+                      "scenes": [
+                        "Hütte von Noi"
+                      ]
+                    },
+                    "Inidal-Grenzposten": {
+                      "name": "Inidal-Grenzposten",
+                      "children": {},
+                      "scenes": [
+                        "Inidal-Grenzposten"
+                      ]
+                    },
+                    "Quell der Wünsche": {
+                      "name": "Quell der Wünsche",
+                      "children": {},
+                      "scenes": [
+                        "Quell der Wünsche"
+                      ]
+                    },
+                    "Yerenas": {
+                      "name": "Yerenas",
+                      "children": {
+                        "Taverne auf dem Berg": {
+                          "name": "Taverne auf dem Berg",
+                          "children": {},
+                          "scenes": [
+                            "Yerenas - Taverne auf dem Berg"
+                          ]
+                        },
+                        "Tempelgarten": {
+                          "name": "Tempelgarten",
+                          "children": {},
+                          "scenes": [
+                            "Yerenas - Tempelgarten"
+                          ]
+                        },
+                        "Verschwiegener Tempel": {
+                          "name": "Verschwiegener Tempel",
+                          "children": {},
+                          "scenes": [
+                            "Yerenas - Verschwiegener Tempel"
+                          ]
+                        }
+                      },
+                      "scenes": [
+                        "Yerenas (Zentrum)"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "Katzenaugenbucht": {
+                  "name": "Katzenaugenbucht",
+                  "children": {},
+                  "scenes": []
+                },
+                "Nebelhain": {
+                  "name": "Nebelhain",
+                  "children": {},
+                  "scenes": []
+                },
+                "Vergessene Wälder": {
+                  "name": "Vergessene Wälder",
+                  "children": {
+                    "Tempel der Zeit": {
+                      "name": "Tempel der Zeit",
+                      "children": {},
+                      "scenes": [
+                        "Tempel der Zeit"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "Zwillingsbucht": {
+                  "name": "Zwillingsbucht",
+                  "children": {
+                    "Östliche Turmruine": {
+                      "name": "Östliche Turmruine",
+                      "children": {},
+                      "scenes": [
+                        "Östliche Turmruine"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                }
+              },
+              "scenes": []
+            },
+            "Hal": {
+              "name": "Hal",
+              "children": {
+                "Blühender Fjord": {
+                  "name": "Blühender Fjord",
+                  "children": {
+                    "Frelia": {
+                      "name": "Frelia",
+                      "children": {
+                        "Blütenschloss": {
+                          "name": "Blütenschloss",
+                          "children": {},
+                          "scenes": [
+                            "Frelia - Blütenschloss"
+                          ]
+                        }
+                      },
+                      "scenes": []
+                    },
+                    "Taverne an der Südstraße": {
+                      "name": "Taverne an der Südstraße",
+                      "children": {},
+                      "scenes": [
+                        "Taverne an der Südstraße"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "Drachenzahnkap": {
+                  "name": "Drachenzahnkap",
+                  "children": {
+                    "Lycia": {
+                      "name": "Lycia",
+                      "children": {},
+                      "scenes": [
+                        "Lycia"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "Molida": {
+                  "name": "Molida",
+                  "children": {},
+                  "scenes": []
+                },
+                "Nördliche Labyrinthinsel": {
+                  "name": "Nördliche Labyrinthinsel",
+                  "children": {},
+                  "scenes": []
+                },
+                "Obsidian-Grenzlande": {
+                  "name": "Obsidian-Grenzlande",
+                  "children": {
+                    "Banditen-Straßensperre": {
+                      "name": "Banditen-Straßensperre",
+                      "children": {},
+                      "scenes": [
+                        "Banditen-Straßensperre"
+                      ]
+                    },
+                    "Elpis": {
+                      "name": "Elpis",
+                      "children": {},
+                      "scenes": [
+                        "Elpis"
+                      ]
+                    },
+                    "Elpis-Brücke": {
+                      "name": "Elpis-Brücke",
+                      "children": {},
+                      "scenes": [
+                        "Elpis-Brücke"
+                      ]
+                    },
+                    "Grabmal der Alten Fürsten": {
+                      "name": "Grabmal der Alten Fürsten",
+                      "children": {},
+                      "scenes": [
+                        "Grabmal der Alten Fürsten"
+                      ]
+                    },
+                    "Kloster Schicksalsweg": {
+                      "name": "Kloster Schicksalsweg",
+                      "children": {},
+                      "scenes": [
+                        "Kloster Schicksalsweg"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "Südliche Labyrinthinsel": {
+                  "name": "Südliche Labyrinthinsel",
+                  "children": {},
+                  "scenes": []
+                }
+              },
+              "scenes": []
+            },
+            "Inidal": {
+              "name": "Inidal",
+              "children": {
+                "Güldenes Grabland": {
+                  "name": "Güldenes Grabland",
+                  "children": {},
+                  "scenes": []
+                },
+                "Insel des Windes": {
+                  "name": "Insel des Windes",
+                  "children": {
+                    "Dorf über den Wolken": {
+                      "name": "Dorf über den Wolken",
+                      "children": {},
+                      "scenes": [
+                        "Dorf über den Wolken"
+                      ]
+                    },
+                    "Schloss über den Wolken": {
+                      "name": "Schloss über den Wolken",
+                      "children": {},
+                      "scenes": [
+                        "Schloss über den Wolken"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "Jammernde Wälder": {
+                  "name": "Jammernde Wälder",
+                  "children": {},
+                  "scenes": []
+                },
+                "Ödland der Verdammnis": {
+                  "name": "Ödland der Verdammnis",
+                  "children": {},
+                  "scenes": []
+                },
+                "Ruineninsel": {
+                  "name": "Ruineninsel",
+                  "children": {},
+                  "scenes": []
+                },
+                "Skelettbucht": {
+                  "name": "Skelettbucht",
+                  "children": {},
+                  "scenes": []
+                },
+                "Südliche Pestlande": {
+                  "name": "Südliche Pestlande",
+                  "children": {},
+                  "scenes": []
+                },
+                "Tal der Schatten": {
+                  "name": "Tal der Schatten",
+                  "children": {
+                    "Alt-Aegir": {
+                      "name": "Alt-Aegir",
+                      "children": {
+                        "Tempel": {
+                          "name": "Tempel",
+                          "children": {},
+                          "scenes": [
+                            "Alt-Aegir - Tempel"
+                          ]
+                        }
+                      },
+                      "scenes": [
+                        "Alt-Aegir (Großer Platz)"
+                      ]
+                    },
+                    "Große Mauer von Alt-Aegir": {
+                      "name": "Große Mauer von Alt-Aegir",
+                      "children": {},
+                      "scenes": [
+                        "Große Mauer von Alt-Aegir",
+                        "Große Mauer von Alt-Aegir (Vergangenheit; Schlacht)",
+                        "Große Mauer von Alt-Aegir (Vergangenheit)"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "Zwielichtsteppe": {
+                  "name": "Zwielichtsteppe",
+                  "children": {
+                    "Larudia": {
+                      "name": "Larudia",
+                      "children": {},
+                      "scenes": [
+                        "Larudia"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                }
+              },
+              "scenes": []
+            },
+            "Kluirm": {
+              "name": "Kluirm",
+              "children": {
+                "Milpaenkahrn": {
+                  "name": "Milpaenkahrn",
+                  "children": {
+                    "Kristallmine": {
+                      "name": "Kristallmine",
+                      "children": {},
+                      "scenes": [
+                        "Kristallmine"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "Uxbeligard": {
+                  "name": "Uxbeligard",
+                  "children": {
+                    "Bernsteintempel": {
+                      "name": "Bernsteintempel",
+                      "children": {},
+                      "scenes": [
+                        "Bernsteintempel"
+                      ]
+                    },
+                    "Blitzaltar": {
+                      "name": "Blitzaltar",
+                      "children": {},
+                      "scenes": [
+                        "Blitzaltar"
+                      ]
+                    },
+                    "Garadzar": {
+                      "name": "Garadzar",
+                      "children": {
+                        "Große Mine": {
+                          "name": "Große Mine",
+                          "children": {},
+                          "scenes": [
+                            "Garadzar - Große Mine"
+                          ]
+                        }
+                      },
+                      "scenes": [
+                        "Garadzar"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                }
+              },
+              "scenes": []
+            },
+            "Thaugrien": {
+              "name": "Thaugrien",
+              "children": {
+                "Dünsberg-Plataeu": {
+                  "name": "Dünsberg-Plataeu",
+                  "children": {
+                    "Alt-Dünsberg": {
+                      "name": "Alt-Dünsberg",
+                      "children": {},
+                      "scenes": [
+                        "Alt-Dünsberg"
+                      ]
+                    },
+                    "Dünsberg": {
+                      "name": "Dünsberg",
+                      "children": {
+                        "Jagdschloss": {
+                          "name": "Jagdschloss",
+                          "children": {},
+                          "scenes": [
+                            "Dünsberg - Jagdschloss (1F)",
+                            "Dünsberg - Jagdschloss (2F)"
+                          ]
+                        }
+                      },
+                      "scenes": []
+                    },
+                    "Graekurith": {
+                      "name": "Graekurith",
+                      "children": {},
+                      "scenes": [
+                        "Graekurith"
+                      ]
+                    },
+                    "Igmusurs Hütte": {
+                      "name": "Igmusurs Hütte",
+                      "children": {},
+                      "scenes": [
+                        "Igmusurs Hütte"
+                      ]
+                    },
+                    "Knorrwurzelschrein": {
+                      "name": "Knorrwurzelschrein",
+                      "children": {},
+                      "scenes": [
+                        "Knorrwurzelschrein"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "Klamm des Tellius": {
+                  "name": "Klamm des Tellius",
+                  "children": {
+                    "Alte Zollburg": {
+                      "name": "Alte Zollburg",
+                      "children": {},
+                      "scenes": [
+                        "Alte Zollburg"
+                      ]
+                    },
+                    "Anwesen von Lysander": {
+                      "name": "Anwesen von Lysander",
+                      "children": {},
+                      "scenes": [
+                        "Anwesen von Lysander"
+                      ]
+                    },
+                    "Große Zwergenbrücke": {
+                      "name": "Große Zwergenbrücke",
+                      "children": {},
+                      "scenes": [
+                        "Große Zwergenbrücke"
+                      ]
+                    },
+                    "Tellius": {
+                      "name": "Tellius",
+                      "children": {
+                        "Palast des Wassers": {
+                          "name": "Palast des Wassers",
+                          "children": {},
+                          "scenes": [
+                            "Tellius - Palast des Wassers"
+                          ]
+                        },
+                        "Seeschrein": {
+                          "name": "Seeschrein",
+                          "children": {},
+                          "scenes": [
+                            "Tellius - Seeschrein"
+                          ]
+                        }
+                      },
+                      "scenes": []
+                    },
+                    "Tunnel des Aufstiegs": {
+                      "name": "Tunnel des Aufstiegs",
+                      "children": {},
+                      "scenes": [
+                        "Tunnel des Aufstiegs"
+                      ]
+                    },
+                    "Tunnel zum Meeresreich": {
+                      "name": "Tunnel zum Meeresreich",
+                      "children": {},
+                      "scenes": [
+                        "Tunnel zum Meeresreich"
+                      ]
+                    },
+                    "Unterwasser": {
+                      "name": "Unterwasser",
+                      "children": {
+                        "Meerestempel": {
+                          "name": "Meerestempel",
+                          "children": {},
+                          "scenes": [
+                            "Unterwasser - Meerestempel"
+                          ]
+                        },
+                        "Versunkene Burg": {
+                          "name": "Versunkene Burg",
+                          "children": {},
+                          "scenes": [
+                            "Unterwasser - Versunkene Burg"
+                          ]
+                        }
+                      },
+                      "scenes": []
+                    }
+                  },
+                  "scenes": []
+                },
+                "Tarporsee": {
+                  "name": "Tarporsee",
+                  "children": {
+                    "Tarporbach": {
+                      "name": "Tarporbach",
+                      "children": {},
+                      "scenes": [
+                        "Tarporbach"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "Thaugrien-Hochpfalz": {
+                  "name": "Thaugrien-Hochpfalz",
+                  "children": {
+                    "Grenbrock": {
+                      "name": "Grenbrock",
+                      "children": {
+                        "Kathedrale der Himmlischen Gerechtigkeit": {
+                          "name": "Kathedrale der Himmlischen Gerechtigkeit",
+                          "children": {},
+                          "scenes": [
+                            "Grenbrock - Kathedrale der Himmlischen Gerechtigkeit (Außen)",
+                            "Grenbrock - Kathedrale der Himmlischen Gerechtigkeit (Innen)",
+                            "Grenbrock - Kathedrale der Himmlischen Gerechtigkeit (Katakomben)",
+                            "Grenbrock - Kathedrale der Himmlischen Gerechtigkeit (Krypta)"
+                          ]
+                        }
+                      },
+                      "scenes": []
+                    },
+                    "Nördliches Armeelager": {
+                      "name": "Nördliches Armeelager",
+                      "children": {},
+                      "scenes": [
+                        "Nördliches Armeelager"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "Thaugrine Weinberge": {
+                  "name": "Thaugrine Weinberge",
+                  "children": {
+                    "Östliches Armeelager": {
+                      "name": "Östliches Armeelager",
+                      "children": {},
+                      "scenes": [
+                        "Östliches Armeelager"
+                      ]
+                    },
+                    "Schrein der Harmonie": {
+                      "name": "Schrein der Harmonie",
+                      "children": {},
+                      "scenes": [
+                        "Schrein der Harmonie"
+                      ]
+                    },
+                    "Taverne an der Elpis-Brücke": {
+                      "name": "Taverne an der Elpis-Brücke",
+                      "children": {},
+                      "scenes": [
+                        "Taverne an der Elpis-Brücke"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "Thaugrines Küstenland": {
+                  "name": "Thaugrines Küstenland",
+                  "children": {
+                    "Grotte des Lebens": {
+                      "name": "Grotte des Lebens",
+                      "children": {},
+                      "scenes": [
+                        "Grotte des Lebens"
+                      ]
+                    },
+                    "Korshaven": {
+                      "name": "Korshaven",
+                      "children": {},
+                      "scenes": [
+                        "Korshaven"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                }
+              },
+              "scenes": []
+            },
+            "Tinorland": {
+              "name": "Tinorland",
+              "children": {
+                "Alljordbucht": {
+                  "name": "Alljordbucht",
+                  "children": {
+                    "Brodia": {
+                      "name": "Brodia",
+                      "children": {
+                        "Taverne von Linus": {
+                          "name": "Taverne von Linus",
+                          "children": {},
+                          "scenes": [
+                            "Brodia - Taverne von Linus"
+                          ]
+                        }
+                      },
+                      "scenes": []
+                    },
+                    "HIndriks Sägemühle": {
+                      "name": "HIndriks Sägemühle",
+                      "children": {},
+                      "scenes": [
+                        "HIndriks Sägemühle"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "Immergrünes Küstenland": {
+                  "name": "Immergrünes Küstenland",
+                  "children": {
+                    "Tinorke": {
+                      "name": "Tinorke",
+                      "children": {
+                        "Schloss Tinorke": {
+                          "name": "Schloss Tinorke",
+                          "children": {},
+                          "scenes": [
+                            "Tinorke - Schloss Tinorke (1F)",
+                            "Tinorke - Schloss Tinorke (2F)"
+                          ]
+                        }
+                      },
+                      "scenes": []
+                    }
+                  },
+                  "scenes": []
+                },
+                "Nokoto-Sumpfland": {
+                  "name": "Nokoto-Sumpfland",
+                  "children": {
+                    "Alte Burgruine": {
+                      "name": "Alte Burgruine",
+                      "children": {},
+                      "scenes": [
+                        "Alte Burgruine"
+                      ]
+                    },
+                    "Sümpfe des Vergessens": {
+                      "name": "Sümpfe des Vergessens",
+                      "children": {},
+                      "scenes": [
+                        "Sümpfe des Vergessens"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "Schlangenschweif-Archipel": {
+                  "name": "Schlangenschweif-Archipel",
+                  "children": {},
+                  "scenes": []
+                },
+                "Schwelende Alpen": {
+                  "name": "Schwelende Alpen",
+                  "children": {
+                    "Altar der Funken": {
+                      "name": "Altar der Funken",
+                      "children": {},
+                      "scenes": [
+                        "Altar der Funken"
+                      ]
+                    },
+                    "Feuersanktuarium": {
+                      "name": "Feuersanktuarium",
+                      "children": {},
+                      "scenes": [
+                        "Feuersanktuarium"
+                      ]
+                    },
+                    "Glühender Bergpass": {
+                      "name": "Glühender Bergpass",
+                      "children": {},
+                      "scenes": [
+                        "Glühender Bergpass"
+                      ]
+                    },
+                    "Hufeisen-Taverne": {
+                      "name": "Hufeisen-Taverne",
+                      "children": {},
+                      "scenes": [
+                        "Hufeisen-Taverne"
+                      ]
+                    },
+                    "Nifl": {
+                      "name": "Nifl",
+                      "children": {
+                        "Badehaus": {
+                          "name": "Badehaus",
+                          "children": {},
+                          "scenes": [
+                            "Nifl - Badehaus"
+                          ]
+                        }
+                      },
+                      "scenes": []
+                    }
+                  },
+                  "scenes": []
+                },
+                "Sturmschild-Taiga": {
+                  "name": "Sturmschild-Taiga",
+                  "children": {
+                    "Daein": {
+                      "name": "Daein",
+                      "children": {},
+                      "scenes": [
+                        "Daein"
+                      ]
+                    },
+                    "Hütte von Citrio": {
+                      "name": "Hütte von Citrio",
+                      "children": {},
+                      "scenes": [
+                        "Hütte von Citrio"
+                      ]
+                    },
+                    "Kloster der Heilenden Hand": {
+                      "name": "Kloster der Heilenden Hand",
+                      "children": {},
+                      "scenes": [
+                        "Kloster der Heilenden Hand"
+                      ]
+                    },
+                    "Letzte Ruhestätte der Könige": {
+                      "name": "Letzte Ruhestätte der Könige",
+                      "children": {},
+                      "scenes": [
+                        "Letzte Ruhestätte der Könige"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "Tinorische Amaranthfelder": {
+                  "name": "Tinorische Amaranthfelder",
+                  "children": {},
+                  "scenes": []
+                }
+              },
+              "scenes": []
+            }
+          },
+          "scenes": []
+        },
+        "Kradian": {
+          "name": "Kradian",
+          "children": {
+            "Mesmudor": {
+              "name": "Mesmudor",
+              "children": {},
+              "scenes": [
+                "Mesmudor"
+              ]
+            },
+            "Riesstedt": {
+              "name": "Riesstedt",
+              "children": {},
+              "scenes": [
+                "Riesstedt"
+              ]
+            },
+            "Zarashan": {
+              "name": "Zarashan",
+              "children": {},
+              "scenes": [
+                "Zarashan"
+              ]
+            }
+          },
+          "scenes": []
+        },
+        "Tougenkyou": {
+          "name": "Tougenkyou",
+          "children": {
+            "Teefeld": {
+              "name": "Teefeld",
+              "children": {},
+              "scenes": [
+                "Teefeld"
+              ]
+            }
+          },
+          "scenes": []
+        }
+      },
+      "scenes": []
+    }
+  },
+  "scenes": []
+}

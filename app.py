@@ -1,8 +1,9 @@
 import random
+from collections import defaultdict
 from datetime import date
 
 import requests
-from flask import Flask, render_template, request, g, redirect, url_for
+from flask import Flask, render_template, request, g, redirect
 import json
 
 from flask_frozen import Freezer
@@ -15,14 +16,14 @@ app.config['FREEZER_DEFAULT_MIMETYPE'] = 'text/html'
 
 
 def load_from_json(filename):
-    with open(f'static/api/{filename}.json', encoding="utf8") as file:
+    with open(f'static/api/v2/{filename}.json', encoding="utf8") as file:
         return json.load(file)
 
 
 @app.before_request
 def before_request():
     g.site_title = "Tome of the Vastlands"
-    g.version_number = "4.0.5"
+    g.version_number = "5.0.0"
 
     g.ingame_date = load_from_json("current_date")["current_ingame_date"]
     g.lore_days = ["Lunesdag", "Flamdag", "Quellsdag", "Waldsdag", "Goldag", "Terrasdag", "Sunnesdag"]
@@ -34,8 +35,10 @@ def before_request():
 
     g.categories = {
         "Charaktere": "characters",
-        "Kompendien": "compendia",
-        "Orte": "places",
+        "Gentarium": "gentarium",
+        "Linguarium": "linguarium",
+        "Theologarium": "theologarium",
+        "Orte": "locations",
         "Tierlist": "tierlist"
     }
 
@@ -76,20 +79,14 @@ def check_alt_image_exists(name: str, timeout: float = 5.0) -> tuple[bool, str, 
     return False, None, None
 
 
-journal = load_from_json("journal")
-enemy_list = load_from_json("bestiarium")
-actions_list = load_from_json("actions")
-places_list = load_from_json("places")
-abilities_list = load_from_json("abilities")
-
-
 @app.route('/')
 def index():
-    characters_list = load_from_json("npcs")
+    characters_list = load_from_json("characters")
     characters_list[:] = [c for c in characters_list if "," not in c["name"] and "[hidden]" not in c["name"]]
     characters_list.sort(key=lambda character: character["name"].lower().replace(" & ", ""))
     calendar_list = load_from_json("calendar")
     current_day = g.current_date
+    journal = load_from_json("journal")
 
     birthday_characters = []
     for char in characters_list:
@@ -110,12 +107,14 @@ def index():
 
 @app.route('/characters/')
 def characters():
-    characters_list = load_from_json("npcs")
+    characters_list = load_from_json("characters")
     characters_list[:] = [c for c in characters_list if "," not in c["name"] and "[hidden]" not in c["name"]]
     characters_list.sort(key=lambda character: character["name"].lower().replace(" & ", ""))
 
     letters = sorted({character['name'][0].upper() for character in characters_list})
     nationalities = sorted({character['nationality'] for character in characters_list if "nationality" in character})
+    races = sorted({character['race'] for character in characters_list if
+                    "race" in character and character.get('race') is not None})
 
     def is_complete(entry):
         for value in entry.values():
@@ -126,12 +125,12 @@ def characters():
         return True
 
     return render_template('characters.html', characters=characters_list, letters=letters, nationalities=nationalities,
-                           is_complete=is_complete)
+                           races=races, is_complete=is_complete)
 
 
 @app.route('/characters/<character_name>/')
 def character(character_name):
-    characters_list = load_from_json("npcs")
+    characters_list = load_from_json("characters")
     characters_list[:] = [c for c in characters_list if "," not in c["name"] and "[hidden]" not in c["name"]]
     characters_list.sort(key=lambda character: character["name"].lower().split(",")[0])
     character = None
@@ -145,7 +144,7 @@ def character(character_name):
 
             if character['birthday']:
                 birthday_d, birthday_m, _ = character['birthday'].split('.')
-                birthday_string = f"{birthday_d}. Tag des {g.lore_months[int(birthday_m) - 1]}"
+                birthday_string = f"{birthday_d.lstrip('0')}. Tag des {g.lore_months[int(birthday_m) - 1]}es"
                 character['birthday'] = birthday_string
 
             character['has_alt'], character['alt_img_url'], _ = check_alt_image_exists(character_name)
@@ -153,25 +152,28 @@ def character(character_name):
 
     if character is None:
         return redirect('/')
-    return render_template('character.html', character=character)
+    return render_template('character.html', character=character, characters=characters_list)
 
 
-@app.route('/places/')
-def places():
-    return render_template('places.html', places=places_list)
+@app.route('/locations/')
+def locations():
+    locations_list = load_from_json("locations")
+    return render_template('locations.html', locations=locations_list)
 
 
-@app.route('/places/<place_name>/')
-def place(place_name):
-    place_data, parent = find_place_recursively(places_list, place_name)
+@app.route('/locations/<location_name>/')
+def location(location_name):
+    locations_list = load_from_json("locations")
+    location_data, parent = find_place_recursively(locations_list, location_name)
 
-    return render_template('place.html', place=place_data, parent=parent)
+    return render_template('place.html', location=location_data, parent=parent)
 
 
-@app.route('/edit/places/<place_name>/', methods=['POST'])
+@app.route('/edit/locations/<place_name>/', methods=['POST'])
 def edit_place(place_name):
     if app.debug:
-        place_data, _ = find_place_recursively(places_list, place_name)
+        locations_list = load_from_json("locations")
+        place_data, _ = find_place_recursively(locations_list, place_name)
 
         if request.method == "POST":
             return
@@ -182,90 +184,70 @@ def compendia():
     compendium_list = load_from_json("compendia")
     compendium_list.sort(key=lambda compendium: compendium["name"])
 
-    return render_template('compendia.html', compendium_list=compendium_list)
+    return render_template('old/compendia.html', compendium_list=compendium_list)
 
 
-@app.route('/compendium/<compendium_name>/')
-def compendium(compendium_name):
-    compendium_list = load_from_json("compendia")
-    compendium_data = None
+@app.route('/compendium/gentarium/')
+def gentarium():
+    gentarium_data = load_from_json(f"compendia/gentarium")
+    characters_list = load_from_json("characters")
 
-    for compendium in compendium_list:
-        if compendium['name'].lower() == compendium_name.lower():
-            compendium_data = load_from_json(compendium['name'].lower())
-            break
+    by_race = defaultdict(list)
+    for c in characters_list:
+        name = c.get("name", "")
+        if "[hidden]" not in name.lower():
+            by_race[c.get("race")].append(c)
 
-    if compendium_name == "gentarium":
-        characters_list = load_from_json("characters")
-        for race in compendium_data:
-            for character in characters_list:
-                if character["race"] == race["name"]:
-                    race["example"] = character["name"]
-    elif compendium_name in ["gladiarium", "antiquarium"]:
-        types = []
-        for entry in compendium_data:
-            types.append(entry['type'])
-        types = list(set(types))
-        return render_template('compendium.html', compendium_name=compendium_name, compendium=compendium_data,
-                               types=types)
-    elif compendium_name == "magickarium":
-        compendium_list.sort(key=lambda compendium: compendium["name"])
-        types = []
-        associations = []
-        for entry in compendium_data:
-            types.append(entry['type'])
-            associations.append(entry['association'])
-        types = list(set(types))
-        associations = list(set(associations))
-        return render_template('compendium.html', compendium_name=compendium_name, compendium=compendium_data,
-                               types=types, associations=associations)
+    for race in gentarium_data:
+        matches = by_race.get(race.get("title"), [])
+        race["example"] = random.choice(matches)["name"] if matches else None
 
-    return render_template('compendium.html', compendium_name=compendium_name, compendium=compendium_data)
+    return render_template('compendia/gentarium.html', compendium=gentarium_data)
 
 
-@app.route('/compendium/<compendium_name>/<entry_name>/')
-def compendium_entry(compendium_name, entry_name):
-    entry = None
+@app.route('/compendium/gentarium/<entry_name>/')
+def gentarium_entry(entry_name):
+    entries = load_from_json("compendia/gentarium")
+    entry = next((e for e in entries if e.get("title", "").lower() == entry_name.lower()), None)
+    characters_list = load_from_json("characters")
 
-    for entry_json in load_from_json(compendium_name):
-        temp_name = entry_json['name'].lower()
-        temp_name = temp_name.replace(" ", "-")
-        if temp_name == entry_name:
-            entry = entry_json
+    by_race = defaultdict(list)
+    for character in characters_list:
+        name = character.get("name", "")
+        if "[hidden]" not in name.lower():
+            by_race[character.get("race")].append(character)
 
-    match compendium_name:
-        case "theologarium":
-            return render_template('theologarium.html', entry=entry)
-        case "gentarium":
-            characters_list = load_from_json("characters")
-            for character in characters_list:
-                if character["race"] == entry_name.capitalize():
-                    entry["example"] = character["name"]
-            return render_template('gentarium.html', entry=entry)
-        case "linguarium":
-            return render_template('linguarium.html', entry=entry)
-        case "bestiarium":
-            actions = []
-            for enemy_action in entry["actions"]:
-                for action in actions_list:
-                    if action["name"] == enemy_action:
-                        actions.append(action)
-            return render_template('bestiarium.html', enemy=entry, actions=actions)
-        case "classarium":
-            return render_template('classarium.html')
-        case "herbarium":
-            return render_template('herbarium.html')
-        case "gladiarium":
-            abilities = []
-            for weapon_ability in entry["abilities"]:
-                for ability in abilities_list:
-                    if ability['name'] == weapon_ability:
-                        abilities.append(ability)
-            return render_template('gladiarium.html', weapon=entry, abilities=abilities)
-        case "magickarium":
-            return render_template('magickarium.html', spell=entry)
-        case "antiquarium":
-            return render_template('antiquarium.html', item=entry)
+        matches = by_race.get(entry.get("title"), [])
+        entry["example"] = random.choice(matches)["name"] if matches else None
+    return render_template('compendia/gentarium_entry.html', entry=entry)
+
+
+@app.route('/compendium/linguarium/')
+def linguarium():
+    linguarium_data = load_from_json(f"compendia/linguarium")
+    return render_template('compendia/linguarium.html', compendium=linguarium_data)
+
+
+@app.route('/compendium/linguarium/<entry_name>/')
+def linguarium_entry(entry_name):
+    entries = load_from_json("compendia/linguarium")
+    entry = next((e for e in entries if e.get("name", "").lower() == entry_name), None)
+
+    return render_template('compendia/linguarium_entry.html', entry=entry)
+
+
+@app.route('/compendium/theologarium/')
+def theologarium():
+    theologarium_data = load_from_json(f"compendia/theologarium")
+    return render_template('compendia/theologarium.html', compendium=theologarium_data)
+
+
+@app.route('/compendium/theologarium/<entry_name>/')
+def theologarium_entry(entry_name):
+    entries = load_from_json("compendia/theologarium")
+    entry = next((e for e in entries if e.get("name", "").lower().replace(" ", "-") == entry_name), None)
+
+    return render_template('compendia/theologarium_entry.html', entry=entry)
 
 
 @app.route('/holidays/<holiday_name>/')
@@ -283,7 +265,7 @@ def holidays(holiday_name):
 
 @app.route('/tierlist/')
 def tierlist():
-    characters_list = load_from_json("npcs")
+    characters_list = load_from_json("characters")
     characters_list[:] = [c for c in characters_list if "," not in c["name"] and "[hidden]" not in c["name"]]
     characters_list.sort(key=lambda character: character["name"].lower().replace(" & ", ""))
 

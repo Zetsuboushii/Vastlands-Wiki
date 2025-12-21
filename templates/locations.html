@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"/>
+    <title>Orte | {{ g.site_title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/characters.css') }}">
+</head>
+<body>
+
+{% include "banner.html" %}
+
+{# ---------------------------------------
+   Recursive macro to render location tree
+   --------------------------------------- #}
+{% macro render_node(node, level=0) %}
+    <ul class="location-level-{{ level }} collapsible-list">
+        {% for name, child in node.children.items() %}
+            <li class="location-node level-{{ level }}">
+                <button>
+                    <span><a href="{{ url_for('location', location_name=name) }}">{{ name }}</a></span>
+                </button>
+
+                {# Optional: list scenes attached to this node
+                {% if child.scenes %}
+                    <ul class="scene-list">
+                        {% for scene in child.scenes %}
+                            <li class="scene">{{ scene }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+                #}
+
+                {# Recurse into children #}
+                {% if child.children %}
+                    {{ render_node(child, level + 1) }}
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+{% endmacro %}
+
+<div class="page-containter">
+    {% include "header.html" %}
+
+    <div class="page">
+        <div class="characters-container">
+            <iframe src="https://map.zetsuboushii.site/" style="margin-top: 20px; width: 90%; height: 1000px"></iframe>
+            <h2 style="width: 100%; text-align: center">Elementarebenen</h2>
+            {{ render_node(locations) }}
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.collapsible-list > li > button').forEach(button => {
+        button.addEventListener('click', () => {
+            const listItem = button.parentElement;
+            listItem.classList.toggle('expanded');
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -8,7 +8,7 @@ servers:
   - url: https://tome.zetsuboushii.site
 
 paths:
-  /api/npcs.json:
+  /api/v2/npcs.json:
     get:
       summary: List of all NPCs
       operationId: listNPCs
@@ -21,7 +21,7 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/NPC'
-  /api/journal.json:
+  /api/v2/journal.json:
     get:
       summary: List of Journal Entries
       operationId: listJournalEntries
@@ -34,6 +34,19 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Journal Entry'
+  /api/v2/compendia/gentarium.json:
+    get:
+      summary: List of Races
+      operationId: listRaces
+      responses:
+        '200':
+          description: Array of Races
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Race'
 
 components:
   schemas:
@@ -105,6 +118,15 @@ components:
         title:
           type: string
           description: Title of Entry. Mainly 'Session \#{No. of Session}'
+        content:
+          type: string
+          description: HTML content of Entry
+    Race:
+      type: object
+      properties:
+        title:
+          type: string
+          description: Name of Race Entry
         content:
           type: string
           description: HTML content of Entry

@@ -27,4 +27,4 @@ def transform_actions(input_file, output_file):
 
 
 if __name__ == "__main__":
-    transform_actions("actions.json", "actions.json")
+    transform_actions("actions.json", "v1/actions.json")

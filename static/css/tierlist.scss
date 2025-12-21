@@ -38,6 +38,30 @@ label {
   font-family: "Grenze Gotisch";
 }
 
+.tierlist-form {
+  text-align: center;
+}
+
+.tierlist-data-heading {
+  top: 10px;
+  position: relative;
+  z-index: 1;
+  background-image: url('../ui/text-heading-backdrop.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 336px;
+  color: white;
+
+  h2 {
+    text-align: center;
+    left: -8px;
+    top: 14px;
+    margin: 0;
+    position: relative;
+  }
+}
+
 #tierlistForm {
   width: 100%;
   display: flex;
@@ -61,5 +85,4 @@ label {
       text-decoration: underline;
     }
   }
-
 }

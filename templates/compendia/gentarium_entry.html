@@ -17,23 +17,15 @@
         <div class="theologarium-container">
             <div class="theologarium-row">
                 {% set example = entry.example | lower | replace(" ", "-") %}
-                {% set url = g.img_host + "characters/" + example + ".png" %}
+                {% set url = g.img_host + "characters/" + example + " token.png" %}
                 <img src="{{ url }}" alt="">
                 <div class="theologarium-name">
-                    <h1>{{ entry.name }}</h1>
+                    <h1>{{ entry.title }}</h1>
                 </div>
             </div>
             <div class="theologarium-row">
                 <div class="theologarium-text-box">
-                    <p>{{ entry.content.excerpt }}</p>
-
-                    <hr>
-
-                    {% for section in entry.content.sections %}
-                        <div class="theologarium-text-heading"><h2>{{ section.title }}</h2></div>
-                        <p>{{ section.text }}</p>
-                        <hr>
-                    {% endfor %}
+                    {{ entry.content | safe }}
                 </div>
             </div>
         </div>

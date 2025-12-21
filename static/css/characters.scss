@@ -47,21 +47,23 @@
 .filters {
   text-align: center;
 
-  .filter-title {
-    margin-top: 20px;
-    position: relative;
-    z-index: 1;
-    background-image: url('../ui/field-name-background.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 46px;
-    color: white;
-    background-position: center;
-
-    h3 {
-      top: 7px;
-      margin: 0;
+  .filter-section {
+    .filter-title {
+      margin-top: 20px;
       position: relative;
+      z-index: 1;
+      background-image: url('../ui/field-name-background.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 46px;
+      color: white;
+      background-position: center;
+
+      h3 {
+        top: 7px;
+        margin: 0;
+        position: relative;
+      }
     }
   }
 
@@ -92,6 +94,19 @@
   }
 
   #nationality-filter {
+    button {
+      background-image: url("../ui/button-text.png");
+      background-size: contain;
+      width: 250px;
+      height: 67px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  #race-filter {
     button {
       background-image: url("../ui/button-text.png");
       background-size: contain;

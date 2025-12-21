@@ -1,87 +1,113 @@
 .characters-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
-  .characters-container .characters-element {
-    margin: 10px;
-    width: 300px;
-    height: auto;
-    text-align: center;
-    background-image: url("../ui/image-background.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%; }
-    .characters-container .characters-element img {
-      height: 256px;
-      max-width: 256px;
-      position: relative;
-      bottom: -24px;
-      object-fit: contain; }
-    .characters-container .characters-element button {
-      position: relative;
-      top: 10px;
-      z-index: 1;
-      background-image: url("../ui/name-backdrop-3.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-color: transparent;
-      background-position-y: 2px;
-      border: none;
-      height: 70px;
-      width: 300px;
-      color: white;
-      font-family: "Grenze Gotisch";
-      font-size: 24px;
-      cursor: pointer; }
-      .characters-container .characters-element button:hover {
-        text-decoration: underline; }
+  justify-content: center;
+}
+.characters-container .characters-element {
+  margin: 10px;
+  width: 300px;
+  height: auto;
+  text-align: center;
+  background-image: url("../ui/image-background.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.characters-container .characters-element img {
+  height: 256px;
+  max-width: 256px;
+  position: relative;
+  bottom: -24px;
+  object-fit: contain;
+}
+.characters-container .characters-element button {
+  position: relative;
+  top: 10px;
+  z-index: 1;
+  background-image: url("../ui/name-backdrop-3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position-y: 2px;
+  border: none;
+  height: 70px;
+  width: 300px;
+  color: white;
+  font-family: "Grenze Gotisch";
+  font-size: 24px;
+  cursor: pointer;
+}
+.characters-container .characters-element button:hover {
+  text-decoration: underline;
+}
 
 .filters {
-  text-align: center; }
-  .filters .filter-title {
-    margin-top: 20px;
-    position: relative;
-    z-index: 1;
-    background-image: url("../ui/field-name-background.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 46px;
-    color: white;
-    background-position: center; }
-    .filters .filter-title h3 {
-      top: 7px;
-      margin: 0;
-      position: relative; }
-  .filters button {
-    color: white;
-    font-family: "Grenze Gotisch";
-    font-size: 18px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer; }
-    .filters button:hover {
-      text-decoration: underline; }
-  .filters #letter-filter button {
-    background-image: url("../ui/button-square.png");
-    background-size: contain;
-    width: 45px;
-    height: 45px; }
-    .filters #letter-filter button:hover {
-      text-decoration: underline; }
-  .filters #nationality-filter button {
-    background-image: url("../ui/button-text.png");
-    background-size: contain;
-    width: 250px;
-    height: 67px; }
-    .filters #nationality-filter button:hover {
-      text-decoration: underline; }
+  text-align: center;
+}
+.filters .filter-section .filter-title {
+  margin-top: 20px;
+  position: relative;
+  z-index: 1;
+  background-image: url("../ui/field-name-background.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 46px;
+  color: white;
+  background-position: center;
+}
+.filters .filter-section .filter-title h3 {
+  top: 7px;
+  margin: 0;
+  position: relative;
+}
+.filters button {
+  color: white;
+  font-family: "Grenze Gotisch";
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.filters button:hover {
+  text-decoration: underline;
+}
+.filters #letter-filter button {
+  background-image: url("../ui/button-square.png");
+  background-size: contain;
+  width: 45px;
+  height: 45px;
+}
+.filters #letter-filter button:hover {
+  text-decoration: underline;
+}
+.filters #nationality-filter button {
+  background-image: url("../ui/button-text.png");
+  background-size: contain;
+  width: 250px;
+  height: 67px;
+}
+.filters #nationality-filter button:hover {
+  text-decoration: underline;
+}
+.filters #race-filter button {
+  background-image: url("../ui/button-text.png");
+  background-size: contain;
+  width: 250px;
+  height: 67px;
+}
+.filters #race-filter button:hover {
+  text-decoration: underline;
+}
 
 .collapsible-list ul {
   display: block;
-  margin-left: 20px; }
+  margin-left: 20px;
+}
 .collapsible-list li {
-  list-style-type: none; }
+  list-style-type: none;
+}
 .collapsible-list .expanded > ul {
-  display: none; }
+  display: none;
+}
 .collapsible-list button {
   font-family: "Grenze Gotisch";
   font-size: 18px;
@@ -90,18 +116,22 @@
   padding: 0;
   cursor: pointer;
   display: flex;
-  align-items: center; }
-  .collapsible-list button span {
-    margin-left: 5px; }
-    .collapsible-list button span a {
-      color: black; }
-  .collapsible-list button::before {
-    content: "";
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url("../ui/button-square.png");
-    background-size: cover;
-    margin-right: 5px; }
+  align-items: center;
+}
+.collapsible-list button span {
+  margin-left: 5px;
+}
+.collapsible-list button span a {
+  color: black;
+}
+.collapsible-list button::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../ui/button-square.png");
+  background-size: cover;
+  margin-right: 5px;
+}
 
 /*# sourceMappingURL=characters.css.map */

@@ -36,7 +36,12 @@
                         <tbody>
                         <tr>
                             <td>Rasse</td>
-                            <td>{% if character.race %}{{ character.race }}{% else %}N/A{% endif %}</td>
+                            <td>{% if character.race %}
+                                {% set race = character.race | lower %}
+                                <a href="{{ url_for('gentarium_entry', entry_name=race) }}">
+                                    {{ character.race }}{% else %}N/A
+                                </a>
+                            {% endif %}</td>
                         </tr>
                         <tr>
                             <td>Geschlecht</td>
@@ -52,13 +57,7 @@
                         </tr>
                         <tr>
                             <td>Staatsangehörigkeit</td>
-                            <td>
-                                {% if character.nationality %}
-                                    {% set place_name = character.nationality | lower | replace(" ", "-") %}
-                                    <a href="{{ url_for('place', place_name=place_name) }}">
-                                        {{ character.nationality }}</a>
-                                {% else %}N/A{% endif %}
-                            </td>
+                            <td>{% if character.nationality %}{{ character.nationality }}{% else %}N/A{% endif %}</td>
                         </tr>
                         </tbody>
                     </table>
@@ -69,7 +68,7 @@
                             <td>Mag</td>
                             <td>
                                 {% if character.likes %}
-                                    {% for f in character.likes %}
+                                    {% for f in character.likes | sort %}
                                         {{ f }}{% if not loop.last %}<br>{% endif %}
                                     {% endfor %}
                                 {% else %}N/A{% endif %}
@@ -79,7 +78,7 @@
                             <td>Mag nicht</td>
                             <td>
                                 {% if character.dislikes %}
-                                    {% for f in character.dislikes %}
+                                    {% for f in character.dislikes | sort %}
                                         {{ f }}{% if not loop.last %}<br>{% endif %}
                                     {% endfor %}
                                 {% else %}N/A{% endif %}
@@ -94,7 +93,7 @@
                             <td>Funktionen</td>
                             <td>
                                 {% if character.functions %}
-                                    {% for f in character.functions %}
+                                    {% for f in character.functions | sort %}
                                         {{ f }}{% if not loop.last %}<br>{% endif %}
                                     {% endfor %}
                                 {% else %}N/A{% endif %}
@@ -104,7 +103,7 @@
                             <td>Glaube</td>
                             <td>
                                 {% if character.faith %}
-                                    {% for f in character.faith %}
+                                    {% for f in character.faith | sort %}
                                         {{ f }}{% if not loop.last %}<br>{% endif %}
                                     {% endfor %}
                                 {% else %}N/A{% endif %}
@@ -119,11 +118,14 @@
                             <td>Bande</td>
                             <td>
                                 {% if character.bonds %}
-                                    {% for bond in character.bonds %}
-                                        {{ bond.name }}
+                                    {% for bond in character.bonds | sort(attribute='name') %}
+                                        {% set exists = characters | selectattr('name', 'equalto', bond.name) | list | length > 0 %}
+                                        {% if exists %}
+                                            {% set character_name = bond.name | lower | replace(" ", "-") | replace("-&-", "") %}
+                                            <a href="{{ url_for('character', character_name=character_name) }}">{{ bond.name }}</a>
+                                        {% else %}{{ bond.name }}{% endif %}
                                         {% if bond.relation %} <small>({{ bond.relation }})</small>{% endif %}
-                                        {% if not loop.last %}<br>
-                                        {% endif %}
+                                        {% if not loop.last %}<br>{% endif %}
                                     {% endfor %}
                                 {% else %}N/A{% endif %}
                             </td>

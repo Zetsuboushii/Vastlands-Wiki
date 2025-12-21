@@ -26,4 +26,4 @@ def extract_effect_types(input_file, output_file):
 
 
 if __name__ == "__main__":
-    extract_effect_types("actions.json", "effects.json")
+    extract_effect_types("actions.json", "v2/effects.json")
