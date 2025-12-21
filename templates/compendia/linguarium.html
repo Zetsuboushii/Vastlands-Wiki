@@ -18,14 +18,15 @@
         <div class="themed-container">
             {% for element in compendium | sort(attribute='title') %}
                 <div class="themed-element">
-                    {% set element_name = element.name | lower | replace(" ", "-") %}
-                    {% set center = element.center | lower | replace(" ", "-") %}
+                    {% set element_name = element.title | lower | replace(" ", "-") %}
+                    {% set center = element.content | lower %}
+                    {% set center = center.split("herkunft</p></td><td><p>")[1].split("</p>")[0] %}
                     {% set url = g.img_host + "crests/" + center + "-crest.png" %}
                     <a href="{{ url_for('linguarium_entry', entry_name=element_name) }}">
                         <img src="{{ url }}" alt="">
                     </a>
                     <form action="{{ url_for('linguarium_entry', entry_name=element_name) }}">
-                        <button type="submit">{{ element.name }}</button>
+                        <button type="submit">{{ element.title }}</button>
                     </form>
                 </div>
             {% endfor %}

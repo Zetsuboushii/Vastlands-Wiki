@@ -1,82 +1,50 @@
 [
   {
-    "name": "Faergrianisch",
-    "type": "Sprache",
-    "center": "Faergria",
-    "content": {
-      "excerpt": "",
-      "sections": [
-      ]
-    }
+    "title": "Faergrianisch",
+    "content": "<p></p><table><tbody><tr><td><p>Art der Sprache</p></td><td><p>Amtliche Sprache</p></td></tr><tr><td><p>Herkunft</p></td><td><p>Faergria</p></td></tr></tbody></table>"
   },
   {
-    "name": "Escrigrisch",
-    "type": "Regionaldialekt",
-    "center": "Nordholm",
-    "content": {
-      "excerpt": "",
-      "sections": [
-      ]
-    }
+    "title": "Escrigrisch",
+    "content": "<p></p><table><tbody><tr><td><p>Art der Sprache</p></td><td><p>Dialekt</p></td></tr><tr><td><p>Herkunft</p></td><td><p>Escrigria</p></td></tr></tbody></table>"
   },
   {
-    "name": "Färön",
-    "type": "Regionaldialekt",
-    "center": "Yerenas",
-    "content": {
-      "excerpt": "",
-      "sections": [
-      ]
-    }
+    "title": "Färön",
+    "content": "<p></p><table><tbody><tr><td><p>Art der Sprache</p></td><td><p>Amtliche Sprache</p></td></tr><tr><td><p>Herkunft</p></td><td><p>Farodris</p></td></tr></tbody></table>"
   },
   {
-    "name": "Halienisch",
-    "type": "Regionaldialekt",
-    "center": "Frelia",
-    "content": {
-      "excerpt": "",
-      "sections": [
-      ]
-    }
+    "title": "Halienisch",
+    "content": "<p></p><table><tbody><tr><td><p>Art der Sprache</p></td><td><p>Dialekt</p></td></tr><tr><td><p>Herkunft</p></td><td><p>Hal</p></td></tr></tbody></table>"
   },
   {
-    "name": "Kluirim",
-    "type": "Regionaldialekt",
-    "center": "Garadzar",
-    "content": {
-      "excerpt": "",
-      "sections": [
-      ]
-    }
+    "title": "Kluirim",
+    "content": "<p></p><table><tbody><tr><td><p>Art der Sprache</p></td><td><p>Amtliche Sprache</p></td></tr><tr><td><p>Herkunft</p></td><td><p>Kluirm</p></td></tr></tbody></table>"
   },
   {
-    "name": "Thaugrin",
-    "type": "Regionaldialekt",
-    "center": "Grenbrock",
-    "content": {
-      "excerpt": "",
-      "sections": [
-      ]
-    }
+    "title": "Thaugrin",
+    "content": "<p></p><table><tbody><tr><td><p>Art der Sprache</p></td><td><p>Dialekt</p></td></tr><tr><td><p>Herkunft</p></td><td><p>Thaugrien</p></td></tr></tbody></table>"
   },
   {
-    "name": "Tinorisch",
-    "type": "Regionaldialekt",
-    "center": "Tinorke",
-    "content": {
-      "excerpt": "",
-      "sections": [
-      ]
-    }
+    "title": "Tinorisch",
+    "content": "<p></p><table><tbody><tr><td><p>Art der Sprache</p></td><td><p>Dialekt</p></td></tr><tr><td><p>Herkunft</p></td><td><p>Tinorland</p></td></tr></tbody></table>"
   },
   {
-    "name": "Markathion",
-    "type": "Sprache",
-    "center": "Markath",
-    "content": {
-      "excerpt": "",
-      "sections": [
-      ]
-    }
+    "title": "Markathion",
+    "content": "<p></p><table><tbody><tr><td><p>Art der Sprache</p></td><td><p>Amtliche Sprache</p></td></tr><tr><td><p>Herkunft</p></td><td><p>Markath</p></td></tr></tbody></table>"
+  },
+  {
+    "title": "Kradianisch",
+    "content": "<p></p><table><tbody><tr><td><p>Art der Sprache</p></td><td><p>Amtliche Sprache</p></td></tr><tr><td><p>Herkunft</p></td><td><p>Kradian</p></td></tr></tbody></table>"
+  },
+  {
+    "title": "Zarashan'",
+    "content": "<p></p><table><tbody><tr><td><p>Art der Sprache</p></td><td><p>Amtliche Sprache</p></td></tr><tr><td><p>Herkunft</p></td><td><p>Zarashan</p></td></tr></tbody></table>"
+  },
+  {
+    "title": "Vigiasisch",
+    "content": "<p></p><table><tbody><tr><td><p>Art der Sprache</p></td><td><p>Amtliche Sprache</p></td></tr><tr><td><p>Herkunft</p></td><td><p>Vigias</p></td></tr></tbody></table>"
+  },
+  {
+    "title": "Tougenkyougo",
+    "content": "<p></p><table><tbody><tr><td><p>Art der Sprache</p></td><td><p>Amtliche Sprache</p></td></tr><tr><td><p>Herkunft</p></td><td><p>Tougenkyou</p></td></tr></tbody></table>"
   }
 ]
