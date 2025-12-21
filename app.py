@@ -23,7 +23,7 @@ def load_from_json(filename):
 @app.before_request
 def before_request():
     g.site_title = "Tome of the Vastlands"
-    g.version_number = "5.0.0"
+    g.version_number = "5.1.0"
 
     g.ingame_date = load_from_json("current_date")["current_ingame_date"]
     g.lore_days = ["Lunesdag", "Flamdag", "Quellsdag", "Waldsdag", "Goldag", "Terrasdag", "Sunnesdag"]
@@ -34,12 +34,12 @@ def before_request():
     g.debug = app.debug
 
     g.categories = {
-        "Charaktere": "characters",
+        "Characterium": "characters",
         "Gentarium": "gentarium",
+        "Geographium": "locations",
+        "Gradarium": "tierlist",
         "Linguarium": "linguarium",
-        "Theologarium": "theologarium",
-        "Orte": "locations",
-        "Tierlist": "tierlist"
+        "Theologarium": "theologarium"
     }
 
     apex_domain = "zetsuboushii.site/"
@@ -105,7 +105,7 @@ def index():
                            holidays=calendar_list, characters=characters_list, current_day=current_day)
 
 
-@app.route('/characters/')
+@app.route('/characterium/')
 def characters():
     characters_list = load_from_json("characters")
     characters_list[:] = [c for c in characters_list if "," not in c["name"] and "[hidden]" not in c["name"]]
@@ -128,7 +128,7 @@ def characters():
                            races=races, is_complete=is_complete)
 
 
-@app.route('/characters/<character_name>/')
+@app.route('/characterium/<character_name>/')
 def character(character_name):
     characters_list = load_from_json("characters")
     characters_list[:] = [c for c in characters_list if "," not in c["name"] and "[hidden]" not in c["name"]]
@@ -155,13 +155,13 @@ def character(character_name):
     return render_template('character.html', character=character, characters=characters_list)
 
 
-@app.route('/locations/')
+@app.route('/geographium/')
 def locations():
     locations_list = load_from_json("locations")
     return render_template('locations.html', locations=locations_list)
 
 
-@app.route('/locations/<location_name>/')
+@app.route('/geographium/<location_name>/')
 def location(location_name):
     locations_list = load_from_json("locations")
     location_data, parent = find_place_recursively(locations_list, location_name)
@@ -169,7 +169,7 @@ def location(location_name):
     return render_template('place.html', location=location_data, parent=parent)
 
 
-@app.route('/edit/locations/<place_name>/', methods=['POST'])
+@app.route('/edit/geographium/<place_name>/', methods=['POST'])
 def edit_place(place_name):
     if app.debug:
         locations_list = load_from_json("locations")
@@ -187,7 +187,7 @@ def compendia():
     return render_template('old/compendia.html', compendium_list=compendium_list)
 
 
-@app.route('/compendium/gentarium/')
+@app.route('/gentarium/')
 def gentarium():
     gentarium_data = load_from_json(f"compendia/gentarium")
     characters_list = load_from_json("characters")
@@ -205,7 +205,7 @@ def gentarium():
     return render_template('compendia/gentarium.html', compendium=gentarium_data)
 
 
-@app.route('/compendium/gentarium/<entry_name>/')
+@app.route('/gentarium/<entry_name>/')
 def gentarium_entry(entry_name):
     entries = load_from_json("compendia/gentarium")
     entry = next((e for e in entries if e.get("title", "").lower() == entry_name.lower()), None)
@@ -222,13 +222,13 @@ def gentarium_entry(entry_name):
     return render_template('compendia/gentarium_entry.html', entry=entry)
 
 
-@app.route('/compendium/linguarium/')
+@app.route('/linguarium/')
 def linguarium():
     linguarium_data = load_from_json(f"compendia/linguarium")
     return render_template('compendia/linguarium.html', compendium=linguarium_data)
 
 
-@app.route('/compendium/linguarium/<entry_name>/')
+@app.route('/linguarium/<entry_name>/')
 def linguarium_entry(entry_name):
     entries = load_from_json("compendia/linguarium")
     entry = next((e for e in entries if e.get("name", "").lower() == entry_name), None)
@@ -236,13 +236,13 @@ def linguarium_entry(entry_name):
     return render_template('compendia/linguarium_entry.html', entry=entry)
 
 
-@app.route('/compendium/theologarium/')
+@app.route('/theologarium/')
 def theologarium():
     theologarium_data = load_from_json(f"compendia/theologarium")
     return render_template('compendia/theologarium.html', compendium=theologarium_data)
 
 
-@app.route('/compendium/theologarium/<entry_name>/')
+@app.route('/theologarium/<entry_name>/')
 def theologarium_entry(entry_name):
     entries = load_from_json("compendia/theologarium")
     entry = next((e for e in entries if e.get("name", "").lower().replace(" ", "-") == entry_name), None)
