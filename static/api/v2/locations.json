@@ -1261,42 +1261,344 @@
           },
           "scenes": []
         },
-        "Kradian": {
-          "name": "Kradian",
+        "Tougenkyou": {
+          "name": "Tougenkyou",
           "children": {
-            "Mesmudor": {
-              "name": "Mesmudor",
-              "children": {},
-              "scenes": [
-                "Mesmudor"
-              ]
+            "Chuugandou": {
+              "name": "Chuugandou",
+              "children": {
+                "Tozawa-ken": {
+                  "name": "Tozawa-ken",
+                  "children": {
+                    "Tozawa": {
+                      "name": "Tozawa",
+                      "children": {},
+                      "scenes": [
+                        "Tozawa"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                }
+              },
+              "scenes": []
             },
-            "Riesstedt": {
-              "name": "Riesstedt",
-              "children": {},
-              "scenes": [
-                "Riesstedt"
-              ]
+            "Kankoku": {
+              "name": "Kankoku",
+              "children": {
+                "Akikamida-ken": {
+                  "name": "Akikamida-ken",
+                  "children": {
+                    "Akikamida": {
+                      "name": "Akikamida",
+                      "children": {},
+                      "scenes": [
+                        "Akikamida"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "Iwakura-ken": {
+                  "name": "Iwakura-ken",
+                  "children": {
+                    "Iwakura": {
+                      "name": "Iwakura",
+                      "children": {},
+                      "scenes": [
+                        "Iwakura"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "Sakaikama-ken": {
+                  "name": "Sakaikama-ken",
+                  "children": {
+                    "Sakaikama": {
+                      "name": "Sakaikama",
+                      "children": {},
+                      "scenes": [
+                        "Sakaikama"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                }
+              },
+              "scenes": []
             },
-            "Zarashan": {
-              "name": "Zarashan",
-              "children": {},
-              "scenes": [
-                "Zarashan"
-              ]
+            "Kannan": {
+              "name": "Kannan",
+              "children": {
+                "Haibara-ken": {
+                  "name": "Haibara-ken",
+                  "children": {
+                    "Entlegenes Teefeld": {
+                      "name": "Entlegenes Teefeld",
+                      "children": {},
+                      "scenes": [
+                        "Entlegenes Teefeld"
+                      ]
+                    },
+                    "Haibara": {
+                      "name": "Haibara",
+                      "children": {},
+                      "scenes": [
+                        "Haibara"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "Kawagashira-ken": {
+                  "name": "Kawagashira-ken",
+                  "children": {
+                    "Kawagashira": {
+                      "name": "Kawagashira",
+                      "children": {},
+                      "scenes": [
+                        "Kawagashira"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "Takeuko-ken": {
+                  "name": "Takeuko-ken",
+                  "children": {
+                    "Takeuko": {
+                      "name": "Takeuko",
+                      "children": {},
+                      "scenes": [
+                        "Takeuko"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "Yashirodani-ken": {
+                  "name": "Yashirodani-ken",
+                  "children": {
+                    "Yashirodani": {
+                      "name": "Yashirodani",
+                      "children": {},
+                      "scenes": [
+                        "Yashirodani"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                }
+              },
+              "scenes": []
+            },
+            "Saikoku": {
+              "name": "Saikoku",
+              "children": {
+                "Touya-ken": {
+                  "name": "Touya-ken",
+                  "children": {
+                    "Himemachi": {
+                      "name": "Himemachi",
+                      "children": {},
+                      "scenes": [
+                        "Himemachi"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "Yukimori-ken": {
+                  "name": "Yukimori-ken",
+                  "children": {
+                    "Yukimori": {
+                      "name": "Yukimori",
+                      "children": {},
+                      "scenes": [
+                        "Yukimori"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                }
+              },
+              "scenes": []
+            },
+            "Sanshuu": {
+              "name": "Sanshuu",
+              "children": {
+                "Akeyama-ken": {
+                  "name": "Akeyama-ken",
+                  "children": {
+                    "Akeyama": {
+                      "name": "Akeyama",
+                      "children": {},
+                      "scenes": [
+                        "Akeyama"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "Hokukogawa-ken": {
+                  "name": "Hokukogawa-ken",
+                  "children": {
+                    "Hokukogawa": {
+                      "name": "Hokukogawa",
+                      "children": {},
+                      "scenes": [
+                        "Hokukogawa"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "Sabike-ken": {
+                  "name": "Sabike-ken",
+                  "children": {
+                    "Sabike": {
+                      "name": "Sabike",
+                      "children": {},
+                      "scenes": [
+                        "Sabike"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                }
+              },
+              "scenes": []
+            },
+            "Shokoku": {
+              "name": "Shokoku",
+              "children": {
+                "Kajima-ken": {
+                  "name": "Kajima-ken",
+                  "children": {
+                    "Kajima": {
+                      "name": "Kajima",
+                      "children": {},
+                      "scenes": [
+                        "Kajima"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                }
+              },
+              "scenes": []
+            },
+            "Toobu": {
+              "name": "Toobu",
+              "children": {
+                "Tenraisanjima": {
+                  "name": "Tenraisanjima",
+                  "children": {
+                    "Zetsugen": {
+                      "name": "Zetsugen",
+                      "children": {},
+                      "scenes": [
+                        "Zetsugen"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                }
+              },
+              "scenes": []
             }
           },
           "scenes": []
         },
-        "Tougenkyou": {
-          "name": "Tougenkyou",
+        "Uastrun": {
+          "name": "Uastrun",
           "children": {
-            "Teefeld": {
-              "name": "Teefeld",
-              "children": {},
-              "scenes": [
-                "Teefeld"
-              ]
+            "Kradian": {
+              "name": "Kradian",
+              "children": {
+                "Pyrrha": {
+                  "name": "Pyrrha",
+                  "children": {
+                    "Bainnoque": {
+                      "name": "Bainnoque",
+                      "children": {},
+                      "scenes": [
+                        "Bainnoque"
+                      ]
+                    },
+                    "Pyrrha-Mine": {
+                      "name": "Pyrrha-Mine",
+                      "children": {},
+                      "scenes": [
+                        "Pyrrha-Mine"
+                      ]
+                    },
+                    "Sümpfe des Grauens": {
+                      "name": "Sümpfe des Grauens",
+                      "children": {},
+                      "scenes": [
+                        "Sümpfe des Grauens"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "Thycor": {
+                  "name": "Thycor",
+                  "children": {
+                    "Thycoria": {
+                      "name": "Thycoria",
+                      "children": {},
+                      "scenes": [
+                        "Thycoria"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                },
+                "Yssara": {
+                  "name": "Yssara",
+                  "children": {
+                    "Dorf der Liphias": {
+                      "name": "Dorf der Liphias",
+                      "children": {},
+                      "scenes": [
+                        "Dorf der Liphias"
+                      ]
+                    },
+                    "Mesmudor": {
+                      "name": "Mesmudor",
+                      "children": {},
+                      "scenes": [
+                        "Mesmudor"
+                      ]
+                    },
+                    "Schneespitze": {
+                      "name": "Schneespitze",
+                      "children": {},
+                      "scenes": [
+                        "Schneespitze"
+                      ]
+                    }
+                  },
+                  "scenes": []
+                }
+              },
+              "scenes": []
+            },
+            "Zarashan": {
+              "name": "Zarashan",
+              "children": {
+                "Dhoqan": {
+                  "name": "Dhoqan",
+                  "children": {},
+                  "scenes": [
+                    "Dhoqan"
+                  ]
+                }
+              },
+              "scenes": []
             }
           },
           "scenes": []
