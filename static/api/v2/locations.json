@@ -45,11 +45,11 @@
           "children": {},
           "scenes": []
         },
-        "Zentraler Platz": {
-          "name": "Zentraler Platz",
+        "Zentraler Animus": {
+          "name": "Zentraler Animus",
           "children": {},
           "scenes": [
-            "Zentraler Platz"
+            "Zentraler Animus"
           ]
         }
       },
@@ -62,7 +62,8 @@
           "name": "Uhrenturm im Nichts",
           "children": {},
           "scenes": [
-            "Uhrenturm im Nichts"
+            "Uhrenturm im Nichts",
+            "Uhrenturm im Nichts (Innen)"
           ]
         }
       },
@@ -1514,6 +1515,11 @@
         "Uastrun": {
           "name": "Uastrun",
           "children": {
+            "Bodheimr": {
+              "name": "Bodheimr",
+              "children": {},
+              "scenes": []
+            },
             "Kradian": {
               "name": "Kradian",
               "children": {
@@ -1565,6 +1571,20 @@
                       "children": {},
                       "scenes": [
                         "Dorf der Liphias"
+                      ]
+                    },
+                    "Fluss der Liphias": {
+                      "name": "Fluss der Liphias",
+                      "children": {},
+                      "scenes": [
+                        "Fluss der Liphias"
+                      ]
+                    },
+                    "Kradia-See": {
+                      "name": "Kradia-See",
+                      "children": {},
+                      "scenes": [
+                        "Kradia-See"
                       ]
                     },
                     "Mesmudor": {
