@@ -30,7 +30,8 @@
                 <div class="filter-content">
                     <button data-nationality="all">Alle</button>
                     {% for nation in nationalities %}
-                        <button data-nationality="{{ nation }}">{{ nation }}</button>
+                        <button data-nationality="{{ nation }}">{% if nation == "" %}
+                            DEBUG{% endif %}{{ nation }}</button>
                     {% endfor %}
                 </div>
             </div>
