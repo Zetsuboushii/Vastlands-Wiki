@@ -1,7 +1,7 @@
 [
   {
     "title": "Faergrianisch",
-    "content": "<p></p><table><tbody><tr><td><p>Art der Sprache</p></td><td><p>Amtliche Sprache</p></td></tr><tr><td><p>Herkunft</p></td><td><p>Faergria</p></td></tr></tbody></table>"
+    "content": "<table><tbody><tr><td><p>Art der Sprache</p></td><td><p>Amtliche Sprache</p></td></tr><tr><td><p>Herkunft</p></td><td><p>Faergria</p></td></tr></tbody></table>"
   },
   {
     "title": "Escrigrisch",
@@ -46,5 +46,9 @@
   {
     "title": "Tougenkyougo",
     "content": "<p></p><table><tbody><tr><td><p>Art der Sprache</p></td><td><p>Amtliche Sprache</p></td></tr><tr><td><p>Herkunft</p></td><td><p>Tougenkyou</p></td></tr></tbody></table>"
+  },
+  {
+    "title": "Lipha",
+    "content": "<table><tbody><tr><td><p>Art der Sprache</p></td><td><p>Regionale Sprache</p></td></tr><tr><td><p>Herkunft</p></td><td><p>Fluss der Liphias</p></td></tr></tbody></table>"
   }
 ]
