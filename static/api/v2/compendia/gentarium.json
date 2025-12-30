@@ -32,7 +32,7 @@
     "content": "<p>Engel sind himmlische Wesen von strahlender Schönheit und unerschütterlicher Tugend, die als Boten und Krieger der Götter dienen. Sie strahlen eine Aura reiner Güte und Macht aus, ihre majestätischen Flügel und leuchtenden Augen zeugen von ihrer göttlichen Herkunft. Engel sind Beschützer der Sterblichen, die in Zeiten großer Not erscheinen, um das Böse zu bekämpfen und das Gute zu fördern. Sie leben in den himmlischen Reichen der Justicia, jenseits der sterblichen Vorstellungskraft, wo sie den Willen ihrer Göttin verkörpern und ausführen. Engel sind bekannt für ihre Weisheit, Gerechtigkeit und ihren unbeirrbaren Glauben an das Gute, was sie zu gefürchteten Gegnern des Bösen und zu verehrten Beschützern der Rechtschaffenen macht. Ihre Anwesenheit auf der sterblichen Ebene ist selten und bedeutungsvoll, oft mit großen Prophezeiungen oder epischen Schlachten verbunden. Sterbliche, die das Privileg haben, einem Engel zu begegnen, sind tief bewegt von deren göttlicher Präsenz und inspirieren durch ihre Taten oft ganze Völker zu Mut und Glaube. Engel leben unendlich, doch manche von ihnen haben eine Lebensspanne von exakt 1500 Jahren.</p>"
   },
   {
-    "title": "Elfen",
+    "title": "Altorn",
     "content": "<p>Die Elfen sind ein edles und anmutiges Volk, tief verwurzelt in den alten Traditionen und der Magie ihrer Welt. Sie stehen in inniger Verbindung zur Göttin Farone, der Beschützerin der Natur und der Sternenlichter. Elfen sind bekannt für ihre Langlebigkeit und ihre zeitlose Schönheit, die von einer Aura mystischer Weisheit begleitet wird. Ihre Gemeinschaften sind oft in tiefen Wäldern oder auf hohen Bergen verborgen, wo sie im Einklang mit der Natur leben und die Geheimnisse der Welt bewahren. Elfen besitzen eine natürliche Affinität zur Magie und Kunst, was sich in ihrer Kultur und ihren Bräuchen widerspiegelt. Die Göttin Farone wird von ihnen verehrt, und ihre Priester und Priesterinnen sind angesehene Führer, die den Segen der Göttin über ihr Volk bringen. Durch ihre Hingabe an Farone streben die Elfen danach, das Gleichgewicht der Natur zu bewahren und die Schönheit der Welt zu schützen, was sie zu Hütern alter Weisheiten und magischer Geheimnisse macht. Elfen haben eine Lebenserwartung von 1000 Jahren.</p>"
   },
   {
@@ -64,7 +64,23 @@
     "content": ""
   },
   {
-    "title": "Wüstenelfen",
+    "title": "Zakhorn",
+    "content": ""
+  },
+  {
+    "title": "Verdorn",
+    "content": ""
+  },
+  {
+    "title": "Skjorn",
+    "content": ""
+  },
+  {
+    "title": "Liphias",
+    "content": ""
+  },
+  {
+    "title": "Plumari",
     "content": ""
   }
 ]

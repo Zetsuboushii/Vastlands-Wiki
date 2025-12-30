@@ -1528,23 +1528,65 @@
                   "children": {
                     "Bainnoque": {
                       "name": "Bainnoque",
-                      "children": {},
-                      "scenes": [
-                        "Bainnoque"
-                      ]
+                      "children": {
+                        "Großer Platz": {
+                          "name": "Großer Platz",
+                          "children": {},
+                          "scenes": [
+                            "Bainnoque - Großer Platz"
+                          ]
+                        }
+                      },
+                      "scenes": []
                     },
                     "Pyrrha-Mine": {
                       "name": "Pyrrha-Mine",
-                      "children": {},
-                      "scenes": [
-                        "Pyrrha-Mine"
-                      ]
+                      "children": {
+                        "Äußere Mine": {
+                          "name": "Äußere Mine",
+                          "children": {},
+                          "scenes": [
+                            "Pyrrha-Mine - Äußere Mine"
+                          ]
+                        },
+                        "Innere Mine": {
+                          "name": "Innere Mine",
+                          "children": {},
+                          "scenes": [
+                            "Pyrrha-Mine - Innere Mine"
+                          ]
+                        }
+                      },
+                      "scenes": []
+                    },
+                    "Südliche Ebene von Kradian": {
+                      "name": "Südliche Ebene von Kradian",
+                      "children": {
+                        "Haus": {
+                          "name": "Haus",
+                          "children": {},
+                          "scenes": [
+                            "Südliche Ebene von Kradian - Haus"
+                          ]
+                        }
+                      },
+                      "scenes": []
                     },
                     "Sümpfe des Grauens": {
                       "name": "Sümpfe des Grauens",
                       "children": {},
                       "scenes": [
-                        "Sümpfe des Grauens"
+                        "Sümpfe des Grauens",
+                        "Sümpfe des Grauens (Schädel)"
+                      ]
+                    },
+                    "Tempel des Feuers": {
+                      "name": "Tempel des Feuers",
+                      "children": {},
+                      "scenes": [
+                        "Tempel des Feuers (B1)",
+                        "Tempel des Feuers (B2)",
+                        "Tempel des Feuers (B3)"
                       ]
                     }
                   },
@@ -1555,9 +1597,80 @@
                   "children": {
                     "Thycoria": {
                       "name": "Thycoria",
+                      "children": {
+                        "Abenteurergilde": {
+                          "name": "Abenteurergilde",
+                          "children": {},
+                          "scenes": [
+                            "Thycoria - Abenteurergilde"
+                          ]
+                        },
+                        "Backstube": {
+                          "name": "Backstube",
+                          "children": {},
+                          "scenes": [
+                            "Thycoria - Backstube"
+                          ]
+                        },
+                        "Dorfplatz": {
+                          "name": "Dorfplatz",
+                          "children": {},
+                          "scenes": [
+                            "Thycoria - Dorfplatz (Außen)",
+                            "Thycoria - Dorfplatz (Innen, 1F)",
+                            "Thycoria - Dorfplatz (Innen, 2F)",
+                            "Thycoria - Dorfplatz (Innen, 3F)"
+                          ]
+                        },
+                        "Gemischtwarenladen": {
+                          "name": "Gemischtwarenladen",
+                          "children": {},
+                          "scenes": [
+                            "Thycoria - Gemischtwarenladen"
+                          ]
+                        },
+                        "Stallungen": {
+                          "name": "Stallungen",
+                          "children": {},
+                          "scenes": [
+                            "Thycoria - Stallungen"
+                          ]
+                        }
+                      },
+                      "scenes": []
+                    },
+                    "Thycoria-Wald": {
+                      "name": "Thycoria-Wald",
+                      "children": {
+                        "Goblin-Lager": {
+                          "name": "Goblin-Lager",
+                          "children": {},
+                          "scenes": [
+                            "Thycoria-Wald - Goblin-Lager"
+                          ]
+                        },
+                        "Hexenhütte": {
+                          "name": "Hexenhütte",
+                          "children": {},
+                          "scenes": [
+                            "Thycoria-Wald - Hexenhütte"
+                          ]
+                        },
+                        "See zur Ebene": {
+                          "name": "See zur Ebene",
+                          "children": {},
+                          "scenes": [
+                            "Thycoria-Wald - See zur Ebene"
+                          ]
+                        }
+                      },
+                      "scenes": []
+                    },
+                    "Verlorene Wälder": {
+                      "name": "Verlorene Wälder",
                       "children": {},
                       "scenes": [
-                        "Thycoria"
+                        "Verlorene Wälder"
                       ]
                     }
                   },
@@ -1575,7 +1688,22 @@
                     },
                     "Fluss der Liphias": {
                       "name": "Fluss der Liphias",
-                      "children": {},
+                      "children": {
+                        "Brücke am Wasserfall": {
+                          "name": "Brücke am Wasserfall",
+                          "children": {},
+                          "scenes": [
+                            "Fluss der Liphias - Brücke am Wasserfall"
+                          ]
+                        },
+                        "Liphia-Damm": {
+                          "name": "Liphia-Damm",
+                          "children": {},
+                          "scenes": [
+                            "Fluss der Liphias - Liphia-Damm"
+                          ]
+                        }
+                      },
                       "scenes": [
                         "Fluss der Liphias"
                       ]
@@ -1589,10 +1717,75 @@
                     },
                     "Mesmudor": {
                       "name": "Mesmudor",
-                      "children": {},
-                      "scenes": [
-                        "Mesmudor"
-                      ]
+                      "children": {
+                        "Bastionsplatz": {
+                          "name": "Bastionsplatz",
+                          "children": {},
+                          "scenes": [
+                            "Mesmudor - Bastionsplatz"
+                          ]
+                        },
+                        "Bucht": {
+                          "name": "Bucht",
+                          "children": {},
+                          "scenes": [
+                            "Mesmudor - Bucht"
+                          ]
+                        },
+                        "Hafen": {
+                          "name": "Hafen",
+                          "children": {},
+                          "scenes": [
+                            "Mesmudor - Hafen"
+                          ]
+                        },
+                        "Kerker": {
+                          "name": "Kerker",
+                          "children": {},
+                          "scenes": [
+                            "Mesmudor - Kerker (Außen)",
+                            "Mesmudor - Kerker (Innen)"
+                          ]
+                        },
+                        "Marktstraßen": {
+                          "name": "Marktstraßen",
+                          "children": {},
+                          "scenes": [
+                            "Mesmudor - Marktstraßen"
+                          ]
+                        },
+                        "Postamt": {
+                          "name": "Postamt",
+                          "children": {},
+                          "scenes": [
+                            "Mesmudor - Postamt",
+                            "Mesmudor - Postamt (Innen, 1F)",
+                            "Mesmudor - Postamt (Innen, 2F)",
+                            "Mesmudor - Postamt (Innen, B1)"
+                          ]
+                        },
+                        "Schwarzmarkt": {
+                          "name": "Schwarzmarkt",
+                          "children": {},
+                          "scenes": [
+                            "Mesmudor - Schwarzmarkt"
+                          ]
+                        }
+                      },
+                      "scenes": []
+                    },
+                    "Nördliche Ebene von Kradian": {
+                      "name": "Nördliche Ebene von Kradian",
+                      "children": {
+                        "Bienenhaus": {
+                          "name": "Bienenhaus",
+                          "children": {},
+                          "scenes": [
+                            "Nördliche Ebene von Kradian - Bienenhaus"
+                          ]
+                        }
+                      },
+                      "scenes": []
                     },
                     "Schneespitze": {
                       "name": "Schneespitze",
