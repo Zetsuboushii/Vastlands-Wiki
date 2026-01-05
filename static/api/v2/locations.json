@@ -1515,8 +1515,28 @@
         "Uastrun": {
           "name": "Uastrun",
           "children": {
+            "Araimoor": {
+              "name": "Araimoor",
+              "children": {},
+              "scenes": []
+            },
             "Bodheimr": {
               "name": "Bodheimr",
+              "children": {},
+              "scenes": []
+            },
+            "Creamorid": {
+              "name": "Creamorid",
+              "children": {},
+              "scenes": []
+            },
+            "Esovia": {
+              "name": "Esovia",
+              "children": {},
+              "scenes": []
+            },
+            "Hydracion": {
+              "name": "Hydracion",
               "children": {},
               "scenes": []
             },
@@ -1798,6 +1818,46 @@
                   "scenes": []
                 }
               },
+              "scenes": []
+            },
+            "Philogid": {
+              "name": "Philogid",
+              "children": {},
+              "scenes": []
+            },
+            "Rebeton": {
+              "name": "Rebeton",
+              "children": {},
+              "scenes": []
+            },
+            "Roggairus": {
+              "name": "Roggairus",
+              "children": {},
+              "scenes": []
+            },
+            "Sayinid": {
+              "name": "Sayinid",
+              "children": {},
+              "scenes": []
+            },
+            "Stopia": {
+              "name": "Stopia",
+              "children": {},
+              "scenes": []
+            },
+            "Uwenid": {
+              "name": "Uwenid",
+              "children": {},
+              "scenes": []
+            },
+            "Vrolum": {
+              "name": "Vrolum",
+              "children": {},
+              "scenes": []
+            },
+            "Yatis": {
+              "name": "Yatis",
+              "children": {},
               "scenes": []
             },
             "Zarashan": {
