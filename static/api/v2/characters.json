@@ -521,23 +521,79 @@
     "id": "T7OPqhkZZWpWDLuQ",
     "name": "Arion",
     "surname": "",
-    "title": "",
-    "race": null,
-    "alignment": "",
-    "sex": "",
-    "age": null,
-    "birthday": "",
+    "title": "Die junge Klinge",
+    "race": "Menschen",
+    "alignment": "NG",
+    "sex": "männlich",
+    "age": 21,
+    "birthday": "07.01.",
     "nationality": "Kradian",
-    "likes": [],
-    "dislikes": [],
-    "bonds": [],
+    "likes": [
+      "Kuchen",
+      "Süßigkeiten",
+      "Schwertkunst",
+      "Trainieren",
+      "Heldensagen",
+      "Leuten aus seinem Dorf helfen"
+    ],
+    "dislikes": [
+      "Lesen",
+      "Lernen",
+      "Politik",
+      "Hochsprache",
+      "Arroganz",
+      "Leichte und feine Waffen",
+      "Karotten"
+    ],
+    "bonds": [
+      {
+        "name": "Kurt",
+        "relation": "Ziehvater"
+      },
+      {
+        "name": "Ostara",
+        "relation": "Ziehschwester"
+      },
+      {
+        "name": "Jonatan",
+        "relation": "Lehrmeister"
+      },
+      {
+        "name": "Eveline",
+        "relation": null
+      },
+      {
+        "name": "Frederick",
+        "relation": null
+      },
+      {
+        "name": "Frille",
+        "relation": null
+      },
+      {
+        "name": "Kettlin",
+        "relation": null
+      },
+      {
+        "name": "Liepmay",
+        "relation": null
+      },
+      {
+        "name": "Rupert",
+        "relation": null
+      },
+      {
+        "name": "Wilfried",
+        "relation": null
+      }
+    ],
     "functions": [
       "Lehrling von Jonatan",
       "Abenteurer vom Rang 1"
     ],
     "faith": [],
-    "excerpt": "",
-    "biography": ""
+    "excerpt": "<p>Arion ist ein junger Schwertkämpfer unter der Lehre von Jonatan. Er liebt die Schwertkunst und hat das Ziel, eines Tages Großschwerter präzise zu führen, so wie sein Idol es in seiner frühen Kindheit mit einem normalen Schwert getan hat.</p>",
+    "biography": "<h2>Ambition</h2><p>Seitdem Arion als Kind Zeuge eines Kampfes wurde, ließ ihn diese Erinnerung nie wieder los.</p><p>Er sah einen gewaltigen Riesen, der mit langen, blauen Haaren und einer riesigen Axt bewaffnet war. In Arions noch jungen Augen wirkte das Monster unüberwindbar. Es war bitterkalt an jenem Tag; Frost lag in der Luft, und jeder Schritt des Riesen ließ den Boden erzittern.</p><p>Dem Ungetüm stellte sich ein einzelner Krieger entgegen. Seine Klinge schimmerte golden im fahlen Licht, doch seine Statur wirkte im Vergleich zum Riesen beinahe klein und zerbrechlich. Und dennoch wich er nicht zurück.</p><p>Was Arion bis heute fesselt, war nicht die rohe Gewalt dieses Kampfes, sondern die Art, wie der Krieger seine Waffe führte. Jede Bewegung war ruhig, präzise und von einer Schönheit, die Arion damals kaum begreifen konnte. Die Schwertkunst des Mannes war so fein und scharf, dass es schien, als könne sie die Luft selbst zerschneiden.</p><p>Der Krieger besiegte den Riesen nicht durch überlegene Kraft, sondern durch Technik, Timing und einen klaren Geist. Dieses Bild brannte sich tief in Arions Erinnerung ein.</p><p>Seit jenem Tag strebt Arion danach, diesem Ideal näherzukommen. Tag und Nacht trainiert er, widmet sich allem, was mit Kriegern, Waffen und Kampfkunst zu tun hat, und treibt seinen Körper unermüdlich an seine Grenzen. Nicht die bloße Stärke ist es, die er sucht, sondern jene vollkommene Beherrschung von Körper, Geist und Klinge, die er damals sah.</p><p></p><h2>Werdegang</h2><p>Arion ist, seit er sich erinnern kann, ein Vollwaise. An seine Eltern hat er nur verschwommene, bruchstückhafte Erinnerungen. Das Einzige, das ihm aus seiner frühesten Kindheit klar im Gedächtnis geblieben ist, ist der Anblick des Kriegers in seinem Kampf gegen den Riesen.</p><p>Seit er klein ist, wächst Arion im Dorf Thycoria, tief im Wald von Thycor, auf. Die dortigen Bewohner ziehen ihn gemeinsam groß, allen voran der Bürgermeister Kurt, der sich besonders um ihn annimmt. Was Arion aus seiner Vergangenheit geblieben ist, sind lediglich zwei Dinge: ein alter, zerkratzter Anhänger, den er – nach Aussagen der Dorfbewohner – schon seit Anbeginn bei sich trägt, sowie eine kleine Brandnarbe auf dem rechten Handrücken.</p><p>Arion wächst glücklich und zufrieden in Thycoria auf, doch schon früh zeigt sich seine Besessenheit vom Schwert. Er hilft den Dorfbewohnern, wo er nur kann, nutzt jedoch jede freie Minute, um zu trainieren. Oft treibt er sein Training so weit, dass er mehrfach kurz davorsteht, an Erschöpfung oder Dehydrierung zu sterben. Doch während er trainiert, brennt in ihm eine Leidenschaft – und eine für ihn sonst untypische Geduld –, die er ausschließlich beim Schwertkampf zeigt.</p><p>Da das friedliche Dorf kaum Berührungspunkte mit Kampf oder Waffen hat, trainiert Arion stets für sich allein. Eines Tages jedoch, während eines seiner Trainings, tritt Jonatan an ihn heran – ein Vagabund und eine meist kühle, distanzierte Person, die von vielen Dorfbewohnern gemieden wird. Ohne große Worte beginnt Jonatan, Arion richtige Schwerthiebe zu zeigen, Techniken, die Arion sich bis dahin nur mühsam aus Büchern zusammengedacht hatte.</p><p>Zu diesem Zeitpunkt ist Arion bereits im Jugendalter, doch sein ungebrochener Trainingswille begleitet ihn seit Kindertagen. Fasziniert beobachtet er die Bewegungen eines Mannes, der das Schwert tatsächlich zu führen weiß. Daraufhin beginnt Arion, die gezeigten Hiebe immer und immer wieder zu wiederholen.</p><p>Jonatan, der anfangs keinerlei Interesse an Arion zeigt, beginnt ihm nach und nach mehr von seiner eigenen Schwertkunst zu offenbaren. Vielleicht ist es Arions unerschütterliche Willenskraft, vielleicht seine offensichtliche Faszination – doch irgendetwas bewegt Jonatan dazu, ihn weiter zu unterweisen.</p><p>Jonatan erkannte schnell, dass dieser ein besonderes Talent für das Großschwert besaß. Doch es handelte sich dabei nicht um ein angeborenes Talent, sondern um die Früchte eines intensiven Trainings, das Arion bereits seit seinen Kindheitstagen verfolgte. Schon damals versuchte er stets, die größte Waffe zu nutzen, die er gerade noch halten konnte, bis er schließlich beim Großschwert ankam.</p><p>Seine sehr rudimentären Schwertübungen führten zwar nicht zu feinen oder ausgearbeiteten Techniken, doch sie vermittelten ihm ein tiefes Verständnis für die Balance der Waffe sowie für die Kraftführung seines eigenen Körpers. Über Jahre hinweg hatten sich Kraft, Gleichgewicht und Instinkt auf das Großschwert ausgerichtet.</p><p>Dieses jahrelange Training und die vollständige Fokussierung auf Kraft und Balance hatten jedoch ihren Preis. Arion war kaum in der Lage, mit feineren Waffen umzugehen. Sein Traum, das Schwert eines Tages so präzise und elegant zu führen wie der Krieger aus seiner Erinnerung, war – wie Jonatan ihm unmissverständlich klarmachte – auf diesem Weg eigentlich unmöglich.</p><p>Diese Erkenntnis ließ Arion lange nicht los. Doch trotz der Worte seines Lehrmeisters und der Stimme der Vernunft konnte er sein Training nicht aufgeben. Seine Leidenschaft für das Schwert und das Bild des Kriegers hatten sich längst tief in seiner Seele verankert.</p><p>So fasste Arion einen Entschluss, der jeder Logik widersprach: Er würde versuchen, ein Großschwert mit jener Präzision und Feinheit zu führen, die normalerweise nur Meistern der vollkommenen Schwertkunst vorbehalten war. Gerade diese Unbeugsamkeit, mit der er seinem Traum entgegenstrebte, ist es, die ihn bis heute antreibt – und die nicht nur die Dorfbewohner, sondern auch Jonatan selbst an ihm fasziniert.</p>"
   },
   {
     "id": "dK5qTslGBSP3d0wo",
@@ -688,7 +744,7 @@
     "id": "HP3hhfMsNKkkhxZ4",
     "name": "Axel",
     "surname": "",
-    "title": "",
+    "title": "Zerstörende Klinge",
     "race": "Menschen",
     "alignment": "",
     "sex": "männlich",
@@ -2419,18 +2475,62 @@
     "id": "s8pYvgWBl8jDA4xM",
     "name": "Frederick",
     "surname": "",
-    "title": "",
+    "title": "Literater Lehrer",
     "race": "Menschen",
     "alignment": "",
     "sex": "männlich",
     "age": 27,
     "birthday": "07.06.",
     "nationality": "Kradian",
-    "likes": [],
-    "dislikes": [],
-    "bonds": [],
-    "functions": [],
-    "faith": [],
+    "likes": [
+      "Sachbücher",
+      "Prinzessin Cynthia",
+      "Verzauberungsmagie",
+      "Trockenes Gebäck",
+      "Lange Nächte",
+      "Herbst"
+    ],
+    "dislikes": [
+      "Laute Geräusche"
+    ],
+    "bonds": [
+      {
+        "name": "Arion",
+        "relation": null
+      },
+      {
+        "name": "Liepmayt",
+        "relation": null
+      },
+      {
+        "name": "Kurt",
+        "relation": null
+      },
+      {
+        "name": "Ostara",
+        "relation": "Schülerin"
+      },
+      {
+        "name": "Kettlin",
+        "relation": null
+      },
+      {
+        "name": "Frille",
+        "relation": null
+      },
+      {
+        "name": "Eveline",
+        "relation": null
+      }
+    ],
+    "functions": [
+      "Buchhändler",
+      "Zauberer",
+      "Dorflehrer"
+    ],
+    "faith": [
+      "Kradia"
+    ],
     "excerpt": "",
     "biography": ""
   },
@@ -3831,20 +3931,47 @@
     "id": "JNZprFqXTCziK5N7",
     "name": "Jonatan",
     "surname": "",
-    "title": "",
+    "title": "Stille Klinge",
     "race": "Menschen",
     "alignment": "",
     "sex": "männlich",
     "age": 37,
     "birthday": "16.12.",
     "nationality": "Kradian",
-    "likes": [],
-    "dislikes": [],
-    "bonds": [],
+    "likes": [
+      "Schwerter",
+      "Lange Kämpfe",
+      "Heldenmut",
+      "Evelines Backwaren",
+      "Kräutertee"
+    ],
+    "dislikes": [
+      "Unnötige Emotionen"
+    ],
+    "bonds": [
+      {
+        "name": "Arion",
+        "relation": "Lehrling"
+      },
+      {
+        "name": "Kurt",
+        "relation": null
+      },
+      {
+        "name": "Kettlin",
+        "relation": null
+      },
+      {
+        "name": "Eveline",
+        "relation": null
+      }
+    ],
     "functions": [
       "Wächter von Thycoria"
     ],
-    "faith": [],
+    "faith": [
+      "Kradia"
+    ],
     "excerpt": "",
     "biography": ""
   },
@@ -4303,7 +4430,7 @@
     "id": "3ExlAyWCa2gmnYPD",
     "name": "Kurt",
     "surname": "",
-    "title": "",
+    "title": "Vielseitiger Dorfchef",
     "race": "Menschen",
     "alignment": "",
     "sex": "männlich",
@@ -5588,18 +5715,60 @@
     "id": "PqAWqzBZ6L2Hf43r",
     "name": "Ostara",
     "surname": "",
-    "title": "",
+    "title": "Helles Licht des Dorfes",
     "race": "Menschen",
     "alignment": "",
     "sex": "weiblich",
-    "age": 16,
+    "age": 12,
     "birthday": "20.04.",
     "nationality": "Kradian",
-    "likes": [],
-    "dislikes": [],
-    "bonds": [],
-    "functions": [],
-    "faith": [],
+    "likes": [
+      "Sahnetorten",
+      "Früchtetee",
+      "Teegebäck",
+      "Nähen",
+      "Sticken",
+      "Katzen",
+      "Lernen",
+      "Lesen"
+    ],
+    "dislikes": [
+      "Böse Menschen",
+      "Monster",
+      "Mathematik"
+    ],
+    "bonds": [
+      {
+        "name": "Arion",
+        "relation": "Bruder"
+      },
+      {
+        "name": "Kurt",
+        "relation": "Vater"
+      },
+      {
+        "name": "Frederik",
+        "relation": "Lehrer"
+      },
+      {
+        "name": "Liepmayt",
+        "relation": null
+      },
+      {
+        "name": "Kettlin",
+        "relation": null
+      },
+      {
+        "name": "Frille",
+        "relation": null
+      }
+    ],
+    "functions": [
+      "Schülerin"
+    ],
+    "faith": [
+      "Kradia"
+    ],
     "excerpt": "",
     "biography": ""
   },
@@ -6179,18 +6348,43 @@
     "id": "zNge671AFu1J9ZoC",
     "name": "Rupert",
     "surname": "",
-    "title": "",
+    "title": "Gutherziger Gildenleiter",
     "race": "Menschen",
     "alignment": "",
     "sex": "männlich",
     "age": 48,
     "birthday": "17.12.",
     "nationality": "Kradian",
-    "likes": [],
-    "dislikes": [],
-    "bonds": [],
-    "functions": [],
-    "faith": [],
+    "likes": [
+      "Frisch gezapftes Bier",
+      "Wildfleisch",
+      "Neue Abenteurer aufnehmen",
+      "Leute aufbauen",
+      "Dinge selbst in die Hand nehmen"
+    ],
+    "dislikes": [
+      "Drückeberger"
+    ],
+    "bonds": [
+      {
+        "name": "Arion",
+        "relation": "Schützling"
+      },
+      {
+        "name": "Agraston",
+        "relation": "Schützling"
+      },
+      {
+        "name": "Eclair",
+        "relation": "Präsidentin"
+      }
+    ],
+    "functions": [
+      "Leiter des Abenteurergildenstandorts Thycoria"
+    ],
+    "faith": [
+      "Kradia"
+    ],
     "excerpt": "",
     "biography": ""
   },
