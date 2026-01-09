@@ -5868,23 +5868,47 @@
     "age": 1039,
     "birthday": "08.10.",
     "nationality": "Farodris",
-    "likes": [],
-    "dislikes": [],
+    "likes": [
+      "Scharfes Essen",
+      "Kräutertee",
+      "Bonbons",
+      "Steiche spielen",
+      "Wanderungen",
+      "Natur",
+      "Zitrusfrüchte",
+      "Tiere beschützen",
+      "Mode"
+    ],
+    "dislikes": [
+      "Zu viel Ernsthaftigkeit"
+    ],
     "bonds": [
       {
         "name": "Adamar",
-        "relation": "Bruder"
+        "relation": "Reckenbruder"
       },
       {
         "name": "Finnea",
-        "relation": "Schwester"
+        "relation": "Reckenschwester"
       },
       {
         "name": "Farone",
-        "relation": "Götin"
+        "relation": "Göttin"
       },
       {
         "name": "Cinnabar",
+        "relation": null
+      },
+      {
+        "name": "U-Ranos",
+        "relation": "Nayru"
+      },
+      {
+        "name": "Qildor",
+        "relation": null
+      },
+      {
+        "name": "Lamia",
         "relation": null
       }
     ],
@@ -5895,8 +5919,8 @@
     "faith": [
       "Farone"
     ],
-    "excerpt": "",
-    "biography": ""
+    "excerpt": "<p>Phaerille ist eine der drei Flammenhüter der Manaflamme in Yerenas und dient als Reckin der Göttin Farone an der Seite von Adamar und Finnea. Trotz ihrer göttlichen Bestimmung wuchs sie unter Armut, Ablehnung und harter Arbeit auf und wurde lange von ihrem vorgesehenen Weg ferngehalten. Erst spät fand sie den Mut, ihr altes Leben hinter sich zu lassen und ihrer Bestimmung zu folgen. Heute ist sie ein unverzichtbarer Teil der Reckenschaft Farones – bekannt für ihren unerschütterlichen Optimismus, ihre Nähe zur Natur und ihre Fähigkeit, selbst in dunklen Zeiten Hoffnung zu bewahren.</p>",
+    "biography": "<h3>Geburt unter göttlichem Zeichen</h3><p>Phaerille wurde als Tochter einer armen Gerberfamilie im Gerberviertel von Yerenas geboren. Bereits in der Nacht ihrer Geburt erhielt sie den Segen der Göttin Farone: ein Zeichen, das sie von Beginn an zur Reckin bestimmte. Ihrer Mutter erschien ein Abbild der Göttin selbst, doch statt Stolz oder Ehrfurcht löste diese Offenbarung Unglauben und Furcht aus. Dass ausgerechnet ihre Tochter von einer Göttin auserwählt worden sein sollte, erschien ihr unvorstellbar.</p><p>Anstatt gefördert zu werden, wurde Phaerille schon früh zur harten Arbeit in der Gerberei gedrängt. Jeglicher Kontakt zum Tempel von Yerenas war ihr strikt untersagt, als könne allein die Nähe zur Göttin Unheil über die Familie bringen. In der Schule wie auch im Elternhaus wurde sie stets anders behandelt, jedoch nicht mit Bewunderung, sondern mit Argwohn und Verachtung. Die Erwartung, eines Tages ein hohes göttliches Amt zu bekleiden, stand im scharfen Kontrast zu der Tatsache, dass sie keinerlei Ausbildung zur Reckin erhielt und somit über keine magischen Fähigkeiten verfügte. Erwartungen, denen sie nicht gerecht werden konnte, wurden ihr dennoch unnachgiebig auferlegt.</p><p>Besonders schmerzhaft war die Haltung ihrer Eltern. Statt Stolz empfanden sie Scham darüber, dass ihrer Tochter ein solch bedeutendes Amt zugedacht war. Für Phaerille wuchs so das Gefühl, weder im weltlichen noch im göttlichen Leben einen Platz zu haben.</p><h3>Aufnahme in die Reckenschaft Faroneså</h3><p>Im Alter von 128 Jahren verließ Phaerille ihr Elternhaus in einer regnerischen Nacht. Ohne Ziel, aber mit der Hoffnung, am Tempel von Yerenas aufgenommen zu werden, ließ sie alles zurück, was sie kannte. In jener Nacht begegnete sie Adamar. Ohne lange Erklärungen schenkte er ihr Glauben, Mitgefühl und Vertrauen; etwas, das Phaerille bis dahin kaum erfahren hatte. Diese Begegnung sollte ihr Leben unwiderruflich verändern.</p><p>Durch die Fürsorge von Adamar und Finnea fand Phaerille rasch ihren Platz innerhalb der Reckenschaft Farones. Zum ersten Mal wurde sie nicht für das verurteilt, was sie nicht konnte, sondern für das geschätzt, was sie war. Die Göttin Farone selbst zeigte große Freude darüber, dass Phaerille trotz aller Widrigkeiten den Weg zu ihrer Bestimmung gefunden hatte. Jahre vergingen, in denen Phaerille keinen Gedanken mehr an ihr früheres Leben verlor.</p><h3>Rückkehr ins Gerberviertel</h3><p>Eines Tages verspürte Phaerille den Wunsch, noch einmal in das Gerberviertel zurückzukehren. Dort musste sie feststellen, dass ihre Eltern bereits vor vielen Jahren verstorben waren. Obwohl sie nie Liebe oder Anerkennung von ihnen erfahren hatte, traf sie diese Nachricht tief. Nach einer kurzen Zeit der Trauer fasste sie jedoch einen Entschluss: Sie würde nie wieder im Schmerz verharren, sondern stets nach vorn blicken.</p><p>Heute ist Phaerille ein fester und unverzichtbarer Bestandteil der Reckenschaft Farones. Auch wenn Adamar und Finnea gelegentlich anmerken, dass sie vieles zu optimistisch betrachtet, ist es genau diese Eigenschaft, die ihr Umfeld immer wieder stärkt. Ihre gute Laune, ihr offenes Herz und ihr unerschütterlicher Blick nach vorn machen sie zu einem Licht inmitten göttlicher Pflichten.</p>"
   },
   {
     "id": "KtjGJ7zNBIb7Tzlq",

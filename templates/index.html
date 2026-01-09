@@ -20,24 +20,72 @@
             <div class="home-left">
                 <div class="home-left-text">
                     <!--<img src="{{ url_for('static', filename='imgs/totv_logo.png') }}" style="max-width: 500px">-->
-
-                    <p>Vor dir liegt ein alter Foliant, gebunden aus Erinnerung und Schwur. Das
+                    <p><i>Aus der Sicht des DMs:</i></p>
+                    <p style="margin-left: 20px">
+                        Vor dir liegt ein alter Foliant, gebunden aus Erinnerung und Schwur. Das
                         <b style="font-family: 'Grenze Gotisch'">Tome of the Vastlands</b>! Seine Seiten tragen die
                         Namen der Völker, die Zeichen der Götter und die Pfade der Länder, wie sie waren, wie sie sind
                         und wie sie vielleicht sein werden. Kein Wort ruht hier ohne Gewicht, kein Name ohne Nachhall.
-                    </p>
-                    <p>Dies ist ein heiliger Hort des Wissens, bewahrt von jenen, die hören konnten, wo andere
+                        <br><br>
+                        Dies ist ein heiliger Hort des Wissens, bewahrt von jenen, die hören konnten, wo andere
                         schwiegen. Doch auch dieses Werk ist unvollständig, denn Wahrheit offenbart sich nur dem, der
                         sucht. So bist auch du gerufen, zu lesen, zu deuten und zu schreiben – nicht als Herr über die
-                        Geschichte, sondern als ihr Diener.</p>
+                        Geschichte, sondern als ihr Diener.
+                        <br><br>
+                        <b style="font-family: 'Grenze Gotisch'">Tritt ein mit Ehrfurcht. Verweile mit Bedacht.</b>
+                    </p>
 
-                    <p><b style="font-family: 'Grenze Gotisch'">Tritt ein mit Ehrfurcht. Verweile mit Bedacht.</b></p>
-
+                    <p><i>Aus der Sicht von Zetsu:</i></p>
+                    <p style="margin-left: 20px">
+                        Dies ein Wiki zu meiner Fantasy-Welt der <b style="font-family: 'Grenze Gotisch'">Vastlands</b>,
+                        welche auch als Schauplatz verschiedener D&D-Kampagnen und -Oneshots dient. Wie auf meiner <b
+                            style="font-family: 'Grenze Gotisch'"><a style="text-decoration: underline; color: black"
+                                                                     href="https://zetsuboushii.site">persönlichen
+                        Website</a></b> ausführlichst beschrieben, genieße ich es, mir Welten und Charaktere
+                        auszudenken. D&D und dieses Wiki sind dabei eine Möglichkeit, dieser Kreativität eine Leinwand
+                        zu geben.
+                        <br><br>
+                        Die <b style="font-family: 'Grenze Gotisch'">Vastlands</b> sind als ein Universum zu betrachten,
+                        orientiert am Konzept der Elementarebenen von D&D. In diesem Universum existieren also
+                        verschiedene Elementarebenen, die jeweils ihre eigenen Regeln und Besonderheiten haben.
+                        Besonderer Fokus liegt hierbei auf der Elementarebene <b style="font-family: 'Grenze Gotisch'">Terralithia</b>,
+                        die ähnlich zu unserer realen Erde ist. Neben dieser gibt es auch noch viele weitere Ebenen,
+                        alle mit eigenen Regionen, Orten und Charakteren.
+                        <br><br>
+                        Alle die in diesem Wiki aufgelisteten Charaktere und Orte entstammen aus meiner Feder (manchmal
+                        mehr oder weniger "inspiriert"). Dennoch gibt es unter den Charakteren solche mit einem roten
+                        Hintergrund. Diese sind Charaktere meiner D&D-Spieler. Da diese Charaktere eine wichtige Rolle
+                        in meinen Welten einnehmen, sind sie ebenfalls hier aufgeführt. Zumal ich dem Schaffenswillen
+                        meiner Spieler auch den nötigen Respekt zollen möchte.
+                        <br>
+                        Bilder der Charaktere sind entweder aus einer sehr frühen Phase der <b
+                            style="font-family: 'Grenze Gotisch'">Vastlands</b> und leider KI-generiert. Ich bin kein
+                        Freund von generativer KI und ihrer Verwendung in der heutigen Zeit. So gut es mir möglich ist,
+                        tausche ich solche Bilder durch solche, die von echten Künstlern stammen. Dabei bediene ich mich
+                        größtenteils von Pinterest lol. Immerhin ist das Stehlen von Werken bei mir noch Handarbeit.
+                        Daher hier der Disclaimer: Keine der Illustrationen der Charaktere gehören rechtlich mir.
+                        <br> Eine Künstlerin, die ich besonders hervorheben möchte ist eine meiner Spielerinnen
+                        <i>Bayda</i>. Unter anderem Charaktere wie <b style="font-family: 'Grenze Gotisch'"><a
+                            style="text-decoration: underline; color: black"
+                            href="{{ url_for('character', character_name='Malusdur') }}">Malusdur</a></b>, <b
+                            style="font-family: 'Grenze Gotisch'"><a
+                            style="text-decoration: underline; color: black"
+                            href="{{ url_for('character', character_name='Scarlet') }}">Scarlet</a></b> oder <b
+                            style="font-family: 'Grenze Gotisch'"><a
+                            style="text-decoration: underline; color: black"
+                            href="{{ url_for('character', character_name='Malusdur') }}">Kaen</a></b> wurden fabelhaft
+                        von ihr nach unser beider Vision illustriert. Ein großes Danke geht raus <3
+                        <br>
+                        Ansonsten gilt: <b
+                            style="font-family: 'Grenze Gotisch'"><a style="text-decoration: underline; color: black"
+                                                                     href="https://knowyourmeme.com/memes/original-character-do-not-steal">Original Character, Do Not Steal</a></b>
+                    </p>
 
                     <hr>
 
                     <div class="home-left-text-heading">
-                        <h2><a style="text-decoration: underline; color: white" href="{{ url_for('character', character_name='Nayru') }}">Nayrus</a> Logbuch</h2>
+                        <h2><a style="text-decoration: underline; color: white"
+                               href="{{ url_for('character', character_name='Nayru') }}">Nayrus</a> Logbuch</h2>
                     </div>
                     <div class="home-left-text-subsection" style="max-height: 500px; overflow-y: scroll">
                         {% for page in journal | reverse %}
