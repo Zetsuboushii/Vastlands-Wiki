@@ -1,53 +1,66 @@
 [
   {
+    "id": "faergrianisch",
     "title": "Faergrianisch",
     "content": "<table><tbody><tr><td><p>Art der Sprache</p></td><td><p>Amtliche Sprache</p></td></tr><tr><td><p>Herkunft</p></td><td><p>Faergria</p></td></tr></tbody></table>"
   },
   {
+    "id": "escrigrisch",
     "title": "Escrigrisch",
     "content": "<p></p><table><tbody><tr><td><p>Art der Sprache</p></td><td><p>Dialekt</p></td></tr><tr><td><p>Herkunft</p></td><td><p>Escrigria</p></td></tr></tbody></table>"
   },
   {
+    "id": "färön",
     "title": "Färön",
     "content": "<p></p><table><tbody><tr><td><p>Art der Sprache</p></td><td><p>Amtliche Sprache</p></td></tr><tr><td><p>Herkunft</p></td><td><p>Farodris</p></td></tr></tbody></table>"
   },
   {
+    "id": "halienisch",
     "title": "Halienisch",
     "content": "<p></p><table><tbody><tr><td><p>Art der Sprache</p></td><td><p>Dialekt</p></td></tr><tr><td><p>Herkunft</p></td><td><p>Hal</p></td></tr></tbody></table>"
   },
   {
+    "id": "kluirim",
     "title": "Kluirim",
     "content": "<p></p><table><tbody><tr><td><p>Art der Sprache</p></td><td><p>Amtliche Sprache</p></td></tr><tr><td><p>Herkunft</p></td><td><p>Kluirm</p></td></tr></tbody></table>"
   },
   {
+    "id": "thaugrin",
     "title": "Thaugrin",
     "content": "<p></p><table><tbody><tr><td><p>Art der Sprache</p></td><td><p>Dialekt</p></td></tr><tr><td><p>Herkunft</p></td><td><p>Thaugrien</p></td></tr></tbody></table>"
   },
   {
+    "id": "tinorisch",
     "title": "Tinorisch",
     "content": "<p></p><table><tbody><tr><td><p>Art der Sprache</p></td><td><p>Dialekt</p></td></tr><tr><td><p>Herkunft</p></td><td><p>Tinorland</p></td></tr></tbody></table>"
   },
   {
+    "id": "markathion",
     "title": "Markathion",
     "content": "<p></p><table><tbody><tr><td><p>Art der Sprache</p></td><td><p>Amtliche Sprache</p></td></tr><tr><td><p>Herkunft</p></td><td><p>Markath</p></td></tr></tbody></table>"
   },
   {
+    "id": "kradianisch",
     "title": "Kradianisch",
     "content": "<p></p><table><tbody><tr><td><p>Art der Sprache</p></td><td><p>Amtliche Sprache</p></td></tr><tr><td><p>Herkunft</p></td><td><p>Kradian</p></td></tr></tbody></table>"
   },
   {
+    "id": "zarashan'",
     "title": "Zarashan'",
     "content": "<p></p><table><tbody><tr><td><p>Art der Sprache</p></td><td><p>Amtliche Sprache</p></td></tr><tr><td><p>Herkunft</p></td><td><p>Zarashan</p></td></tr></tbody></table>"
   },
   {
+    "id": "vigiasisch",
     "title": "Vigiasisch",
     "content": "<p></p><table><tbody><tr><td><p>Art der Sprache</p></td><td><p>Amtliche Sprache</p></td></tr><tr><td><p>Herkunft</p></td><td><p>Vigias</p></td></tr></tbody></table>"
   },
   {
+    "id": "tougenkyougo",
     "title": "Tougenkyougo",
     "content": "<p></p><table><tbody><tr><td><p>Art der Sprache</p></td><td><p>Amtliche Sprache</p></td></tr><tr><td><p>Herkunft</p></td><td><p>Tougenkyou</p></td></tr></tbody></table>"
   },
   {
+    "id": "lipha",
     "title": "Lipha",
     "content": "<table><tbody><tr><td><p>Art der Sprache</p></td><td><p>Regionale Sprache</p></td></tr><tr><td><p>Herkunft</p></td><td><p>Fluss der Liphias</p></td></tr></tbody></table>"
   }

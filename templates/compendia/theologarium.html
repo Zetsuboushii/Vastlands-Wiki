@@ -18,12 +18,13 @@
         <div class="themed-container">
             {% for element in compendium | sort(attribute='title') %}
                 <div class="themed-element">
+                    {% set id = element.id %}
                     {% set element_name = element.title | lower | replace(" ", "-") %}
-                    {% set url = g.img_host + "crests/" + element_name + "-crest.png" %}
-                    <a href="{{ url_for('theologarium_entry', entry_name=element_name) }}">
+                    {% set url = g.img_host + "characters/" + id + " token.png" %}
+                    <a href="{{ url_for('theologarium_entry', entry_name=id) }}">
                         <img src="{{ url }}" alt="">
                     </a>
-                    <form action="{{ url_for('theologarium_entry', entry_name=element_name) }}">
+                    <form action="{{ url_for('theologarium_entry', entry_name=id) }}">
                         <button type="submit">{{ element.title }}</button>
                     </form>
                 </div>

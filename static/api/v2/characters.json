@@ -5901,7 +5901,11 @@
       },
       {
         "name": "U-Ranos",
-        "relation": "Nayru"
+        "relation": null
+      },
+      {
+        "name": "Nayru",
+        "relation": null
       },
       {
         "name": "Qildor",
@@ -7413,7 +7417,7 @@
         "relation": "Halbschwester"
       },
       {
-        "name": "Tristan",
+        "name": "Stephan",
         "relation": "Halbbruder"
       },
       {
