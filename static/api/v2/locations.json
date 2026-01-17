@@ -1625,13 +1625,6 @@
                             "Thycoria - Abenteurergilde"
                           ]
                         },
-                        "Backstube": {
-                          "name": "Backstube",
-                          "children": {},
-                          "scenes": [
-                            "Thycoria - Backstube"
-                          ]
-                        },
                         "Dorfplatz": {
                           "name": "Dorfplatz",
                           "children": {},
@@ -1640,6 +1633,13 @@
                             "Thycoria - Dorfplatz (Innen, 1F)",
                             "Thycoria - Dorfplatz (Innen, 2F)",
                             "Thycoria - Dorfplatz (Innen, 3F)"
+                          ]
+                        },
+                        "Evelines Backstube": {
+                          "name": "Evelines Backstube",
+                          "children": {},
+                          "scenes": [
+                            "Thycoria - Evelines Backstube"
                           ]
                         },
                         "Gemischtwarenladen": {
@@ -1682,16 +1682,30 @@
                           "scenes": [
                             "Thycoria-Wald - See zur Ebene"
                           ]
+                        },
+                        "Spinnenhöhle": {
+                          "name": "Spinnenhöhle",
+                          "children": {},
+                          "scenes": [
+                            "Thycoria-Wald - Spinnenhöhle"
+                          ]
+                        },
+                        "Verlorene Wälder": {
+                          "name": "Verlorene Wälder",
+                          "children": {},
+                          "scenes": [
+                            "Thycoria-Wald - Verlorene Wälder"
+                          ]
+                        },
+                        "Waldtempel": {
+                          "name": "Waldtempel",
+                          "children": {},
+                          "scenes": [
+                            "Thycoria-Wald - Waldtempel"
+                          ]
                         }
                       },
                       "scenes": []
-                    },
-                    "Verlorene Wälder": {
-                      "name": "Verlorene Wälder",
-                      "children": {},
-                      "scenes": [
-                        "Verlorene Wälder"
-                      ]
                     }
                   },
                   "scenes": []
