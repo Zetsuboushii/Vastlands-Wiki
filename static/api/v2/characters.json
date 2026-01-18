@@ -1497,7 +1497,7 @@
   },
   {
     "id": "nTmYOePIrdlmnZBs",
-    "name": "Cynthia [hidden]",
+    "name": "Cynthia",
     "surname": "",
     "title": "",
     "race": "Menschen",
@@ -2767,7 +2767,7 @@
   },
   {
     "id": "WTj7MC4YOuVTdJW6",
-    "name": "Godelot [hidden]",
+    "name": "Godelot",
     "surname": "",
     "title": "",
     "race": "Menschen",
@@ -2782,16 +2782,18 @@
       {
         "name": "Cynthia",
         "relation": "Großnichte/Rivalin"
+      },
+      {
+        "name": "Grishild",
+        "relation": "Komplizin"
       }
     ],
     "functions": [
       "Herzog"
     ],
-    "faith": [
-      "Iz'goroth"
-    ],
+    "faith": [],
     "excerpt": "",
-    "biography": "<p>Will Cynthia Thron streitig machen. Arbeitet mit Grishild zusammen, um Iz'goroth zu befreien</p>"
+    "biography": "<p>Will Cynthia Thron streitig machen. Arbeitet mit Grishild zusammen.</p>"
   },
   {
     "id": "rCLci8Lbc5EmgDRr",
@@ -2924,7 +2926,7 @@
   },
   {
     "id": "XyqgkRS7Xftx4YgA",
-    "name": "Grishild [hidden]",
+    "name": "Grishild",
     "surname": "",
     "title": "",
     "race": "Dämonen",
@@ -2938,17 +2940,15 @@
     "bonds": [
       {
         "name": "Godelot",
-        "relation": "Verbündeter"
+        "relation": "Komplize"
       }
     ],
     "functions": [
       "Hexenmeisterin"
     ],
-    "faith": [
-      "Iz'goroth"
-    ],
+    "faith": [],
     "excerpt": "",
-    "biography": "<p>Will Iz'goroth befreien. Arbeitet mit Godelot zusammen</p>"
+    "biography": "<p>Arbeitet mit Godelot zusammen</p>"
   },
   {
     "id": "BgBuEv0j6L8wmPCa",
@@ -8106,7 +8106,7 @@
     "sex": "weiblich",
     "age": 24,
     "birthday": "",
-    "nationality": "Bodheimr",
+    "nationality": "Kradian",
     "likes": [],
     "dislikes": [],
     "bonds": [],
