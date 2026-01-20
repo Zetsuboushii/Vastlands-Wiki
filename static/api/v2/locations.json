@@ -947,6 +947,26 @@
                         "Große Zwergenbrücke"
                       ]
                     },
+                    "Meeresreich": {
+                      "name": "Meeresreich",
+                      "children": {
+                        "Meerestempel": {
+                          "name": "Meerestempel",
+                          "children": {},
+                          "scenes": [
+                            "Meeresreich - Meerestempel"
+                          ]
+                        },
+                        "Versunkene Burg": {
+                          "name": "Versunkene Burg",
+                          "children": {},
+                          "scenes": [
+                            "Meeresreich - Versunkene Burg"
+                          ]
+                        }
+                      },
+                      "scenes": []
+                    },
                     "Tellius": {
                       "name": "Tellius",
                       "children": {
@@ -980,26 +1000,6 @@
                       "scenes": [
                         "Tunnel zum Meeresreich"
                       ]
-                    },
-                    "Unterwasser": {
-                      "name": "Unterwasser",
-                      "children": {
-                        "Meerestempel": {
-                          "name": "Meerestempel",
-                          "children": {},
-                          "scenes": [
-                            "Unterwasser - Meerestempel"
-                          ]
-                        },
-                        "Versunkene Burg": {
-                          "name": "Versunkene Burg",
-                          "children": {},
-                          "scenes": [
-                            "Unterwasser - Versunkene Burg"
-                          ]
-                        }
-                      },
-                      "scenes": []
                     }
                   },
                   "scenes": []
