@@ -35,8 +35,8 @@
     }
 
     .home-left-text-subsection {
-      margin-top: 10px;
-      margin-left: 30px;
+      margin: 10px 0 0 30px;
+      padding-right: 30px;
 
       p {
         margin-top: 0;
@@ -156,6 +156,75 @@
             position: relative;
           }
         }
+      }
+    }
+  }
+
+  .home-left-text {
+    margin: 25px;
+
+    p {
+      text-align: justify;
+    }
+
+    .home-left-text-heading {
+      top: 10px;
+      position: relative;
+      z-index: 1;
+      background-image: url('../ui/text-heading-backdrop.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 60px;
+      width: 336px;
+      color: white;
+
+      h2 {
+        text-align: center;
+        left: -8px;
+        top: 14px;
+        margin: 0;
+        position: relative;
+      }
+    }
+
+    .home-left-text-subsection {
+      margin-top: 10px;
+      margin-left: 30px;
+
+      p {
+        margin-top: 0;
+        text-align: justify;
+      }
+
+      .home-left-text-subheading {
+        position: relative;
+        z-index: 1;
+        background-image: url('../ui/field-name-background.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 36px;
+        width: 260px;
+        color: white;
+        text-align: center;
+
+        h3 {
+          top: 2px;
+          margin: 0;
+          position: relative;
+        }
+      }
+    }
+
+    .home-left-featured {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+
+      .home-left-featured-left {
+        flex: 0 0 30%;
+      }
+
+      .home-left-featured-right {
       }
     }
   }

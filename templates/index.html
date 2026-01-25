@@ -19,68 +19,164 @@
         <div class="home-container">
             <div class="home-left">
                 <div class="home-left-text">
-                    <!--<img src="{{ url_for('static', filename='imgs/totv_logo.png') }}" style="max-width: 500px">-->
-                    <p><i>Aus der Sicht des DMs:</i></p>
-                    <p style="margin-left: 20px">
-                        Vor dir liegt ein alter Foliant, gebunden aus Erinnerung und Schwur. Das
-                        <b style="font-family: 'Grenze Gotisch'">Tome of the Vastlands</b>! Seine Seiten tragen die
-                        Namen der Völker, die Zeichen der Götter und die Pfade der Länder, wie sie waren, wie sie sind
-                        und wie sie vielleicht sein werden. Kein Wort ruht hier ohne Gewicht, kein Name ohne Nachhall.
-                        <br><br>
-                        Dies ist ein heiliger Hort des Wissens, bewahrt von jenen, die hören konnten, wo andere
-                        schwiegen. Doch auch dieses Werk ist unvollständig, denn Wahrheit offenbart sich nur dem, der
-                        sucht. So bist auch du gerufen, zu lesen, zu deuten und zu schreiben – nicht als Herr über die
-                        Geschichte, sondern als ihr Diener.
-                        <br><br>
-                        <b style="font-family: 'Grenze Gotisch'">Tritt ein mit Ehrfurcht. Verweile mit Bedacht.</b>
-                    </p>
+                    <div class="home-left-text-subsection">
+                        <hr>
+                        <div style="text-align: center">
+                            <img src="{{ url_for('static', filename='imgs/totv_logo.png') }}" style="max-width: 500px">
+                        </div>
+                        <p><i>Aus der Sicht des DMs:</i></p>
+                        <p style="margin-left: 20px">
+                            Vor dir liegt ein alter Foliant, gebunden aus Erinnerung und Schwur. Das
+                            <b style="font-family: 'Grenze Gotisch'">Tome of the Vastlands</b>! Seine Seiten tragen die
+                            Namen der Völker, die Zeichen der Götter und die Pfade der Länder, wie sie waren, wie sie
+                            sind
+                            und wie sie vielleicht sein werden. Kein Wort ruht hier ohne Gewicht, kein Name ohne
+                            Nachhall.
+                            <br><br>
+                            Dies ist ein heiliger Hort des Wissens, bewahrt von jenen, die hören konnten, wo andere
+                            schwiegen. Doch auch dieses Werk ist unvollständig, denn Wahrheit offenbart sich nur dem,
+                            der
+                            sucht. So bist auch du gerufen, zu lesen, zu deuten und zu schreiben – nicht als Herr über
+                            die
+                            Geschichte, sondern als ihr Diener.
+                            <br><br>
+                            <b style="font-family: 'Grenze Gotisch'">Tritt ein mit Ehrfurcht. Verweile mit Bedacht.</b>
+                        </p>
 
-                    <p><i>Aus der Sicht von Zetsu:</i></p>
-                    <p style="margin-left: 20px">
-                        Dies ein Wiki zu meiner Fantasy-Welt der <b style="font-family: 'Grenze Gotisch'">Vastlands</b>,
-                        welche auch als Schauplatz verschiedener D&D-Kampagnen und -Oneshots dient. Wie auf meiner <b
-                            style="font-family: 'Grenze Gotisch'"><a style="text-decoration: underline; color: black"
-                                                                     href="https://zetsuboushii.site">persönlichen
-                        Website</a></b> ausführlichst beschrieben, genieße ich es, mir Welten und Charaktere
-                        auszudenken. D&D und dieses Wiki sind dabei eine Möglichkeit, dieser Kreativität eine Leinwand
-                        zu geben.
-                        <br><br>
-                        Die <b style="font-family: 'Grenze Gotisch'">Vastlands</b> sind als ein Universum zu betrachten,
-                        orientiert am Konzept der Elementarebenen von D&D. In diesem Universum existieren also
-                        verschiedene Elementarebenen, die jeweils ihre eigenen Regeln und Besonderheiten haben.
-                        Besonderer Fokus liegt hierbei auf der Elementarebene <b style="font-family: 'Grenze Gotisch'">Terralithia</b>,
-                        die ähnlich zu unserer realen Erde ist. Neben dieser gibt es auch noch viele weitere Ebenen,
-                        alle mit eigenen Regionen, Orten und Charakteren.
-                        <br><br>
-                        Alle die in diesem Wiki aufgelisteten Charaktere und Orte entstammen aus meiner Feder (manchmal
-                        mehr oder weniger "inspiriert"). Dennoch gibt es unter den Charakteren solche mit einem roten
-                        Hintergrund. Diese sind Charaktere meiner D&D-Spieler. Da diese Charaktere eine wichtige Rolle
-                        in meinen Welten einnehmen, sind sie ebenfalls hier aufgeführt. Zumal ich dem Schaffenswillen
-                        meiner Spieler auch den nötigen Respekt zollen möchte.
-                        <br>
-                        Bilder der Charaktere sind entweder aus einer sehr frühen Phase der <b
-                            style="font-family: 'Grenze Gotisch'">Vastlands</b> und leider KI-generiert. Ich bin kein
-                        Freund von generativer KI und ihrer Verwendung in der heutigen Zeit. So gut es mir möglich ist,
-                        tausche ich solche Bilder durch solche, die von echten Künstlern stammen. Dabei bediene ich mich
-                        größtenteils von Pinterest lol. Immerhin ist das Stehlen von Werken bei mir noch Handarbeit.
-                        Daher hier der Disclaimer: Keine der Illustrationen der Charaktere gehören rechtlich mir.
-                        <br> Eine Künstlerin, die ich besonders hervorheben möchte ist eine meiner Spielerinnen
-                        <i>Bayda</i>. Unter anderem Charaktere wie <b style="font-family: 'Grenze Gotisch'"><a
-                            style="text-decoration: underline; color: black"
-                            href="{{ url_for('character', character_name='Malusdur') }}">Malusdur</a></b>, <b
-                            style="font-family: 'Grenze Gotisch'"><a
-                            style="text-decoration: underline; color: black"
-                            href="{{ url_for('character', character_name='Scarlet') }}">Scarlet</a></b> oder <b
-                            style="font-family: 'Grenze Gotisch'"><a
-                            style="text-decoration: underline; color: black"
-                            href="{{ url_for('character', character_name='Malusdur') }}">Kaen</a></b> wurden fabelhaft
-                        von ihr nach unser beider Vision illustriert. Ein großes Danke geht raus <3
-                        <br>
-                        Ansonsten gilt: <b
-                            style="font-family: 'Grenze Gotisch'"><a style="text-decoration: underline; color: black"
-                                                                     href="https://knowyourmeme.com/memes/original-character-do-not-steal">Original Character, Do Not Steal</a></b>
-                    </p>
+                        <p><i>Aus der Sicht von Zetsu:</i></p>
+                        <p style="margin-left: 20px">
+                            Dies ein Wiki zu meiner Fantasy-Welt der <b
+                                style="font-family: 'Grenze Gotisch'">Vastlands</b>,
+                            welche auch als Schauplatz verschiedener D&D-Kampagnen und -Oneshots dient. Wie auf meiner
+                            <b
+                                    style="font-family: 'Grenze Gotisch'"><a
+                                    style="text-decoration: underline; color: black"
+                                    href="https://zetsuboushii.site">persönlichen
+                                Website</a></b> ausführlichst beschrieben, genieße ich es, mir Welten und Charaktere
+                            auszudenken. D&D und dieses Wiki sind dabei eine Möglichkeit, dieser Kreativität eine
+                            Leinwand
+                            zu geben.
+                            <br><br>
+                            Die <b style="font-family: 'Grenze Gotisch'">Vastlands</b> sind als ein Universum zu
+                            betrachten,
+                            orientiert am Konzept der Elementarebenen von D&D. In diesem Universum existieren also
+                            verschiedene Elementarebenen, die jeweils ihre eigenen Regeln und Besonderheiten haben.
+                            Besonderer Fokus liegt hierbei auf der Elementarebene <b
+                                style="font-family: 'Grenze Gotisch'">Terralithia</b>,
+                            die ähnlich zu unserer realen Erde ist. Neben dieser gibt es auch noch viele weitere Ebenen,
+                            alle mit eigenen Regionen, Orten und Charakteren.
+                            <br><br>
+                            Alle die in diesem Wiki aufgelisteten Charaktere und Orte entstammen aus meiner Feder
+                            (manchmal
+                            mehr oder weniger "inspiriert"). Dennoch gibt es unter den Charakteren solche mit einem
+                            roten
+                            Hintergrund. Diese sind Charaktere meiner D&D-Spieler. Da diese Charaktere eine wichtige
+                            Rolle
+                            in meinen Welten einnehmen, sind sie ebenfalls hier aufgeführt. Zumal ich dem
+                            Schaffenswillen
+                            meiner Spieler auch den nötigen Respekt zollen möchte.
+                            <br>
+                            Bilder der Charaktere sind entweder aus einer sehr frühen Phase der <b
+                                style="font-family: 'Grenze Gotisch'">Vastlands</b> und leider KI-generiert. Ich bin
+                            kein
+                            Freund von generativer KI und ihrer Verwendung in der heutigen Zeit. So gut es mir möglich
+                            ist,
+                            tausche ich solche Bilder durch solche, die von echten Künstlern stammen. Dabei bediene ich
+                            mich
+                            größtenteils von Pinterest lol. Immerhin ist das Stehlen von Werken bei mir noch Handarbeit.
+                            Daher hier der Disclaimer: Keine der Illustrationen der Charaktere gehören rechtlich mir.
+                            <br> Eine Künstlerin, die ich besonders hervorheben möchte ist eine meiner Spielerinnen
+                            <i>Bayda</i>. Unter anderem Charaktere wie <b style="font-family: 'Grenze Gotisch'"><a
+                                style="text-decoration: underline; color: black"
+                                href="{{ url_for('character', character_name='Malusdur') }}">Malusdur</a></b>, <b
+                                style="font-family: 'Grenze Gotisch'"><a
+                                style="text-decoration: underline; color: black"
+                                href="{{ url_for('character', character_name='Scarlet') }}">Scarlet</a></b> oder <b
+                                style="font-family: 'Grenze Gotisch'"><a
+                                style="text-decoration: underline; color: black"
+                                href="{{ url_for('character', character_name='Malusdur') }}">Kaen</a></b> wurden
+                            fabelhaft
+                            von ihr nach unser beider Vision illustriert. Ein großes Danke geht raus <3
+                            <br>
+                            Ansonsten gilt: <b
+                                style="font-family: 'Grenze Gotisch'"><a
+                                style="text-decoration: underline; color: black"
+                                href="https://knowyourmeme.com/memes/original-character-do-not-steal">Original
+                            Character, Do Not Steal</a></b>
+                        </p>
+                    </div>
 
+                    <hr>
+
+                    <div class="home-left-text-heading"><h2>Kampagnen</h2></div>
+                    <div class="home-left-text-subsection" style="max-height: 500px; overflow-y: scroll">
+                        <h3>Tome of the Vastlands: Vermächtnis der Hohefürsten</h3>
+
+                        Die legendäre Heldengruppe der Legenden stelt sich in den Dienst der Götter des Animus und
+                        kämpfen Seite an Seite mit den Hohefürsten Faergrias gegen eine Armee feindlicher Hohefürsten
+                        unter Malusdur, dem König der Dämonen und Hohefürst des Hasses. An dessen Seite stehen Prinz
+                        Narcian von Faergria und der bislang versiegelte fünfte Gott des Animus: Alcuin, Gott der
+                        Seelen. Die Heldengruppe muss schwierige Prüfungen und Schicksalsschläge bestehen, um die
+                        Ordnung und Gerechtigkeit der Welt wieder hierzustellen.
+
+                        <h3>Tome of the Vastlands: Nocturne des Infernos</h3>
+
+                        Das Jagdschloss des Henrich von Bißler im entlegenen Norden Kradians stellt sechs neue
+                        Bedienstete für verschiedenste Arbeiten in seinem Hause ein. Doch schon am ersten Abend nach der
+                        Ankunft der neuen Bediensteten stirbt von Bißler an einem Flügel im Ballsaal des Jadgschlosses
+                        in einem verheerenden Brand. Es steht schnell fest, dass Henrich von Bißler ermordet wurde.
+                        Langsam decken die Bediensteten ein jahrealtes Geheimnis der Familie von Bißler auf und
+                        entlarven den Mörder.
+
+                        <h3>Tome of the Vastlands: Splitter der Regentschaft</h3>
+
+                        Kradian, ein kleines, traditionsreiches Königreich an der Küste des vielseitigen Kontinents
+                        Uastrun, wurde über Generationen hinweg von der Königsfamilie mit gütiger Hand regiert. Nach
+                        einer Reihe schwerer Schicksalsschläge ist die Blutlinie jedoch beinahe erloschen. Als letzte
+                        ihrer Familie besteigt Prinzessin Cynthia den Thron in der Hauptstadt Mesmudor. Doch das
+                        kradianische Recht erlaubt es einer unverheirateten Herrscherin nicht, den Titel der Königin zu
+                        führen. Um ihre Legitimität zu festigen, lässt der königliche Hof daher nach geeigneten
+                        Heiratskandidaten ausschreiben. Trotz zahlreicher Bewerber konnte bislang niemand das Vertrauen
+                        oder die Zuneigung der Prinzessin gewinnen. So verharrt Kradian seit nunmehr vier Jahren in
+                        einem politischen Schwebezustand. Ein Nährboden für Zweifel, Intrigen und offenen Widerstand.
+                        Der größte Widersacher der Prinzessin ist ihr entfernter Großonkel Godelot, der die Unsicherheit
+                        nutzt, um selbst Anspruch auf den Thron zu erheben. Gleichzeitig verschlechtern sich die
+                        Beziehungen zum Nachbarreich Zarashan. Dessen Sultan erkennt Cynthia nicht als rechtmäßige
+                        Herrscherin an, was die Spannungen zwischen den Reichen weiter verschärft.
+
+                        Normalerweise herrscht an den Schwarzen Brettern der kradianischen Abenteurergilden reges
+                        Treiben, doch diesmal bleiben die Aufträge der Prinzessin unangetastet. Aus Angst, Aberglauben
+                        oder politischem Kalkül wagt es niemand, Partei zu ergreifen. Ohne Unterstützung droht Cynthia
+                        schließlich das Exil: das endgültige Ende ihrer Blutlinie. Doch wie durch eine Fügung der Göttin
+                        Kradia selbst treffen sich eines Tages zwei Abenteurer vor einem Schwarzen Brett. Entgegen aller
+                        Zweifel sind sie bereit, sich dieser Herausforderung zu stellen und damit das Schicksal Kradians
+                        zu verändern.
+
+                        <h3>Tome of the Vastlands: Scharlachrote Gedichte</h3>
+
+                        tbd
+                    </div>
+
+                    <hr>
+
+                    <div class="home-left-text-heading"><h2>Schrfitwerke</h2></div>
+                    <div class="home-left-text-subsection" style="max-height: 500px; overflow-y: scroll">
+                        <h3>Tome of the Vastlands: Purpurne Rache</h3>
+
+                        Eliza von Nordholm: Tochter des Großherzogenhauses von Escrigria. Ihre Kindheit ist von schweren
+                        Schicksalsschlägen gezeichnet und schließlich sorgt ein Vorfall dafür, dass sie alles verliert.
+                        In dieser kurzen Vorgeschichte zu "Tome of the Vastlands: Vermächtnis der Hohefürsten" wird
+                        beleuchtet, wie Eliza zu der starken Persönlichkeit geworden ist, die sie in der betreffenden
+                        Kampagne wiederspiegelt.
+
+                        <h3>Tome of the Vastlands: Geißel der Gier</h3>
+
+                        Avarne ist ein junger Bursche aus dem verschlafenen Dünsberg. Eigentlich soll er das Amt des
+                        Bürgermeisters des Dörfchens seines nun pensionierten Vaters übernehmen. Doch Avarne träumt von
+                        großen Abenteuern, dunklen Verliesen und Schätzen. Nach einem Botengang, den er für seinen Vater
+                        übernimmt, rutscht Avarne schließlich doch in eine für ihn unerwartete Reise und verstrickt sich
+                        in Dinge, in die er sich lieber nicht hätte einmischen sollen…
+                    </div>
                     <hr>
 
                     <div class="home-left-text-heading">
@@ -92,33 +188,6 @@
                             <div class="home-left-text-subheading"><h3>{{ page.title }}</h3></div>
                             {{ page.content | safe }}
                         {% endfor %}
-                    </div>
-
-                    <hr>
-
-                    <div class="home-left-text-heading"><h2>Vorgestellter Charakter</h2></div>
-                    <div class="home-left-featured">
-                        <div class="home-left-featured-left characters-container"
-                             style="justify-content: left; border-right: 1px black">
-                            <div class="characters-element">
-                                {% set char_name = rand_char.name | lower | replace(" ", "-") %}
-                                <a href="{{ url_for('character', character_name=char_name) }}">
-                                    {% set url = g.img_host_resized + "characters/" + char_name %}
-                                    <img src="{{ url }} token.png" alt="">
-                                </a>
-                                <form action="{{ url_for('character', character_name=char_name) }}">
-                                    <button class="characters-element-name">{{ rand_char.name }}</button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="home-left-featured-right">
-                            {% if not rand_char.excerpt %}
-                                <p>Hier steht noch nichts! Erinnere doch gerne den DM daran, für diesen Charakter etwas
-                                    epochales zu schreiben :)</p>
-                            {% else %}
-                                <p>{{ rand_char.excerpt | safe }}</p>
-                            {% endif %}
-                        </div>
                     </div>
                 </div>
             </div>
@@ -150,6 +219,28 @@
                             </div>
                         </div>
                     {% endif %}
+                </div>
+                <hr>
+                <div class="home-left-text" style="text-align: justify">
+                    <div class="home-left-text-heading"><h2>Vorgestellte Charaktere</h2></div>
+                    <div class="home-left-featured" style="overflow-y: scroll; max-height: 1900px">
+                        <div class="characters-container">
+                            {% for char in highlighted_characters %}
+                                <div class="characters-element" style="width: 150px">
+                                    {% set char_name = char.name | lower | replace(" ", "-") %}
+                                    <a href="{{ url_for('character', character_name=char_name) }}">
+                                        {% set url = g.img_host_resized + "characters/" + char_name %}
+                                        <img style="width: 128px; height: 128px" src="{{ url }} token.png" alt="">
+                                    </a>
+                                    <form action="{{ url_for('character', character_name=char_name) }}">
+                                        <button class="characters-element-name"
+                                                style="width: 150px; height: 35px; font-size: 18px">
+                                            {{ char.name }}</button>
+                                    </form>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
