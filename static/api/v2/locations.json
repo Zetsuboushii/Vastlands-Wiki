@@ -1897,6 +1897,26 @@
         }
       },
       "scenes": []
+    },
+    "Traumwelt": {
+      "name": "Traumwelt",
+      "children": {
+        "Agrastons Traum": {
+          "name": "Agrastons Traum",
+          "children": {},
+          "scenes": [
+            "Agrastons Traum"
+          ]
+        },
+        "Arions Traum": {
+          "name": "Arions Traum",
+          "children": {},
+          "scenes": [
+            "Arions Traum"
+          ]
+        }
+      },
+      "scenes": []
     }
   },
   "scenes": []
