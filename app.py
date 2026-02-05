@@ -22,7 +22,7 @@ def load_from_json(filename):
 @app.before_request
 def before_request():
     g.site_title = "Tome of the Vastlands"
-    g.version_number = "5.5.9"
+    g.version_number = "5.5.12"
 
     g.ingame_date = load_from_json("current_date")["current_ingame_date"]
     g.lore_days = ["Lunesdag", "Flamdag", "Quellsdag", "Waldsdag", "Goldag", "Terrasdag", "Sunnesdag"]
@@ -83,7 +83,7 @@ def index():
     highlights = ["Amlin", "Acilia", "Justicia", "Fortuna", "Meilira", "Thanatos", "Scarlet", "Cinnabar", "Seloue", "Craindre", "Zora", "Phaerille", "Finnea", "Alice", "Ar-Merer", "Artie", "Avarne", "Aya", "Carmesine", "Zetta", "Cordelia", "Felix", "Flüstern", "Fubuki", "Grenze", "Grund", "Hama", "Hindrik", "Iddra", "Igmusur"]
     characters_list = load_from_json("characters")
     characters_list[:] = [c for c in characters_list if "," not in c["name"] and "[hidden]" not in c["name"]]
-    highlighted_characters = [c for c in characters_list if "<div><h2>" in c["biography"]]
+    highlighted_characters = [c for c in characters_list if "<h2>" in c["biography"]]
     characters_list.sort(key=lambda character: character["name"].lower().replace(" & ", ""))
     calendar_list = load_from_json("calendar")
     current_day = g.current_date
