@@ -7,48 +7,224 @@ info:
 servers:
   - url: https://tome.zetsuboushii.site
 
+tags:
+  - name: NPCs
+    description: Non-Player Characters
+  - name: Journals
+    description: Journal entries
+  - name: Compendia
+    description: Compendium data (e.g., races)
+  - name: Locations
+    description: Locations tree (places) and scenes
+
 paths:
   /api/v2/npcs.json:
     get:
+      tags: [ NPCs ]
       summary: List of all NPCs
       operationId: listNPCs
       responses:
-        '200':
+        "200":
           description: Array of Non-Player Characters
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/NPC'
-  /api/v2/journal.json:
+                  $ref: "#/components/schemas/NPC"
+
+  /api/v2/journals/journal_*.json:
     get:
+      tags: [ Journals ]
       summary: List of Journal Entries
       operationId: listJournalEntries
       responses:
-        '200':
+        "200":
           description: Array of Journal Entries
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/Journal Entry'
+                  $ref: "#/components/schemas/Journal Entry"
+
   /api/v2/compendia/gentarium.json:
     get:
+      tags: [ Compendia ]
       summary: List of Races
       operationId: listRaces
       responses:
-        '200':
+        "200":
           description: Array of Races
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/Race'
+                  $ref: "#/components/schemas/Race"
+
+  /api/v2/locations.json:
+    get:
+      tags: [ Locations ]
+      summary: Get the complete locations tree (root node)
+      operationId: getLocations
+      responses:
+        "200":
+          description: Root node including the full subtree
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/LocationsNode"
+
+  /api/v2/locations/nodes:
+    get:
+      tags: [ Locations ]
+      summary: Get a node by path (query parameter)
+      description: >
+        Path is slash-separated relative to the root, e.g. "Terralithia/Faergria/Adrestia".
+        Use this endpoint if the path contains characters that are inconvenient in path params.
+      operationId: getLocationsNodeByQueryPath
+      parameters:
+        - $ref: "#/components/parameters/LocationsNodePathQuery"
+      responses:
+        "200":
+          description: The requested node (subtree)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/LocationsNode"
+
+  /api/v2/locations/nodes/{path}:
+    get:
+      tags: [ Locations ]
+      summary: Get a node by slash path
+      description: >
+        Path segments are node names. Example:
+        /api/v2/locations/nodes/Terralithia/Faergria/Adrestia (URL-encoding required).
+      operationId: getLocationsNodeByPath
+      parameters:
+        - $ref: "#/components/parameters/LocationsNodePath"
+      responses:
+        "200":
+          description: The requested node (subtree)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/LocationsNode"
+
+  /api/v2/locations/nodes/{path}/children:
+    get:
+      tags: [ Locations ]
+      summary: List direct children of a node
+      operationId: listLocationsNodeChildren
+      parameters:
+        - $ref: "#/components/parameters/LocationsNodePath"
+      responses:
+        "200":
+          description: Map of direct children (child name -> child node)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/LocationsChildrenMap"
+
+  /api/v2/locations/nodes/{path}/scenes:
+    get:
+      tags: [ Locations ]
+      summary: List scenes on a node
+      operationId: listLocationsNodeScenes
+      parameters:
+        - $ref: "#/components/parameters/LocationsNodePath"
+      responses:
+        "200":
+          description: List of scene names attached to the node
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SceneList"
+
+  /api/v2/locations/scenes.json:
+    get:
+      tags: [ Locations ]
+      summary: List all scenes (flattened)
+      description: >
+        Returns a de-duplicated list of all scene names across the full tree.
+        Optional substring filter via q (case-insensitive).
+      operationId: listAllScenes
+      parameters:
+        - name: q
+          in: query
+          required: false
+          description: Substring filter for scene names (case-insensitive)
+          schema:
+            type: string
+      responses:
+        "200":
+          description: All (optionally filtered) scene names
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SceneList"
+
+  /api/v2/locations/scenes/{sceneId}.json:
+    get:
+      tags: [ Locations ]
+      summary: Get scene details (name + locations)
+      description: >
+        sceneId is the scene name (URL-encoded) by default.
+        locations contains all node paths where this scene appears.
+      operationId: getScene
+      parameters:
+        - name: sceneId
+          in: path
+          required: true
+          description: Scene name (URL-encoded)
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Scene details including occurrences in the tree
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SceneDetails"
 
 components:
+  parameters:
+    LocationsNodePath:
+      name: path
+      in: path
+      required: true
+      description: >
+        Slash-separated path relative to the locations root, e.g. "Animus/Garten der Magie".
+        URL-encoding required.
+      schema:
+        type: string
+        example: "Terralithia/Faergria/Adrestia"
+
+    LocationsNodePathQuery:
+      name: path
+      in: query
+      required: true
+      description: >
+        Slash-separated path relative to the locations root, e.g. "Animus/Garten der Magie".
+        URL-encoding applies in the query string.
+      schema:
+        type: string
+        example: "Animus/Garten der Magie"
+
+  responses:
+    NotFound:
+      description: Resource not found
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
+          examples:
+            notFound:
+              value:
+                code: "NOT_FOUND"
+                message: "Node or scene was not found."
+
   schemas:
     NPC:
       type: object
@@ -90,6 +266,7 @@ components:
           type: array
           description: List of relations to other characters of NPC
           items:
+            type: object
             properties:
               name:
                 type: string
@@ -112,15 +289,17 @@ components:
       required:
         - id
         - name
+
     Journal Entry:
       type: object
       properties:
         title:
           type: string
-          description: Title of Entry. Mainly 'Session \#{No. of Session}'
+          description: Title of Entry. Mainly 'Session #{No. of Session}'
         content:
           type: string
           description: HTML content of Entry
+
     Race:
       type: object
       properties:
@@ -130,3 +309,45 @@ components:
         content:
           type: string
           description: HTML content of Entry
+
+    LocationsNode:
+      type: object
+      required: [ name, children, scenes ]
+      properties:
+        name:
+          type: string
+          description: Display name of the node
+        children:
+          $ref: "#/components/schemas/LocationsChildrenMap"
+        scenes:
+          $ref: "#/components/schemas/SceneList"
+      additionalProperties: false
+
+    LocationsChildrenMap:
+      type: object
+      description: Map of childName -> child node
+      additionalProperties:
+        $ref: "#/components/schemas/LocationsNode"
+
+    SceneList:
+      type: array
+      description: List of scene names
+      items:
+        type: string
+
+    SceneDetails:
+      type: object
+      required: [ id, name, locations ]
+      properties:
+        id:
+          type: string
+          description: Scene identifier (defaults to the scene name)
+        name:
+          type: string
+          description: Scene display name
+        locations:
+          type: array
+          description: All node paths where the scene appears (slash-separated)
+          items:
+            type: string
+      additionalProperties: false
