@@ -6,7 +6,23 @@
       "children": {
         "Garten der Magie": {
           "name": "Garten der Magie",
-          "children": {},
+          "children": {
+            "Garten des Ewigen Frühlings": {
+              "name": "Garten des Ewigen Frühlings",
+              "children": {
+                "Unter dem Brunnen": {
+                  "name": "Unter dem Brunnen",
+                  "children": {},
+                  "scenes": [
+                    "Garten des Ewigen Frühlings - Unter dem Brunnen"
+                  ]
+                }
+              },
+              "scenes": [
+                "Garten des Ewigen Frühlings"
+              ]
+            }
+          },
           "scenes": []
         },
         "Gebirge der Sünde": {
@@ -37,12 +53,36 @@
         },
         "See des Schicksals": {
           "name": "See des Schicksals",
-          "children": {},
+          "children": {
+            "Fortunas Schreibtisch": {
+              "name": "Fortunas Schreibtisch",
+              "children": {},
+              "scenes": [
+                "Fortunas Schreibtisch"
+              ]
+            }
+          },
           "scenes": []
         },
         "Wüste der Seelen": {
           "name": "Wüste der Seelen",
-          "children": {},
+          "children": {
+            "Schmelztiegel der Welt": {
+              "name": "Schmelztiegel der Welt",
+              "children": {
+                "Thronsaal": {
+                  "name": "Thronsaal",
+                  "children": {},
+                  "scenes": [
+                    "Schmelztiegel der Welt - Thronsaal"
+                  ]
+                }
+              },
+              "scenes": [
+                "Schmelztiegel der Welt"
+              ]
+            }
+          },
           "scenes": []
         },
         "Zentraler Animus": {
@@ -185,11 +225,11 @@
                     "Drakensumpf": {
                       "name": "Drakensumpf",
                       "children": {
-                        "Hütte von Craindre": {
-                          "name": "Hütte von Craindre",
+                        "Craindres Hexenanwesen": {
+                          "name": "Craindres Hexenanwesen",
                           "children": {},
                           "scenes": [
-                            "Drakensumpf - Hütte von Craindre"
+                            "Drakensumpf - Craindres Hexenanwesen"
                           ]
                         }
                       },
@@ -841,7 +881,8 @@
                       "name": "Bernsteintempel",
                       "children": {},
                       "scenes": [
-                        "Bernsteintempel"
+                        "Bernsteintempel",
+                        "Bernsteintempel (B1)"
                       ]
                     },
                     "Blitzaltar": {
@@ -1894,6 +1935,26 @@
           "name": "Vigias",
           "children": {},
           "scenes": []
+        }
+      },
+      "scenes": []
+    },
+    "Traumwelt": {
+      "name": "Traumwelt",
+      "children": {
+        "Agrastons Traum": {
+          "name": "Agrastons Traum",
+          "children": {},
+          "scenes": [
+            "Agrastons Traum"
+          ]
+        },
+        "Arions Traum": {
+          "name": "Arions Traum",
+          "children": {},
+          "scenes": [
+            "Arions Traum"
+          ]
         }
       },
       "scenes": []

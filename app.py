@@ -22,7 +22,7 @@ def load_from_json(filename):
 @app.before_request
 def before_request():
     g.site_title = "Tome of the Vastlands"
-    g.version_number = "5.5.8"
+    g.version_number = "5.5.9"
 
     g.ingame_date = load_from_json("current_date")["current_ingame_date"]
     g.lore_days = ["Lunesdag", "Flamdag", "Quellsdag", "Waldsdag", "Goldag", "Terrasdag", "Sunnesdag"]
@@ -87,7 +87,10 @@ def index():
     characters_list.sort(key=lambda character: character["name"].lower().replace(" & ", ""))
     calendar_list = load_from_json("calendar")
     current_day = g.current_date
-    journal = load_from_json("journal")
+    journals = {
+        "nayru": load_from_json("journals/journal_nayru"),
+        "agraston": load_from_json("journals/journal_agraston")
+    }
 
     birthday_characters = []
     for char in characters_list:
@@ -100,7 +103,7 @@ def index():
             if f"{birthday_day:02}" == f"{current_day.day:02}" and f"{birthday_month:02}" == f"{current_day.month:02}":
                 birthday_characters.append(data)
 
-    return render_template('index.html', birthday_characters=birthday_characters, journal=journal,
+    return render_template('index.html', birthday_characters=birthday_characters, journals=journals,
                            highlighted_characters=highlighted_characters, holidays=calendar_list,
                            characters=characters_list, current_day=current_day)
 
