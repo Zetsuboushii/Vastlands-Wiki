@@ -22,7 +22,7 @@ def load_from_json(filename):
 @app.before_request
 def before_request():
     g.site_title = "Tome of the Vastlands"
-    g.version_number = "5.5.15"
+    g.version_number = "5.5.16"
 
     g.ingame_date = load_from_json("current_date")["current_ingame_date"]
     g.lore_days = ["Lunesdag", "Flamdag", "Quellsdag", "Waldsdag", "Goldag", "Terrasdag", "Sunnesdag"]
@@ -35,7 +35,7 @@ def before_request():
     g.categories = {
         "Characterium": "characters",
         "Gentarium": "gentarium",
-        "Geographium": "locations",
+        "Geographium": "geographium",
         "Gradarium": "tierlist",
         "Linguarium": "linguarium",
         "Theologarium": "theologarium"
