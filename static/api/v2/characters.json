@@ -701,7 +701,8 @@
       "Harmonie",
       "Kamillentee",
       "Pärchen beobachten",
-      "Rosen"
+      "Rosen",
+      "Menschliche Ästhetik"
     ],
     "dislikes": [
       "Pöbelnde Personen",
@@ -737,8 +738,8 @@
       "Hohefürstin der Liebe"
     ],
     "faith": [],
-    "excerpt": "<p>Diese liebreizende Hohefürstin nimmt ihre Aufgabe als Verkupplerin etwas zu ernst. Eigentlich sollte sie auf Anliegen reagieren, die ihr in ihrem Tempel beigetragen werden, jedoch ist Avila die meiste Zeit über auf Reisen in ganz Faergria, um potenziellen Pärchen den “ Schubser in die richtige Richtung ” zu geben. Spricht man sie auf diese Obzession an, wird sie schnell beleidigt.</p>",
-    "biography": ""
+    "excerpt": "<p>Avila ist die Hohefürstin der Liebe und hat es sich zur Lebensaufgabe gemacht, Menschen, die füreinander bestimmt sind, zusammenzuführen. Dabei geht sie oft mit einem Übereifer vor, der an Engstirnigkeit grenzt. Ihr Herz hängt so sehr an ihrem Erfolg, dass sie bei Misserfolgen grantig reagiert und ihre Arbeit zeitweise niederlegt. Hinter ihrer Fixierung auf das Glück anderer verbirgt sich die tragische Geschichte einer Frau, die ihre eigene Schönheit einst als Fluch empfand und durch den Verlust ihres Bruders lernte, den Wert des Lebens und der Zuneigung neu zu definieren.</p>",
+    "biography": "<h2>Der Fluch der Schönheit</h2><p>Avila wuchs als zweites Kind einer ärmlichen Bauernfamilie auf. Ihr älterer Bruder wurde bereits früh für Feldarbeit eingespannt, wobei sich Avila nie groß mit harter Arbeit abgeben musste. Schon als Kind bemerkten ihre Eltern, dass Avila von unaussprechlicher Schönheit gesegnet war. Dies brachte Avila mit den Jahren Probleme ein, da entweder Neider ihr dieses Glück nicht gewähren wollten oder schmierige Menschenhändler Avila für sich gewinnen wollten. Stets hatte Avila jedoch ihren älteren Bruder zur Seite, der sie in solchen Fällen beschützen konnte. Ihr Bruder war von der Feldarbeit sehr stark und konnte die Sicherheit der Familie und vor allem von Avila sicherstellen.</p><h2>Eine Schicksalshafte Nacht</h2><p>Eines Nachts, als Avila mit ihrem Bruder auf dem Weg von der Stadt zurück zu ihrem Dorf ging, begegnete ihnen ein sichtlich betrunkener Mann, der keine Zurückhaltung besaß, im Detail zu beschreiben, wie er einen Abend mit Avila verbringen würde. Erzürnt stürzte sich ihr Bruder wie so oft auf den Schmierigen, doch zu ihrer beider Überraschung, unterlag ihr Bruder dem Trunkenbold. Als der Mann auf den nun wehrlosen Bruder eintrat, konnte Avila dies nicht länger mit ansehen, schnappte sich das Taschenmesser ihres Bruders und stach auf den betrunkenen Angreifer ein. Nachdem dieser blutig zu Boden fiel, versuchte Avila alles, um in der jähen Situation ihren Bruder vor dem Tode zu bewahren, was ihr jedoch nicht gelang.</p><h2>Der Weg zum Glück</h2><p>Schon oft dachte sich Avila, dass ihr und ihrem Bruder ihre Schönheit mehr Probleme als alles andere bereitet hatte und verfluchte das Schicksal, das ihr ohne zu fragen diese Bürde auferlegte. Ihr geliebter Bruder, den sie über alles schätzte, war im Einsatz für ihre Sicherheit gestorben. Avila sprach sich wiederholt die Schuld dafür zu und wünschte sich nichts mehr, als von ihrem Fluch der Schönheit befreit zu sein. </p><p>Ohne ihren Bruder, konnten ihre Eltern die Felder nicht mehr bestellen und sahen sich gezwungen Avila an einen reichen Adelsmann zu verkaufen. Als ein Diener dieses Mannes Avila mit der Kutsche abholen sollte, fasste Avila einen Entschluss. Da das Geld für sie bereits bezahlt war und sie ohnehin nichs mehr zu verlieren hatte, wollte sie nicht, dass ihr irgendein ekelhafter Adliger die letzte Würde raubte. Während sie unbeobachtet auf der Ladefläche der Kutsche saß, zerkratzte sie sich aus Verzweiflung Arme, Hals und Gesicht. Als sie am Anwesen des Adligen ankam und sie mit Wunden übersäht vorgefunden wurde, verschmähte der Mann Avilas Anwesenheit und warf sie in die Gosse.</p><p>Am Tiefpunkt ihres Lebens angekommen, in das sie sich selbst verschuldet sah, verfluchte sie ein letztes Mal das Schicksal, bis eine große, blauhaarige Frau vor sie trat und sie fragte: \"Liebes, an deiner Stelle würde ich mich mit diesen Beschimpfungen zurückhalten. Man weiß schließlich nie, wer gerade zuhört.\"</p><p>\"Ich möchte nicht mehr schön sein, weder von außen noch von innen.\", antwortete Avila schnippisch.</p><p>Die Frau entgegnete ihr: \"Das würde ich mir aber anders überlegen. Dein Bruder würde doch sicherlich wollen, dass seine liebe Schwester mit ihrer gutherzigen Frohnatur den Leuten etwas Gutes tut. Meinst du nicht?\"</p><p>Avila blickte auf und bemerkte, dass die Frau sie gutmeinend anlächelte. \"Ja, Ihr habt recht. Mein Bruder würde sich schämen, wenn er mich so sieht. Ich will nicht, dass sich mein Bruder für mich schämen muss.\", sprach sie unter Tränen.</p><p>\"Nun, dann sieh an dir herab. Von nun an sollst du genau dies tun, damit dein geliebter Bruder stolz auf dich sein kann.\"</p><p>Die Wunden an Avilas Körper, die sie sich selbst zugefügt hatte, waren verschwunden. Ehe sich Avila bei der Frau bedanken konnte, war diese  verschwunden. Avila blieb zurück und spürte einen noch nie zurvor dagewesenen Lebenswillen. Ab diesem Tag wollte Avila nur für die schönen Dinge im Leben sorgen und allen Personen ihr Glück schenken, das sie nie bekam.</p>"
   },
   {
     "id": "HP3hhfMsNKkkhxZ4",
@@ -1155,10 +1156,17 @@
     "birthday": "25.05.",
     "nationality": "Hal",
     "likes": [
-      "Glaube,Katzen,Kräutertee,Ruhe,Kerzen"
+      "Glaube",
+      "Katzen",
+      "Kräutertee",
+      "Ruhe",
+      "Kerzen"
     ],
     "dislikes": [
-      "Insekten,Spät aufstehen, Unordnung,Unruhe"
+      "Insekten",
+      "Spät aufstehen",
+      "Unordnung",
+      "Unruhe"
     ],
     "bonds": [
       {
@@ -3075,8 +3083,25 @@
     "age": 1800,
     "birthday": "09.09.",
     "nationality": "Tinorland",
-    "likes": [],
-    "dislikes": [],
+    "likes": [
+      "Kräuter",
+      "Herbe Tees",
+      "Teegebäck",
+      "Ästhetik",
+      "Arbeit delegieren",
+      "Gefolgschaft haben",
+      "Leuten helfen",
+      "Enge Freundschaft",
+      "Geselligkeit",
+      "Feierlichkeiten",
+      "Sich für andere freuen können"
+    ],
+    "dislikes": [
+      "Unsauberkeit",
+      "Miesepetrigkeit",
+      "Ungesundes Essen",
+      "Alkohol"
+    ],
     "bonds": [
       {
         "name": "Ouin",
@@ -3104,7 +3129,8 @@
       }
     ],
     "functions": [
-      "Hohefürstin der Gesundheit"
+      "Hohefürstin der Gesundheit",
+      "Oberhaupt des Ordens der Heilenden Hand"
     ],
     "faith": [],
     "excerpt": "<p>Hama ist die Hohefürstin der Gesundheit und das spirituelle und medizinische Zentrum des Ordens der Heilenden Hand. Einst die unbeschwerte Tochter eines Teehändlers, schmiedete der Verlust ihrer Heimat und ihres Vaters durch eine grausame Seuche und den darauf folgenden Hass der Menschen ihren eisernen Willen. Durch eine göttliche Offenbarung am Tiefpunkt ihres Lebens fand sie die Kraft, eine Magie zu wirken, die über bloße Kräuterkunde hinausgeht. Heute leitet sie von ihrem Bergkloster in Tinorland aus eine Gemeinschaft, die sich bedingungslos der Linderung von Leid verschrieben hat.</p>",
@@ -6587,8 +6613,27 @@
     "age": 1907,
     "birthday": "23.04.",
     "nationality": "Hal",
-    "likes": [],
-    "dislikes": [],
+    "likes": [
+      "Rotwein",
+      "Liebliche Weine",
+      "Katzen",
+      "Bücher",
+      "Annalen",
+      "Liebesromane",
+      "Popkultur",
+      "Essen",
+      "Ordnung",
+      "Lernen",
+      "Ausschlafen",
+      "Hyperspezifische Nischenthemen entdecken",
+      "Wertschätzung ihrer Interessen"
+    ],
+    "dislikes": [
+      "Trockene Weine",
+      "Langweiler",
+      "Indirekte Personen",
+      "Liebespaare im nahen Umfeld"
+    ],
     "bonds": [
       {
         "name": "Amlin",
@@ -6645,7 +6690,8 @@
     ],
     "functions": [
       "Hohefürstin des Wissens",
-      "Leiterin der Großen Bibliothek in Frelia"
+      "Leiterin der Großen Bibliothek in Frelia",
+      "Gründerin der \"Freifrau Seloue Universität\""
     ],
     "faith": [],
     "excerpt": "<p>Seloue ist die Hohefürstin des Wissens und Hüterin der gesammelten Weisheit Faergrias. Ihr Leben ist dem Erhalt, der Ordnung und der Weitergabe von Wissen gewidmet. Als Gründerin der Großen Bibliothek von Hal und der Freifrau Seloue Universität in Frelia prägt sie Generationen von Gelehrten. Hinter ihrer warmen, fast mütterlichen Ausstrahlung verbirgt sich eine entschlossene Persönlichkeit, die keinerlei Nachlässigkeit duldet, wenn es um den Schutz von Wissen geht.</p>",

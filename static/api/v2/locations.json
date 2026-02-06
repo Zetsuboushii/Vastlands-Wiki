@@ -1,6 +1,19 @@
 {
   "name": "root",
   "children": {
+    "_Unsorted": {
+      "name": "_Unsorted",
+      "children": {
+        "Faergria": {
+          "name": "Faergria",
+          "children": {},
+          "scenes": [
+            "Faergria"
+          ]
+        }
+      },
+      "scenes": []
+    },
     "Animus": {
       "name": "Animus",
       "children": {
