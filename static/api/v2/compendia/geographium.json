@@ -1,0 +1,16 @@
+{
+  "charts": [
+    {
+      "name": "Faergria",
+      "places": [
+        {
+          "name": "Dünsberg",
+          "x": 1205,
+          "y": 1460,
+          "type": "Dorf",
+          "text": "<h2>habibi</h2><p></p><p>bobo</p>"
+        }
+      ]
+    }
+  ]
+}

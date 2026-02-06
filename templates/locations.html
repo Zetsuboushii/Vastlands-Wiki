@@ -18,7 +18,7 @@
         {% for name, child in node.children.items() %}
             <li class="location-node level-{{ level }}">
                 <button>
-                    <span><a href="{{ url_for('location', location_name=name) }}">{{ name }}</a></span>
+                    <span><a href="{{ url_for('geographium_entry', location_name=name) }}">{{ name }}</a></span>
                 </button>
 
                 {# Optional: list scenes attached to this node

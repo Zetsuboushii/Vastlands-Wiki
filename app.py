@@ -22,7 +22,7 @@ def load_from_json(filename):
 @app.before_request
 def before_request():
     g.site_title = "Tome of the Vastlands"
-    g.version_number = "5.5.14"
+    g.version_number = "5.5.15"
 
     g.ingame_date = load_from_json("current_date")["current_ingame_date"]
     g.lore_days = ["Lunesdag", "Flamdag", "Quellsdag", "Waldsdag", "Goldag", "Terrasdag", "Sunnesdag"]
@@ -80,7 +80,6 @@ def check_alt_image_exists(name: str, timeout: float = 5.0) -> tuple[bool, str, 
 
 @app.route('/')
 def index():
-    highlights = ["Amlin", "Acilia", "Justicia", "Fortuna", "Meilira", "Thanatos", "Scarlet", "Cinnabar", "Seloue", "Craindre", "Zora", "Phaerille", "Finnea", "Alice", "Ar-Merer", "Artie", "Avarne", "Aya", "Carmesine", "Zetta", "Cordelia", "Felix", "Flüstern", "Fubuki", "Grenze", "Grund", "Hama", "Hindrik", "Iddra", "Igmusur"]
     characters_list = load_from_json("characters")
     characters_list[:] = [c for c in characters_list if "," not in c["name"] and "[hidden]" not in c["name"]]
     highlighted_characters = [c for c in characters_list if "<h2>" in c["biography"]]
@@ -166,30 +165,6 @@ def character(character_name):
     return render_template('character.html', character=character, characters=characters_list)
 
 
-@app.route('/geographium/')
-def locations():
-    locations_list = load_from_json("locations")
-    return render_template('locations.html', locations=locations_list)
-
-
-@app.route('/geographium/<location_name>/')
-def location(location_name):
-    locations_list = load_from_json("locations")
-    location_data, parent = find_place_recursively(locations_list, location_name)
-
-    return render_template('place.html', location=location_data, parent=parent)
-
-
-@app.route('/edit/geographium/<place_name>/', methods=['POST'])
-def edit_place(place_name):
-    if app.debug:
-        locations_list = load_from_json("locations")
-        place_data, _ = find_place_recursively(locations_list, place_name)
-
-        if request.method == "POST":
-            return
-
-
 @app.route('/compendium/')
 def compendia():
     compendium_list = load_from_json("compendia")
@@ -259,6 +234,17 @@ def theologarium_entry(entry_name):
     entry = next((e for e in entries if e.get("id", "").lower().replace(" ", "-") == entry_name), None)
 
     return render_template('compendia/theologarium_entry.html', entry=entry)
+
+
+@app.route('/geographium/')
+def geographium():
+    places_tree = load_from_json("locations")
+    return render_template('locations.html', locations=places_tree)
+
+
+@app.route('/geographium/<location_name>/')
+def geographium_entry(location_name):
+    pass
 
 
 @app.route('/holidays/<holiday_name>/')
