@@ -1101,7 +1101,7 @@
     "id": "akh1Ex1raEAbJSpn",
     "name": "Caeda",
     "surname": "",
-    "title": "Sympathische Nachwuchshändlerin",
+    "title": "Fleißige Nachwuchshändlerin",
     "race": "Verdorn",
     "alignment": "",
     "sex": "weiblich",
@@ -6317,7 +6317,7 @@
     "id": "6bblfRcACy8haUSX",
     "name": "Rosalinde",
     "surname": "",
-    "title": "Sadistische Märtyrerin Justicias",
+    "title": "Abessin der Pein",
     "race": "Menschen",
     "alignment": "LE",
     "sex": "weiblich",
@@ -8058,6 +8058,25 @@
     "faith": [
       "Malusdur"
     ],
+    "excerpt": "",
+    "biography": ""
+  },
+  {
+    "id": "sv84JImr5GpOU9si",
+    "name": "Wistari",
+    "surname": "",
+    "title": "",
+    "race": "Altorn",
+    "alignment": "",
+    "sex": "männlich",
+    "age": null,
+    "birthday": "",
+    "nationality": "Adrestia",
+    "likes": [],
+    "dislikes": [],
+    "bonds": [],
+    "functions": [],
+    "faith": [],
     "excerpt": "",
     "biography": ""
   },
