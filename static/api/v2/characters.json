@@ -2116,9 +2116,26 @@
     "nationality": "Kradian",
     "likes": [],
     "dislikes": [],
-    "bonds": [],
-    "functions": [],
-    "faith": [],
+    "bonds": [
+      {
+        "name": "Sohn",
+        "relation": null
+      },
+      {
+        "name": "Arion",
+        "relation": null
+      },
+      {
+        "name": "Jonatan",
+        "relation": null
+      }
+    ],
+    "functions": [
+      "Bäckerin in Thycoria"
+    ],
+    "faith": [
+      "Kradia"
+    ],
     "excerpt": "",
     "biography": ""
   },
@@ -2292,6 +2309,25 @@
       "Justicia"
     ],
     "excerpt": "<p>Felldir ist seit Jahren der stolze Kommandant der Stadtwache Grenbrock. Als junger Soldat in die Stadtwache eingetreten, arbeitete er sich mit viel Anstrengungen in den Rängen hinauf, bis er schließlich von Diakon Hadubrandt anerkannt und von Kurfürst Jervar zum obersten Kommandanten der Stadtwache ernannt wurde. Nicht ein Ketzer oder Verbrecher entging dem strammen Griff Felldirs ; zumindest bis Siegmund, der Meisterdieb und U-Ranos, der falsche Kleriker in sein Leben traten.</p>",
+    "biography": ""
+  },
+  {
+    "id": "4pTs86UXkG5FVlyi",
+    "name": "Fia",
+    "surname": "",
+    "title": "",
+    "race": null,
+    "alignment": "",
+    "sex": "",
+    "age": null,
+    "birthday": "",
+    "nationality": "Kradian",
+    "likes": [],
+    "dislikes": [],
+    "bonds": [],
+    "functions": [],
+    "faith": [],
+    "excerpt": "",
     "biography": ""
   },
   {
@@ -4119,69 +4155,6 @@
     "faith": [],
     "excerpt": "",
     "biography": ""
-  },
-  {
-    "id": "4nmkaH0ltdUy3B4G",
-    "name": "Kaen",
-    "surname": "",
-    "title": "Hitzköpfige Zeitgenossin",
-    "race": "Hohefürsten",
-    "alignment": "CN",
-    "sex": "weiblich",
-    "age": 212107,
-    "birthday": "",
-    "nationality": "Tinorland",
-    "likes": [
-      "Diskussionen",
-      "Grillfleisch",
-      "Mode"
-    ],
-    "dislikes": [
-      "Blumen",
-      "Tiere",
-      "U-Ranos",
-      "Widerworte"
-    ],
-    "bonds": [
-      {
-        "name": "Eliza",
-        "relation": null
-      },
-      {
-        "name": "Fubuki",
-        "relation": null
-      },
-      {
-        "name": "Inoro",
-        "relation": null
-      },
-      {
-        "name": "Invidianoir",
-        "relation": "Schwester"
-      },
-      {
-        "name": "Kaze",
-        "relation": null
-      },
-      {
-        "name": "Rai",
-        "relation": null
-      },
-      {
-        "name": "Scarlet",
-        "relation": null
-      },
-      {
-        "name": "Zora",
-        "relation": null
-      }
-    ],
-    "functions": [
-      "Hohefürstin des Feuers"
-    ],
-    "faith": [],
-    "excerpt": "<p>Kaen, die Hohefürstin des Feuers, ist eine lebendige Verkörperung der Macht und Wildheit der Flammen. Sie wacht über den Glutberg und das dort befindliche Feuersanktuarium. Kaen trägt sie nicht nur die Bürde, über das Feuer selbst zu wachen, sondern auch über die Flammen der Leidenschaft und Zerstörung, die das Leben ihrer Anhänger und der Welt beeinflussen. Ihr Status als Hohefürstin verleiht ihr nicht nur ungeahnte Kräfte, sondern auch eine Ausstrahlung, die wie ein brennendes Inferno wirkt: faszinierend, gefährlich und unergründlich.</p>",
-    "biography": "<div><h2>Persönlichkeit</h2></div><p>Kaens Persönlichkeit ist von einer Schärfe geprägt, die viele in die Flucht schlägt. Zynisch und abweisend, trägt sie eine tiefe Verachtung für die Schwächen der Sterblichen in sich, insbesondere für ihre Neigung, das Feuer zu unterschätzen, das sie repräsentiert. Ihr Sarkasmus und ihre kalte Art lassen keinen Zweifel daran, dass sie sich weit über den gewöhnlichen Belangen der Sterblichen sieht. Sie begegnet denjenigen, die sich dem Feuersanktuarium nähern, mit einer kühlen Gleichgültigkeit, stets bereit, diejenigen einzuäschern, die ihre Stärke oder ihre Pflicht infrage stellen. Doch hinter dieser Fassade verbirgt sich eine weiche, verletzliche Seite, die nur wenige zu Gesicht bekommen. Ihre Zynik ist weniger ein Zeichen von Arroganz, sondern vielmehr ein Schutzschild gegen die Welt. Kaen hat gelernt, dass es gefährlich ist, Schwäche zu zeigen, besonders als Hohefürstin einer Macht, die so zerstörerisch sein kann wie das Feuer. Ihre schroffe Art schützt sie vor den emotionalen Flammen, die einst ihr Herz verbrannten.</p><div><h2>Eine zarte Seite</h2></div><p>Unter der Fassade der zynischen Hohefürstin existiert eine Seite von Kaen, die sanft und verletzlich ist, doch nur wenige kommen in die Nähe, um sie zu entdecken. Diese zarte Seite zeigt sich selten, vielleicht nur bei denjenigen, die sich als würdig erweisen oder die, durch Zufall oder Schicksal, ihr Vertrauen gewinnen. In diesen seltenen Momenten erkennt man, dass Kaen, obwohl sie Hohefürstin ist, tiefe Emotionen und ein Bedürfnis nach Verbindung hat, das sie oft hinter ihrer feurigen Autorität verbirgt. Es gibt eine tief vergrabene Sehnsucht in ihr, die Verbindung zu den Sterblichen zu spüren, die sie so oft zurückweist. Manchmal, wenn sie alleine ist, zieht sie sich zurück in die tiefsten Kammern des Glutbergs, wo sie sich an die Wärme und den Trost des Feuers schmiegt, als sei es das Einzige, was sie wirklich versteht und was sie jemals trösten kann. Es ist in diesen Momenten, dass sie ihre Zerbrechlichkeit spürt; das Wissen, dass selbst eine Hohefürstin des Feuers nicht unverwundbar ist.</p><div><h2>Schicksal und Aufgabe</h2></div><p>Kaen wurde nicht aus freiem Willen zur Hohefürstin des Feuers. Ihre göttliche Bestimmung und das Feuer, das in ihren Adern fließt, banden sie an diese Aufgabe. Doch trotz ihrer Verachtung für die Sterblichen und ihrer zynischen Art ist sie zutiefst mit ihrem Schicksal verbunden. Sie trägt die Verantwortung, das Gleichgewicht zwischen Schöpfung und Zerstörung zu bewahren. Das Feuer, das sie kontrolliert, ist beides: ein Element, das Leben gibt und ein Element, das es nehmen kann. In ihren tiefsten Gedanken hegt Kaen die Frage, ob sie mehr ist als das, was ihr auferlegt wurde. Doch sie weiß auch, dass die Macht des Feuers einen Preis hat, und dass es nur durch ihre Wachsamkeit gezähmt bleiben kann.</p>"
   },
   {
     "id": "DGX4m1FtIeHZrj1J",
@@ -6414,6 +6387,25 @@
     "faith": [
       "Justicia"
     ],
+    "excerpt": "",
+    "biography": ""
+  },
+  {
+    "id": "8ZVmKG3ulLSsepiy",
+    "name": "Ruben",
+    "surname": "",
+    "title": "",
+    "race": null,
+    "alignment": "",
+    "sex": "",
+    "age": null,
+    "birthday": "",
+    "nationality": "Kradian",
+    "likes": [],
+    "dislikes": [],
+    "bonds": [],
+    "functions": [],
+    "faith": [],
     "excerpt": "",
     "biography": ""
   },
