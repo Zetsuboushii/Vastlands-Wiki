@@ -264,6 +264,13 @@
                         "Drakensumpf"
                       ]
                     },
+                    "Horizont-Altar": {
+                      "name": "Horizont-Altar",
+                      "children": {},
+                      "scenes": [
+                        "Horizont-Altar"
+                      ]
+                    },
                     "Niddarvellir": {
                       "name": "Niddarvellir",
                       "children": {
@@ -272,6 +279,13 @@
                           "children": {},
                           "scenes": [
                             "Niddarvellir - Schattenmarktplatz (Tempel)"
+                          ]
+                        },
+                        "Stadtzentrum": {
+                          "name": "Stadtzentrum",
+                          "children": {},
+                          "scenes": [
+                            "Niddarvellir - Stadtzentrum"
                           ]
                         }
                       },
@@ -302,11 +316,11 @@
                 "Mondblickinsel": {
                   "name": "Mondblickinsel",
                   "children": {
-                    "Ruinen des Mondes": {
-                      "name": "Ruinen des Mondes",
+                    "Lichtung des Mondzirkels": {
+                      "name": "Lichtung des Mondzirkels",
                       "children": {},
                       "scenes": [
-                        "Ruinen des Mondes"
+                        "Lichtung des Mondzirkels"
                       ]
                     }
                   },
@@ -315,13 +329,6 @@
                 "Nördliche Irrwälder": {
                   "name": "Nördliche Irrwälder",
                   "children": {
-                    "Lichtung des Mondzirkels": {
-                      "name": "Lichtung des Mondzirkels",
-                      "children": {},
-                      "scenes": [
-                        "Lichtung des Mondzirkels"
-                      ]
-                    },
                     "Sleargs Hütte": {
                       "name": "Sleargs Hütte",
                       "children": {},
@@ -380,12 +387,28 @@
                 },
                 "Sonnenscheininsel": {
                   "name": "Sonnenscheininsel",
-                  "children": {},
+                  "children": {
+                    "Wirrwald": {
+                      "name": "Wirrwald",
+                      "children": {},
+                      "scenes": [
+                        "Wirrwald"
+                      ]
+                    }
+                  },
                   "scenes": []
                 },
                 "Sternstaubinsel": {
                   "name": "Sternstaubinsel",
-                  "children": {},
+                  "children": {
+                    "Sternstaubtempel": {
+                      "name": "Sternstaubtempel",
+                      "children": {},
+                      "scenes": [
+                        "Sternstaubtempel"
+                      ]
+                    }
+                  },
                   "scenes": []
                 }
               },
@@ -552,7 +575,15 @@
               "children": {
                 "Dämmerwald": {
                   "name": "Dämmerwald",
-                  "children": {},
+                  "children": {
+                    "Teryvnat": {
+                      "name": "Teryvnat",
+                      "children": {},
+                      "scenes": [
+                        "Teryvnat"
+                      ]
+                    }
+                  },
                   "scenes": []
                 },
                 "Dickicht der Wahrheit": {
@@ -791,7 +822,22 @@
               "children": {
                 "Güldenes Grabland": {
                   "name": "Güldenes Grabland",
-                  "children": {},
+                  "children": {
+                    "Endlose Bücherei der Erinnerungen": {
+                      "name": "Endlose Bücherei der Erinnerungen",
+                      "children": {},
+                      "scenes": [
+                        "Endlose Bücherei der Erinnerungen"
+                      ]
+                    },
+                    "Larudia": {
+                      "name": "Larudia",
+                      "children": {},
+                      "scenes": [
+                        "Larudia"
+                      ]
+                    }
+                  },
                   "scenes": []
                 },
                 "Insel des Windes": {
@@ -871,15 +917,7 @@
                 },
                 "Zwielichtsteppe": {
                   "name": "Zwielichtsteppe",
-                  "children": {
-                    "Larudia": {
-                      "name": "Larudia",
-                      "children": {},
-                      "scenes": [
-                        "Larudia"
-                      ]
-                    }
-                  },
+                  "children": {},
                   "scenes": []
                 }
               },
@@ -933,6 +971,13 @@
                       "scenes": [
                         "Garadzar"
                       ]
+                    },
+                    "Grollender Bergpass": {
+                      "name": "Grollender Bergpass",
+                      "children": {},
+                      "scenes": [
+                        "Grollender Bergpass"
+                      ]
                     }
                   },
                   "scenes": []
@@ -965,7 +1010,9 @@
                           ]
                         }
                       },
-                      "scenes": []
+                      "scenes": [
+                        "Dünsberg"
+                      ]
                     },
                     "Graekurith": {
                       "name": "Graekurith",
@@ -981,11 +1028,11 @@
                         "Igmusurs Hütte"
                       ]
                     },
-                    "Knorrwurzelschrein": {
-                      "name": "Knorrwurzelschrein",
+                    "Wurzelschrein": {
+                      "name": "Wurzelschrein",
                       "children": {},
                       "scenes": [
-                        "Knorrwurzelschrein"
+                        "Wurzelschrein"
                       ]
                     }
                   },
@@ -999,13 +1046,6 @@
                       "children": {},
                       "scenes": [
                         "Alte Zollburg"
-                      ]
-                    },
-                    "Anwesen von Lysander": {
-                      "name": "Anwesen von Lysander",
-                      "children": {},
-                      "scenes": [
-                        "Anwesen von Lysander"
                       ]
                     },
                     "Große Zwergenbrücke": {
@@ -1067,6 +1107,13 @@
                       "children": {},
                       "scenes": [
                         "Tunnel zum Meeresreich"
+                      ]
+                    },
+                    "Vampirschloss": {
+                      "name": "Vampirschloss",
+                      "children": {},
+                      "scenes": [
+                        "Vampirschloss"
                       ]
                     }
                   },
@@ -1216,11 +1263,11 @@
                 "Nokoto-Sumpfland": {
                   "name": "Nokoto-Sumpfland",
                   "children": {
-                    "Alte Burgruine": {
-                      "name": "Alte Burgruine",
+                    "Alte Greifenburg": {
+                      "name": "Alte Greifenburg",
                       "children": {},
                       "scenes": [
-                        "Alte Burgruine"
+                        "Alte Greifenburg"
                       ]
                     },
                     "Sümpfe des Vergessens": {
@@ -1826,6 +1873,30 @@
                 "Thycor": {
                   "name": "Thycor",
                   "children": {
+                    "Nördliche Wälder": {
+                      "name": "Nördliche Wälder",
+                      "children": {
+                        "Jägerlager": {
+                          "name": "Jägerlager",
+                          "children": {},
+                          "scenes": [
+                            "Nördliche Wälder - Jägerlager"
+                          ]
+                        },
+                        "Schmiede": {
+                          "name": "Schmiede",
+                          "children": {},
+                          "scenes": [
+                            "Nördliche Wälder - Schmiede",
+                            "Nördliche Wälder - Schmiede (1F)",
+                            "Nördliche Wälder - Schmiede (2F)",
+                            "Nördliche Wälder - Schmiede (B1)",
+                            "Nördliche Wälder - Schmiede (B2)"
+                          ]
+                        }
+                      },
+                      "scenes": []
+                    },
                     "Thycoria": {
                       "name": "Thycoria",
                       "children": {
@@ -1887,32 +1958,31 @@
                             "Thycoria-Wald - Hexenhütte"
                           ]
                         },
-                        "See zur Ebene": {
-                          "name": "See zur Ebene",
-                          "children": {},
-                          "scenes": [
-                            "Thycoria-Wald - See zur Ebene"
-                          ]
-                        },
-                        "Spinnenhöhle": {
-                          "name": "Spinnenhöhle",
-                          "children": {},
-                          "scenes": [
-                            "Thycoria-Wald - Spinnenhöhle"
-                          ]
-                        },
-                        "Verlorene Wälder": {
-                          "name": "Verlorene Wälder",
-                          "children": {},
-                          "scenes": [
-                            "Thycoria-Wald - Verlorene Wälder"
-                          ]
-                        },
                         "Waldtempel": {
                           "name": "Waldtempel",
                           "children": {},
                           "scenes": [
                             "Thycoria-Wald - Waldtempel"
+                          ]
+                        }
+                      },
+                      "scenes": []
+                    },
+                    "Verlorene Wälder": {
+                      "name": "Verlorene Wälder",
+                      "children": {},
+                      "scenes": [
+                        "Verlorene Wälder"
+                      ]
+                    },
+                    "Westliche Wälder": {
+                      "name": "Westliche Wälder",
+                      "children": {
+                        "Spinnenhöhle": {
+                          "name": "Spinnenhöhle",
+                          "children": {},
+                          "scenes": [
+                            "Westliche Wälder - Spinnenhöhle"
                           ]
                         }
                       },
@@ -2137,6 +2207,20 @@
           "children": {},
           "scenes": [
             "Arions Traum"
+          ]
+        },
+        "Escaars Traum": {
+          "name": "Escaars Traum",
+          "children": {},
+          "scenes": [
+            "Escaars Traum"
+          ]
+        },
+        "U-Ranos' Traum": {
+          "name": "U-Ranos' Traum",
+          "children": {},
+          "scenes": [
+            "U-Ranos' Traum"
           ]
         }
       },

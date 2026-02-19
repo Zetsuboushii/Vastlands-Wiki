@@ -543,7 +543,8 @@
       "Hochsprache",
       "Arroganz",
       "Leichte und feine Waffen",
-      "Karotten"
+      "Karotten",
+      "Untote"
     ],
     "bonds": [
       {
@@ -4851,13 +4852,13 @@
   },
   {
     "id": "JzKD8v0ZkYuc32aN",
-    "name": "Marie [hidden]",
+    "name": "Marie",
     "surname": "",
     "title": "",
     "race": "Menschen",
     "alignment": "",
     "sex": "weiblich",
-    "age": 24,
+    "age": 21,
     "birthday": "26.01.",
     "nationality": "Kradian",
     "likes": [],
@@ -6043,10 +6044,10 @@
   },
   {
     "id": "7IHLY5iNfZq5Lm57",
-    "name": "Pierre [hidden]",
+    "name": "Pierre",
     "surname": "",
     "title": "",
-    "race": "Menschen",
+    "race": "Verdorn",
     "alignment": "",
     "sex": "männlich",
     "age": 31,
@@ -8209,7 +8210,7 @@
     "race": "Menschen",
     "alignment": "",
     "sex": "weiblich",
-    "age": 24,
+    "age": 20,
     "birthday": "",
     "nationality": "Kradian",
     "likes": [],
