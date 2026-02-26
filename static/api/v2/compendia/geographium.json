@@ -1840,6 +1840,13 @@
                     "Südliche Ebene von Kradian": {
                       "name": "Südliche Ebene von Kradian",
                       "children": {
+                        "Ehrenmal der Krieger": {
+                          "name": "Ehrenmal der Krieger",
+                          "children": {},
+                          "scenes": [
+                            "Südliche Ebene von Kradian - Ehrenmal der Krieger"
+                          ]
+                        },
                         "Haus": {
                           "name": "Haus",
                           "children": {},
