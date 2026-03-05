@@ -718,6 +718,13 @@
                             "Frelia - Große Bibliothek von Hal"
                           ]
                         },
+                        "Hafen": {
+                          "name": "Hafen",
+                          "children": {},
+                          "scenes": [
+                            "Frelia - Hafen"
+                          ]
+                        },
                         "Hauptwache der Magiepolizei": {
                           "name": "Hauptwache der Magiepolizei",
                           "children": {},
@@ -730,6 +737,13 @@
                           "children": {},
                           "scenes": [
                             "Frelia - Juliannes Bar"
+                          ]
+                        },
+                        "Marktstraßen": {
+                          "name": "Marktstraßen",
+                          "children": {},
+                          "scenes": [
+                            "Frelia - Marktstraßen"
                           ]
                         }
                       },
@@ -1325,6 +1339,13 @@
                           "scenes": [
                             "Nifl - Badehaus"
                           ]
+                        },
+                        "Markt": {
+                          "name": "Markt",
+                          "children": {},
+                          "scenes": [
+                            "Nifl - Markt"
+                          ]
                         }
                       },
                       "scenes": []
@@ -1840,6 +1861,13 @@
                     "Südliche Ebene von Kradian": {
                       "name": "Südliche Ebene von Kradian",
                       "children": {
+                        "Banditenunterschlupf": {
+                          "name": "Banditenunterschlupf",
+                          "children": {},
+                          "scenes": [
+                            "Südliche Ebene von Kradian - Banditenunterschlupf"
+                          ]
+                        },
                         "Ehrenmal der Krieger": {
                           "name": "Ehrenmal der Krieger",
                           "children": {},
@@ -1852,6 +1880,13 @@
                           "children": {},
                           "scenes": [
                             "Südliche Ebene von Kradian - Haus"
+                          ]
+                        },
+                        "Llyn": {
+                          "name": "Llyn",
+                          "children": {},
+                          "scenes": [
+                            "Südliche Ebene von Kradian - Llyn"
                           ]
                         }
                       },
