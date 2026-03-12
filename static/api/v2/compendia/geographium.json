@@ -1874,19 +1874,18 @@
                           "scenes": [
                             "Südliche Ebene von Kradian - Ehrenmal der Krieger"
                           ]
-                        },
-                        "Haus": {
-                          "name": "Haus",
-                          "children": {},
-                          "scenes": [
-                            "Südliche Ebene von Kradian - Haus"
-                          ]
-                        },
+                        }
+                      },
+                      "scenes": []
+                    },
+                    "Südliche Ebene von Pyrrha": {
+                      "name": "Südliche Ebene von Pyrrha",
+                      "children": {
                         "Llyn": {
                           "name": "Llyn",
                           "children": {},
                           "scenes": [
-                            "Südliche Ebene von Kradian - Llyn"
+                            "Südliche Ebene von Pyrrha - Llyn"
                           ]
                         }
                       },
@@ -1899,6 +1898,23 @@
                         "Sümpfe des Grauens",
                         "Sümpfe des Grauens (Schädel)"
                       ]
+                    },
+                    "Tal der Könige": {
+                      "name": "Tal der Könige",
+                      "children": {
+                        "Weingut Poulcheria": {
+                          "name": "Weingut Poulcheria",
+                          "children": {},
+                          "scenes": [
+                            "Tal der Könige - Weingut Poulcheria",
+                            "Tal der Könige - Weingut Poulcheria (Gästehaus)",
+                            "Tal der Könige - Weingut Poulcheria (Haus am See; Keller)",
+                            "Tal der Könige - Weingut Poulcheria (Haus am See; Untegrundfluss)",
+                            "Tal der Könige - Weingut Poulcheria (Haus am See)"
+                          ]
+                        }
+                      },
+                      "scenes": []
                     },
                     "Tempel des Feuers": {
                       "name": "Tempel des Feuers",
