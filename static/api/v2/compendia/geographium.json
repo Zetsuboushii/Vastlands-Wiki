@@ -774,7 +774,43 @@
                 },
                 "Molida": {
                   "name": "Molida",
-                  "children": {},
+                  "children": {
+                    "Feld der Tausend Schwerter": {
+                      "name": "Feld der Tausend Schwerter",
+                      "children": {},
+                      "scenes": [
+                        "Feld der Tausend Schwerter"
+                      ]
+                    },
+                    "Herz des Waldes": {
+                      "name": "Herz des Waldes",
+                      "children": {},
+                      "scenes": [
+                        "Herz des Waldes"
+                      ]
+                    },
+                    "Molida-Tempelruinen": {
+                      "name": "Molida-Tempelruinen",
+                      "children": {},
+                      "scenes": [
+                        "Molida-Tempelruinen"
+                      ]
+                    },
+                    "Steintafeln im Wald": {
+                      "name": "Steintafeln im Wald",
+                      "children": {},
+                      "scenes": [
+                        "Steintafeln im Wald"
+                      ]
+                    },
+                    "Verborgener Tunnel": {
+                      "name": "Verborgener Tunnel",
+                      "children": {},
+                      "scenes": [
+                        "Verborgener Tunnel"
+                      ]
+                    }
+                  },
                   "scenes": []
                 },
                 "Nördliche Labyrinthinsel": {
@@ -1838,6 +1874,21 @@
                       },
                       "scenes": []
                     },
+                    "Bainnoque (Interior) 1F": {
+                      "name": "Bainnoque (Interior) 1F",
+                      "children": {},
+                      "scenes": [
+                        "Bainnoque (Interior) 1F"
+                      ]
+                    },
+                    "Burg Stromwacht": {
+                      "name": "Burg Stromwacht",
+                      "children": {},
+                      "scenes": [
+                        "Burg Stromwacht",
+                        "Burg Stromwacht (1F)"
+                      ]
+                    },
                     "Pyrrha-Mine": {
                       "name": "Pyrrha-Mine",
                       "children": {
@@ -1893,7 +1944,22 @@
                     },
                     "Sümpfe des Grauens": {
                       "name": "Sümpfe des Grauens",
-                      "children": {},
+                      "children": {
+                        "Mühle": {
+                          "name": "Mühle",
+                          "children": {},
+                          "scenes": [
+                            "Sümpfe des Grauens - Mühle"
+                          ]
+                        },
+                        "Ruinen": {
+                          "name": "Ruinen",
+                          "children": {},
+                          "scenes": [
+                            "Sümpfe des Grauens - Ruinen"
+                          ]
+                        }
+                      },
                       "scenes": [
                         "Sümpfe des Grauens",
                         "Sümpfe des Grauens (Schädel)"
@@ -2052,6 +2118,20 @@
                 "Yssara": {
                   "name": "Yssara",
                   "children": {
+                    "Bisin": {
+                      "name": "Bisin",
+                      "children": {
+                        "Marktviertel": {
+                          "name": "Marktviertel",
+                          "children": {},
+                          "scenes": [
+                            "Bisin - Marktviertel (1F)",
+                            "Bisin - Marktviertel (2F)"
+                          ]
+                        }
+                      },
+                      "scenes": []
+                    },
                     "Dorf der Liphias": {
                       "name": "Dorf der Liphias",
                       "children": {},
