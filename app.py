@@ -2,13 +2,10 @@ import random
 from collections import defaultdict
 from datetime import date
 import requests
-from flask import Flask, render_template, request, g, redirect
+from flask import Flask, render_template, g, redirect
 import json
 
-from flask_frozen import Freezer
-
 app = Flask(__name__, static_folder="static")
-freezer = Freezer(app)
 
 app.config['FREEZER_RELATIVE_URLS'] = True
 app.config['FREEZER_DEFAULT_MIMETYPE'] = 'text/html'
@@ -22,7 +19,7 @@ def load_from_json(filename):
 @app.before_request
 def before_request():
     g.site_title = "Tome of the Vastlands"
-    g.version_number = "5.5.26"
+    g.version_number = "5.5.27"
 
     g.ingame_date = load_from_json("current_date")["current_ingame_date"]
     g.lore_days = ["Lunesdag", "Flamdag", "Quellsdag", "Waldsdag", "Goldag", "Terrasdag", "Sunnesdag"]
