@@ -1889,6 +1889,13 @@
                         "Burg Stromwacht (1F)"
                       ]
                     },
+                    "Funkenspiegelsee": {
+                      "name": "Funkenspiegelsee",
+                      "children": {},
+                      "scenes": [
+                        "Funkenspiegelsee"
+                      ]
+                    },
                     "Pyrrha-Mine": {
                       "name": "Pyrrha-Mine",
                       "children": {
@@ -2118,15 +2125,15 @@
                 "Yssara": {
                   "name": "Yssara",
                   "children": {
-                    "Bisin": {
-                      "name": "Bisin",
+                    "Basin": {
+                      "name": "Basin",
                       "children": {
                         "Marktviertel": {
                           "name": "Marktviertel",
                           "children": {},
                           "scenes": [
-                            "Bisin - Marktviertel (1F)",
-                            "Bisin - Marktviertel (2F)"
+                            "Basin - Marktviertel (1F)",
+                            "Basin - Marktviertel (2F)"
                           ]
                         }
                       },
